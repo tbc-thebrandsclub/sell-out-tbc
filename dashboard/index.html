@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TBC | C.A.R.S.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>B</text></svg>">
+</head>
+<body>
+
+  <!-- ── Loading Screen ────────────────────────────── -->
+  <div id="loading-screen">
+    <img src="assets/logo-tbc.png" alt="TBC" class="loader-brand-img">
+    <div class="loader-cars-title">C.A.R.S.</div>
+    <div class="loader-subtitle">Control de Activos y Rutas de Sell-out</div>
+    <div class="loader-bar-container"><div class="loader-bar"></div></div>
+  </div>
+
+  <!-- ── Lightbox ──────────────────────────────────── -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close">&times;</button>
+      <button class="lightbox-nav lightbox-prev">&lsaquo;</button>
+      <button class="lightbox-nav lightbox-next">&rsaquo;</button>
+      <img src="" alt="Foto ampliada">
+      <div class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- ── Header ────────────────────────────────────── -->
+  <header class="header">
+    <div class="header-left">
+      <div class="brand-logo">
+        <div class="brand-icon"><img src="assets/logo-tbc.png" alt="TBC"></div>
+        <div class="brand-name">The Brands Club</div>
+      </div>
+      <div class="header-divider"></div>
+      <div class="header-title">C.A.R.S. <span class="header-title-sub">Control de Activos y Rutas de Sell-out</span></div>
+    </div>
+    <div class="header-right">
+      <button id="theme-toggle" class="theme-toggle" title="Cambiar tema">
+        <span class="theme-icon-dark">&#9790;</span>
+        <span class="theme-icon-light">&#9788;</span>
+      </button>
+      <span id="header-date" class="header-date"></span>
+      <div class="status-dot" title="Dashboard activo"></div>
+    </div>
+  </header>
+
+  <!-- ── Data Status Bar ──────────────────────────── -->
+  <div class="data-status-bar" id="data-status-bar"></div>
+
+  <!-- ── Tab Navigation ────────────────────────────── -->
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="command-center">
+      <span class="tab-icon">&#9678;</span> Command Center
+    </button>
+    <button class="tab-btn" data-tab="ranking">
+      <span class="tab-icon">&#9776;</span> Ranking Sell Out
+    </button>
+    <button class="tab-btn" data-tab="laboratorio">
+      <span class="tab-icon">&#9881;</span> Laboratorio
+    </button>
+  </nav>
+
+  <!-- ── Global Filters Bar ────────────────────────── -->
+  <div class="filters-bar">
+    <span class="filter-label">Filtros:</span>
+    <input type="date" id="filter-date-from" class="filter-input" title="Fecha desde">
+    <span class="filter-separator">a</span>
+    <input type="date" id="filter-date-to" class="filter-input" title="Fecha hasta">
+    <select id="filter-chain" class="filter-select">
+      <option value="">Todas las cadenas</option>
+    </select>
+    <select id="filter-division" class="filter-select">
+      <option value="">Todas las divisiones</option>
+    </select>
+    <select id="filter-license-global" class="filter-select">
+      <option value="">Todas las licencias</option>
+    </select>
+    <span class="filter-separator">|</span>
+    <select id="filter-year-product" class="filter-select">
+      <option value="">Todos los anos</option>
+    </select>
+    <select id="filter-quarter" class="filter-select">
+      <option value="">Todos los Q</option>
+    </select>
+    <select id="filter-temporada" class="filter-select">
+      <option value="">Todas las temporadas</option>
+    </select>
+    <span id="campaign-filters" class="campaign-only-filters" style="display:none">
+      <select id="filter-client" class="filter-select">
+        <option value="">Todos los clientes</option>
+      </select>
+      <select id="filter-status" class="filter-select">
+        <option value="">Todos los estados</option>
+        <option value="active">En Ejecucion</option>
+        <option value="completed">Completada</option>
+        <option value="planning">Planificacion</option>
+      </select>
+      <select id="filter-license" class="filter-select">
+        <option value="">Todas las licencias</option>
+      </select>
+      <select id="filter-gestor" class="filter-select">
+        <option value="">Todos los gestores</option>
+      </select>
+    </span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- TAB 1: COMMAND CENTER (100% Datos Reales)         -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="tab-command-center" class="tab-panel active">
+
+    <!-- Sell Out -->
+    <div class="section-header"><div class="section-title">Sell Out</div><span class="section-badge badge-live">API InstoreView</span></div>
+    <div class="sellout-container">
+      <div class="sellout-kpi-row">
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-primary)" id="sellout-units">0</div><div class="sellout-kpi-label">Unidades Vendidas</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-emerald)">$<span id="sellout-clp">0</span></div><div class="sellout-kpi-label">Venta Total (CLP)</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-orange)" id="sellout-avg-store">0</div><div class="sellout-kpi-label">Prom. Und. / Tienda</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-cyan)" id="sellout-chains">0</div><div class="sellout-kpi-label">Cadenas Activas</div></div>
+      </div>
+      <div id="sellout-date-range" style="text-align:center;color:var(--text-muted);font-size:0.72rem;margin-bottom:1rem;"></div>
+      <div class="charts-grid">
+        <div class="chart-card"><div class="chart-title">Venta Diaria por Licencia - Top 5</div><div class="chart-container"><canvas id="chart-sellout-daily"></canvas></div></div>
+        <div class="chart-card"><div class="chart-title">Venta por Licencia - Top 15</div><div class="chart-container"><canvas id="chart-sellout-license"></canvas></div></div>
+      </div>
+      <div class="charts-grid" style="margin-top:1rem">
+        <div class="chart-card"><div class="chart-title">Venta por Cadena</div><div class="chart-container"><canvas id="chart-sellout-chain"></canvas></div></div>
+        <div class="chart-card"><div class="chart-title" style="display:flex;justify-content:space-between;align-items:center"><span id="daily-total-title">Venta Diaria Total (Und + CLP)</span><div class="view-toggle" id="daily-total-toggle"><button class="toggle-btn active" data-view="daily">Diario</button><button class="toggle-btn" data-view="weekly">Semanal</button></div></div><div class="chart-container"><canvas id="chart-sellout-total-daily"></canvas></div></div>
+      </div>
+    </div>
+
+    <!-- Stock & OOS -->
+    <div class="section-header"><div class="section-title">Stock & Quiebres (OOS)</div><span class="section-badge badge-live">API InstoreView</span></div>
+    <div class="sellout-container">
+      <div class="sellout-kpi-row">
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-red)" id="oos-rate">0%</div><div class="sellout-kpi-label">% Quiebre (OOS)</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-amber)" id="oos-skus">0</div><div class="sellout-kpi-label">SKUs en Quiebre</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-primary)" id="stock-total">0</div><div class="sellout-kpi-label">Stock Total (Und.)</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-emerald)" id="stock-skus">0</div><div class="sellout-kpi-label">SKUs Monitoreados</div></div>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container"><canvas id="chart-oos-chain"></canvas></div></div>
+        <div class="chart-card"><div class="chart-title">% Quiebre por Licencia (Top 20)</div><div class="chart-container" style="height:360px"><canvas id="chart-oos-license"></canvas></div></div>
+      </div>
+    </div>
+
+    <div class="section-header"><div class="section-title">Frescura de Datos por Cadena</div><span class="section-badge badge-pending">IV API</span></div>
+    <div id="freshness-grid" class="freshness-grid"></div>
+
+    <div class="section-header" style="margin-top:1rem"><div class="section-title">Monitoreo de Cadenas</div><span class="section-badge badge-live">Auto</span></div>
+    <div id="chain-monitor-alerts"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- TAB 2: RANKING SELL OUT (100% Datos Reales)       -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="tab-ranking" class="tab-panel">
+
+    <div class="section-header"><div class="section-title">Alertas de Negocio</div><span class="section-badge badge-live">Auto-generado</span></div>
+    <div id="insights-grid" class="insights-grid"></div>
+
+    <div class="section-header"><div class="section-title">Venta por Division</div><span class="section-badge badge-live">Real Data</span></div>
+    <div id="division-kpi-grid" class="kpi-strip division-kpi-strip"></div>
+
+    <div class="charts-grid">
+      <div class="chart-card"><div class="chart-title">Tendencia Diaria por Division</div><div class="chart-container" style="height:320px"><canvas id="chart-division-daily"></canvas></div></div>
+      <div class="chart-card"><div class="chart-title">Mix de Division por Cadena (%)</div><div class="chart-container" style="height:320px"><canvas id="chart-division-mix"></canvas></div></div>
+    </div>
+
+    <!-- Analisis Comercial (antes del ranking para dar contexto) -->
+    <div class="section-header" style="margin-top:2rem"><div class="section-title">Analisis Comercial</div><span class="section-badge badge-live">Business Intelligence</span></div>
+    <div class="charts-grid">
+      <div class="chart-card"><div class="chart-title">Concentracion de Venta (Pareto)</div><div class="chart-container" style="height:300px"><canvas id="chart-pareto"></canvas></div></div>
+      <div class="chart-card"><div class="chart-title">Velocidad de Venta por Cadena (Und/Dia)</div><div class="chart-container" style="height:300px"><canvas id="chart-velocity"></canvas></div></div>
+    </div>
+    <div class="charts-grid" style="margin-top:1rem">
+      <div class="chart-card"><div class="chart-title">Precio Promedio por Division (CLP)</div><div class="chart-container" style="height:280px"><canvas id="chart-price-division"></canvas></div></div>
+      <div class="chart-card"><div class="chart-title">% Quiebre por Division</div><div class="chart-container" style="height:280px"><canvas id="chart-oos-division"></canvas></div></div>
+    </div>
+
+    <!-- Ranking por Tienda (drill-down granular) -->
+    <div class="section-header" style="margin-top:2rem">
+      <div class="section-title">Ranking por Tienda</div>
+      <div class="ranking-controls">
+        <select id="ranking-chain-select" class="filter-select"><option value="">Todas las cadenas</option></select>
+        <select id="ranking-sort" class="filter-select"><option value="units">Por Unidades</option><option value="clp">Por Venta CLP</option></select>
+      </div>
+    </div>
+    <div class="table-container">
+      <table class="data-table ranking-table">
+        <thead><tr><th>#</th><th>Cadena</th><th>Tienda</th><th>Region</th><th>Unidades</th><th>Venta CLP</th><th>Precio Prom.</th><th>% Total</th><th>Pareto</th><th>Div. Principal</th><th>Distribucion</th></tr></thead>
+        <tbody id="ranking-table-body"></tbody>
+      </table>
+    </div>
+    <div id="ranking-pagination" class="pagination-container"></div>
+
+    <!-- Exploratorio -->
+    <div class="section-header" style="margin-top:2rem"><div class="section-title">Mapa de Calor: Venta por Tienda x Dia (Top 20)</div><span class="section-badge badge-live">Real Data</span></div>
+    <div class="chart-card"><div id="heatmap-container" class="heatmap-container"></div></div>
+
+    <div class="charts-grid" style="margin-top:1.5rem">
+      <div class="chart-card"><div class="chart-title">Dispersion: Unidades vs Venta por Tienda</div><div class="chart-container" style="height:360px"><canvas id="chart-scatter"></canvas></div></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- TAB 3: LABORATORIO                               -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="tab-laboratorio" class="tab-panel">
+
+    <div class="section-header"><div class="section-title">Laboratorio de Vistas</div><span class="section-badge badge-mock">Testing</span></div>
+    <div class="lab-notice">Espacio de pruebas para vistas experimentales. Los datos de campanas son prototipos/demo mientras se integra la fuente real.</div>
+
+    <!-- Campaign Tracking (Demo Data) -->
+    <div class="section-header" style="margin-top:1.5rem"><div class="section-title">Seguimiento de Campanas</div><span class="section-badge badge-mock">Demo</span></div>
+    <div class="demo-notice">Los datos de campanas son de demostracion. Solo la campana Walmart (CAM-2026-001) tiene fotos reales. Las demas usan datos generados para prototipado.</div>
+
+    <div class="kpi-strip" style="margin-top:1rem">
+      <div class="kpi-card"><div class="kpi-label">% Implementacion</div><div class="kpi-value" id="kpi-implementation">0%</div><div class="kpi-sub" id="kpi-implementation-sub">-</div></div>
+      <div class="kpi-card"><div class="kpi-label">Campanas Activas</div><div class="kpi-value" id="kpi-campaigns">0</div><div class="kpi-sub" id="kpi-campaigns-sub">-</div></div>
+      <div class="kpi-card"><div class="kpi-label">PDV Implementados</div><div class="kpi-value" id="kpi-pdv">0</div><div class="kpi-sub" id="kpi-pdv-sub">-</div></div>
+      <div class="kpi-card"><div class="kpi-label">Cobertura Gestores</div><div class="kpi-value" id="kpi-coverage">0%</div><div class="kpi-sub" id="kpi-coverage-sub">-</div></div>
+      <div class="kpi-card"><div class="kpi-label">Licencias Activas</div><div class="kpi-value" id="kpi-licenses">0</div><div class="kpi-sub" id="kpi-licenses-sub">-</div></div>
+    </div>
+
+    <div id="campaign-grid" class="campaign-grid"></div>
+
+    <div class="section-header"><div class="section-title" id="campaign-detail-title">Detalle de Campana</div></div>
+    <div class="charts-grid">
+      <div class="chart-card"><div class="chart-title">Avance de Implementacion por Region</div><div class="chart-container"><canvas id="chart-implementation"></canvas></div></div>
+      <div class="chart-card"><div class="chart-title">Cobertura de Gestores</div><div class="chart-container"><canvas id="chart-coverage"></canvas></div></div>
+    </div>
+
+    <div class="section-header"><div class="section-title" id="store-table-title">Detalle por Sala</div></div>
+    <div class="table-container">
+      <table class="data-table">
+        <thead><tr><th>Sala</th><th>Region</th><th>Gestor</th><th>Estado</th><th>Cobertura</th><th>Grafica</th><th>Evidencia</th><th>Fecha Impl.</th></tr></thead>
+        <tbody id="store-table-body"></tbody>
+      </table>
+    </div>
+
+    <div class="section-header"><div class="section-title">Evidencia Fotografica</div><span class="section-badge badge-live">Carrusel</span></div>
+    <div id="gallery-controls" class="gallery-controls"></div>
+    <div id="photo-grid" class="photo-grid"></div>
+
+    <!-- Lab Charts (Real Data) -->
+    <div class="section-header" style="margin-top:2rem"><div class="section-title">Vistas Experimentales</div><span class="section-badge badge-mock">Prototipos</span></div>
+    <div class="charts-grid">
+      <div class="chart-card"><div class="chart-title">Velocidad por Division (Und/Dia + Tendencia)</div><div class="chart-container" style="height:320px"><canvas id="chart-lab-velocity-div"></canvas></div></div>
+    </div>
+
+    <div class="section-header" style="margin-top:2rem"><div class="section-title">Calidad de Datos</div><span class="section-badge badge-warning">Revision</span></div>
+
+    <div class="section-header" style="margin-top:1rem"><div class="section-title">SKUs Sin Clasificar</div><span class="section-badge badge-pending">Para revision</span></div>
+    <div class="table-container" style="margin-bottom:1.5rem">
+      <table class="data-table">
+        <thead><tr><th>Descripcion</th><th>Propiedad</th><th>Cadena</th><th>Tienda</th><th>Und.</th><th>Venta CLP</th><th>Cod. Interno</th></tr></thead>
+        <tbody id="unclassified-table-body"></tbody>
+      </table>
+    </div>
+
+    <div class="section-header" style="margin-top:1.5rem"><div class="section-title">Tiendas sin Region</div><span class="section-badge badge-warning">Datos Incompletos</span></div>
+    <p style="color:#94a3b8;font-size:0.8rem;margin-bottom:0.75rem">Tiendas donde InstoreView no tiene datos de direccion/region.</p>
+    <div class="table-container" style="margin-bottom:1.5rem">
+      <table class="data-table">
+        <thead><tr><th>#</th><th>Cadena</th><th>Codigo Local</th><th>Und</th><th>Venta CLP</th><th>SKUs</th><th>Dias c/Venta</th></tr></thead>
+        <tbody id="no-region-table-body"></tbody>
+      </table>
+    </div>
+
+    <div class="section-header"><div class="section-title">Explorador de Datos</div><span class="section-badge badge-pending">Top 50 tiendas</span></div>
+    <div class="table-container">
+      <table class="data-table">
+        <thead><tr><th>#</th><th>Tienda</th><th>Cadena</th><th>Region</th><th>Unidades</th><th>Venta CLP</th><th>Precio Prom.</th></tr></thead>
+        <tbody id="lab-data-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── Footer ────────────────────────────────────── -->
+  <footer class="footer">
+    The Brands Club &middot; C.A.R.S. &middot; 2026
+    <br>Datos: InstoreView API &middot; SQLite Data Warehouse &middot; <span id="footer-generated"></span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="data.js"></script>
+  <script src="real_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

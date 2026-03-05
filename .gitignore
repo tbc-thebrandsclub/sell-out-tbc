@@ -1,0 +1,35 @@
+# ── Secrets & API ──
+api/config.py
+
+# ── Data (DB, CSVs, pipeline status) ──
+data/
+*.db
+*.db-journal
+
+# ── Reference materials (not code) ──
+Brand_book/
+Ejemplos/
+Estructura tareas gestores/
+
+# ── Backups ──
+backups/
+
+# ── OS & IDE ──
+desktop.ini
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ── Python ──
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# ── Claude internal ──
+.claude/

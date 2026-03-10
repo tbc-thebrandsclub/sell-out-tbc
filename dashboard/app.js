@@ -1030,7 +1030,7 @@ function renderOOSByChainChart(stock) {
   const ctx = document.getElementById("chart-oos-chain");
   if (!ctx) return;
   if (chartInstances.oosChain) chartInstances.oosChain.destroy();
-  const chains = stock.oosByChain;
+  const chains = [...stock.oosByChain].sort((a, b) => b.oosRate - a.oosRate);
   chartInstances.oosChain = new Chart(ctx, {
     type: "bar",
     data: {
@@ -1139,11 +1139,17 @@ function renderDivisionMixChart(data) {
   const ctx = document.getElementById("chart-division-mix");
   if (!ctx || !data.divisionMixByChain) return;
   if (chartInstances.divMix) chartInstances.divMix.destroy();
-  const chains = data.divisionMixByChain.map(d => d.chain);
   const divs = data.byDivision.map(d => d.division);
+  // Sort chains by the sum of visible divisions (desc)
+  const sorted = [...data.divisionMixByChain].sort((a, b) => {
+    const sumA = divs.reduce((s, d) => s + (a.divisions[d]?.pct || 0), 0);
+    const sumB = divs.reduce((s, d) => s + (b.divisions[d]?.pct || 0), 0);
+    return sumB - sumA;
+  });
+  const chains = sorted.map(d => d.chain);
   const datasets = divs.map(div => ({
     label: div,
-    data: data.divisionMixByChain.map(d => d.divisions[div]?.pct || 0),
+    data: sorted.map(d => d.divisions[div]?.pct || 0),
     backgroundColor: (DIV_COLORS[div] || "#94a3b8") + "CC",
     borderColor: DIV_COLORS[div] || "#94a3b8",
     borderWidth: 1, borderRadius: 2
@@ -1340,7 +1346,7 @@ function renderVelocityChart(data) {
   const ctx = document.getElementById("chart-velocity");
   if (!ctx || !data.velocityMetrics) return;
   if (chartInstances.velocity) chartInstances.velocity.destroy();
-  const vel = data.velocityMetrics.velocityByChain;
+  const vel = [...data.velocityMetrics.velocityByChain].sort((a, b) => b.unitsPerDay - a.unitsPerDay);
   chartInstances.velocity = new Chart(ctx, {
     type: "bar",
     data: {
@@ -1363,17 +1369,16 @@ function renderPriceDivisionChart(data) {
   const ctx = document.getElementById("chart-price-division");
   if (!ctx || !data.priceMetrics) return;
   if (chartInstances.priceDiv) chartInstances.priceDiv.destroy();
-  const pd = data.priceMetrics.byDivision;
+  const pd = [...data.priceMetrics.byDivision].sort((a, b) => b.avgB2B - a.avgB2B);
   chartInstances.priceDiv = new Chart(ctx, {
     type: "bar",
     data: {
       labels: pd.map(d => d.division),
       datasets: [
-        { label: "Precio B2B", data: pd.map(d => d.avgB2B), backgroundColor: "rgba(99,102,241,0.7)", borderRadius: 4 },
-        { label: "PVP s/IVA", data: pd.map(d => d.avgPVP), backgroundColor: "rgba(249,115,22,0.5)", borderRadius: 4 }
+        { label: "Precio Promedio B2B", data: pd.map(d => d.avgB2B), backgroundColor: "rgba(99,102,241,0.7)", borderRadius: 4 }
       ]
     },
-    options: { ...chartOptionsBar("clp"), indexAxis: "y", scales: { x: chartScaleX("CLP"), y: chartScaleY() }, plugins: { legend: { position: "bottom", labels: { color: "#94a3b8", font: { size: 10 }, padding: 12 } } } }
+    options: { ...chartOptionsBar("clp"), indexAxis: "y", scales: { x: chartScaleX("CLP"), y: chartScaleY() }, plugins: { legend: { display: false } } }
   });
 }
 
@@ -1382,7 +1387,7 @@ function renderOOSDivisionChart(data) {
   const ctx = document.getElementById("chart-oos-division");
   if (!ctx || !data.stock?.oosByDivision) return;
   if (chartInstances.oosDiv) chartInstances.oosDiv.destroy();
-  const divs = data.stock.oosByDivision.filter(d => d.division !== 'Sin Clasificar');
+  const divs = data.stock.oosByDivision.filter(d => d.division !== 'Sin Clasificar').sort((a, b) => b.oosRate - a.oosRate);
   chartInstances.oosDiv = new Chart(ctx, {
     type: "bar",
     data: {

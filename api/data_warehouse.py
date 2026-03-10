@@ -8,22 +8,41 @@ Uso:
   python data_warehouse.py ingest-sales      # Solo sales
   python data_warehouse.py ingest-stock      # Solo stock
   python data_warehouse.py status            # Ver estado de la DB
+  python data_warehouse.py migrate           # Migrar DB antigua al nuevo esquema
 """
 
 import csv
 import gzip
 import json
 import os
+import re
 import shutil
 import sqlite3
 import sys
 from datetime import datetime
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
-DB_PATH = os.path.join(DATA_DIR, "sellout.db")
 PULLS_DIR = os.path.join(DATA_DIR, "pulls")
 
-# ── Mapping de columnas CSV → columnas DB ─────────────────
+# DB vive fuera de Google Drive para evitar problemas de sincronizacion
+DB_DIR = r"C:\TBC-Data"
+
+
+def _db_path_for_year(year=None):
+    """Retorna la ruta de la DB para un año específico."""
+    if year is None:
+        year = datetime.now().year
+    path = os.path.join(DB_DIR, f"sellout_{year}.db")
+    # Fallback a data/ si C:\TBC-Data no existe (ej: otro equipo)
+    if not os.path.exists(DB_DIR):
+        path = os.path.join(DATA_DIR, f"sellout_{year}.db")
+    return path
+
+
+# DB_PATH apunta al año actual por defecto
+DB_PATH = _db_path_for_year()
+
+# ── Mapping de columnas CSV -> columnas DB ─────────────────
 
 SALES_COLUMN_MAP = {
     'Fechas': 'fecha',
@@ -69,7 +88,7 @@ STOCK_COLUMN_MAP = {
 
 
 def parse_number(val):
-    """Parsea formato IV: '1.234,567890' → 1234.567890"""
+    """Parsea formato IV: '1.234,567890' -> 1234.567890"""
     if not val or val.strip() == '':
         return 0.0
     val = val.strip().strip('"')
@@ -80,25 +99,56 @@ def parse_number(val):
         return 0.0
 
 
-def get_connection():
-    conn = sqlite3.connect(DB_PATH)
+def _convert_date(date_str):
+    """Convierte dd-mm-yyyy -> YYYY-MM-DD. Si ya es ISO, lo deja."""
+    if not date_str:
+        return ''
+    date_str = date_str.strip().strip('"')
+    # Ya es YYYY-MM-DD
+    if re.match(r'^\d{4}-\d{2}-\d{2}$', date_str):
+        return date_str
+    # dd-mm-yyyy
+    m = re.match(r'^(\d{2})-(\d{2})-(\d{4})$', date_str)
+    if m:
+        return f"{m.group(3)}-{m.group(2)}-{m.group(1)}"
+    return date_str
+
+
+def _extract_local_code(local_str):
+    """Extrae código de tienda del campo local.
+    'J502 Jumbo - Av. Kennedy 9001' -> 'J502'
+    '0003 Hiper Lider - Av. Irarrázaval' -> '0003'
+    """
+    if not local_str:
+        return ''
+    parts = local_str.strip().split(' ', 1)
+    return parts[0] if parts else ''
+
+
+def get_connection(db_path=None):
+    if db_path is None:
+        db_path = DB_PATH
+    conn = sqlite3.connect(db_path)
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA synchronous=NORMAL")
     return conn
 
 
-def init_db():
+def init_db(db_path=None):
     """Crear tablas e indices."""
-    print(f"Inicializando DB en {DB_PATH}")
-    conn = get_connection()
+    if db_path is None:
+        db_path = DB_PATH
+    print(f"Inicializando DB en {db_path}")
+    conn = get_connection(db_path)
     c = conn.cursor()
 
     c.executescript("""
         CREATE TABLE IF NOT EXISTS sales (
             fecha TEXT,
-            local TEXT,
-            codigo_interno TEXT,
             sub_cadena TEXT,
+            local_code TEXT,
+            codigo_interno TEXT,
+            local TEXT,
             nombre_local TEXT,
             region TEXT,
             comuna TEXT,
@@ -118,7 +168,7 @@ def init_db():
             tipo_local TEXT,
             tipo_cc TEXT,
             cod_cadena TEXT,
-            PRIMARY KEY (fecha, local, codigo_interno)
+            PRIMARY KEY (fecha, sub_cadena, local_code, codigo_interno)
         );
 
         CREATE INDEX IF NOT EXISTS idx_sales_fecha ON sales(fecha);
@@ -127,9 +177,10 @@ def init_db():
 
         CREATE TABLE IF NOT EXISTS stock (
             fecha TEXT,
-            local TEXT,
-            codigo_interno TEXT,
             sub_cadena TEXT,
+            local_code TEXT,
+            codigo_interno TEXT,
+            local TEXT,
             nombre_local TEXT,
             propiedad TEXT,
             stock_local REAL,
@@ -139,7 +190,7 @@ def init_db():
             promedio_diario REAL,
             dias_stock_total REAL,
             quiebres REAL,
-            PRIMARY KEY (fecha, local, codigo_interno)
+            PRIMARY KEY (fecha, sub_cadena, local_code, codigo_interno)
         );
 
         CREATE INDEX IF NOT EXISTS idx_stock_fecha ON stock(fecha);
@@ -151,7 +202,7 @@ def init_db():
             data_type TEXT,
             records_total INTEGER,
             records_new INTEGER,
-            records_duplicate INTEGER,
+            records_replaced INTEGER,
             date_range_from TEXT,
             date_range_to TEXT
         );
@@ -181,11 +232,26 @@ def _detect_delimiter(filepath, encoding):
     return ';' if first_line.count(';') > first_line.count(',') else ','
 
 
+def _transform_row(values, db_cols):
+    """Aplica transformaciones: fecha -> ISO, extrae local_code."""
+    fecha_idx = db_cols.index('fecha')
+    values[fecha_idx] = _convert_date(values[fecha_idx])
+
+    local_idx = db_cols.index('local')
+    local_code = _extract_local_code(values[local_idx])
+
+    # Insertar local_code después de sub_cadena (posición en db_cols)
+    lc_idx = db_cols.index('local_code')
+    values[lc_idx] = local_code
+
+    return values
+
+
 def ingest_csv(filepath, table, column_map, numeric_fields):
     """Ingesta un CSV a la tabla SQLite especificada."""
     if not os.path.exists(filepath):
         print(f"  Archivo no encontrado: {filepath}")
-        return 0, 0
+        return 0, 0, 0
 
     encoding = _detect_encoding(filepath)
     delimiter = _detect_delimiter(filepath, encoding)
@@ -193,16 +259,28 @@ def ingest_csv(filepath, table, column_map, numeric_fields):
     conn = get_connection()
     cursor = conn.cursor()
 
-    # Contar registros antes
     before_count = cursor.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
 
+    pk_cols = ['fecha', 'sub_cadena', 'local_code', 'codigo_interno']
+    existing_pks = set()
+    for r in cursor.execute(f"SELECT {','.join(pk_cols)} FROM {table}"):
+        existing_pks.add(r)
+
+    # Build column list: column_map values + local_code (computed)
     db_cols = list(column_map.values())
+    # Insert local_code after sub_cadena
+    sc_idx = db_cols.index('sub_cadena')
+    db_cols.insert(sc_idx + 1, 'local_code')
+
     placeholders = ','.join(['?'] * len(db_cols))
     cols_str = ','.join(db_cols)
-    sql = f"INSERT OR IGNORE INTO {table} ({cols_str}) VALUES ({placeholders})"
+    sql = f"INSERT OR REPLACE INTO {table} ({cols_str}) VALUES ({placeholders})"
 
     batch = []
     total_read = 0
+    replaced = 0
+
+    pk_indices = [db_cols.index(c) for c in pk_cols]
 
     with open(filepath, 'r', encoding=encoding) as f:
         reader = csv.DictReader(f, delimiter=delimiter)
@@ -214,6 +292,16 @@ def ingest_csv(filepath, table, column_map, numeric_fields):
                     values.append(parse_number(raw_val))
                 else:
                     values.append(raw_val.strip().strip('"') if raw_val else '')
+
+            # Insert placeholder for local_code
+            values.insert(sc_idx + 1, '')
+
+            # Transform: convert date, extract local_code
+            _transform_row(values, db_cols)
+
+            pk = tuple(values[i] for i in pk_indices)
+            if pk in existing_pks:
+                replaced += 1
             batch.append(tuple(values))
             total_read += 1
 
@@ -226,20 +314,18 @@ def ingest_csv(filepath, table, column_map, numeric_fields):
 
     conn.commit()
 
-    # Contar registros despues
     after_count = cursor.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
     new_records = after_count - before_count
-    duplicates = total_read - new_records
 
     conn.close()
-    return total_read, new_records
+    return total_read, new_records, replaced
 
 
 def ingest_json(filepath, table, column_map, numeric_fields):
     """Ingesta un JSON (array de objetos) a la tabla SQLite."""
     if not os.path.exists(filepath):
         print(f"  Archivo no encontrado: {filepath}")
-        return 0, 0
+        return 0, 0, 0
 
     with open(filepath, 'r', encoding='utf-8') as f:
         data = json.load(f)
@@ -249,13 +335,24 @@ def ingest_json(filepath, table, column_map, numeric_fields):
 
     before_count = cursor.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
 
+    pk_cols = ['fecha', 'sub_cadena', 'local_code', 'codigo_interno']
+    existing_pks = set()
+    for r in cursor.execute(f"SELECT {','.join(pk_cols)} FROM {table}"):
+        existing_pks.add(r)
+
     db_cols = list(column_map.values())
+    sc_idx = db_cols.index('sub_cadena')
+    db_cols.insert(sc_idx + 1, 'local_code')
+
     placeholders = ','.join(['?'] * len(db_cols))
     cols_str = ','.join(db_cols)
-    sql = f"INSERT OR IGNORE INTO {table} ({cols_str}) VALUES ({placeholders})"
+    sql = f"INSERT OR REPLACE INTO {table} ({cols_str}) VALUES ({placeholders})"
 
     batch = []
     total_read = 0
+    replaced = 0
+
+    pk_indices = [db_cols.index(c) for c in pk_cols]
 
     for row in data:
         values = []
@@ -265,6 +362,13 @@ def ingest_json(filepath, table, column_map, numeric_fields):
                 values.append(parse_number(str(raw_val)) if raw_val else 0.0)
             else:
                 values.append(str(raw_val).strip().strip('"') if raw_val else '')
+
+        values.insert(sc_idx + 1, '')
+        _transform_row(values, db_cols)
+
+        pk = tuple(values[i] for i in pk_indices)
+        if pk in existing_pks:
+            replaced += 1
         batch.append(tuple(values))
         total_read += 1
 
@@ -279,7 +383,7 @@ def ingest_json(filepath, table, column_map, numeric_fields):
     after_count = cursor.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
     new_records = after_count - before_count
     conn.close()
-    return total_read, new_records
+    return total_read, new_records, replaced
 
 
 def ingest_sales():
@@ -291,21 +395,18 @@ def ingest_sales():
     json_path = os.path.join(DATA_DIR, "sales_latest.json")
 
     if os.path.exists(csv_path):
-        total, new = ingest_csv(csv_path, 'sales', SALES_COLUMN_MAP, numeric_fields)
+        total, new, replaced = ingest_csv(csv_path, 'sales', SALES_COLUMN_MAP, numeric_fields)
     elif os.path.exists(json_path):
-        total, new = ingest_json(json_path, 'sales', SALES_COLUMN_MAP, numeric_fields)
+        total, new, replaced = ingest_json(json_path, 'sales', SALES_COLUMN_MAP, numeric_fields)
     else:
         print("  No se encontro sales_latest.csv ni .json")
         return
 
-    dupes = total - new
-    print(f"  Leidos: {total:,} | Nuevos: {new:,} | Duplicados: {dupes:,}")
+    unchanged = total - new - replaced
+    print(f"  Leidos: {total:,} | Nuevos: {new:,} | Actualizados: {replaced:,} | Sin cambio: {unchanged:,}")
 
-    # Backup comprimido
     _backup_csv(csv_path, "sales")
-
-    # Log
-    _log_pull('sales', total, new, dupes)
+    _log_pull('sales', total, new, replaced)
 
 
 def ingest_stock():
@@ -318,18 +419,18 @@ def ingest_stock():
     json_path = os.path.join(DATA_DIR, "stock_latest.json")
 
     if os.path.exists(csv_path):
-        total, new = ingest_csv(csv_path, 'stock', STOCK_COLUMN_MAP, numeric_fields)
+        total, new, replaced = ingest_csv(csv_path, 'stock', STOCK_COLUMN_MAP, numeric_fields)
     elif os.path.exists(json_path):
-        total, new = ingest_json(json_path, 'stock', STOCK_COLUMN_MAP, numeric_fields)
+        total, new, replaced = ingest_json(json_path, 'stock', STOCK_COLUMN_MAP, numeric_fields)
     else:
         print("  No se encontro stock_latest.csv ni .json")
         return
 
-    dupes = total - new
-    print(f"  Leidos: {total:,} | Nuevos: {new:,} | Duplicados: {dupes:,}")
+    unchanged = total - new - replaced
+    print(f"  Leidos: {total:,} | Nuevos: {new:,} | Actualizados: {replaced:,} | Sin cambio: {unchanged:,}")
 
     _backup_csv(csv_path, "stock")
-    _log_pull('stock', total, new, dupes)
+    _log_pull('stock', total, new, replaced)
 
 
 def _backup_csv(csv_path, data_type):
@@ -345,29 +446,146 @@ def _backup_csv(csv_path, data_type):
     print(f"  Backup: {dest}")
 
 
-def _log_pull(data_type, total, new, dupes):
+def _log_pull(data_type, total, new, replaced):
     """Registra la ingesta en pull_log."""
     conn = get_connection()
     cursor = conn.cursor()
 
-    # Obtener rango de fechas
-    table = data_type  # 'sales' o 'stock'
+    table = data_type
     row = cursor.execute(f"SELECT MIN(fecha), MAX(fecha) FROM {table}").fetchone()
     date_from = row[0] if row else ''
     date_to = row[1] if row else ''
 
     cursor.execute(
-        "INSERT INTO pull_log (pull_date, data_type, records_total, records_new, records_duplicate, date_range_from, date_range_to) VALUES (?, ?, ?, ?, ?, ?, ?)",
-        (datetime.now().isoformat(), data_type, total, new, dupes, date_from, date_to)
+        "INSERT INTO pull_log (pull_date, data_type, records_total, records_new, records_replaced, date_range_from, date_range_to) VALUES (?, ?, ?, ?, ?, ?, ?)",
+        (datetime.now().isoformat(), data_type, total, new, replaced, date_from, date_to)
     )
     conn.commit()
     conn.close()
 
 
+def migrate_old_db():
+    """Migra la DB antigua (sellout.db) al nuevo esquema (sellout_YYYY.db)."""
+    old_path = os.path.join(DATA_DIR, "sellout.db")
+    if not os.path.exists(old_path):
+        print("No se encontro sellout.db para migrar.")
+        return
+
+    print(f"Migrando {old_path} -> nuevo esquema...")
+    old_conn = sqlite3.connect(old_path)
+    old_c = old_conn.cursor()
+
+    # Detectar años presentes en sales
+    years = set()
+    for row in old_c.execute("SELECT DISTINCT fecha FROM sales"):
+        date_str = row[0]
+        m = re.match(r'^(\d{2})-(\d{2})-(\d{4})$', date_str)
+        if m:
+            years.add(int(m.group(3)))
+        m2 = re.match(r'^(\d{4})-', date_str)
+        if m2:
+            years.add(int(m2.group(1)))
+    for row in old_c.execute("SELECT DISTINCT fecha FROM stock"):
+        date_str = row[0]
+        m = re.match(r'^(\d{2})-(\d{2})-(\d{4})$', date_str)
+        if m:
+            years.add(int(m.group(3)))
+        m2 = re.match(r'^(\d{4})-', date_str)
+        if m2:
+            years.add(int(m2.group(1)))
+
+    if not years:
+        print("  No se encontraron datos en la DB antigua.")
+        old_conn.close()
+        return
+
+    print(f"  Anos encontrados: {sorted(years)}")
+
+    for year in sorted(years):
+        new_path = _db_path_for_year(year)
+        print(f"\n  Migrando año {year} -> {os.path.basename(new_path)}")
+        init_db(new_path)
+        new_conn = get_connection(new_path)
+        new_c = new_conn.cursor()
+
+        # Migrate sales
+        count = 0
+        batch = []
+        for row in old_c.execute("SELECT * FROM sales"):
+            fecha_old = row[0]
+            fecha_iso = _convert_date(fecha_old)
+            # Filtrar por año
+            if not fecha_iso.startswith(str(year)):
+                continue
+            local_full = row[1]
+            local_code = _extract_local_code(local_full)
+            codigo_interno = row[2]
+            sub_cadena = row[3]
+            rest = row[4:]  # nombre_local onwards
+
+            new_row = (fecha_iso, sub_cadena, local_code, codigo_interno, local_full) + rest
+            batch.append(new_row)
+            count += 1
+
+            if len(batch) >= 5000:
+                new_c.executemany(
+                    f"INSERT OR REPLACE INTO sales VALUES ({','.join(['?']*len(new_row))})",
+                    batch
+                )
+                batch = []
+
+        if batch:
+            new_c.executemany(
+                f"INSERT OR REPLACE INTO sales VALUES ({','.join(['?']*len(batch[0]))})",
+                batch
+            )
+        new_conn.commit()
+        print(f"    Sales: {count:,} registros migrados")
+
+        # Migrate stock
+        count = 0
+        batch = []
+        for row in old_c.execute("SELECT * FROM stock"):
+            fecha_old = row[0]
+            fecha_iso = _convert_date(fecha_old)
+            if not fecha_iso.startswith(str(year)):
+                continue
+            local_full = row[1]
+            local_code = _extract_local_code(local_full)
+            codigo_interno = row[2]
+            sub_cadena = row[3]
+            rest = row[4:]
+
+            new_row = (fecha_iso, sub_cadena, local_code, codigo_interno, local_full) + rest
+            batch.append(new_row)
+            count += 1
+
+            if len(batch) >= 5000:
+                new_c.executemany(
+                    f"INSERT OR REPLACE INTO stock VALUES ({','.join(['?']*len(new_row))})",
+                    batch
+                )
+                batch = []
+
+        if batch:
+            new_c.executemany(
+                f"INSERT OR REPLACE INTO stock VALUES ({','.join(['?']*len(batch[0]))})",
+                batch
+            )
+        new_conn.commit()
+        print(f"    Stock: {count:,} registros migrados")
+
+        new_conn.close()
+
+    old_conn.close()
+    print(f"\nMigracion completa. La DB antigua se conserva como backup en {old_path}")
+
+
 def show_status():
     """Muestra estado de la DB."""
     if not os.path.exists(DB_PATH):
-        print("DB no existe. Ejecutar: python data_warehouse.py init")
+        print(f"DB no existe: {DB_PATH}")
+        print("Ejecutar: python data_warehouse.py init")
         return
 
     conn = get_connection()
@@ -398,7 +616,7 @@ def show_status():
     if pulls:
         print(f"\n  ULTIMAS INGESTAS:")
         for p in pulls:
-            print(f"    [{p[1][:16]}] {p[2]}: {p[4]:,} nuevos de {p[3]:,} leidos")
+            print(f"    [{p[1][:16]}] {p[2]}: {p[4]:,} nuevos, {p[5]:,} actualizados de {p[3]:,} leidos")
 
     conn.close()
     print()
@@ -406,7 +624,7 @@ def show_status():
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Uso: python data_warehouse.py [init|ingest|ingest-sales|ingest-stock|status]")
+        print("Uso: python data_warehouse.py [init|ingest|ingest-sales|ingest-stock|status|migrate]")
         sys.exit(1)
 
     cmd = sys.argv[1]
@@ -429,6 +647,8 @@ if __name__ == "__main__":
         ingest_stock()
     elif cmd == 'status':
         show_status()
+    elif cmd == 'migrate':
+        migrate_old_db()
     else:
         print(f"Comando desconocido: {cmd}")
         sys.exit(1)

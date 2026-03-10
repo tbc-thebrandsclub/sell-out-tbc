@@ -18,7 +18,16 @@ from datetime import datetime, timedelta
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 DASHBOARD_DIR = os.path.join(BASE_DIR, "dashboard")
-DB_PATH = os.path.join(DATA_DIR, "sellout.db")
+import datetime as _dt
+_CURRENT_YEAR = _dt.datetime.now().year
+# DB vive fuera de Google Drive para evitar problemas de sincronizacion
+_DB_DIR = r"C:\TBC-Data"
+DB_PATH = os.path.join(_DB_DIR, f"sellout_{_CURRENT_YEAR}.db")
+# Fallback a data/ si C:\TBC-Data no existe
+if not os.path.exists(DB_PATH):
+    DB_PATH = os.path.join(DATA_DIR, f"sellout_{_CURRENT_YEAR}.db")
+if not os.path.exists(DB_PATH):
+    DB_PATH = os.path.join(DATA_DIR, "sellout.db")
 
 # ── Normalización de divisiones ────────────────────────────
 
@@ -97,12 +106,12 @@ def load_sales(year=None, days_back=None):
     params = []
 
     if days_back:
-        cutoff = (datetime.now() - timedelta(days=days_back)).strftime('%d-%m-%Y')
+        cutoff = (datetime.now() - timedelta(days=days_back)).strftime('%Y-%m-%d')
         query += " WHERE fecha >= ?"
         params.append(cutoff)
     elif year:
         query += " WHERE fecha LIKE ?"
-        params.append(f"%-{year}")
+        params.append(f"{year}-%")
 
     rows = conn.execute(query, params).fetchall()
     conn.close()
@@ -383,37 +392,68 @@ def process(year=2026, days_back=None):
 
     # ── 11. Ranking por Cadena → Tienda (con división) ───
     chain_store_div = defaultdict(lambda: defaultdict(lambda: {
-        "units": 0, "clp": 0, "region": "", "local": "",
-        "byDiv": defaultdict(lambda: {"units": 0, "clp": 0})
+        "units": 0, "clp": 0, "costos": 0, "region": "", "local": "",
+        "byDiv": defaultdict(lambda: {"units": 0, "clp": 0, "costos": 0})
     }))
     for r in sales:
         chain = r.get('sub_cadena', '')
         store = r.get('nombre_local', '') or r.get('local', '')
         chain_store_div[chain][store]["units"] += r['_units']
         chain_store_div[chain][store]["clp"] += r['_clp']
+        chain_store_div[chain][store]["costos"] += r['_costos']
         chain_store_div[chain][store]["region"] = r.get('region', '')
         chain_store_div[chain][store]["local"] = r.get('local', '')
         div = r['_division']
         if div != 'Sin Clasificar':
             chain_store_div[chain][store]["byDiv"][div]["units"] += r['_units']
             chain_store_div[chain][store]["byDiv"][div]["clp"] += r['_clp']
+            chain_store_div[chain][store]["byDiv"][div]["costos"] += r['_costos']
+
+    # Stock por tienda (para ranking) — usar fecha más reciente
+    store_stock_map = {}
+    if stock_data:
+        stock_dates_set = set(r.get('fecha', '') for r in stock_data if r.get('fecha'))
+        latest_stock_date = max(stock_dates_set) if stock_dates_set else None
+        if latest_stock_date:
+            for r in stock_data:
+                if r.get('fecha', '') != latest_stock_date:
+                    continue
+                chain = r.get('sub_cadena', '')
+                sname = r.get('nombre_local', '') or r.get('local', '')
+                key = (chain, sname)
+                if key not in store_stock_map:
+                    store_stock_map[key] = {"stock_total": 0, "promedio_diario": 0}
+                store_stock_map[key]["stock_total"] += (r.get('stock_total', 0) or 0)
+                store_stock_map[key]["promedio_diario"] += (r.get('promedio_diario', 0) or 0)
+
+    # Semanas en el período para cálculo de velocidad
+    num_weeks_period = max(len(dates_sorted) / 7, 1)
 
     ranking_by_chain_store = {}
     for chain, stores in chain_store_div.items():
-        store_list = sorted([
-            {
+        store_list = []
+        for name, d in stores.items():
+            margin = round((d["clp"] - d["costos"]) / d["clp"] * 100, 1) if d["clp"] > 0 else 0
+            stock_info = store_stock_map.get((chain, name))
+            stock_units = round(stock_info["stock_total"]) if stock_info else 0
+            weekly_sales = d["units"] / num_weeks_period if num_weeks_period > 0 else 0
+            weeks_stock = round(stock_units / weekly_sales, 1) if weekly_sales > 0 else 0
+            store_list.append({
                 "store": name,
                 "storeCode": d["local"],
                 "region": d["region"],
                 "units": round(d["units"]),
                 "clp": round(d["clp"]),
+                "costos": round(d["costos"]),
+                "margin": margin,
+                "stockUnits": stock_units,
+                "weeksOfStock": weeks_stock,
                 "byDivision": {
-                    div: {"units": round(dd["units"]), "clp": round(dd["clp"])}
+                    div: {"units": round(dd["units"]), "clp": round(dd["clp"]), "costos": round(dd["costos"])}
                     for div, dd in d["byDiv"].items()
                 }
-            }
-            for name, d in stores.items()
-        ], key=lambda x: -x["units"])
+            })
+        store_list.sort(key=lambda x: -x["units"])
         ranking_by_chain_store[chain] = store_list
 
     # ── 12. Mix de División por Cadena ───────────────────
@@ -679,7 +719,7 @@ def process(year=2026, days_back=None):
         chain = r.get('sub_cadena', '')
         fecha = r.get('fecha', '')
         if chain and fecha:
-            dt = parse_date_ddmmyyyy(fecha)
+            dt = parse_date_iso(fecha) or parse_date_ddmmyyyy(fecha)
             if dt:
                 chain_latest[chain].append(dt)
 
@@ -825,6 +865,7 @@ def process(year=2026, days_back=None):
         "byDivision": by_division,
         "byDivisionDaily": by_division_daily,
         "rankingByChainStore": ranking_by_chain_store,
+        "rankingWeeksPeriod": round(num_weeks_period, 1),
         "divisionMixByChain": division_mix_by_chain,
         "velocityMetrics": velocity_metrics,
         "paretoAnalysis": pareto_analysis,

@@ -190,12 +190,12 @@
       <div class="section-title">Ranking por Tienda</div>
       <div class="ranking-controls">
         <select id="ranking-chain-select" class="filter-select"><option value="">Todas las cadenas</option></select>
-        <select id="ranking-sort" class="filter-select"><option value="units">Por Unidades</option><option value="clp">Por Venta CLP</option></select>
+        <select id="ranking-sort" class="filter-select"><option value="units">Por Unidades</option><option value="clp">Por Venta CLP</option><option value="margin">Por % Margen</option><option value="stockUnits">Por Stock</option><option value="weeksOfStock">Por Sem. Stock</option></select>
       </div>
     </div>
     <div class="table-container">
       <table class="data-table ranking-table">
-        <thead><tr><th>#</th><th>Cadena</th><th>Tienda</th><th>Region</th><th>Unidades</th><th>Venta CLP</th><th>Precio Prom.</th><th>% Total</th><th>Pareto</th><th>Div. Principal</th><th>Distribucion</th></tr></thead>
+        <thead><tr><th>#</th><th>Cadena</th><th>Tienda</th><th>Region</th><th>Unidades</th><th>Venta CLP</th><th>% Margen</th><th>Stock (und)</th><th id="th-weeks-stock">Sem. Stock</th><th>% Total</th><th>Pareto</th><th>Div. Principal</th><th>Distribucion</th></tr></thead>
         <tbody id="ranking-table-body"></tbody>
       </table>
     </div>

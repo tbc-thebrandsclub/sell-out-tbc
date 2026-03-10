@@ -21,7 +21,14 @@ import sys
 from datetime import datetime, timedelta
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
-DB_PATH = os.path.join(DATA_DIR, "sellout.db")
+_CURRENT_YEAR = datetime.now().year
+# DB vive fuera de Google Drive para evitar problemas de sincronizacion
+_DB_DIR = r"C:\TBC-Data"
+DB_PATH = os.path.join(_DB_DIR, f"sellout_{_CURRENT_YEAR}.db")
+if not os.path.exists(DB_PATH):
+    DB_PATH = os.path.join(DATA_DIR, f"sellout_{_CURRENT_YEAR}.db")
+if not os.path.exists(DB_PATH):
+    DB_PATH = os.path.join(DATA_DIR, "sellout.db")
 STATUS_PATH = os.path.join(DATA_DIR, "pipeline_status.json")
 
 # ── Umbrales de validacion ──────────────────────────────
@@ -101,11 +108,11 @@ def validate_db():
     results = []
 
     if not os.path.exists(DB_PATH):
-        results.append(('FAIL', 'DB: sellout.db no existe'))
+        results.append(('FAIL', f'DB: {os.path.basename(DB_PATH)} no existe'))
         return results, {}
 
     size_mb = os.path.getsize(DB_PATH) / (1024 * 1024)
-    results.append(('OK', 'DB: sellout.db (%.1f MB)' % size_mb))
+    results.append(('OK', 'DB: %s (%.1f MB)' % (os.path.basename(DB_PATH), size_mb)))
 
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
@@ -166,12 +173,15 @@ def validate_db():
         else:
             results.append(('OK', 'DB Stock: %.1f%% OOS' % oos_pct))
 
-        # Freshness check - parse dates dd-mm-yyyy
+        # Freshness check - parse dates YYYY-MM-DD (or dd-mm-yyyy fallback)
         try:
             latest = sales_dates[1]
             parts = latest.split('-')
             if len(parts) == 3:
-                latest_dt = datetime(int(parts[2]), int(parts[1]), int(parts[0]))
+                if len(parts[0]) == 4:  # YYYY-MM-DD
+                    latest_dt = datetime(int(parts[0]), int(parts[1]), int(parts[2]))
+                else:  # dd-mm-yyyy fallback
+                    latest_dt = datetime(int(parts[2]), int(parts[1]), int(parts[0]))
                 days_old = (datetime.now() - latest_dt).days
                 db_meta['days_since_latest'] = days_old
 

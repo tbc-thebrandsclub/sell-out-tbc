@@ -402,7 +402,14 @@ function getFilteredData() {
     Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
       const filtered = stores.filter(s => s.byDivision && s.byDivision[f.division]).map(s => {
         const divData = s.byDivision[f.division];
-        return { ...s, units: divData.units, clp: divData.clp };
+        return {
+          ...s,
+          units: divData.units,
+          clp: divData.clp,
+          costos: divData.costos || 0,
+          margin: divData.clp > 0 ? Math.round((divData.clp - (divData.costos || 0)) / divData.clp * 1000) / 10 : 0,
+          byDivision: { [f.division]: divData }
+        };
       });
       if (filtered.length) filteredRanking[ch] = filtered;
     });
@@ -412,6 +419,50 @@ function getFilteredData() {
   let byDivision = src.byDivision || [];
   if (f.division) {
     byDivision = byDivision.filter(d => d.division === f.division);
+  }
+
+  // ── Filtrar velocityMetrics ──
+  let velocityMetrics = src.velocityMetrics ? { ...src.velocityMetrics } : null;
+  if (velocityMetrics) {
+    let velByChain = velocityMetrics.velocityByChain || [];
+    if (f.chain) {
+      velByChain = velByChain.filter(v => v.chain === f.chain);
+    }
+    if (f.division) {
+      // Recalcular velocidad por cadena usando solo la division filtrada del ranking
+      const activeDays = velocityMetrics.activeDays || 1;
+      velByChain = Object.entries(rankingByChainStore).map(([ch, stores]) => {
+        const totalUnits = stores.reduce((s, st) => s + st.units, 0);
+        return { chain: ch, unitsPerDay: Math.round(totalUnits / activeDays), trend: 0 };
+      }).filter(v => v.unitsPerDay > 0).sort((a, b) => b.unitsPerDay - a.unitsPerDay);
+    }
+    velocityMetrics = { ...velocityMetrics, velocityByChain: velByChain };
+  }
+
+  // ── Filtrar priceMetrics ──
+  let priceMetrics = src.priceMetrics ? { ...src.priceMetrics } : null;
+  if (priceMetrics && f.division) {
+    priceMetrics = {
+      ...priceMetrics,
+      byDivision: (priceMetrics.byDivision || []).filter(d => d.division === f.division),
+    };
+  }
+
+  // ── Filtrar stock OOS ──
+  let stock = src.stock ? { ...src.stock } : null;
+  if (stock) {
+    if (f.division) {
+      stock = {
+        ...stock,
+        oosByDivision: (stock.oosByDivision || []).filter(d => d.division === f.division),
+        oosByChain: f.chain ? (stock.oosByChain || []).filter(d => d.chain === f.chain) : stock.oosByChain,
+      };
+    } else if (f.chain) {
+      stock = {
+        ...stock,
+        oosByChain: (stock.oosByChain || []).filter(d => d.chain === f.chain),
+      };
+    }
   }
 
   return {
@@ -425,6 +476,9 @@ function getFilteredData() {
     byDivisionDaily,
     rankingByChainStore,
     byDivision,
+    velocityMetrics,
+    priceMetrics,
+    stock,
   };
 }
 
@@ -1134,7 +1188,8 @@ function renderStoreRanking(data, chain, sortBy) {
     stores = Object.entries(data.rankingByChainStore).flatMap(([ch, ss]) => ss.map(s => ({ ...s, _chain: ch })));
   }
 
-  stores.sort((a, b) => b[sortBy === 'clp' ? 'clp' : 'units'] - a[sortBy === 'clp' ? 'clp' : 'units']);
+  const sortKey = ['clp', 'margin', 'stockUnits', 'weeksOfStock'].includes(sortBy) ? sortBy : 'units';
+  stores.sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
 
   rankingState.stores = stores;
   rankingState.page = 1;
@@ -1162,13 +1217,26 @@ function renderRankingPage_() {
     return totalUnits > 0 ? (cumUnits / totalUnits * 100) : 0;
   });
 
+  // Update weeks-of-stock header with period info
+  const thWeeks = document.getElementById("th-weeks-stock");
+  const src = typeof REAL_SELLOUT !== 'undefined' ? REAL_SELLOUT : null;
+  const weeksPeriod = src ? src.rankingWeeksPeriod : 0;
+  if (thWeeks && weeksPeriod) thWeeks.textContent = `Sem. Stock (${weeksPeriod}sem)`;
+
   pageStores.forEach((store, idx) => {
     const globalIdx = start + idx;
     const divEntries = Object.entries(store.byDivision || {}).sort((a, b) => b[1].units - a[1].units);
     const topDiv = divEntries[0] ? divEntries[0][0] : '-';
     const pct = totalUnits > 0 ? (store.units / totalUnits * 100).toFixed(1) : 0;
-    const avgPrice = store.units > 0 ? Math.round(store.clp / store.units) : 0;
     const paretoPct = paretoPcts[globalIdx].toFixed(1);
+    const margin = store.margin != null ? store.margin : (store.clp > 0 ? Math.round((store.clp - (store.costos || 0)) / store.clp * 1000) / 10 : 0);
+    const stockUnits = store.stockUnits || 0;
+    const weeksOfStock = store.weeksOfStock || 0;
+
+    // Color-code margin
+    const marginColor = margin >= 30 ? '#22c55e' : margin >= 20 ? '#eab308' : '#ef4444';
+    // Color-code weeks of stock
+    const weeksColor = weeksOfStock === 0 ? '#64748b' : weeksOfStock <= 2 ? '#ef4444' : weeksOfStock <= 6 ? '#eab308' : '#22c55e';
 
     // Rich tooltip for distribution
     const tooltipRows = divEntries.map(([div, d]) => {
@@ -1190,7 +1258,9 @@ function renderRankingPage_() {
       <td>${store.region}</td>
       <td class="number-cell">${store.units.toLocaleString("es-CL")}</td>
       <td class="number-cell">${formatCLP(store.clp)}</td>
-      <td class="number-cell">${formatCLP(avgPrice)}</td>
+      <td class="number-cell" style="color:${marginColor};font-weight:600">${margin}%</td>
+      <td class="number-cell">${stockUnits > 0 ? stockUnits.toLocaleString("es-CL") : '-'}</td>
+      <td class="number-cell" style="color:${weeksColor};font-weight:500">${weeksOfStock > 0 ? weeksOfStock : '-'}</td>
       <td class="number-cell">${pct}%</td>
       <td class="pareto-cell">${paretoPct}%<div class="pareto-bar"><div class="pareto-fill" style="width:${paretoPct}%"></div></div></td>
       <td>${topDiv}</td>

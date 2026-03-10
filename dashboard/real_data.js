@@ -1,19 +1,19 @@
 // Auto-generated from IV API data - DO NOT EDIT MANUALLY
-// Generated: 2026-03-05 12:18:43
-// Source: 67219 sales records, 20 days
-// Blocks: 32 data sections
+// Generated: 2026-03-10 12:32:02
+// Source: 84865 sales records, 25 days
+// Blocks: 33 data sections
 
 const REAL_SELLOUT = {
   "_meta": {
-    "generatedAt": "2026-03-05T12:18:42.879817",
-    "salesRecords": 67219,
+    "generatedAt": "2026-03-10T12:32:02.026799",
+    "salesRecords": 84865,
     "salesDateFrom": "2026-02-12",
-    "salesDateTo": "2026-03-03",
-    "salesDays": 20,
-    "stockRecords": 561091,
+    "salesDateTo": "2026-03-08",
+    "salesDays": 25,
+    "stockRecords": 1071706,
     "daysSinceLatest": 2,
     "freshness": "ok",
-    "pipelineStatus": "warning",
+    "pipelineStatus": "ok",
     "chains": [
       "Acuenta",
       "Cencosud",
@@ -33,122 +33,122 @@ const REAL_SELLOUT = {
     "chainFreshness": [
       {
         "chain": "Acuenta",
-        "lastUpdate": "2026-03-03",
+        "lastUpdate": "2026-03-08",
         "daysOld": 2,
         "status": "fresh",
-        "records": 10
+        "records": 11
       },
       {
         "chain": "Ekono",
-        "lastUpdate": "2026-03-03",
+        "lastUpdate": "2026-03-08",
         "daysOld": 2,
         "status": "fresh",
-        "records": 49
-      },
-      {
-        "chain": "Falabella",
-        "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
-        "records": 2967
+        "records": 61
       },
       {
         "chain": "Hiper Lider",
-        "lastUpdate": "2026-03-03",
+        "lastUpdate": "2026-03-08",
         "daysOld": 2,
         "status": "fresh",
-        "records": 4670
+        "records": 9837
       },
       {
         "chain": "Hites",
-        "lastUpdate": "2026-03-03",
+        "lastUpdate": "2026-03-08",
         "daysOld": 2,
         "status": "fresh",
-        "records": 7925
+        "records": 9521
+      },
+      {
+        "chain": "Lider Express",
+        "lastUpdate": "2026-03-08",
+        "daysOld": 2,
+        "status": "fresh",
+        "records": 25
+      },
+      {
+        "chain": "Paris",
+        "lastUpdate": "2026-03-08",
+        "daysOld": 2,
+        "status": "fresh",
+        "records": 11839
+      },
+      {
+        "chain": "Walmart",
+        "lastUpdate": "2026-03-08",
+        "daysOld": 2,
+        "status": "fresh",
+        "records": 130
+      },
+      {
+        "chain": "Falabella",
+        "lastUpdate": "2026-03-07",
+        "daysOld": 3,
+        "status": "warning",
+        "records": 3426
+      },
+      {
+        "chain": "Jumbo",
+        "lastUpdate": "2026-03-07",
+        "daysOld": 3,
+        "status": "warning",
+        "records": 23717
+      },
+      {
+        "chain": "Ripley",
+        "lastUpdate": "2026-03-07",
+        "daysOld": 3,
+        "status": "warning",
+        "records": 21565
+      },
+      {
+        "chain": "Tottus",
+        "lastUpdate": "2026-03-07",
+        "daysOld": 3,
+        "status": "warning",
+        "records": 378
+      },
+      {
+        "chain": "La Polar",
+        "lastUpdate": "2026-03-06",
+        "daysOld": 4,
+        "status": "warning",
+        "records": 4327
       },
       {
         "chain": "Johnson",
         "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
+        "daysOld": 7,
+        "status": "stale",
         "records": 27
-      },
-      {
-        "chain": "Jumbo",
-        "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
-        "records": 19617
-      },
-      {
-        "chain": "La Polar",
-        "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
-        "records": 3842
-      },
-      {
-        "chain": "Paris",
-        "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
-        "records": 9571
-      },
-      {
-        "chain": "Ripley",
-        "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
-        "records": 18153
-      },
-      {
-        "chain": "Tottus",
-        "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
-        "records": 332
-      },
-      {
-        "chain": "Walmart",
-        "lastUpdate": "2026-03-03",
-        "daysOld": 2,
-        "status": "fresh",
-        "records": 40
-      },
-      {
-        "chain": "Lider Express",
-        "lastUpdate": "2026-03-02",
-        "daysOld": 3,
-        "status": "warning",
-        "records": 15
       },
       {
         "chain": "Cencosud",
         "lastUpdate": "2026-02-28",
-        "daysOld": 5,
-        "status": "warning",
+        "daysOld": 10,
+        "status": "stale",
         "records": 1
       }
     ],
-    "uniqueStores": 386,
-    "uniqueSKUs": 4824
+    "uniqueStores": 391,
+    "uniqueSKUs": 5123
   },
   "kpis": {
-    "totalUnits": 77346,
-    "totalCLP": 651787835,
-    "totalPVP": 630018861,
-    "avgUnitsPerStore": 200,
-    "avgUnitsPerDay": 3867,
-    "uniqueStores": 386,
-    "uniqueLicenses": 119,
+    "totalUnits": 99841,
+    "totalCLP": 842321099,
+    "totalPVP": 815706870,
+    "avgUnitsPerStore": 255,
+    "avgUnitsPerDay": 3994,
+    "uniqueStores": 391,
+    "uniqueLicenses": 123,
     "uniqueChains": 14,
-    "numDays": 20,
+    "numDays": 25,
     "dateRange": {
       "from": "2026-02-12",
-      "to": "2026-03-03"
+      "to": "2026-03-08"
     },
-    "oosRate": 9.6,
-    "totalStockUnits": 1898688
+    "oosRate": 12.4,
+    "totalStockUnits": 3700930
   },
   "dailySales": [
     {
@@ -159,27 +159,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-12",
-      "license": "Paw Patrol",
-      "units": 278,
-      "clp": 2173856
-    },
-    {
-      "date": "2026-02-12",
       "license": "Snoopy",
       "units": 459,
       "clp": 4550963
     },
     {
       "date": "2026-02-12",
-      "license": "Minnie",
-      "units": 179,
-      "clp": 1690912
+      "license": "Paw Patrol",
+      "units": 278,
+      "clp": 2173856
     },
     {
       "date": "2026-02-12",
       "license": "Spiderman",
       "units": 193,
       "clp": 2038507
+    },
+    {
+      "date": "2026-02-12",
+      "license": "Minnie",
+      "units": 179,
+      "clp": 1690912
     },
     {
       "date": "2026-02-12",
@@ -195,15 +195,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-12",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 139,
-      "clp": 1689644
-    },
-    {
-      "date": "2026-02-12",
       "license": "Minecraft",
       "units": 120,
       "clp": 932477
+    },
+    {
+      "date": "2026-02-12",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 139,
+      "clp": 1689644
     },
     {
       "date": "2026-02-12",
@@ -249,27 +249,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-13",
-      "license": "Paw Patrol",
-      "units": 329,
-      "clp": 2435300
-    },
-    {
-      "date": "2026-02-13",
       "license": "Snoopy",
       "units": 572,
       "clp": 5614958
     },
     {
       "date": "2026-02-13",
-      "license": "Minnie",
-      "units": 236,
-      "clp": 2305561
+      "license": "Paw Patrol",
+      "units": 329,
+      "clp": 2435300
     },
     {
       "date": "2026-02-13",
       "license": "Spiderman",
       "units": 228,
       "clp": 2269206
+    },
+    {
+      "date": "2026-02-13",
+      "license": "Minnie",
+      "units": 236,
+      "clp": 2305561
     },
     {
       "date": "2026-02-13",
@@ -285,15 +285,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-13",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 187,
-      "clp": 2294260
-    },
-    {
-      "date": "2026-02-13",
       "license": "Minecraft",
       "units": 133,
       "clp": 1128430
+    },
+    {
+      "date": "2026-02-13",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 187,
+      "clp": 2294260
     },
     {
       "date": "2026-02-13",
@@ -339,27 +339,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-14",
-      "license": "Paw Patrol",
-      "units": 374,
-      "clp": 2915833
-    },
-    {
-      "date": "2026-02-14",
       "license": "Snoopy",
       "units": 558,
       "clp": 5621488
     },
     {
       "date": "2026-02-14",
-      "license": "Minnie",
-      "units": 227,
-      "clp": 2291228
+      "license": "Paw Patrol",
+      "units": 374,
+      "clp": 2915833
     },
     {
       "date": "2026-02-14",
       "license": "Spiderman",
       "units": 224,
       "clp": 2627344
+    },
+    {
+      "date": "2026-02-14",
+      "license": "Minnie",
+      "units": 227,
+      "clp": 2291228
     },
     {
       "date": "2026-02-14",
@@ -375,15 +375,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-14",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 205,
-      "clp": 2558021
-    },
-    {
-      "date": "2026-02-14",
       "license": "Minecraft",
       "units": 150,
       "clp": 1177964
+    },
+    {
+      "date": "2026-02-14",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 205,
+      "clp": 2558021
     },
     {
       "date": "2026-02-14",
@@ -429,27 +429,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-15",
-      "license": "Paw Patrol",
-      "units": 284,
-      "clp": 2175627
-    },
-    {
-      "date": "2026-02-15",
       "license": "Snoopy",
       "units": 482,
       "clp": 4850295
     },
     {
       "date": "2026-02-15",
-      "license": "Minnie",
-      "units": 139,
-      "clp": 1296823
+      "license": "Paw Patrol",
+      "units": 284,
+      "clp": 2175627
     },
     {
       "date": "2026-02-15",
       "license": "Spiderman",
       "units": 145,
       "clp": 1751565
+    },
+    {
+      "date": "2026-02-15",
+      "license": "Minnie",
+      "units": 139,
+      "clp": 1296823
     },
     {
       "date": "2026-02-15",
@@ -465,15 +465,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-15",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 122,
-      "clp": 1518106
-    },
-    {
-      "date": "2026-02-15",
       "license": "Minecraft",
       "units": 116,
       "clp": 930367
+    },
+    {
+      "date": "2026-02-15",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 122,
+      "clp": 1518106
     },
     {
       "date": "2026-02-15",
@@ -519,27 +519,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-16",
-      "license": "Paw Patrol",
-      "units": 268,
-      "clp": 1988141
-    },
-    {
-      "date": "2026-02-16",
       "license": "Snoopy",
       "units": 356,
       "clp": 3317830
     },
     {
       "date": "2026-02-16",
-      "license": "Minnie",
-      "units": 184,
-      "clp": 1927452
+      "license": "Paw Patrol",
+      "units": 268,
+      "clp": 1988141
     },
     {
       "date": "2026-02-16",
       "license": "Spiderman",
       "units": 147,
       "clp": 1742322
+    },
+    {
+      "date": "2026-02-16",
+      "license": "Minnie",
+      "units": 184,
+      "clp": 1927452
     },
     {
       "date": "2026-02-16",
@@ -555,15 +555,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-16",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 113,
-      "clp": 1366478
-    },
-    {
-      "date": "2026-02-16",
       "license": "Minecraft",
       "units": 123,
       "clp": 1010873
+    },
+    {
+      "date": "2026-02-16",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 113,
+      "clp": 1366478
     },
     {
       "date": "2026-02-16",
@@ -609,27 +609,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-17",
-      "license": "Paw Patrol",
-      "units": 314,
-      "clp": 2426420
-    },
-    {
-      "date": "2026-02-17",
       "license": "Snoopy",
       "units": 318,
       "clp": 3007783
     },
     {
       "date": "2026-02-17",
-      "license": "Minnie",
-      "units": 187,
-      "clp": 1820920
+      "license": "Paw Patrol",
+      "units": 314,
+      "clp": 2426420
     },
     {
       "date": "2026-02-17",
       "license": "Spiderman",
       "units": 166,
       "clp": 1960195
+    },
+    {
+      "date": "2026-02-17",
+      "license": "Minnie",
+      "units": 187,
+      "clp": 1820920
     },
     {
       "date": "2026-02-17",
@@ -645,15 +645,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-17",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 135,
-      "clp": 1675915
-    },
-    {
-      "date": "2026-02-17",
       "license": "Minecraft",
       "units": 99,
       "clp": 792714
+    },
+    {
+      "date": "2026-02-17",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 135,
+      "clp": 1675915
     },
     {
       "date": "2026-02-17",
@@ -699,27 +699,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-18",
-      "license": "Paw Patrol",
-      "units": 342,
-      "clp": 2537549
-    },
-    {
-      "date": "2026-02-18",
       "license": "Snoopy",
       "units": 336,
       "clp": 3035166
     },
     {
       "date": "2026-02-18",
-      "license": "Minnie",
-      "units": 230,
-      "clp": 2517552
+      "license": "Paw Patrol",
+      "units": 342,
+      "clp": 2537549
     },
     {
       "date": "2026-02-18",
       "license": "Spiderman",
       "units": 235,
       "clp": 2699761
+    },
+    {
+      "date": "2026-02-18",
+      "license": "Minnie",
+      "units": 230,
+      "clp": 2517552
     },
     {
       "date": "2026-02-18",
@@ -735,15 +735,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-18",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 140,
-      "clp": 1729003
-    },
-    {
-      "date": "2026-02-18",
       "license": "Minecraft",
       "units": 131,
       "clp": 1058459
+    },
+    {
+      "date": "2026-02-18",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 140,
+      "clp": 1729003
     },
     {
       "date": "2026-02-18",
@@ -789,27 +789,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-19",
-      "license": "Paw Patrol",
-      "units": 329,
-      "clp": 2472848
-    },
-    {
-      "date": "2026-02-19",
       "license": "Snoopy",
       "units": 363,
       "clp": 3151024
     },
     {
       "date": "2026-02-19",
-      "license": "Minnie",
-      "units": 227,
-      "clp": 2429125
+      "license": "Paw Patrol",
+      "units": 329,
+      "clp": 2472848
     },
     {
       "date": "2026-02-19",
       "license": "Spiderman",
       "units": 220,
       "clp": 2714076
+    },
+    {
+      "date": "2026-02-19",
+      "license": "Minnie",
+      "units": 227,
+      "clp": 2429125
     },
     {
       "date": "2026-02-19",
@@ -825,15 +825,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-19",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 148,
-      "clp": 1836376
-    },
-    {
-      "date": "2026-02-19",
       "license": "Minecraft",
       "units": 137,
       "clp": 1241383
+    },
+    {
+      "date": "2026-02-19",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 148,
+      "clp": 1836376
     },
     {
       "date": "2026-02-19",
@@ -879,27 +879,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-20",
-      "license": "Paw Patrol",
-      "units": 408,
-      "clp": 3083563
-    },
-    {
-      "date": "2026-02-20",
       "license": "Snoopy",
       "units": 370,
       "clp": 3192933
     },
     {
       "date": "2026-02-20",
-      "license": "Minnie",
-      "units": 247,
-      "clp": 2468957
+      "license": "Paw Patrol",
+      "units": 408,
+      "clp": 3083563
     },
     {
       "date": "2026-02-20",
       "license": "Spiderman",
       "units": 247,
       "clp": 2818933
+    },
+    {
+      "date": "2026-02-20",
+      "license": "Minnie",
+      "units": 247,
+      "clp": 2468957
     },
     {
       "date": "2026-02-20",
@@ -915,15 +915,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-20",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 177,
-      "clp": 2151213
-    },
-    {
-      "date": "2026-02-20",
       "license": "Minecraft",
       "units": 185,
       "clp": 1511246
+    },
+    {
+      "date": "2026-02-20",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 177,
+      "clp": 2151213
     },
     {
       "date": "2026-02-20",
@@ -969,27 +969,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-21",
-      "license": "Paw Patrol",
-      "units": 541,
-      "clp": 4176476
-    },
-    {
-      "date": "2026-02-21",
       "license": "Snoopy",
       "units": 388,
       "clp": 3513913
     },
     {
       "date": "2026-02-21",
-      "license": "Minnie",
-      "units": 307,
-      "clp": 3179518
+      "license": "Paw Patrol",
+      "units": 541,
+      "clp": 4176476
     },
     {
       "date": "2026-02-21",
       "license": "Spiderman",
       "units": 296,
       "clp": 3552035
+    },
+    {
+      "date": "2026-02-21",
+      "license": "Minnie",
+      "units": 307,
+      "clp": 3179518
     },
     {
       "date": "2026-02-21",
@@ -1005,15 +1005,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-21",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 206,
-      "clp": 2543944
-    },
-    {
-      "date": "2026-02-21",
       "license": "Minecraft",
       "units": 169,
       "clp": 1326744
+    },
+    {
+      "date": "2026-02-21",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 206,
+      "clp": 2543944
     },
     {
       "date": "2026-02-21",
@@ -1059,27 +1059,27 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-22",
-      "license": "Paw Patrol",
-      "units": 336,
-      "clp": 2393503
-    },
-    {
-      "date": "2026-02-22",
       "license": "Snoopy",
       "units": 373,
       "clp": 3251785
     },
     {
       "date": "2026-02-22",
-      "license": "Minnie",
-      "units": 184,
-      "clp": 1734636
+      "license": "Paw Patrol",
+      "units": 336,
+      "clp": 2393503
     },
     {
       "date": "2026-02-22",
       "license": "Spiderman",
       "units": 159,
       "clp": 2066854
+    },
+    {
+      "date": "2026-02-22",
+      "license": "Minnie",
+      "units": 184,
+      "clp": 1734636
     },
     {
       "date": "2026-02-22",
@@ -1095,15 +1095,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-22",
-      "license": "KPOP DEMON HUNTERS",
-      "units": 146,
-      "clp": 1821554
-    },
-    {
-      "date": "2026-02-22",
       "license": "Minecraft",
       "units": 107,
       "clp": 727723
+    },
+    {
+      "date": "2026-02-22",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 146,
+      "clp": 1821554
     },
     {
       "date": "2026-02-22",
@@ -1144,32 +1144,32 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-23",
       "license": "BLUEY",
-      "units": 654,
-      "clp": 5184995
-    },
-    {
-      "date": "2026-02-23",
-      "license": "Paw Patrol",
-      "units": 330,
-      "clp": 2536482
+      "units": 699,
+      "clp": 5445964
     },
     {
       "date": "2026-02-23",
       "license": "Snoopy",
-      "units": 278,
-      "clp": 2325720
+      "units": 382,
+      "clp": 3171085
     },
     {
       "date": "2026-02-23",
-      "license": "Minnie",
-      "units": 242,
-      "clp": 2590727
+      "license": "Paw Patrol",
+      "units": 331,
+      "clp": 2541876
     },
     {
       "date": "2026-02-23",
       "license": "Spiderman",
       "units": 202,
       "clp": 2538639
+    },
+    {
+      "date": "2026-02-23",
+      "license": "Minnie",
+      "units": 242,
+      "clp": 2590727
     },
     {
       "date": "2026-02-23",
@@ -1185,21 +1185,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-23",
+      "license": "Minecraft",
+      "units": 155,
+      "clp": 1263154
+    },
+    {
+      "date": "2026-02-23",
       "license": "KPOP DEMON HUNTERS",
       "units": 105,
       "clp": 1306099
     },
     {
       "date": "2026-02-23",
-      "license": "Minecraft",
-      "units": 119,
-      "clp": 1014710
-    },
-    {
-      "date": "2026-02-23",
       "license": "SONIC",
-      "units": 97,
-      "clp": 618244
+      "units": 113,
+      "clp": 658452
     },
     {
       "date": "2026-02-23",
@@ -1234,8 +1234,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-24",
       "license": "BLUEY",
-      "units": 712,
-      "clp": 5988908
+      "units": 757,
+      "clp": 6222989
+    },
+    {
+      "date": "2026-02-24",
+      "license": "Snoopy",
+      "units": 362,
+      "clp": 2997943
     },
     {
       "date": "2026-02-24",
@@ -1245,21 +1251,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-24",
-      "license": "Snoopy",
-      "units": 276,
-      "clp": 2238987
+      "license": "Spiderman",
+      "units": 195,
+      "clp": 2817799
     },
     {
       "date": "2026-02-24",
       "license": "Minnie",
       "units": 206,
       "clp": 2405537
-    },
-    {
-      "date": "2026-02-24",
-      "license": "Spiderman",
-      "units": 195,
-      "clp": 2817799
     },
     {
       "date": "2026-02-24",
@@ -1275,21 +1275,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-24",
+      "license": "Minecraft",
+      "units": 189,
+      "clp": 1508941
+    },
+    {
+      "date": "2026-02-24",
       "license": "KPOP DEMON HUNTERS",
       "units": 109,
       "clp": 1344116
     },
     {
       "date": "2026-02-24",
-      "license": "Minecraft",
-      "units": 152,
-      "clp": 1212606
-    },
-    {
-      "date": "2026-02-24",
       "license": "SONIC",
-      "units": 95,
-      "clp": 647855
+      "units": 117,
+      "clp": 703141
     },
     {
       "date": "2026-02-24",
@@ -1324,8 +1324,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-25",
       "license": "BLUEY",
-      "units": 716,
-      "clp": 5948335
+      "units": 770,
+      "clp": 6238643
+    },
+    {
+      "date": "2026-02-25",
+      "license": "Snoopy",
+      "units": 432,
+      "clp": 3497985
     },
     {
       "date": "2026-02-25",
@@ -1335,21 +1341,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-25",
-      "license": "Snoopy",
-      "units": 317,
-      "clp": 2562796
+      "license": "Spiderman",
+      "units": 228,
+      "clp": 2645974
     },
     {
       "date": "2026-02-25",
       "license": "Minnie",
       "units": 257,
       "clp": 2540670
-    },
-    {
-      "date": "2026-02-25",
-      "license": "Spiderman",
-      "units": 228,
-      "clp": 2645974
     },
     {
       "date": "2026-02-25",
@@ -1365,21 +1365,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-25",
+      "license": "Minecraft",
+      "units": 193,
+      "clp": 1476008
+    },
+    {
+      "date": "2026-02-25",
       "license": "KPOP DEMON HUNTERS",
       "units": 102,
       "clp": 1220303
     },
     {
       "date": "2026-02-25",
-      "license": "Minecraft",
-      "units": 151,
-      "clp": 1137697
-    },
-    {
-      "date": "2026-02-25",
       "license": "SONIC",
-      "units": 119,
-      "clp": 857005
+      "units": 135,
+      "clp": 897213
     },
     {
       "date": "2026-02-25",
@@ -1414,8 +1414,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-26",
       "license": "BLUEY",
-      "units": 734,
-      "clp": 6252812
+      "units": 808,
+      "clp": 6660600
+    },
+    {
+      "date": "2026-02-26",
+      "license": "Snoopy",
+      "units": 395,
+      "clp": 3178018
     },
     {
       "date": "2026-02-26",
@@ -1425,21 +1431,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-26",
-      "license": "Snoopy",
-      "units": 272,
-      "clp": 2112646
+      "license": "Spiderman",
+      "units": 261,
+      "clp": 2907643
     },
     {
       "date": "2026-02-26",
       "license": "Minnie",
       "units": 271,
       "clp": 2733136
-    },
-    {
-      "date": "2026-02-26",
-      "license": "Spiderman",
-      "units": 261,
-      "clp": 2907643
     },
     {
       "date": "2026-02-26",
@@ -1455,21 +1455,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-26",
+      "license": "Minecraft",
+      "units": 192,
+      "clp": 1463714
+    },
+    {
+      "date": "2026-02-26",
       "license": "KPOP DEMON HUNTERS",
       "units": 130,
       "clp": 1554860
     },
     {
       "date": "2026-02-26",
-      "license": "Minecraft",
-      "units": 147,
-      "clp": 1161566
-    },
-    {
-      "date": "2026-02-26",
       "license": "SONIC",
-      "units": 138,
-      "clp": 896469
+      "units": 155,
+      "clp": 939190
     },
     {
       "date": "2026-02-26",
@@ -1504,8 +1504,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-27",
       "license": "BLUEY",
-      "units": 998,
-      "clp": 8594479
+      "units": 1099,
+      "clp": 9117172
+    },
+    {
+      "date": "2026-02-27",
+      "license": "Snoopy",
+      "units": 551,
+      "clp": 4522043
     },
     {
       "date": "2026-02-27",
@@ -1515,21 +1521,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-27",
-      "license": "Snoopy",
-      "units": 374,
-      "clp": 3000809
+      "license": "Spiderman",
+      "units": 349,
+      "clp": 4317038
     },
     {
       "date": "2026-02-27",
       "license": "Minnie",
       "units": 349,
       "clp": 3523076
-    },
-    {
-      "date": "2026-02-27",
-      "license": "Spiderman",
-      "units": 349,
-      "clp": 4317038
     },
     {
       "date": "2026-02-27",
@@ -1545,21 +1545,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-27",
+      "license": "Minecraft",
+      "units": 268,
+      "clp": 2219192
+    },
+    {
+      "date": "2026-02-27",
       "license": "KPOP DEMON HUNTERS",
       "units": 190,
       "clp": 2297749
     },
     {
       "date": "2026-02-27",
-      "license": "Minecraft",
-      "units": 207,
-      "clp": 1747424
-    },
-    {
-      "date": "2026-02-27",
       "license": "SONIC",
-      "units": 181,
-      "clp": 1235463
+      "units": 203,
+      "clp": 1290749
     },
     {
       "date": "2026-02-27",
@@ -1594,8 +1594,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-28",
       "license": "BLUEY",
-      "units": 1275,
-      "clp": 11368656
+      "units": 1393,
+      "clp": 12048344
+    },
+    {
+      "date": "2026-02-28",
+      "license": "Snoopy",
+      "units": 591,
+      "clp": 4632271
     },
     {
       "date": "2026-02-28",
@@ -1605,21 +1611,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-28",
-      "license": "Snoopy",
-      "units": 432,
-      "clp": 3229375
+      "license": "Spiderman",
+      "units": 479,
+      "clp": 5921739
     },
     {
       "date": "2026-02-28",
       "license": "Minnie",
       "units": 488,
       "clp": 5185021
-    },
-    {
-      "date": "2026-02-28",
-      "license": "Spiderman",
-      "units": 479,
-      "clp": 5921739
     },
     {
       "date": "2026-02-28",
@@ -1635,21 +1635,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-28",
+      "license": "Minecraft",
+      "units": 330,
+      "clp": 2595830
+    },
+    {
+      "date": "2026-02-28",
       "license": "KPOP DEMON HUNTERS",
       "units": 266,
       "clp": 3211931
     },
     {
       "date": "2026-02-28",
-      "license": "Minecraft",
-      "units": 239,
-      "clp": 1913460
-    },
-    {
-      "date": "2026-02-28",
       "license": "SONIC",
-      "units": 271,
-      "clp": 1892216
+      "units": 304,
+      "clp": 1975145
     },
     {
       "date": "2026-02-28",
@@ -1684,8 +1684,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-01",
       "license": "BLUEY",
-      "units": 978,
-      "clp": 8958524
+      "units": 1088,
+      "clp": 9544166
+    },
+    {
+      "date": "2026-03-01",
+      "license": "Snoopy",
+      "units": 556,
+      "clp": 4187808
     },
     {
       "date": "2026-03-01",
@@ -1695,21 +1701,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-01",
-      "license": "Snoopy",
-      "units": 384,
-      "clp": 2836271
+      "license": "Spiderman",
+      "units": 309,
+      "clp": 3909751
     },
     {
       "date": "2026-03-01",
       "license": "Minnie",
       "units": 318,
       "clp": 3439858
-    },
-    {
-      "date": "2026-03-01",
-      "license": "Spiderman",
-      "units": 309,
-      "clp": 3909751
     },
     {
       "date": "2026-03-01",
@@ -1725,21 +1725,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-01",
+      "license": "Minecraft",
+      "units": 220,
+      "clp": 1825196
+    },
+    {
+      "date": "2026-03-01",
       "license": "KPOP DEMON HUNTERS",
       "units": 128,
       "clp": 1533388
     },
     {
       "date": "2026-03-01",
-      "license": "Minecraft",
-      "units": 145,
-      "clp": 1232536
-    },
-    {
-      "date": "2026-03-01",
       "license": "SONIC",
-      "units": 166,
-      "clp": 1194223
+      "units": 202,
+      "clp": 1284691
     },
     {
       "date": "2026-03-01",
@@ -1774,8 +1774,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-02",
       "license": "BLUEY",
-      "units": 696,
-      "clp": 6204944
+      "units": 779,
+      "clp": 6639326
+    },
+    {
+      "date": "2026-03-02",
+      "license": "Snoopy",
+      "units": 440,
+      "clp": 3335620
     },
     {
       "date": "2026-03-02",
@@ -1785,21 +1791,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-02",
-      "license": "Snoopy",
-      "units": 287,
-      "clp": 2073847
+      "license": "Spiderman",
+      "units": 342,
+      "clp": 4274414
     },
     {
       "date": "2026-03-02",
       "license": "Minnie",
       "units": 310,
       "clp": 3483242
-    },
-    {
-      "date": "2026-03-02",
-      "license": "Spiderman",
-      "units": 342,
-      "clp": 4274414
     },
     {
       "date": "2026-03-02",
@@ -1815,21 +1815,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-02",
+      "license": "Minecraft",
+      "units": 217,
+      "clp": 1880112
+    },
+    {
+      "date": "2026-03-02",
       "license": "KPOP DEMON HUNTERS",
       "units": 117,
       "clp": 1412706
     },
     {
       "date": "2026-03-02",
-      "license": "Minecraft",
-      "units": 162,
-      "clp": 1483085
-    },
-    {
-      "date": "2026-03-02",
       "license": "SONIC",
-      "units": 154,
-      "clp": 1085031
+      "units": 187,
+      "clp": 1167960
     },
     {
       "date": "2026-03-02",
@@ -1864,8 +1864,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-03",
       "license": "BLUEY",
-      "units": 714,
-      "clp": 6046447
+      "units": 819,
+      "clp": 6491806
+    },
+    {
+      "date": "2026-03-03",
+      "license": "Snoopy",
+      "units": 418,
+      "clp": 2946890
     },
     {
       "date": "2026-03-03",
@@ -1875,9 +1881,9 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-03",
-      "license": "Snoopy",
-      "units": 264,
-      "clp": 1916073
+      "license": "Spiderman",
+      "units": 383,
+      "clp": 4786487
     },
     {
       "date": "2026-03-03",
@@ -1887,15 +1893,9 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-03",
-      "license": "Spiderman",
-      "units": 383,
-      "clp": 4786487
-    },
-    {
-      "date": "2026-03-03",
       "license": "LILO & STITCH",
-      "units": 264,
-      "clp": 2226115
+      "units": 265,
+      "clp": 2236105
     },
     {
       "date": "2026-03-03",
@@ -1905,21 +1905,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-03",
+      "license": "Minecraft",
+      "units": 210,
+      "clp": 1706993
+    },
+    {
+      "date": "2026-03-03",
       "license": "KPOP DEMON HUNTERS",
       "units": 112,
       "clp": 1335249
     },
     {
       "date": "2026-03-03",
-      "license": "Minecraft",
-      "units": 151,
-      "clp": 1275549
-    },
-    {
-      "date": "2026-03-03",
       "license": "SONIC",
-      "units": 171,
-      "clp": 1326292
+      "units": 218,
+      "clp": 1444403
     },
     {
       "date": "2026-03-03",
@@ -1950,150 +1950,605 @@ const REAL_SELLOUT = {
       "license": "Peppa Pig",
       "units": 31,
       "clp": 218011
+    },
+    {
+      "date": "2026-03-04",
+      "license": "BLUEY",
+      "units": 645,
+      "clp": 5544658
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Snoopy",
+      "units": 287,
+      "clp": 2190423
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Paw Patrol",
+      "units": 379,
+      "clp": 2804800
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Spiderman",
+      "units": 197,
+      "clp": 2414380
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Minnie",
+      "units": 168,
+      "clp": 1769157
+    },
+    {
+      "date": "2026-03-04",
+      "license": "LILO & STITCH",
+      "units": 210,
+      "clp": 1621761
+    },
+    {
+      "date": "2026-03-04",
+      "license": "HAVAIANA",
+      "units": 103,
+      "clp": 768408
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Minecraft",
+      "units": 165,
+      "clp": 1261161
+    },
+    {
+      "date": "2026-03-04",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 55,
+      "clp": 667695
+    },
+    {
+      "date": "2026-03-04",
+      "license": "SONIC",
+      "units": 129,
+      "clp": 832968
+    },
+    {
+      "date": "2026-03-04",
+      "license": "BOB ESPONJA",
+      "units": 96,
+      "clp": 448477
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Spidey",
+      "units": 88,
+      "clp": 783985
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Barbie",
+      "units": 52,
+      "clp": 462485
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Mickey",
+      "units": 43,
+      "clp": 270426
+    },
+    {
+      "date": "2026-03-04",
+      "license": "Peppa Pig",
+      "units": 34,
+      "clp": 211738
+    },
+    {
+      "date": "2026-03-05",
+      "license": "BLUEY",
+      "units": 653,
+      "clp": 5640357
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Snoopy",
+      "units": 291,
+      "clp": 2311561
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Paw Patrol",
+      "units": 350,
+      "clp": 2921608
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Spiderman",
+      "units": 233,
+      "clp": 2765157
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Minnie",
+      "units": 185,
+      "clp": 1798113
+    },
+    {
+      "date": "2026-03-05",
+      "license": "LILO & STITCH",
+      "units": 240,
+      "clp": 1560443
+    },
+    {
+      "date": "2026-03-05",
+      "license": "HAVAIANA",
+      "units": 102,
+      "clp": 752592
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Minecraft",
+      "units": 164,
+      "clp": 1354919
+    },
+    {
+      "date": "2026-03-05",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 70,
+      "clp": 820313
+    },
+    {
+      "date": "2026-03-05",
+      "license": "SONIC",
+      "units": 141,
+      "clp": 902837
+    },
+    {
+      "date": "2026-03-05",
+      "license": "BOB ESPONJA",
+      "units": 94,
+      "clp": 421766
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Spidey",
+      "units": 98,
+      "clp": 1002442
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Barbie",
+      "units": 44,
+      "clp": 396491
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Mickey",
+      "units": 45,
+      "clp": 298044
+    },
+    {
+      "date": "2026-03-05",
+      "license": "Peppa Pig",
+      "units": 57,
+      "clp": 327540
+    },
+    {
+      "date": "2026-03-06",
+      "license": "BLUEY",
+      "units": 806,
+      "clp": 7153231
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Snoopy",
+      "units": 302,
+      "clp": 2327546
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Paw Patrol",
+      "units": 430,
+      "clp": 3447588
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Spiderman",
+      "units": 287,
+      "clp": 3428685
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Minnie",
+      "units": 228,
+      "clp": 2115571
+    },
+    {
+      "date": "2026-03-06",
+      "license": "LILO & STITCH",
+      "units": 300,
+      "clp": 1947585
+    },
+    {
+      "date": "2026-03-06",
+      "license": "HAVAIANA",
+      "units": 138,
+      "clp": 1047221
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Minecraft",
+      "units": 220,
+      "clp": 1969154
+    },
+    {
+      "date": "2026-03-06",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 144,
+      "clp": 1668147
+    },
+    {
+      "date": "2026-03-06",
+      "license": "SONIC",
+      "units": 144,
+      "clp": 1099657
+    },
+    {
+      "date": "2026-03-06",
+      "license": "BOB ESPONJA",
+      "units": 96,
+      "clp": 449246
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Spidey",
+      "units": 95,
+      "clp": 951600
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Barbie",
+      "units": 61,
+      "clp": 514195
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Mickey",
+      "units": 63,
+      "clp": 433514
+    },
+    {
+      "date": "2026-03-06",
+      "license": "Peppa Pig",
+      "units": 69,
+      "clp": 345573
+    },
+    {
+      "date": "2026-03-07",
+      "license": "BLUEY",
+      "units": 894,
+      "clp": 7343738
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Snoopy",
+      "units": 405,
+      "clp": 3298833
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Paw Patrol",
+      "units": 379,
+      "clp": 2803044
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Spiderman",
+      "units": 181,
+      "clp": 2047619
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Minnie",
+      "units": 176,
+      "clp": 1478125
+    },
+    {
+      "date": "2026-03-07",
+      "license": "LILO & STITCH",
+      "units": 353,
+      "clp": 2116896
+    },
+    {
+      "date": "2026-03-07",
+      "license": "HAVAIANA",
+      "units": 125,
+      "clp": 937060
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Minecraft",
+      "units": 292,
+      "clp": 2510498
+    },
+    {
+      "date": "2026-03-07",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 183,
+      "clp": 2183678
+    },
+    {
+      "date": "2026-03-07",
+      "license": "SONIC",
+      "units": 157,
+      "clp": 929016
+    },
+    {
+      "date": "2026-03-07",
+      "license": "BOB ESPONJA",
+      "units": 145,
+      "clp": 729515
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Spidey",
+      "units": 118,
+      "clp": 1021097
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Barbie",
+      "units": 65,
+      "clp": 724909
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Mickey",
+      "units": 94,
+      "clp": 623130
+    },
+    {
+      "date": "2026-03-07",
+      "license": "Peppa Pig",
+      "units": 88,
+      "clp": 464639
+    },
+    {
+      "date": "2026-03-08",
+      "license": "BLUEY",
+      "units": 265,
+      "clp": 2213994
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Snoopy",
+      "units": 184,
+      "clp": 1240564
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Paw Patrol",
+      "units": 159,
+      "clp": 1229485
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Spiderman",
+      "units": 132,
+      "clp": 1856143
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Minnie",
+      "units": 90,
+      "clp": 1075997
+    },
+    {
+      "date": "2026-03-08",
+      "license": "LILO & STITCH",
+      "units": 165,
+      "clp": 880607
+    },
+    {
+      "date": "2026-03-08",
+      "license": "HAVAIANA",
+      "units": 0,
+      "clp": 0
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Minecraft",
+      "units": 83,
+      "clp": 647621
+    },
+    {
+      "date": "2026-03-08",
+      "license": "KPOP DEMON HUNTERS",
+      "units": 51,
+      "clp": 637696
+    },
+    {
+      "date": "2026-03-08",
+      "license": "SONIC",
+      "units": 71,
+      "clp": 360059
+    },
+    {
+      "date": "2026-03-08",
+      "license": "BOB ESPONJA",
+      "units": 1,
+      "clp": 5990
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Spidey",
+      "units": 7,
+      "clp": 86335
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Barbie",
+      "units": 14,
+      "clp": 195920
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Mickey",
+      "units": 11,
+      "clp": 64912
+    },
+    {
+      "date": "2026-03-08",
+      "license": "Peppa Pig",
+      "units": 86,
+      "clp": 460928
     }
   ],
   "byLicense": [
     {
       "license": "BLUEY",
-      "units": 15986,
-      "clp": 134840821,
+      "units": 19984,
+      "clp": 166597709,
       "color": "#6366f1"
     },
     {
-      "license": "Paw Patrol",
-      "units": 8233,
-      "clp": 64060392,
+      "license": "Snoopy",
+      "units": 10171,
+      "clp": 86946727,
       "color": "#f97316"
     },
     {
-      "license": "Snoopy",
-      "units": 7459,
-      "clp": 65404662,
+      "license": "Paw Patrol",
+      "units": 9931,
+      "clp": 77272312,
       "color": "#22c55e"
     },
     {
-      "license": "Minnie",
-      "units": 5133,
-      "clp": 53196485,
+      "license": "Spiderman",
+      "units": 6038,
+      "clp": 72872266,
       "color": "#eab308"
     },
     {
-      "license": "Spiderman",
-      "units": 5008,
-      "clp": 60360282,
+      "license": "Minnie",
+      "units": 5980,
+      "clp": 61433448,
       "color": "#ef4444"
     },
     {
       "license": "LILO & STITCH",
-      "units": 4618,
-      "clp": 35506971,
+      "units": 5887,
+      "clp": 43644253,
       "color": "#8b5cf6"
     },
     {
       "license": "HAVAIANA",
-      "units": 3973,
-      "clp": 31407520,
+      "units": 4441,
+      "clp": 34912802,
       "color": "#ec4899"
     },
     {
-      "license": "KPOP DEMON HUNTERS",
-      "units": 2977,
-      "clp": 36400915,
+      "license": "Minecraft",
+      "units": 4368,
+      "clp": 35520871,
       "color": "#14b8a6"
     },
     {
-      "license": "Minecraft",
-      "units": 2943,
-      "clp": 24017011,
+      "license": "KPOP DEMON HUNTERS",
+      "units": 3480,
+      "clp": 42378444,
       "color": "#f59e0b"
     },
     {
       "license": "SONIC",
-      "units": 2516,
-      "clp": 16942247,
+      "units": 3400,
+      "clp": 21674930,
       "color": "#3b82f6"
     },
     {
       "license": "BOB ESPONJA",
-      "units": 2453,
-      "clp": 11946154,
+      "units": 2885,
+      "clp": 14001148,
       "color": "#84cc16"
     },
     {
       "license": "Spidey",
-      "units": 2131,
-      "clp": 19532580,
+      "units": 2537,
+      "clp": 23378038,
       "color": "#06b6d4"
     },
     {
       "license": "Barbie",
-      "units": 1221,
-      "clp": 11235543,
+      "units": 1457,
+      "clp": 13529543,
       "color": "#d946ef"
     },
     {
       "license": "Mickey",
-      "units": 1101,
-      "clp": 6761041,
+      "units": 1357,
+      "clp": 8451068,
       "color": "#f43f5e"
     },
     {
       "license": "Peppa Pig",
-      "units": 953,
-      "clp": 5342383,
+      "units": 1287,
+      "clp": 7152801,
       "color": "#10b981"
     }
   ],
   "byChain": [
     {
       "chain": "Jumbo",
-      "units": 26203,
-      "clp": 229623727
+      "units": 31919,
+      "clp": 285908966
     },
     {
       "chain": "Ripley",
-      "units": 18909,
-      "clp": 118935719
-    },
-    {
-      "chain": "Paris",
-      "units": 10142,
-      "clp": 98419985
-    },
-    {
-      "chain": "Hites",
-      "units": 7744,
-      "clp": 99597878
+      "units": 22439,
+      "clp": 142498355
     },
     {
       "chain": "Hiper Lider",
-      "units": 6830,
-      "clp": 27134043
+      "units": 14820,
+      "clp": 80911376
+    },
+    {
+      "chain": "Paris",
+      "units": 12625,
+      "clp": 123052827
+    },
+    {
+      "chain": "Hites",
+      "units": 9269,
+      "clp": 119493055
     },
     {
       "chain": "La Polar",
-      "units": 3724,
-      "clp": 40688749
+      "units": 4182,
+      "clp": 45858230
     },
     {
       "chain": "Falabella",
-      "units": 3142,
-      "clp": 33314002
+      "units": 3628,
+      "clp": 38419970
     },
     {
       "chain": "Tottus",
-      "units": 464,
-      "clp": 3131991
+      "units": 525,
+      "clp": 3634785
     },
     {
       "chain": "Walmart",
-      "units": 71,
-      "clp": 312574
+      "units": 279,
+      "clp": 1739333
     },
     {
       "chain": "Ekono",
-      "units": 67,
-      "clp": 352601
+      "units": 93,
+      "clp": 475608
+    },
+    {
+      "chain": "Lider Express",
+      "units": 29,
+      "clp": 127542
     },
     {
       "chain": "Johnson",
@@ -2101,14 +2556,9 @@ const REAL_SELLOUT = {
       "clp": 170807
     },
     {
-      "chain": "Lider Express",
-      "units": 18,
-      "clp": 78036
-    },
-    {
       "chain": "Acuenta",
-      "units": 10,
-      "clp": 13446
+      "units": 11,
+      "clp": 15967
     },
     {
       "chain": "Cencosud",
@@ -2119,1381 +2569,1430 @@ const REAL_SELLOUT = {
   "byStore": [
     {
       "store": "Mall Arauco Maipú",
-      "units": 1898,
-      "clp": 15817260,
-      "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Iquique",
-      "units": 1855,
-      "clp": 15621687,
-      "chain": "Jumbo",
-      "region": "01 - Tarapacá"
-    },
-    {
-      "store": "Mall Portal Rancagua",
-      "units": 1769,
-      "clp": 14331237,
-      "chain": "Jumbo",
-      "region": "06 - Libertador General Bernardo OHiggins"
-    },
-    {
-      "store": "Mall Costanera Center",
-      "units": 1768,
-      "clp": 14990837,
-      "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Florida Center",
-      "units": 1721,
-      "clp": 13684371,
+      "units": 2300,
+      "clp": 19403446,
       "chain": "Paris",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Chillán",
-      "units": 1687,
-      "clp": 13486215,
+      "store": "Iquique",
+      "units": 2191,
+      "clp": 18257263,
+      "chain": "Hites",
+      "region": "01 - Tarapacá"
+    },
+    {
+      "store": "Mall Costanera Center",
+      "units": 2187,
+      "clp": 18804643,
       "chain": "Ripley",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Chillán",
+      "units": 2175,
+      "clp": 17203312,
+      "chain": "Jumbo",
       "region": "16 - Ñuble"
     },
     {
+      "store": "Mall Florida Center",
+      "units": 2099,
+      "clp": 16983673,
+      "chain": "Jumbo",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Portal Rancagua",
+      "units": 2037,
+      "clp": 17129715,
+      "chain": "Paris",
+      "region": "06 - Libertador General Bernardo OHiggins"
+    },
+    {
       "store": "Temuco",
-      "units": 1599,
-      "clp": 15548199,
-      "chain": "Ripley",
+      "units": 1971,
+      "clp": 19393827,
+      "chain": "Hites",
       "region": "09 - La Araucanía"
-    },
-    {
-      "store": "Mall Portal Temuco",
-      "units": 1472,
-      "clp": 12592489,
-      "chain": "Jumbo",
-      "region": "09 - La Araucanía"
-    },
-    {
-      "store": "Internet",
-      "units": 1464,
-      "clp": 9962024,
-      "chain": "Ripley",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Alto Las Condes",
-      "units": 1342,
-      "clp": 10781855,
-      "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Puerto Montt",
-      "units": 1288,
-      "clp": 12185014,
+      "units": 1792,
+      "clp": 16086144,
       "chain": "Hiper Lider",
       "region": "10 - Los Lagos"
     },
     {
+      "store": "Mall Portal Temuco",
+      "units": 1750,
+      "clp": 15117837,
+      "chain": "Ripley",
+      "region": "09 - La Araucanía"
+    },
+    {
+      "store": "Mall Alto Las Condes",
+      "units": 1704,
+      "clp": 13691217,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Internet",
+      "units": 1638,
+      "clp": 11243245,
+      "chain": "Hites",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Los Ángeles",
+      "units": 1537,
+      "clp": 15073990,
+      "chain": "Hites",
+      "region": "08 - Biobío"
+    },
+    {
       "store": "Mall Curicó",
-      "units": 1279,
-      "clp": 10200197,
-      "chain": "Jumbo",
+      "units": 1529,
+      "clp": 12347638,
+      "chain": "Ripley",
       "region": "07 - Maule"
     },
     {
       "store": "Rancagua",
-      "units": 1275,
-      "clp": 11838441,
-      "chain": "Ripley",
+      "units": 1507,
+      "clp": 14132090,
+      "chain": "Hites",
       "region": "06 - Libertador General Bernardo OHiggins"
     },
     {
       "store": "Mall Marina Arauco",
-      "units": 1217,
-      "clp": 10769599,
-      "chain": "Ripley",
+      "units": 1452,
+      "clp": 13042420,
+      "chain": "Paris",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Los Ángeles",
-      "units": 1217,
-      "clp": 12160241,
-      "chain": "La Polar",
-      "region": "08 - Biobío"
-    },
-    {
       "store": "Mall Portal Osorno",
-      "units": 1141,
-      "clp": 11339720,
+      "units": 1388,
+      "clp": 13886263,
       "chain": "Paris",
       "region": "10 - Los Lagos"
     },
     {
       "store": "Mall Plaza El Trébol",
-      "units": 1062,
-      "clp": 8800583,
-      "chain": "Ripley",
+      "units": 1229,
+      "clp": 10144426,
+      "chain": "Paris",
       "region": "08 - Biobío"
     },
     {
-      "store": "Pedro Aguirre Cerda Antofagasta",
-      "units": 1016,
-      "clp": 8697791,
-      "chain": "Jumbo",
-      "region": "02 - Antofagasta"
-    },
-    {
-      "store": "Mall Parque Arauco",
-      "units": 988,
-      "clp": 8314778,
+      "store": "Mall Plaza Vespucio",
+      "units": 1213,
+      "clp": 9814099,
       "chain": "Ripley",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "La Serena Ruta 5",
-      "units": 973,
-      "clp": 8485180,
+      "store": "Pedro Aguirre Cerda Antofagasta",
+      "units": 1202,
+      "clp": 10413541,
       "chain": "Jumbo",
-      "region": "04 - Coquimbo"
+      "region": "02 - Antofagasta"
+    },
+    {
+      "store": "Bilbao",
+      "units": 1198,
+      "clp": 10958867,
+      "chain": "Jumbo",
+      "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Antofagasta",
-      "units": 957,
-      "clp": 7971890,
+      "units": 1187,
+      "clp": 10010859,
       "chain": "Ripley",
       "region": "02 - Antofagasta"
     },
     {
       "store": "Talca",
-      "units": 952,
-      "clp": 5885304,
-      "chain": "Ripley",
+      "units": 1183,
+      "clp": 7663413,
+      "chain": "Falabella",
       "region": "07 - Maule"
     },
     {
-      "store": "Mall Plaza Vespucio",
-      "units": 937,
-      "clp": 7596076,
+      "store": "Mall Parque Arauco",
+      "units": 1167,
+      "clp": 10138971,
+      "chain": "Falabella",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Portal El Llano",
+      "units": 1149,
+      "clp": 10148789,
       "chain": "Paris",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Bilbao",
-      "units": 933,
-      "clp": 8143574,
+      "store": "La Serena Ruta 5",
+      "units": 1148,
+      "clp": 10273686,
       "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
+      "region": "04 - Coquimbo"
     },
     {
       "store": "Hualpén",
-      "units": 886,
-      "clp": 7811101,
-      "chain": "Jumbo",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "Mall Portal El Llano",
-      "units": 868,
-      "clp": 7424211,
-      "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Portal El Belloto",
-      "units": 862,
-      "clp": 8542783,
-      "chain": "Jumbo",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Puente Alto",
-      "units": 836,
-      "clp": 9016008,
-      "chain": "Hites",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza Los Ángeles",
-      "units": 812,
-      "clp": 7105330,
-      "chain": "Falabella",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "Mall Del Centro",
-      "units": 799,
-      "clp": 6565321,
+      "units": 1118,
+      "clp": 10124386,
       "chain": "Jumbo",
       "region": "08 - Biobío"
     },
     {
       "store": "Concón",
-      "units": 799,
-      "clp": 7101594,
+      "units": 1096,
+      "clp": 9885101,
       "chain": "Hiper Lider",
       "region": "05 - Valparaíso"
     },
     {
       "store": "La Serena",
-      "units": 786,
-      "clp": 7563730,
-      "chain": "Hiper Lider",
+      "units": 1072,
+      "clp": 10322194,
+      "chain": "Ripley",
       "region": "04 - Coquimbo"
     },
     {
-      "store": "Viña del Mar 1 Norte",
-      "units": 775,
-      "clp": 6914418,
-      "chain": "Jumbo",
+      "store": "Mall Portal El Belloto",
+      "units": 1042,
+      "clp": 10555018,
+      "chain": "Paris",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Mall Vivo El Centro",
-      "units": 762,
-      "clp": 4213553,
-      "chain": "Ripley",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza Oeste",
-      "units": 712,
-      "clp": 6504784,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza Norte",
-      "units": 708,
-      "clp": 5683733,
-      "chain": "Ripley",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza San Bernardo",
-      "units": 691,
-      "clp": 4007329,
-      "chain": "Ripley",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Portal Ñuñoa.",
-      "units": 685,
-      "clp": 5397742,
-      "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Peñalolén",
-      "units": 669,
-      "clp": 6018498,
-      "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Portal La Reina",
-      "units": 663,
-      "clp": 5522609,
-      "chain": "Jumbo",
+      "store": "Puente Alto",
+      "units": 1024,
+      "clp": 10942936,
+      "chain": "Hites",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Valparaíso",
-      "units": 656,
-      "clp": 5002917,
-      "chain": "Falabella",
+      "units": 1001,
+      "clp": 7515500,
+      "chain": "Ripley",
       "region": "05 - Valparaíso"
     },
     {
+      "store": "Viña del Mar 1 Norte",
+      "units": 984,
+      "clp": 9185137,
+      "chain": "Jumbo",
+      "region": "05 - Valparaíso"
+    },
+    {
+      "store": "Mall Del Centro",
+      "units": 974,
+      "clp": 8041973,
+      "chain": "Ripley",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Mall Plaza Oeste",
+      "units": 967,
+      "clp": 8436328,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
       "store": "No Definido",
-      "units": 637,
-      "clp": 5056411,
-      "chain": "Falabella",
+      "units": 959,
+      "clp": 7525066,
+      "chain": "Hites",
       "region": "No Definido"
     },
     {
+      "store": "Mall Plaza Los Ángeles",
+      "units": 950,
+      "clp": 8527505,
+      "chain": "Paris",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Linares",
+      "units": 873,
+      "clp": 8674962,
+      "chain": "Hites",
+      "region": "07 - Maule"
+    },
+    {
+      "store": "Mall Plaza Norte",
+      "units": 865,
+      "clp": 6949294,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Peñalolén",
+      "units": 850,
+      "clp": 7684472,
+      "chain": "Jumbo",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Portal Ñuñoa.",
+      "units": 829,
+      "clp": 6746336,
+      "chain": "Jumbo",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Vivo El Centro",
+      "units": 820,
+      "clp": 4618622,
+      "chain": "Ripley",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Angamos",
+      "units": 807,
+      "clp": 7470567,
+      "chain": "Jumbo",
+      "region": "02 - Antofagasta"
+    },
+    {
       "store": "Mall Paseo Los Dominicos",
-      "units": 634,
-      "clp": 5025567,
+      "units": 806,
+      "clp": 6392984,
+      "chain": "Jumbo",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Plaza San Bernardo",
+      "units": 800,
+      "clp": 4712037,
+      "chain": "Ripley",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Portal La Reina",
+      "units": 786,
+      "clp": 6565245,
       "chain": "Jumbo",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Mall Arauco Chillán",
-      "units": 625,
-      "clp": 7893211,
+      "units": 779,
+      "clp": 9851423,
       "chain": "Hites",
       "region": "16 - Ñuble"
     },
     {
-      "store": "Mall Plaza Copiapó",
-      "units": 610,
-      "clp": 3927088,
-      "chain": "Ripley",
-      "region": "03 - Atacama"
-    },
-    {
       "store": "Calama",
-      "units": 606,
-      "clp": 5674742,
+      "units": 778,
+      "clp": 7343543,
       "chain": "Jumbo",
       "region": "02 - Antofagasta"
     },
     {
-      "store": "Angamos",
-      "units": 604,
-      "clp": 5462409,
-      "chain": "Jumbo",
-      "region": "02 - Antofagasta"
-    },
-    {
-      "store": "Concepción 2",
-      "units": 603,
-      "clp": 5155558,
-      "chain": "Ripley",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "Mall Portal lLa Dehesa",
-      "units": 602,
-      "clp": 5451637,
+      "store": "Mall Plaza Sur",
+      "units": 775,
+      "clp": 5743250,
       "chain": "Jumbo",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Osorno",
-      "units": 602,
-      "clp": 6811253,
-      "chain": "Falabella",
+      "units": 765,
+      "clp": 8432766,
+      "chain": "Hiper Lider",
       "region": "10 - Los Lagos"
     },
     {
+      "store": "Mall Portal lLa Dehesa",
+      "units": 750,
+      "clp": 6818480,
+      "chain": "Jumbo",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Concepción 2",
+      "units": 727,
+      "clp": 6249345,
+      "chain": "Ripley",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Mall Plaza Copiapó",
+      "units": 722,
+      "clp": 4643533,
+      "chain": "Ripley",
+      "region": "03 - Atacama"
+    },
+    {
       "store": "Mall Paseo San Bernardo",
-      "units": 586,
-      "clp": 6854483,
+      "units": 698,
+      "clp": 8327214,
       "chain": "Paris",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Plaza Sur",
-      "units": 569,
-      "clp": 4108340,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
+      "store": "Mall Plaza Calama",
+      "units": 691,
+      "clp": 4975670,
+      "chain": "Ripley",
+      "region": "02 - Antofagasta"
     },
     {
       "store": "Mall Paseo Costanera",
-      "units": 567,
-      "clp": 5375876,
+      "units": 685,
+      "clp": 6580542,
       "chain": "Ripley",
       "region": "10 - Los Lagos"
     },
     {
-      "store": "Mall Portal Vadivia",
-      "units": 547,
-      "clp": 4916696,
-      "chain": "Jumbo",
-      "region": "14 - Los Ríos"
+      "store": "Mall Espacio Urbano Viña",
+      "units": 659,
+      "clp": 4474314,
+      "chain": "Hiper Lider",
+      "region": "05 - Valparaíso"
     },
     {
       "store": "Mall Plaza De Los Ríos",
-      "units": 532,
-      "clp": 3895263,
+      "units": 635,
+      "clp": 4679681,
       "chain": "Ripley",
       "region": "14 - Los Ríos"
     },
     {
       "store": "Quilpué",
-      "units": 521,
-      "clp": 4287518,
+      "units": 634,
+      "clp": 5167578,
       "chain": "Ripley",
       "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Talca El Arenal",
-      "units": 517,
-      "clp": 4516620,
-      "chain": "Jumbo",
-      "region": "07 - Maule"
-    },
-    {
-      "store": "Mall Plaza Egaña",
-      "units": 515,
-      "clp": 3816270,
-      "chain": "Ripley",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza Calama",
-      "units": 505,
-      "clp": 3493129,
-      "chain": "La Polar",
-      "region": "02 - Antofagasta"
-    },
-    {
-      "store": "Arica",
-      "units": 504,
-      "clp": 4312445,
-      "chain": "Jumbo",
-      "region": "15 - Arica y Parinacota"
     },
     {
       "store": "Ovalle",
-      "units": 496,
-      "clp": 6151253,
-      "chain": "La Polar",
+      "units": 632,
+      "clp": 7695444,
+      "chain": "Hites",
       "region": "04 - Coquimbo"
     },
     {
-      "store": "Linares",
-      "units": 496,
-      "clp": 5368419,
-      "chain": "Hites",
+      "store": "Mall Plaza Egaña",
+      "units": 631,
+      "clp": 4664348,
+      "chain": "Ripley",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Valdivia",
+      "units": 629,
+      "clp": 3541042,
+      "chain": "Hiper Lider",
+      "region": "14 - Los Ríos"
+    },
+    {
+      "store": "Talca El Arenal",
+      "units": 623,
+      "clp": 5526580,
+      "chain": "Jumbo",
       "region": "07 - Maule"
     },
     {
-      "store": "Coquimbo",
-      "units": 480,
-      "clp": 3508824,
-      "chain": "La Polar",
-      "region": "04 - Coquimbo"
-    },
-    {
-      "store": "Mall Espacio Urbano Los Andes",
-      "units": 477,
-      "clp": 3133825,
-      "chain": "Ripley",
-      "region": "05 - Valparaíso"
+      "store": "Mall Portal Vadivia",
+      "units": 618,
+      "clp": 5695822,
+      "chain": "Jumbo",
+      "region": "14 - Los Ríos"
     },
     {
       "store": "Melipilla",
-      "units": 473,
-      "clp": 5046369,
+      "units": 611,
+      "clp": 6406074,
       "chain": "Hites",
       "region": "13 - Metropolitana de Santiago"
     },
     {
+      "store": "Coquimbo",
+      "units": 596,
+      "clp": 4462005,
+      "chain": "Ripley",
+      "region": "04 - Coquimbo"
+    },
+    {
+      "store": "Arica",
+      "units": 590,
+      "clp": 5108254,
+      "chain": "Hiper Lider",
+      "region": "15 - Arica y Parinacota"
+    },
+    {
+      "store": "Mall Espacio Urbano Los Andes",
+      "units": 558,
+      "clp": 3560003,
+      "chain": "Ripley",
+      "region": "05 - Valparaíso"
+    },
+    {
       "store": "Mall Espacio Pionero - Punta Arenas",
-      "units": 471,
-      "clp": 3017217,
+      "units": 554,
+      "clp": 3624475,
       "chain": "Ripley",
       "region": "12 - Magallanes y de la Antártica Chilena"
     },
     {
       "store": "Los Andes",
-      "units": 457,
-      "clp": 3975065,
+      "units": 549,
+      "clp": 4916048,
       "chain": "Jumbo",
       "region": "05 - Valparaíso"
     },
     {
       "store": "Pajaritos",
-      "units": 434,
-      "clp": 3751189,
+      "units": 516,
+      "clp": 4601067,
       "chain": "Jumbo",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "No Aplica",
-      "units": 419,
-      "clp": 3703209,
+      "units": 505,
+      "clp": 4466577,
       "chain": "Ripley",
       "region": "04 - Coquimbo"
     },
     {
+      "store": "Estación Central",
+      "units": 499,
+      "clp": 6798079,
+      "chain": "Hites",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
       "store": "Copayapu Copiapó",
-      "units": 416,
-      "clp": 3536082,
+      "units": 499,
+      "clp": 4299181,
       "chain": "Jumbo",
       "region": "03 - Atacama"
     },
     {
-      "store": "Estación Central",
-      "units": 395,
-      "clp": 5631592,
+      "store": "Mall Vivo Coquimbo",
+      "units": 471,
+      "clp": 6045469,
+      "chain": "Hites",
+      "region": "04 - Coquimbo"
+    },
+    {
+      "store": "Quilicura",
+      "units": 467,
+      "clp": 4498828,
       "chain": "Hites",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Curicó",
-      "units": 383,
-      "clp": 4224574,
-      "chain": "La Polar",
+      "units": 460,
+      "clp": 5109080,
+      "chain": "Falabella",
       "region": "07 - Maule"
     },
     {
-      "store": "Mall Vivo Coquimbo",
-      "units": 383,
-      "clp": 4814399,
-      "chain": "Hites",
-      "region": "04 - Coquimbo"
-    },
-    {
       "store": "Crillón",
-      "units": 376,
-      "clp": 2193758,
+      "units": 460,
+      "clp": 2694804,
       "chain": "Ripley",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Espacio Urbano Viña",
-      "units": 374,
-      "clp": 2440908,
-      "chain": "Hiper Lider",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Mall Paseo Los Trapenses",
-      "units": 366,
-      "clp": 3055787,
-      "chain": "Jumbo",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Copiapó",
-      "units": 366,
-      "clp": 4229631,
-      "chain": "La Polar",
-      "region": "03 - Atacama"
-    },
-    {
-      "store": "Mall Plaza Antofagasta",
-      "units": 365,
-      "clp": 4051998,
-      "chain": "Paris",
-      "region": "02 - Antofagasta"
-    },
-    {
-      "store": "Mall Paseo Quilín",
-      "units": 364,
-      "clp": 2809827,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza Arica",
-      "units": 358,
-      "clp": 2209410,
-      "chain": "Falabella",
-      "region": "15 - Arica y Parinacota"
-    },
-    {
-      "store": "Mall Pumay (Maipú)",
-      "units": 355,
-      "clp": 4573336,
-      "chain": "Hites",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza La Serena",
-      "units": 352,
-      "clp": 3478937,
-      "chain": "Paris",
-      "region": "04 - Coquimbo"
-    },
-    {
       "store": "Mall Barrio Independencia",
-      "units": 349,
-      "clp": 2924379,
+      "units": 457,
+      "clp": 3840681,
       "chain": "Jumbo",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Espacio Urbano Puente Alto",
+      "units": 455,
+      "clp": 2672780,
+      "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Concha Y Toro",
-      "units": 346,
-      "clp": 2983789,
+      "units": 443,
+      "clp": 3907683,
       "chain": "Jumbo",
       "region": "13 - Metropolitana de Santiago"
     },
     {
+      "store": "Mall Plaza Arica",
+      "units": 437,
+      "clp": 2827780,
+      "chain": "Ripley",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Copiapó",
+      "units": 435,
+      "clp": 5123474,
+      "chain": "Paris",
+      "region": "03 - Atacama"
+    },
+    {
+      "store": "Mall Plaza La Serena",
+      "units": 430,
+      "clp": 4355138,
+      "chain": "Paris",
+      "region": "04 - Coquimbo"
+    },
+    {
       "store": "La Calera",
-      "units": 343,
-      "clp": 2012068,
+      "units": 429,
+      "clp": 2497118,
       "chain": "Ripley",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Valdivia",
-      "units": 328,
-      "clp": 1101386,
-      "chain": "Hiper Lider",
-      "region": "14 - Los Ríos"
-    },
-    {
-      "store": "Quilicura",
-      "units": 319,
-      "clp": 3336656,
+      "store": "Mall Pumay (Maipú)",
+      "units": 428,
+      "clp": 5529862,
       "chain": "Hites",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Edificio Puente",
-      "units": 310,
-      "clp": 4089439,
-      "chain": "Hites",
+      "store": "Mall Paseo Los Trapenses",
+      "units": 427,
+      "clp": 3602193,
+      "chain": "Jumbo",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Del Centro (Talca)",
-      "units": 295,
-      "clp": 3846072,
-      "chain": "Hites",
-      "region": "07 - Maule"
-    },
-    {
-      "store": "Mall Portal Valparaiso",
-      "units": 288,
-      "clp": 2212096,
+      "store": "Mall Plaza Antofagasta",
+      "units": 427,
+      "clp": 4845108,
       "chain": "Paris",
-      "region": "05 - Valparaíso"
+      "region": "02 - Antofagasta"
+    },
+    {
+      "store": "Centro Urbano Bio Bio (Hualpén)",
+      "units": 427,
+      "clp": 3269461,
+      "chain": "Hiper Lider",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Mall Paseo Quilín",
+      "units": 418,
+      "clp": 3299653,
+      "chain": "La Polar",
+      "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Copiapó (Chacabuco)",
-      "units": 281,
-      "clp": 867526,
+      "units": 411,
+      "clp": 1390524,
       "chain": "Hiper Lider",
       "region": "03 - Atacama"
     },
     {
-      "store": "Mall Espacio Urbano Puente Alto",
-      "units": 279,
-      "clp": 1684624,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
       "store": "Puerto Montt Urmeta",
-      "units": 276,
-      "clp": 1891422,
+      "units": 381,
+      "clp": 2585672,
       "chain": "Ripley",
       "region": "10 - Los Lagos"
     },
     {
-      "store": "Colina",
-      "units": 267,
-      "clp": 2761379,
-      "chain": "La Polar",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Espacio Urbano San Miguel",
-      "units": 260,
-      "clp": 2431550,
-      "chain": "La Polar",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Arauco San Antonio",
-      "units": 249,
-      "clp": 3109845,
-      "chain": "La Polar",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Mall Paseo Estación",
-      "units": 242,
-      "clp": 1677918,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
+      "store": "Mall Del Centro (Talca)",
+      "units": 369,
+      "clp": 4783410,
+      "chain": "Hites",
+      "region": "07 - Maule"
     },
     {
       "store": "Alameda",
-      "units": 241,
-      "clp": 1714625,
+      "units": 369,
+      "clp": 2575020,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Arauco Quilicura",
-      "units": 236,
-      "clp": 2199349,
+      "store": "Mall Portal Valparaiso",
+      "units": 367,
+      "clp": 2753984,
       "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Plaza Viña",
-      "units": 225,
-      "clp": 1834640,
-      "chain": "Ripley",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Plaza Armas",
-      "units": 214,
-      "clp": 2742804,
+      "store": "Edificio Puente",
+      "units": 365,
+      "clp": 4738579,
       "chain": "Hites",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Espacio Urbano Punta Arenas",
-      "units": 198,
-      "clp": 2184985,
-      "chain": "Falabella",
-      "region": "12 - Magallanes y de la Antártica Chilena"
-    },
-    {
-      "store": "Mall Plaza Alameda",
-      "units": 193,
-      "clp": 1163641,
-      "chain": "Ripley",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Barros Arana",
-      "units": 185,
-      "clp": 2194034,
-      "chain": "Paris",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "Maipú (Pajaritos)",
-      "units": 182,
-      "clp": 669137,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Portal La Dehesa",
-      "units": 174,
-      "clp": 1023854,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
       "store": "Temuco II",
-      "units": 159,
-      "clp": 543718,
+      "units": 359,
+      "clp": 1924985,
       "chain": "Hiper Lider",
       "region": "09 - La Araucanía"
     },
     {
-      "store": "Mall Arauco Coronel",
-      "units": 158,
-      "clp": 1719435,
-      "chain": "La Polar",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "Quilín",
-      "units": 158,
-      "clp": 615794,
-      "chain": "Hiper Lider",
+      "store": "Mall Arauco Quilicura",
+      "units": 322,
+      "clp": 2881702,
+      "chain": "Paris",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Plaza Iquique",
-      "units": 154,
-      "clp": 1780140,
-      "chain": "Falabella",
-      "region": "01 - Tarapacá"
+      "store": "Mall Arauco San Antonio",
+      "units": 318,
+      "clp": 3795667,
+      "chain": "Paris",
+      "region": "05 - Valparaíso"
     },
     {
-      "store": "Mall Open Plaza El Bosque",
-      "units": 146,
-      "clp": 1673648,
+      "store": "Colina",
+      "units": 306,
+      "clp": 3172496,
       "chain": "La Polar",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Puerto Montt (Cardonal)",
-      "units": 146,
-      "clp": 487190,
+      "units": 302,
+      "clp": 1502930,
       "chain": "Hiper Lider",
       "region": "10 - Los Lagos"
     },
     {
-      "store": "Rancagua (Presidente Eduardo Frei Montalva)",
-      "units": 146,
-      "clp": 846051,
-      "chain": "Hiper Lider",
-      "region": "06 - Libertador General Bernardo OHiggins"
+      "store": "Plaza Viña",
+      "units": 288,
+      "clp": 2233928,
+      "chain": "Ripley",
+      "region": "05 - Valparaíso"
     },
     {
-      "store": "San Fernando",
-      "units": 145,
-      "clp": 579624,
-      "chain": "Hiper Lider",
-      "region": "06 - Libertador General Bernardo OHiggins"
-    },
-    {
-      "store": "Buenaventura",
-      "units": 135,
-      "clp": 603458,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Plaza Puente Alto",
-      "units": 130,
-      "clp": 1630211,
+      "store": "Mall Espacio Urbano San Miguel",
+      "units": 286,
+      "clp": 2666335,
       "chain": "La Polar",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Centro Urbano Bio Bio (Hualpén)",
-      "units": 122,
-      "clp": 768185,
-      "chain": "Hiper Lider",
-      "region": "08 - Biobío"
+      "store": "Mall Paseo Estación",
+      "units": 280,
+      "clp": 1957783,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Espacio Urbano Gran Avenida",
-      "units": 116,
-      "clp": 402289,
+      "store": "Quilín",
+      "units": 278,
+      "clp": 1462180,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Temuco (Barros Arana)",
-      "units": 116,
-      "clp": 429813,
+      "units": 262,
+      "clp": 1553043,
       "chain": "Hiper Lider",
       "region": "09 - La Araucanía"
     },
     {
-      "store": "Mall Espacio Urbano Linares",
-      "units": 115,
-      "clp": 1173505,
-      "chain": "La Polar",
-      "region": "07 - Maule"
+      "store": "Buenaventura",
+      "units": 261,
+      "clp": 1332493,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Quillota",
-      "units": 106,
-      "clp": 419191,
+      "store": "Rancagua (Presidente Eduardo Frei Montalva)",
+      "units": 259,
+      "clp": 1377956,
       "chain": "Hiper Lider",
-      "region": "05 - Valparaíso"
+      "region": "06 - Libertador General Bernardo OHiggins"
+    },
+    {
+      "store": "Maipú (Pajaritos)",
+      "units": 259,
+      "clp": 1126925,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Plaza Armas",
+      "units": 251,
+      "clp": 3140216,
+      "chain": "Hites",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Plaza Alameda",
+      "units": 249,
+      "clp": 1519791,
+      "chain": "Ripley",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Barros Arana",
+      "units": 236,
+      "clp": 2842877,
+      "chain": "Paris",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Mall Espacio Urbano Gran Avenida",
+      "units": 236,
+      "clp": 942543,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Espacio Urbano Punta Arenas",
+      "units": 231,
+      "clp": 2613047,
+      "chain": "La Polar",
+      "region": "12 - Magallanes y de la Antártica Chilena"
+    },
+    {
+      "store": "San Fernando",
+      "units": 227,
+      "clp": 865172,
+      "chain": "Hiper Lider",
+      "region": "06 - Libertador General Bernardo OHiggins"
+    },
+    {
+      "store": "Mall Portal La Dehesa",
+      "units": 211,
+      "clp": 1200242,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Concepción",
-      "units": 101,
-      "clp": 544845,
+      "units": 207,
+      "clp": 1205671,
       "chain": "Falabella",
       "region": "08 - Biobío"
     },
     {
       "store": "La Florida (Santa Amalia)",
-      "units": 97,
-      "clp": 506020,
+      "units": 205,
+      "clp": 1205667,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Peñaflor",
-      "units": 96,
-      "clp": 564994,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Puente",
-      "units": 93,
-      "clp": 914635,
-      "chain": "La Polar",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Open Plaza Rancagua",
-      "units": 93,
-      "clp": 923727,
-      "chain": "Falabella",
-      "region": "06 - Libertador General Bernardo OHiggins"
-    },
-    {
-      "store": "Mall Shoping Center Quillota",
-      "units": 92,
-      "clp": 943017,
-      "chain": "La Polar",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Vespucio Sur",
-      "units": 92,
-      "clp": 361682,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Paseo Puente",
-      "units": 89,
-      "clp": 790460,
-      "chain": "Falabella",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "San Felipe",
-      "units": 87,
-      "clp": 720093,
-      "chain": "Hiper Lider",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Concepción (Collao)",
-      "units": 85,
-      "clp": 291772,
-      "chain": "Hiper Lider",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "Antofagasta (El Zenteno)",
-      "units": 84,
-      "clp": 305266,
-      "chain": "Hiper Lider",
-      "region": "02 - Antofagasta"
-    },
-    {
-      "store": "Quilicura (Lo Marcoleta)",
-      "units": 84,
-      "clp": 379690,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Quilpué (El Belloto)",
-      "units": 81,
-      "clp": 327766,
-      "chain": "Hiper Lider",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Plaza San Bernardo",
-      "units": 80,
-      "clp": 766311,
-      "chain": "La Polar",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Providencia Lyon",
-      "units": 78,
-      "clp": 443748,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza Quilpué",
-      "units": 77,
-      "clp": 885938,
-      "chain": "Falabella",
-      "region": "05 - Valparaíso"
     },
     {
       "store": "Antofagasta (PA Cerda)",
-      "units": 75,
-      "clp": 235550,
+      "units": 202,
+      "clp": 1388280,
       "chain": "Hiper Lider",
       "region": "02 - Antofagasta"
     },
     {
-      "store": "Osorno (Casona Osorno)",
-      "units": 73,
-      "clp": 291710,
+      "store": "Calama (Grecia)",
+      "units": 200,
+      "clp": 1134214,
       "chain": "Hiper Lider",
-      "region": "10 - Los Lagos"
+      "region": "02 - Antofagasta"
     },
     {
-      "store": "Matucana",
-      "units": 72,
-      "clp": 333848,
+      "store": "Huechuraba",
+      "units": 187,
+      "clp": 839909,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Puente Alto (Cordillera)",
-      "units": 71,
-      "clp": 304541,
+      "units": 182,
+      "clp": 1072133,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Huechuraba",
-      "units": 71,
-      "clp": 294988,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Open Plaza La Calera",
-      "units": 70,
-      "clp": 674756,
+      "store": "Mall Plaza Iquique",
+      "units": 180,
+      "clp": 2078901,
       "chain": "Falabella",
+      "region": "01 - Tarapacá"
+    },
+    {
+      "store": "Mall Arauco Coronel",
+      "units": 173,
+      "clp": 1911570,
+      "chain": "La Polar",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Quilpué (El Belloto)",
+      "units": 171,
+      "clp": 1024495,
+      "chain": "Hiper Lider",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Santa Cruz",
-      "units": 69,
-      "clp": 287596,
-      "chain": "Hiper Lider",
-      "region": "06 - Libertador General Bernardo OHiggins"
+      "store": "Mall Open Plaza El Bosque",
+      "units": 166,
+      "clp": 1902995,
+      "chain": "La Polar",
+      "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Limache",
-      "units": 68,
-      "clp": 285727,
+      "store": "Concepción (Collao)",
+      "units": 162,
+      "clp": 527416,
+      "chain": "Hiper Lider",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Quillota",
+      "units": 155,
+      "clp": 675252,
       "chain": "Hiper Lider",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Bandera",
-      "units": 67,
-      "clp": 498792,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Puente Nuevo",
-      "units": 66,
-      "clp": 218225,
+      "store": "Chiguayante",
+      "units": 147,
+      "clp": 1004298,
       "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Cerrillos (Oeste)",
-      "units": 64,
-      "clp": 376100,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Talcahuano",
-      "units": 63,
-      "clp": 541954,
-      "chain": "Paris",
       "region": "08 - Biobío"
     },
     {
       "store": "Villa Alemana",
-      "units": 63,
-      "clp": 220239,
+      "units": 145,
+      "clp": 938942,
       "chain": "Hiper Lider",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Bodega",
-      "units": 62,
-      "clp": 695541,
-      "chain": "La Polar",
+      "store": "Peñaflor",
+      "units": 143,
+      "clp": 976224,
+      "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Portal Nuñoa",
-      "units": 62,
-      "clp": 392590,
-      "chain": "Paris",
+      "store": "Vespucio Sur",
+      "units": 143,
+      "clp": 534913,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Plaza Puente Alto",
+      "units": 142,
+      "clp": 1762927,
+      "chain": "La Polar",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "La Reina (Jorge Alessandri)",
-      "units": 62,
-      "clp": 151989,
+      "units": 140,
+      "clp": 748947,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Concepción Barros Arana",
-      "units": 61,
-      "clp": 644344,
-      "chain": "La Polar",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "Talagante (Bernardo OHiggins)",
-      "units": 59,
-      "clp": 282956,
+      "store": "Puente Nuevo",
+      "units": 138,
+      "clp": 727397,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Calama (Grecia)",
-      "units": 58,
-      "clp": 167720,
-      "chain": "Hiper Lider",
-      "region": "02 - Antofagasta"
-    },
-    {
-      "store": "La Reina (Principe De Gales)",
-      "units": 58,
-      "clp": 137281,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "San Bernardo",
-      "units": 58,
-      "clp": 246048,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "San Bernardo (798)",
-      "units": 56,
-      "clp": 243618,
+      "store": "Maipú (Av. Central)",
+      "units": 137,
+      "clp": 734632,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Coronel",
-      "units": 52,
-      "clp": 213840,
+      "units": 137,
+      "clp": 952733,
       "chain": "Hiper Lider",
       "region": "08 - Biobío"
     },
     {
-      "store": "Mall Plaza Tobalaba",
-      "units": 49,
-      "clp": 299369,
-      "chain": "Ripley",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Irarrázaval",
-      "units": 49,
-      "clp": 148365,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall City Point Ovalle",
-      "units": 48,
-      "clp": 550075,
+      "store": "San Felipe",
+      "units": 135,
+      "clp": 1171347,
       "chain": "Paris",
-      "region": "04 - Coquimbo"
+      "region": "05 - Valparaíso"
     },
     {
-      "store": "Maipú (Av. Central)",
-      "units": 48,
-      "clp": 177790,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Puerto Montt (Km 3,5, Puerto)",
-      "units": 46,
-      "clp": 205712,
+      "store": "Osorno (Casona Osorno)",
+      "units": 135,
+      "clp": 493162,
       "chain": "Hiper Lider",
       "region": "10 - Los Lagos"
     },
     {
-      "store": "Mall Espacio Urbano Melipilla",
-      "units": 44,
-      "clp": 314223,
-      "chain": "Paris",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Macul",
-      "units": 44,
-      "clp": 123350,
+      "store": "Santa Cruz",
+      "units": 135,
+      "clp": 806081,
       "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
+      "region": "06 - Libertador General Bernardo OHiggins"
     },
     {
-      "store": "Vallenar",
-      "units": 43,
-      "clp": 384233,
-      "chain": "Tottus",
-      "region": "03 - Atacama"
-    },
-    {
-      "store": "Santiago (Nataniel Cox)",
-      "units": 42,
-      "clp": 296384,
-      "chain": "Tottus",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza Los Dominicos",
-      "units": 42,
-      "clp": 422490,
-      "chain": "Falabella",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "La Serena (El Milagro)",
-      "units": 41,
-      "clp": 206384,
-      "chain": "Hiper Lider",
-      "region": "04 - Coquimbo"
-    },
-    {
-      "store": "Santa Rosa",
-      "units": 41,
-      "clp": 176733,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Conchalí (Independencia)",
-      "units": 41,
-      "clp": 135637,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Copiapó (Los Carrera)",
-      "units": 38,
-      "clp": 182905,
-      "chain": "Hiper Lider",
-      "region": "03 - Atacama"
-    },
-    {
-      "store": "Viña del Mar (Centro)",
-      "units": 36,
-      "clp": 149366,
-      "chain": "Hiper Lider",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Calama (Huaytiquina)",
-      "units": 35,
-      "clp": 145386,
+      "store": "Antofagasta (El Zenteno)",
+      "units": 133,
+      "clp": 501539,
       "chain": "Hiper Lider",
       "region": "02 - Antofagasta"
     },
     {
-      "store": "Talca Colín",
-      "units": 34,
-      "clp": 281413,
-      "chain": "Tottus",
+      "store": "Calama (Huaytiquina)",
+      "units": 131,
+      "clp": 1051415,
+      "chain": "Hiper Lider",
+      "region": "02 - Antofagasta"
+    },
+    {
+      "store": "Cerrillos (Oeste)",
+      "units": 130,
+      "clp": 778549,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Espacio Urbano Linares",
+      "units": 127,
+      "clp": 1317923,
+      "chain": "La Polar",
       "region": "07 - Maule"
     },
     {
-      "store": "El Bosque (Los Morros)",
-      "units": 34,
-      "clp": 139490,
+      "store": "La Reina (Principe De Gales)",
+      "units": 123,
+      "clp": 632264,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Macul",
+      "units": 121,
+      "clp": 649639,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Quilicura (Lo Marcoleta)",
+      "units": 120,
+      "clp": 482186,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Talagante (Bernardo OHiggins)",
+      "units": 118,
+      "clp": 761513,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Open Plaza Rancagua",
+      "units": 110,
+      "clp": 1105557,
+      "chain": "Falabella",
+      "region": "06 - Libertador General Bernardo OHiggins"
+    },
+    {
+      "store": "Puente",
+      "units": 109,
+      "clp": 1077605,
+      "chain": "La Polar",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Paseo Puente",
+      "units": 108,
+      "clp": 923070,
+      "chain": "Falabella",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Limache",
+      "units": 108,
+      "clp": 408402,
+      "chain": "Hiper Lider",
+      "region": "05 - Valparaíso"
+    },
+    {
+      "store": "San Antonio",
+      "units": 108,
+      "clp": 509219,
+      "chain": "Hiper Lider",
+      "region": "05 - Valparaíso"
     },
     {
       "store": "Maipú (Tres Poniente)",
-      "units": 33,
-      "clp": 152694,
+      "units": 105,
+      "clp": 861343,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Chiguayante",
-      "units": 33,
-      "clp": 155368,
+      "store": "Santa Rosa",
+      "units": 102,
+      "clp": 769143,
       "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Shoping Center Quillota",
+      "units": 98,
+      "clp": 991836,
+      "chain": "La Polar",
+      "region": "05 - Valparaíso"
+    },
+    {
+      "store": "Copiapó (Los Carrera)",
+      "units": 97,
+      "clp": 681582,
+      "chain": "Hiper Lider",
+      "region": "03 - Atacama"
+    },
+    {
+      "store": "Matucana",
+      "units": 97,
+      "clp": 527756,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Iquique (Bilbao)",
+      "units": 95,
+      "clp": 429830,
+      "chain": "Hiper Lider",
+      "region": "01 - Tarapacá"
+    },
+    {
+      "store": "Maipú (Vespucio)",
+      "units": 91,
+      "clp": 613287,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Providencia Lyon",
+      "units": 88,
+      "clp": 536375,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Bandera",
+      "units": 87,
+      "clp": 717735,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Plaza San Bernardo",
+      "units": 87,
+      "clp": 823018,
+      "chain": "La Polar",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Espacio Urbano Puenta Arenas",
+      "units": 87,
+      "clp": 310293,
+      "chain": "Hiper Lider",
+      "region": "12 - Magallanes y de la Antártica Chilena"
+    },
+    {
+      "store": "La Serena (El Milagro)",
+      "units": 86,
+      "clp": 616100,
+      "chain": "Hiper Lider",
+      "region": "04 - Coquimbo"
+    },
+    {
+      "store": "Talcahuano",
+      "units": 84,
+      "clp": 725263,
+      "chain": "Paris",
       "region": "08 - Biobío"
     },
     {
-      "store": "Buin",
-      "units": 32,
-      "clp": 167938,
+      "store": "Mall Plaza Quilpué",
+      "units": 83,
+      "clp": 961878,
+      "chain": "Falabella",
+      "region": "05 - Valparaíso"
+    },
+    {
+      "store": "San Bernardo",
+      "units": 81,
+      "clp": 361118,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Irarrázaval",
+      "units": 80,
+      "clp": 309888,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "San Pablo",
+      "units": 80,
+      "clp": 584250,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Rancagua (Recreo)",
-      "units": 32,
-      "clp": 133479,
+      "units": 78,
+      "clp": 498702,
       "chain": "Hiper Lider",
       "region": "06 - Libertador General Bernardo OHiggins"
     },
     {
-      "store": "Iquique (Bilbao)",
-      "units": 32,
-      "clp": 133606,
-      "chain": "Hiper Lider",
-      "region": "01 - Tarapacá"
+      "store": "Mall Open Plaza La Calera",
+      "units": 77,
+      "clp": 739686,
+      "chain": "Falabella",
+      "region": "05 - Valparaíso"
     },
     {
-      "store": "Talagante Cordillera",
-      "units": 31,
-      "clp": 209678,
-      "chain": "Tottus",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Maipú (Vespucio)",
-      "units": 31,
-      "clp": 109123,
+      "store": "San Bernardo (798)",
+      "units": 76,
+      "clp": 356156,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "Mall Paseo Montt Coronel",
-      "units": 29,
-      "clp": 156739,
+      "store": "Mall Portal Nuñoa",
+      "units": 72,
+      "clp": 535187,
       "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Concepción Barros Arana",
+      "units": 72,
+      "clp": 754518,
+      "chain": "La Polar",
       "region": "08 - Biobío"
     },
     {
-      "store": "Mall Espacio Urbano Puenta Arenas",
-      "units": 29,
-      "clp": 125855,
-      "chain": "Hiper Lider",
-      "region": "12 - Magallanes y de la Antártica Chilena"
-    },
-    {
-      "store": "San Pablo",
-      "units": 28,
-      "clp": 154406,
+      "store": "Conchalí (Independencia)",
+      "units": 72,
+      "clp": 322054,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
-      "store": "La Florida",
-      "units": 24,
-      "clp": 122025,
+      "store": "Bodega",
+      "units": 61,
+      "clp": 687147,
+      "chain": "La Polar",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Puerto Montt (Km 3,5, Puerto)",
+      "units": 61,
+      "clp": 255267,
+      "chain": "Hiper Lider",
+      "region": "10 - Los Lagos"
+    },
+    {
+      "store": "Mall Espacio Urbano Melipilla",
+      "units": 56,
+      "clp": 400539,
+      "chain": "Paris",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall City Point Ovalle",
+      "units": 56,
+      "clp": 664997,
+      "chain": "Paris",
+      "region": "04 - Coquimbo"
+    },
+    {
+      "store": "El Bosque (Los Morros)",
+      "units": 56,
+      "clp": 271333,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Plaza Tobalaba",
+      "units": 53,
+      "clp": 323202,
+      "chain": "Ripley",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Vallenar",
+      "units": 53,
+      "clp": 474133,
       "chain": "Tottus",
+      "region": "03 - Atacama"
+    },
+    {
+      "store": "Los Ángeles (Sor Vicenta)",
+      "units": 53,
+      "clp": 354705,
+      "chain": "Hiper Lider",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Viña del Mar (Centro)",
+      "units": 51,
+      "clp": 256802,
+      "chain": "Hiper Lider",
+      "region": "05 - Valparaíso"
+    },
+    {
+      "store": "Mall Plaza America (Rancagua)",
+      "units": 51,
+      "clp": 510094,
+      "chain": "Hiper Lider",
+      "region": "06 - Libertador General Bernardo OHiggins"
+    },
+    {
+      "store": "San Joaquín",
+      "units": 49,
+      "clp": 216633,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Plaza Los Dominicos",
+      "units": 46,
+      "clp": 460450,
+      "chain": "Falabella",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Renca (Miraflores)",
+      "units": 45,
+      "clp": 285827,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Santiago (Nataniel Cox)",
+      "units": 44,
+      "clp": 314364,
+      "chain": "Tottus",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Buin",
+      "units": 40,
+      "clp": 213791,
+      "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Departamental",
-      "units": 24,
-      "clp": 107036,
+      "units": 38,
+      "clp": 169138,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
     },
     {
       "store": "Talca (El Pilar)",
-      "units": 24,
-      "clp": 102526,
+      "units": 38,
+      "clp": 142862,
       "chain": "Hiper Lider",
       "region": "07 - Maule"
     },
     {
-      "store": "Los Ángeles (Sor Vicenta)",
-      "units": 23,
-      "clp": 80149,
-      "chain": "Hiper Lider",
-      "region": "08 - Biobío"
-    },
-    {
-      "store": "San Joaquín",
-      "units": 22,
-      "clp": 101625,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Talagante Plaza",
-      "units": 19,
-      "clp": 77624,
-      "chain": "Tottus",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
       "store": "La Serena (Regimiento Arica)",
-      "units": 18,
-      "clp": 78137,
+      "units": 38,
+      "clp": 260354,
       "chain": "Hiper Lider",
       "region": "04 - Coquimbo"
     },
     {
+      "store": "Mall Paseo Montt Coronel",
+      "units": 36,
+      "clp": 187669,
+      "chain": "Paris",
+      "region": "08 - Biobío"
+    },
+    {
+      "store": "Talca Colín",
+      "units": 36,
+      "clp": 292393,
+      "chain": "Tottus",
+      "region": "07 - Maule"
+    },
+    {
+      "store": "Talagante Cordillera",
+      "units": 34,
+      "clp": 229648,
+      "chain": "Tottus",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "La Florida",
+      "units": 30,
+      "clp": 175965,
+      "chain": "Tottus",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Recoleta",
+      "units": 23,
+      "clp": 70063,
+      "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
       "store": "Viña del Mar - Santa Julia",
-      "units": 17,
-      "clp": 104153,
+      "units": 21,
+      "clp": 147113,
       "chain": "Tottus",
       "region": "05 - Valparaíso"
     },
     {
-      "store": "Recoleta",
-      "units": 17,
-      "clp": 52877,
+      "store": "Talagante Plaza",
+      "units": 20,
+      "clp": 79614,
+      "chain": "Tottus",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Gabriela (La Pintana)",
+      "units": 20,
+      "clp": 99061,
       "chain": "Hiper Lider",
+      "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Open Plaza Ovalle",
+      "units": 17,
+      "clp": 106072,
+      "chain": "Falabella",
+      "region": "04 - Coquimbo"
+    },
+    {
+      "store": "Pucón",
+      "units": 17,
+      "clp": 161905,
+      "chain": "Falabella",
+      "region": "09 - La Araucanía"
+    },
+    {
+      "store": "San Bernardo Plaza",
+      "units": 17,
+      "clp": 114042,
+      "chain": "Tottus",
       "region": "13 - Metropolitana de Santiago"
     },
     {
@@ -3504,81 +4003,32 @@ const REAL_SELLOUT = {
       "region": "08 - Biobío"
     },
     {
-      "store": "Pucón",
-      "units": 15,
-      "clp": 141915,
-      "chain": "Falabella",
-      "region": "09 - La Araucanía"
-    },
-    {
-      "store": "Gabriela (La Pintana)",
-      "units": 15,
-      "clp": 81422,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Open Plaza Ovalle",
-      "units": 14,
-      "clp": 88102,
-      "chain": "Falabella",
-      "region": "04 - Coquimbo"
-    },
-    {
-      "store": "San Bernardo Plaza",
-      "units": 14,
-      "clp": 87072,
-      "chain": "Tottus",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
       "store": "Coquimbo Tierras Blancas",
-      "units": 14,
-      "clp": 51290,
+      "units": 15,
+      "clp": 56684,
       "chain": "Tottus",
       "region": "04 - Coquimbo"
-    },
-    {
-      "store": "Renca (Miraflores)",
-      "units": 14,
-      "clp": 41119,
-      "chain": "Hiper Lider",
-      "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "San Antonio",
-      "units": 11,
-      "clp": 61261,
-      "chain": "Hiper Lider",
-      "region": "05 - Valparaíso"
-    },
-    {
-      "store": "Mall Open Plaza San Felipe",
-      "units": 10,
-      "clp": 92812,
-      "chain": "Falabella",
-      "region": "05 - Valparaíso"
     },
     {
       "store": "Maipú (Camino Melipilla)",
-      "units": 8,
-      "clp": 48696,
+      "units": 15,
+      "clp": 100754,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "Mall Open Plaza San Felipe",
+      "units": 11,
+      "clp": 98307,
+      "chain": "Falabella",
+      "region": "05 - Valparaíso"
     },
     {
       "store": "Vicuña Mackenna",
-      "units": 7,
-      "clp": 32750,
+      "units": 9,
+      "clp": 44506,
       "chain": "Hiper Lider",
       "region": "13 - Metropolitana de Santiago"
-    },
-    {
-      "store": "Mall Plaza America (Rancagua)",
-      "units": 5,
-      "clp": 17614,
-      "chain": "Hiper Lider",
-      "region": "06 - Libertador General Bernardo OHiggins"
     },
     {
       "store": "Mall Vivo San Fernando",
@@ -3600,88 +4050,95 @@ const REAL_SELLOUT = {
       "clp": 4495,
       "chain": "Tottus",
       "region": "13 - Metropolitana de Santiago"
+    },
+    {
+      "store": "El Bosque",
+      "units": 1,
+      "clp": 1990,
+      "chain": "Tottus",
+      "region": "13 - Metropolitana de Santiago"
     }
   ],
   "byRegion": [
     {
       "region": "13 - Metropolitana de Santiago",
-      "units": 30435,
-      "clp": 248754485
+      "units": 38936,
+      "clp": 318929229
     },
     {
       "region": "05 - Valparaíso",
-      "units": 8107,
-      "clp": 67345921
+      "units": 10702,
+      "clp": 88801024
     },
     {
       "region": "08 - Biobío",
-      "units": 6354,
-      "clp": 55165991
+      "units": 8427,
+      "clp": 72485162
     },
     {
       "region": "02 - Antofagasta",
-      "units": 4305,
-      "clp": 36205881
+      "units": 5758,
+      "clp": 49134736
     },
     {
       "region": "10 - Los Lagos",
-      "units": 4139,
-      "clp": 38587896
+      "units": 5510,
+      "clp": 49823511
     },
     {
       "region": "07 - Maule",
-      "units": 4116,
-      "clp": 35711933
+      "units": 5275,
+      "clp": 46111767
     },
     {
       "region": "04 - Coquimbo",
-      "units": 3668,
-      "clp": 35162155
+      "units": 4633,
+      "clp": 45061275
     },
     {
       "region": "06 - Libertador General Bernardo OHiggins",
-      "units": 3540,
-      "clp": 28991414
+      "units": 4410,
+      "clp": 36459012
     },
     {
       "region": "09 - La Araucanía",
-      "units": 3362,
-      "clp": 29257815
+      "units": 4360,
+      "clp": 38153278
     },
     {
       "region": "16 - Ñuble",
-      "units": 2312,
-      "clp": 21379426
+      "units": 2954,
+      "clp": 27054735
     },
     {
       "region": "01 - Tarapacá",
-      "units": 2091,
-      "clp": 17745632
+      "units": 2536,
+      "clp": 21059364
     },
     {
       "region": "03 - Atacama",
-      "units": 1754,
-      "clp": 13127465
+      "units": 2217,
+      "clp": 16612427
     },
     {
       "region": "14 - Los Ríos",
-      "units": 1428,
-      "clp": 10084152
+      "units": 1903,
+      "clp": 14087352
     },
     {
       "region": "12 - Magallanes y de la Antártica Chilena",
-      "units": 698,
-      "clp": 5328057
+      "units": 872,
+      "clp": 6547815
     },
     {
       "region": "15 - Arica y Parinacota",
-      "units": 637,
-      "clp": 5194672
+      "units": 767,
+      "clp": 6402358
     },
     {
       "region": "No Definido",
-      "units": 400,
-      "clp": 3744939
+      "units": 581,
+      "clp": 5598053
     }
   ],
   "dailyTotals": [
@@ -3742,48 +4199,73 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-23",
-      "units": 3201,
-      "clp": 26611337
+      "units": 3462,
+      "clp": 28633079
     },
     {
       "date": "2026-02-24",
-      "units": 3279,
-      "clp": 27751915
+      "units": 3543,
+      "clp": 29881671
     },
     {
       "date": "2026-02-25",
-      "units": 3466,
-      "clp": 28369271
+      "units": 3755,
+      "clp": 30632436
     },
     {
       "date": "2026-02-26",
-      "units": 3670,
-      "clp": 30581793
+      "units": 4022,
+      "clp": 33374710
     },
     {
       "date": "2026-02-27",
-      "units": 4909,
-      "clp": 41565282
+      "units": 5409,
+      "clp": 45585538
     },
     {
       "date": "2026-02-28",
-      "units": 6318,
-      "clp": 54364274
+      "units": 6901,
+      "clp": 59130817
     },
     {
       "date": "2026-03-01",
-      "units": 4599,
-      "clp": 39516528
+      "units": 5164,
+      "clp": 43948857
     },
     {
       "date": "2026-03-02",
-      "units": 3943,
-      "clp": 34171260
+      "units": 4422,
+      "clp": 37983904
     },
     {
       "date": "2026-03-03",
-      "units": 4119,
-      "clp": 35913137
+      "units": 4606,
+      "clp": 39217354
+    },
+    {
+      "date": "2026-03-04",
+      "units": 3432,
+      "clp": 29114254
+    },
+    {
+      "date": "2026-03-05",
+      "units": 3682,
+      "clp": 31931882
+    },
+    {
+      "date": "2026-03-06",
+      "units": 4575,
+      "clp": 40256989
+    },
+    {
+      "date": "2026-03-07",
+      "units": 5255,
+      "clp": 45220247
+    },
+    {
+      "date": "2026-03-08",
+      "units": 1771,
+      "clp": 14466322
     }
   ],
   "dailyByChain": [
@@ -4468,8 +4950,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-23",
       "chain": "Tottus",
-      "units": 19,
-      "clp": 130854
+      "units": 20,
+      "clp": 136248
     },
     {
       "date": "2026-02-23",
@@ -4486,8 +4968,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-23",
       "chain": "Hiper Lider",
-      "units": 384,
-      "clp": 1559098
+      "units": 640,
+      "clp": 3532622
     },
     {
       "date": "2026-02-23",
@@ -4504,8 +4986,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-23",
       "chain": "Walmart",
-      "units": 5,
-      "clp": 21010
+      "units": 9,
+      "clp": 63834
     },
     {
       "date": "2026-02-23",
@@ -4564,8 +5046,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-24",
       "chain": "Hiper Lider",
-      "units": 360,
-      "clp": 1409886
+      "units": 613,
+      "clp": 3423768
     },
     {
       "date": "2026-02-24",
@@ -4582,8 +5064,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-24",
       "chain": "Walmart",
-      "units": 5,
-      "clp": 21010
+      "units": 16,
+      "clp": 136884
     },
     {
       "date": "2026-02-24",
@@ -4636,14 +5118,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-25",
       "chain": "Hiper Lider",
-      "units": 432,
-      "clp": 1693219
+      "units": 714,
+      "clp": 3881652
     },
     {
       "date": "2026-02-25",
       "chain": "Walmart",
-      "units": 5,
-      "clp": 22690
+      "units": 12,
+      "clp": 97422
     },
     {
       "date": "2026-02-25",
@@ -4696,8 +5178,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-26",
       "chain": "Paris",
-      "units": 462,
-      "clp": 4630388
+      "units": 463,
+      "clp": 4637129
     },
     {
       "date": "2026-02-26",
@@ -4708,8 +5190,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-26",
       "chain": "Hiper Lider",
-      "units": 408,
-      "clp": 1664320
+      "units": 748,
+      "clp": 4338824
     },
     {
       "date": "2026-02-26",
@@ -4720,8 +5202,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-26",
       "chain": "Walmart",
-      "units": 5,
-      "clp": 21010
+      "units": 16,
+      "clp": 132682
     },
     {
       "date": "2026-02-26",
@@ -4774,14 +5256,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-27",
       "chain": "Hiper Lider",
-      "units": 555,
-      "clp": 2149835
+      "units": 1045,
+      "clp": 6069336
     },
     {
       "date": "2026-02-27",
       "chain": "Walmart",
-      "units": 8,
-      "clp": 33616
+      "units": 18,
+      "clp": 134371
     },
     {
       "date": "2026-02-27",
@@ -4846,8 +5328,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-28",
       "chain": "Hiper Lider",
-      "units": 727,
-      "clp": 2893885
+      "units": 1296,
+      "clp": 7514325
     },
     {
       "date": "2026-02-28",
@@ -4864,8 +5346,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-28",
       "chain": "Walmart",
-      "units": 7,
-      "clp": 31086
+      "units": 21,
+      "clp": 177189
     },
     {
       "date": "2026-02-28",
@@ -4918,8 +5400,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-01",
       "chain": "Hiper Lider",
-      "units": 634,
-      "clp": 2600652
+      "units": 1193,
+      "clp": 6971686
     },
     {
       "date": "2026-03-01",
@@ -4936,8 +5418,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-01",
       "chain": "Walmart",
-      "units": 5,
-      "clp": 21010
+      "units": 11,
+      "clp": 82305
     },
     {
       "date": "2026-03-02",
@@ -4948,8 +5430,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-02",
       "chain": "Paris",
-      "units": 478,
-      "clp": 5519833
+      "units": 479,
+      "clp": 5526323
     },
     {
       "date": "2026-03-02",
@@ -4990,8 +5472,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-02",
       "chain": "Hiper Lider",
-      "units": 534,
-      "clp": 2080673
+      "units": 1000,
+      "clp": 5765078
     },
     {
       "date": "2026-03-02",
@@ -5008,8 +5490,8 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-02",
       "chain": "Walmart",
-      "units": 10,
-      "clp": 40331
+      "units": 22,
+      "clp": 162080
     },
     {
       "date": "2026-03-03",
@@ -5038,14 +5520,14 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-03",
       "chain": "Hites",
-      "units": 610,
-      "clp": 8202534
+      "units": 611,
+      "clp": 8212524
     },
     {
       "date": "2026-03-03",
       "chain": "Hiper Lider",
-      "units": 525,
-      "clp": 1991981
+      "units": 1005,
+      "clp": 5228275
     },
     {
       "date": "2026-03-03",
@@ -5074,115 +5556,409 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-03",
       "chain": "Walmart",
-      "units": 3,
-      "clp": 12606
+      "units": 9,
+      "clp": 70539
     },
     {
       "date": "2026-03-03",
       "chain": "Acuenta",
       "units": 1,
       "clp": 840
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Jumbo",
+      "units": 1030,
+      "clp": 9682461
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hiper Lider",
+      "units": 759,
+      "clp": 4451528
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Falabella",
+      "units": 91,
+      "clp": 900497
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Ripley",
+      "units": 714,
+      "clp": 4526226
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Paris",
+      "units": 329,
+      "clp": 3439131
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hites",
+      "units": 336,
+      "clp": 4248946
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "La Polar",
+      "units": 141,
+      "clp": 1644442
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Walmart",
+      "units": 13,
+      "clp": 79793
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Tottus",
+      "units": 14,
+      "clp": 111860
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Ekono",
+      "units": 4,
+      "clp": 23496
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Lider Express",
+      "units": 1,
+      "clp": 5874
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Jumbo",
+      "units": 1135,
+      "clp": 11017669
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Falabella",
+      "units": 84,
+      "clp": 859324
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Ripley",
+      "units": 753,
+      "clp": 4931913
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hiper Lider",
+      "units": 782,
+      "clp": 4584774
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hites",
+      "units": 395,
+      "clp": 5071007
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Paris",
+      "units": 364,
+      "clp": 3692274
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "La Polar",
+      "units": 135,
+      "clp": 1562842
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Tottus",
+      "units": 14,
+      "clp": 118860
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Walmart",
+      "units": 14,
+      "clp": 73908
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Ekono",
+      "units": 4,
+      "clp": 10084
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Lider Express",
+      "units": 2,
+      "clp": 9227
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Jumbo",
+      "units": 1446,
+      "clp": 14131924
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hiper Lider",
+      "units": 795,
+      "clp": 4559150
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Falabella",
+      "units": 133,
+      "clp": 1417261
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Ripley",
+      "units": 928,
+      "clp": 6233275
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "La Polar",
+      "units": 182,
+      "clp": 1962197
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Paris",
+      "units": 592,
+      "clp": 5500767
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hites",
+      "units": 468,
+      "clp": 6288448
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Tottus",
+      "units": 11,
+      "clp": 77890
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Walmart",
+      "units": 10,
+      "clp": 56270
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Ekono",
+      "units": 7,
+      "clp": 18059
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Lider Express",
+      "units": 3,
+      "clp": 11748
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Paris",
+      "units": 713,
+      "clp": 7436706
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Jumbo",
+      "units": 2105,
+      "clp": 21453185
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hiper Lider",
+      "units": 1041,
+      "clp": 6069347
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Ripley",
+      "units": 1135,
+      "clp": 7871222
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Falabella",
+      "units": 178,
+      "clp": 1928886
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Tottus",
+      "units": 21,
+      "clp": 188790
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Walmart",
+      "units": 51,
+      "clp": 213346
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Ekono",
+      "units": 8,
+      "clp": 43663
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Lider Express",
+      "units": 3,
+      "clp": 15102
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hiper Lider",
+      "units": 918,
+      "clp": 5430517
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Paris",
+      "units": 483,
+      "clp": 4550733
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hites",
+      "units": 325,
+      "clp": 4276786
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Lider Express",
+      "units": 2,
+      "clp": 7555
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Ekono",
+      "units": 3,
+      "clp": 27705
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Walmart",
+      "units": 39,
+      "clp": 170505
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Acuenta",
+      "units": 1,
+      "clp": 2521
     }
   ],
   "stock": {
-    "totalSKUs": 561091,
-    "totalOOS": 53870,
-    "oosRate": 9.6,
-    "totalStockUnits": 1898688,
+    "totalSKUs": 1071706,
+    "totalOOS": 133386,
+    "oosRate": 12.4,
+    "totalStockUnits": 3700930,
     "oosByChain": [
       {
         "chain": "Lider Express",
-        "totalSKUs": 74,
-        "oosSKUs": 60,
+        "totalSKUs": 444,
+        "oosSKUs": 360,
         "oosRate": 81.1
       },
       {
         "chain": "Hiper Lider",
-        "totalSKUs": 8387,
-        "oosSKUs": 5849,
-        "oosRate": 69.7
+        "totalSKUs": 57136,
+        "oosSKUs": 35970,
+        "oosRate": 63.0
       },
       {
         "chain": "Ekono",
-        "totalSKUs": 75,
-        "oosSKUs": 42,
-        "oosRate": 56.0
+        "totalSKUs": 515,
+        "oosSKUs": 253,
+        "oosRate": 49.1
       },
       {
         "chain": "Walmart",
-        "totalSKUs": 243,
-        "oosSKUs": 123,
-        "oosRate": 50.6
+        "totalSKUs": 1558,
+        "oosSKUs": 739,
+        "oosRate": 47.4
       },
       {
         "chain": "Johnson",
-        "totalSKUs": 349,
-        "oosSKUs": 71,
-        "oosRate": 20.3
+        "totalSKUs": 730,
+        "oosSKUs": 217,
+        "oosRate": 29.7
       },
       {
         "chain": "Paris",
-        "totalSKUs": 98192,
-        "oosSKUs": 13111,
-        "oosRate": 13.4
+        "totalSKUs": 183098,
+        "oosSKUs": 29969,
+        "oosRate": 16.4
       },
       {
         "chain": "Falabella",
-        "totalSKUs": 19022,
-        "oosSKUs": 2463,
+        "totalSKUs": 33921,
+        "oosSKUs": 4371,
         "oosRate": 12.9
       },
       {
         "chain": "La Polar",
-        "totalSKUs": 49047,
-        "oosSKUs": 6103,
-        "oosRate": 12.4
+        "totalSKUs": 78575,
+        "oosSKUs": 8979,
+        "oosRate": 11.4
       },
       {
         "chain": "Tottus",
-        "totalSKUs": 989,
-        "oosSKUs": 114,
-        "oosRate": 11.5
+        "totalSKUs": 1761,
+        "oosSKUs": 192,
+        "oosRate": 10.9
       },
       {
         "chain": "Ripley",
-        "totalSKUs": 177575,
-        "oosSKUs": 16468,
-        "oosRate": 9.3
+        "totalSKUs": 325515,
+        "oosSKUs": 33312,
+        "oosRate": 10.2
       },
       {
         "chain": "Jumbo",
-        "totalSKUs": 50376,
-        "oosSKUs": 3599,
-        "oosRate": 7.1
+        "totalSKUs": 94100,
+        "oosSKUs": 6879,
+        "oosRate": 7.3
+      },
+      {
+        "chain": "Acuenta",
+        "totalSKUs": 185,
+        "oosSKUs": 10,
+        "oosRate": 5.4
       },
       {
         "chain": "Hites",
-        "totalSKUs": 156426,
-        "oosSKUs": 5861,
-        "oosRate": 3.7
+        "totalSKUs": 293419,
+        "oosSKUs": 12126,
+        "oosRate": 4.1
       },
       {
         "chain": "Cencosud",
-        "totalSKUs": 186,
-        "oosSKUs": 6,
-        "oosRate": 3.2
+        "totalSKUs": 339,
+        "oosSKUs": 9,
+        "oosRate": 2.7
       },
       {
         "chain": "Santa Isabel",
-        "totalSKUs": 59,
+        "totalSKUs": 93,
         "oosSKUs": 0,
         "oosRate": 0.0
       },
       {
         "chain": "Walmart CD",
-        "totalSKUs": 61,
-        "oosSKUs": 0,
-        "oosRate": 0.0
-      },
-      {
-        "chain": "Acuenta",
-        "totalSKUs": 30,
+        "totalSKUs": 317,
         "oosSKUs": 0,
         "oosRate": 0.0
       }
@@ -5190,284 +5966,288 @@ const REAL_SELLOUT = {
     "oosByLicense": [
       {
         "license": "Bia",
-        "totalSKUs": 72,
-        "oosSKUs": 72,
+        "totalSKUs": 132,
+        "oosSKUs": 132,
+        "oosRate": 100.0
+      },
+      {
+        "license": "Rock",
+        "totalSKUs": 11,
+        "oosSKUs": 11,
         "oosRate": 100.0
       },
       {
         "license": "Pixar",
-        "totalSKUs": 66,
-        "oosSKUs": 66,
+        "totalSKUs": 121,
+        "oosSKUs": 121,
+        "oosRate": 100.0
+      },
+      {
+        "license": "Monster Inc",
+        "totalSKUs": 11,
+        "oosSKUs": 11,
         "oosRate": 100.0
       },
       {
         "license": "Uvault",
-        "totalSKUs": 12,
-        "oosSKUs": 12,
+        "totalSKUs": 22,
+        "oosSKUs": 22,
         "oosRate": 100.0
       },
       {
-        "license": "South Park",
-        "totalSKUs": 19,
-        "oosSKUs": 18,
-        "oosRate": 94.7
-      },
-      {
         "license": "MAFALDA",
-        "totalSKUs": 238,
-        "oosSKUs": 217,
-        "oosRate": 91.2
+        "totalSKUs": 4341,
+        "oosSKUs": 3990,
+        "oosRate": 91.9
       },
       {
         "license": "BT21",
-        "totalSKUs": 102,
-        "oosSKUs": 91,
+        "totalSKUs": 612,
+        "oosSKUs": 546,
         "oosRate": 89.2
       },
       {
         "license": "Superman",
-        "totalSKUs": 116,
-        "oosSKUs": 94,
-        "oosRate": 81.0
-      },
-      {
-        "license": "Zombie",
-        "totalSKUs": 48,
-        "oosSKUs": 36,
-        "oosRate": 75.0
+        "totalSKUs": 646,
+        "oosSKUs": 555,
+        "oosRate": 85.9
       },
       {
         "license": "SPY X FAMILY",
-        "totalSKUs": 114,
-        "oosSKUs": 85,
-        "oosRate": 74.6
-      },
-      {
-        "license": "Felix The Cat",
-        "totalSKUs": 18,
-        "oosSKUs": 12,
-        "oosRate": 66.7
-      },
-      {
-        "license": "Friends",
-        "totalSKUs": 275,
-        "oosSKUs": 175,
-        "oosRate": 63.6
+        "totalSKUs": 634,
+        "oosSKUs": 511,
+        "oosRate": 80.6
       },
       {
         "license": "Rick and morty",
-        "totalSKUs": 892,
-        "oosSKUs": 517,
-        "oosRate": 58.0
+        "totalSKUs": 3779,
+        "oosSKUs": 2890,
+        "oosRate": 76.5
       },
       {
-        "license": "Beavis and Butt Head",
-        "totalSKUs": 25,
-        "oosSKUs": 14,
-        "oosRate": 56.0
+        "license": "Zombie",
+        "totalSKUs": 88,
+        "oosSKUs": 66,
+        "oosRate": 75.0
       },
       {
-        "license": "SHREK",
-        "totalSKUs": 91,
-        "oosSKUs": 48,
-        "oosRate": 52.7
+        "license": "South Park",
+        "totalSKUs": 37,
+        "oosSKUs": 27,
+        "oosRate": 73.0
       },
       {
-        "license": "Disney Juvenil",
-        "totalSKUs": 36,
-        "oosSKUs": 18,
-        "oosRate": 50.0
+        "license": "Friends",
+        "totalSKUs": 1563,
+        "oosSKUs": 1072,
+        "oosRate": 68.6
       },
       {
-        "license": "Transformers",
-        "totalSKUs": 36,
-        "oosSKUs": 18,
-        "oosRate": 50.0
+        "license": "Felix The Cat",
+        "totalSKUs": 30,
+        "oosSKUs": 20,
+        "oosRate": 66.7
       },
       {
         "license": "Looney Tunes",
-        "totalSKUs": 318,
-        "oosSKUs": 149,
-        "oosRate": 46.9
+        "totalSKUs": 1023,
+        "oosSKUs": 671,
+        "oosRate": 65.6
       },
       {
-        "license": "La Casa de Papel",
-        "totalSKUs": 30,
-        "oosSKUs": 12,
-        "oosRate": 40.0
+        "license": "Transformers",
+        "totalSKUs": 66,
+        "oosSKUs": 33,
+        "oosRate": 50.0
       },
       {
-        "license": "DISNEY PIXAR COLLECTION",
-        "totalSKUs": 46,
+        "license": "Disney Juvenil",
+        "totalSKUs": 61,
+        "oosSKUs": 30,
+        "oosRate": 49.2
+      },
+      {
+        "license": "Beavis and Butt Head",
+        "totalSKUs": 37,
         "oosSKUs": 18,
-        "oosRate": 39.1
+        "oosRate": 48.6
       },
       {
-        "license": "LA VACA Y EL POLLITO",
-        "totalSKUs": 58,
-        "oosSKUs": 22,
-        "oosRate": 37.9
+        "license": "SHREK",
+        "totalSKUs": 184,
+        "oosSKUs": 88,
+        "oosRate": 47.8
+      },
+      {
+        "license": "Celebrity Icons",
+        "totalSKUs": 1236,
+        "oosSKUs": 585,
+        "oosRate": 47.3
       }
     ],
     "oosByDivision": [
       {
-        "division": "Vestuario Adulto",
-        "totalSKUs": 14306,
-        "oosSKUs": 3102,
-        "oosRate": 21.7
+        "division": "Ropa Interior",
+        "totalSKUs": 239550,
+        "oosSKUs": 54825,
+        "oosRate": 22.9
       },
       {
-        "division": "Ropa Interior",
-        "totalSKUs": 106768,
-        "oosSKUs": 13554,
-        "oosRate": 12.7
+        "division": "Vestuario Adulto",
+        "totalSKUs": 28164,
+        "oosSKUs": 5682,
+        "oosRate": 20.2
       },
       {
         "division": "Calzado",
-        "totalSKUs": 139527,
-        "oosSKUs": 14536,
-        "oosRate": 10.4
-      },
-      {
-        "division": "Accesorios y Otros",
-        "totalSKUs": 39743,
-        "oosSKUs": 3169,
-        "oosRate": 8.0
+        "totalSKUs": 252363,
+        "oosSKUs": 26575,
+        "oosRate": 10.5
       },
       {
         "division": "Vestuario Infantil",
-        "totalSKUs": 260285,
-        "oosSKUs": 19477,
-        "oosRate": 7.5
+        "totalSKUs": 476733,
+        "oosSKUs": 40107,
+        "oosRate": 8.4
+      },
+      {
+        "division": "Accesorios y Otros",
+        "totalSKUs": 73852,
+        "oosSKUs": 6127,
+        "oosRate": 8.3
       },
       {
         "division": "Sin Clasificar",
-        "totalSKUs": 462,
-        "oosSKUs": 32,
-        "oosRate": 6.9
+        "totalSKUs": 1044,
+        "oosSKUs": 70,
+        "oosRate": 6.7
       }
     ]
   },
   "allLicenses": [
     "BLUEY",
-    "Paw Patrol",
     "Snoopy",
-    "Minnie",
+    "Paw Patrol",
     "Spiderman",
+    "Minnie",
     "LILO & STITCH",
     "HAVAIANA",
-    "KPOP DEMON HUNTERS",
     "Minecraft",
+    "KPOP DEMON HUNTERS",
     "SONIC",
     "BOB ESPONJA",
     "Spidey",
     "Barbie",
     "Mickey",
     "Peppa Pig",
-    "ZOOTOPIA",
-    "NO APLICA",
-    "Avengers",
-    "Cars",
-    "Frozen",
-    "FORD",
     "GARFIELD",
+    "FORD",
+    "Acdc",
+    "ZOOTOPIA",
+    "NICK 90",
+    "NO APLICA",
+    "JUJUTSU KAISEN",
+    "Frozen",
+    "Cars",
+    "Avengers",
     "Star Wars",
     "Hot Wheels",
     "Naruto",
-    "NICK 90",
     "POKEMON",
+    "The Beatles",
+    "Pink Floyd",
+    "LOTSO",
+    "Metallica",
     "No Definido",
     "RICK AND MORTY",
-    "Acdc",
-    "JUJUTSU KAISEN",
     "RED BULL",
     "Harry Potter",
+    "NASA",
     "Stranger Things",
+    "OASIS",
     "Gabby Doll House",
     "INDEX",
     "HUNTER X HUNTER",
-    "REVUP",
     "Playstation",
-    "Pink Floyd",
-    "El Rey Leon",
     "Friends",
-    "The Mandalorian",
+    "REVUP",
+    "El Rey Leon",
+    "Kiss",
     "Toy Story",
-    "MARQUIS",
+    "The Mandalorian",
     "Rick and morty",
+    "MARQUIS",
+    "One Piece",
     "SMILEY",
     "Batman",
-    "One Piece",
-    "MARVEL COMICS",
-    "ARISTOGATOS MARIE",
-    "MARIO BROS",
     "Celebrity Icons",
-    "LOTSO",
+    "ARISTOGATOS MARIE",
+    "MARVEL COMICS",
+    "UFC",
+    "MARIO BROS",
     "Princesas",
-    "WINNIE THE POOH",
     "Disney",
+    "WINNIE THE POOH",
     "INSIDE OUT",
-    "Sin Licencia",
-    "Mickey y sus Amigos",
     "Emoji",
     "DEMON SLAYER",
-    "DC Comics",
-    "The Beatles",
+    "Mickey y sus Amigos",
+    "Sin Licencia",
     "Dragon Ball",
     "Hello Kitty",
+    "DC Comics",
     "Chicas Superpoderosas",
     "FUNKO MUSIC",
-    "Kiss",
-    "Attack on titan",
-    "Metallica",
-    "1KO",
-    "NASA",
     "Looney Tunes",
+    "Attack on titan",
+    "1KO",
     "SPY X FAMILY",
-    "OASIS",
-    "Jurassic World",
-    "Tom y Jerry",
-    "FORMULA 1",
-    "DISNEY 100",
-    "HAVAIAN+Q596A",
-    "PRESCHOOL MINNIE",
     "Marvel",
-    "Lightyear",
+    "Jurassic World",
+    "DISNEY 100",
+    "FORMULA 1",
+    "Tom y Jerry",
+    "MAFALDA",
+    "HAVAIAN+Q596A",
     "Dragon Ball Z",
-    "101 Dalmatas",
-    "SIN MARCA",
-    "Tinker Bell",
-    "Frida Kahlo",
-    "Mortal Kombat",
+    "PRESCHOOL MINNIE",
+    "Lightyear",
     "Minions",
     "Bambi",
+    "SIN MARCA",
+    "Mortal Kombat",
+    "101 Dalmatas",
+    "Tinker Bell",
+    "Frida Kahlo",
     "BT21",
-    "MAFALDA",
+    "Los Picapiedras",
     "WISH",
     "Disney Clásicos",
-    "Los Picapiedras",
-    "CHUCKY",
-    "Superman",
     "El Laboratorio De Dexter",
     "RUGRATS",
     "FUNKO DEPORTE",
-    "Pacman",
-    "JANIS JOPLIN",
+    "CHUCKY",
+    "Superman",
+    "ED EDD & EDDY",
     "DISNEY PIXAR COLLECTION",
-    "Rey León",
     "South Park",
+    "Pacman",
+    "WONDER WOMAN",
+    "JANIS JOPLIN",
+    "Villanas",
+    "Rey León",
     "Boruto",
     "Minnie (Infantil + Teen)",
     "Buzz Light Year",
-    "WONDER WOMAN",
     "DRAGON BALL SUPER",
-    "Villanas",
     "Iron Maiden",
-    "ED EDD & EDDY",
     "AC/DC",
     "FRUITS BASKET",
     "Woodstock",
-    "DARIA"
+    "DARIA",
+    "ALICIA PAIS MARAVILLA",
+    "Sesamo",
+    "Paw Patrol Movie"
   ],
   "allChains": [
     "Acuenta",
@@ -5504,7 +6284,7 @@ const REAL_SELLOUT = {
     "HAVAIANA": "Calzado",
     "Hot Wheels": "Vestuario Infantil",
     "Peppa Pig": "Vestuario Infantil",
-    "JUJUTSU KAISEN": "Vestuario Infantil",
+    "JUJUTSU KAISEN": "Ropa Interior",
     "SONIC": "Ropa Interior",
     "Naruto": "Ropa Interior",
     "SMILEY": "Ropa Interior",
@@ -5518,7 +6298,7 @@ const REAL_SELLOUT = {
     "Chicas Superpoderosas": "Vestuario Adulto",
     "Metallica": "Vestuario Adulto",
     "Cars": "Vestuario Infantil",
-    "FORD": "Vestuario Adulto",
+    "FORD": "Ropa Interior",
     "Frozen": "Vestuario Infantil",
     "One Piece": "Accesorios y Otros",
     "RED BULL": "Vestuario Infantil",
@@ -5528,7 +6308,7 @@ const REAL_SELLOUT = {
     "El Rey Leon": "Accesorios y Otros",
     "No Definido": "Accesorios y Otros",
     "Jurassic World": "Accesorios y Otros",
-    "Acdc": "Ropa Interior",
+    "Acdc": "Vestuario Adulto",
     "Rey León": "Ropa Interior",
     "Dragon Ball": "Accesorios y Otros",
     "Toy Story": "Vestuario Infantil",
@@ -5551,7 +6331,7 @@ const REAL_SELLOUT = {
     "Rick and morty": "Ropa Interior",
     "Batman": "Accesorios y Otros",
     "FUNKO MUSIC": "Accesorios y Otros",
-    "DC Comics": "Ropa Interior",
+    "DC Comics": "Accesorios y Otros",
     "FORMULA 1": "Accesorios y Otros",
     "HAVAIAN+Q596A": "Calzado",
     "DISNEY 100": "Accesorios y Otros",
@@ -5571,7 +6351,7 @@ const REAL_SELLOUT = {
     "Minions": "Ropa Interior",
     "MARIO BROS": "Accesorios y Otros",
     "Bambi": "Accesorios y Otros",
-    "LOTSO": "Accesorios y Otros",
+    "LOTSO": "Ropa Interior",
     "101 Dalmatas": "Vestuario Infantil",
     "FUNKO DEPORTE": "Accesorios y Otros",
     "Minnie (Infantil + Teen)": "Vestuario Infantil",
@@ -5604,611 +6384,620 @@ const REAL_SELLOUT = {
     "FRUITS BASKET": "Vestuario Infantil",
     "El Laboratorio De Dexter": "Ropa Interior",
     "Woodstock": "Vestuario Infantil",
-    "DARIA": "Ropa Interior"
+    "DARIA": "Ropa Interior",
+    "UFC": "Ropa Interior",
+    "ALICIA PAIS MARAVILLA": "Accesorios y Otros",
+    "Sesamo": "Calzado",
+    "Paw Patrol Movie": "Vestuario Infantil"
   },
   "licenseDivisionBreakdown": {
     "BOB ESPONJA": {
       "Vestuario Infantil": {
-        "units": 1061,
-        "clp": 6334895,
-        "pct": 43.3
+        "units": 1268,
+        "clp": 7549535,
+        "pct": 44.0
       },
       "Calzado": {
-        "units": 356,
-        "clp": 1780213,
-        "pct": 14.5
+        "units": 404,
+        "clp": 2003826,
+        "pct": 14.0
       },
       "Vestuario Adulto": {
-        "units": 248,
-        "clp": 1593037,
-        "pct": 10.1
+        "units": 287,
+        "clp": 1830812,
+        "pct": 9.9
       },
       "Ropa Interior": {
-        "units": 788,
-        "clp": 2238009,
+        "units": 926,
+        "clp": 2616976,
         "pct": 32.1
       }
     },
     "Snoopy": {
       "Calzado": {
-        "units": 693,
-        "clp": 5207042,
-        "pct": 9.3
+        "units": 797,
+        "clp": 5992191,
+        "pct": 7.8
       },
       "Vestuario Adulto": {
-        "units": 904,
-        "clp": 10279855,
-        "pct": 12.1
+        "units": 989,
+        "clp": 11165160,
+        "pct": 9.7
       },
       "Ropa Interior": {
-        "units": 4667,
-        "clp": 37185753,
-        "pct": 62.6
+        "units": 7056,
+        "clp": 55626836,
+        "pct": 69.4
       },
       "Vestuario Infantil": {
-        "units": 970,
-        "clp": 10281104,
-        "pct": 13.0
+        "units": 1086,
+        "clp": 11505060,
+        "pct": 10.7
       },
       "Accesorios y Otros": {
-        "units": 225,
-        "clp": 2450907,
-        "pct": 3.0
+        "units": 243,
+        "clp": 2657479,
+        "pct": 2.4
       }
     },
     "Harry Potter": {
       "Accesorios y Otros": {
-        "units": 134,
-        "clp": 1268734,
-        "pct": 57.5
+        "units": 158,
+        "clp": 1475914,
+        "pct": 57.7
       },
       "Vestuario Infantil": {
-        "units": 76,
-        "clp": 482565,
-        "pct": 32.6
+        "units": 92,
+        "clp": 590438,
+        "pct": 33.6
       },
       "Vestuario Adulto": {
-        "units": 23,
-        "clp": 174254,
-        "pct": 9.9
+        "units": 24,
+        "clp": 183244,
+        "pct": 8.8
       }
     },
     "BLUEY": {
       "Vestuario Infantil": {
-        "units": 5969,
-        "clp": 47970579,
-        "pct": 37.3
+        "units": 7114,
+        "clp": 57458034,
+        "pct": 35.6
       },
       "Ropa Interior": {
-        "units": 7100,
-        "clp": 54405978,
-        "pct": 44.4
+        "units": 9410,
+        "clp": 70119055,
+        "pct": 47.1
       },
       "Calzado": {
-        "units": 2735,
-        "clp": 31456481,
-        "pct": 17.1
+        "units": 3240,
+        "clp": 37820059,
+        "pct": 16.2
       },
       "Accesorios y Otros": {
-        "units": 182,
-        "clp": 1007782,
+        "units": 220,
+        "clp": 1200561,
         "pct": 1.1
       }
     },
     "Mickey": {
       "Ropa Interior": {
-        "units": 272,
-        "clp": 1913387,
-        "pct": 24.7
+        "units": 347,
+        "clp": 2405553,
+        "pct": 25.6
       },
       "Accesorios y Otros": {
-        "units": 117,
-        "clp": 640206,
-        "pct": 10.6
+        "units": 160,
+        "clp": 857965,
+        "pct": 11.8
       },
       "Vestuario Infantil": {
-        "units": 694,
-        "clp": 4160999,
-        "pct": 63.0
+        "units": 832,
+        "clp": 5141102,
+        "pct": 61.3
       },
       "Vestuario Adulto": {
         "units": 18,
         "clp": 46449,
-        "pct": 1.6
+        "pct": 1.3
       }
     },
     "Paw Patrol": {
       "Vestuario Infantil": {
-        "units": 3009,
-        "clp": 21508681,
-        "pct": 36.5
+        "units": 3657,
+        "clp": 26370216,
+        "pct": 36.8
       },
       "Ropa Interior": {
-        "units": 3352,
-        "clp": 19030270,
-        "pct": 40.7
+        "units": 4094,
+        "clp": 22955570,
+        "pct": 41.2
       },
       "Calzado": {
-        "units": 1803,
-        "clp": 23170903,
-        "pct": 21.9
+        "units": 2098,
+        "clp": 27531066,
+        "pct": 21.1
       },
       "Accesorios y Otros": {
-        "units": 69,
-        "clp": 350539,
+        "units": 82,
+        "clp": 415460,
         "pct": 0.8
       }
     },
     "Barbie": {
       "Vestuario Infantil": {
-        "units": 898,
-        "clp": 5357159,
-        "pct": 73.5
+        "units": 1073,
+        "clp": 6487008,
+        "pct": 73.6
       },
       "Ropa Interior": {
-        "units": 19,
-        "clp": 303202,
-        "pct": 1.6
+        "units": 33,
+        "clp": 508046,
+        "pct": 2.3
       },
       "Calzado": {
-        "units": 304,
-        "clp": 5575182,
-        "pct": 24.9
+        "units": 351,
+        "clp": 6534489,
+        "pct": 24.1
       }
     },
     "Spidey": {
       "Vestuario Infantil": {
-        "units": 1326,
-        "clp": 10649710,
-        "pct": 62.2
+        "units": 1559,
+        "clp": 12569569,
+        "pct": 61.5
       },
       "Calzado": {
-        "units": 451,
-        "clp": 7222429,
-        "pct": 21.2
+        "units": 541,
+        "clp": 8703175,
+        "pct": 21.3
       },
       "Ropa Interior": {
-        "units": 354,
-        "clp": 1660441,
-        "pct": 16.6
+        "units": 437,
+        "clp": 2105295,
+        "pct": 17.2
       }
     },
     "Minecraft": {
       "Vestuario Infantil": {
-        "units": 1287,
-        "clp": 8207575,
-        "pct": 43.7
+        "units": 1537,
+        "clp": 9921804,
+        "pct": 35.2
       },
       "Ropa Interior": {
-        "units": 1337,
-        "clp": 11976532,
-        "pct": 45.4
+        "units": 2447,
+        "clp": 21040645,
+        "pct": 56.0
       },
       "Calzado": {
-        "units": 319,
-        "clp": 3832904,
-        "pct": 10.8
+        "units": 384,
+        "clp": 4558422,
+        "pct": 8.8
       }
     },
     "Spiderman": {
       "Vestuario Infantil": {
-        "units": 2070,
-        "clp": 17069774,
-        "pct": 41.3
+        "units": 2628,
+        "clp": 22676720,
+        "pct": 43.5
       },
       "Calzado": {
-        "units": 2718,
-        "clp": 41296239,
-        "pct": 54.3
+        "units": 3154,
+        "clp": 47750685,
+        "pct": 52.2
       },
       "Accesorios y Otros": {
         "units": 14,
         "clp": 84411,
-        "pct": 0.3
+        "pct": 0.2
       },
       "Ropa Interior": {
-        "units": 206,
-        "clp": 1909858,
-        "pct": 4.1
+        "units": 242,
+        "clp": 2360450,
+        "pct": 4.0
       }
     },
     "ZOOTOPIA": {
       "Accesorios y Otros": {
-        "units": 91,
-        "clp": 816206,
-        "pct": 13.8
+        "units": 110,
+        "clp": 1004083,
+        "pct": 14.3
       },
       "Vestuario Infantil": {
-        "units": 300,
-        "clp": 2052079,
-        "pct": 45.5
+        "units": 345,
+        "clp": 2346295,
+        "pct": 44.9
       },
       "Calzado": {
-        "units": 211,
-        "clp": 1342083,
-        "pct": 32.0
+        "units": 239,
+        "clp": 1488924,
+        "pct": 31.1
       },
       "Ropa Interior": {
-        "units": 57,
-        "clp": 397341,
-        "pct": 8.6
+        "units": 75,
+        "clp": 495584,
+        "pct": 9.8
       }
     },
     "LILO & STITCH": {
       "Ropa Interior": {
-        "units": 2477,
-        "clp": 14702171,
-        "pct": 53.6
+        "units": 3293,
+        "clp": 18432845,
+        "pct": 55.9
       },
       "Vestuario Infantil": {
-        "units": 1332,
-        "clp": 9281495,
-        "pct": 28.8
+        "units": 1615,
+        "clp": 11183384,
+        "pct": 27.4
       },
       "Accesorios y Otros": {
-        "units": 148,
-        "clp": 1128779,
+        "units": 186,
+        "clp": 1474455,
         "pct": 3.2
       },
       "Calzado": {
-        "units": 661,
-        "clp": 10394525,
-        "pct": 14.3
+        "units": 793,
+        "clp": 12553569,
+        "pct": 13.5
       }
     },
     "KPOP DEMON HUNTERS": {
       "Vestuario Infantil": {
-        "units": 2977,
-        "clp": 36400915,
+        "units": 3480,
+        "clp": 42378444,
         "pct": 100.0
       }
     },
     "Minnie": {
       "Calzado": {
-        "units": 2210,
-        "clp": 30730811,
-        "pct": 43.1
+        "units": 2484,
+        "clp": 34485501,
+        "pct": 41.5
       },
       "Vestuario Infantil": {
-        "units": 2217,
-        "clp": 17268756,
-        "pct": 43.2
+        "units": 2639,
+        "clp": 20521681,
+        "pct": 44.1
       },
       "Ropa Interior": {
-        "units": 567,
-        "clp": 4512189,
-        "pct": 11.0
+        "units": 679,
+        "clp": 5550372,
+        "pct": 11.4
       },
       "Accesorios y Otros": {
-        "units": 139,
-        "clp": 684729,
-        "pct": 2.7
+        "units": 178,
+        "clp": 875894,
+        "pct": 3.0
       }
     },
     "The Mandalorian": {
       "Accesorios y Otros": {
-        "units": 48,
-        "clp": 702022,
-        "pct": 39.7
+        "units": 60,
+        "clp": 919248,
+        "pct": 42.0
       },
       "Vestuario Adulto": {
-        "units": 63,
-        "clp": 431650,
-        "pct": 52.1
+        "units": 70,
+        "clp": 479640,
+        "pct": 49.0
       },
       "Calzado": {
-        "units": 10,
-        "clp": 8219,
-        "pct": 8.3
+        "units": 11,
+        "clp": 9051,
+        "pct": 7.7
+      },
+      "Ropa Interior": {
+        "units": 2,
+        "clp": 1680,
+        "pct": 1.4
       }
     },
     "HAVAIANA": {
       "Calzado": {
-        "units": 3973,
-        "clp": 31407520,
+        "units": 4441,
+        "clp": 34912802,
         "pct": 100.0
       }
     },
     "Hot Wheels": {
       "Vestuario Infantil": {
-        "units": 406,
-        "clp": 1871842,
-        "pct": 94.4
+        "units": 490,
+        "clp": 2288398,
+        "pct": 94.8
       },
       "Vestuario Adulto": {
-        "units": 24,
-        "clp": 67285,
-        "pct": 5.6
+        "units": 27,
+        "clp": 74848,
+        "pct": 5.2
       }
     },
     "Peppa Pig": {
       "Vestuario Infantil": {
-        "units": 671,
-        "clp": 3549875,
-        "pct": 70.4
+        "units": 885,
+        "clp": 4759055,
+        "pct": 68.8
       },
       "Ropa Interior": {
-        "units": 282,
-        "clp": 1792508,
-        "pct": 29.6
+        "units": 402,
+        "clp": 2393746,
+        "pct": 31.2
       }
     },
     "JUJUTSU KAISEN": {
       "Accesorios y Otros": {
-        "units": 85,
-        "clp": 1287063,
-        "pct": 34.1
+        "units": 119,
+        "clp": 1685610,
+        "pct": 18.8
       },
       "Ropa Interior": {
-        "units": 59,
-        "clp": 290535,
-        "pct": 23.7
+        "units": 401,
+        "clp": 3788317,
+        "pct": 63.4
       },
       "Vestuario Infantil": {
-        "units": 103,
-        "clp": 535348,
-        "pct": 41.4
+        "units": 111,
+        "clp": 568960,
+        "pct": 17.5
       },
       "Vestuario Adulto": {
         "units": 2,
         "clp": 7999,
-        "pct": 0.8
+        "pct": 0.3
       }
     },
     "SONIC": {
       "Vestuario Infantil": {
-        "units": 927,
-        "clp": 5158259,
-        "pct": 36.8
+        "units": 1103,
+        "clp": 6406403,
+        "pct": 32.4
       },
       "Calzado": {
-        "units": 304,
-        "clp": 4158108,
-        "pct": 12.1
+        "units": 355,
+        "clp": 4885935,
+        "pct": 10.4
       },
       "Accesorios y Otros": {
-        "units": 207,
-        "clp": 965515,
-        "pct": 8.2
+        "units": 241,
+        "clp": 1178839,
+        "pct": 7.1
       },
       "Ropa Interior": {
-        "units": 1078,
-        "clp": 6660365,
-        "pct": 42.8
+        "units": 1701,
+        "clp": 9203753,
+        "pct": 50.0
       }
     },
     "Naruto": {
       "Ropa Interior": {
-        "units": 242,
-        "clp": 1645073,
-        "pct": 67.4
+        "units": 301,
+        "clp": 2018884,
+        "pct": 67.3
       },
       "Vestuario Infantil": {
-        "units": 87,
-        "clp": 405455,
-        "pct": 24.2
+        "units": 105,
+        "clp": 471708,
+        "pct": 23.5
       },
       "Vestuario Adulto": {
         "units": 3,
         "clp": 8400,
-        "pct": 0.8
+        "pct": 0.7
       },
       "Accesorios y Otros": {
-        "units": 27,
-        "clp": 383072,
-        "pct": 7.5
+        "units": 38,
+        "clp": 525023,
+        "pct": 8.5
       }
     },
     "SMILEY": {
       "Vestuario Infantil": {
         "units": 18,
         "clp": 107820,
-        "pct": 18.2
+        "pct": 16.5
       },
       "Calzado": {
-        "units": 3,
-        "clp": 5857,
-        "pct": 3.0
+        "units": 4,
+        "clp": 7529,
+        "pct": 3.7
       },
       "Ropa Interior": {
-        "units": 78,
-        "clp": 774468,
-        "pct": 78.8
+        "units": 87,
+        "clp": 887406,
+        "pct": 79.8
       }
     },
     "REVUP": {
       "Accesorios y Otros": {
-        "units": 147,
-        "clp": 245813,
-        "pct": 85.0
+        "units": 154,
+        "clp": 257519,
+        "pct": 84.2
       },
       "Ropa Interior": {
-        "units": 26,
-        "clp": 42646,
-        "pct": 15.0
+        "units": 29,
+        "clp": 45142,
+        "pct": 15.8
       }
     },
     "Stranger Things": {
       "Accesorios y Otros": {
-        "units": 127,
-        "clp": 1966053,
-        "pct": 56.4
+        "units": 148,
+        "clp": 2221263,
+        "pct": 57.4
       },
       "Vestuario Infantil": {
-        "units": 98,
-        "clp": 594404,
-        "pct": 43.6
+        "units": 110,
+        "clp": 664784,
+        "pct": 42.6
       }
     },
     "RICK AND MORTY": {
       "Calzado": {
-        "units": 12,
-        "clp": 18864,
-        "pct": 4.7
+        "units": 18,
+        "clp": 28696,
+        "pct": 5.2
       },
       "Ropa Interior": {
-        "units": 242,
-        "clp": 686408,
-        "pct": 94.2
+        "units": 320,
+        "clp": 908614,
+        "pct": 93.0
       },
       "Vestuario Adulto": {
-        "units": 3,
-        "clp": 4414,
-        "pct": 1.2
+        "units": 6,
+        "clp": 9029,
+        "pct": 1.7
       }
     },
     "NO APLICA": {
       "Accesorios y Otros": {
-        "units": 167,
-        "clp": 2619146,
-        "pct": 29.7
+        "units": 219,
+        "clp": 3438876,
+        "pct": 32.9
       },
       "Calzado": {
-        "units": 395,
-        "clp": 3202889,
-        "pct": 70.3
+        "units": 446,
+        "clp": 3586778,
+        "pct": 67.1
       }
     },
     "Gabby Doll House": {
       "Vestuario Infantil": {
-        "units": 193,
-        "clp": 977858,
-        "pct": 95.5
+        "units": 244,
+        "clp": 1214709,
+        "pct": 96.1
       },
       "Ropa Interior": {
-        "units": 9,
-        "clp": 33550,
-        "pct": 4.5
+        "units": 10,
+        "clp": 31857,
+        "pct": 3.9
       }
     },
     "Playstation": {
       "Vestuario Infantil": {
-        "units": 166,
-        "clp": 991076,
-        "pct": 97.1
+        "units": 193,
+        "clp": 1184196,
+        "pct": 96.5
       },
       "Ropa Interior": {
-        "units": 5,
-        "clp": 13043,
-        "pct": 2.9
+        "units": 7,
+        "clp": 27268,
+        "pct": 3.5
       }
     },
     "INSIDE OUT": {
       "Vestuario Infantil": {
-        "units": 41,
-        "clp": 202651,
+        "units": 57,
+        "clp": 259783,
         "pct": 100.0
       }
     },
     "Chicas Superpoderosas": {
       "Vestuario Adulto": {
-        "units": 28,
-        "clp": 184868,
+        "units": 32,
+        "clp": 214844,
         "pct": 100.0
       }
     },
     "Metallica": {
       "Vestuario Adulto": {
-        "units": 16,
-        "clp": 174046,
-        "pct": 84.2
+        "units": 275,
+        "clp": 3467605,
+        "pct": 76.4
       },
       "Vestuario Infantil": {
-        "units": 3,
-        "clp": 37790,
-        "pct": 15.8
+        "units": 85,
+        "clp": 1066179,
+        "pct": 23.6
       }
     },
     "Cars": {
       "Vestuario Infantil": {
-        "units": 275,
-        "clp": 1269886,
-        "pct": 55.8
+        "units": 323,
+        "clp": 1481700,
+        "pct": 52.8
       },
       "Accesorios y Otros": {
-        "units": 9,
-        "clp": 50930,
+        "units": 11,
+        "clp": 62910,
         "pct": 1.8
       },
       "Calzado": {
-        "units": 190,
-        "clp": 4638227,
-        "pct": 38.5
+        "units": 248,
+        "clp": 5940673,
+        "pct": 40.5
       },
       "Ropa Interior": {
-        "units": 19,
-        "clp": 278898,
-        "pct": 3.9
+        "units": 30,
+        "clp": 432346,
+        "pct": 4.9
       }
     },
     "FORD": {
       "Vestuario Adulto": {
-        "units": 303,
-        "clp": 2129300,
-        "pct": 63.8
+        "units": 378,
+        "clp": 2619679,
+        "pct": 45.0
       },
       "Ropa Interior": {
-        "units": 172,
-        "clp": 689114,
-        "pct": 36.2
+        "units": 462,
+        "clp": 3098319,
+        "pct": 55.0
       }
     },
     "Frozen": {
       "Ropa Interior": {
-        "units": 88,
-        "clp": 677542,
-        "pct": 17.8
+        "units": 108,
+        "clp": 859911,
+        "pct": 17.6
       },
       "Vestuario Infantil": {
-        "units": 350,
-        "clp": 1884600,
-        "pct": 71.0
+        "units": 446,
+        "clp": 2404499,
+        "pct": 72.6
       },
       "Accesorios y Otros": {
-        "units": 55,
-        "clp": 289541,
-        "pct": 11.2
+        "units": 60,
+        "clp": 317496,
+        "pct": 9.8
       }
     },
     "One Piece": {
       "Accesorios y Otros": {
-        "units": 58,
-        "clp": 988770,
-        "pct": 69.0
+        "units": 83,
+        "clp": 1320438,
+        "pct": 71.6
       },
       "Ropa Interior": {
-        "units": 25,
-        "clp": 231893,
-        "pct": 29.8
+        "units": 32,
+        "clp": 291270,
+        "pct": 27.6
       },
       "Vestuario Infantil": {
         "units": 1,
         "clp": 2513,
-        "pct": 1.2
+        "pct": 0.9
       }
     },
     "RED BULL": {
       "Vestuario Infantil": {
-        "units": 240,
-        "clp": 2434180,
+        "units": 275,
+        "clp": 2770330,
         "pct": 100.0
       }
     },
     "Avengers": {
       "Vestuario Infantil": {
-        "units": 409,
-        "clp": 1801383,
-        "pct": 81.8
+        "units": 491,
+        "clp": 2179306,
+        "pct": 82.2
       },
       "Ropa Interior": {
-        "units": 87,
-        "clp": 789444,
-        "pct": 17.4
+        "units": 102,
+        "clp": 922336,
+        "pct": 17.1
       },
       "Accesorios y Otros": {
         "units": 3,
         "clp": 15102,
-        "pct": 0.6
+        "pct": 0.5
       },
       "Vestuario Adulto": {
         "units": 1,
@@ -6218,94 +7007,94 @@ const REAL_SELLOUT = {
     },
     "Star Wars": {
       "Accesorios y Otros": {
-        "units": 401,
-        "clp": 3253015,
-        "pct": 90.3
+        "units": 472,
+        "clp": 4073422,
+        "pct": 91.1
       },
       "Ropa Interior": {
-        "units": 39,
-        "clp": 107139,
-        "pct": 8.8
+        "units": 41,
+        "clp": 110549,
+        "pct": 7.9
       },
       "Vestuario Adulto": {
-        "units": 2,
-        "clp": 4790,
-        "pct": 0.5
+        "units": 3,
+        "clp": 11780,
+        "pct": 0.6
       },
       "Vestuario Infantil": {
         "units": 2,
         "clp": 9980,
-        "pct": 0.5
+        "pct": 0.4
       }
     },
     "INDEX": {
       "Accesorios y Otros": {
-        "units": 180,
-        "clp": 2464854,
+        "units": 235,
+        "clp": 3257159,
         "pct": 100.0
       }
     },
     "El Rey Leon": {
       "Accesorios y Otros": {
-        "units": 91,
-        "clp": 414388,
-        "pct": 63.2
+        "units": 115,
+        "clp": 540221,
+        "pct": 64.2
       },
       "Ropa Interior": {
-        "units": 48,
-        "clp": 154749,
-        "pct": 33.3
+        "units": 58,
+        "clp": 205949,
+        "pct": 32.4
       },
       "Calzado": {
         "units": 1,
         "clp": 3990,
-        "pct": 0.7
+        "pct": 0.6
       },
       "Vestuario Infantil": {
-        "units": 4,
-        "clp": 18695,
+        "units": 5,
+        "clp": 21216,
         "pct": 2.8
       }
     },
     "No Definido": {
       "Accesorios y Otros": {
-        "units": 294,
-        "clp": 1582410,
-        "pct": 95.8
+        "units": 340,
+        "clp": 1832053,
+        "pct": 96.0
       },
       "Calzado": {
         "units": 3,
         "clp": 9652,
-        "pct": 1.0
+        "pct": 0.8
       },
       "Sin Clasificar": {
-        "units": 10,
-        "clp": 58051,
-        "pct": 3.3
+        "units": 11,
+        "clp": 67707,
+        "pct": 3.1
       }
     },
     "Jurassic World": {
       "Accesorios y Otros": {
-        "units": 12,
-        "clp": 252000,
+        "units": 14,
+        "clp": 294000,
         "pct": 100.0
       }
     },
     "Acdc": {
       "Ropa Interior": {
-        "units": 230,
-        "clp": 778159,
-        "pct": 91.3
+        "units": 297,
+        "clp": 978843,
+        "pct": 36.5
       },
       "Calzado": {
         "units": 2,
         "clp": 15980,
-        "pct": 0.8
+        "pct": 0.2
       },
       "Vestuario Adulto": {
-        "units": 20,
-        "clp": 229144,
-        "pct": 7.9
+        "units": 514,
+        "clp": 6040195,
+        "pct": 63.2
       }
     },
     "Rey León": {
@@ -6317,62 +7106,62 @@ const REAL_SELLOUT = {
     },
     "Dragon Ball": {
       "Accesorios y Otros": {
-        "units": 30,
-        "clp": 522440,
+        "units": 40,
+        "clp": 639083,
         "pct": 100.0
       }
     },
     "Toy Story": {
       "Vestuario Infantil": {
-        "units": 107,
-        "clp": 450580,
-        "pct": 89.9
+        "units": 130,
+        "clp": 547111,
+        "pct": 89.7
       },
       "Ropa Interior": {
-        "units": 12,
-        "clp": 70556,
-        "pct": 10.1
+        "units": 15,
+        "clp": 86514,
+        "pct": 10.3
       }
     },
     "ARISTOGATOS MARIE": {
       "Accesorios y Otros": {
-        "units": 81,
-        "clp": 465570,
+        "units": 101,
+        "clp": 572421,
         "pct": 100.0
       }
     },
     "WINNIE THE POOH": {
       "Vestuario Infantil": {
-        "units": 58,
-        "clp": 270152,
-        "pct": 95.1
+        "units": 64,
+        "clp": 297859,
+        "pct": 95.5
       },
       "Accesorios y Otros": {
         "units": 3,
         "clp": 25197,
-        "pct": 4.9
+        "pct": 4.5
       }
     },
     "Princesas": {
       "Vestuario Infantil": {
-        "units": 37,
-        "clp": 126840,
-        "pct": 54.4
+        "units": 49,
+        "clp": 142111,
+        "pct": 58.3
       },
       "Accesorios y Otros": {
-        "units": 24,
-        "clp": 293151,
-        "pct": 35.3
+        "units": 25,
+        "clp": 314151,
+        "pct": 29.8
       },
       "Ropa Interior": {
-        "units": 6,
-        "clp": 59940,
-        "pct": 8.8
+        "units": 9,
+        "clp": 89910,
+        "pct": 10.7
       },
       "Calzado": {
         "units": 1,
         "clp": 3990,
-        "pct": 1.5
+        "pct": 1.2
       }
     },
     "Tinker Bell": {
@@ -6384,161 +7173,161 @@ const REAL_SELLOUT = {
     },
     "HUNTER X HUNTER": {
       "Ropa Interior": {
-        "units": 180,
-        "clp": 1126328,
+        "units": 207,
+        "clp": 1287477,
         "pct": 100.0
       }
     },
     "MARQUIS": {
       "Accesorios y Otros": {
-        "units": 109,
-        "clp": 1353709,
+        "units": 129,
+        "clp": 1602281,
         "pct": 100.0
       }
     },
     "Mickey y sus Amigos": {
       "Accesorios y Otros": {
-        "units": 38,
-        "clp": 608089,
+        "units": 46,
+        "clp": 679867,
         "pct": 100.0
       }
     },
     "MARVEL COMICS": {
       "Accesorios y Otros": {
-        "units": 77,
-        "clp": 1211306,
-        "pct": 93.9
+        "units": 87,
+        "clp": 1362286,
+        "pct": 91.6
       },
       "Vestuario Infantil": {
-        "units": 5,
-        "clp": 27962,
-        "pct": 6.1
+        "units": 8,
+        "clp": 53532,
+        "pct": 8.4
       }
     },
     "Hello Kitty": {
       "Accesorios y Otros": {
-        "units": 30,
-        "clp": 500812,
+        "units": 37,
+        "clp": 606121,
         "pct": 100.0
       }
     },
     "POKEMON": {
       "Accesorios y Otros": {
-        "units": 321,
-        "clp": 2634512,
+        "units": 418,
+        "clp": 3558470,
         "pct": 100.0
       }
     },
     "Sin Licencia": {
       "Ropa Interior": {
-        "units": 27,
-        "clp": 51159,
-        "pct": 69.2
+        "units": 31,
+        "clp": 57847,
+        "pct": 68.9
       },
       "Accesorios y Otros": {
         "units": 10,
         "clp": 14200,
-        "pct": 25.6
+        "pct": 22.2
       },
       "Vestuario Infantil": {
-        "units": 2,
-        "clp": 3445,
-        "pct": 5.1
+        "units": 4,
+        "clp": 11849,
+        "pct": 8.9
       }
     },
     "RUGRATS": {
       "Vestuario Adulto": {
-        "units": 3,
-        "clp": 12542,
+        "units": 4,
+        "clp": 17532,
         "pct": 100.0
       }
     },
     "Pink Floyd": {
       "Ropa Interior": {
-        "units": 152,
-        "clp": 447883,
-        "pct": 91.0
+        "units": 208,
+        "clp": 626188,
+        "pct": 51.1
       },
       "Vestuario Adulto": {
-        "units": 15,
-        "clp": 179714,
-        "pct": 9.0
+        "units": 199,
+        "clp": 2434346,
+        "pct": 48.9
       }
     },
     "PRESCHOOL MINNIE": {
       "Ropa Interior": {
-        "units": 8,
-        "clp": 74639,
+        "units": 9,
+        "clp": 84629,
         "pct": 100.0
       }
     },
     "GARFIELD": {
       "Vestuario Adulto": {
-        "units": 109,
-        "clp": 822723,
-        "pct": 24.0
+        "units": 125,
+        "clp": 961837,
+        "pct": 14.3
       },
       "Ropa Interior": {
-        "units": 345,
-        "clp": 1348491,
-        "pct": 76.0
+        "units": 748,
+        "clp": 4998420,
+        "pct": 85.7
       }
     },
     "Disney": {
       "Vestuario Infantil": {
         "units": 8,
         "clp": 44001,
-        "pct": 15.1
+        "pct": 9.6
       },
       "Accesorios y Otros": {
-        "units": 39,
-        "clp": 325913,
-        "pct": 73.6
+        "units": 66,
+        "clp": 518498,
+        "pct": 79.5
       },
       "Ropa Interior": {
-        "units": 6,
-        "clp": 10909,
-        "pct": 11.3
+        "units": 9,
+        "clp": 17607,
+        "pct": 10.8
       }
     },
     "Rick and morty": {
       "Ropa Interior": {
-        "units": 99,
-        "clp": 368183,
-        "pct": 97.1
+        "units": 131,
+        "clp": 463250,
+        "pct": 97.0
       },
       "Vestuario Adulto": {
-        "units": 3,
-        "clp": 7343,
-        "pct": 2.9
+        "units": 4,
+        "clp": 11333,
+        "pct": 3.0
       }
     },
     "Batman": {
       "Accesorios y Otros": {
-        "units": 85,
-        "clp": 595732,
+        "units": 102,
+        "clp": 720594,
         "pct": 94.4
       },
       "Vestuario Infantil": {
-        "units": 2,
-        "clp": 10990,
-        "pct": 2.2
+        "units": 3,
+        "clp": 4000,
+        "pct": 2.8
       },
       "Vestuario Adulto": {
         "units": 1,
         "clp": 1681,
-        "pct": 1.1
+        "pct": 0.9
       },
       "Ropa Interior": {
         "units": 2,
         "clp": 18470,
-        "pct": 2.2
+        "pct": 1.9
       }
     },
     "FUNKO MUSIC": {
       "Accesorios y Otros": {
-        "units": 24,
-        "clp": 386359,
+        "units": 29,
+        "clp": 461950,
         "pct": 100.0
       }
     },
@@ -6546,48 +7335,53 @@ const REAL_SELLOUT = {
       "Ropa Interior": {
         "units": 15,
         "clp": 22858,
-        "pct": 46.9
+        "pct": 42.9
       },
       "Accesorios y Otros": {
-        "units": 15,
-        "clp": 201024,
-        "pct": 46.9
+        "units": 17,
+        "clp": 232524,
+        "pct": 48.6
       },
       "Vestuario Infantil": {
-        "units": 1,
-        "clp": 3235,
-        "pct": 3.1
+        "units": 2,
+        "clp": 13225,
+        "pct": 5.7
       },
       "Vestuario Adulto": {
         "units": 1,
         "clp": 1681,
-        "pct": 3.1
+        "pct": 2.9
       }
     },
     "FORMULA 1": {
       "Accesorios y Otros": {
-        "units": 10,
-        "clp": 207480,
+        "units": 13,
+        "clp": 270480,
         "pct": 100.0
       }
     },
     "HAVAIAN+Q596A": {
       "Calzado": {
-        "units": 9,
-        "clp": 109728,
+        "units": 10,
+        "clp": 123021,
         "pct": 100.0
       }
     },
     "DISNEY 100": {
       "Accesorios y Otros": {
-        "units": 8,
-        "clp": 80592,
-        "pct": 80.0
+        "units": 10,
+        "clp": 97390,
+        "pct": 71.4
       },
       "Vestuario Infantil": {
         "units": 2,
         "clp": 6980,
-        "pct": 20.0
+        "pct": 14.3
+      },
+      "Ropa Interior": {
+        "units": 2,
+        "clp": 8982,
+        "pct": 14.3
       }
     },
     "Frida Kahlo": {
@@ -6606,60 +7400,65 @@ const REAL_SELLOUT = {
     },
     "DEMON SLAYER": {
       "Accesorios y Otros": {
-        "units": 33,
-        "clp": 553785,
+        "units": 49,
+        "clp": 809960,
         "pct": 100.0
       }
     },
     "Celebrity Icons": {
       "Vestuario Adulto": {
-        "units": 54,
-        "clp": 213451,
-        "pct": 75.0
+        "units": 75,
+        "clp": 298757,
+        "pct": 71.4
       },
       "Ropa Interior": {
-        "units": 18,
-        "clp": 78997,
-        "pct": 25.0
+        "units": 30,
+        "clp": 109249,
+        "pct": 28.6
       }
     },
     "Mortal Kombat": {
       "Accesorios y Otros": {
-        "units": 6,
-        "clp": 123480,
+        "units": 7,
+        "clp": 144480,
         "pct": 100.0
       }
     },
     "NASA": {
       "Ropa Interior": {
-        "units": 13,
-        "clp": 128903,
-        "pct": 72.2
+        "units": 259,
+        "clp": 2673032,
+        "pct": 98.1
       },
       "Vestuario Adulto": {
         "units": 5,
         "clp": 21010,
-        "pct": 27.8
+        "pct": 1.9
       }
     },
     "South Park": {
       "Ropa Interior": {
-        "units": 1,
-        "clp": 1218,
+        "units": 2,
+        "clp": 5411,
         "pct": 100.0
       }
     },
     "Marvel": {
       "Accesorios y Otros": {
-        "units": 7,
-        "clp": 86854,
-        "pct": 100.0
+        "units": 15,
+        "clp": 189235,
+        "pct": 93.8
+      },
+      "Ropa Interior": {
+        "units": 1,
+        "clp": 3000,
+        "pct": 6.2
       }
     },
     "Lightyear": {
       "Ropa Interior": {
-        "units": 7,
-        "clp": 33471,
+        "units": 9,
+        "clp": 51537,
         "pct": 100.0
       }
     },
@@ -6677,26 +7476,26 @@ const REAL_SELLOUT = {
     },
     "Dragon Ball Z": {
       "Accesorios y Otros": {
-        "units": 4,
-        "clp": 84000,
-        "pct": 57.1
+        "units": 6,
+        "clp": 109200,
+        "pct": 60.0
       },
       "Vestuario Infantil": {
-        "units": 3,
-        "clp": 14333,
-        "pct": 42.9
+        "units": 4,
+        "clp": 18323,
+        "pct": 40.0
       }
     },
     "Looney Tunes": {
       "Ropa Interior": {
-        "units": 10,
-        "clp": 49669,
-        "pct": 58.8
+        "units": 12,
+        "clp": 62257,
+        "pct": 50.0
       },
       "Vestuario Infantil": {
-        "units": 7,
-        "clp": 17647,
-        "pct": 41.2
+        "units": 12,
+        "clp": 30252,
+        "pct": 50.0
       }
     },
     "Boruto": {
@@ -6708,35 +7507,40 @@ const REAL_SELLOUT = {
     },
     "Minions": {
       "Ropa Interior": {
-        "units": 6,
-        "clp": 16366,
+        "units": 9,
+        "clp": 21409,
         "pct": 100.0
       }
     },
     "MARIO BROS": {
       "Accesorios y Otros": {
-        "units": 80,
-        "clp": 388411,
+        "units": 86,
+        "clp": 416092,
         "pct": 100.0
       }
     },
     "Bambi": {
       "Ropa Interior": {
-        "units": 2,
-        "clp": 4016,
-        "pct": 33.3
+        "units": 4,
+        "clp": 8032,
+        "pct": 44.4
       },
       "Accesorios y Otros": {
-        "units": 4,
-        "clp": 19960,
-        "pct": 66.7
+        "units": 5,
+        "clp": 24950,
+        "pct": 55.6
       }
     },
     "LOTSO": {
       "Accesorios y Otros": {
-        "units": 72,
-        "clp": 330124,
-        "pct": 100.0
+        "units": 87,
+        "clp": 414999,
+        "pct": 22.1
+      },
+      "Ropa Interior": {
+        "units": 306,
+        "clp": 2973926,
+        "pct": 77.9
       }
     },
     "101 Dalmatas": {
@@ -6753,8 +7557,8 @@ const REAL_SELLOUT = {
     },
     "FUNKO DEPORTE": {
       "Accesorios y Otros": {
-        "units": 3,
-        "clp": 50394,
+        "units": 4,
+        "clp": 67192,
         "pct": 100.0
       }
     },
@@ -6817,8 +7621,8 @@ const REAL_SELLOUT = {
     },
     "WONDER WOMAN": {
       "Accesorios y Otros": {
-        "units": 1,
-        "clp": 12490,
+        "units": 2,
+        "clp": 24985,
         "pct": 100.0
       }
     },
@@ -6826,17 +7630,17 @@ const REAL_SELLOUT = {
       "Ropa Interior": {
         "units": 1,
         "clp": 3397,
-        "pct": 4.8
+        "pct": 0.6
       },
       "Vestuario Infantil": {
-        "units": 4,
-        "clp": 23528,
-        "pct": 19.0
+        "units": 8,
+        "clp": 47056,
+        "pct": 4.8
       },
       "Vestuario Adulto": {
-        "units": 16,
-        "clp": 194823,
-        "pct": 76.2
+        "units": 159,
+        "clp": 1895376,
+        "pct": 94.6
       }
     },
     "DRAGON BALL SUPER": {
@@ -6855,8 +7659,8 @@ const REAL_SELLOUT = {
     },
     "Villanas": {
       "Vestuario Infantil": {
-        "units": 1,
-        "clp": 5990,
+        "units": 2,
+        "clp": 6990,
         "pct": 100.0
       }
     },
@@ -6869,8 +7673,8 @@ const REAL_SELLOUT = {
     },
     "Friends": {
       "Ropa Interior": {
-        "units": 144,
-        "clp": 430789,
+        "units": 191,
+        "clp": 569085,
         "pct": 100.0
       }
     },
@@ -6890,57 +7694,57 @@ const REAL_SELLOUT = {
     },
     "NICK 90": {
       "Ropa Interior": {
-        "units": 336,
-        "clp": 985195,
+        "units": 759,
+        "clp": 4881672,
         "pct": 100.0
       }
     },
     "Attack on titan": {
       "Ropa Interior": {
-        "units": 21,
-        "clp": 26027,
+        "units": 24,
+        "clp": 28547,
         "pct": 100.0
       }
     },
     "SPY X FAMILY": {
       "Ropa Interior": {
-        "units": 14,
-        "clp": 42008,
+        "units": 17,
+        "clp": 49571,
         "pct": 100.0
       }
     },
     "Emoji": {
       "Ropa Interior": {
-        "units": 38,
-        "clp": 122674,
+        "units": 52,
+        "clp": 161744,
         "pct": 100.0
       }
     },
     "SIN MARCA": {
       "Vestuario Infantil": {
-        "units": 7,
-        "clp": 5880,
+        "units": 9,
+        "clp": 7560,
         "pct": 100.0
       }
     },
     "OASIS": {
       "Vestuario Adulto": {
-        "units": 14,
-        "clp": 191446,
+        "units": 257,
+        "clp": 3357066,
         "pct": 100.0
       }
     },
     "Los Picapiedras": {
       "Ropa Interior": {
-        "units": 5,
-        "clp": 12605,
+        "units": 6,
+        "clp": 13446,
         "pct": 100.0
       }
     },
     "ED EDD & EDDY": {
       "Ropa Interior": {
-        "units": 1,
-        "clp": 1260,
+        "units": 3,
+        "clp": 3780,
         "pct": 100.0
       }
     },
@@ -6953,27 +7757,27 @@ const REAL_SELLOUT = {
     },
     "The Beatles": {
       "Vestuario Adulto": {
-        "units": 26,
-        "clp": 326798,
-        "pct": 83.9
+        "units": 332,
+        "clp": 4146314,
+        "pct": 80.0
       },
       "Vestuario Infantil": {
-        "units": 5,
-        "clp": 61471,
-        "pct": 16.1
+        "units": 83,
+        "clp": 1040985,
+        "pct": 20.0
       }
     },
     "DISNEY PIXAR COLLECTION": {
       "Accesorios y Otros": {
-        "units": 2,
-        "clp": 5866,
+        "units": 3,
+        "clp": 8799,
         "pct": 100.0
       }
     },
     "MAFALDA": {
       "Ropa Interior": {
-        "units": 6,
-        "clp": 25212,
+        "units": 11,
+        "clp": 39498,
         "pct": 100.0
       }
     },
@@ -6986,8 +7790,8 @@ const REAL_SELLOUT = {
     },
     "El Laboratorio De Dexter": {
       "Ropa Interior": {
-        "units": 4,
-        "clp": 5040,
+        "units": 5,
+        "clp": 6300,
         "pct": 100.0
       }
     },
@@ -7004,173 +7808,201 @@ const REAL_SELLOUT = {
         "clp": 4990,
         "pct": 100.0
       }
+    },
+    "UFC": {
+      "Ropa Interior": {
+        "units": 90,
+        "clp": 982440,
+        "pct": 100.0
+      }
+    },
+    "ALICIA PAIS MARAVILLA": {
+      "Accesorios y Otros": {
+        "units": 1,
+        "clp": 16798,
+        "pct": 100.0
+      }
+    },
+    "Sesamo": {
+      "Calzado": {
+        "units": 1,
+        "clp": 1672,
+        "pct": 100.0
+      }
+    },
+    "Paw Patrol Movie": {
+      "Vestuario Infantil": {
+        "units": 1,
+        "clp": 5990,
+        "pct": 100.0
+      }
     }
   },
   "salesByChainLicense": {
     "Jumbo": {
       "BOB ESPONJA": {
-        "units": 2182,
-        "clp": 10322979
+        "units": 2556,
+        "clp": 12005928
       },
       "Snoopy": {
-        "units": 5890,
-        "clp": 57984590
+        "units": 6449,
+        "clp": 63147249
       },
       "Harry Potter": {
-        "units": 30,
-        "clp": 569512
+        "units": 33,
+        "clp": 619911
       },
       "BLUEY": {
-        "units": 8318,
-        "clp": 74162416
+        "units": 9589,
+        "clp": 85850345
       },
       "Paw Patrol": {
-        "units": 2339,
-        "clp": 19758792
+        "units": 2767,
+        "clp": 23395337
       },
       "ZOOTOPIA": {
-        "units": 389,
-        "clp": 2798762
+        "units": 466,
+        "clp": 3295606
       },
       "The Mandalorian": {
-        "units": 35,
-        "clp": 434517
+        "units": 43,
+        "clp": 582349
       },
       "HAVAIANA": {
-        "units": 2857,
-        "clp": 20566915
+        "units": 3172,
+        "clp": 22701595
       },
       "JUJUTSU KAISEN": {
-        "units": 61,
-        "clp": 896031
+        "units": 89,
+        "clp": 1186227
       },
       "Stranger Things": {
-        "units": 44,
-        "clp": 918960
+        "units": 46,
+        "clp": 960960
       },
       "RICK AND MORTY": {
-        "units": 34,
-        "clp": 55627
+        "units": 48,
+        "clp": 78172
       },
       "NO APLICA": {
-        "units": 266,
-        "clp": 2812855
+        "units": 324,
+        "clp": 3501593
       },
       "Minnie": {
-        "units": 513,
-        "clp": 5984811
+        "units": 613,
+        "clp": 7159030
       },
       "Spidey": {
-        "units": 1199,
-        "clp": 12252588
+        "units": 1432,
+        "clp": 14559410
       },
       "One Piece": {
-        "units": 33,
-        "clp": 606336
+        "units": 44,
+        "clp": 728552
       },
       "Star Wars": {
-        "units": 388,
-        "clp": 3060382
+        "units": 448,
+        "clp": 3735659
       },
       "Jurassic World": {
-        "units": 12,
-        "clp": 252000
+        "units": 14,
+        "clp": 294000
       },
       "SONIC": {
-        "units": 63,
-        "clp": 245216
+        "units": 68,
+        "clp": 264733
       },
       "Dragon Ball": {
-        "units": 24,
-        "clp": 407365
+        "units": 32,
+        "clp": 490518
       },
       "Mickey y sus Amigos": {
-        "units": 27,
-        "clp": 532980
+        "units": 30,
+        "clp": 587580
       },
       "MARVEL COMICS": {
-        "units": 63,
-        "clp": 1034248
+        "units": 70,
+        "clp": 1139248
       },
       "POKEMON": {
-        "units": 49,
-        "clp": 877787
+        "units": 103,
+        "clp": 1503163
       },
       "Hello Kitty": {
-        "units": 16,
-        "clp": 273000
+        "units": 21,
+        "clp": 346500
       },
       "LILO & STITCH": {
-        "units": 790,
-        "clp": 7113892
+        "units": 974,
+        "clp": 8887895
       },
       "Princesas": {
-        "units": 10,
-        "clp": 207480
+        "units": 12,
+        "clp": 229212
       },
       "Cars": {
-        "units": 3,
-        "clp": 12076
+        "units": 4,
+        "clp": 16270
       },
       "Minecraft": {
-        "units": 162,
-        "clp": 870243
+        "units": 183,
+        "clp": 983596
       },
       "FUNKO MUSIC": {
-        "units": 14,
-        "clp": 218378
+        "units": 16,
+        "clp": 243575
       },
       "Batman": {
         "units": 1,
         "clp": 10500
       },
       "Disney": {
-        "units": 29,
-        "clp": 267189
+        "units": 54,
+        "clp": 452794
       },
       "Naruto": {
-        "units": 3,
-        "clp": 25197
+        "units": 5,
+        "clp": 41996
       },
       "No Definido": {
-        "units": 28,
-        "clp": 537597
+        "units": 37,
+        "clp": 640495
       },
       "Mortal Kombat": {
-        "units": 6,
-        "clp": 123480
+        "units": 7,
+        "clp": 144480
       },
       "DC Comics": {
-        "units": 10,
-        "clp": 136500
+        "units": 11,
+        "clp": 147000
       },
       "Barbie": {
-        "units": 36,
-        "clp": 196487
+        "units": 37,
+        "clp": 201945
       },
       "FORMULA 1": {
-        "units": 9,
-        "clp": 186480
+        "units": 11,
+        "clp": 228480
       },
       "Mickey": {
-        "units": 125,
-        "clp": 1308876
+        "units": 165,
+        "clp": 1748876
       },
       "Spiderman": {
         "units": 1,
         "clp": 4193
       },
       "DISNEY 100": {
-        "units": 5,
-        "clp": 41996
+        "units": 7,
+        "clp": 58794
       },
       "Rick and morty": {
         "units": 2,
         "clp": 3353
       },
       "Dragon Ball Z": {
-        "units": 4,
-        "clp": 84000
+        "units": 6,
+        "clp": 109200
       },
       "Minions": {
         "units": 3,
@@ -7178,7 +8010,7 @@ const REAL_SELLOUT = {
       },
       "Gabby Doll House": {
         "units": 14,
-        "clp": 28454
+        "clp": 25929
       },
       "WINNIE THE POOH": {
         "units": 3,
@@ -7189,194 +8021,198 @@ const REAL_SELLOUT = {
         "clp": 10500
       },
       "Marvel": {
-        "units": 1,
-        "clp": 16798
+        "units": 8,
+        "clp": 109189
       },
       "Pink Floyd": {
-        "units": 14,
-        "clp": 176353
+        "units": 198,
+        "clp": 2430985
       },
       "OASIS": {
-        "units": 14,
-        "clp": 191446
+        "units": 257,
+        "clp": 3357066
       },
       "Metallica": {
-        "units": 16,
-        "clp": 199866
+        "units": 356,
+        "clp": 4517823
       },
       "The Beatles": {
-        "units": 31,
-        "clp": 388269
+        "units": 415,
+        "clp": 5187299
       },
       "Acdc": {
-        "units": 20,
-        "clp": 229144
+        "units": 514,
+        "clp": 6040195
       },
       "Kiss": {
-        "units": 16,
-        "clp": 194823
+        "units": 159,
+        "clp": 1895376
+      },
+      "ALICIA PAIS MARAVILLA": {
+        "units": 1,
+        "clp": 16798
       }
     },
     "Ripley": {
       "Mickey": {
-        "units": 724,
-        "clp": 3789701
+        "units": 855,
+        "clp": 4504081
       },
       "Paw Patrol": {
-        "units": 2212,
-        "clp": 13812981
+        "units": 2665,
+        "clp": 16713163
       },
       "BLUEY": {
-        "units": 3286,
-        "clp": 19092588
+        "units": 3885,
+        "clp": 22648533
       },
       "Barbie": {
-        "units": 694,
-        "clp": 4261664
+        "units": 844,
+        "clp": 5306463
       },
       "Spidey": {
-        "units": 696,
-        "clp": 3807564
+        "units": 815,
+        "clp": 4510295
       },
       "Minecraft": {
-        "units": 1689,
-        "clp": 12928521
+        "units": 2060,
+        "clp": 16038711
       },
       "LILO & STITCH": {
-        "units": 1283,
-        "clp": 8994496
+        "units": 1553,
+        "clp": 11067532
       },
       "Hot Wheels": {
-        "units": 304,
-        "clp": 1578298
+        "units": 364,
+        "clp": 1899843
       },
       "Minnie": {
-        "units": 1620,
-        "clp": 9603733
+        "units": 1905,
+        "clp": 11321917
       },
       "SONIC": {
-        "units": 1361,
-        "clp": 8323543
+        "units": 1599,
+        "clp": 9911101
       },
       "REVUP": {
-        "units": 173,
-        "clp": 288459
+        "units": 183,
+        "clp": 302661
       },
       "Spiderman": {
-        "units": 750,
-        "clp": 4377105
+        "units": 868,
+        "clp": 5065420
       },
       "HAVAIANA": {
-        "units": 512,
-        "clp": 3768517
+        "units": 594,
+        "clp": 4283769
       },
       "Gabby Doll House": {
-        "units": 187,
-        "clp": 977964
+        "units": 238,
+        "clp": 1214647
       },
       "Playstation": {
-        "units": 130,
-        "clp": 687049
+        "units": 147,
+        "clp": 788594
       },
       "Cars": {
-        "units": 272,
-        "clp": 1257810
+        "units": 319,
+        "clp": 1465430
       },
       "Frozen": {
-        "units": 258,
-        "clp": 1470408
+        "units": 319,
+        "clp": 1819503
       },
       "NO APLICA": {
-        "units": 179,
-        "clp": 1771682
+        "units": 204,
+        "clp": 2039572
       },
       "Avengers": {
-        "units": 325,
-        "clp": 1389868
+        "units": 377,
+        "clp": 1605409
       },
       "INDEX": {
-        "units": 180,
-        "clp": 2464854
+        "units": 235,
+        "clp": 3257159
       },
       "No Definido": {
-        "units": 267,
-        "clp": 1046485
+        "units": 304,
+        "clp": 1193230
       },
       "ZOOTOPIA": {
-        "units": 67,
-        "clp": 403750
+        "units": 75,
+        "clp": 467227
       },
       "Toy Story": {
-        "units": 107,
-        "clp": 450580
+        "units": 130,
+        "clp": 547111
       },
       "WINNIE THE POOH": {
-        "units": 58,
-        "clp": 270152
+        "units": 64,
+        "clp": 297859
       },
       "Princesas": {
-        "units": 51,
-        "clp": 212511
+        "units": 62,
+        "clp": 227050
       },
       "KPOP DEMON HUNTERS": {
-        "units": 348,
-        "clp": 3540556
+        "units": 408,
+        "clp": 4073721
       },
       "MARQUIS": {
-        "units": 109,
-        "clp": 1353709
+        "units": 129,
+        "clp": 1602281
       },
       "Hello Kitty": {
         "units": 3,
         "clp": 58798
       },
       "Snoopy": {
-        "units": 297,
-        "clp": 1935200
+        "units": 340,
+        "clp": 2220904
       },
       "BOB ESPONJA": {
-        "units": 186,
-        "clp": 1099243
+        "units": 234,
+        "clp": 1381387
       },
       "El Rey Leon": {
-        "units": 28,
-        "clp": 54897
+        "units": 30,
+        "clp": 58241
       },
       "Sin Licencia": {
-        "units": 37,
-        "clp": 65359
+        "units": 41,
+        "clp": 72047
       },
       "Star Wars": {
-        "units": 25,
-        "clp": 180517
+        "units": 30,
+        "clp": 268709
       },
       "PRESCHOOL MINNIE": {
         "units": 7,
         "clp": 64649
       },
       "MARVEL COMICS": {
-        "units": 14,
-        "clp": 161268
+        "units": 15,
+        "clp": 182268
       },
       "Harry Potter": {
-        "units": 11,
-        "clp": 86464
+        "units": 13,
+        "clp": 112498
       },
       "POKEMON": {
-        "units": 251,
-        "clp": 1469560
+        "units": 282,
+        "clp": 1631485
       },
       "FORMULA 1": {
-        "units": 1,
-        "clp": 21000
+        "units": 2,
+        "clp": 42000
       },
       "Mickey y sus Amigos": {
         "units": 1,
         "clp": 840
       },
       "One Piece": {
-        "units": 8,
-        "clp": 119055
+        "units": 14,
+        "clp": 236651
       },
       "DISNEY 100": {
         "units": 2,
@@ -7387,16 +8223,16 @@ const REAL_SELLOUT = {
         "clp": 12049
       },
       "SMILEY": {
-        "units": 3,
-        "clp": 5857
+        "units": 4,
+        "clp": 7529
       },
       "Disney": {
-        "units": 11,
-        "clp": 29186
+        "units": 14,
+        "clp": 35884
       },
       "DEMON SLAYER": {
-        "units": 8,
-        "clp": 134384
+        "units": 9,
+        "clp": 151182
       },
       "Rick and morty": {
         "units": 1,
@@ -7407,24 +8243,24 @@ const REAL_SELLOUT = {
         "clp": 61550
       },
       "DC Comics": {
-        "units": 3,
-        "clp": 47034
+        "units": 4,
+        "clp": 68034
       },
       "Marvel": {
         "units": 2,
         "clp": 33596
       },
       "Naruto": {
-        "units": 28,
-        "clp": 330024
+        "units": 32,
+        "clp": 392176
       },
       "WISH": {
         "units": 4,
         "clp": 16808
       },
       "Dragon Ball": {
-        "units": 6,
-        "clp": 115075
+        "units": 7,
+        "clp": 136075
       },
       "Lightyear": {
         "units": 1,
@@ -7435,32 +8271,32 @@ const REAL_SELLOUT = {
         "clp": 3353
       },
       "MARIO BROS": {
-        "units": 80,
-        "clp": 388411
+        "units": 86,
+        "clp": 416092
       },
       "Bambi": {
-        "units": 2,
-        "clp": 4016
+        "units": 4,
+        "clp": 8032
       },
       "JUJUTSU KAISEN": {
-        "units": 8,
-        "clp": 116739
+        "units": 11,
+        "clp": 167133
       },
       "FUNKO DEPORTE": {
-        "units": 3,
-        "clp": 50394
+        "units": 4,
+        "clp": 67192
       },
       "Dragon Ball Z": {
         "units": 1,
         "clp": 3353
       },
       "FUNKO MUSIC": {
-        "units": 10,
-        "clp": 167981
+        "units": 13,
+        "clp": 218375
       },
       "Batman": {
-        "units": 3,
-        "clp": 63000
+        "units": 4,
+        "clp": 84000
       },
       "CHUCKY": {
         "units": 4,
@@ -7473,224 +8309,228 @@ const REAL_SELLOUT = {
       "Disney Clásicos": {
         "units": 1,
         "clp": 496
+      },
+      "Sesamo": {
+        "units": 1,
+        "clp": 1672
       }
     },
     "Paris": {
       "Spiderman": {
-        "units": 1868,
-        "clp": 22037926
+        "units": 2389,
+        "clp": 28710816
       },
       "KPOP DEMON HUNTERS": {
-        "units": 1314,
-        "clp": 16577032
+        "units": 1606,
+        "clp": 20195738
       },
       "Minnie": {
-        "units": 659,
-        "clp": 8403570
+        "units": 786,
+        "clp": 9828043
       },
       "Mickey": {
-        "units": 202,
-        "clp": 1302808
+        "units": 280,
+        "clp": 1786029
       },
       "LILO & STITCH": {
-        "units": 165,
-        "clp": 1639941
+        "units": 197,
+        "clp": 1909949
       },
       "Peppa Pig": {
-        "units": 953,
-        "clp": 5342383
+        "units": 1287,
+        "clp": 7152801
       },
       "Naruto": {
-        "units": 22,
-        "clp": 280731
+        "units": 26,
+        "clp": 332002
       },
       "HAVAIANA": {
-        "units": 254,
-        "clp": 2978012
+        "units": 279,
+        "clp": 3306441
       },
       "Snoopy": {
-        "units": 181,
-        "clp": 1233547
+        "units": 254,
+        "clp": 1928021
       },
       "BLUEY": {
-        "units": 1376,
-        "clp": 11277510
+        "units": 1687,
+        "clp": 14112459
       },
       "SONIC": {
-        "units": 179,
-        "clp": 1991513
+        "units": 219,
+        "clp": 2556161
       },
       "BOB ESPONJA": {
-        "units": 85,
-        "clp": 523932
+        "units": 95,
+        "clp": 613833
       },
       "NO APLICA": {
-        "units": 92,
-        "clp": 940177
+        "units": 101,
+        "clp": 1034511
       },
       "INSIDE OUT": {
-        "units": 37,
-        "clp": 182691
+        "units": 53,
+        "clp": 239823
       },
       "Chicas Superpoderosas": {
-        "units": 28,
-        "clp": 184868
+        "units": 32,
+        "clp": 214844
       },
       "Metallica": {
-        "units": 3,
-        "clp": 11970
+        "units": 4,
+        "clp": 15960
       },
       "FORD": {
-        "units": 303,
-        "clp": 2129300
+        "units": 378,
+        "clp": 2619679
       },
       "Frozen": {
-        "units": 227,
-        "clp": 1337429
+        "units": 284,
+        "clp": 1700587
       },
       "Paw Patrol": {
-        "units": 780,
-        "clp": 5897544
+        "units": 940,
+        "clp": 7389804
       },
       "Cars": {
-        "units": 101,
-        "clp": 2188041
+        "units": 133,
+        "clp": 2910125
       },
       "The Mandalorian": {
-        "units": 62,
-        "clp": 421654
+        "units": 72,
+        "clp": 507114
       },
       "El Rey Leon": {
-        "units": 91,
-        "clp": 414388
+        "units": 115,
+        "clp": 540221
       },
       "Minecraft": {
-        "units": 28,
-        "clp": 158475
+        "units": 41,
+        "clp": 211356
       },
       "Harry Potter": {
-        "units": 188,
-        "clp": 1205745
+        "units": 222,
+        "clp": 1421439
       },
       "Barbie": {
-        "units": 250,
-        "clp": 5015570
+        "units": 294,
+        "clp": 5926907
       },
       "ARISTOGATOS MARIE": {
-        "units": 81,
-        "clp": 465570
+        "units": 101,
+        "clp": 572421
       },
       "Tinker Bell": {
         "units": 6,
         "clp": 38970
       },
       "RUGRATS": {
-        "units": 3,
-        "clp": 12542
+        "units": 4,
+        "clp": 17532
       },
       "Pink Floyd": {
-        "units": 1,
-        "clp": 5000
+        "units": 2,
+        "clp": 21990
       },
       "Avengers": {
-        "units": 69,
-        "clp": 396174
+        "units": 90,
+        "clp": 536036
       },
       "GARFIELD": {
-        "units": 108,
-        "clp": 817733
+        "units": 124,
+        "clp": 956847
       },
       "Batman": {
-        "units": 82,
-        "clp": 528232
+        "units": 100,
+        "clp": 638094
       },
       "DC Comics": {
         "units": 5,
         "clp": 30476
       },
       "Star Wars": {
-        "units": 5,
-        "clp": 37965
+        "units": 12,
+        "clp": 101893
       },
       "HAVAIAN+Q596A": {
-        "units": 9,
-        "clp": 109728
+        "units": 10,
+        "clp": 123021
       },
       "Hello Kitty": {
-        "units": 6,
-        "clp": 74940
+        "units": 7,
+        "clp": 87430
       },
       "Tom y Jerry": {
         "units": 11,
         "clp": 83986
       },
       "ZOOTOPIA": {
-        "units": 75,
-        "clp": 402938
+        "units": 83,
+        "clp": 440882
       },
       "DEMON SLAYER": {
-        "units": 2,
-        "clp": 25479
+        "units": 4,
+        "clp": 43958
       },
       "MARVEL COMICS": {
-        "units": 1,
-        "clp": 19992
+        "units": 3,
+        "clp": 44972
       },
       "One Piece": {
-        "units": 29,
-        "clp": 271853
+        "units": 42,
+        "clp": 391170
       },
       "JUJUTSU KAISEN": {
         "units": 7,
         "clp": 63454
       },
       "SMILEY": {
-        "units": 78,
-        "clp": 774468
+        "units": 87,
+        "clp": 887406
       },
       "Hot Wheels": {
-        "units": 2,
-        "clp": 6780
+        "units": 4,
+        "clp": 17760
       },
       "Disney": {
-        "units": 5,
-        "clp": 40447
+        "units": 7,
+        "clp": 47427
       },
       "Lightyear": {
-        "units": 6,
-        "clp": 29278
+        "units": 7,
+        "clp": 37268
       },
       "Mickey y sus Amigos": {
-        "units": 9,
-        "clp": 54950
+        "units": 14,
+        "clp": 72128
       },
       "Playstation": {
-        "units": 2,
-        "clp": 8000
+        "units": 3,
+        "clp": 12990
       },
       "Marvel": {
-        "units": 4,
-        "clp": 36460
+        "units": 6,
+        "clp": 49450
       },
       "No Definido": {
         "units": 1,
         "clp": 2990
       },
       "LOTSO": {
-        "units": 72,
-        "clp": 330124
+        "units": 87,
+        "clp": 414999
       },
       "Bambi": {
-        "units": 4,
-        "clp": 19960
+        "units": 5,
+        "clp": 24950
       },
       "Buzz Light Year": {
         "units": 1,
         "clp": 2000
       },
       "WONDER WOMAN": {
-        "units": 1,
-        "clp": 12490
+        "units": 2,
+        "clp": 24985
       },
       "Acdc": {
         "units": 1,
@@ -7709,12 +8549,12 @@ const REAL_SELLOUT = {
         "clp": 7980
       },
       "Rick and morty": {
-        "units": 1,
-        "clp": 3990
+        "units": 2,
+        "clp": 7980
       },
       "POKEMON": {
-        "units": 1,
-        "clp": 12495
+        "units": 4,
+        "clp": 42465
       },
       "FRUITS BASKET": {
         "units": 1,
@@ -7723,60 +8563,72 @@ const REAL_SELLOUT = {
       "Disney Clásicos": {
         "units": 1,
         "clp": 2990
+      },
+      "Dragon Ball": {
+        "units": 1,
+        "clp": 12490
+      },
+      "Celebrity Icons": {
+        "units": 1,
+        "clp": 7990
+      },
+      "Paw Patrol Movie": {
+        "units": 1,
+        "clp": 5990
       }
     },
     "La Polar": {
       "Spiderman": {
-        "units": 844,
-        "clp": 10603685
+        "units": 967,
+        "clp": 12108063
       },
       "BLUEY": {
-        "units": 454,
-        "clp": 5275750
+        "units": 529,
+        "clp": 6220865
       },
       "LILO & STITCH": {
-        "units": 293,
-        "clp": 2949669
+        "units": 327,
+        "clp": 3387415
       },
       "JUJUTSU KAISEN": {
-        "units": 100,
-        "clp": 583467
+        "units": 105,
+        "clp": 612028
       },
       "Minnie": {
-        "units": 715,
-        "clp": 8712694
+        "units": 792,
+        "clp": 9533060
       },
       "Barbie": {
-        "units": 39,
-        "clp": 225735
+        "units": 41,
+        "clp": 237499
       },
       "KPOP DEMON HUNTERS": {
-        "units": 190,
-        "clp": 2024630
+        "units": 205,
+        "clp": 2188370
       },
       "Paw Patrol": {
-        "units": 397,
-        "clp": 4290324
+        "units": 439,
+        "clp": 4788052
       },
       "SONIC": {
-        "units": 187,
-        "clp": 1850358
+        "units": 212,
+        "clp": 2076147
       },
       "Minecraft": {
-        "units": 110,
-        "clp": 1857643
+        "units": 126,
+        "clp": 2129881
       },
       "Naruto": {
-        "units": 120,
-        "clp": 736648
+        "units": 134,
+        "clp": 811372
       },
       "HUNTER X HUNTER": {
-        "units": 167,
-        "clp": 1071702
+        "units": 190,
+        "clp": 1222767
       },
       "Snoopy": {
-        "units": 77,
-        "clp": 426682
+        "units": 83,
+        "clp": 461974
       },
       "The Mandalorian": {
         "units": 1,
@@ -7787,8 +8639,8 @@ const REAL_SELLOUT = {
         "clp": 19319
       },
       "Rick and morty": {
-        "units": 2,
-        "clp": 1651
+        "units": 3,
+        "clp": 2626
       },
       "DISNEY 100": {
         "units": 1,
@@ -7825,80 +8677,80 @@ const REAL_SELLOUT = {
     },
     "Hites": {
       "Mickey": {
-        "units": 44,
-        "clp": 304246
+        "units": 49,
+        "clp": 338202
       },
       "BLUEY": {
-        "units": 1266,
-        "clp": 15291188
+        "units": 1589,
+        "clp": 19609618
       },
       "Barbie": {
-        "units": 131,
-        "clp": 1238192
+        "units": 151,
+        "clp": 1478996
       },
       "Minnie": {
-        "units": 1459,
-        "clp": 19717573
+        "units": 1683,
+        "clp": 22674062
       },
       "Minecraft": {
-        "units": 214,
-        "clp": 2209843
+        "units": 261,
+        "clp": 2722289
       },
       "SMILEY": {
         "units": 18,
         "clp": 107820
       },
       "Spiderman": {
-        "units": 1476,
-        "clp": 23068943
+        "units": 1732,
+        "clp": 26669195
       },
       "Paw Patrol": {
-        "units": 1472,
-        "clp": 16362372
+        "units": 1776,
+        "clp": 19876051
       },
       "LILO & STITCH": {
-        "units": 728,
-        "clp": 9008700
+        "units": 854,
+        "clp": 10777759
       },
       "Playstation": {
-        "units": 36,
-        "clp": 304027
+        "units": 46,
+        "clp": 395602
       },
       "KPOP DEMON HUNTERS": {
-        "units": 140,
-        "clp": 1774673
+        "units": 160,
+        "clp": 2006959
       },
       "Snoopy": {
-        "units": 33,
-        "clp": 301274
+        "units": 37,
+        "clp": 337238
       },
       "ZOOTOPIA": {
-        "units": 78,
-        "clp": 564153
+        "units": 92,
+        "clp": 668094
       },
       "Acdc": {
-        "units": 15,
-        "clp": 145850
+        "units": 16,
+        "clp": 155840
       },
       "Rey León": {
         "units": 1,
         "clp": 4990
       },
       "Cars": {
-        "units": 117,
-        "clp": 2780014
+        "units": 156,
+        "clp": 3525804
       },
       "SONIC": {
-        "units": 106,
-        "clp": 1641346
+        "units": 153,
+        "clp": 2295521
       },
       "Avengers": {
-        "units": 66,
-        "clp": 633436
+        "units": 77,
+        "clp": 744328
       },
       "Naruto": {
-        "units": 13,
-        "clp": 89500
+        "units": 15,
+        "clp": 100602
       },
       "Disney": {
         "units": 8,
@@ -7909,44 +8761,44 @@ const REAL_SELLOUT = {
         "clp": 13960
       },
       "Spidey": {
-        "units": 236,
-        "clp": 3472428
+        "units": 290,
+        "clp": 4308333
       },
       "Hot Wheels": {
         "units": 1,
         "clp": 6990
       },
       "Frozen": {
-        "units": 7,
-        "clp": 37132
+        "units": 10,
+        "clp": 55102
       },
       "Gabby Doll House": {
-        "units": 1,
-        "clp": 4990
+        "units": 2,
+        "clp": 5990
       },
       "MARVEL COMICS": {
-        "units": 4,
-        "clp": 23760
+        "units": 7,
+        "clp": 49330
       },
       "DISNEY 100": {
-        "units": 2,
-        "clp": 6980
+        "units": 4,
+        "clp": 15962
       },
       "NASA": {
-        "units": 13,
-        "clp": 128903
+        "units": 14,
+        "clp": 138893
       },
       "Star Wars": {
-        "units": 23,
-        "clp": 75270
+        "units": 24,
+        "clp": 78260
       },
       "No Definido": {
         "units": 2,
         "clp": 7980
       },
       "Princesas": {
-        "units": 7,
-        "clp": 63930
+        "units": 10,
+        "clp": 93900
       },
       "101 Dalmatas": {
         "units": 5,
@@ -7957,8 +8809,8 @@ const REAL_SELLOUT = {
         "clp": 4990
       },
       "GARFIELD": {
-        "units": 4,
-        "clp": 33188
+        "units": 5,
+        "clp": 43178
       },
       "El Rey Leon": {
         "units": 5,
@@ -7969,20 +8821,16 @@ const REAL_SELLOUT = {
         "clp": 5990
       },
       "PRESCHOOL MINNIE": {
-        "units": 1,
-        "clp": 9990
-      },
-      "Batman": {
-        "units": 1,
-        "clp": 4990
+        "units": 2,
+        "clp": 19980
       },
       "Dragon Ball Z": {
-        "units": 2,
-        "clp": 10980
+        "units": 3,
+        "clp": 14970
       },
       "Villanas": {
-        "units": 1,
-        "clp": 5990
+        "units": 2,
+        "clp": 6990
       },
       "Iron Maiden": {
         "units": 1,
@@ -7991,40 +8839,44 @@ const REAL_SELLOUT = {
       "DARIA": {
         "units": 1,
         "clp": 4990
+      },
+      "DC Comics": {
+        "units": 1,
+        "clp": 9990
       }
     },
     "Falabella": {
       "HAVAIANA": {
-        "units": 350,
-        "clp": 4094076
+        "units": 396,
+        "clp": 4620997
       },
       "Minecraft": {
-        "units": 317,
-        "clp": 4120692
+        "units": 380,
+        "clp": 4949780
       },
       "BLUEY": {
-        "units": 1036,
-        "clp": 8342863
+        "units": 1224,
+        "clp": 9999520
       },
       "Stranger Things": {
-        "units": 181,
-        "clp": 1641497
+        "units": 212,
+        "clp": 1925087
       },
       "KPOP DEMON HUNTERS": {
-        "units": 986,
-        "clp": 12497014
+        "units": 1102,
+        "clp": 13926646
       },
       "RED BULL": {
-        "units": 240,
-        "clp": 2434180
+        "units": 275,
+        "clp": 2770330
       },
       "NO APLICA": {
-        "units": 14,
-        "clp": 94860
+        "units": 18,
+        "clp": 119820
       },
       "ZOOTOPIA": {
         "units": 3,
-        "clp": 23970
+        "clp": 21970
       },
       "El Rey Leon": {
         "units": 1,
@@ -8035,12 +8887,12 @@ const REAL_SELLOUT = {
         "clp": 990
       },
       "Paw Patrol": {
-        "units": 2,
-        "clp": 15980
+        "units": 3,
+        "clp": 26970
       },
       "Naruto": {
-        "units": 3,
-        "clp": 10970
+        "units": 4,
+        "clp": 15960
       },
       "DC Comics": {
         "units": 1,
@@ -8065,6 +8917,10 @@ const REAL_SELLOUT = {
       "Woodstock": {
         "units": 1,
         "clp": 1990
+      },
+      "Spiderman": {
+        "units": 1,
+        "clp": 4990
       }
     },
     "Johnson": {
@@ -8111,24 +8967,24 @@ const REAL_SELLOUT = {
     },
     "Tottus": {
       "Minecraft": {
-        "units": 124,
-        "clp": 1093121
+        "units": 155,
+        "clp": 1371811
       },
       "ZOOTOPIA": {
-        "units": 47,
-        "clp": 414136
+        "units": 50,
+        "clp": 441106
       },
       "Paw Patrol": {
-        "units": 130,
-        "clp": 474980
+        "units": 135,
+        "clp": 488334
       },
       "SONIC": {
-        "units": 85,
-        "clp": 753004
+        "units": 104,
+        "clp": 923814
       },
       "Minnie": {
-        "units": 78,
-        "clp": 396750
+        "units": 81,
+        "clp": 409720
       }
     },
     "Cencosud": {
@@ -8139,224 +8995,248 @@ const REAL_SELLOUT = {
     },
     "Hiper Lider": {
       "Naruto": {
-        "units": 168,
-        "clp": 957182
+        "units": 226,
+        "clp": 1300537
       },
       "Rick and morty": {
-        "units": 90,
-        "clp": 331085
+        "units": 118,
+        "clp": 397472
       },
       "NO APLICA": {
-        "units": 11,
-        "clp": 202461
+        "units": 18,
+        "clp": 330158
       },
       "Friends": {
-        "units": 144,
-        "clp": 430789
+        "units": 191,
+        "clp": 569085
       },
       "Hot Wheels": {
-        "units": 123,
-        "clp": 347059
+        "units": 148,
+        "clp": 438653
       },
       "FORD": {
-        "units": 169,
-        "clp": 676508
+        "units": 458,
+        "clp": 3081511
       },
       "Avengers": {
-        "units": 37,
-        "clp": 167981
+        "units": 49,
+        "clp": 203266
       },
       "El Rey Leon": {
-        "units": 19,
-        "clp": 80587
+        "units": 27,
+        "clp": 128443
       },
       "Mickey": {
-        "units": 3,
-        "clp": 27705
+        "units": 4,
+        "clp": 36940
       },
       "Looney Tunes": {
-        "units": 12,
-        "clp": 41150
+        "units": 19,
+        "clp": 66343
       },
       "Celebrity Icons": {
-        "units": 68,
-        "clp": 268927
+        "units": 98,
+        "clp": 371453
       },
       "Snoopy": {
-        "units": 959,
-        "clp": 3412735
+        "units": 2933,
+        "clp": 18209208
       },
       "The Mandalorian": {
-        "units": 13,
-        "clp": 211654
+        "units": 17,
+        "clp": 246090
       },
       "HUNTER X HUNTER": {
-        "units": 13,
-        "clp": 54626
+        "units": 17,
+        "clp": 64710
       },
       "Paw Patrol": {
-        "units": 884,
-        "clp": 3350394
+        "units": 1187,
+        "clp": 4490870
       },
       "1KO": {
         "units": 19,
         "clp": 7932
       },
       "LILO & STITCH": {
-        "units": 1273,
-        "clp": 5435513
+        "units": 1794,
+        "clp": 6973310
       },
       "DEMON SLAYER": {
-        "units": 23,
-        "clp": 393922
+        "units": 36,
+        "clp": 614820
       },
       "JUJUTSU KAISEN": {
-        "units": 73,
-        "clp": 461254
+        "units": 421,
+        "clp": 4022044
       },
       "BLUEY": {
-        "units": 242,
-        "clp": 1358574
+        "units": 1449,
+        "clp": 7911586
       },
       "BT21": {
         "units": 5,
         "clp": 46175
       },
       "Acdc": {
-        "units": 216,
-        "clp": 644892
+        "units": 282,
+        "clp": 835586
       },
       "SONIC": {
-        "units": 534,
-        "clp": 2128778
+        "units": 1041,
+        "clp": 3621342
       },
       "Toy Story": {
-        "units": 10,
-        "clp": 52086
+        "units": 12,
+        "clp": 58809
       },
       "GARFIELD": {
-        "units": 336,
-        "clp": 1294335
+        "units": 727,
+        "clp": 4831844
       },
       "NICK 90": {
-        "units": 329,
-        "clp": 964664
+        "units": 738,
+        "clp": 4716300
       },
       "Minecraft": {
-        "units": 298,
-        "clp": 775960
+        "units": 1157,
+        "clp": 7070630
       },
       "POKEMON": {
-        "units": 20,
-        "clp": 274670
+        "units": 29,
+        "clp": 381357
       },
       "Spiderman": {
-        "units": 65,
-        "clp": 214224
+        "units": 75,
+        "clp": 246148
       },
       "Attack on titan": {
-        "units": 21,
-        "clp": 26027
+        "units": 24,
+        "clp": 28547
       },
       "SPY X FAMILY": {
-        "units": 14,
-        "clp": 42008
+        "units": 17,
+        "clp": 49571
       },
       "Pink Floyd": {
-        "units": 151,
-        "clp": 442883
+        "units": 206,
+        "clp": 604198
       },
       "Mickey y sus Amigos": {
         "units": 1,
         "clp": 19319
       },
       "RICK AND MORTY": {
-        "units": 223,
-        "clp": 654059
+        "units": 296,
+        "clp": 868168
       },
       "Kiss": {
-        "units": 4,
-        "clp": 23528
+        "units": 8,
+        "clp": 47056
       },
       "Emoji": {
-        "units": 38,
-        "clp": 122674
+        "units": 52,
+        "clp": 161744
       },
       "Superman": {
         "units": 2,
         "clp": 11764
       },
       "One Piece": {
-        "units": 14,
-        "clp": 225932
+        "units": 16,
+        "clp": 257848
       },
       "Frozen": {
         "units": 1,
         "clp": 6714
       },
       "Barbie": {
-        "units": 71,
-        "clp": 297895
+        "units": 90,
+        "clp": 377733
       },
       "Minnie": {
-        "units": 85,
-        "clp": 355471
+        "units": 116,
+        "clp": 485733
       },
       "101 Dalmatas": {
         "units": 2,
         "clp": 1680
       },
       "Harry Potter": {
-        "units": 4,
-        "clp": 63832
+        "units": 6,
+        "clp": 95748
       },
       "Sin Licencia": {
-        "units": 2,
-        "clp": 3445
+        "units": 4,
+        "clp": 11849
       },
       "Los Picapiedras": {
-        "units": 5,
-        "clp": 12605
+        "units": 6,
+        "clp": 13446
       },
       "ED EDD & EDDY": {
-        "units": 1,
-        "clp": 1260
+        "units": 3,
+        "clp": 3780
       },
       "AC/DC": {
         "units": 1,
         "clp": 1681
       },
       "Hello Kitty": {
-        "units": 5,
-        "clp": 94074
+        "units": 6,
+        "clp": 113393
       },
       "DISNEY PIXAR COLLECTION": {
-        "units": 2,
-        "clp": 5866
+        "units": 3,
+        "clp": 8799
       },
       "SIN MARCA": {
-        "units": 3,
-        "clp": 2520
+        "units": 5,
+        "clp": 4200
       },
       "NASA": {
-        "units": 5,
-        "clp": 21010
+        "units": 249,
+        "clp": 2545073
       },
       "MAFALDA": {
-        "units": 6,
-        "clp": 25212
+        "units": 11,
+        "clp": 39498
       },
       "No Definido": {
-        "units": 6,
-        "clp": 43646
+        "units": 7,
+        "clp": 53302
       },
       "Minions": {
-        "units": 3,
-        "clp": 10076
+        "units": 6,
+        "clp": 15119
       },
       "El Laboratorio De Dexter": {
-        "units": 4,
-        "clp": 5040
+        "units": 5,
+        "clp": 6300
+      },
+      "LOTSO": {
+        "units": 288,
+        "clp": 2800127
+      },
+      "UFC": {
+        "units": 90,
+        "clp": 982440
+      },
+      "South Park": {
+        "units": 1,
+        "clp": 4193
+      },
+      "Star Wars": {
+        "units": 1,
+        "clp": 420
+      },
+      "Lightyear": {
+        "units": 1,
+        "clp": 10076
+      },
+      "Playstation": {
+        "units": 1,
+        "clp": 9235
       }
     },
     "Acuenta": {
@@ -8379,24 +9259,28 @@ const REAL_SELLOUT = {
       "DC Comics": {
         "units": 1,
         "clp": 1681
+      },
+      "El Rey Leon": {
+        "units": 1,
+        "clp": 2521
       }
     },
     "Walmart": {
       "Celebrity Icons": {
-        "units": 1,
-        "clp": 4202
+        "units": 3,
+        "clp": 9244
       },
       "LILO & STITCH": {
-        "units": 58,
-        "clp": 248740
+        "units": 146,
+        "clp": 489079
       },
       "FORD": {
-        "units": 3,
-        "clp": 12606
+        "units": 4,
+        "clp": 16808
       },
       "Snoopy": {
-        "units": 1,
-        "clp": 10076
+        "units": 50,
+        "clp": 522280
       },
       "Paw Patrol": {
         "units": 5,
@@ -8409,6 +9293,34 @@ const REAL_SELLOUT = {
       "Naruto": {
         "units": 1,
         "clp": 5874
+      },
+      "Minecraft": {
+        "units": 4,
+        "clp": 40304
+      },
+      "SONIC": {
+        "units": 3,
+        "clp": 17622
+      },
+      "NICK 90": {
+        "units": 13,
+        "clp": 141908
+      },
+      "LOTSO": {
+        "units": 18,
+        "clp": 173799
+      },
+      "GARFIELD": {
+        "units": 8,
+        "clp": 87328
+      },
+      "BLUEY": {
+        "units": 21,
+        "clp": 193935
+      },
+      "NASA": {
+        "units": 1,
+        "clp": 10076
       }
     },
     "Ekono": {
@@ -8417,24 +9329,24 @@ const REAL_SELLOUT = {
         "clp": 38998
       },
       "NICK 90": {
-        "units": 7,
-        "clp": 20531
+        "units": 8,
+        "clp": 23464
       },
       "Mickey": {
-        "units": 3,
-        "clp": 27705
+        "units": 4,
+        "clp": 36940
       },
       "Paw Patrol": {
-        "units": 5,
-        "clp": 26009
+        "units": 6,
+        "clp": 28522
       },
       "LILO & STITCH": {
-        "units": 25,
-        "clp": 105050
+        "units": 39,
+        "clp": 140344
       },
       "Avengers": {
-        "units": 2,
-        "clp": 18470
+        "units": 3,
+        "clp": 27705
       },
       "GARFIELD": {
         "units": 2,
@@ -8445,8 +9357,8 @@ const REAL_SELLOUT = {
         "clp": 18470
       },
       "Rick and morty": {
-        "units": 2,
-        "clp": 18470
+        "units": 5,
+        "clp": 46175
       },
       "Minecraft": {
         "units": 1,
@@ -8461,38 +9373,38 @@ const REAL_SELLOUT = {
         "clp": 9235
       },
       "Spiderman": {
-        "units": 1,
-        "clp": 9235
+        "units": 2,
+        "clp": 18470
       },
       "Naruto": {
-        "units": 1,
-        "clp": 5874
+        "units": 4,
+        "clp": 23496
       },
       "Superman": {
         "units": 1,
         "clp": 9235
       },
       "Toy Story": {
-        "units": 2,
-        "clp": 18470
+        "units": 3,
+        "clp": 27705
       }
     },
     "Lider Express": {
       "GARFIELD": {
-        "units": 3,
-        "clp": 15102
+        "units": 6,
+        "clp": 30204
       },
       "Snoopy": {
-        "units": 8,
-        "clp": 38590
+        "units": 12,
+        "clp": 57885
       },
       "BLUEY": {
-        "units": 5,
-        "clp": 15958
+        "units": 8,
+        "clp": 26874
       },
       "Paw Patrol": {
-        "units": 2,
-        "clp": 8386
+        "units": 3,
+        "clp": 12579
       }
     }
   },
@@ -8527,6 +9439,7 @@ const REAL_SELLOUT = {
     "Q223",
     "Q224",
     "Q225",
+    "Q226",
     "Q321",
     "Q322",
     "Q323",
@@ -8545,236 +9458,240 @@ const REAL_SELLOUT = {
   "licenseQuarterBreakdown": {
     "BOB ESPONJA": {
       "Q1": {
-        "units": 2182,
-        "clp": 10322979
+        "units": 2556,
+        "clp": 12005928
       },
       "Q4": {
-        "units": 271,
-        "clp": 1623175
+        "units": 329,
+        "clp": 1995220
       }
     },
     "Snoopy": {
       "Q1": {
-        "units": 5991,
-        "clp": 58379998
+        "units": 8356,
+        "clp": 78093598
       },
       "Q3": {
-        "units": 8,
-        "clp": 79024
+        "units": 11,
+        "clp": 109252
       },
       "Q4": {
-        "units": 1438,
-        "clp": 6709828
+        "units": 1731,
+        "clp": 7929491
       },
       "Q2": {
-        "units": 19,
-        "clp": 176822
+        "units": 69,
+        "clp": 734396
       }
     },
     "BLUEY": {
       "Q1": {
-        "units": 10020,
-        "clp": 88517879
+        "units": 12852,
+        "clp": 110970962
       },
       "Q4": {
-        "units": 3322,
-        "clp": 24145354
+        "units": 3967,
+        "clp": 28614057
       },
       "Q2": {
-        "units": 1202,
-        "clp": 9995611
+        "units": 1428,
+        "clp": 11983321
       },
       "Q3": {
-        "units": 1442,
-        "clp": 12181976
+        "units": 1737,
+        "clp": 15029369
       }
     },
     "Mickey": {
       "Q4": {
-        "units": 630,
-        "clp": 3589700
+        "units": 777,
+        "clp": 4481549
       },
       "Q1": {
-        "units": 227,
-        "clp": 1939126
+        "units": 293,
+        "clp": 2531642
       },
       "Q3": {
-        "units": 235,
-        "clp": 1161338
+        "units": 276,
+        "clp": 1356428
       },
       "Q2": {
-        "units": 6,
-        "clp": 66329
+        "units": 8,
+        "clp": 76901
       }
     },
     "Paw Patrol": {
       "Q4": {
-        "units": 3943,
-        "clp": 24867348
+        "units": 4782,
+        "clp": 29866363
       },
       "Q1": {
-        "units": 3304,
-        "clp": 31489172
+        "units": 3942,
+        "clp": 37990789
       },
       "Q3": {
-        "units": 880,
-        "clp": 7083575
+        "units": 1079,
+        "clp": 8649637
       },
       "Q2": {
-        "units": 105,
-        "clp": 605308
+        "units": 126,
+        "clp": 741543
       }
     },
     "Barbie": {
       "Q3": {
-        "units": 160,
-        "clp": 1088887
+        "units": 199,
+        "clp": 1390308
       },
       "Q1": {
-        "units": 444,
-        "clp": 6363737
+        "units": 543,
+        "clp": 7728874
       },
       "Q4": {
-        "units": 617,
-        "clp": 3782919
+        "units": 715,
+        "clp": 4410361
       }
     },
     "Spidey": {
       "Q1": {
-        "units": 1468,
-        "clp": 15630739
+        "units": 1763,
+        "clp": 18819067
       },
       "Q4": {
-        "units": 397,
-        "clp": 2199578
+        "units": 459,
+        "clp": 2520810
       },
       "Q3": {
-        "units": 266,
-        "clp": 1702263
+        "units": 314,
+        "clp": 2037497
+      },
+      "Q2": {
+        "units": 1,
+        "clp": 664
       }
     },
     "Minecraft": {
       "Q4": {
-        "units": 2167,
-        "clp": 15225973
+        "units": 2541,
+        "clp": 18054254
       },
       "Q2": {
-        "units": 74,
-        "clp": 651401
+        "units": 104,
+        "clp": 881023
       },
       "Q3": {
-        "units": 261,
-        "clp": 1938985
+        "units": 320,
+        "clp": 2321590
       },
       "Q1": {
-        "units": 441,
-        "clp": 6200653
+        "units": 1403,
+        "clp": 14264004
       }
     },
     "Spiderman": {
       "Q1": {
-        "units": 2984,
-        "clp": 43829113
+        "units": 3648,
+        "clp": 53250872
       },
       "Q4": {
-        "units": 1311,
-        "clp": 10196649
+        "units": 1545,
+        "clp": 12151953
       },
       "Q3": {
-        "units": 672,
-        "clp": 6029580
+        "units": 796,
+        "clp": 7117870
       },
       "Q2": {
-        "units": 41,
-        "clp": 304940
+        "units": 48,
+        "clp": 347581
       }
     },
     "ZOOTOPIA": {
       "Q4": {
-        "units": 639,
-        "clp": 4210600
+        "units": 743,
+        "clp": 4811776
       }
     },
     "LILO & STITCH": {
       "Q4": {
-        "units": 3066,
-        "clp": 18495012
+        "units": 3968,
+        "clp": 22400670
       },
       "Q2": {
-        "units": 182,
-        "clp": 1652758
+        "units": 217,
+        "clp": 2023676
       },
       "Q3": {
-        "units": 244,
-        "clp": 2057081
+        "units": 285,
+        "clp": 2309616
       },
       "Q1": {
-        "units": 1101,
-        "clp": 12873736
+        "units": 1379,
+        "clp": 16255957
       }
     },
     "KPOP DEMON HUNTERS": {
       "Q4": {
-        "units": 2977,
-        "clp": 36400915
+        "units": 3480,
+        "clp": 42378444
       }
     },
     "Minnie": {
       "Q4": {
-        "units": 1757,
-        "clp": 13151060
+        "units": 2054,
+        "clp": 15364483
       },
       "Q3": {
-        "units": 625,
-        "clp": 3857226
+        "units": 726,
+        "clp": 4407580
       },
       "Q1": {
-        "units": 2718,
-        "clp": 35929759
+        "units": 3161,
+        "clp": 41351006
       },
       "Q2": {
-        "units": 32,
-        "clp": 252449
+        "units": 38,
+        "clp": 304389
       }
     },
     "HAVAIANA": {
       "Q4": {
-        "units": 3973,
-        "clp": 31407520
+        "units": 4441,
+        "clp": 34912802
       }
     },
     "Hot Wheels": {
       "Q4": {
-        "units": 183,
-        "clp": 855558
+        "units": 211,
+        "clp": 1003317
       },
       "Q3": {
-        "units": 211,
-        "clp": 896299
+        "units": 264,
+        "clp": 1139923
       },
       "Q1": {
-        "units": 36,
-        "clp": 187270
+        "units": 42,
+        "clp": 220006
       }
     },
     "Peppa Pig": {
       "Q3": {
-        "units": 953,
-        "clp": 5342383
+        "units": 1287,
+        "clp": 7152801
       }
     },
     "SONIC": {
       "Q4": {
-        "units": 1759,
-        "clp": 11408174
+        "units": 2127,
+        "clp": 13820112
       },
       "Q3": {
-        "units": 531,
-        "clp": 3413303
+        "units": 603,
+        "clp": 3846263
       },
       "Q1": {
-        "units": 217,
-        "clp": 2006956
+        "units": 657,
+        "clp": 3810741
       },
       "Q2": {
         "units": 2,
@@ -8783,76 +9700,80 @@ const REAL_SELLOUT = {
     },
     "Naruto": {
       "Q4": {
-        "units": 317,
-        "clp": 1953736
+        "units": 389,
+        "clp": 2361750
       },
       "Q3": {
-        "units": 8,
-        "clp": 67811
+        "units": 11,
+        "clp": 80285
       },
       "Q2": {
-        "units": 3,
-        "clp": 16798
+        "units": 4,
+        "clp": 22680
       },
       "Q1": {
-        "units": 1,
-        "clp": 10076
+        "units": 3,
+        "clp": 22142
       }
     },
     "JUJUTSU KAISEN": {
       "Q4": {
-        "units": 164,
-        "clp": 833882
+        "units": 183,
+        "clp": 897737
+      },
+      "Q1": {
+        "units": 331,
+        "clp": 3467539
       }
     },
     "SMILEY": {
       "Q4": {
-        "units": 99,
-        "clp": 888145
+        "units": 109,
+        "clp": 1002755
       }
     },
     "REVUP": {
       "Q4": {
-        "units": 173,
-        "clp": 288459
+        "units": 183,
+        "clp": 302661
       }
     },
     "RICK AND MORTY": {
       "Q4": {
-        "units": 257,
-        "clp": 709686
+        "units": 344,
+        "clp": 946340
       }
     },
     "Gabby Doll House": {
       "Q1": {
-        "units": 120,
-        "clp": 690074
+        "units": 147,
+        "clp": 820402
       },
       "Q3": {
-        "units": 71,
-        "clp": 284067
+        "units": 93,
+        "clp": 383031
       },
       "Q2": {
         "units": 1,
         "clp": 3521
       },
       "Q4": {
-        "units": 10,
-        "clp": 33746
+        "units": 13,
+        "clp": 39612
       }
     },
     "Playstation": {
       "Q1": {
-        "units": 85,
-        "clp": 579797
+        "units": 102,
+        "clp": 699896
       },
       "Q4": {
-        "units": 73,
-        "clp": 356559
+        "units": 80,
+        "clp": 407768
       },
       "Q3": {
-        "units": 9,
-        "clp": 51783
+        "units": 13,
+        "clp": 82830
       },
       "Q2": {
         "units": 2,
@@ -8861,24 +9782,24 @@ const REAL_SELLOUT = {
     },
     "NO APLICA": {
       "Q4": {
-        "units": 395,
-        "clp": 3202889
+        "units": 446,
+        "clp": 3586778
       },
       "Q2": {
-        "units": 64,
-        "clp": 655767
+        "units": 78,
+        "clp": 793465
       }
     },
     "Stranger Things": {
       "Q4": {
-        "units": 98,
-        "clp": 594404
+        "units": 110,
+        "clp": 664784
       }
     },
     "INSIDE OUT": {
       "Q4": {
-        "units": 40,
-        "clp": 196651
+        "units": 56,
+        "clp": 253783
       },
       "Q2": {
         "units": 1,
@@ -8887,168 +9808,176 @@ const REAL_SELLOUT = {
     },
     "Chicas Superpoderosas": {
       "Q4": {
-        "units": 28,
-        "clp": 184868
+        "units": 32,
+        "clp": 214844
       }
     },
     "Metallica": {
       "Q1": {
-        "units": 19,
-        "clp": 211835
+        "units": 360,
+        "clp": 4533783
       }
     },
     "Cars": {
       "Q3": {
-        "units": 21,
-        "clp": 87498
+        "units": 28,
+        "clp": 116874
       },
       "Q4": {
-        "units": 233,
-        "clp": 1095952
+        "units": 266,
+        "clp": 1251090
       },
       "Q1": {
-        "units": 239,
-        "clp": 5054491
+        "units": 318,
+        "clp": 6549665
       }
     },
     "FORD": {
       "Q3": {
-        "units": 303,
-        "clp": 2129300
+        "units": 378,
+        "clp": 2619679
       },
       "Q4": {
-        "units": 172,
-        "clp": 689114
+        "units": 251,
+        "clp": 905083
+      },
+      "Q1": {
+        "units": 211,
+        "clp": 2193236
       }
     },
     "Frozen": {
       "Q4": {
-        "units": 212,
-        "clp": 1292823
+        "units": 255,
+        "clp": 1594763
       },
       "Q3": {
-        "units": 96,
-        "clp": 666023
+        "units": 111,
+        "clp": 780430
       },
       "Q1": {
-        "units": 174,
-        "clp": 816183
+        "units": 234,
+        "clp": 1107599
       },
       "Q2": {
-        "units": 10,
-        "clp": 74141
+        "units": 13,
+        "clp": 96601
       }
     },
     "RED BULL": {
       "Q2": {
-        "units": 240,
-        "clp": 2434180
+        "units": 275,
+        "clp": 2770330
       }
     },
     "Avengers": {
       "Q2": {
-        "units": 7,
-        "clp": 55414
+        "units": 8,
+        "clp": 64649
       },
       "Q1": {
-        "units": 52,
-        "clp": 464075
+        "units": 62,
+        "clp": 557838
       },
       "Q4": {
-        "units": 400,
-        "clp": 1780352
+        "units": 474,
+        "clp": 2093244
       },
       "Q3": {
-        "units": 38,
-        "clp": 292667
+        "units": 50,
+        "clp": 387592
       }
     },
     "The Mandalorian": {
       "Q4": {
-        "units": 73,
-        "clp": 439869
+        "units": 81,
+        "clp": 488691
+      },
+      "Q1": {
+        "units": 2,
+        "clp": 1680
       }
     },
     "El Rey Leon": {
       "Q4": {
-        "units": 111,
-        "clp": 470090
+        "units": 136,
+        "clp": 599276
       },
       "Q3": {
-        "units": 28,
-        "clp": 89249
+        "units": 37,
+        "clp": 137096
       },
       "Q1": {
         "units": 4,
         "clp": 29970
       },
       "Q2": {
-        "units": 1,
-        "clp": 2513
+        "units": 2,
+        "clp": 5034
       }
     },
     "Harry Potter": {
       "Q1": {
-        "units": 76,
-        "clp": 482565
+        "units": 92,
+        "clp": 590438
       },
       "Q3": {
-        "units": 23,
-        "clp": 174254
+        "units": 24,
+        "clp": 183244
       },
       "Q4": {
-        "units": 89,
-        "clp": 548926
+        "units": 106,
+        "clp": 647757
       }
     },
     "Acdc": {
       "Q2": {
-        "units": 14,
-        "clp": 133267
+        "units": 15,
+        "clp": 143257
       },
       "Q4": {
-        "units": 218,
-        "clp": 660872
+        "units": 284,
+        "clp": 851566
       },
       "Q1": {
-        "units": 20,
-        "clp": 229144
+        "units": 514,
+        "clp": 6040195
       }
     },
     "Toy Story": {
       "Q4": {
-        "units": 115,
-        "clp": 484196
+        "units": 140,
+        "clp": 587450
       },
       "Q2": {
-        "units": 4,
-        "clp": 36940
+        "units": 5,
+        "clp": 46175
       }
     },
     "ARISTOGATOS MARIE": {
       "Q4": {
-        "units": 81,
-        "clp": 465570
+        "units": 101,
+        "clp": 572421
       }
     },
     "WINNIE THE POOH": {
       "Q4": {
-        "units": 58,
-        "clp": 270152
+        "units": 64,
+        "clp": 297859
       }
     },
     "Princesas": {
       "Q1": {
-        "units": 41,
-        "clp": 120645
+        "units": 44,
+        "clp": 126335
       },
       "Q4": {
-        "units": 7,
-        "clp": 63930
+        "units": 11,
+        "clp": 94632
       },
       "Q3": {
-        "units": 5,
-        "clp": 13756
+        "units": 13,
+        "clp": 22605
       }
     },
     "Tinker Bell": {
@@ -9059,32 +9988,32 @@ const REAL_SELLOUT = {
     },
     "HUNTER X HUNTER": {
       "Q4": {
-        "units": 180,
-        "clp": 1126328
+        "units": 207,
+        "clp": 1287477
       }
     },
     "RUGRATS": {
       "Q4": {
-        "units": 3,
-        "clp": 12542
+        "units": 4,
+        "clp": 17532
       }
     },
     "Pink Floyd": {
       "Q2": {
-        "units": 1,
-        "clp": 5000
+        "units": 2,
+        "clp": 21990
       },
       "Q3": {
         "units": 1,
         "clp": 3361
       },
       "Q4": {
-        "units": 151,
-        "clp": 442883
+        "units": 206,
+        "clp": 604198
       },
       "Q1": {
-        "units": 14,
-        "clp": 176353
+        "units": 198,
+        "clp": 2430985
       }
     },
     "Star Wars": {
@@ -9093,8 +10022,8 @@ const REAL_SELLOUT = {
         "clp": 49998
       },
       "Q1": {
-        "units": 17,
-        "clp": 45737
+        "units": 19,
+        "clp": 49147
       },
       "Q4": {
         "units": 4,
@@ -9107,22 +10036,26 @@ const REAL_SELLOUT = {
         "clp": 64649
       },
       "Q3": {
-        "units": 1,
-        "clp": 9990
+        "units": 2,
+        "clp": 19980
       }
     },
     "GARFIELD": {
       "Q4": {
-        "units": 448,
-        "clp": 2128026
+        "units": 568,
+        "clp": 2654111
       },
       "Q3": {
         "units": 2,
         "clp": 10000
       },
       "Q2": {
-        "units": 4,
-        "clp": 33188
+        "units": 5,
+        "clp": 43178
+      },
+      "Q1": {
+        "units": 298,
+        "clp": 3252968
       }
     },
     "Disney": {
@@ -9131,32 +10064,32 @@ const REAL_SELLOUT = {
         "clp": 29940
       },
       "Q4": {
-        "units": 8,
-        "clp": 24970
+        "units": 11,
+        "clp": 31668
       }
     },
     "Rick and morty": {
       "Q4": {
-        "units": 75,
-        "clp": 306251
+        "units": 96,
+        "clp": 370747
       },
       "Q1": {
         "units": 2,
         "clp": 3815
       },
       "Q3": {
-        "units": 24,
-        "clp": 64607
+        "units": 35,
+        "clp": 98193
       }
     },
     "Batman": {
       "Q4": {
-        "units": 81,
-        "clp": 515742
+        "units": 97,
+        "clp": 600624
       },
       "Q3": {
-        "units": 2,
-        "clp": 6671
+        "units": 1,
+        "clp": -6319
       },
       "Q1": {
         "units": 2,
@@ -9165,12 +10098,12 @@ const REAL_SELLOUT = {
     },
     "POKEMON": {
       "Q4": {
-        "units": 108,
-        "clp": 778945
+        "units": 118,
+        "clp": 847771
       },
       "Q1": {
-        "units": 136,
-        "clp": 562943
+        "units": 157,
+        "clp": 656042
       }
     },
     "DC Comics": {
@@ -9193,14 +10126,14 @@ const REAL_SELLOUT = {
         "clp": 840
       },
       "Q4": {
-        "units": 9,
-        "clp": 54950
+        "units": 14,
+        "clp": 72128
       }
     },
     "HAVAIAN+Q596A": {
       "Q4": {
-        "units": 9,
-        "clp": 109728
+        "units": 10,
+        "clp": 123021
       }
     },
     "Frida Kahlo": {
@@ -9215,8 +10148,8 @@ const REAL_SELLOUT = {
         "clp": 4202
       },
       "Q3": {
-        "units": 4,
-        "clp": 23760
+        "units": 7,
+        "clp": 49330
       },
       "Q1": {
         "units": 4,
@@ -9241,40 +10174,44 @@ const REAL_SELLOUT = {
     },
     "Celebrity Icons": {
       "Q3": {
-        "units": 3,
-        "clp": 19319
+        "units": 4,
+        "clp": 27309
       },
       "Q4": {
-        "units": 69,
-        "clp": 273129
+        "units": 101,
+        "clp": 380697
       }
     },
     "One Piece": {
       "Q4": {
-        "units": 26,
-        "clp": 234406
+        "units": 33,
+        "clp": 293783
       }
     },
     "DISNEY 100": {
       "Q4": {
-        "units": 2,
-        "clp": 6980
+        "units": 4,
+        "clp": 15962
       }
     },
     "NASA": {
       "Q2": {
-        "units": 13,
-        "clp": 128903
+        "units": 14,
+        "clp": 138893
       },
       "Q4": {
         "units": 5,
         "clp": 21010
+      },
+      "Q1": {
+        "units": 245,
+        "clp": 2534139
       }
     },
     "Lightyear": {
       "Q3": {
-        "units": 6,
-        "clp": 29278
+        "units": 8,
+        "clp": 47344
       },
       "Q4": {
         "units": 1,
@@ -9289,20 +10226,20 @@ const REAL_SELLOUT = {
     },
     "Looney Tunes": {
       "Q4": {
-        "units": 4,
-        "clp": 6023
+        "units": 5,
+        "clp": 9376
       },
       "Q2": {
         "units": 2,
         "clp": 6706
       },
       "Q1": {
-        "units": 7,
-        "clp": 17647
+        "units": 12,
+        "clp": 30252
       },
       "Q3": {
-        "units": 4,
-        "clp": 36940
+        "units": 5,
+        "clp": 46175
       }
     },
     "Boruto": {
@@ -9313,20 +10250,24 @@ const REAL_SELLOUT = {
     },
     "MARIO BROS": {
       "Q1": {
-        "units": 80,
-        "clp": 388411
+        "units": 86,
+        "clp": 416092
       }
     },
     "Bambi": {
       "Q3": {
-        "units": 2,
-        "clp": 4016
+        "units": 4,
+        "clp": 8032
       }
     },
     "LOTSO": {
       "Q4": {
-        "units": 72,
-        "clp": 330124
+        "units": 87,
+        "clp": 414999
+      },
+      "Q1": {
+        "units": 306,
+        "clp": 2973926
       }
     },
     "101 Dalmatas": {
@@ -9341,8 +10282,8 @@ const REAL_SELLOUT = {
     },
     "Dragon Ball Z": {
       "Q4": {
-        "units": 3,
-        "clp": 14333
+        "units": 4,
+        "clp": 18323
       }
     },
     "Pacman": {
@@ -9381,12 +10322,12 @@ const REAL_SELLOUT = {
         "clp": 3397
       },
       "Q3": {
-        "units": 4,
-        "clp": 23528
+        "units": 8,
+        "clp": 47056
       },
       "Q1": {
-        "units": 16,
-        "clp": 194823
+        "units": 159,
+        "clp": 1895376
       }
     },
     "DRAGON BALL SUPER": {
@@ -9415,8 +10356,8 @@ const REAL_SELLOUT = {
     },
     "Friends": {
       "Q4": {
-        "units": 144,
-        "clp": 430789
+        "units": 191,
+        "clp": 569085
       }
     },
     "1KO": {
@@ -9433,62 +10374,66 @@ const REAL_SELLOUT = {
     },
     "NICK 90": {
       "Q4": {
-        "units": 336,
-        "clp": 985195
+        "units": 426,
+        "clp": 1249165
+      },
+      "Q1": {
+        "units": 333,
+        "clp": 3632507
       }
     },
     "Attack on titan": {
       "Q3": {
-        "units": 21,
-        "clp": 26027
+        "units": 24,
+        "clp": 28547
       }
     },
     "SPY X FAMILY": {
       "Q4": {
-        "units": 14,
-        "clp": 42008
+        "units": 17,
+        "clp": 49571
       }
     },
     "SIN MARCA": {
       "Q4": {
-        "units": 7,
-        "clp": 5880
+        "units": 9,
+        "clp": 7560
       }
     },
     "OASIS": {
       "Q1": {
-        "units": 14,
-        "clp": 191446
+        "units": 257,
+        "clp": 3357066
       }
     },
     "Los Picapiedras": {
       "Q3": {
-        "units": 5,
-        "clp": 12605
+        "units": 6,
+        "clp": 13446
       }
     },
     "ED EDD & EDDY": {
       "Q1": {
-        "units": 1,
-        "clp": 1260
+        "units": 3,
+        "clp": 3780
       }
     },
     "The Beatles": {
       "Q1": {
-        "units": 31,
-        "clp": 388269
+        "units": 415,
+        "clp": 5187299
       }
     },
     "DISNEY PIXAR COLLECTION": {
       "Q4": {
-        "units": 2,
-        "clp": 5866
+        "units": 3,
+        "clp": 8799
       }
     },
     "MAFALDA": {
       "Q4": {
-        "units": 6,
-        "clp": 25212
+        "units": 11,
+        "clp": 39498
       }
     },
     "Emoji": {
@@ -9499,8 +10444,8 @@ const REAL_SELLOUT = {
     },
     "Minions": {
       "Q3": {
-        "units": 3,
-        "clp": 10076
+        "units": 6,
+        "clp": 15119
       }
     },
     "FRUITS BASKET": {
@@ -9511,84 +10456,108 @@ const REAL_SELLOUT = {
     },
     "El Laboratorio De Dexter": {
       "Q1": {
-        "units": 4,
-        "clp": 5040
+        "units": 5,
+        "clp": 6300
+      }
+    },
+    "UFC": {
+      "Q1": {
+        "units": 90,
+        "clp": 982440
+      }
+    },
+    "South Park": {
+      "Q3": {
+        "units": 1,
+        "clp": 4193
+      }
+    },
+    "Sesamo": {
+      "Q2": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "Paw Patrol Movie": {
+      "Q3": {
+        "units": 1,
+        "clp": 5990
       }
     }
   },
   "licenseYearBreakdown": {
     "BOB ESPONJA": {
       "2026": {
-        "units": 2182,
-        "clp": 10322979
+        "units": 2556,
+        "clp": 12005928
       },
       "2025": {
-        "units": 271,
-        "clp": 1623175
+        "units": 329,
+        "clp": 1995220
       }
     },
     "Snoopy": {
       "2026": {
-        "units": 5888,
-        "clp": 57942590
+        "units": 8261,
+        "clp": 78026639
       },
       "2025": {
-        "units": 1512,
-        "clp": 7183452
+        "units": 1844,
+        "clp": 8623100
       },
       "2024": {
-        "units": 17,
-        "clp": 91393
+        "units": 23,
+        "clp": 107753
       },
       "2023": {
         "units": 3,
         "clp": 13854
       },
       "2022": {
-        "units": 39,
-        "clp": 173373
+        "units": 40,
+        "clp": 175381
       }
     },
     "Harry Potter": {
       "2024": {
-        "units": 45,
-        "clp": 719808
+        "units": 52,
+        "clp": 828157
       },
       "2025": {
-        "units": 188,
-        "clp": 1205745
+        "units": 222,
+        "clp": 1421439
       }
     },
     "BLUEY": {
       "2026": {
-        "units": 9363,
-        "clp": 85068771
+        "units": 12065,
+        "clp": 106886675
       },
       "2025": {
-        "units": 6525,
-        "clp": 49235355
+        "units": 7802,
+        "clp": 59091851
       },
       "2024": {
-        "units": 98,
-        "clp": 536694
+        "units": 117,
+        "clp": 619182
       }
     },
     "Mickey": {
       "2025": {
-        "units": 944,
-        "clp": 5188493
+        "units": 1157,
+        "clp": 6399597
       },
       "2024": {
-        "units": 26,
-        "clp": 102391
+        "units": 28,
+        "clp": 110879
       },
       "2022": {
-        "units": 20,
-        "clp": 178546
+        "units": 24,
+        "clp": 213998
       },
       "2026": {
-        "units": 110,
-        "clp": 1282377
+        "units": 147,
+        "clp": 1717360
       },
       "2021": {
         "units": 1,
@@ -9597,116 +10566,116 @@ const REAL_SELLOUT = {
     },
     "Paw Patrol": {
       "2025": {
-        "units": 5039,
-        "clp": 34210410
+        "units": 6110,
+        "clp": 41061517
       },
       "2026": {
-        "units": 2697,
-        "clp": 27163032
+        "units": 3233,
+        "clp": 32974414
       },
       "2024": {
-        "units": 458,
-        "clp": 2346031
+        "units": 540,
+        "clp": 2815249
       },
       "2022": {
-        "units": 35,
-        "clp": 314017
+        "units": 43,
+        "clp": 386240
       },
       "2023": {
-        "units": 4,
-        "clp": 26903
+        "units": 5,
+        "clp": 34893
       }
     },
     "Barbie": {
       "2025": {
-        "units": 921,
-        "clp": 5749005
+        "units": 1102,
+        "clp": 6959340
       },
       "2024": {
-        "units": 40,
-        "clp": 259676
+        "units": 44,
+        "clp": 276873
       },
       "2026": {
-        "units": 260,
-        "clp": 5226862
+        "units": 311,
+        "clp": 6293330
       }
     },
     "Spidey": {
       "2025": {
-        "units": 794,
-        "clp": 4663079
+        "units": 925,
+        "clp": 5445466
       },
       "2026": {
-        "units": 1336,
-        "clp": 14864511
+        "units": 1610,
+        "clp": 17926918
       },
       "2024": {
-        "units": 1,
-        "clp": 4990
+        "units": 2,
+        "clp": 5654
       }
     },
     "Minecraft": {
       "2025": {
-        "units": 2628,
-        "clp": 18939144
+        "units": 3134,
+        "clp": 22685008
       },
       "2024": {
-        "units": 43,
-        "clp": 213540
+        "units": 47,
+        "clp": 238814
       },
       "2026": {
-        "units": 269,
-        "clp": 4851357
+        "units": 1180,
+        "clp": 12570618
       },
       "2023": {
         "units": 2,
         "clp": 7936
       },
       "2022": {
-        "units": 1,
-        "clp": 5034
+        "units": 5,
+        "clp": 18495
       }
     },
     "Spiderman": {
       "2026": {
-        "units": 2665,
-        "clp": 41240380
+        "units": 3281,
+        "clp": 50300388
       },
       "2025": {
-        "units": 2296,
-        "clp": 18810554
+        "units": 2702,
+        "clp": 22218287
       },
       "2024": {
-        "units": 31,
-        "clp": 176402
+        "units": 33,
+        "clp": 191215
       },
       "2023": {
-        "units": 6,
-        "clp": 43942
+        "units": 8,
+        "clp": 52922
       },
       "2022": {
-        "units": 10,
-        "clp": 89004
+        "units": 14,
+        "clp": 109454
       }
     },
     "ZOOTOPIA": {
       "2025": {
-        "units": 659,
-        "clp": 4607709
+        "units": 769,
+        "clp": 5334885
       }
     },
     "LILO & STITCH": {
       "2025": {
-        "units": 3467,
-        "clp": 22379675
+        "units": 4454,
+        "clp": 27049761
       },
       "2026": {
-        "units": 1057,
-        "clp": 12608810
+        "units": 1326,
+        "clp": 15929051
       },
       "2024": {
-        "units": 93,
-        "clp": 517496
+        "units": 106,
+        "clp": 664451
       },
       "2022": {
         "units": 1,
@@ -9715,168 +10684,176 @@ const REAL_SELLOUT = {
     },
     "KPOP DEMON HUNTERS": {
       "2025": {
-        "units": 2977,
-        "clp": 36400915
+        "units": 3480,
+        "clp": 42378444
       }
     },
     "Minnie": {
       "2025": {
-        "units": 2647,
-        "clp": 18948120
+        "units": 3122,
+        "clp": 22119532
       },
       "2026": {
-        "units": 2373,
-        "clp": 33649821
+        "units": 2730,
+        "clp": 38651440
       },
       "2024": {
-        "units": 89,
-        "clp": 426170
+        "units": 102,
+        "clp": 482920
       },
       "2022": {
-        "units": 13,
-        "clp": 82437
+        "units": 14,
+        "clp": 86630
       },
       "2023": {
-        "units": 11,
-        "clp": 89936
+        "units": 12,
+        "clp": 92926
       }
     },
     "The Mandalorian": {
       "2024": {
-        "units": 52,
-        "clp": 636742
+        "units": 65,
+        "clp": 854800
       },
       "2025": {
-        "units": 63,
-        "clp": 431650
+        "units": 70,
+        "clp": 479640
       },
       "2023": {
         "units": 6,
         "clp": 73500
+      },
+      "2022": {
+        "units": 2,
+        "clp": 1680
       }
     },
     "HAVAIANA": {
       "2025": {
-        "units": 2858,
-        "clp": 24998518
+        "units": 3190,
+        "clp": 27786887
       },
       "2023": {
-        "units": 1115,
-        "clp": 6409002
+        "units": 1251,
+        "clp": 7125915
       }
     },
     "Hot Wheels": {
       "2025": {
-        "units": 427,
-        "clp": 1925357
+        "units": 512,
+        "clp": 2338496
       },
       "2024": {
-        "units": 3,
-        "clp": 13770
+        "units": 5,
+        "clp": 24750
       }
     },
     "Peppa Pig": {
       "2025": {
-        "units": 953,
-        "clp": 5342383
+        "units": 1287,
+        "clp": 7152801
       }
     },
     "JUJUTSU KAISEN": {
       "2024": {
-        "units": 46,
-        "clp": 609090
+        "units": 60,
+        "clp": 753138
       },
       "2025": {
-        "units": 187,
-        "clp": 1338721
+        "units": 217,
+        "clp": 1561333
       },
       "2023": {
-        "units": 16,
-        "clp": 173135
+        "units": 25,
+        "clp": 268877
+      },
+      "2026": {
+        "units": 331,
+        "clp": 3467539
       }
     },
     "SONIC": {
       "2025": {
-        "units": 2277,
-        "clp": 15058196
+        "units": 2720,
+        "clp": 17948956
       },
       "2026": {
-        "units": 80,
-        "clp": 1136252
+        "units": 496,
+        "clp": 2798321
       },
       "2024": {
-        "units": 159,
-        "clp": 747799
+        "units": 184,
+        "clp": 927653
       }
     },
     "Naruto": {
       "2024": {
-        "units": 52,
-        "clp": 702957
+        "units": 64,
+        "clp": 885130
       },
       "2025": {
-        "units": 292,
-        "clp": 1671475
+        "units": 362,
+        "clp": 2044176
       },
       "2022": {
-        "units": 4,
-        "clp": 10081
+        "units": 7,
+        "clp": 15433
       },
       "2023": {
-        "units": 10,
-        "clp": 56269
+        "units": 13,
+        "clp": 78058
       }
     },
     "SMILEY": {
       "2024": {
-        "units": 96,
-        "clp": 882288
+        "units": 105,
+        "clp": 995226
       },
       "2023": {
-        "units": 3,
-        "clp": 5857
+        "units": 4,
+        "clp": 7529
       }
     },
     "REVUP": {
       "2021": {
-        "units": 173,
-        "clp": 288459
+        "units": 183,
+        "clp": 302661
       }
     },
     "Stranger Things": {
       "2025": {
-        "units": 143,
-        "clp": 1538354
+        "units": 157,
+        "clp": 1650734
       },
       "2024": {
-        "units": 82,
-        "clp": 1022103
+        "units": 101,
+        "clp": 1235313
       }
     },
     "RICK AND MORTY": {
       "2025": {
-        "units": 257,
-        "clp": 709686
+        "units": 344,
+        "clp": 946340
       }
     },
     "NO APLICA": {
       "2024": {
-        "units": 460,
-        "clp": 4398013
+        "units": 542,
+        "clp": 5316935
       },
       "2025": {
-        "units": 102,
-        "clp": 1424022
+        "units": 123,
+        "clp": 1708720
       }
     },
     "Gabby Doll House": {
       "2024": {
-        "units": 44,
-        "clp": 142059
+        "units": 55,
+        "clp": 156103
       },
       "2025": {
-        "units": 157,
-        "clp": 867677
+        "units": 198,
+        "clp": 1088791
       },
       "2023": {
         "units": 1,
@@ -9885,106 +10862,110 @@ const REAL_SELLOUT = {
     },
     "Playstation": {
       "2025": {
-        "units": 153,
-        "clp": 916406
+        "units": 177,
+        "clp": 1087714
       },
       "2024": {
-        "units": 11,
-        "clp": 66690
+        "units": 14,
+        "clp": 88502
       },
       "2022": {
-        "units": 7,
-        "clp": 21023
+        "units": 9,
+        "clp": 35248
       }
     },
     "INSIDE OUT": {
       "2024": {
-        "units": 41,
-        "clp": 202651
+        "units": 57,
+        "clp": 259783
       }
     },
     "Chicas Superpoderosas": {
       "2025": {
-        "units": 28,
-        "clp": 184868
+        "units": 32,
+        "clp": 214844
       }
     },
     "Metallica": {
       "2024": {
-        "units": 3,
-        "clp": 11970
+        "units": 4,
+        "clp": 15960
       },
       "2026": {
-        "units": 16,
-        "clp": 199866
+        "units": 356,
+        "clp": 4517823
       }
     },
     "Cars": {
       "2025": {
-        "units": 292,
-        "clp": 1397736
+        "units": 347,
+        "clp": 1669482
       },
       "2026": {
-        "units": 201,
-        "clp": 4840205
+        "units": 265,
+        "clp": 6248147
       }
     },
     "FORD": {
       "2025": {
-        "units": 475,
-        "clp": 2818414
+        "units": 629,
+        "clp": 3524762
+      },
+      "2026": {
+        "units": 211,
+        "clp": 2193236
       }
     },
     "Frozen": {
       "2024": {
-        "units": 88,
-        "clp": 649228
+        "units": 110,
+        "clp": 831593
       },
       "2025": {
-        "units": 396,
-        "clp": 2127782
+        "units": 493,
+        "clp": 2657170
       },
       "2023": {
         "units": 2,
         "clp": 7503
       },
       "2022": {
-        "units": 7,
-        "clp": 67170
+        "units": 9,
+        "clp": 85640
       }
     },
     "One Piece": {
       "2025": {
-        "units": 33,
-        "clp": 621157
+        "units": 41,
+        "clp": 745473
       },
       "2024": {
-        "units": 42,
-        "clp": 482269
+        "units": 60,
+        "clp": 689058
       },
       "2023": {
-        "units": 9,
-        "clp": 119750
+        "units": 15,
+        "clp": 179690
       }
     },
     "RED BULL": {
       "2025": {
-        "units": 240,
-        "clp": 2434180
+        "units": 275,
+        "clp": 2770330
       }
     },
     "Avengers": {
       "2024": {
-        "units": 9,
-        "clp": 45999
+        "units": 10,
+        "clp": 48512
       },
       "2025": {
-        "units": 453,
-        "clp": 2270716
+        "units": 543,
+        "clp": 2730493
       },
       "2022": {
-        "units": 32,
-        "clp": 260055
+        "units": 38,
+        "clp": 308580
       },
       "2023": {
         "units": 5,
@@ -9997,20 +10978,20 @@ const REAL_SELLOUT = {
     },
     "Star Wars": {
       "2025": {
-        "units": 310,
-        "clp": 1953854
+        "units": 321,
+        "clp": 2104186
       },
       "2022": {
-        "units": 31,
-        "clp": 72595
+        "units": 33,
+        "clp": 76005
       },
       "2024": {
-        "units": 51,
-        "clp": 751487
+        "units": 85,
+        "clp": 1198991
       },
       "2023": {
-        "units": 43,
-        "clp": 559654
+        "units": 70,
+        "clp": 789215
       },
       "2021": {
         "units": 8,
@@ -10019,56 +11000,56 @@ const REAL_SELLOUT = {
     },
     "INDEX": {
       "2025": {
-        "units": 180,
-        "clp": 2464854
+        "units": 235,
+        "clp": 3257159
       }
     },
     "El Rey Leon": {
       "2024": {
-        "units": 39,
-        "clp": 159904
+        "units": 42,
+        "clp": 173894
       },
       "2022": {
-        "units": 49,
-        "clp": 157262
+        "units": 60,
+        "clp": 210983
       },
       "2023": {
         "units": 1,
         "clp": 3990
       },
       "2025": {
-        "units": 55,
-        "clp": 270666
+        "units": 76,
+        "clp": 382509
       }
     },
     "Jurassic World": {
       "2024": {
-        "units": 12,
-        "clp": 252000
+        "units": 14,
+        "clp": 294000
       }
     },
     "Acdc": {
       "2025": {
-        "units": 229,
-        "clp": 774762
+        "units": 296,
+        "clp": 975446
       },
       "2024": {
         "units": 3,
         "clp": 19377
       },
       "2026": {
-        "units": 20,
-        "clp": 229144
+        "units": 514,
+        "clp": 6040195
       }
     },
     "Dragon Ball": {
       "2024": {
-        "units": 10,
-        "clp": 188995
+        "units": 13,
+        "clp": 235085
       },
       "2025": {
-        "units": 19,
-        "clp": 319168
+        "units": 26,
+        "clp": 389721
       },
       "2023": {
         "units": 1,
@@ -10077,24 +11058,24 @@ const REAL_SELLOUT = {
     },
     "Toy Story": {
       "2025": {
-        "units": 115,
-        "clp": 484196
+        "units": 140,
+        "clp": 587450
       },
       "2022": {
-        "units": 4,
-        "clp": 36940
+        "units": 5,
+        "clp": 46175
       }
     },
     "ARISTOGATOS MARIE": {
       "2025": {
-        "units": 81,
-        "clp": 465570
+        "units": 101,
+        "clp": 572421
       }
     },
     "WINNIE THE POOH": {
       "2025": {
-        "units": 58,
-        "clp": 270152
+        "units": 64,
+        "clp": 297859
       },
       "2024": {
         "units": 3,
@@ -10103,16 +11084,16 @@ const REAL_SELLOUT = {
     },
     "Princesas": {
       "2024": {
-        "units": 52,
-        "clp": 411386
+        "units": 65,
+        "clp": 447657
       },
       "2025": {
         "units": 9,
         "clp": 7561
       },
       "2022": {
-        "units": 6,
-        "clp": 59940
+        "units": 9,
+        "clp": 89910
       },
       "2023": {
         "units": 1,
@@ -10127,30 +11108,30 @@ const REAL_SELLOUT = {
     },
     "HUNTER X HUNTER": {
       "2025": {
-        "units": 180,
-        "clp": 1126328
+        "units": 207,
+        "clp": 1287477
       }
     },
     "MARQUIS": {
       "2025": {
-        "units": 109,
-        "clp": 1353709
+        "units": 129,
+        "clp": 1602281
       }
     },
     "Mickey y sus Amigos": {
       "2025": {
-        "units": 29,
-        "clp": 528300
+        "units": 33,
+        "clp": 584098
       },
       "2024": {
-        "units": 9,
-        "clp": 79789
+        "units": 13,
+        "clp": 95769
       }
     },
     "MARVEL COMICS": {
       "2024": {
-        "units": 77,
-        "clp": 1231706
+        "units": 90,
+        "clp": 1408256
       },
       "2023": {
         "units": 1,
@@ -10163,32 +11144,32 @@ const REAL_SELLOUT = {
     },
     "Hello Kitty": {
       "2024": {
-        "units": 25,
-        "clp": 402536
+        "units": 30,
+        "clp": 467526
       },
       "2025": {
-        "units": 5,
-        "clp": 98276
+        "units": 7,
+        "clp": 138595
       }
     },
     "POKEMON": {
       "2024": {
-        "units": 168,
-        "clp": 1788499
+        "units": 218,
+        "clp": 2340479
       },
       "2023": {
-        "units": 17,
-        "clp": 283070
+        "units": 43,
+        "clp": 561948
       },
       "2025": {
-        "units": 136,
-        "clp": 562943
+        "units": 157,
+        "clp": 656042
       }
     },
     "Sin Licencia": {
       "2022": {
-        "units": 29,
-        "clp": 39436
+        "units": 33,
+        "clp": 50344
       },
       "2021": {
         "units": 4,
@@ -10197,48 +11178,52 @@ const REAL_SELLOUT = {
     },
     "RUGRATS": {
       "2025": {
-        "units": 3,
-        "clp": 12542
+        "units": 4,
+        "clp": 17532
       }
     },
     "Pink Floyd": {
       "2024": {
-        "units": 2,
-        "clp": 8361
+        "units": 3,
+        "clp": 25351
       },
       "2025": {
-        "units": 151,
-        "clp": 442883
+        "units": 206,
+        "clp": 604198
       },
       "2026": {
-        "units": 14,
-        "clp": 176353
+        "units": 198,
+        "clp": 2430985
       }
     },
     "PRESCHOOL MINNIE": {
       "2022": {
-        "units": 8,
-        "clp": 74639
+        "units": 9,
+        "clp": 84629
       }
     },
     "GARFIELD": {
       "2025": {
-        "units": 452,
-        "clp": 2163234
+        "units": 572,
+        "clp": 2695319
       },
       "2024": {
-        "units": 2,
-        "clp": 7980
+        "units": 3,
+        "clp": 11970
+      },
+      "2026": {
+        "units": 298,
+        "clp": 3252968
       }
     },
     "Disney": {
       "2024": {
-        "units": 11,
-        "clp": 70109
+        "units": 12,
+        "clp": 73099
       },
       "2023": {
-        "units": 42,
-        "clp": 310714
+        "units": 71,
+        "clp": 507007
       }
     },
     "Rick and morty": {
@@ -10247,58 +11232,58 @@ const REAL_SELLOUT = {
         "clp": 8970
       },
       "2022": {
-        "units": 25,
-        "clp": 67624
+        "units": 36,
+        "clp": 101210
       },
       "2024": {
-        "units": 3,
-        "clp": 7343
+        "units": 4,
+        "clp": 11333
       },
       "2023": {
         "units": 1,
         "clp": 798
       },
       "2025": {
-        "units": 69,
-        "clp": 289938
+        "units": 89,
+        "clp": 350444
       }
     },
     "Batman": {
       "2025": {
-        "units": 80,
-        "clp": 509742
+        "units": 94,
+        "clp": 588624
       },
       "2024": {
-        "units": 6,
-        "clp": 91990
+        "units": 11,
+        "clp": 143970
       },
       "2022": {
-        "units": 4,
-        "clp": 25141
+        "units": 3,
+        "clp": 12151
       }
     },
     "FUNKO MUSIC": {
       "2024": {
-        "units": 5,
-        "clp": 67192
+        "units": 7,
+        "clp": 92389
       },
       "2025": {
-        "units": 19,
-        "clp": 319167
+        "units": 22,
+        "clp": 369561
       }
     },
     "DC Comics": {
       "2022": {
-        "units": 16,
-        "clp": 24539
+        "units": 17,
+        "clp": 34529
       },
       "2024": {
-        "units": 11,
-        "clp": 143490
+        "units": 12,
+        "clp": 153990
       },
       "2025": {
-        "units": 3,
-        "clp": 52500
+        "units": 4,
+        "clp": 73500
       },
       "2023": {
         "units": 2,
@@ -10307,24 +11292,24 @@ const REAL_SELLOUT = {
     },
     "FORMULA 1": {
       "2025": {
-        "units": 10,
-        "clp": 207480
+        "units": 13,
+        "clp": 270480
       }
     },
     "HAVAIAN+Q596A": {
       "2023": {
-        "units": 9,
-        "clp": 109728
+        "units": 10,
+        "clp": 123021
       }
     },
     "DISNEY 100": {
       "2024": {
-        "units": 7,
-        "clp": 75592
+        "units": 9,
+        "clp": 92390
       },
       "2023": {
-        "units": 3,
-        "clp": 11980
+        "units": 5,
+        "clp": 20962
       }
     },
     "Frida Kahlo": {
@@ -10341,64 +11326,72 @@ const REAL_SELLOUT = {
     },
     "DEMON SLAYER": {
       "2023": {
-        "units": 18,
-        "clp": 281647
+        "units": 28,
+        "clp": 433758
       },
       "2024": {
-        "units": 15,
-        "clp": 272138
+        "units": 21,
+        "clp": 376202
       }
     },
     "No Definido": {
       "2024": {
-        "units": 28,
-        "clp": 537597
+        "units": 37,
+        "clp": 640495
       }
     },
     "Celebrity Icons": {
       "2024": {
-        "units": 8,
-        "clp": 21848
+        "units": 13,
+        "clp": 39922
       },
       "2023": {
-        "units": 46,
-        "clp": 191603
+        "units": 62,
+        "clp": 258835
       },
       "2025": {
-        "units": 18,
-        "clp": 78997
+        "units": 30,
+        "clp": 109249
       }
     },
     "Mortal Kombat": {
       "2024": {
-        "units": 6,
-        "clp": 123480
+        "units": 7,
+        "clp": 144480
       }
     },
     "NASA": {
       "2025": {
-        "units": 13,
-        "clp": 128903
+        "units": 14,
+        "clp": 138893
       },
       "2024": {
         "units": 5,
         "clp": 21010
+      },
+      "2026": {
+        "units": 245,
+        "clp": 2534139
       }
     },
     "Marvel": {
       "2024": {
-        "units": 6,
-        "clp": 70056
+        "units": 11,
+        "clp": 147239
       },
       "2023": {
+        "units": 4,
+        "clp": 41996
+      },
+      "2022": {
         "units": 1,
-        "clp": 16798
+        "clp": 3000
       }
     },
     "Lightyear": {
       "2022": {
-        "units": 7,
-        "clp": 33471
+        "units": 9,
+        "clp": 51537
       }
     },
     "WISH": {
@@ -10409,14 +11402,14 @@ const REAL_SELLOUT = {
     },
     "Dragon Ball Z": {
       "2024": {
-        "units": 7,
-        "clp": 98333
+        "units": 10,
+        "clp": 127523
       }
     },
     "Looney Tunes": {
       "2022": {
-        "units": 17,
-        "clp": 67316
+        "units": 24,
+        "clp": 92509
       }
     },
     "Boruto": {
@@ -10431,30 +11424,34 @@ const REAL_SELLOUT = {
         "clp": 6290
       },
       "2022": {
-        "units": 3,
-        "clp": 10076
+        "units": 6,
+        "clp": 15119
       }
     },
     "MARIO BROS": {
       "2025": {
-        "units": 80,
-        "clp": 388411
+        "units": 86,
+        "clp": 416092
       }
     },
     "Bambi": {
       "2022": {
-        "units": 2,
-        "clp": 4016
+        "units": 4,
+        "clp": 8032
       },
       "2024": {
-        "units": 4,
-        "clp": 19960
+        "units": 5,
+        "clp": 24950
       }
     },
     "LOTSO": {
       "2025": {
-        "units": 72,
-        "clp": 330124
+        "units": 87,
+        "clp": 414999
+      },
+      "2026": {
+        "units": 306,
+        "clp": 2973926
       }
     },
     "101 Dalmatas": {
@@ -10465,8 +11462,8 @@ const REAL_SELLOUT = {
     },
     "FUNKO DEPORTE": {
       "2024": {
-        "units": 3,
-        "clp": 50394
+        "units": 4,
+        "clp": 67192
       }
     },
     "Minnie (Infantil + Teen)": {
@@ -10511,8 +11508,8 @@ const REAL_SELLOUT = {
     },
     "WONDER WOMAN": {
       "2024": {
-        "units": 1,
-        "clp": 12490
+        "units": 2,
+        "clp": 24985
       }
     },
     "Kiss": {
@@ -10521,12 +11518,12 @@ const REAL_SELLOUT = {
         "clp": 3397
       },
       "2022": {
-        "units": 4,
-        "clp": 23528
+        "units": 8,
+        "clp": 47056
       },
       "2026": {
-        "units": 16,
-        "clp": 194823
+        "units": 159,
+        "clp": 1895376
       }
     },
     "DRAGON BALL SUPER": {
@@ -10545,6 +11542,10 @@ const REAL_SELLOUT = {
       "2023": {
         "units": 1,
         "clp": 5990
+      },
+      "2022": {
+        "units": 1,
+        "clp": 1000
       }
     },
     "Iron Maiden": {
@@ -10555,8 +11556,8 @@ const REAL_SELLOUT = {
     },
     "Friends": {
       "2025": {
-        "units": 144,
-        "clp": 430789
+        "units": 191,
+        "clp": 569085
       }
     },
     "1KO": {
@@ -10573,44 +11574,48 @@ const REAL_SELLOUT = {
     },
     "NICK 90": {
       "2025": {
-        "units": 336,
-        "clp": 985195
+        "units": 426,
+        "clp": 1249165
+      },
+      "2026": {
+        "units": 333,
+        "clp": 3632507
       }
     },
     "Attack on titan": {
       "2022": {
-        "units": 21,
-        "clp": 26027
+        "units": 24,
+        "clp": 28547
       }
     },
     "SPY X FAMILY": {
       "2025": {
-        "units": 14,
-        "clp": 42008
+        "units": 17,
+        "clp": 49571
       }
     },
     "SIN MARCA": {
       "2024": {
-        "units": 7,
-        "clp": 5880
+        "units": 9,
+        "clp": 7560
       }
     },
     "OASIS": {
       "2026": {
-        "units": 14,
-        "clp": 191446
+        "units": 257,
+        "clp": 3357066
       }
     },
     "Los Picapiedras": {
       "2022": {
-        "units": 5,
-        "clp": 12605
+        "units": 6,
+        "clp": 13446
       }
     },
     "ED EDD & EDDY": {
       "2022": {
-        "units": 1,
-        "clp": 1260
+        "units": 3,
+        "clp": 3780
       }
     },
     "AC/DC": {
@@ -10621,20 +11626,20 @@ const REAL_SELLOUT = {
     },
     "The Beatles": {
       "2026": {
-        "units": 31,
-        "clp": 388269
+        "units": 415,
+        "clp": 5187299
       }
     },
     "DISNEY PIXAR COLLECTION": {
       "2024": {
-        "units": 2,
-        "clp": 5866
+        "units": 3,
+        "clp": 8799
       }
     },
     "MAFALDA": {
       "2025": {
-        "units": 6,
-        "clp": 25212
+        "units": 11,
+        "clp": 39498
       }
     },
     "Emoji": {
@@ -10651,8 +11656,8 @@ const REAL_SELLOUT = {
     },
     "El Laboratorio De Dexter": {
       "2022": {
-        "units": 4,
-        "clp": 5040
+        "units": 5,
+        "clp": 6300
       }
     },
     "Woodstock": {
@@ -10660,39 +11665,69 @@ const REAL_SELLOUT = {
         "units": 1,
         "clp": 1990
       }
+    },
+    "UFC": {
+      "2026": {
+        "units": 90,
+        "clp": 982440
+      }
+    },
+    "South Park": {
+      "2022": {
+        "units": 1,
+        "clp": 4193
+      }
+    },
+    "ALICIA PAIS MARAVILLA": {
+      "2024": {
+        "units": 1,
+        "clp": 16798
+      }
+    },
+    "Sesamo": {
+      "2022": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "Paw Patrol Movie": {
+      "2023": {
+        "units": 1,
+        "clp": 5990
+      }
     }
   },
   "licenseTemporadaBreakdown": {
     "BOB ESPONJA": {
       "Q126": {
-        "units": 2182,
-        "clp": 10322979
+        "units": 2556,
+        "clp": 12005928
       },
       "Q425": {
-        "units": 271,
-        "clp": 1623175
+        "units": 329,
+        "clp": 1995220
       }
     },
     "Snoopy": {
       "Q126": {
-        "units": 5888,
-        "clp": 57942590
+        "units": 8222,
+        "clp": 77526029
       },
       "Q325": {
-        "units": 7,
-        "clp": 67028
+        "units": 10,
+        "clp": 97256
       },
       "Q425": {
-        "units": 1391,
-        "clp": 6502374
+        "units": 1680,
+        "clp": 7710543
       },
       "Q224": {
         "units": 1,
         "clp": 4990
       },
       "Q424": {
-        "units": 9,
-        "clp": 49197
+        "units": 12,
+        "clp": 58683
       },
       "Q123": {
         "units": 2,
@@ -10703,20 +11738,20 @@ const REAL_SELLOUT = {
         "clp": 11996
       },
       "Q225": {
-        "units": 17,
-        "clp": 167832
+        "units": 28,
+        "clp": 224796
       },
       "PV22": {
         "units": 1,
         "clp": 16990
       },
       "Q422": {
-        "units": 37,
-        "clp": 152383
+        "units": 38,
+        "clp": 154391
       },
       "Q124": {
-        "units": 6,
-        "clp": 25210
+        "units": 9,
+        "clp": 32084
       },
       "Q423": {
         "units": 1,
@@ -10727,98 +11762,106 @@ const REAL_SELLOUT = {
         "clp": 4000
       },
       "TT25": {
-        "units": 2,
-        "clp": 42000
+        "units": 3,
+        "clp": 63000
       },
       "Q125": {
-        "units": 95,
-        "clp": 404218
+        "units": 123,
+        "clp": 527505
+      },
+      "Q226": {
+        "units": 39,
+        "clp": 500610
       }
     },
     "Harry Potter": {
       "TT24": {
-        "units": 45,
-        "clp": 719808
+        "units": 52,
+        "clp": 828157
       },
       "Q125": {
-        "units": 76,
-        "clp": 482565
+        "units": 92,
+        "clp": 590438
       },
       "Q325": {
-        "units": 23,
-        "clp": 174254
+        "units": 24,
+        "clp": 183244
       },
       "Q425": {
-        "units": 89,
-        "clp": 548926
+        "units": 106,
+        "clp": 647757
       }
     },
     "BLUEY": {
       "Q126": {
-        "units": 9363,
-        "clp": 85068771
+        "units": 12065,
+        "clp": 106886675
       },
       "Q425": {
-        "units": 3228,
-        "clp": 23620392
+        "units": 3857,
+        "clp": 28014120
       },
       "Q125": {
-        "units": 654,
-        "clp": 3441569
+        "units": 783,
+        "clp": 4074234
       },
       "Q225": {
-        "units": 1201,
-        "clp": 9991418
+        "units": 1427,
+        "clp": 11979128
       },
       "Q325": {
-        "units": 1442,
-        "clp": 12181976
+        "units": 1735,
+        "clp": 15024369
       },
       "Q424": {
-        "units": 94,
-        "clp": 524962
+        "units": 110,
+        "clp": 599937
       },
       "Q124": {
-        "units": 3,
-        "clp": 7539
+        "units": 4,
+        "clp": 10052
       },
       "Q224": {
         "units": 1,
         "clp": 4193
+      },
+      "Q324": {
+        "units": 2,
+        "clp": 5000
       }
     },
     "Mickey": {
       "Q425": {
-        "units": 609,
-        "clp": 3496860
+        "units": 755,
+        "clp": 4380717
       },
       "Q125": {
-        "units": 99,
-        "clp": 482724
+        "units": 124,
+        "clp": 604805
       },
       "Q424": {
-        "units": 21,
-        "clp": 92840
+        "units": 22,
+        "clp": 100832
       },
       "Q325": {
-        "units": 229,
-        "clp": 1138378
+        "units": 270,
+        "clp": 1333468
       },
       "Q122": {
-        "units": 18,
-        "clp": 174025
+        "units": 22,
+        "clp": 209477
       },
       "Q225": {
-        "units": 7,
-        "clp": 70531
+        "units": 8,
+        "clp": 80607
       },
       "Q324": {
         "units": 3,
         "clp": 9204
       },
       "Q126": {
-        "units": 110,
-        "clp": 1282377
+        "units": 147,
+        "clp": 1717360
       },
       "Q322": {
         "units": 2,
@@ -10829,8 +11872,8 @@ const REAL_SELLOUT = {
         "clp": 4549
       },
       "Q224": {
-        "units": -1,
-        "clp": -4202
+        "units": 0,
+        "clp": -3706
       },
       "Q321": {
         "units": 1,
@@ -10839,48 +11882,48 @@ const REAL_SELLOUT = {
     },
     "Paw Patrol": {
       "Q425": {
-        "units": 3532,
-        "clp": 22756234
+        "units": 4295,
+        "clp": 27337127
       },
       "Q126": {
-        "units": 2697,
-        "clp": 27163032
+        "units": 3233,
+        "clp": 32974414
       },
       "Q125": {
-        "units": 590,
-        "clp": 4164015
+        "units": 689,
+        "clp": 4826947
       },
       "Q325": {
-        "units": 846,
-        "clp": 6833512
+        "units": 1037,
+        "clp": 8319528
       },
       "Q424": {
-        "units": 408,
-        "clp": 2087144
+        "units": 483,
+        "clp": 2497276
       },
       "Q224": {
-        "units": 33,
-        "clp": 145726
+        "units": 36,
+        "clp": 160696
       },
       "Q324": {
-        "units": 16,
-        "clp": 98171
+        "units": 20,
+        "clp": 142287
       },
       "Q225": {
-        "units": 71,
-        "clp": 456649
+        "units": 89,
+        "clp": 577914
       },
       "Q122": {
-        "units": 17,
-        "clp": 162125
+        "units": 20,
+        "clp": 189428
       },
       "Q322": {
-        "units": 18,
-        "clp": 151892
+        "units": 22,
+        "clp": 187822
       },
       "Q423": {
-        "units": 3,
-        "clp": 23970
+        "units": 4,
+        "clp": 31960
       },
       "PV24": {
         "units": 1,
@@ -10889,28 +11932,32 @@ const REAL_SELLOUT = {
       "Q223": {
         "units": 1,
         "clp": 2933
+      },
+      "PV22": {
+        "units": 1,
+        "clp": 8990
       }
     },
     "Barbie": {
       "Q325": {
-        "units": 155,
-        "clp": 1033307
+        "units": 194,
+        "clp": 1334728
       },
       "Q125": {
-        "units": 184,
-        "clp": 1136875
+        "units": 232,
+        "clp": 1435544
       },
       "Q425": {
-        "units": 582,
-        "clp": 3578823
+        "units": 676,
+        "clp": 4189068
       },
       "Q424": {
-        "units": 35,
-        "clp": 204096
+        "units": 39,
+        "clp": 221293
       },
       "Q126": {
-        "units": 260,
-        "clp": 5226862
+        "units": 311,
+        "clp": 6293330
       },
       "Q324": {
         "units": 5,
@@ -10919,54 +11966,58 @@ const REAL_SELLOUT = {
     },
     "Spidey": {
       "Q125": {
-        "units": 132,
-        "clp": 766228
+        "units": 153,
+        "clp": 892149
       },
       "Q425": {
-        "units": 396,
-        "clp": 2194588
+        "units": 458,
+        "clp": 2515820
       },
       "Q325": {
-        "units": 266,
-        "clp": 1702263
+        "units": 314,
+        "clp": 2037497
       },
       "Q126": {
-        "units": 1336,
-        "clp": 14864511
+        "units": 1610,
+        "clp": 17926918
       },
       "Q424": {
         "units": 1,
         "clp": 4990
+      },
+      "Q224": {
+        "units": 1,
+        "clp": 664
       }
     },
     "Minecraft": {
       "Q425": {
-        "units": 2134,
-        "clp": 15055276
+        "units": 2504,
+        "clp": 17854067
       },
       "Q225": {
-        "units": 73,
-        "clp": 641325
+        "units": 103,
+        "clp": 870947
       },
       "Q324": {
-        "units": 9,
-        "clp": 32767
+        "units": 10,
+        "clp": 36969
       },
       "Q325": {
-        "units": 249,
-        "clp": 1893248
+        "units": 304,
+        "clp": 2266608
       },
       "Q126": {
-        "units": 269,
-        "clp": 4851357
+        "units": 1180,
+        "clp": 12570618
       },
       "Q125": {
-        "units": 172,
-        "clp": 1349296
+        "units": 223,
+        "clp": 1693386
       },
       "Q424": {
-        "units": 33,
-        "clp": 170697
+        "units": 36,
+        "clp": 191769
       },
       "Q323": {
         "units": 2,
@@ -10977,38 +12028,42 @@ const REAL_SELLOUT = {
         "clp": 10076
       },
       "Q322": {
+        "units": 4,
+        "clp": 10077
+      },
+      "Q422": {
         "units": 1,
-        "clp": 5034
+        "clp": 8418
       }
     },
     "Spiderman": {
       "Q126": {
-        "units": 2665,
-        "clp": 41240380
+        "units": 3281,
+        "clp": 50300388
       },
       "Q425": {
-        "units": 1295,
-        "clp": 10107155
+        "units": 1526,
+        "clp": 12050286
       },
       "Q125": {
-        "units": 318,
-        "clp": 2582743
+        "units": 366,
+        "clp": 2944494
       },
       "Q324": {
-        "units": 18,
-        "clp": 114305
+        "units": 19,
+        "clp": 118925
       },
       "Q325": {
-        "units": 644,
-        "clp": 5826271
+        "units": 764,
+        "clp": 6886481
       },
       "Q225": {
-        "units": 39,
-        "clp": 294385
+        "units": 46,
+        "clp": 337026
       },
       "Q424": {
-        "units": 11,
-        "clp": 51542
+        "units": 12,
+        "clp": 61735
       },
       "Q224": {
         "units": 2,
@@ -11019,60 +12074,72 @@ const REAL_SELLOUT = {
         "clp": 37952
       },
       "Q322": {
-        "units": 10,
-        "clp": 89004
+        "units": 12,
+        "clp": 107474
       },
       "Q123": {
         "units": 1,
         "clp": 5990
+      },
+      "PV23": {
+        "units": 1,
+        "clp": 3990
+      },
+      "Q323": {
+        "units": 1,
+        "clp": 4990
+      },
+      "Q422": {
+        "units": 2,
+        "clp": 1980
       }
     },
     "ZOOTOPIA": {
       "Q425": {
-        "units": 639,
-        "clp": 4210600
+        "units": 743,
+        "clp": 4811776
       },
       "TT25": {
-        "units": 20,
-        "clp": 397109
+        "units": 26,
+        "clp": 523109
       }
     },
     "LILO & STITCH": {
       "Q425": {
-        "units": 2984,
-        "clp": 18114016
+        "units": 3878,
+        "clp": 21949997
       },
       "Q225": {
-        "units": 182,
-        "clp": 1652758
+        "units": 217,
+        "clp": 2023676
       },
       "Q325": {
-        "units": 241,
-        "clp": 2047687
+        "units": 282,
+        "clp": 2300222
       },
       "Q126": {
-        "units": 1057,
-        "clp": 12608810
+        "units": 1326,
+        "clp": 15929051
       },
       "Q125": {
-        "units": 44,
-        "clp": 264926
+        "units": 53,
+        "clp": 326906
       },
       "Q424": {
-        "units": 82,
-        "clp": 380996
+        "units": 90,
+        "clp": 450673
       },
       "Q324": {
         "units": 2,
         "clp": 8404
       },
       "TT24": {
-        "units": 9,
-        "clp": 128096
+        "units": 14,
+        "clp": 205374
       },
       "TT25": {
-        "units": 16,
-        "clp": 300288
+        "units": 24,
+        "clp": 448960
       },
       "Q322": {
         "units": 1,
@@ -11081,42 +12148,42 @@ const REAL_SELLOUT = {
     },
     "KPOP DEMON HUNTERS": {
       "Q425": {
-        "units": 2977,
-        "clp": 36400915
+        "units": 3480,
+        "clp": 42378444
       }
     },
     "Minnie": {
       "Q425": {
-        "units": 1676,
-        "clp": 12742054
+        "units": 1965,
+        "clp": 14929866
       },
       "Q325": {
-        "units": 618,
-        "clp": 3834827
+        "units": 719,
+        "clp": 4385181
       },
       "Q126": {
-        "units": 2373,
-        "clp": 33649821
+        "units": 2730,
+        "clp": 38651440
       },
       "Q225": {
-        "units": 25,
-        "clp": 223261
+        "units": 31,
+        "clp": 275201
       },
       "Q424": {
-        "units": 72,
-        "clp": 325096
+        "units": 79,
+        "clp": 347717
       },
       "Q125": {
-        "units": 328,
-        "clp": 2147978
+        "units": 407,
+        "clp": 2529284
       },
       "Q222": {
         "units": 1,
         "clp": 3990
       },
       "Q124": {
-        "units": 10,
-        "clp": 68827
+        "units": 16,
+        "clp": 102956
       },
       "PV24": {
         "units": 1,
@@ -11131,12 +12198,12 @@ const REAL_SELLOUT = {
         "clp": 15182
       },
       "Q423": {
-        "units": 8,
-        "clp": 79920
+        "units": 9,
+        "clp": 82910
       },
       "Q122": {
-        "units": 7,
-        "clp": 63133
+        "units": 8,
+        "clp": 67326
       },
       "Q324": {
         "units": 3,
@@ -11153,114 +12220,122 @@ const REAL_SELLOUT = {
     },
     "The Mandalorian": {
       "TT24": {
-        "units": 42,
-        "clp": 628522
+        "units": 54,
+        "clp": 845748
       },
       "Q425": {
-        "units": 63,
-        "clp": 431650
+        "units": 70,
+        "clp": 479640
       },
       "TT23": {
         "units": 6,
         "clp": 73500
       },
       "Q424": {
-        "units": 10,
-        "clp": 8219
+        "units": 11,
+        "clp": 9051
+      },
+      "Q122": {
+        "units": 2,
+        "clp": 1680
       }
     },
     "HAVAIANA": {
       "Q425": {
-        "units": 2858,
-        "clp": 24998518
+        "units": 3190,
+        "clp": 27786887
       },
       "Q423": {
-        "units": 1115,
-        "clp": 6409002
+        "units": 1251,
+        "clp": 7125915
       }
     },
     "Hot Wheels": {
       "Q425": {
-        "units": 182,
-        "clp": 848568
+        "units": 210,
+        "clp": 996327
       },
       "Q325": {
-        "units": 209,
-        "clp": 889519
+        "units": 260,
+        "clp": 1122163
       },
       "Q424": {
         "units": 1,
         "clp": 6990
       },
       "Q125": {
-        "units": 36,
-        "clp": 187270
+        "units": 42,
+        "clp": 220006
       },
       "Q324": {
-        "units": 2,
-        "clp": 6780
+        "units": 4,
+        "clp": 17760
       }
     },
     "Peppa Pig": {
       "Q325": {
-        "units": 953,
-        "clp": 5342383
+        "units": 1287,
+        "clp": 7152801
       }
     },
     "JUJUTSU KAISEN": {
       "TT24": {
-        "units": 44,
-        "clp": 601091
+        "units": 58,
+        "clp": 745139
       },
       "Q425": {
-        "units": 161,
-        "clp": 812893
+        "units": 180,
+        "clp": 876748
       },
       "Q424": {
         "units": 2,
         "clp": 7999
       },
       "TT25": {
-        "units": 26,
-        "clp": 525828
+        "units": 37,
+        "clp": 684585
       },
       "TT23": {
-        "units": 15,
-        "clp": 160145
+        "units": 24,
+        "clp": 255887
       },
       "Q423": {
         "units": 1,
         "clp": 12990
+      },
+      "Q126": {
+        "units": 331,
+        "clp": 3467539
       }
     },
     "SONIC": {
       "Q425": {
-        "units": 1755,
-        "clp": 11388880
+        "units": 2123,
+        "clp": 13800818
       },
       "Q325": {
-        "units": 383,
-        "clp": 2786420
+        "units": 434,
+        "clp": 3123526
       },
       "Q125": {
-        "units": 137,
-        "clp": 870704
+        "units": 161,
+        "clp": 1012420
       },
       "Q126": {
-        "units": 80,
-        "clp": 1136252
+        "units": 496,
+        "clp": 2798321
       },
       "Q424": {
         "units": 4,
         "clp": 19294
       },
       "Q324": {
-        "units": 148,
-        "clp": 626883
+        "units": 169,
+        "clp": 722737
       },
       "TT24": {
-        "units": 7,
-        "clp": 101622
+        "units": 11,
+        "clp": 185622
       },
       "Q225": {
         "units": 2,
@@ -11269,28 +12344,28 @@ const REAL_SELLOUT = {
     },
     "Naruto": {
       "Q424": {
-        "units": 24,
-        "clp": 290701
+        "units": 28,
+        "clp": 341972
       },
       "Q425": {
-        "units": 289,
-        "clp": 1649635
+        "units": 357,
+        "clp": 2006378
       },
       "Q324": {
-        "units": 7,
-        "clp": 66130
+        "units": 8,
+        "clp": 75242
       },
       "Q422": {
         "units": 3,
         "clp": 8400
       },
       "TT23": {
-        "units": 9,
-        "clp": 51269
+        "units": 12,
+        "clp": 73058
       },
       "TT24": {
-        "units": 20,
-        "clp": 341092
+        "units": 27,
+        "clp": 462882
       },
       "Q224": {
         "units": 1,
@@ -11301,96 +12376,100 @@ const REAL_SELLOUT = {
         "clp": 5000
       },
       "Q322": {
-        "units": 1,
-        "clp": 1681
+        "units": 3,
+        "clp": 5043
       },
       "Q125": {
-        "units": 1,
-        "clp": 10076
+        "units": 2,
+        "clp": 20152
       },
       "Q225": {
-        "units": 2,
-        "clp": 11764
+        "units": 3,
+        "clp": 17646
       },
       "TT": {
         "units": 1,
         "clp": 1218
+      },
+      "Q122": {
+        "units": 1,
+        "clp": 1990
       }
     },
     "SMILEY": {
       "Q424": {
-        "units": 96,
-        "clp": 882288
+        "units": 105,
+        "clp": 995226
       },
       "Q423": {
-        "units": 3,
-        "clp": 5857
+        "units": 4,
+        "clp": 7529
       }
     },
     "REVUP": {
       "Q421": {
-        "units": 173,
-        "clp": 288459
+        "units": 183,
+        "clp": 302661
       }
     },
     "Stranger Things": {
       "TT25": {
-        "units": 45,
-        "clp": 943950
+        "units": 47,
+        "clp": 985950
       },
       "Q425": {
-        "units": 98,
-        "clp": 594404
+        "units": 110,
+        "clp": 664784
       },
       "TT24": {
-        "units": 82,
-        "clp": 1022103
+        "units": 101,
+        "clp": 1235313
       }
     },
     "RICK AND MORTY": {
       "Q425": {
-        "units": 257,
-        "clp": 709686
+        "units": 344,
+        "clp": 946340
       }
     },
     "NO APLICA": {
       "TT24": {
-        "units": 65,
-        "clp": 1195124
+        "units": 96,
+        "clp": 1730157
       },
       "Q424": {
-        "units": 395,
-        "clp": 3202889
+        "units": 446,
+        "clp": 3586778
       },
       "Q225": {
-        "units": 64,
-        "clp": 655767
+        "units": 78,
+        "clp": 793465
       },
       "TT25": {
-        "units": 38,
-        "clp": 768255
+        "units": 45,
+        "clp": 915255
       }
     },
     "Gabby Doll House": {
       "Q124": {
-        "units": 30,
-        "clp": 89356
+        "units": 38,
+        "clp": 97534
       },
       "Q125": {
-        "units": 90,
-        "clp": 600718
+        "units": 109,
+        "clp": 722868
       },
       "Q325": {
-        "units": 67,
-        "clp": 266959
+        "units": 89,
+        "clp": 365923
       },
       "Q224": {
         "units": 1,
         "clp": 3521
       },
       "Q424": {
-        "units": 9,
-        "clp": 32074
+        "units": 12,
+        "clp": 37940
       },
       "Q324": {
         "units": 4,
@@ -11403,16 +12482,16 @@ const REAL_SELLOUT = {
     },
     "Playstation": {
       "Q125": {
-        "units": 85,
-        "clp": 579797
+        "units": 102,
+        "clp": 699896
       },
       "Q425": {
-        "units": 68,
-        "clp": 336609
+        "units": 75,
+        "clp": 387818
       },
       "Q324": {
-        "units": 6,
-        "clp": 46740
+        "units": 9,
+        "clp": 68552
       },
       "Q424": {
         "units": 5,
@@ -11427,18 +12506,18 @@ const REAL_SELLOUT = {
         "clp": 3990
       },
       "PV22": {
-        "units": 1,
-        "clp": 3990
+        "units": 2,
+        "clp": 8980
       },
       "Q322": {
-        "units": 3,
-        "clp": 5043
+        "units": 4,
+        "clp": 14278
       }
     },
     "INSIDE OUT": {
       "Q424": {
-        "units": 40,
-        "clp": 196651
+        "units": 56,
+        "clp": 253783
       },
       "Q224": {
         "units": 1,
@@ -11447,76 +12526,80 @@ const REAL_SELLOUT = {
     },
     "Chicas Superpoderosas": {
       "Q425": {
-        "units": 28,
-        "clp": 184868
+        "units": 32,
+        "clp": 214844
       }
     },
     "Metallica": {
       "Q124": {
-        "units": 3,
-        "clp": 11970
+        "units": 4,
+        "clp": 15960
       },
       "Q126": {
-        "units": 16,
-        "clp": 199866
+        "units": 356,
+        "clp": 4517823
       }
     },
     "Cars": {
       "Q325": {
-        "units": 21,
-        "clp": 87498
+        "units": 28,
+        "clp": 116874
       },
       "Q425": {
-        "units": 233,
-        "clp": 1095952
+        "units": 266,
+        "clp": 1251090
       },
       "Q126": {
-        "units": 201,
-        "clp": 4840205
+        "units": 265,
+        "clp": 6248147
       },
       "Q125": {
-        "units": 38,
-        "clp": 214286
+        "units": 53,
+        "clp": 301518
       }
     },
     "FORD": {
       "Q325": {
-        "units": 303,
-        "clp": 2129300
+        "units": 378,
+        "clp": 2619679
       },
       "Q425": {
-        "units": 172,
-        "clp": 689114
+        "units": 251,
+        "clp": 905083
+      },
+      "Q126": {
+        "units": 211,
+        "clp": 2193236
       }
     },
     "Frozen": {
       "Q424": {
-        "units": 84,
-        "clp": 635543
+        "units": 104,
+        "clp": 813422
       },
       "Q325": {
-        "units": 94,
-        "clp": 654319
+        "units": 109,
+        "clp": 768726
       },
       "Q125": {
-        "units": 174,
-        "clp": 816183
+        "units": 233,
+        "clp": 1107103
       },
       "PV23": {
         "units": 1,
         "clp": 2513
       },
       "Q425": {
-        "units": 128,
-        "clp": 657280
+        "units": 151,
+        "clp": 781341
       },
       "Q224": {
-        "units": 4,
-        "clp": 13685
+        "units": 5,
+        "clp": 17675
       },
       "Q222": {
-        "units": 6,
-        "clp": 60456
+        "units": 8,
+        "clp": 78926
       },
       "Q323": {
         "units": 1,
@@ -11525,30 +12608,34 @@ const REAL_SELLOUT = {
       "Q322": {
         "units": 1,
         "clp": 6714
+      },
+      "Q124": {
+        "units": 1,
+        "clp": 496
       }
     },
     "One Piece": {
       "TT25": {
-        "units": 33,
-        "clp": 621157
+        "units": 41,
+        "clp": 745473
       },
       "Q424": {
-        "units": 26,
-        "clp": 234406
+        "units": 33,
+        "clp": 293783
       },
       "TT23": {
-        "units": 9,
-        "clp": 119750
+        "units": 15,
+        "clp": 179690
       },
       "TT24": {
-        "units": 16,
-        "clp": 247863
+        "units": 27,
+        "clp": 395275
       }
     },
     "RED BULL": {
       "Q225": {
-        "units": 240,
-        "clp": 2434180
+        "units": 275,
+        "clp": 2770330
       }
     },
     "Avengers": {
@@ -11557,24 +12644,24 @@ const REAL_SELLOUT = {
         "clp": 3353
       },
       "Q125": {
-        "units": 31,
-        "clp": 303011
+        "units": 35,
+        "clp": 354971
       },
       "Q425": {
-        "units": 393,
-        "clp": 1742696
+        "units": 467,
+        "clp": 2055588
       },
       "Q122": {
-        "units": 21,
-        "clp": 161064
+        "units": 26,
+        "clp": 200354
       },
       "Q325": {
-        "units": 29,
-        "clp": 225009
+        "units": 41,
+        "clp": 319934
       },
       "Q222": {
-        "units": 6,
-        "clp": 52061
+        "units": 7,
+        "clp": 61296
       },
       "Q424": {
         "units": 7,
@@ -11599,36 +12686,40 @@ const REAL_SELLOUT = {
       "Q321": {
         "units": 1,
         "clp": 3990
+      },
+      "Q124": {
+        "units": 1,
+        "clp": 2513
       }
     },
     "Star Wars": {
       "TT25": {
-        "units": 310,
-        "clp": 1953854
+        "units": 321,
+        "clp": 2104186
       },
       "Q322": {
         "units": 13,
         "clp": 26058
       },
       "TT24": {
-        "units": 50,
-        "clp": 747487
+        "units": 84,
+        "clp": 1194991
       },
       "TT23": {
-        "units": 41,
-        "clp": 551674
+        "units": 67,
+        "clp": 774245
       },
       "PV23": {
-        "units": 1,
-        "clp": 3990
+        "units": 2,
+        "clp": 10980
       },
       "Q321": {
         "units": 6,
         "clp": 23940
       },
       "Q122": {
-        "units": 17,
-        "clp": 45737
+        "units": 19,
+        "clp": 49147
       },
       "Q423": {
         "units": 1,
@@ -11653,34 +12744,34 @@ const REAL_SELLOUT = {
     },
     "INDEX": {
       "TT25": {
-        "units": 180,
-        "clp": 2464854
+        "units": 235,
+        "clp": 3257159
       }
     },
     "El Rey Leon": {
       "Q424": {
-        "units": 39,
-        "clp": 159904
+        "units": 42,
+        "clp": 173894
       },
       "Q422": {
-        "units": 17,
-        "clp": 39520
+        "units": 18,
+        "clp": 42873
       },
       "Q322": {
-        "units": 28,
-        "clp": 89249
+        "units": 37,
+        "clp": 137096
       },
       "Q1/2023": {
         "units": 1,
         "clp": 3990
       },
       "Q425": {
-        "units": 55,
-        "clp": 270666
+        "units": 76,
+        "clp": 382509
       },
       "Q222": {
-        "units": 1,
-        "clp": 2513
+        "units": 2,
+        "clp": 5034
       },
       "Q122": {
         "units": 3,
@@ -11689,14 +12780,14 @@ const REAL_SELLOUT = {
     },
     "Jurassic World": {
       "TT24": {
-        "units": 12,
-        "clp": 252000
+        "units": 14,
+        "clp": 294000
       }
     },
     "Acdc": {
       "Q225": {
-        "units": 13,
-        "clp": 129870
+        "units": 14,
+        "clp": 139860
       },
       "Q424": {
         "units": 2,
@@ -11707,12 +12798,12 @@ const REAL_SELLOUT = {
         "clp": 3397
       },
       "Q425": {
-        "units": 216,
-        "clp": 644892
+        "units": 282,
+        "clp": 835586
       },
       "Q126": {
-        "units": 20,
-        "clp": 229144
+        "units": 514,
+        "clp": 6040195
       }
     },
     "Rey León": {
@@ -11723,12 +12814,12 @@ const REAL_SELLOUT = {
     },
     "Dragon Ball": {
       "TT24": {
-        "units": 10,
-        "clp": 188995
+        "units": 13,
+        "clp": 235085
       },
       "TT25": {
-        "units": 19,
-        "clp": 319168
+        "units": 26,
+        "clp": 389721
       },
       "TT23": {
         "units": 1,
@@ -11737,24 +12828,24 @@ const REAL_SELLOUT = {
     },
     "Toy Story": {
       "Q425": {
-        "units": 115,
-        "clp": 484196
+        "units": 140,
+        "clp": 587450
       },
       "Q222": {
-        "units": 4,
-        "clp": 36940
+        "units": 5,
+        "clp": 46175
       }
     },
     "ARISTOGATOS MARIE": {
       "Q425": {
-        "units": 81,
-        "clp": 465570
+        "units": 101,
+        "clp": 572421
       }
     },
     "WINNIE THE POOH": {
       "Q425": {
-        "units": 58,
-        "clp": 270152
+        "units": 64,
+        "clp": 297859
       },
       "TT24": {
         "units": 3,
@@ -11763,28 +12854,28 @@ const REAL_SELLOUT = {
     },
     "Princesas": {
       "Q124": {
-        "units": 32,
-        "clp": 113084
+        "units": 35,
+        "clp": 118774
       },
       "TT24": {
-        "units": 14,
-        "clp": 280556
+        "units": 15,
+        "clp": 301556
       },
       "Q125": {
         "units": 9,
         "clp": 7561
       },
       "Q422": {
-        "units": 6,
-        "clp": 59940
+        "units": 9,
+        "clp": 89910
       },
       "Q324": {
-        "units": 5,
-        "clp": 13756
+        "units": 13,
+        "clp": 22605
       },
       "Q424": {
-        "units": 1,
-        "clp": 3990
+        "units": 2,
+        "clp": 4722
       },
       "TT23": {
         "units": 1,
@@ -11799,20 +12890,20 @@ const REAL_SELLOUT = {
     },
     "HUNTER X HUNTER": {
       "Q425": {
-        "units": 180,
-        "clp": 1126328
+        "units": 207,
+        "clp": 1287477
       }
     },
     "MARQUIS": {
       "TT25": {
-        "units": 109,
-        "clp": 1353709
+        "units": 129,
+        "clp": 1602281
       }
     },
     "Mickey y sus Amigos": {
       "TT25": {
-        "units": 24,
-        "clp": 501480
+        "units": 27,
+        "clp": 556080
       },
       "TT24": {
         "units": 4,
@@ -11823,26 +12914,26 @@ const REAL_SELLOUT = {
         "clp": 840
       },
       "Q424": {
-        "units": 5,
-        "clp": 28970
+        "units": 9,
+        "clp": 44950
       },
       "Q425": {
-        "units": 4,
-        "clp": 25980
+        "units": 5,
+        "clp": 27178
       }
     },
     "MARVEL COMICS": {
       "TT24": {
-        "units": 73,
-        "clp": 1207946
+        "units": 83,
+        "clp": 1358926
       },
       "Q423": {
         "units": 1,
         "clp": 4202
       },
       "Q324": {
-        "units": 4,
-        "clp": 23760
+        "units": 7,
+        "clp": 49330
       },
       "Q125": {
         "units": 4,
@@ -11851,72 +12942,72 @@ const REAL_SELLOUT = {
     },
     "Hello Kitty": {
       "TT24": {
-        "units": 25,
-        "clp": 402536
+        "units": 30,
+        "clp": 467526
       },
       "TT25": {
-        "units": 5,
-        "clp": 98276
+        "units": 7,
+        "clp": 138595
       }
     },
     "POKEMON": {
       "TT24": {
-        "units": 60,
-        "clp": 1009554
+        "units": 100,
+        "clp": 1492708
       },
       "TT23": {
-        "units": 17,
-        "clp": 283070
+        "units": 43,
+        "clp": 561948
       },
       "Q424": {
-        "units": 108,
-        "clp": 778945
+        "units": 118,
+        "clp": 847771
       },
       "Q125": {
-        "units": 136,
-        "clp": 562943
+        "units": 157,
+        "clp": 656042
       }
     },
     "Sin Licencia": {
       "PV22": {
-        "units": 27,
-        "clp": 35991
+        "units": 29,
+        "clp": 38495
       },
       "Q421": {
         "units": 4,
         "clp": 19311
       },
       "TT": {
-        "units": 6,
-        "clp": 10057
+        "units": 8,
+        "clp": 14241
       },
       "OI22": {
-        "units": 2,
-        "clp": 3445
+        "units": 4,
+        "clp": 11849
       }
     },
     "RUGRATS": {
       "Q425": {
-        "units": 3,
-        "clp": 12542
+        "units": 4,
+        "clp": 17532
       }
     },
     "Pink Floyd": {
       "Q224": {
-        "units": 1,
-        "clp": 5000
+        "units": 2,
+        "clp": 21990
       },
       "Q324": {
         "units": 1,
         "clp": 3361
       },
       "Q425": {
-        "units": 151,
-        "clp": 442883
+        "units": 206,
+        "clp": 604198
       },
       "Q126": {
-        "units": 14,
-        "clp": 176353
+        "units": 198,
+        "clp": 2430985
       }
     },
     "PRESCHOOL MINNIE": {
@@ -11925,26 +13016,30 @@ const REAL_SELLOUT = {
         "clp": 64649
       },
       "Q322": {
-        "units": 1,
-        "clp": 9990
+        "units": 2,
+        "clp": 19980
       }
     },
     "GARFIELD": {
       "Q425": {
-        "units": 446,
-        "clp": 2120046
+        "units": 565,
+        "clp": 2642141
       },
       "Q325": {
         "units": 2,
         "clp": 10000
       },
       "Q225": {
-        "units": 4,
-        "clp": 33188
+        "units": 5,
+        "clp": 43178
       },
       "Q424": {
-        "units": 2,
-        "clp": 7980
+        "units": 3,
+        "clp": 11970
+      },
+      "Q126": {
+        "units": 298,
+        "clp": 3252968
       }
     },
     "Disney": {
@@ -11953,16 +13048,16 @@ const REAL_SELLOUT = {
         "clp": 29940
       },
       "TT24": {
-        "units": 5,
-        "clp": 40169
+        "units": 6,
+        "clp": 43159
       },
       "Q423": {
-        "units": 8,
-        "clp": 24970
+        "units": 11,
+        "clp": 31668
       },
       "TT23": {
-        "units": 34,
-        "clp": 285744
+        "units": 60,
+        "clp": 475339
       }
     },
     "Rick and morty": {
@@ -11975,42 +13070,42 @@ const REAL_SELLOUT = {
         "clp": 3017
       },
       "TT": {
-        "units": 1,
-        "clp": 853
+        "units": 2,
+        "clp": 1828
       },
       "Q424": {
-        "units": 3,
-        "clp": 7343
+        "units": 4,
+        "clp": 11333
       },
       "Q123": {
         "units": 1,
         "clp": 798
       },
       "Q322": {
-        "units": 24,
-        "clp": 64607
+        "units": 35,
+        "clp": 98193
       },
       "Q425": {
-        "units": 69,
-        "clp": 289938
+        "units": 89,
+        "clp": 350444
       }
     },
     "Batman": {
       "Q425": {
-        "units": 80,
-        "clp": 509742
+        "units": 94,
+        "clp": 588624
       },
       "TT24": {
-        "units": 5,
-        "clp": 85990
+        "units": 8,
+        "clp": 131970
       },
       "Q424": {
-        "units": 1,
-        "clp": 6000
+        "units": 3,
+        "clp": 12000
       },
       "Q322": {
-        "units": 2,
-        "clp": 6671
+        "units": 1,
+        "clp": -6319
       },
       "Q122": {
         "units": 2,
@@ -12019,12 +13114,12 @@ const REAL_SELLOUT = {
     },
     "FUNKO MUSIC": {
       "TT24": {
-        "units": 5,
-        "clp": 67192
+        "units": 7,
+        "clp": 92389
       },
       "TT25": {
-        "units": 19,
-        "clp": 319167
+        "units": 22,
+        "clp": 369561
       }
     },
     "DC Comics": {
@@ -12033,12 +13128,12 @@ const REAL_SELLOUT = {
         "clp": 2996
       },
       "TT24": {
-        "units": 11,
-        "clp": 143490
+        "units": 12,
+        "clp": 153990
       },
       "TT25": {
-        "units": 3,
-        "clp": 52500
+        "units": 4,
+        "clp": 73500
       },
       "Q122": {
         "units": 11,
@@ -12049,8 +13144,8 @@ const REAL_SELLOUT = {
         "clp": 5034
       },
       "PV22": {
-        "units": 3,
-        "clp": 11442
+        "units": 4,
+        "clp": 21432
       },
       "Q423": {
         "units": 1,
@@ -12059,28 +13154,28 @@ const REAL_SELLOUT = {
     },
     "FORMULA 1": {
       "TT25": {
-        "units": 10,
-        "clp": 207480
+        "units": 13,
+        "clp": 270480
       }
     },
     "HAVAIAN+Q596A": {
       "Q423": {
-        "units": 9,
-        "clp": 109728
+        "units": 10,
+        "clp": 123021
       }
     },
     "DISNEY 100": {
       "TT24": {
-        "units": 7,
-        "clp": 75592
+        "units": 9,
+        "clp": 92390
       },
       "TT23": {
         "units": 1,
         "clp": 5000
       },
       "Q423": {
-        "units": 2,
-        "clp": 6980
+        "units": 4,
+        "clp": 15962
       }
     },
     "Frida Kahlo": {
@@ -12101,78 +13196,90 @@ const REAL_SELLOUT = {
     },
     "DEMON SLAYER": {
       "TT23": {
-        "units": 18,
-        "clp": 281647
+        "units": 28,
+        "clp": 433758
       },
       "TT24": {
-        "units": 15,
-        "clp": 272138
+        "units": 21,
+        "clp": 376202
       }
     },
     "No Definido": {
       "TT24": {
-        "units": 28,
-        "clp": 537597
+        "units": 37,
+        "clp": 640495
       }
     },
     "Celebrity Icons": {
       "Q324": {
-        "units": 2,
-        "clp": 6722
+        "units": 3,
+        "clp": 14712
       },
       "Q323": {
         "units": 1,
         "clp": 12597
       },
       "Q425": {
-        "units": 18,
-        "clp": 78997
+        "units": 30,
+        "clp": 109249
       },
       "Q423": {
-        "units": 45,
-        "clp": 179006
+        "units": 61,
+        "clp": 246238
       },
       "Q424": {
-        "units": 6,
-        "clp": 15126
+        "units": 10,
+        "clp": 25210
       }
     },
     "Mortal Kombat": {
       "TT24": {
-        "units": 6,
-        "clp": 123480
+        "units": 7,
+        "clp": 144480
       }
     },
     "NASA": {
       "Q225": {
-        "units": 13,
-        "clp": 128903
+        "units": 14,
+        "clp": 138893
       },
       "Q424": {
         "units": 5,
         "clp": 21010
+      },
+      "Q126": {
+        "units": 245,
+        "clp": 2534139
       }
     },
     "South Park": {
       "TT": {
         "units": 1,
         "clp": 1218
+      },
+      "Q322": {
+        "units": 1,
+        "clp": 4193
       }
     },
     "Marvel": {
       "TT24": {
-        "units": 6,
-        "clp": 70056
+        "units": 11,
+        "clp": 147239
       },
       "TT23": {
+        "units": 4,
+        "clp": 41996
+      },
+      "PV22": {
         "units": 1,
-        "clp": 16798
+        "clp": 3000
       }
     },
     "Lightyear": {
       "Q322": {
-        "units": 6,
-        "clp": 29278
+        "units": 8,
+        "clp": 47344
       },
       "Q422": {
         "units": 1,
@@ -12191,30 +13298,30 @@ const REAL_SELLOUT = {
     },
     "Dragon Ball Z": {
       "TT24": {
-        "units": 4,
-        "clp": 84000
+        "units": 6,
+        "clp": 109200
       },
       "Q424": {
-        "units": 3,
-        "clp": 14333
+        "units": 4,
+        "clp": 18323
       }
     },
     "Looney Tunes": {
       "Q422": {
-        "units": 4,
-        "clp": 6023
+        "units": 5,
+        "clp": 9376
       },
       "Q222": {
         "units": 2,
         "clp": 6706
       },
       "Q122": {
-        "units": 7,
-        "clp": 17647
+        "units": 12,
+        "clp": 30252
       },
       "Q322": {
-        "units": 4,
-        "clp": 36940
+        "units": 5,
+        "clp": 46175
       }
     },
     "Boruto": {
@@ -12229,30 +13336,34 @@ const REAL_SELLOUT = {
         "clp": 6290
       },
       "Q322": {
-        "units": 3,
-        "clp": 10076
+        "units": 6,
+        "clp": 15119
       }
     },
     "MARIO BROS": {
       "Q125": {
-        "units": 80,
-        "clp": 388411
+        "units": 86,
+        "clp": 416092
       }
     },
     "Bambi": {
       "Q322": {
-        "units": 2,
-        "clp": 4016
+        "units": 4,
+        "clp": 8032
       },
       "TT24": {
-        "units": 4,
-        "clp": 19960
+        "units": 5,
+        "clp": 24950
       }
     },
     "LOTSO": {
       "Q425": {
-        "units": 72,
-        "clp": 330124
+        "units": 87,
+        "clp": 414999
+      },
+      "Q126": {
+        "units": 306,
+        "clp": 2973926
       }
     },
     "101 Dalmatas": {
@@ -12267,8 +13378,8 @@ const REAL_SELLOUT = {
     },
     "FUNKO DEPORTE": {
       "TT24": {
-        "units": 3,
-        "clp": 50394
+        "units": 4,
+        "clp": 67192
       }
     },
     "Minnie (Infantil + Teen)": {
@@ -12329,8 +13440,8 @@ const REAL_SELLOUT = {
     },
     "WONDER WOMAN": {
       "TT24": {
-        "units": 1,
-        "clp": 12490
+        "units": 2,
+        "clp": 24985
       }
     },
     "Kiss": {
@@ -12339,12 +13450,12 @@ const REAL_SELLOUT = {
         "clp": 3397
       },
       "Q322": {
-        "units": 4,
-        "clp": 23528
+        "units": 8,
+        "clp": 47056
       },
       "Q126": {
-        "units": 16,
-        "clp": 194823
+        "units": 159,
+        "clp": 1895376
       }
     },
     "DRAGON BALL SUPER": {
@@ -12363,6 +13474,10 @@ const REAL_SELLOUT = {
       "Q323": {
         "units": 1,
         "clp": 5990
+      },
+      "PV22": {
+        "units": 1,
+        "clp": 1000
       }
     },
     "Iron Maiden": {
@@ -12373,8 +13488,8 @@ const REAL_SELLOUT = {
     },
     "Friends": {
       "Q425": {
-        "units": 144,
-        "clp": 430789
+        "units": 191,
+        "clp": 569085
       }
     },
     "1KO": {
@@ -12391,26 +13506,30 @@ const REAL_SELLOUT = {
     },
     "NICK 90": {
       "Q425": {
-        "units": 336,
-        "clp": 985195
+        "units": 426,
+        "clp": 1249165
+      },
+      "Q126": {
+        "units": 333,
+        "clp": 3632507
       }
     },
     "Attack on titan": {
       "Q322": {
-        "units": 21,
-        "clp": 26027
+        "units": 24,
+        "clp": 28547
       }
     },
     "SPY X FAMILY": {
       "Q425": {
-        "units": 14,
-        "clp": 42008
+        "units": 17,
+        "clp": 49571
       }
     },
     "Emoji": {
       "TT": {
-        "units": 34,
-        "clp": 115120
+        "units": 48,
+        "clp": 154190
       },
       "Q322": {
         "units": 4,
@@ -12419,26 +13538,26 @@ const REAL_SELLOUT = {
     },
     "SIN MARCA": {
       "Q424": {
-        "units": 7,
-        "clp": 5880
+        "units": 9,
+        "clp": 7560
       }
     },
     "OASIS": {
       "Q126": {
-        "units": 14,
-        "clp": 191446
+        "units": 257,
+        "clp": 3357066
       }
     },
     "Los Picapiedras": {
       "Q322": {
-        "units": 5,
-        "clp": 12605
+        "units": 6,
+        "clp": 13446
       }
     },
     "ED EDD & EDDY": {
       "Q122": {
-        "units": 1,
-        "clp": 1260
+        "units": 3,
+        "clp": 3780
       }
     },
     "AC/DC": {
@@ -12449,20 +13568,20 @@ const REAL_SELLOUT = {
     },
     "The Beatles": {
       "Q126": {
-        "units": 31,
-        "clp": 388269
+        "units": 415,
+        "clp": 5187299
       }
     },
     "DISNEY PIXAR COLLECTION": {
       "Q424": {
-        "units": 2,
-        "clp": 5866
+        "units": 3,
+        "clp": 8799
       }
     },
     "MAFALDA": {
       "Q425": {
-        "units": 6,
-        "clp": 25212
+        "units": 11,
+        "clp": 39498
       }
     },
     "FRUITS BASKET": {
@@ -12473,8 +13592,8 @@ const REAL_SELLOUT = {
     },
     "El Laboratorio De Dexter": {
       "Q122": {
-        "units": 4,
-        "clp": 5040
+        "units": 5,
+        "clp": 6300
       }
     },
     "Woodstock": {
@@ -12488,72 +13607,96 @@ const REAL_SELLOUT = {
         "units": 1,
         "clp": 4990
       }
+    },
+    "UFC": {
+      "Q126": {
+        "units": 90,
+        "clp": 982440
+      }
+    },
+    "ALICIA PAIS MARAVILLA": {
+      "TT24": {
+        "units": 1,
+        "clp": 16798
+      }
+    },
+    "Sesamo": {
+      "Q222": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "Paw Patrol Movie": {
+      "Q323": {
+        "units": 1,
+        "clp": 5990
+      }
     }
   },
   "byDivision": [
     {
-      "division": "Vestuario Infantil",
-      "units": 28445,
-      "clp": 220036193,
-      "pvp": 211496751,
-      "pctOfTotal": 36.8,
-      "avgPrice": 7735,
-      "storeCount": 299,
-      "color": "#6366f1"
-    },
-    {
       "division": "Ropa Interior",
-      "units": 25433,
-      "clp": 171597950,
-      "pvp": 167702034,
-      "pctOfTotal": 32.9,
-      "avgPrice": 6747,
-      "storeCount": 323,
+      "units": 36635,
+      "clp": 250983923,
+      "pvp": 246183804,
+      "pctOfTotal": 36.7,
+      "avgPrice": 6851,
+      "storeCount": 328,
       "color": "#34d399"
     },
     {
+      "division": "Vestuario Infantil",
+      "units": 34274,
+      "clp": 266921908,
+      "pvp": 256421812,
+      "pctOfTotal": 34.3,
+      "avgPrice": 7788,
+      "storeCount": 304,
+      "color": "#6366f1"
+    },
+    {
       "division": "Calzado",
-      "units": 17385,
-      "clp": 205607758,
-      "pvp": 198152527,
-      "pctOfTotal": 22.5,
-      "avgPrice": 11827,
-      "storeCount": 237,
+      "units": 20047,
+      "clp": 238967599,
+      "pvp": 229959349,
+      "pctOfTotal": 20.1,
+      "avgPrice": 11920,
+      "storeCount": 241,
       "color": "#f97316"
     },
     {
       "division": "Accesorios y Otros",
-      "units": 4153,
-      "clp": 37074861,
-      "pvp": 35979262,
-      "pctOfTotal": 5.4,
-      "avgPrice": 8927,
-      "storeCount": 158,
+      "units": 5068,
+      "clp": 45969027,
+      "pvp": 44589482,
+      "pctOfTotal": 5.1,
+      "avgPrice": 9071,
+      "storeCount": 162,
       "color": "#ec4899"
     },
     {
       "division": "Vestuario Adulto",
-      "units": 1920,
-      "clp": 17413022,
-      "pvp": 16630712,
-      "pctOfTotal": 2.5,
-      "avgPrice": 9069,
-      "storeCount": 131,
+      "units": 3806,
+      "clp": 39410935,
+      "pvp": 38485194,
+      "pctOfTotal": 3.8,
+      "avgPrice": 10355,
+      "storeCount": 135,
       "color": "#eab308"
     }
   ],
   "byDivisionDaily": [
     {
       "date": "2026-02-12",
-      "division": "Vestuario Infantil",
-      "units": 1289,
-      "clp": 10210161
-    },
-    {
-      "date": "2026-02-12",
       "division": "Ropa Interior",
       "units": 880,
       "clp": 6897212
+    },
+    {
+      "date": "2026-02-12",
+      "division": "Vestuario Infantil",
+      "units": 1289,
+      "clp": 10210161
     },
     {
       "date": "2026-02-12",
@@ -12575,15 +13718,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-13",
-      "division": "Vestuario Infantil",
-      "units": 1689,
-      "clp": 12439103
-    },
-    {
-      "date": "2026-02-13",
       "division": "Ropa Interior",
       "units": 1061,
       "clp": 8725138
+    },
+    {
+      "date": "2026-02-13",
+      "division": "Vestuario Infantil",
+      "units": 1689,
+      "clp": 12439103
     },
     {
       "date": "2026-02-13",
@@ -12605,15 +13748,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-14",
-      "division": "Vestuario Infantil",
-      "units": 1734,
-      "clp": 13816855
-    },
-    {
-      "date": "2026-02-14",
       "division": "Ropa Interior",
       "units": 1177,
       "clp": 9493755
+    },
+    {
+      "date": "2026-02-14",
+      "division": "Vestuario Infantil",
+      "units": 1734,
+      "clp": 13816855
     },
     {
       "date": "2026-02-14",
@@ -12635,15 +13778,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-15",
-      "division": "Vestuario Infantil",
-      "units": 1187,
-      "clp": 9300267
-    },
-    {
-      "date": "2026-02-15",
       "division": "Ropa Interior",
       "units": 1007,
       "clp": 8052895
+    },
+    {
+      "date": "2026-02-15",
+      "division": "Vestuario Infantil",
+      "units": 1187,
+      "clp": 9300267
     },
     {
       "date": "2026-02-15",
@@ -12665,15 +13808,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-16",
-      "division": "Vestuario Infantil",
-      "units": 1183,
-      "clp": 8906602
-    },
-    {
-      "date": "2026-02-16",
       "division": "Ropa Interior",
       "units": 830,
       "clp": 6285825
+    },
+    {
+      "date": "2026-02-16",
+      "division": "Vestuario Infantil",
+      "units": 1183,
+      "clp": 8906602
     },
     {
       "date": "2026-02-16",
@@ -12695,15 +13838,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-17",
-      "division": "Vestuario Infantil",
-      "units": 1131,
-      "clp": 8580884
-    },
-    {
-      "date": "2026-02-17",
       "division": "Ropa Interior",
       "units": 875,
       "clp": 6565915
+    },
+    {
+      "date": "2026-02-17",
+      "division": "Vestuario Infantil",
+      "units": 1131,
+      "clp": 8580884
     },
     {
       "date": "2026-02-17",
@@ -12725,15 +13868,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-18",
-      "division": "Vestuario Infantil",
-      "units": 1371,
-      "clp": 10133504
-    },
-    {
-      "date": "2026-02-18",
       "division": "Ropa Interior",
       "units": 1172,
       "clp": 7834211
+    },
+    {
+      "date": "2026-02-18",
+      "division": "Vestuario Infantil",
+      "units": 1371,
+      "clp": 10133504
     },
     {
       "date": "2026-02-18",
@@ -12755,15 +13898,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-19",
-      "division": "Vestuario Infantil",
-      "units": 1335,
-      "clp": 10276751
-    },
-    {
-      "date": "2026-02-19",
       "division": "Ropa Interior",
       "units": 1280,
       "clp": 8357283
+    },
+    {
+      "date": "2026-02-19",
+      "division": "Vestuario Infantil",
+      "units": 1335,
+      "clp": 10276751
     },
     {
       "date": "2026-02-19",
@@ -12785,15 +13928,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-20",
-      "division": "Vestuario Infantil",
-      "units": 1665,
-      "clp": 12496374
-    },
-    {
-      "date": "2026-02-20",
       "division": "Ropa Interior",
       "units": 1430,
       "clp": 9681823
+    },
+    {
+      "date": "2026-02-20",
+      "division": "Vestuario Infantil",
+      "units": 1665,
+      "clp": 12496374
     },
     {
       "date": "2026-02-20",
@@ -12815,15 +13958,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-21",
-      "division": "Vestuario Infantil",
-      "units": 1850,
-      "clp": 14246129
-    },
-    {
-      "date": "2026-02-21",
       "division": "Ropa Interior",
       "units": 1511,
       "clp": 9910253
+    },
+    {
+      "date": "2026-02-21",
+      "division": "Vestuario Infantil",
+      "units": 1850,
+      "clp": 14246129
     },
     {
       "date": "2026-02-21",
@@ -12845,15 +13988,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-22",
-      "division": "Vestuario Infantil",
-      "units": 1177,
-      "clp": 9071607
-    },
-    {
-      "date": "2026-02-22",
       "division": "Ropa Interior",
       "units": 1185,
       "clp": 7284124
+    },
+    {
+      "date": "2026-02-22",
+      "division": "Vestuario Infantil",
+      "units": 1177,
+      "clp": 9071607
     },
     {
       "date": "2026-02-22",
@@ -12875,21 +14018,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-23",
+      "division": "Ropa Interior",
+      "units": 1374,
+      "clp": 9223298
+    },
+    {
+      "date": "2026-02-23",
       "division": "Vestuario Infantil",
       "units": 1104,
       "clp": 8275771
     },
     {
       "date": "2026-02-23",
-      "division": "Ropa Interior",
-      "units": 1114,
-      "clp": 7206950
-    },
-    {
-      "date": "2026-02-23",
       "division": "Calzado",
-      "units": 759,
-      "clp": 9287381
+      "units": 760,
+      "clp": 9292775
     },
     {
       "date": "2026-02-23",
@@ -12905,15 +14048,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-24",
-      "division": "Vestuario Infantil",
-      "units": 1168,
-      "clp": 8876903
+      "division": "Ropa Interior",
+      "units": 1403,
+      "clp": 9428344
     },
     {
       "date": "2026-02-24",
-      "division": "Ropa Interior",
-      "units": 1139,
-      "clp": 7298588
+      "division": "Vestuario Infantil",
+      "units": 1168,
+      "clp": 8876903
     },
     {
       "date": "2026-02-24",
@@ -12935,15 +14078,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-25",
-      "division": "Vestuario Infantil",
-      "units": 1207,
-      "clp": 9016572
+      "division": "Ropa Interior",
+      "units": 1516,
+      "clp": 10025473
     },
     {
       "date": "2026-02-25",
-      "division": "Ropa Interior",
-      "units": 1227,
-      "clp": 7762308
+      "division": "Vestuario Infantil",
+      "units": 1207,
+      "clp": 9016572
     },
     {
       "date": "2026-02-25",
@@ -12965,15 +14108,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-26",
-      "division": "Vestuario Infantil",
-      "units": 1346,
-      "clp": 10204745
+      "division": "Ropa Interior",
+      "units": 1544,
+      "clp": 10447788
     },
     {
       "date": "2026-02-26",
-      "division": "Ropa Interior",
-      "units": 1193,
-      "clp": 7661612
+      "division": "Vestuario Infantil",
+      "units": 1346,
+      "clp": 10204745
     },
     {
       "date": "2026-02-26",
@@ -12990,20 +14133,20 @@ const REAL_SELLOUT = {
     {
       "date": "2026-02-26",
       "division": "Vestuario Adulto",
-      "units": 57,
-      "clp": 497599
+      "units": 58,
+      "clp": 504340
+    },
+    {
+      "date": "2026-02-27",
+      "division": "Ropa Interior",
+      "units": 2182,
+      "clp": 14936703
     },
     {
       "date": "2026-02-27",
       "division": "Vestuario Infantil",
       "units": 1757,
       "clp": 13842903
-    },
-    {
-      "date": "2026-02-27",
-      "division": "Ropa Interior",
-      "units": 1682,
-      "clp": 10916447
     },
     {
       "date": "2026-02-27",
@@ -13025,15 +14168,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-02-28",
-      "division": "Vestuario Infantil",
-      "units": 2307,
-      "clp": 18947684
+      "division": "Ropa Interior",
+      "units": 2745,
+      "clp": 18534235
     },
     {
       "date": "2026-02-28",
-      "division": "Ropa Interior",
-      "units": 2162,
-      "clp": 13767692
+      "division": "Vestuario Infantil",
+      "units": 2307,
+      "clp": 18947684
     },
     {
       "date": "2026-02-28",
@@ -13055,15 +14198,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-01",
-      "division": "Vestuario Infantil",
-      "units": 1422,
-      "clp": 11522269
+      "division": "Ropa Interior",
+      "units": 2257,
+      "clp": 14962759
     },
     {
       "date": "2026-03-01",
-      "division": "Ropa Interior",
-      "units": 1692,
-      "clp": 10530430
+      "division": "Vestuario Infantil",
+      "units": 1422,
+      "clp": 11522269
     },
     {
       "date": "2026-03-01",
@@ -13085,15 +14228,15 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-02",
-      "division": "Vestuario Infantil",
-      "units": 1227,
-      "clp": 9650074
+      "division": "Ropa Interior",
+      "units": 1901,
+      "clp": 12677692
     },
     {
       "date": "2026-03-02",
-      "division": "Ropa Interior",
-      "units": 1423,
-      "clp": 8871538
+      "division": "Vestuario Infantil",
+      "units": 1228,
+      "clp": 9656564
     },
     {
       "date": "2026-03-02",
@@ -13115,21 +14258,21 @@ const REAL_SELLOUT = {
     },
     {
       "date": "2026-03-03",
+      "division": "Ropa Interior",
+      "units": 1879,
+      "clp": 11788178
+    },
+    {
+      "date": "2026-03-03",
       "division": "Vestuario Infantil",
       "units": 1296,
       "clp": 10221036
     },
     {
       "date": "2026-03-03",
-      "division": "Ropa Interior",
-      "units": 1393,
-      "clp": 8493951
-    },
-    {
-      "date": "2026-03-03",
       "division": "Calzado",
-      "units": 1071,
-      "clp": 13784058
+      "units": 1072,
+      "clp": 13794048
     },
     {
       "date": "2026-03-03",
@@ -13142,65 +14285,233 @@ const REAL_SELLOUT = {
       "division": "Vestuario Adulto",
       "units": 157,
       "clp": 1684952
+    },
+    {
+      "date": "2026-03-04",
+      "division": "Ropa Interior",
+      "units": 1347,
+      "clp": 8929133
+    },
+    {
+      "date": "2026-03-04",
+      "division": "Vestuario Infantil",
+      "units": 1078,
+      "clp": 8135331
+    },
+    {
+      "date": "2026-03-04",
+      "division": "Calzado",
+      "units": 613,
+      "clp": 7632486
+    },
+    {
+      "date": "2026-03-04",
+      "division": "Accesorios y Otros",
+      "units": 126,
+      "clp": 1355872
+    },
+    {
+      "date": "2026-03-04",
+      "division": "Vestuario Adulto",
+      "units": 267,
+      "clp": 3051777
+    },
+    {
+      "date": "2026-03-05",
+      "division": "Ropa Interior",
+      "units": 1438,
+      "clp": 9788477
+    },
+    {
+      "date": "2026-03-05",
+      "division": "Vestuario Infantil",
+      "units": 1095,
+      "clp": 8565468
+    },
+    {
+      "date": "2026-03-05",
+      "division": "Calzado",
+      "units": 629,
+      "clp": 7773941
+    },
+    {
+      "date": "2026-03-05",
+      "division": "Accesorios y Otros",
+      "units": 153,
+      "clp": 1424919
+    },
+    {
+      "date": "2026-03-05",
+      "division": "Vestuario Adulto",
+      "units": 367,
+      "clp": 4379076
+    },
+    {
+      "date": "2026-03-06",
+      "division": "Ropa Interior",
+      "units": 1641,
+      "clp": 11300777
+    },
+    {
+      "date": "2026-03-06",
+      "division": "Vestuario Infantil",
+      "units": 1535,
+      "clp": 12701383
+    },
+    {
+      "date": "2026-03-06",
+      "division": "Calzado",
+      "units": 657,
+      "clp": 8180643
+    },
+    {
+      "date": "2026-03-06",
+      "division": "Accesorios y Otros",
+      "units": 238,
+      "clp": 2344397
+    },
+    {
+      "date": "2026-03-06",
+      "division": "Vestuario Adulto",
+      "units": 504,
+      "clp": 5729789
+    },
+    {
+      "date": "2026-03-07",
+      "division": "Ropa Interior",
+      "units": 1989,
+      "clp": 13538180
+    },
+    {
+      "date": "2026-03-07",
+      "division": "Vestuario Infantil",
+      "units": 1711,
+      "clp": 13998562
+    },
+    {
+      "date": "2026-03-07",
+      "division": "Calzado",
+      "units": 522,
+      "clp": 5910033
+    },
+    {
+      "date": "2026-03-07",
+      "division": "Accesorios y Otros",
+      "units": 310,
+      "clp": 3088074
+    },
+    {
+      "date": "2026-03-07",
+      "division": "Vestuario Adulto",
+      "units": 723,
+      "clp": 8685398
+    },
+    {
+      "date": "2026-03-08",
+      "division": "Ropa Interior",
+      "units": 1011,
+      "clp": 6314452
+    },
+    {
+      "date": "2026-03-08",
+      "division": "Vestuario Infantil",
+      "units": 409,
+      "clp": 3478480
+    },
+    {
+      "date": "2026-03-08",
+      "division": "Calzado",
+      "units": 239,
+      "clp": 3847354
+    },
+    {
+      "date": "2026-03-08",
+      "division": "Accesorios y Otros",
+      "units": 88,
+      "clp": 680904
+    },
+    {
+      "date": "2026-03-08",
+      "division": "Vestuario Adulto",
+      "units": 24,
+      "clp": 145132
     }
   ],
   "rankingByChainStore": {
     "Jumbo": [
       {
-        "store": "Pedro Aguirre Cerda Antofagasta",
-        "storeCode": "J796 Jumbo - Pedro Aguirre Cerda 9400, Antofagasta",
-        "region": "02 - Antofagasta",
-        "units": 1016,
-        "clp": 8697791,
+        "store": "Mall Portal Rancagua",
+        "storeCode": "J504 Jumbo - Av. Presidente Frei Montalva 750, Rancagua",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 1213,
+        "clp": 10782131,
+        "costos": 7252737,
+        "margin": 32.7,
+        "stockUnits": 1888,
+        "weeksOfStock": 5.6,
         "byDivision": {
-          "Calzado": {
-            "units": 314,
-            "clp": 2871438
-          },
           "Ropa Interior": {
-            "units": 419,
-            "clp": 2892301
+            "units": 504,
+            "clp": 3546048,
+            "costos": 2285150
+          },
+          "Calzado": {
+            "units": 312,
+            "clp": 2898755,
+            "costos": 2063924
           },
           "Vestuario Infantil": {
-            "units": 176,
-            "clp": 1726321
-          },
-          "Accesorios y Otros": {
-            "units": 36,
-            "clp": 331719
+            "units": 277,
+            "clp": 2726688,
+            "costos": 1832483
           },
           "Vestuario Adulto": {
-            "units": 71,
-            "clp": 876013
+            "units": 73,
+            "clp": 877217,
+            "costos": 560200
+          },
+          "Accesorios y Otros": {
+            "units": 47,
+            "clp": 733423,
+            "costos": 510980
           }
         }
       },
       {
-        "store": "Mall Portal Rancagua",
-        "storeCode": "J504 Jumbo - Av. Presidente Frei Montalva 750, Rancagua",
-        "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 1012,
-        "clp": 8823147,
+        "store": "Pedro Aguirre Cerda Antofagasta",
+        "storeCode": "J796 Jumbo - Pedro Aguirre Cerda 9400, Antofagasta",
+        "region": "02 - Antofagasta",
+        "units": 1202,
+        "clp": 10413541,
+        "costos": 6984435,
+        "margin": 32.9,
+        "stockUnits": 1860,
+        "weeksOfStock": 5.5,
         "byDivision": {
-          "Ropa Interior": {
-            "units": 437,
-            "clp": 3077868
-          },
           "Calzado": {
-            "units": 278,
-            "clp": 2569616
+            "units": 350,
+            "clp": 3172554,
+            "costos": 2325056
+          },
+          "Ropa Interior": {
+            "units": 465,
+            "clp": 3137717,
+            "costos": 1972900
           },
           "Vestuario Infantil": {
-            "units": 231,
-            "clp": 2275688
-          },
-          "Vestuario Adulto": {
-            "units": 32,
-            "clp": 363945
+            "units": 218,
+            "clp": 2173974,
+            "costos": 1424601
           },
           "Accesorios y Otros": {
-            "units": 34,
-            "clp": 536030
+            "units": 36,
+            "clp": 331719,
+            "costos": 289778
+          },
+          "Vestuario Adulto": {
+            "units": 133,
+            "clp": 1597579,
+            "costos": 972100
           }
         }
       },
@@ -13208,57 +14519,37 @@ const REAL_SELLOUT = {
         "store": "Mall Alto Las Condes",
         "storeCode": "J502 Jumbo - Av. Kennedy 9001, Las Condes",
         "region": "13 - Metropolitana de Santiago",
-        "units": 995,
-        "clp": 8462156,
+        "units": 1200,
+        "clp": 10497653,
+        "costos": 6981031,
+        "margin": 33.5,
+        "stockUnits": 2127,
+        "weeksOfStock": 6.3,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 204,
-            "clp": 2028734
+            "units": 257,
+            "clp": 2542457,
+            "costos": 1673278
           },
           "Ropa Interior": {
-            "units": 494,
-            "clp": 3529501
+            "units": 559,
+            "clp": 3980688,
+            "costos": 2551550
           },
           "Calzado": {
-            "units": 226,
-            "clp": 1931889
+            "units": 252,
+            "clp": 2211014,
+            "costos": 1635370
           },
           "Accesorios y Otros": {
-            "units": 39,
-            "clp": 586553
+            "units": 51,
+            "clp": 787299,
+            "costos": 512533
           },
           "Vestuario Adulto": {
-            "units": 32,
-            "clp": 385480
-          }
-        }
-      },
-      {
-        "store": "La Serena Ruta 5",
-        "storeCode": "J521 Jumbo - Ruta 5, Parcela 69, La Serena",
-        "region": "04 - Coquimbo",
-        "units": 973,
-        "clp": 8485180,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 40,
-            "clp": 468233
-          },
-          "Vestuario Infantil": {
-            "units": 287,
-            "clp": 2983537
-          },
-          "Ropa Interior": {
-            "units": 392,
-            "clp": 2723572
-          },
-          "Calzado": {
-            "units": 239,
-            "clp": 2206222
-          },
-          "Vestuario Adulto": {
-            "units": 15,
-            "clp": 103616
+            "units": 81,
+            "clp": 976195,
+            "costos": 608300
           }
         }
       },
@@ -13266,28 +14557,75 @@ const REAL_SELLOUT = {
         "store": "Bilbao",
         "storeCode": "J501 Jumbo - Av. Francisco Bilbao 4144, Las Condes",
         "region": "13 - Metropolitana de Santiago",
-        "units": 933,
-        "clp": 8143574,
+        "units": 1198,
+        "clp": 10958867,
+        "costos": 7444979,
+        "margin": 32.1,
+        "stockUnits": 2255,
+        "weeksOfStock": 6.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 193,
-            "clp": 1921284
+            "units": 248,
+            "clp": 2482880,
+            "costos": 1658925
           },
           "Ropa Interior": {
-            "units": 422,
-            "clp": 3192474
+            "units": 478,
+            "clp": 3641862,
+            "costos": 2360050
           },
           "Calzado": {
-            "units": 248,
-            "clp": 2153447
+            "units": 261,
+            "clp": 2284456,
+            "costos": 1692718
           },
           "Accesorios y Otros": {
-            "units": 36,
-            "clp": 544042
+            "units": 56,
+            "clp": 768314,
+            "costos": 614486
           },
           "Vestuario Adulto": {
-            "units": 34,
-            "clp": 332328
+            "units": 155,
+            "clp": 1781356,
+            "costos": 1118800
+          }
+        }
+      },
+      {
+        "store": "La Serena Ruta 5",
+        "storeCode": "J521 Jumbo - Ruta 5, Parcela 69, La Serena",
+        "region": "04 - Coquimbo",
+        "units": 1148,
+        "clp": 10273686,
+        "costos": 6760017,
+        "margin": 34.2,
+        "stockUnits": 1629,
+        "weeksOfStock": 5.1,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 41,
+            "clp": 480833,
+            "costos": 389277
+          },
+          "Vestuario Infantil": {
+            "units": 317,
+            "clp": 3318552,
+            "costos": 2107352
+          },
+          "Ropa Interior": {
+            "units": 443,
+            "clp": 3071050,
+            "costos": 1934550
+          },
+          "Calzado": {
+            "units": 264,
+            "clp": 2469955,
+            "costos": 1731538
+          },
+          "Vestuario Adulto": {
+            "units": 83,
+            "clp": 933296,
+            "costos": 597300
           }
         }
       },
@@ -13295,28 +14633,37 @@ const REAL_SELLOUT = {
         "store": "Hualpén",
         "storeCode": "J633 Jumbo - Costanera Rivera Norte 1 #9781, Hualpén",
         "region": "08 - Biobío",
-        "units": 886,
-        "clp": 7811101,
+        "units": 1118,
+        "clp": 10124386,
+        "costos": 6619710,
+        "margin": 34.6,
+        "stockUnits": 2085,
+        "weeksOfStock": 6.7,
         "byDivision": {
           "Calzado": {
-            "units": 129,
-            "clp": 1330592
+            "units": 170,
+            "clp": 1744044,
+            "costos": 1153246
           },
           "Vestuario Infantil": {
-            "units": 208,
-            "clp": 2179495
+            "units": 267,
+            "clp": 2867504,
+            "costos": 1789278
           },
           "Ropa Interior": {
-            "units": 501,
-            "clp": 3753783
+            "units": 588,
+            "clp": 4403809,
+            "costos": 2803450
           },
           "Vestuario Adulto": {
-            "units": 20,
-            "clp": 162779
+            "units": 54,
+            "clp": 596477,
+            "costos": 392800
           },
           "Accesorios y Otros": {
-            "units": 28,
-            "clp": 384451
+            "units": 39,
+            "clp": 512551,
+            "costos": 480936
           }
         }
       },
@@ -13324,28 +14671,37 @@ const REAL_SELLOUT = {
         "store": "Mall Portal Osorno",
         "storeCode": "J748 Jumbo - Plaza Yungay 645, Osorno",
         "region": "10 - Los Lagos",
-        "units": 869,
-        "clp": 7931901,
+        "units": 1056,
+        "clp": 9699672,
+        "costos": 6429718,
+        "margin": 33.7,
+        "stockUnits": 1462,
+        "weeksOfStock": 4.9,
         "byDivision": {
           "Calzado": {
-            "units": 215,
-            "clp": 2207474
+            "units": 251,
+            "clp": 2572057,
+            "costos": 1732102
           },
           "Accesorios y Otros": {
-            "units": 48,
-            "clp": 584935
+            "units": 68,
+            "clp": 796602,
+            "costos": 711117
           },
           "Vestuario Infantil": {
-            "units": 185,
-            "clp": 2005042
+            "units": 213,
+            "clp": 2330017,
+            "costos": 1441199
           },
           "Ropa Interior": {
-            "units": 396,
-            "clp": 2876077
+            "units": 462,
+            "clp": 3286054,
+            "costos": 2097800
           },
           "Vestuario Adulto": {
-            "units": 25,
-            "clp": 258373
+            "units": 62,
+            "clp": 714942,
+            "costos": 447500
           }
         }
       },
@@ -13353,86 +14709,37 @@ const REAL_SELLOUT = {
         "store": "Mall Florida Center",
         "storeCode": "J510 Jumbo - Vicuña Mackenna 6100, La Florida",
         "region": "13 - Metropolitana de Santiago",
-        "units": 861,
-        "clp": 7322227,
+        "units": 1038,
+        "clp": 9009067,
+        "costos": 6122457,
+        "margin": 32.0,
+        "stockUnits": 1883,
+        "weeksOfStock": 6.5,
         "byDivision": {
           "Calzado": {
-            "units": 274,
-            "clp": 2544871
-          },
-          "Vestuario Infantil": {
-            "units": 157,
-            "clp": 1705584
-          },
-          "Ropa Interior": {
-            "units": 390,
-            "clp": 2632105
-          },
-          "Accesorios y Otros": {
-            "units": 34,
-            "clp": 374171
-          },
-          "Vestuario Adulto": {
-            "units": 6,
-            "clp": 65496
-          }
-        }
-      },
-      {
-        "store": "Mall Arauco Maipú",
-        "storeCode": "J503 Jumbo - Av. Américo Vespucio 1001, Maipú",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 828,
-        "clp": 7241845,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 356,
-            "clp": 2615843
+            "units": 309,
+            "clp": 2882955,
+            "costos": 2164483
           },
           "Vestuario Infantil": {
             "units": 189,
-            "clp": 1831717
-          },
-          "Calzado": {
-            "units": 219,
-            "clp": 2258011
-          },
-          "Accesorios y Otros": {
-            "units": 32,
-            "clp": 293105
-          },
-          "Vestuario Adulto": {
-            "units": 32,
-            "clp": 243168
-          }
-        }
-      },
-      {
-        "store": "Chillán",
-        "storeCode": "J532 Jumbo - Longitudinal Norte 134, Chillán",
-        "region": "16 - Ñuble",
-        "units": 824,
-        "clp": 7229886,
-        "byDivision": {
-          "Calzado": {
-            "units": 192,
-            "clp": 1879124
+            "clp": 2027187,
+            "costos": 1263974
           },
           "Ropa Interior": {
-            "units": 322,
-            "clp": 2036793
-          },
-          "Vestuario Infantil": {
-            "units": 252,
-            "clp": 2623003
+            "units": 455,
+            "clp": 3135602,
+            "costos": 1983600
           },
           "Accesorios y Otros": {
-            "units": 41,
-            "clp": 539195
+            "units": 40,
+            "clp": 456066,
+            "costos": 402300
           },
           "Vestuario Adulto": {
-            "units": 17,
-            "clp": 151770
+            "units": 45,
+            "clp": 507257,
+            "costos": 308100
           }
         }
       },
@@ -13440,28 +14747,113 @@ const REAL_SELLOUT = {
         "store": "Mall Portal El Llano",
         "storeCode": "J513 Jumbo - El Llano Subercaseaux 3519, San Miguel",
         "region": "13 - Metropolitana de Santiago",
-        "units": 791,
-        "clp": 6702948,
+        "units": 1032,
+        "clp": 9058911,
+        "costos": 6059225,
+        "margin": 33.1,
+        "stockUnits": 2316,
+        "weeksOfStock": 8.0,
         "byDivision": {
           "Calzado": {
-            "units": 178,
-            "clp": 1763989
+            "units": 225,
+            "clp": 2241470,
+            "costos": 1581844
           },
           "Ropa Interior": {
-            "units": 394,
-            "clp": 2732475
+            "units": 460,
+            "clp": 3153895,
+            "costos": 2079150
           },
           "Vestuario Infantil": {
-            "units": 170,
-            "clp": 1656471
+            "units": 219,
+            "clp": 2146598,
+            "costos": 1435197
           },
           "Accesorios y Otros": {
-            "units": 33,
-            "clp": 399704
+            "units": 35,
+            "clp": 433304,
+            "costos": 290034
           },
           "Vestuario Adulto": {
-            "units": 16,
-            "clp": 150309
+            "units": 93,
+            "clp": 1083646,
+            "costos": 673000
+          }
+        }
+      },
+      {
+        "store": "Mall Arauco Maipú",
+        "storeCode": "J503 Jumbo - Av. Américo Vespucio 1001, Maipú",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 1024,
+        "clp": 9253099,
+        "costos": 6228382,
+        "margin": 32.7,
+        "stockUnits": 2202,
+        "weeksOfStock": 7.7,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 411,
+            "clp": 2965135,
+            "costos": 1913070
+          },
+          "Vestuario Infantil": {
+            "units": 235,
+            "clp": 2344211,
+            "costos": 1555446
+          },
+          "Calzado": {
+            "units": 239,
+            "clp": 2490121,
+            "costos": 1713764
+          },
+          "Accesorios y Otros": {
+            "units": 34,
+            "clp": 315781,
+            "costos": 297702
+          },
+          "Vestuario Adulto": {
+            "units": 105,
+            "clp": 1137850,
+            "costos": 748400
+          }
+        }
+      },
+      {
+        "store": "Chillán",
+        "storeCode": "J532 Jumbo - Longitudinal Norte 134, Chillán",
+        "region": "16 - Ñuble",
+        "units": 1009,
+        "clp": 9112124,
+        "costos": 5991208,
+        "margin": 34.3,
+        "stockUnits": 1811,
+        "weeksOfStock": 6.4,
+        "byDivision": {
+          "Calzado": {
+            "units": 232,
+            "clp": 2306451,
+            "costos": 1623955
+          },
+          "Ropa Interior": {
+            "units": 373,
+            "clp": 2334433,
+            "costos": 1524500
+          },
+          "Vestuario Infantil": {
+            "units": 282,
+            "clp": 2982146,
+            "costos": 1901577
+          },
+          "Accesorios y Otros": {
+            "units": 45,
+            "clp": 597991,
+            "costos": 379776
+          },
+          "Vestuario Adulto": {
+            "units": 77,
+            "clp": 891103,
+            "costos": 561400
           }
         }
       },
@@ -13469,28 +14861,37 @@ const REAL_SELLOUT = {
         "store": "Mall Costanera Center",
         "storeCode": "J511 Jumbo - Av. Andrés Bello 2465, Providencia",
         "region": "13 - Metropolitana de Santiago",
-        "units": 790,
-        "clp": 6862573,
+        "units": 995,
+        "clp": 8983205,
+        "costos": 5896281,
+        "margin": 34.4,
+        "stockUnits": 2142,
+        "weeksOfStock": 7.7,
         "byDivision": {
           "Ropa Interior": {
-            "units": 382,
-            "clp": 2757271
+            "units": 433,
+            "clp": 3085961,
+            "costos": 1971800
           },
           "Vestuario Infantil": {
-            "units": 243,
-            "clp": 2471426
+            "units": 301,
+            "clp": 3112546,
+            "costos": 2035754
           },
           "Calzado": {
-            "units": 121,
-            "clp": 1171262
+            "units": 149,
+            "clp": 1449195,
+            "costos": 955150
           },
           "Accesorios y Otros": {
-            "units": 28,
-            "clp": 277742
+            "units": 34,
+            "clp": 359220,
+            "costos": 334577
           },
           "Vestuario Adulto": {
-            "units": 16,
-            "clp": 184871
+            "units": 78,
+            "clp": 976284,
+            "costos": 599000
           }
         }
       },
@@ -13498,86 +14899,37 @@ const REAL_SELLOUT = {
         "store": "Viña del Mar 1 Norte",
         "storeCode": "J508 Jumbo - 1 Norte #2901, Viña del Mar",
         "region": "05 - Valparaíso",
-        "units": 775,
-        "clp": 6914418,
+        "units": 984,
+        "clp": 9185137,
+        "costos": 6077962,
+        "margin": 33.8,
+        "stockUnits": 2103,
+        "weeksOfStock": 7.6,
         "byDivision": {
           "Ropa Interior": {
-            "units": 335,
-            "clp": 2367356
+            "units": 373,
+            "clp": 2602330,
+            "costos": 1655650
           },
           "Calzado": {
-            "units": 203,
-            "clp": 1924259
+            "units": 238,
+            "clp": 2299465,
+            "costos": 1656426
           },
           "Vestuario Infantil": {
-            "units": 168,
-            "clp": 1709604
+            "units": 204,
+            "clp": 2123760,
+            "costos": 1368501
           },
           "Accesorios y Otros": {
-            "units": 30,
-            "clp": 422634
-          },
-          "Vestuario Adulto": {
             "units": 39,
-            "clp": 490566
-          }
-        }
-      },
-      {
-        "store": "Iquique",
-        "storeCode": "J660 Jumbo - Héroes de La Concepción 2855, Iquique",
-        "region": "01 - Tarapacá",
-        "units": 762,
-        "clp": 6734366,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 305,
-            "clp": 2338368
-          },
-          "Calzado": {
-            "units": 277,
-            "clp": 2466336
-          },
-          "Vestuario Infantil": {
-            "units": 153,
-            "clp": 1584400
+            "clp": 545271,
+            "costos": 407485
           },
           "Vestuario Adulto": {
-            "units": 14,
-            "clp": 140311
-          },
-          "Accesorios y Otros": {
-            "units": 13,
-            "clp": 204950
-          }
-        }
-      },
-      {
-        "store": "Mall Portal Temuco",
-        "storeCode": "J506 Jumbo - Av. Alemania 671, Temuco",
-        "region": "09 - La Araucanía",
-        "units": 740,
-        "clp": 6583295,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 164,
-            "clp": 1674610
-          },
-          "Calzado": {
-            "units": 174,
-            "clp": 1680862
-          },
-          "Ropa Interior": {
-            "units": 358,
-            "clp": 2606914
-          },
-          "Vestuario Adulto": {
-            "units": 14,
-            "clp": 153308
-          },
-          "Accesorios y Otros": {
-            "units": 30,
-            "clp": 467601
+            "units": 130,
+            "clp": 1614312,
+            "costos": 989900
           }
         }
       },
@@ -13585,57 +14937,75 @@ const REAL_SELLOUT = {
         "store": "Concón",
         "storeCode": "J739 Jumbo - Av. Con Con 3850, Concón",
         "region": "05 - Valparaíso",
-        "units": 736,
-        "clp": 6858688,
+        "units": 912,
+        "clp": 8783699,
+        "costos": 5749454,
+        "margin": 34.5,
+        "stockUnits": 1791,
+        "weeksOfStock": 7.0,
         "byDivision": {
           "Calzado": {
-            "units": 229,
-            "clp": 2032376
+            "units": 249,
+            "clp": 2232030,
+            "costos": 1655037
           },
           "Vestuario Infantil": {
-            "units": 151,
-            "clp": 1656277
+            "units": 181,
+            "clp": 1999153,
+            "costos": 1228882
           },
           "Accesorios y Otros": {
-            "units": 50,
-            "clp": 680284
+            "units": 59,
+            "clp": 803741,
+            "costos": 535085
           },
           "Ropa Interior": {
-            "units": 259,
-            "clp": 1978011
+            "units": 317,
+            "clp": 2478772,
+            "costos": 1560950
           },
           "Vestuario Adulto": {
-            "units": 47,
-            "clp": 511740
+            "units": 106,
+            "clp": 1270003,
+            "costos": 769500
           }
         }
       },
       {
-        "store": "Mall Portal Ñuñoa.",
-        "storeCode": "J775 Jumbo - Jose Pedro Alessandri 1166, Ñuñoa",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 685,
-        "clp": 5397742,
+        "store": "Mall Portal Temuco",
+        "storeCode": "J506 Jumbo - Av. Alemania 671, Temuco",
+        "region": "09 - La Araucanía",
+        "units": 867,
+        "clp": 7757742,
+        "costos": 5099647,
+        "margin": 34.3,
+        "stockUnits": 1241,
+        "weeksOfStock": 5.1,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 148,
-            "clp": 1222920
-          },
-          "Ropa Interior": {
-            "units": 295,
-            "clp": 2068614
+            "units": 190,
+            "clp": 1924933,
+            "costos": 1234593
           },
           "Calzado": {
-            "units": 190,
-            "clp": 1625830
+            "units": 183,
+            "clp": 1788857,
+            "costos": 1227482
           },
-          "Accesorios y Otros": {
-            "units": 44,
-            "clp": 384976
+          "Ropa Interior": {
+            "units": 406,
+            "clp": 2868141,
+            "costos": 1831050
           },
           "Vestuario Adulto": {
-            "units": 8,
-            "clp": 95402
+            "units": 52,
+            "clp": 622536,
+            "costos": 394500
+          },
+          "Accesorios y Otros": {
+            "units": 36,
+            "clp": 553275,
+            "costos": 412022
           }
         }
       },
@@ -13643,28 +15013,113 @@ const REAL_SELLOUT = {
         "store": "Peñalolén",
         "storeCode": "J519 Jumbo - Av. Sanchez Fontecilla 12000, Peñalolén",
         "region": "13 - Metropolitana de Santiago",
-        "units": 669,
-        "clp": 6018498,
+        "units": 850,
+        "clp": 7684472,
+        "costos": 5355043,
+        "margin": 30.3,
+        "stockUnits": 2381,
+        "weeksOfStock": 10.0,
         "byDivision": {
           "Calzado": {
-            "units": 197,
-            "clp": 1605304
+            "units": 242,
+            "clp": 1889747,
+            "costos": 1506564
           },
           "Vestuario Infantil": {
-            "units": 133,
-            "clp": 1269223
+            "units": 163,
+            "clp": 1546846,
+            "costos": 1047311
           },
           "Ropa Interior": {
-            "units": 242,
-            "clp": 2015138
+            "units": 277,
+            "clp": 2239099,
+            "costos": 1482200
           },
           "Accesorios y Otros": {
-            "units": 46,
-            "clp": 634903
+            "units": 61,
+            "clp": 849093,
+            "costos": 577568
           },
           "Vestuario Adulto": {
+            "units": 107,
+            "clp": 1159685,
+            "costos": 741400
+          }
+        }
+      },
+      {
+        "store": "Iquique",
+        "storeCode": "J660 Jumbo - Héroes de La Concepción 2855, Iquique",
+        "region": "01 - Tarapacá",
+        "units": 846,
+        "clp": 7624671,
+        "costos": 5188063,
+        "margin": 32.0,
+        "stockUnits": 722,
+        "weeksOfStock": 3.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 319,
+            "clp": 2466825,
+            "costos": 1565300
+          },
+          "Calzado": {
+            "units": 301,
+            "clp": 2681140,
+            "costos": 1984574
+          },
+          "Vestuario Infantil": {
+            "units": 173,
+            "clp": 1777018,
+            "costos": 1135710
+          },
+          "Vestuario Adulto": {
+            "units": 25,
+            "clp": 270471,
+            "costos": 168900
+          },
+          "Accesorios y Otros": {
+            "units": 28,
+            "clp": 429218,
+            "costos": 333579
+          }
+        }
+      },
+      {
+        "store": "Mall Portal Ñuñoa.",
+        "storeCode": "J775 Jumbo - Jose Pedro Alessandri 1166, Ñuñoa",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 829,
+        "clp": 6746336,
+        "costos": 4994015,
+        "margin": 26.0,
+        "stockUnits": 1724,
+        "weeksOfStock": 7.4,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 173,
+            "clp": 1431277,
+            "costos": 1107684
+          },
+          "Ropa Interior": {
+            "units": 325,
+            "clp": 2218149,
+            "costos": 1506770
+          },
+          "Calzado": {
+            "units": 211,
+            "clp": 1789031,
+            "costos": 1427644
+          },
+          "Accesorios y Otros": {
             "units": 51,
-            "clp": 493930
+            "clp": 461828,
+            "costos": 432117
+          },
+          "Vestuario Adulto": {
+            "units": 69,
+            "clp": 846050,
+            "costos": 519800
           }
         }
       },
@@ -13672,173 +15127,37 @@ const REAL_SELLOUT = {
         "store": "Mall Curicó",
         "storeCode": "J592 Jumbo - Av. Bernardo OHiggins 201, Curicó",
         "region": "07 - Maule",
-        "units": 667,
-        "clp": 5712195,
+        "units": 816,
+        "clp": 7147346,
+        "costos": 4792675,
+        "margin": 32.9,
+        "stockUnits": 1409,
+        "weeksOfStock": 6.2,
         "byDivision": {
           "Ropa Interior": {
-            "units": 285,
-            "clp": 1887796
+            "units": 320,
+            "clp": 2100150,
+            "costos": 1327000
           },
           "Calzado": {
-            "units": 168,
-            "clp": 1580026
+            "units": 199,
+            "clp": 1862412,
+            "costos": 1401245
           },
           "Vestuario Infantil": {
-            "units": 155,
-            "clp": 1585311
+            "units": 188,
+            "clp": 1946654,
+            "costos": 1240763
           },
           "Accesorios y Otros": {
-            "units": 30,
-            "clp": 347025
+            "units": 32,
+            "clp": 365079,
+            "costos": 279667
           },
           "Vestuario Adulto": {
-            "units": 29,
-            "clp": 312037
-          }
-        }
-      },
-      {
-        "store": "Mall Portal La Reina",
-        "storeCode": "J512 Jumbo - Av. Bilbao 8750, Las Condes",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 663,
-        "clp": 5522609,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 26,
-            "clp": 352060
-          },
-          "Calzado": {
-            "units": 239,
-            "clp": 1947732
-          },
-          "Ropa Interior": {
-            "units": 248,
-            "clp": 1727982
-          },
-          "Vestuario Infantil": {
-            "units": 115,
-            "clp": 1124177
-          },
-          "Vestuario Adulto": {
-            "units": 35,
-            "clp": 370659
-          }
-        }
-      },
-      {
-        "store": "Mall Portal El Belloto",
-        "storeCode": "J781 Jumbo - Av. Ramón Freire 1851, Quilpué",
-        "region": "05 - Valparaíso",
-        "units": 647,
-        "clp": 5895782,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 283,
-            "clp": 2180375
-          },
-          "Calzado": {
-            "units": 202,
-            "clp": 1997328
-          },
-          "Vestuario Infantil": {
-            "units": 137,
-            "clp": 1290112
-          },
-          "Accesorios y Otros": {
-            "units": 26,
-            "clp": 438882
-          },
-          "Vestuario Adulto": {
-            "units": -1,
-            "clp": -10916
-          }
-        }
-      },
-      {
-        "store": "Los Ángeles",
-        "storeCode": "J695 Jumbo - Av. Ercilla 190, Los Ángeles",
-        "region": "08 - Biobío",
-        "units": 638,
-        "clp": 5642336,
-        "byDivision": {
-          "Calzado": {
-            "units": 157,
-            "clp": 1501175
-          },
-          "Ropa Interior": {
-            "units": 234,
-            "clp": 1498710
-          },
-          "Vestuario Infantil": {
-            "units": 144,
-            "clp": 1458157
-          },
-          "Vestuario Adulto": {
-            "units": 56,
-            "clp": 728573
-          },
-          "Accesorios y Otros": {
-            "units": 47,
-            "clp": 455721
-          }
-        }
-      },
-      {
-        "store": "Puerto Montt",
-        "storeCode": "J507 Jumbo - Ejercito 470, Puerto Montt",
-        "region": "10 - Los Lagos",
-        "units": 635,
-        "clp": 5983762,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 306,
-            "clp": 2271040
-          },
-          "Vestuario Infantil": {
-            "units": 127,
-            "clp": 1364897
-          },
-          "Calzado": {
-            "units": 140,
-            "clp": 1458423
-          },
-          "Accesorios y Otros": {
-            "units": 44,
-            "clp": 710129
-          },
-          "Vestuario Adulto": {
-            "units": 18,
-            "clp": 179272
-          }
-        }
-      },
-      {
-        "store": "Calama",
-        "storeCode": "J614 Jumbo - Av. Chorillos 1759, Calama",
-        "region": "02 - Antofagasta",
-        "units": 606,
-        "clp": 5674742,
-        "byDivision": {
-          "Calzado": {
-            "units": 150,
-            "clp": 1464942
-          },
-          "Accesorios y Otros": {
-            "units": 62,
-            "clp": 1071932
-          },
-          "Vestuario Infantil": {
-            "units": 111,
-            "clp": 999531
-          },
-          "Ropa Interior": {
-            "units": 268,
-            "clp": 2016534
-          },
-          "Vestuario Adulto": {
-            "units": 15,
-            "clp": 121803
+            "units": 77,
+            "clp": 873050,
+            "costos": 544000
           }
         }
       },
@@ -13846,28 +15165,151 @@ const REAL_SELLOUT = {
         "store": "Angamos",
         "storeCode": "J534 Jumbo - Angamos 745, Antofagasta",
         "region": "02 - Antofagasta",
-        "units": 604,
-        "clp": 5462409,
+        "units": 807,
+        "clp": 7470567,
+        "costos": 4811749,
+        "margin": 35.6,
+        "stockUnits": 2054,
+        "weeksOfStock": 9.1,
         "byDivision": {
           "Ropa Interior": {
-            "units": 382,
-            "clp": 3035099
+            "units": 459,
+            "clp": 3560594,
+            "costos": 2259350
           },
           "Vestuario Infantil": {
-            "units": 104,
-            "clp": 962313
+            "units": 133,
+            "clp": 1266622,
+            "costos": 876066
           },
           "Calzado": {
-            "units": 66,
-            "clp": 737109
+            "units": 83,
+            "clp": 927723,
+            "costos": 577868
           },
           "Accesorios y Otros": {
-            "units": 35,
-            "clp": 544935
+            "units": 37,
+            "clp": 578535,
+            "costos": 402765
           },
           "Vestuario Adulto": {
-            "units": 17,
-            "clp": 182952
+            "units": 95,
+            "clp": 1137093,
+            "costos": 695700
+          }
+        }
+      },
+      {
+        "store": "Mall Portal La Reina",
+        "storeCode": "J512 Jumbo - Av. Bilbao 8750, Las Condes",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 786,
+        "clp": 6565245,
+        "costos": 4700279,
+        "margin": 28.4,
+        "stockUnits": 1216,
+        "weeksOfStock": 5.5,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 34,
+            "clp": 428488,
+            "costos": 336308
+          },
+          "Calzado": {
+            "units": 256,
+            "clp": 2088598,
+            "costos": 1651923
+          },
+          "Ropa Interior": {
+            "units": 279,
+            "clp": 1835681,
+            "costos": 1230350
+          },
+          "Vestuario Infantil": {
+            "units": 150,
+            "clp": 1470211,
+            "costos": 993198
+          },
+          "Vestuario Adulto": {
+            "units": 67,
+            "clp": 742266,
+            "costos": 488500
+          }
+        }
+      },
+      {
+        "store": "Calama",
+        "storeCode": "J614 Jumbo - Av. Chorillos 1759, Calama",
+        "region": "02 - Antofagasta",
+        "units": 778,
+        "clp": 7343543,
+        "costos": 5072882,
+        "margin": 30.9,
+        "stockUnits": 1341,
+        "weeksOfStock": 6.2,
+        "byDivision": {
+          "Calzado": {
+            "units": 180,
+            "clp": 1754998,
+            "costos": 1293266
+          },
+          "Accesorios y Otros": {
+            "units": 77,
+            "clp": 1243691,
+            "costos": 858397
+          },
+          "Vestuario Infantil": {
+            "units": 143,
+            "clp": 1339385,
+            "costos": 916269
+          },
+          "Ropa Interior": {
+            "units": 303,
+            "clp": 2228091,
+            "costos": 1473750
+          },
+          "Vestuario Adulto": {
+            "units": 75,
+            "clp": 777379,
+            "costos": 531200
+          }
+        }
+      },
+      {
+        "store": "Mall Portal El Belloto",
+        "storeCode": "J781 Jumbo - Av. Ramón Freire 1851, Quilpué",
+        "region": "05 - Valparaíso",
+        "units": 768,
+        "clp": 7145669,
+        "costos": 4925806,
+        "margin": 31.1,
+        "stockUnits": 1194,
+        "weeksOfStock": 5.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 317,
+            "clp": 2361234,
+            "costos": 1550350
+          },
+          "Calzado": {
+            "units": 213,
+            "clp": 2118923,
+            "costos": 1569823
+          },
+          "Vestuario Infantil": {
+            "units": 159,
+            "clp": 1536576,
+            "costos": 1044320
+          },
+          "Accesorios y Otros": {
+            "units": 32,
+            "clp": 537158,
+            "costos": 396013
+          },
+          "Vestuario Adulto": {
+            "units": 47,
+            "clp": 591778,
+            "costos": 365300
           }
         }
       },
@@ -13875,57 +15317,113 @@ const REAL_SELLOUT = {
         "store": "Mall Portal lLa Dehesa",
         "storeCode": "J514 Jumbo - Av. La Dehesa 1445, Lo Barnechea",
         "region": "13 - Metropolitana de Santiago",
-        "units": 602,
-        "clp": 5451637,
+        "units": 750,
+        "clp": 6818480,
+        "costos": 4847446,
+        "margin": 28.9,
+        "stockUnits": 1835,
+        "weeksOfStock": 8.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 113,
-            "clp": 1023843
+            "units": 142,
+            "clp": 1308083,
+            "costos": 913962
           },
           "Ropa Interior": {
-            "units": 230,
-            "clp": 1779676
+            "units": 270,
+            "clp": 2044239,
+            "costos": 1341350
           },
           "Calzado": {
-            "units": 129,
-            "clp": 1146954
+            "units": 165,
+            "clp": 1467421,
+            "costos": 1142981
           },
           "Accesorios y Otros": {
-            "units": 73,
-            "clp": 951408
+            "units": 84,
+            "clp": 1089971,
+            "costos": 841853
           },
           "Vestuario Adulto": {
-            "units": 57,
-            "clp": 549756
+            "units": 89,
+            "clp": 908765,
+            "costos": 607300
           }
         }
       },
       {
-        "store": "Mall Portal Vadivia",
-        "storeCode": "J955 Jumbo - Errázuriz 1040, Valdivia",
-        "region": "14 - Los Ríos",
-        "units": 547,
-        "clp": 4916696,
+        "store": "Los Ángeles",
+        "storeCode": "J695 Jumbo - Av. Ercilla 190, Los Ángeles",
+        "region": "08 - Biobío",
+        "units": 737,
+        "clp": 6604901,
+        "costos": 4614630,
+        "margin": 30.1,
+        "stockUnits": 1169,
+        "weeksOfStock": 5.7,
         "byDivision": {
-          "Vestuario Infantil": {
-            "units": 129,
-            "clp": 1259010
+          "Calzado": {
+            "units": 178,
+            "clp": 1685912,
+            "costos": 1187252
           },
           "Ropa Interior": {
-            "units": 206,
-            "clp": 1533727
+            "units": 252,
+            "clp": 1631337,
+            "costos": 1073550
           },
-          "Calzado": {
-            "units": 167,
-            "clp": 1563059
-          },
-          "Accesorios y Otros": {
-            "units": 35,
-            "clp": 484738
+          "Vestuario Infantil": {
+            "units": 165,
+            "clp": 1658344,
+            "costos": 1099844
           },
           "Vestuario Adulto": {
-            "units": 10,
-            "clp": 76162
+            "units": 84,
+            "clp": 1064814,
+            "costos": 659500
+          },
+          "Accesorios y Otros": {
+            "units": 58,
+            "clp": 564494,
+            "costos": 594484
+          }
+        }
+      },
+      {
+        "store": "Puerto Montt",
+        "storeCode": "J507 Jumbo - Ejercito 470, Puerto Montt",
+        "region": "10 - Los Lagos",
+        "units": 730,
+        "clp": 6941608,
+        "costos": 4530461,
+        "margin": 34.7,
+        "stockUnits": 1244,
+        "weeksOfStock": 6.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 342,
+            "clp": 2496455,
+            "costos": 1595300
+          },
+          "Vestuario Infantil": {
+            "units": 143,
+            "clp": 1546276,
+            "costos": 964681
+          },
+          "Calzado": {
+            "units": 155,
+            "clp": 1650069,
+            "costos": 1089292
+          },
+          "Accesorios y Otros": {
+            "units": 50,
+            "clp": 797486,
+            "costos": 599688
+          },
+          "Vestuario Adulto": {
+            "units": 40,
+            "clp": 451323,
+            "costos": 281500
           }
         }
       },
@@ -13933,28 +15431,37 @@ const REAL_SELLOUT = {
         "store": "Mall Paseo Los Dominicos",
         "storeCode": "J624 Jumbo - Camino El Alba 11969, Las Condes",
         "region": "13 - Metropolitana de Santiago",
-        "units": 540,
-        "clp": 4686632,
+        "units": 646,
+        "clp": 5607324,
+        "costos": 3878671,
+        "margin": 30.8,
+        "stockUnits": 2044,
+        "weeksOfStock": 11.3,
         "byDivision": {
           "Accesorios y Otros": {
-            "units": 31,
-            "clp": 351252
+            "units": 38,
+            "clp": 421805,
+            "costos": 395039
           },
           "Calzado": {
-            "units": 118,
-            "clp": 867593
+            "units": 146,
+            "clp": 1061265,
+            "costos": 879135
           },
           "Ropa Interior": {
-            "units": 206,
-            "clp": 1376168
+            "units": 232,
+            "clp": 1532256,
+            "costos": 967450
           },
           "Vestuario Infantil": {
-            "units": 100,
-            "clp": 1040509
+            "units": 124,
+            "clp": 1281400,
+            "costos": 829447
           },
           "Vestuario Adulto": {
-            "units": 85,
-            "clp": 1051110
+            "units": 106,
+            "clp": 1310597,
+            "costos": 807600
           }
         }
       },
@@ -13962,28 +15469,75 @@ const REAL_SELLOUT = {
         "store": "Talca El Arenal",
         "storeCode": "J591 Jumbo - El Arenal 411, Talca",
         "region": "07 - Maule",
-        "units": 517,
-        "clp": 4516620,
+        "units": 623,
+        "clp": 5526580,
+        "costos": 3865509,
+        "margin": 30.1,
+        "stockUnits": 1411,
+        "weeksOfStock": 8.1,
         "byDivision": {
           "Ropa Interior": {
-            "units": 228,
-            "clp": 1582781
+            "units": 247,
+            "clp": 1698040,
+            "costos": 1132650
           },
           "Vestuario Infantil": {
-            "units": 120,
-            "clp": 1194795
+            "units": 144,
+            "clp": 1418110,
+            "costos": 946648
           },
           "Calzado": {
-            "units": 128,
-            "clp": 1176661
+            "units": 143,
+            "clp": 1297072,
+            "costos": 960350
           },
           "Accesorios y Otros": {
-            "units": 30,
-            "clp": 432151
+            "units": 42,
+            "clp": 540500,
+            "costos": 468461
           },
           "Vestuario Adulto": {
-            "units": 11,
-            "clp": 130232
+            "units": 47,
+            "clp": 572859,
+            "costos": 357400
+          }
+        }
+      },
+      {
+        "store": "Mall Portal Vadivia",
+        "storeCode": "J955 Jumbo - Errázuriz 1040, Valdivia",
+        "region": "14 - Los Ríos",
+        "units": 618,
+        "clp": 5695822,
+        "costos": 3873422,
+        "margin": 32.0,
+        "stockUnits": 1003,
+        "weeksOfStock": 5.8,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 144,
+            "clp": 1416369,
+            "costos": 926029
+          },
+          "Ropa Interior": {
+            "units": 209,
+            "clp": 1546307,
+            "costos": 981220
+          },
+          "Calzado": {
+            "units": 183,
+            "clp": 1718749,
+            "costos": 1251284
+          },
+          "Accesorios y Otros": {
+            "units": 44,
+            "clp": 588891,
+            "costos": 439989
+          },
+          "Vestuario Adulto": {
+            "units": 38,
+            "clp": 425507,
+            "costos": 274900
           }
         }
       },
@@ -13991,57 +15545,37 @@ const REAL_SELLOUT = {
         "store": "Puente Alto",
         "storeCode": "J613 Jumbo - Av. Santo Domingo 67, Puente Alto",
         "region": "13 - Metropolitana de Santiago",
-        "units": 474,
-        "clp": 4251362,
+        "units": 600,
+        "clp": 5437608,
+        "costos": 3809410,
+        "margin": 29.9,
+        "stockUnits": 1623,
+        "weeksOfStock": 9.7,
         "byDivision": {
           "Calzado": {
-            "units": 153,
-            "clp": 1442661
+            "units": 184,
+            "clp": 1752529,
+            "costos": 1360451
           },
           "Accesorios y Otros": {
-            "units": 18,
-            "clp": 178789
+            "units": 19,
+            "clp": 183407,
+            "costos": 140999
           },
           "Ropa Interior": {
-            "units": 131,
-            "clp": 753883
+            "units": 170,
+            "clp": 1022951,
+            "costos": 697900
           },
           "Vestuario Infantil": {
-            "units": 78,
-            "clp": 758208
+            "units": 105,
+            "clp": 1031814,
+            "costos": 677460
           },
           "Vestuario Adulto": {
-            "units": 94,
-            "clp": 1117820
-          }
-        }
-      },
-      {
-        "store": "Los Andes",
-        "storeCode": "J780 Jumbo - Av. Argentina 805, Los Andes",
-        "region": "05 - Valparaíso",
-        "units": 457,
-        "clp": 3975065,
-        "byDivision": {
-          "Calzado": {
-            "units": 148,
-            "clp": 1254724
-          },
-          "Accesorios y Otros": {
-            "units": 29,
-            "clp": 369985
-          },
-          "Ropa Interior": {
-            "units": 140,
-            "clp": 1002502
-          },
-          "Vestuario Infantil": {
             "units": 122,
-            "clp": 1188674
-          },
-          "Vestuario Adulto": {
-            "units": 18,
-            "clp": 159180
+            "clp": 1446908,
+            "costos": 932600
           }
         }
       },
@@ -14049,28 +15583,75 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Sur",
         "storeCode": "J843 Jumbo - Portales 3896, San Bernardo",
         "region": "13 - Metropolitana de Santiago",
-        "units": 455,
-        "clp": 3757472,
+        "units": 556,
+        "clp": 4712869,
+        "costos": 3373944,
+        "margin": 28.4,
+        "stockUnits": 1750,
+        "weeksOfStock": 11.2,
         "byDivision": {
           "Calzado": {
-            "units": 127,
-            "clp": 1124853
+            "units": 145,
+            "clp": 1271624,
+            "costos": 935121
           },
           "Accesorios y Otros": {
-            "units": 43,
-            "clp": 495924
+            "units": 55,
+            "clp": 654665,
+            "costos": 514794
           },
           "Ropa Interior": {
-            "units": 148,
-            "clp": 985143
+            "units": 174,
+            "clp": 1169818,
+            "costos": 768700
           },
           "Vestuario Infantil": {
-            "units": 113,
-            "clp": 955094
+            "units": 131,
+            "clp": 1097498,
+            "costos": 792529
           },
           "Vestuario Adulto": {
-            "units": 24,
-            "clp": 196457
+            "units": 51,
+            "clp": 519263,
+            "costos": 362800
+          }
+        }
+      },
+      {
+        "store": "Los Andes",
+        "storeCode": "J780 Jumbo - Av. Argentina 805, Los Andes",
+        "region": "05 - Valparaíso",
+        "units": 549,
+        "clp": 4916048,
+        "costos": 3483795,
+        "margin": 29.1,
+        "stockUnits": 1451,
+        "weeksOfStock": 9.4,
+        "byDivision": {
+          "Calzado": {
+            "units": 159,
+            "clp": 1351628,
+            "costos": 1018632
+          },
+          "Accesorios y Otros": {
+            "units": 38,
+            "clp": 470355,
+            "costos": 401795
+          },
+          "Ropa Interior": {
+            "units": 170,
+            "clp": 1265388,
+            "costos": 836150
+          },
+          "Vestuario Infantil": {
+            "units": 149,
+            "clp": 1470485,
+            "costos": 983818
+          },
+          "Vestuario Adulto": {
+            "units": 33,
+            "clp": 358193,
+            "costos": 243400
           }
         }
       },
@@ -14078,28 +15659,37 @@ const REAL_SELLOUT = {
         "store": "Pajaritos",
         "storeCode": "J770 Jumbo - Av. Pajaritos 3302, Maipú",
         "region": "13 - Metropolitana de Santiago",
-        "units": 434,
-        "clp": 3751189,
+        "units": 516,
+        "clp": 4601067,
+        "costos": 3082089,
+        "margin": 33.0,
+        "stockUnits": 1985,
+        "weeksOfStock": 13.7,
         "byDivision": {
           "Ropa Interior": {
-            "units": 216,
-            "clp": 1696153
+            "units": 238,
+            "clp": 1842523,
+            "costos": 1175550
           },
           "Vestuario Infantil": {
-            "units": 72,
-            "clp": 795745
+            "units": 95,
+            "clp": 1050173,
+            "costos": 648234
           },
           "Calzado": {
-            "units": 121,
-            "clp": 1041310
+            "units": 131,
+            "clp": 1130984,
+            "costos": 866885
           },
           "Accesorios y Otros": {
-            "units": 8,
-            "clp": 50384
+            "units": 10,
+            "clp": 88183,
+            "costos": 87720
           },
           "Vestuario Adulto": {
-            "units": 17,
-            "clp": 167598
+            "units": 42,
+            "clp": 489203,
+            "costos": 303700
           }
         }
       },
@@ -14107,86 +15697,37 @@ const REAL_SELLOUT = {
         "store": "Copayapu Copiapó",
         "storeCode": "J760 Jumbo - Copayapu 2406, Copiapó",
         "region": "03 - Atacama",
-        "units": 416,
-        "clp": 3536082,
+        "units": 499,
+        "clp": 4299181,
+        "costos": 2922144,
+        "margin": 32.0,
+        "stockUnits": 1793,
+        "weeksOfStock": 12.8,
         "byDivision": {
-          "Calzado": {
-            "units": 88,
-            "clp": 797616
-          },
-          "Accesorios y Otros": {
-            "units": 17,
-            "clp": 242742
-          },
-          "Vestuario Infantil": {
-            "units": 119,
-            "clp": 1132484
-          },
-          "Ropa Interior": {
-            "units": 180,
-            "clp": 1236378
-          },
-          "Vestuario Adulto": {
-            "units": 12,
-            "clp": 126862
-          }
-        }
-      },
-      {
-        "store": "Mall Del Centro",
-        "storeCode": "J809 Jumbo - Barros Arana 1080, Concepción",
-        "region": "08 - Biobío",
-        "units": 390,
-        "clp": 3703040,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 130,
-            "clp": 1027676
-          },
-          "Vestuario Infantil": {
-            "units": 118,
-            "clp": 1281824
-          },
-          "Accesorios y Otros": {
-            "units": 13,
-            "clp": 92613
-          },
           "Calzado": {
             "units": 103,
-            "clp": 1010090
-          },
-          "Vestuario Adulto": {
-            "units": 26,
-            "clp": 290838
-          }
-        }
-      },
-      {
-        "store": "Mall Paseo Los Trapenses",
-        "storeCode": "J762 Jumbo - Los Trapenses 3515, Lo Barnechea",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 366,
-        "clp": 3055787,
-        "byDivision": {
-          "Calzado": {
-            "units": 113,
-            "clp": 905391
-          },
-          "Vestuario Infantil": {
-            "units": 46,
-            "clp": 340862
-          },
-          "Vestuario Adulto": {
-            "units": 70,
-            "clp": 822744
+            "clp": 934377,
+            "costos": 672100
           },
           "Accesorios y Otros": {
-            "units": 29,
-            "clp": 328112
+            "units": 19,
+            "clp": 276342,
+            "costos": 233967
+          },
+          "Vestuario Infantil": {
+            "units": 138,
+            "clp": 1317640,
+            "costos": 888177
           },
           "Ropa Interior": {
-            "units": 108,
-            "clp": 658679
+            "units": 211,
+            "clp": 1439052,
+            "costos": 923400
+          },
+          "Vestuario Adulto": {
+            "units": 28,
+            "clp": 331769,
+            "costos": 204500
           }
         }
       },
@@ -14194,28 +15735,75 @@ const REAL_SELLOUT = {
         "store": "Valparaíso",
         "storeCode": "J520 Jumbo - Av. Argentina 51, Valparaíso",
         "region": "05 - Valparaíso",
-        "units": 361,
-        "clp": 3350074,
+        "units": 469,
+        "clp": 4430517,
+        "costos": 3041823,
+        "margin": 31.3,
+        "stockUnits": 1331,
+        "weeksOfStock": 10.1,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 92,
-            "clp": 1007378
+            "units": 102,
+            "clp": 1122420,
+            "costos": 693767
           },
           "Accesorios y Otros": {
-            "units": 15,
-            "clp": 199229
+            "units": 23,
+            "clp": 269782,
+            "costos": 243248
           },
           "Calzado": {
-            "units": 137,
-            "clp": 1250547
+            "units": 167,
+            "clp": 1546403,
+            "costos": 1179508
           },
           "Ropa Interior": {
-            "units": 109,
-            "clp": 798869
+            "units": 128,
+            "clp": 896525,
+            "costos": 565400
           },
           "Vestuario Adulto": {
-            "units": 8,
-            "clp": 94050
+            "units": 49,
+            "clp": 595386,
+            "costos": 359900
+          }
+        }
+      },
+      {
+        "store": "Mall Del Centro",
+        "storeCode": "J809 Jumbo - Barros Arana 1080, Concepción",
+        "region": "08 - Biobío",
+        "units": 459,
+        "clp": 4448244,
+        "costos": 2914988,
+        "margin": 34.5,
+        "stockUnits": 1587,
+        "weeksOfStock": 12.3,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 138,
+            "clp": 1079083,
+            "costos": 709100
+          },
+          "Vestuario Infantil": {
+            "units": 127,
+            "clp": 1384269,
+            "costos": 852743
+          },
+          "Accesorios y Otros": {
+            "units": 13,
+            "clp": 92613,
+            "costos": 80195
+          },
+          "Calzado": {
+            "units": 121,
+            "clp": 1188111,
+            "costos": 840250
+          },
+          "Vestuario Adulto": {
+            "units": 60,
+            "clp": 704169,
+            "costos": 432700
           }
         }
       },
@@ -14223,28 +15811,75 @@ const REAL_SELLOUT = {
         "store": "Concha Y Toro",
         "storeCode": "J659 Jumbo - Av. Concha y Toro 3854, Puente Alto",
         "region": "13 - Metropolitana de Santiago",
-        "units": 346,
-        "clp": 2983789,
+        "units": 443,
+        "clp": 3907683,
+        "costos": 2670809,
+        "margin": 31.7,
+        "stockUnits": 1356,
+        "weeksOfStock": 10.9,
         "byDivision": {
           "Calzado": {
-            "units": 149,
-            "clp": 1373393
+            "units": 172,
+            "clp": 1589825,
+            "costos": 1154230
           },
           "Vestuario Infantil": {
-            "units": 64,
-            "clp": 593111
+            "units": 79,
+            "clp": 725267,
+            "costos": 489999
           },
           "Ropa Interior": {
-            "units": 127,
-            "clp": 942870
+            "units": 153,
+            "clp": 1110552,
+            "costos": 721100
           },
           "Accesorios y Otros": {
             "units": 3,
-            "clp": 50399
+            "clp": 50399,
+            "costos": 36980
           },
           "Vestuario Adulto": {
-            "units": 3,
-            "clp": 24016
+            "units": 36,
+            "clp": 431639,
+            "costos": 268500
+          }
+        }
+      },
+      {
+        "store": "Mall Paseo Los Trapenses",
+        "storeCode": "J762 Jumbo - Los Trapenses 3515, Lo Barnechea",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 427,
+        "clp": 3602193,
+        "costos": 2767755,
+        "margin": 23.2,
+        "stockUnits": 1784,
+        "weeksOfStock": 14.9,
+        "byDivision": {
+          "Calzado": {
+            "units": 130,
+            "clp": 1018055,
+            "costos": 849211
+          },
+          "Vestuario Infantil": {
+            "units": 59,
+            "clp": 443975,
+            "costos": 374300
+          },
+          "Vestuario Adulto": {
+            "units": 83,
+            "clp": 976087,
+            "costos": 643900
+          },
+          "Accesorios y Otros": {
+            "units": 41,
+            "clp": 464603,
+            "costos": 393684
+          },
+          "Ropa Interior": {
+            "units": 114,
+            "clp": 699472,
+            "costos": 506660
           }
         }
       },
@@ -14252,28 +15887,37 @@ const REAL_SELLOUT = {
         "store": "Mall Barrio Independencia",
         "storeCode": "J989 Jumbo - Echeverría 971, Independencia",
         "region": "13 - Metropolitana de Santiago",
-        "units": 295,
-        "clp": 2543880,
+        "units": 376,
+        "clp": 3320451,
+        "costos": 2295471,
+        "margin": 30.9,
+        "stockUnits": 1436,
+        "weeksOfStock": 13.6,
         "byDivision": {
           "Calzado": {
-            "units": 109,
-            "clp": 948499
+            "units": 125,
+            "clp": 1102007,
+            "costos": 847205
           },
           "Vestuario Infantil": {
-            "units": 56,
-            "clp": 590640
+            "units": 69,
+            "clp": 728690,
+            "costos": 455067
           },
           "Ropa Interior": {
-            "units": 124,
-            "clp": 942342
+            "units": 143,
+            "clp": 1037981,
+            "costos": 670600
           },
           "Vestuario Adulto": {
-            "units": 2,
-            "clp": 12595
+            "units": 26,
+            "clp": 303320,
+            "costos": 191000
           },
           "Accesorios y Otros": {
-            "units": 4,
-            "clp": 49804
+            "units": 13,
+            "clp": 148454,
+            "costos": 131599
           }
         }
       },
@@ -14281,28 +15925,37 @@ const REAL_SELLOUT = {
         "store": "Arica",
         "storeCode": "J619 Jumbo - Av. Diego Portales 161, Arica",
         "region": "15 - Arica y Parinacota",
-        "units": 284,
-        "clp": 2330583,
+        "units": 327,
+        "clp": 2696810,
+        "costos": 2205964,
+        "margin": 18.2,
+        "stockUnits": 1692,
+        "weeksOfStock": 18.5,
         "byDivision": {
           "Ropa Interior": {
-            "units": 77,
-            "clp": 428824
+            "units": 80,
+            "clp": 441496,
+            "costos": 288500
           },
           "Calzado": {
-            "units": 82,
-            "clp": 627280
+            "units": 93,
+            "clp": 695294,
+            "costos": 623222
           },
           "Accesorios y Otros": {
-            "units": 55,
-            "clp": 584656
+            "units": 70,
+            "clp": 733324,
+            "costos": 722848
           },
           "Vestuario Adulto": {
-            "units": 22,
-            "clp": 270233
+            "units": 23,
+            "clp": 284511,
+            "costos": 178900
           },
           "Vestuario Infantil": {
-            "units": 48,
-            "clp": 419589
+            "units": 61,
+            "clp": 542185,
+            "costos": 392494
           }
         }
       },
@@ -14310,16 +15963,22 @@ const REAL_SELLOUT = {
         "store": "No Definido",
         "storeCode": "J872 Jumbo - Vía F-30, Esquina Vía F-124, Puchuncaví",
         "region": "05 - Valparaíso",
-        "units": 106,
-        "clp": 642221,
+        "units": 110,
+        "clp": 664385,
+        "costos": 690307,
+        "margin": -3.9,
+        "stockUnits": 177,
+        "weeksOfStock": 5.7,
         "byDivision": {
           "Calzado": {
-            "units": 105,
-            "clp": 621221
+            "units": 109,
+            "clp": 643385,
+            "costos": 676657
           },
           "Accesorios y Otros": {
             "units": 1,
-            "clp": 21000
+            "clp": 21000,
+            "costos": 13650
           }
         }
       },
@@ -14329,10 +15988,15 @@ const REAL_SELLOUT = {
         "region": "05 - Valparaíso",
         "units": 8,
         "clp": 56427,
+        "costos": 56432,
+        "margin": -0.0,
+        "stockUnits": -9,
+        "weeksOfStock": -4.0,
         "byDivision": {
           "Vestuario Infantil": {
             "units": 8,
-            "clp": 56427
+            "clp": 56427,
+            "costos": 56432
           }
         }
       }
@@ -14342,20 +16006,27 @@ const REAL_SELLOUT = {
         "store": "Internet",
         "storeCode": "10039 Ripley - Calle Almirante Simpson 01200 (Internet), San Bernardo",
         "region": "13 - Metropolitana de Santiago",
-        "units": 1011,
-        "clp": 5540746,
+        "units": 1112,
+        "clp": 6123341,
+        "costos": 6176480,
+        "margin": -0.9,
+        "stockUnits": 6403,
+        "weeksOfStock": 20.6,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 831,
-            "clp": 4063111
+            "units": 911,
+            "clp": 4473445,
+            "costos": 4861454
           },
           "Calzado": {
-            "units": 86,
-            "clp": 718267
+            "units": 92,
+            "clp": 767124,
+            "costos": 753908
           },
           "Ropa Interior": {
-            "units": 94,
-            "clp": 759368
+            "units": 109,
+            "clp": 882772,
+            "costos": 561118
           }
         }
       },
@@ -14363,53 +16034,32 @@ const REAL_SELLOUT = {
         "store": "Talca",
         "storeCode": "10074 Ripley - 8 Oriente 1212, Talca",
         "region": "07 - Maule",
-        "units": 801,
-        "clp": 4423748,
+        "units": 946,
+        "clp": 5313444,
+        "costos": 5161876,
+        "margin": 2.9,
+        "stockUnits": 3461,
+        "weeksOfStock": 13.1,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 386,
-            "clp": 2159168
+            "units": 470,
+            "clp": 2622924,
+            "costos": 2821585
           },
           "Ropa Interior": {
-            "units": 221,
-            "clp": 1386452
+            "units": 266,
+            "clp": 1728544,
+            "costos": 1182366
           },
           "Calzado": {
-            "units": 50,
-            "clp": 438328
+            "units": 61,
+            "clp": 510453,
+            "costos": 524781
           },
           "Accesorios y Otros": {
-            "units": 144,
-            "clp": 439800
-          }
-        }
-      },
-      {
-        "store": "Mall Vivo El Centro",
-        "storeCode": "10018 Ripley - 21 de Mayo 698, Santiago",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 762,
-        "clp": 4213553,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 641,
-            "clp": 3393709
-          },
-          "Ropa Interior": {
-            "units": 45,
-            "clp": 413075
-          },
-          "Accesorios y Otros": {
-            "units": 74,
-            "clp": 400225
-          },
-          "Calzado": {
-            "units": 1,
-            "clp": 4031
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 2513
+            "units": 149,
+            "clp": 451523,
+            "costos": 633144
           }
         }
       },
@@ -14417,24 +16067,32 @@ const REAL_SELLOUT = {
         "store": "Mall Marina Arauco",
         "storeCode": "10037 Ripley - Av. Libertad 1348, Viña del Mar",
         "region": "05 - Valparaíso",
-        "units": 729,
-        "clp": 5401755,
+        "units": 869,
+        "clp": 6686728,
+        "costos": 5142831,
+        "margin": 23.1,
+        "stockUnits": 2558,
+        "weeksOfStock": 10.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 337,
-            "clp": 1823938
+            "units": 395,
+            "clp": 2134239,
+            "costos": 2221368
           },
           "Ropa Interior": {
-            "units": 252,
-            "clp": 2119256
+            "units": 295,
+            "clp": 2524332,
+            "costos": 1478261
           },
           "Calzado": {
-            "units": 59,
-            "clp": 414709
+            "units": 64,
+            "clp": 445939,
+            "costos": 475615
           },
           "Accesorios y Otros": {
-            "units": 81,
-            "clp": 1043852
+            "units": 115,
+            "clp": 1582218,
+            "costos": 967587
           }
         }
       },
@@ -14442,49 +16100,32 @@ const REAL_SELLOUT = {
         "store": "Antofagasta",
         "storeCode": "10026 Ripley - Arturo Prat 530, Antofagasta",
         "region": "02 - Antofagasta",
-        "units": 692,
-        "clp": 4604257,
+        "units": 861,
+        "clp": 5751881,
+        "costos": 5177434,
+        "margin": 10.0,
+        "stockUnits": 3211,
+        "weeksOfStock": 13.3,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 411,
-            "clp": 2305902
+            "units": 512,
+            "clp": 2873201,
+            "costos": 2986294
           },
           "Calzado": {
-            "units": 88,
-            "clp": 651726
+            "units": 105,
+            "clp": 782723,
+            "costos": 884330
           },
           "Ropa Interior": {
-            "units": 146,
-            "clp": 1179798
+            "units": 174,
+            "clp": 1415034,
+            "costos": 859277
           },
           "Accesorios y Otros": {
-            "units": 47,
-            "clp": 466831
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza San Bernardo",
-        "storeCode": "10099 Ripley - Av. Jorge Alessandri 20040, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 691,
-        "clp": 4007329,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 558,
-            "clp": 3165489
-          },
-          "Calzado": {
-            "units": 7,
-            "clp": 23474
-          },
-          "Ropa Interior": {
-            "units": 121,
-            "clp": 790677
-          },
-          "Accesorios y Otros": {
-            "units": 5,
-            "clp": 27689
+            "units": 70,
+            "clp": 680923,
+            "costos": 447533
           }
         }
       },
@@ -14492,53 +16133,108 @@ const REAL_SELLOUT = {
         "store": "Temuco",
         "storeCode": "10004 Ripley - Arturo Prat 656, Temuco",
         "region": "09 - La Araucanía",
-        "units": 683,
-        "clp": 4586449,
+        "units": 839,
+        "clp": 5596439,
+        "costos": 4480969,
+        "margin": 19.9,
+        "stockUnits": 2241,
+        "weeksOfStock": 9.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 332,
-            "clp": 1974254
+            "units": 455,
+            "clp": 2693659,
+            "costos": 2723916
           },
           "Ropa Interior": {
-            "units": 299,
-            "clp": 2195126
+            "units": 326,
+            "clp": 2431555,
+            "costos": 1430889
           },
           "Accesorios y Otros": {
-            "units": 45,
-            "clp": 371891
+            "units": 50,
+            "clp": 416387,
+            "costos": 259655
           },
           "Calzado": {
-            "units": 6,
-            "clp": 42665
+            "units": 7,
+            "clp": 52325,
+            "costos": 61409
           },
           "Vestuario Adulto": {
             "units": 1,
-            "clp": 2513
+            "clp": 2513,
+            "costos": 5100
           }
         }
       },
       {
-        "store": "Rancagua",
-        "storeCode": "10032 Ripley - José Domingo Mujica 490, Rancagua",
-        "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 669,
-        "clp": 4586956,
+        "store": "Mall Vivo El Centro",
+        "storeCode": "10018 Ripley - 21 de Mayo 698, Santiago",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 820,
+        "clp": 4618622,
+        "costos": 4532435,
+        "margin": 1.9,
+        "stockUnits": 1618,
+        "weeksOfStock": 7.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 340,
-            "clp": 2126925
-          },
-          "Calzado": {
-            "units": 58,
-            "clp": 458854
+            "units": 680,
+            "clp": 3636414,
+            "costos": 3919889
           },
           "Ropa Interior": {
-            "units": 205,
-            "clp": 1570639
+            "units": 57,
+            "clp": 515496,
+            "costos": 322685
           },
           "Accesorios y Otros": {
-            "units": 66,
-            "clp": 430538
+            "units": 81,
+            "clp": 460168,
+            "costos": 278311
+          },
+          "Calzado": {
+            "units": 1,
+            "clp": 4031,
+            "costos": 6450
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 2513,
+            "costos": 5100
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza San Bernardo",
+        "storeCode": "10099 Ripley - Av. Jorge Alessandri 20040, San Bernardo",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 800,
+        "clp": 4712037,
+        "costos": 4329684,
+        "margin": 8.1,
+        "stockUnits": 2378,
+        "weeksOfStock": 10.6,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 649,
+            "clp": 3750512,
+            "costos": 3723443
+          },
+          "Calzado": {
+            "units": 7,
+            "clp": 23474,
+            "costos": 35561
+          },
+          "Ropa Interior": {
+            "units": 138,
+            "clp": 906169,
+            "costos": 553427
+          },
+          "Accesorios y Otros": {
+            "units": 6,
+            "clp": 31882,
+            "costos": 17253
           }
         }
       },
@@ -14546,24 +16242,65 @@ const REAL_SELLOUT = {
         "store": "Chillán",
         "storeCode": "10022 Ripley - 5 de Abril 699, Chillán",
         "region": "16 - Ñuble",
-        "units": 634,
-        "clp": 4411148,
+        "units": 773,
+        "clp": 5324483,
+        "costos": 4329778,
+        "margin": 18.7,
+        "stockUnits": 2898,
+        "weeksOfStock": 13.4,
         "byDivision": {
           "Ropa Interior": {
-            "units": 281,
-            "clp": 2285039
+            "units": 330,
+            "clp": 2694229,
+            "costos": 1648641
           },
           "Vestuario Infantil": {
-            "units": 323,
-            "clp": 1944007
+            "units": 403,
+            "clp": 2388572,
+            "costos": 2538395
           },
           "Accesorios y Otros": {
-            "units": 29,
-            "clp": 180430
+            "units": 39,
+            "clp": 240010,
+            "costos": 139552
           },
           "Calzado": {
             "units": 1,
-            "clp": 1672
+            "clp": 1672,
+            "costos": 3190
+          }
+        }
+      },
+      {
+        "store": "Rancagua",
+        "storeCode": "10032 Ripley - José Domingo Mujica 490, Rancagua",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 772,
+        "clp": 5385012,
+        "costos": 4520318,
+        "margin": 16.1,
+        "stockUnits": 3398,
+        "weeksOfStock": 15.7,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 385,
+            "clp": 2426434,
+            "costos": 2529795
+          },
+          "Calzado": {
+            "units": 65,
+            "clp": 504618,
+            "costos": 519464
+          },
+          "Ropa Interior": {
+            "units": 246,
+            "clp": 1947037,
+            "costos": 1158899
+          },
+          "Accesorios y Otros": {
+            "units": 76,
+            "clp": 506923,
+            "costos": 312160
           }
         }
       },
@@ -14571,24 +16308,32 @@ const REAL_SELLOUT = {
         "store": "Mall Florida Center",
         "storeCode": "10057 Ripley - Av. Vicuña Mackena 6100, La Florida",
         "region": "13 - Metropolitana de Santiago",
-        "units": 628,
-        "clp": 3754516,
+        "units": 741,
+        "clp": 4471314,
+        "costos": 3932278,
+        "margin": 12.1,
+        "stockUnits": 2593,
+        "weeksOfStock": 12.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 414,
-            "clp": 2215247
+            "units": 497,
+            "clp": 2675480,
+            "costos": 2865291
           },
           "Ropa Interior": {
-            "units": 147,
-            "clp": 1136286
+            "units": 167,
+            "clp": 1334951,
+            "costos": 789939
           },
           "Calzado": {
             "units": 1,
-            "clp": 4368
+            "clp": 4368,
+            "costos": 12391
           },
           "Accesorios y Otros": {
-            "units": 66,
-            "clp": 398615
+            "units": 76,
+            "clp": 456515,
+            "costos": 264657
           }
         }
       },
@@ -14596,24 +16341,32 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza El Trébol",
         "storeCode": "10028 Ripley - Av. Jorge Alessandri 3171, Talcahuano",
         "region": "08 - Biobío",
-        "units": 624,
-        "clp": 3884011,
+        "units": 711,
+        "clp": 4444451,
+        "costos": 3874853,
+        "margin": 12.8,
+        "stockUnits": 2771,
+        "weeksOfStock": 13.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 420,
-            "clp": 2467237
+            "units": 481,
+            "clp": 2844187,
+            "costos": 2822957
           },
           "Ropa Interior": {
-            "units": 180,
-            "clp": 1304152
+            "units": 206,
+            "clp": 1487642,
+            "costos": 903723
           },
           "Accesorios y Otros": {
             "units": 16,
-            "clp": 82269
+            "clp": 82269,
+            "costos": 80324
           },
           "Calzado": {
             "units": 8,
-            "clp": 30353
+            "clp": 30353,
+            "costos": 67849
           }
         }
       },
@@ -14621,24 +16374,32 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Vespucio",
         "storeCode": "10016 Ripley - Av. Vicuña Mackenna 7110, La Florida",
         "region": "13 - Metropolitana de Santiago",
-        "units": 599,
-        "clp": 4061619,
+        "units": 709,
+        "clp": 4836887,
+        "costos": 4192093,
+        "margin": 13.3,
+        "stockUnits": 3255,
+        "weeksOfStock": 16.4,
         "byDivision": {
           "Ropa Interior": {
-            "units": 141,
-            "clp": 1172987
+            "units": 166,
+            "clp": 1414548,
+            "costos": 848112
           },
           "Vestuario Infantil": {
-            "units": 382,
-            "clp": 2231572
+            "units": 457,
+            "clp": 2659881,
+            "costos": 2690559
           },
           "Accesorios y Otros": {
-            "units": 38,
-            "clp": 337494
+            "units": 43,
+            "clp": 409720,
+            "costos": 289625
           },
           "Calzado": {
-            "units": 38,
-            "clp": 319566
+            "units": 43,
+            "clp": 352738,
+            "costos": 363797
           }
         }
       },
@@ -14646,53 +16407,32 @@ const REAL_SELLOUT = {
         "store": "Mall Parque Arauco",
         "storeCode": "10012 Ripley - Av. Kennedy 5413, Las Condes",
         "region": "13 - Metropolitana de Santiago",
-        "units": 577,
-        "clp": 4126890,
+        "units": 661,
+        "clp": 4824299,
+        "costos": 4162255,
+        "margin": 13.7,
+        "stockUnits": 2439,
+        "weeksOfStock": 13.2,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 310,
-            "clp": 1627129
+            "units": 347,
+            "clp": 1816139,
+            "costos": 2045659
           },
           "Ropa Interior": {
-            "units": 144,
-            "clp": 1209519
+            "units": 164,
+            "clp": 1352044,
+            "costos": 833344
           },
           "Calzado": {
-            "units": 62,
-            "clp": 480671
+            "units": 74,
+            "clp": 579446,
+            "costos": 608248
           },
           "Accesorios y Otros": {
-            "units": 61,
-            "clp": 809571
-          }
-        }
-      },
-      {
-        "store": "Iquique",
-        "storeCode": "10049 Ripley - Vivar 550, Iquique",
-        "region": "01 - Tarapacá",
-        "units": 562,
-        "clp": 3291534,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 398,
-            "clp": 1987464
-          },
-          "Calzado": {
-            "units": 91,
-            "clp": 794510
-          },
-          "Ropa Interior": {
-            "units": 23,
-            "clp": 224266
-          },
-          "Accesorios y Otros": {
-            "units": 47,
-            "clp": 276075
-          },
-          "Vestuario Adulto": {
-            "units": 3,
-            "clp": 9219
+            "units": 76,
+            "clp": 1076670,
+            "costos": 675004
           }
         }
       },
@@ -14700,20 +16440,32 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Copiapó",
         "storeCode": "10084 Ripley - Maipú 110, Copiapó",
         "region": "03 - Atacama",
-        "units": 557,
-        "clp": 3440228,
+        "units": 652,
+        "clp": 4032843,
+        "costos": 3632652,
+        "margin": 9.9,
+        "stockUnits": 1614,
+        "weeksOfStock": 8.8,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 429,
-            "clp": 2426165
+            "units": 508,
+            "clp": 2884461,
+            "costos": 2975190
           },
           "Ropa Interior": {
-            "units": 126,
-            "clp": 1003995
+            "units": 141,
+            "clp": 1136642,
+            "costos": 649172
           },
           "Accesorios y Otros": {
             "units": 2,
-            "clp": 10068
+            "clp": 10068,
+            "costos": 5100
+          },
+          "Calzado": {
+            "units": 1,
+            "clp": 1672,
+            "costos": 3190
           }
         }
       },
@@ -14721,45 +16473,70 @@ const REAL_SELLOUT = {
         "store": "Mall Costanera Center",
         "storeCode": "10034 Ripley - Av. Andrés Bello 2422, Providencia",
         "region": "13 - Metropolitana de Santiago",
-        "units": 507,
-        "clp": 3485132,
+        "units": 645,
+        "clp": 4410257,
+        "costos": 3582232,
+        "margin": 18.8,
+        "stockUnits": 2242,
+        "weeksOfStock": 12.4,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 227,
-            "clp": 1186841
+            "units": 308,
+            "clp": 1595623,
+            "costos": 1715162
           },
           "Ropa Interior": {
-            "units": 184,
-            "clp": 1556978
+            "units": 230,
+            "clp": 1982826,
+            "costos": 1201299
           },
           "Accesorios y Otros": {
-            "units": 69,
-            "clp": 512119
+            "units": 78,
+            "clp": 596076,
+            "costos": 422002
           },
           "Calzado": {
-            "units": 27,
-            "clp": 229194
+            "units": 29,
+            "clp": 235732,
+            "costos": 243769
           }
         }
       },
       {
-        "store": "Mall Arauco Maipú",
-        "storeCode": "10088 Ripley - Américo Vespucio 399, Maipú",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 502,
-        "clp": 2978181,
+        "store": "Iquique",
+        "storeCode": "10049 Ripley - Vivar 550, Iquique",
+        "region": "01 - Tarapacá",
+        "units": 634,
+        "clp": 3733350,
+        "costos": 3692733,
+        "margin": 1.1,
+        "stockUnits": 2316,
+        "weeksOfStock": 13.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 432,
-            "clp": 2424095
+            "units": 452,
+            "clp": 2299986,
+            "costos": 2465414
+          },
+          "Calzado": {
+            "units": 99,
+            "clp": 843216,
+            "costos": 827317
           },
           "Ropa Interior": {
-            "units": 52,
-            "clp": 481970
+            "units": 25,
+            "clp": 244418,
+            "costos": 187534
           },
           "Accesorios y Otros": {
-            "units": 18,
-            "clp": 72116
+            "units": 55,
+            "clp": 336511,
+            "costos": 197168
+          },
+          "Vestuario Adulto": {
+            "units": 3,
+            "clp": 9219,
+            "costos": 15300
           }
         }
       },
@@ -14767,28 +16544,65 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza De Los Ríos",
         "storeCode": "10098 Ripley - Arauco 561, Valdivia",
         "region": "14 - Los Ríos",
-        "units": 492,
-        "clp": 3405117,
+        "units": 589,
+        "clp": 4111595,
+        "costos": 3141097,
+        "margin": 23.6,
+        "stockUnits": 1614,
+        "weeksOfStock": 9.8,
         "byDivision": {
           "Ropa Interior": {
-            "units": 199,
-            "clp": 1606239
+            "units": 238,
+            "clp": 1938235,
+            "costos": 1128493
           },
           "Vestuario Infantil": {
-            "units": 255,
-            "clp": 1494827
+            "units": 307,
+            "clp": 1829023,
+            "costos": 1786818
           },
           "Accesorios y Otros": {
-            "units": 38,
-            "clp": 307244
+            "units": 44,
+            "clp": 347530,
+            "costos": 228076
           },
           "Vestuario Adulto": {
             "units": 1,
-            "clp": 3353
+            "clp": 3353,
+            "costos": 5100
           },
           "Calzado": {
             "units": -1,
-            "clp": -6546
+            "clp": -6546,
+            "costos": -7390
+          }
+        }
+      },
+      {
+        "store": "Mall Arauco Maipú",
+        "storeCode": "10088 Ripley - Américo Vespucio 399, Maipú",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 568,
+        "clp": 3482082,
+        "costos": 3374454,
+        "margin": 3.1,
+        "stockUnits": 1830,
+        "weeksOfStock": 11.5,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 483,
+            "clp": 2753786,
+            "costos": 2953831
+          },
+          "Ropa Interior": {
+            "units": 66,
+            "clp": 651987,
+            "costos": 378047
+          },
+          "Accesorios y Otros": {
+            "units": 19,
+            "clp": 76309,
+            "costos": 42576
           }
         }
       },
@@ -14796,20 +16610,27 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Pionero - Punta Arenas",
         "storeCode": "10096 Ripley - Av. Eduardo Frei Montalva S/N, Punta Arenas",
         "region": "12 - Magallanes y de la Antártica Chilena",
-        "units": 471,
-        "clp": 3017217,
+        "units": 554,
+        "clp": 3624475,
+        "costos": 3028444,
+        "margin": 16.4,
+        "stockUnits": 2095,
+        "weeksOfStock": 13.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 336,
-            "clp": 2037461
+            "units": 381,
+            "clp": 2348688,
+            "costos": 2279198
           },
           "Ropa Interior": {
-            "units": 127,
-            "clp": 924361
+            "units": 164,
+            "clp": 1216199,
+            "costos": 714117
           },
           "Accesorios y Otros": {
-            "units": 8,
-            "clp": 55395
+            "units": 9,
+            "clp": 59588,
+            "costos": 35129
           }
         }
       },
@@ -14817,103 +16638,32 @@ const REAL_SELLOUT = {
         "store": "Mall Curicó",
         "storeCode": "10076 Ripley - Av. OHiggins 201, Curicó",
         "region": "07 - Maule",
-        "units": 448,
-        "clp": 2774601,
+        "units": 523,
+        "clp": 3240094,
+        "costos": 3034372,
+        "margin": 6.3,
+        "stockUnits": 2299,
+        "weeksOfStock": 15.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 333,
-            "clp": 1957573
+            "units": 385,
+            "clp": 2268850,
+            "costos": 2374898
           },
           "Ropa Interior": {
-            "units": 104,
-            "clp": 754096
+            "units": 118,
+            "clp": 863145,
+            "costos": 550815
           },
           "Accesorios y Otros": {
+            "units": 12,
+            "clp": 84772,
+            "costos": 55919
+          },
+          "Calzado": {
             "units": 8,
-            "clp": 57075
-          },
-          "Calzado": {
-            "units": 3,
-            "clp": 5857
-          }
-        }
-      },
-      {
-        "store": "Coquimbo",
-        "storeCode": "10069 Ripley - Baquedano 86, Coquimbo",
-        "region": "04 - Coquimbo",
-        "units": 439,
-        "clp": 3118031,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 181,
-            "clp": 1022273
-          },
-          "Accesorios y Otros": {
-            "units": 39,
-            "clp": 285886
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 6706
-          },
-          "Ropa Interior": {
-            "units": 216,
-            "clp": 1792079
-          },
-          "Calzado": {
-            "units": 1,
-            "clp": 11087
-          }
-        }
-      },
-      {
-        "store": "Mall Portal Temuco",
-        "storeCode": "10068 Ripley - Av. Alemania 0671, Temuco",
-        "region": "09 - La Araucanía",
-        "units": 428,
-        "clp": 2985402,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 160,
-            "clp": 961128
-          },
-          "Ropa Interior": {
-            "units": 205,
-            "clp": 1387576
-          },
-          "Calzado": {
-            "units": 18,
-            "clp": 158905
-          },
-          "Accesorios y Otros": {
-            "units": 45,
-            "clp": 477793
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Los Ángeles",
-        "storeCode": "10072 Ripley - Calle Valdivia 440, Los Ángeles",
-        "region": "08 - Biobío",
-        "units": 425,
-        "clp": 2519393,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 344,
-            "clp": 1899140
-          },
-          "Accesorios y Otros": {
-            "units": 23,
-            "clp": 127537
-          },
-          "Ropa Interior": {
-            "units": 57,
-            "clp": 481124
-          },
-          "Calzado": {
-            "units": 1,
-            "clp": 11592
+            "clp": 23327,
+            "costos": 52740
           }
         }
       },
@@ -14921,20 +16671,60 @@ const REAL_SELLOUT = {
         "store": "Mall Del Centro",
         "storeCode": "10002 Ripley - Barros Arana 1068, Concepción",
         "region": "08 - Biobío",
-        "units": 409,
-        "clp": 2862281,
+        "units": 515,
+        "clp": 3593729,
+        "costos": 3070900,
+        "margin": 14.5,
+        "stockUnits": 3419,
+        "weeksOfStock": 23.7,
         "byDivision": {
           "Ropa Interior": {
-            "units": 112,
-            "clp": 1024661
+            "units": 140,
+            "clp": 1276885,
+            "costos": 795000
           },
           "Vestuario Infantil": {
-            "units": 290,
-            "clp": 1808267
+            "units": 367,
+            "clp": 2283298,
+            "costos": 2253726
           },
           "Accesorios y Otros": {
-            "units": 7,
-            "clp": 29353
+            "units": 8,
+            "clp": 33546,
+            "costos": 22174
+          }
+        }
+      },
+      {
+        "store": "Mall Portal Temuco",
+        "storeCode": "10068 Ripley - Av. Alemania 0671, Temuco",
+        "region": "09 - La Araucanía",
+        "units": 513,
+        "clp": 3597167,
+        "costos": 2741083,
+        "margin": 23.8,
+        "stockUnits": 3469,
+        "weeksOfStock": 24.2,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 202,
+            "clp": 1220863,
+            "costos": 1229877
+          },
+          "Ropa Interior": {
+            "units": 244,
+            "clp": 1693157,
+            "costos": 1012692
+          },
+          "Calzado": {
+            "units": 21,
+            "clp": 188556,
+            "costos": 186799
+          },
+          "Accesorios y Otros": {
+            "units": 46,
+            "clp": 494591,
+            "costos": 311715
           }
         }
       },
@@ -14942,24 +16732,103 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Egaña",
         "storeCode": "10071 Ripley - Larraín 5862, La Reina",
         "region": "13 - Metropolitana de Santiago",
-        "units": 405,
-        "clp": 2733330,
+        "units": 505,
+        "clp": 3414568,
+        "costos": 3064110,
+        "margin": 10.3,
+        "stockUnits": 2782,
+        "weeksOfStock": 19.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 253,
-            "clp": 1512946
+            "units": 323,
+            "clp": 1894604,
+            "costos": 2014226
           },
           "Ropa Interior": {
-            "units": 93,
-            "clp": 789184
+            "units": 121,
+            "clp": 1051393,
+            "costos": 612869
           },
           "Calzado": {
-            "units": 32,
-            "clp": 221343
+            "units": 31,
+            "clp": 217563,
+            "costos": 262163
           },
           "Accesorios y Otros": {
-            "units": 27,
-            "clp": 209857
+            "units": 30,
+            "clp": 251008,
+            "costos": 174852
+          }
+        }
+      },
+      {
+        "store": "Coquimbo",
+        "storeCode": "10069 Ripley - Baquedano 86, Coquimbo",
+        "region": "04 - Coquimbo",
+        "units": 491,
+        "clp": 3433773,
+        "costos": 2577643,
+        "margin": 24.9,
+        "stockUnits": 1367,
+        "weeksOfStock": 9.9,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 207,
+            "clp": 1126293,
+            "costos": 1178248
+          },
+          "Accesorios y Otros": {
+            "units": 41,
+            "clp": 294273,
+            "costos": 189174
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 6706,
+            "costos": 10200
+          },
+          "Ropa Interior": {
+            "units": 240,
+            "clp": 1995414,
+            "costos": 1189858
+          },
+          "Calzado": {
+            "units": 1,
+            "clp": 11087,
+            "costos": 10163
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Los Ángeles",
+        "storeCode": "10072 Ripley - Calle Valdivia 440, Los Ángeles",
+        "region": "08 - Biobío",
+        "units": 472,
+        "clp": 2901589,
+        "costos": 2743790,
+        "margin": 5.4,
+        "stockUnits": 1706,
+        "weeksOfStock": 12.9,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 375,
+            "clp": 2129987,
+            "costos": 2239594
+          },
+          "Accesorios y Otros": {
+            "units": 25,
+            "clp": 141806,
+            "costos": 94809
+          },
+          "Ropa Interior": {
+            "units": 71,
+            "clp": 618204,
+            "costos": 398761
+          },
+          "Calzado": {
+            "units": 1,
+            "clp": 11592,
+            "costos": 10626
           }
         }
       },
@@ -14967,20 +16836,32 @@ const REAL_SELLOUT = {
         "store": "Concepción 2",
         "storeCode": "10011 Ripley - Castellón 520, Concepción",
         "region": "08 - Biobío",
-        "units": 380,
-        "clp": 2281753,
+        "units": 462,
+        "clp": 2784973,
+        "costos": 2589306,
+        "margin": 7.0,
+        "stockUnits": 1357,
+        "weeksOfStock": 10.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 299,
-            "clp": 1700906
+            "units": 359,
+            "clp": 2035722,
+            "costos": 2129340
           },
           "Ropa Interior": {
-            "units": 50,
-            "clp": 361769
+            "units": 66,
+            "clp": 479797,
+            "costos": 287590
           },
           "Accesorios y Otros": {
-            "units": 31,
-            "clp": 219078
+            "units": 36,
+            "clp": 265254,
+            "costos": 161876
+          },
+          "Calzado": {
+            "units": 1,
+            "clp": 4200,
+            "costos": 10500
           }
         }
       },
@@ -14988,24 +16869,32 @@ const REAL_SELLOUT = {
         "store": "Crillón",
         "storeCode": "10019 Ripley - Agustinas 1025, Santiago",
         "region": "13 - Metropolitana de Santiago",
-        "units": 376,
-        "clp": 2193758,
+        "units": 460,
+        "clp": 2694804,
+        "costos": 2560558,
+        "margin": 5.0,
+        "stockUnits": 1702,
+        "weeksOfStock": 13.2,
         "byDivision": {
           "Accesorios y Otros": {
             "units": 36,
-            "clp": 146755
+            "clp": 146755,
+            "costos": 90497
           },
           "Vestuario Infantil": {
-            "units": 308,
-            "clp": 1793023
+            "units": 375,
+            "clp": 2178240,
+            "costos": 2233425
           },
           "Ropa Interior": {
-            "units": 31,
-            "clp": 247855
+            "units": 49,
+            "clp": 371239,
+            "costos": 239131
           },
           "Calzado": {
-            "units": 1,
-            "clp": 6125
+            "units": 0,
+            "clp": -1430,
+            "costos": -2495
           }
         }
       },
@@ -15013,24 +16902,32 @@ const REAL_SELLOUT = {
         "store": "La Calera",
         "storeCode": "10079 Ripley - J.J. Pérez 90, Calera",
         "region": "05 - Valparaíso",
-        "units": 343,
-        "clp": 2012068,
+        "units": 429,
+        "clp": 2497118,
+        "costos": 2540449,
+        "margin": -1.7,
+        "stockUnits": 963,
+        "weeksOfStock": 8.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 259,
-            "clp": 1461695
+            "units": 326,
+            "clp": 1814258,
+            "costos": 1980341
           },
           "Ropa Interior": {
-            "units": 29,
-            "clp": 319170
+            "units": 37,
+            "clp": 413561,
+            "costos": 269986
           },
           "Calzado": {
-            "units": 38,
-            "clp": 158014
+            "units": 45,
+            "clp": 179337,
+            "costos": 238158
           },
           "Accesorios y Otros": {
-            "units": 17,
-            "clp": 73189
+            "units": 21,
+            "clp": 89962,
+            "costos": 51964
           }
         }
       },
@@ -15038,24 +16935,32 @@ const REAL_SELLOUT = {
         "store": "Quilpué",
         "storeCode": "10085 Ripley - Claudio Vicuña 992, Quilpué",
         "region": "05 - Valparaíso",
-        "units": 339,
-        "clp": 1877949,
+        "units": 420,
+        "clp": 2346128,
+        "costos": 2184175,
+        "margin": 6.9,
+        "stockUnits": 1813,
+        "weeksOfStock": 15.4,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 250,
-            "clp": 1304926
+            "units": 300,
+            "clp": 1544199,
+            "costos": 1667319
           },
           "Ropa Interior": {
-            "units": 66,
-            "clp": 465219
+            "units": 90,
+            "clp": 654683,
+            "costos": 414018
           },
           "Accesorios y Otros": {
-            "units": 19,
-            "clp": 75469
+            "units": 25,
+            "clp": 105671,
+            "costos": 57569
           },
           "Calzado": {
-            "units": 4,
-            "clp": 32335
+            "units": 5,
+            "clp": 41575,
+            "costos": 45269
           }
         }
       },
@@ -15063,53 +16968,37 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Oeste",
         "storeCode": "10045 Ripley - Américo Vespucio 1501, Cerrillos",
         "region": "13 - Metropolitana de Santiago",
-        "units": 324,
-        "clp": 2091704,
+        "units": 420,
+        "clp": 2698598,
+        "costos": 2517362,
+        "margin": 6.7,
+        "stockUnits": 2408,
+        "weeksOfStock": 20.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 270,
-            "clp": 1461231
+            "units": 341,
+            "clp": 1835978,
+            "costos": 1946614
           },
           "Calzado": {
             "units": 5,
-            "clp": 22398
+            "clp": 22398,
+            "costos": 32125
           },
           "Accesorios y Otros": {
-            "units": 22,
-            "clp": 273764
+            "units": 32,
+            "clp": 369478,
+            "costos": 251293
           },
           "Ropa Interior": {
-            "units": 26,
-            "clp": 331798
+            "units": 41,
+            "clp": 468231,
+            "costos": 282230
           },
           "Vestuario Adulto": {
             "units": 1,
-            "clp": 2513
-          }
-        }
-      },
-      {
-        "store": "Valparaíso",
-        "storeCode": "10025 Ripley - Plaza Victoria 1646, Valparaíso",
-        "region": "05 - Valparaíso",
-        "units": 284,
-        "clp": 1591700,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 218,
-            "clp": 1138729
-          },
-          "Accesorios y Otros": {
-            "units": 40,
-            "clp": 247559
-          },
-          "Calzado": {
-            "units": 0,
-            "clp": 11089
-          },
-          "Ropa Interior": {
-            "units": 26,
-            "clp": 194323
+            "clp": 2513,
+            "costos": 5100
           }
         }
       },
@@ -15117,20 +17006,60 @@ const REAL_SELLOUT = {
         "store": "Puerto Montt Urmeta",
         "storeCode": "10014 Ripley - Urmeneta 595, Puerto Montt",
         "region": "10 - Los Lagos",
-        "units": 276,
-        "clp": 1891422,
+        "units": 381,
+        "clp": 2585672,
+        "costos": 2196404,
+        "margin": 15.1,
+        "stockUnits": 1552,
+        "weeksOfStock": 14.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 191,
-            "clp": 1211456
+            "units": 267,
+            "clp": 1660892,
+            "costos": 1633980
           },
           "Ropa Interior": {
-            "units": 52,
-            "clp": 447470
+            "units": 76,
+            "clp": 641065,
+            "costos": 389819
           },
           "Accesorios y Otros": {
-            "units": 33,
-            "clp": 232496
+            "units": 38,
+            "clp": 283715,
+            "costos": 172605
+          }
+        }
+      },
+      {
+        "store": "Valparaíso",
+        "storeCode": "10025 Ripley - Plaza Victoria 1646, Valparaíso",
+        "region": "05 - Valparaíso",
+        "units": 351,
+        "clp": 2007156,
+        "costos": 1943475,
+        "margin": 3.2,
+        "stockUnits": 1607,
+        "weeksOfStock": 16.4,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 265,
+            "clp": 1374522,
+            "costos": 1530552
+          },
+          "Accesorios y Otros": {
+            "units": 46,
+            "clp": 302130,
+            "costos": 199207
+          },
+          "Calzado": {
+            "units": 1,
+            "clp": 12761,
+            "costos": 7419
+          },
+          "Ropa Interior": {
+            "units": 39,
+            "clp": 317743,
+            "costos": 206297
           }
         }
       },
@@ -15138,66 +17067,32 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Urbano Los Andes",
         "storeCode": "10010 Ripley - Santa Teresa 683, Los Andes",
         "region": "05 - Valparaíso",
-        "units": 274,
-        "clp": 1644746,
+        "units": 324,
+        "clp": 1923589,
+        "costos": 1869226,
+        "margin": 2.8,
+        "stockUnits": 2156,
+        "weeksOfStock": 23.8,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 227,
-            "clp": 1406685
+            "units": 268,
+            "clp": 1642821,
+            "costos": 1639989
           },
           "Ropa Interior": {
-            "units": 22,
-            "clp": 139864
+            "units": 26,
+            "clp": 161515,
+            "costos": 109055
           },
           "Calzado": {
-            "units": 8,
-            "clp": 27331
+            "units": 9,
+            "clp": 31614,
+            "costos": 49142
           },
           "Accesorios y Otros": {
-            "units": 17,
-            "clp": 70866
-          }
-        }
-      },
-      {
-        "store": "La Serena",
-        "storeCode": "10041 Ripley - Gregorio Cordovéz 499, La Serena",
-        "region": "04 - Coquimbo",
-        "units": 270,
-        "clp": 1736399,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 176,
-            "clp": 926045
-          },
-          "Ropa Interior": {
-            "units": 56,
-            "clp": 443446
-          },
-          "Accesorios y Otros": {
-            "units": 38,
-            "clp": 366908
-          }
-        }
-      },
-      {
-        "store": "Mall Paseo Costanera",
-        "storeCode": "10078 Ripley - Juan Soler Mandefredini 10, Puerto Montt",
-        "region": "10 - Los Lagos",
-        "units": 249,
-        "clp": 1642251,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 136,
-            "clp": 941512
-          },
-          "Ropa Interior": {
-            "units": 33,
-            "clp": 209812
-          },
-          "Accesorios y Otros": {
-            "units": 80,
-            "clp": 490927
+            "units": 21,
+            "clp": 87639,
+            "costos": 71040
           }
         }
       },
@@ -15205,20 +17100,83 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Calama",
         "storeCode": "10051 Ripley - Av. Balmaceda 3242, Calama",
         "region": "02 - Antofagasta",
-        "units": 243,
-        "clp": 1295006,
+        "units": 312,
+        "clp": 1688736,
+        "costos": 1669385,
+        "margin": 1.1,
+        "stockUnits": 1487,
+        "weeksOfStock": 17.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 207,
-            "clp": 1092099
+            "units": 268,
+            "clp": 1419678,
+            "costos": 1490896
           },
           "Ropa Interior": {
-            "units": 19,
-            "clp": 131606
+            "units": 26,
+            "clp": 194404,
+            "costos": 132982
           },
           "Accesorios y Otros": {
-            "units": 17,
-            "clp": 71301
+            "units": 18,
+            "clp": 74654,
+            "costos": 45507
+          }
+        }
+      },
+      {
+        "store": "Mall Paseo Costanera",
+        "storeCode": "10078 Ripley - Juan Soler Mandefredini 10, Puerto Montt",
+        "region": "10 - Los Lagos",
+        "units": 305,
+        "clp": 2082612,
+        "costos": 1651954,
+        "margin": 20.7,
+        "stockUnits": 1190,
+        "weeksOfStock": 13.9,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 172,
+            "clp": 1233300,
+            "costos": 1145573
+          },
+          "Ropa Interior": {
+            "units": 39,
+            "clp": 255141,
+            "costos": 152513
+          },
+          "Accesorios y Otros": {
+            "units": 94,
+            "clp": 594171,
+            "costos": 353868
+          }
+        }
+      },
+      {
+        "store": "La Serena",
+        "storeCode": "10041 Ripley - Gregorio Cordovéz 499, La Serena",
+        "region": "04 - Coquimbo",
+        "units": 302,
+        "clp": 2012204,
+        "costos": 1698128,
+        "margin": 15.6,
+        "stockUnits": 1425,
+        "weeksOfStock": 16.9,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 193,
+            "clp": 1060799,
+            "costos": 1106426
+          },
+          "Ropa Interior": {
+            "units": 65,
+            "clp": 519841,
+            "costos": 309702
+          },
+          "Accesorios y Otros": {
+            "units": 44,
+            "clp": 431564,
+            "costos": 282000
           }
         }
       },
@@ -15226,20 +17184,27 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Arica",
         "storeCode": "10021 Ripley - Diego Portales 640, Arica",
         "region": "13 - Metropolitana de Santiago",
-        "units": 225,
-        "clp": 1327183,
+        "units": 260,
+        "clp": 1533676,
+        "costos": 1548564,
+        "margin": -1.0,
+        "stockUnits": 1213,
+        "weeksOfStock": 16.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 198,
-            "clp": 1158827
+            "units": 228,
+            "clp": 1332590,
+            "costos": 1419147
           },
           "Ropa Interior": {
-            "units": 23,
-            "clp": 146540
+            "units": 25,
+            "clp": 166691,
+            "costos": 110709
           },
           "Accesorios y Otros": {
-            "units": 4,
-            "clp": 21816
+            "units": 7,
+            "clp": 34395,
+            "costos": 18708
           }
         }
       },
@@ -15247,20 +17212,27 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Alameda",
         "storeCode": "10097 Ripley - Av. Libertador Bernardo OHiggins 3470, Estación Central",
         "region": "13 - Metropolitana de Santiago",
-        "units": 193,
-        "clp": 1163641,
+        "units": 249,
+        "clp": 1519791,
+        "costos": 1445749,
+        "margin": 4.9,
+        "stockUnits": 789,
+        "weeksOfStock": 11.3,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 144,
-            "clp": 761534
+            "units": 190,
+            "clp": 1020282,
+            "costos": 1113908
           },
           "Accesorios y Otros": {
-            "units": 48,
-            "clp": 398754
+            "units": 58,
+            "clp": 496156,
+            "costos": 328851
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 3353
+            "clp": 3353,
+            "costos": 2990
           }
         }
       },
@@ -15268,16 +17240,27 @@ const REAL_SELLOUT = {
         "store": "Plaza Viña",
         "storeCode": "10003 Ripley - Sucre 290, Viña del Mar",
         "region": "05 - Valparaíso",
-        "units": 141,
-        "clp": 915475,
+        "units": 196,
+        "clp": 1225843,
+        "costos": 1041985,
+        "margin": 15.0,
+        "stockUnits": 2341,
+        "weeksOfStock": 42.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 75,
-            "clp": 412663
+            "units": 119,
+            "clp": 643203,
+            "costos": 680943
           },
           "Accesorios y Otros": {
-            "units": 66,
-            "clp": 502812
+            "units": 75,
+            "clp": 570892,
+            "costos": 354204
+          },
+          "Ropa Interior": {
+            "units": 2,
+            "clp": 11748,
+            "costos": 6838
           }
         }
       },
@@ -15285,24 +17268,32 @@ const REAL_SELLOUT = {
         "store": "No Aplica",
         "storeCode": "10058 Ripley - Sin Dirección (Outlet La Serena)",
         "region": "04 - Coquimbo",
-        "units": 111,
-        "clp": 393522,
+        "units": 141,
+        "clp": 494746,
+        "costos": 816686,
+        "margin": -65.1,
+        "stockUnits": 550,
+        "weeksOfStock": 13.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 102,
-            "clp": 376911
+            "units": 129,
+            "clp": 473784,
+            "costos": 761876
           },
           "Calzado": {
-            "units": 4,
-            "clp": 7871
+            "units": 5,
+            "clp": 9718,
+            "costos": 23046
           },
           "Vestuario Adulto": {
             "units": 4,
-            "clp": 7068
+            "clp": 7068,
+            "costos": 21600
           },
           "Ropa Interior": {
-            "units": 1,
-            "clp": 1672
+            "units": 3,
+            "clp": 4176,
+            "costos": 10164
           }
         }
       },
@@ -15310,24 +17301,32 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Norte",
         "storeCode": "10048 Ripley - Av. Américo Vespucio 1737, Huechuraba",
         "region": "13 - Metropolitana de Santiago",
-        "units": 81,
-        "clp": 399489,
+        "units": 94,
+        "clp": 451096,
+        "costos": 285506,
+        "margin": 36.7,
+        "stockUnits": 369,
+        "weeksOfStock": 14.0,
         "byDivision": {
           "Vestuario Infantil": {
             "units": -2,
-            "clp": -13347
+            "clp": -17549,
+            "costos": -12637
           },
           "Accesorios y Otros": {
-            "units": 78,
-            "clp": 401028
+            "units": 85,
+            "clp": 431222,
+            "costos": 235335
           },
           "Calzado": {
-            "units": 1,
-            "clp": 1757
+            "units": 7,
+            "clp": 27372,
+            "costos": 42408
           },
           "Vestuario Adulto": {
             "units": 4,
-            "clp": 10051
+            "clp": 10051,
+            "costos": 20400
           }
         }
       },
@@ -15335,24 +17334,32 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Tobalaba",
         "storeCode": "10046 Ripley - Av. Camilo Henríquez 3296, Puente Alto",
         "region": "13 - Metropolitana de Santiago",
-        "units": 32,
-        "clp": 167367,
+        "units": 34,
+        "clp": 181220,
+        "costos": 132124,
+        "margin": 27.1,
+        "stockUnits": 368,
+        "weeksOfStock": 38.7,
         "byDivision": {
           "Accesorios y Otros": {
-            "units": 21,
-            "clp": 115790
+            "units": 22,
+            "clp": 124185,
+            "costos": 72637
           },
           "Ropa Interior": {
             "units": 5,
-            "clp": 27604
+            "clp": 27604,
+            "costos": 21915
           },
           "Calzado": {
-            "units": 0,
-            "clp": 4
+            "units": 1,
+            "clp": 5462,
+            "costos": 7390
           },
           "Vestuario Infantil": {
             "units": 6,
-            "clp": 23969
+            "clp": 23969,
+            "costos": 30182
           }
         }
       },
@@ -15360,20 +17367,32 @@ const REAL_SELLOUT = {
         "store": "San Fernando",
         "storeCode": "10023 Ripley - Bernardo OHiggins 757, San Fernando",
         "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 23,
-        "clp": 96862,
+        "units": 24,
+        "clp": 105933,
+        "costos": 63008,
+        "margin": 40.5,
+        "stockUnits": 35,
+        "weeksOfStock": 5.2,
         "byDivision": {
           "Vestuario Infantil": {
             "units": -1,
-            "clp": -5037
+            "clp": -5037,
+            "costos": -4785
           },
           "Vestuario Adulto": {
             "units": 1,
-            "clp": 2513
+            "clp": 2513,
+            "costos": 5100
           },
           "Accesorios y Otros": {
             "units": 23,
-            "clp": 99386
+            "clp": 99386,
+            "costos": 54713
+          },
+          "Ropa Interior": {
+            "units": 1,
+            "clp": 9071,
+            "costos": 7980
           }
         }
       }
@@ -15383,28 +17402,37 @@ const REAL_SELLOUT = {
         "store": "Mall Portal Rancagua",
         "storeCode": "040 Paris - Presidente Eduardo Frei Montalva 750, Rancagua",
         "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 757,
-        "clp": 5508090,
+        "units": 824,
+        "clp": 6347584,
+        "costos": 5697691,
+        "margin": 10.2,
+        "stockUnits": 1121,
+        "weeksOfStock": 4.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 444,
-            "clp": 2674907
+            "units": 486,
+            "clp": 3136821,
+            "costos": 3462624
           },
           "Calzado": {
-            "units": 113,
-            "clp": 1808153
+            "units": 132,
+            "clp": 2116184,
+            "costos": 1111250
           },
           "Accesorios y Otros": {
-            "units": 110,
-            "clp": 374914
+            "units": 111,
+            "clp": 380904,
+            "costos": 448560
           },
           "Vestuario Adulto": {
             "units": 25,
-            "clp": 136754
+            "clp": 136754,
+            "costos": 138623
           },
           "Ropa Interior": {
-            "units": 65,
-            "clp": 513362
+            "units": 70,
+            "clp": 576921,
+            "costos": 536634
           }
         }
       },
@@ -15412,28 +17440,37 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Norte",
         "storeCode": "037 Paris - Américo Vespucio 1737, Huechuraba",
         "region": "13 - Metropolitana de Santiago",
-        "units": 526,
-        "clp": 4308050,
+        "units": 647,
+        "clp": 5302214,
+        "costos": 4686516,
+        "margin": 11.6,
+        "stockUnits": 1324,
+        "weeksOfStock": 7.3,
         "byDivision": {
           "Ropa Interior": {
-            "units": 291,
-            "clp": 1825380
+            "units": 348,
+            "clp": 2198348,
+            "costos": 2544117
           },
           "Vestuario Adulto": {
             "units": 16,
-            "clp": 60912
+            "clp": 60912,
+            "costos": 81322
           },
           "Calzado": {
-            "units": 123,
-            "clp": 1796971
+            "units": 152,
+            "clp": 2249802,
+            "costos": 1198085
           },
           "Vestuario Infantil": {
-            "units": 92,
-            "clp": 608821
+            "units": 127,
+            "clp": 777186,
+            "costos": 812273
           },
           "Accesorios y Otros": {
             "units": 4,
-            "clp": 15966
+            "clp": 15966,
+            "costos": 50719
           }
         }
       },
@@ -15441,86 +17478,37 @@ const REAL_SELLOUT = {
         "store": "Mall Marina Arauco",
         "storeCode": "022 Paris - Av. Libertad 1390, Viña del Mar",
         "region": "05 - Valparaíso",
-        "units": 480,
-        "clp": 5311417,
+        "units": 575,
+        "clp": 6299265,
+        "costos": 4061482,
+        "margin": 35.5,
+        "stockUnits": 1111,
+        "weeksOfStock": 6.9,
         "byDivision": {
           "Ropa Interior": {
-            "units": 52,
-            "clp": 484121
+            "units": 59,
+            "clp": 559056,
+            "costos": 436377
           },
           "Vestuario Infantil": {
-            "units": 284,
-            "clp": 2678357
+            "units": 349,
+            "clp": 3316112,
+            "costos": 2339200
           },
           "Calzado": {
-            "units": 115,
-            "clp": 1911139
+            "units": 132,
+            "clp": 2160543,
+            "costos": 1073638
           },
           "Vestuario Adulto": {
-            "units": 13,
-            "clp": 118924
+            "units": 15,
+            "clp": 125718,
+            "costos": 84272
           },
           "Accesorios y Otros": {
-            "units": 16,
-            "clp": 118876
-          }
-        }
-      },
-      {
-        "store": "Mall Costanera Center",
-        "storeCode": "115 Paris - Av. Andrés Bello 2447, Providencia",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 406,
-        "clp": 3954582,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 137,
-            "clp": 1167948
-          },
-          "Ropa Interior": {
-            "units": 134,
-            "clp": 1040170
-          },
-          "Accesorios y Otros": {
-            "units": 18,
-            "clp": 118384
-          },
-          "Calzado": {
-            "units": 115,
-            "clp": 1610090
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 17990
-          }
-        }
-      },
-      {
-        "store": "Temuco",
-        "storeCode": "087 Paris - Arturo Prat 444, Temuco",
-        "region": "09 - La Araucanía",
-        "units": 365,
-        "clp": 4068275,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 223,
-            "clp": 2155052
-          },
-          "Calzado": {
-            "units": 96,
-            "clp": 1583050
-          },
-          "Accesorios y Otros": {
-            "units": 9,
-            "clp": 55948
-          },
-          "Ropa Interior": {
-            "units": 19,
-            "clp": 151381
-          },
-          "Vestuario Adulto": {
-            "units": 18,
-            "clp": 122844
+            "units": 20,
+            "clp": 137836,
+            "costos": 127995
           }
         }
       },
@@ -15528,28 +17516,75 @@ const REAL_SELLOUT = {
         "store": "Mall Arauco Maipú",
         "storeCode": "102 Paris - Av. Américo Vespucio 399, Maipú",
         "region": "13 - Metropolitana de Santiago",
-        "units": 356,
-        "clp": 3835087,
+        "units": 478,
+        "clp": 4781429,
+        "costos": 2933644,
+        "margin": 38.6,
+        "stockUnits": 1201,
+        "weeksOfStock": 9.0,
         "byDivision": {
           "Accesorios y Otros": {
-            "units": 137,
-            "clp": 766787
+            "units": 204,
+            "clp": 1049709,
+            "costos": 866740
           },
           "Calzado": {
-            "units": 126,
-            "clp": 2080248
+            "units": 149,
+            "clp": 2414941,
+            "costos": 1214006
           },
           "Vestuario Infantil": {
-            "units": 71,
-            "clp": 781904
+            "units": 94,
+            "clp": 1031302,
+            "costos": 622396
           },
           "Vestuario Adulto": {
             "units": 9,
-            "clp": 85935
+            "clp": 85935,
+            "costos": 69894
           },
           "Ropa Interior": {
-            "units": 13,
-            "clp": 120213
+            "units": 22,
+            "clp": 199542,
+            "costos": 160608
+          }
+        }
+      },
+      {
+        "store": "Mall Costanera Center",
+        "storeCode": "115 Paris - Av. Andrés Bello 2447, Providencia",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 467,
+        "clp": 4558400,
+        "costos": 3202089,
+        "margin": 29.8,
+        "stockUnits": 1572,
+        "weeksOfStock": 12.0,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 154,
+            "clp": 1351796,
+            "costos": 940197
+          },
+          "Ropa Interior": {
+            "units": 163,
+            "clp": 1207571,
+            "costos": 1156921
+          },
+          "Accesorios y Otros": {
+            "units": 19,
+            "clp": 124374,
+            "costos": 93669
+          },
+          "Calzado": {
+            "units": 129,
+            "clp": 1856669,
+            "costos": 994139
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 17990,
+            "costos": 17163
           }
         }
       },
@@ -15557,57 +17592,37 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Oeste",
         "storeCode": "010 Paris - Américo Vespucio 1501, Cerrillos",
         "region": "13 - Metropolitana de Santiago",
-        "units": 320,
-        "clp": 3553740,
+        "units": 462,
+        "clp": 4665560,
+        "costos": 3231848,
+        "margin": 30.7,
+        "stockUnits": 1443,
+        "weeksOfStock": 11.2,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 95,
-            "clp": 929833
+            "units": 154,
+            "clp": 1363673,
+            "costos": 1006803
           },
           "Accesorios y Otros": {
-            "units": 16,
-            "clp": 96983
+            "units": 27,
+            "clp": 162874,
+            "costos": 110350
           },
           "Calzado": {
-            "units": 144,
-            "clp": 2020655
+            "units": 163,
+            "clp": 2304275,
+            "costos": 1238385
           },
           "Vestuario Adulto": {
-            "units": 24,
-            "clp": 161199
+            "units": 25,
+            "clp": 171195,
+            "costos": 144675
           },
           "Ropa Interior": {
-            "units": 41,
-            "clp": 345070
-          }
-        }
-      },
-      {
-        "store": "Mall Parque Arauco",
-        "storeCode": "088 Paris - Av. Kennedy 5225, Las Condes",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 318,
-        "clp": 3029300,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 60,
-            "clp": 423068
-          },
-          "Vestuario Infantil": {
-            "units": 110,
-            "clp": 847347
-          },
-          "Calzado": {
-            "units": 98,
-            "clp": 1400166
-          },
-          "Ropa Interior": {
-            "units": 33,
-            "clp": 246887
-          },
-          "Vestuario Adulto": {
-            "units": 17,
-            "clp": 111832
+            "units": 93,
+            "clp": 663543,
+            "costos": 731635
           }
         }
       },
@@ -15615,28 +17630,113 @@ const REAL_SELLOUT = {
         "store": "Mall Alto Las Condes",
         "storeCode": "020 Paris - Av. Kennedy 9001, Las Condes",
         "region": "13 - Metropolitana de Santiago",
-        "units": 310,
-        "clp": 1874807,
+        "units": 456,
+        "clp": 2615983,
+        "costos": 3118336,
+        "margin": -19.2,
+        "stockUnits": 1344,
+        "weeksOfStock": 10.5,
         "byDivision": {
           "Calzado": {
-            "units": 59,
-            "clp": 645603
+            "units": 85,
+            "clp": 791076,
+            "costos": 651966
           },
           "Accesorios y Otros": {
-            "units": 40,
-            "clp": 244717
+            "units": 53,
+            "clp": 322589,
+            "costos": 237200
           },
           "Vestuario Infantil": {
-            "units": 177,
-            "clp": 765617
+            "units": 256,
+            "clp": 1158678,
+            "costos": 1741749
           },
           "Ropa Interior": {
-            "units": 28,
-            "clp": 186929
+            "units": 56,
+            "clp": 311699,
+            "costos": 456112
           },
           "Vestuario Adulto": {
             "units": 6,
-            "clp": 31941
+            "clp": 31941,
+            "costos": 31309
+          }
+        }
+      },
+      {
+        "store": "Temuco",
+        "storeCode": "087 Paris - Arturo Prat 444, Temuco",
+        "region": "09 - La Araucanía",
+        "units": 429,
+        "clp": 4994880,
+        "costos": 2784611,
+        "margin": 44.3,
+        "stockUnits": 960,
+        "weeksOfStock": 8.0,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 259,
+            "clp": 2545928,
+            "costos": 1507018
+          },
+          "Calzado": {
+            "units": 118,
+            "clp": 2048829,
+            "costos": 978315
+          },
+          "Accesorios y Otros": {
+            "units": 9,
+            "clp": 55948,
+            "costos": 41600
+          },
+          "Ropa Interior": {
+            "units": 24,
+            "clp": 211335,
+            "costos": 147692
+          },
+          "Vestuario Adulto": {
+            "units": 19,
+            "clp": 132840,
+            "costos": 109986
+          }
+        }
+      },
+      {
+        "store": "Mall Parque Arauco",
+        "storeCode": "088 Paris - Av. Kennedy 5225, Las Condes",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 405,
+        "clp": 4072164,
+        "costos": 2804832,
+        "margin": 31.1,
+        "stockUnits": 1714,
+        "weeksOfStock": 15.1,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 86,
+            "clp": 679813,
+            "costos": 612222
+          },
+          "Vestuario Infantil": {
+            "units": 143,
+            "clp": 1218686,
+            "costos": 898101
+          },
+          "Calzado": {
+            "units": 109,
+            "clp": 1636058,
+            "costos": 831613
+          },
+          "Ropa Interior": {
+            "units": 50,
+            "clp": 425775,
+            "costos": 360926
+          },
+          "Vestuario Adulto": {
+            "units": 17,
+            "clp": 111832,
+            "costos": 101970
           }
         }
       },
@@ -15644,111 +17744,37 @@ const REAL_SELLOUT = {
         "store": "Mall Portal Temuco",
         "storeCode": "041 Paris - Av. Alemania 0671, Temuco",
         "region": "09 - La Araucanía",
-        "units": 304,
-        "clp": 3023792,
+        "units": 370,
+        "clp": 3762928,
+        "costos": 2536267,
+        "margin": 32.6,
+        "stockUnits": 922,
+        "weeksOfStock": 8.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 132,
-            "clp": 1349359
+            "units": 163,
+            "clp": 1666703,
+            "costos": 1042696
           },
           "Accesorios y Otros": {
-            "units": 15,
-            "clp": 97888
+            "units": 23,
+            "clp": 145809,
+            "costos": 106900
           },
           "Ropa Interior": {
-            "units": 86,
-            "clp": 548391
+            "units": 100,
+            "clp": 632391,
+            "costos": 718312
           },
           "Calzado": {
-            "units": 50,
-            "clp": 904324
+            "units": 62,
+            "clp": 1188205,
+            "costos": 557269
           },
           "Vestuario Adulto": {
-            "units": 21,
-            "clp": 123830
-          }
-        }
-      },
-      {
-        "store": "Mall Paseo San Bernardo",
-        "storeCode": "101 Paris - Eyzaguirre 650, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 303,
-        "clp": 3019223,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 60,
-            "clp": 565856
-          },
-          "Accesorios y Otros": {
-            "units": 14,
-            "clp": 81924
-          },
-          "Calzado": {
-            "units": 109,
-            "clp": 1376917
-          },
-          "Vestuario Adulto": {
-            "units": 12,
-            "clp": 86896
-          },
-          "Ropa Interior": {
-            "units": 108,
-            "clp": 907630
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza El Trébol",
-        "storeCode": "016 Paris - Av. Jorge Alessandri 3177, Talcahuano",
-        "region": "08 - Biobío",
-        "units": 295,
-        "clp": 3288666,
-        "byDivision": {
-          "Vestuario Adulto": {
-            "units": 7,
-            "clp": 43931
-          },
-          "Calzado": {
-            "units": 88,
-            "clp": 1774340
-          },
-          "Vestuario Infantil": {
-            "units": 128,
-            "clp": 921841
-          },
-          "Ropa Interior": {
-            "units": 50,
-            "clp": 411715
-          },
-          "Accesorios y Otros": {
             "units": 22,
-            "clp": 136839
-          }
-        }
-      },
-      {
-        "store": "Internet",
-        "storeCode": "032 Paris - Camino Vecinal 8630 (Internet), Renca",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 292,
-        "clp": 2674989,
-        "byDivision": {
-          "Calzado": {
-            "units": 150,
-            "clp": 1469246
-          },
-          "Vestuario Adulto": {
-            "units": 85,
-            "clp": 715009
-          },
-          "Vestuario Infantil": {
-            "units": 56,
-            "clp": 463744
-          },
-          "Ropa Interior": {
-            "units": 1,
-            "clp": 26990
+            "clp": 129820,
+            "costos": 111090
           }
         }
       },
@@ -15756,115 +17782,113 @@ const REAL_SELLOUT = {
         "store": "Mall Portal Valparaiso",
         "storeCode": "013 Paris - Av. Argentina 51, Valparaíso",
         "region": "05 - Valparaíso",
-        "units": 288,
-        "clp": 2212096,
+        "units": 367,
+        "clp": 2753984,
+        "costos": 2082042,
+        "margin": 24.4,
+        "stockUnits": 691,
+        "weeksOfStock": 6.7,
         "byDivision": {
           "Ropa Interior": {
+            "units": 95,
+            "clp": 846189,
+            "costos": 671892
+          },
+          "Vestuario Infantil": {
+            "units": 129,
+            "clp": 1101359,
+            "costos": 788834
+          },
+          "Calzado": {
+            "units": 2,
+            "clp": 14980,
+            "costos": 12597
+          },
+          "Vestuario Adulto": {
+            "units": 32,
+            "clp": 167737,
+            "costos": 163269
+          },
+          "Accesorios y Otros": {
+            "units": 109,
+            "clp": 623719,
+            "costos": 445450
+          }
+        }
+      },
+      {
+        "store": "Mall Paseo San Bernardo",
+        "storeCode": "101 Paris - Eyzaguirre 650, San Bernardo",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 367,
+        "clp": 3796534,
+        "costos": 2474719,
+        "margin": 34.8,
+        "stockUnits": 945,
+        "weeksOfStock": 9.2,
+        "byDivision": {
+          "Vestuario Infantil": {
             "units": 78,
-            "clp": 690833
-          },
-          "Vestuario Infantil": {
-            "units": 110,
-            "clp": 908436
-          },
-          "Calzado": {
-            "units": 1,
-            "clp": 7990
-          },
-          "Vestuario Adulto": {
-            "units": 10,
-            "clp": 87942
+            "clp": 749105,
+            "costos": 472744
           },
           "Accesorios y Otros": {
-            "units": 89,
-            "clp": 516895
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Vespucio",
-        "storeCode": "089 Paris - Vicuña Mackenna 7110, La Florida",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 286,
-        "clp": 3079965,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 57,
-            "clp": 651029
-          },
-          "Accesorios y Otros": {
-            "units": 72,
-            "clp": 396465
+            "units": 18,
+            "clp": 104884,
+            "costos": 75550
           },
           "Calzado": {
-            "units": 104,
-            "clp": 1538260
-          },
-          "Ropa Interior": {
-            "units": 42,
-            "clp": 410125
-          },
-          "Vestuario Adulto": {
-            "units": 11,
-            "clp": 84086
-          }
-        }
-      },
-      {
-        "store": "Mall Paseo Quilín",
-        "storeCode": "118 Paris - Av. Américo Vespucio 3300, Peñalolén",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 280,
-        "clp": 1865782,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 84,
-            "clp": 658013
-          },
-          "Accesorios y Otros": {
-            "units": 21,
-            "clp": 78834
-          },
-          "Ropa Interior": {
-            "units": 132,
-            "clp": 804229
-          },
-          "Vestuario Adulto": {
-            "units": 31,
-            "clp": 219816
-          },
-          "Calzado": {
-            "units": 12,
-            "clp": 104890
-          }
-        }
-      },
-      {
-        "store": "Mall Portal Osorno",
-        "storeCode": "109 Paris - Plazuela Yungay 645, Osorno",
-        "region": "10 - Los Lagos",
-        "units": 272,
-        "clp": 3407819,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 165,
-            "clp": 1747848
-          },
-          "Calzado": {
-            "units": 83,
-            "clp": 1476605
+            "units": 128,
+            "clp": 1762727,
+            "costos": 960314
           },
           "Vestuario Adulto": {
             "units": 16,
-            "clp": 136392
+            "clp": 119866,
+            "costos": 93463
           },
           "Ropa Interior": {
-            "units": 5,
-            "clp": 28990
+            "units": 127,
+            "clp": 1059952,
+            "costos": 872648
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza El Trébol",
+        "storeCode": "016 Paris - Av. Jorge Alessandri 3177, Talcahuano",
+        "region": "08 - Biobío",
+        "units": 361,
+        "clp": 3920179,
+        "costos": 2555850,
+        "margin": 34.8,
+        "stockUnits": 1230,
+        "weeksOfStock": 12.2,
+        "byDivision": {
+          "Vestuario Adulto": {
+            "units": 9,
+            "clp": 57911,
+            "costos": 57238
+          },
+          "Calzado": {
+            "units": 108,
+            "clp": 2115560,
+            "costos": 972000
+          },
+          "Vestuario Infantil": {
+            "units": 158,
+            "clp": 1101734,
+            "costos": 951487
+          },
+          "Ropa Interior": {
+            "units": 60,
+            "clp": 485175,
+            "costos": 457325
           },
           "Accesorios y Otros": {
-            "units": 3,
-            "clp": 17984
+            "units": 26,
+            "clp": 159799,
+            "costos": 117800
           }
         }
       },
@@ -15872,115 +17896,146 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Los Ángeles",
         "storeCode": "044 Paris - Calle Valdivia 440, Los Ángeles",
         "region": "08 - Biobío",
-        "units": 268,
-        "clp": 3280816,
+        "units": 353,
+        "clp": 4230855,
+        "costos": 2457337,
+        "margin": 41.9,
+        "stockUnits": 1070,
+        "weeksOfStock": 10.8,
         "byDivision": {
           "Calzado": {
-            "units": 84,
-            "clp": 1545967
+            "units": 104,
+            "clp": 1969970,
+            "costos": 945978
           },
           "Vestuario Adulto": {
-            "units": 11,
-            "clp": 90752
-          },
-          "Vestuario Infantil": {
-            "units": 109,
-            "clp": 1108556
-          },
-          "Ropa Interior": {
-            "units": 36,
-            "clp": 360722
-          },
-          "Accesorios y Otros": {
-            "units": 28,
-            "clp": 174819
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Antofagasta",
-        "storeCode": "030 Paris - Av. Balmaceda 2355, Antofagasta",
-        "region": "02 - Antofagasta",
-        "units": 260,
-        "clp": 2778907,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 164,
-            "clp": 1733760
-          },
-          "Accesorios y Otros": {
-            "units": 29,
-            "clp": 191772
-          },
-          "Calzado": {
-            "units": 49,
-            "clp": 724583
-          },
-          "Ropa Interior": {
             "units": 13,
-            "clp": 98826
+            "clp": 107503,
+            "costos": 72073
           },
-          "Vestuario Adulto": {
-            "units": 5,
-            "clp": 29966
+          "Vestuario Infantil": {
+            "units": 154,
+            "clp": 1456992,
+            "costos": 939985
+          },
+          "Ropa Interior": {
+            "units": 46,
+            "clp": 474646,
+            "costos": 339851
+          },
+          "Accesorios y Otros": {
+            "units": 36,
+            "clp": 221744,
+            "costos": 159450
           }
         }
       },
       {
-        "store": "Mall Arauco Chillán",
-        "storeCode": "060 Paris - El Roble 770, Chillán",
-        "region": "16 - Ñuble",
-        "units": 253,
-        "clp": 3394119,
+        "store": "Internet",
+        "storeCode": "032 Paris - Camino Vecinal 8630 (Internet), Renca",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 349,
+        "clp": 3204775,
+        "costos": 2281135,
+        "margin": 28.8,
+        "stockUnits": -1,
+        "weeksOfStock": -0.0,
         "byDivision": {
+          "Calzado": {
+            "units": 180,
+            "clp": 1786358,
+            "costos": 1229925
+          },
           "Vestuario Adulto": {
-            "units": 22,
-            "clp": 145828
+            "units": 102,
+            "clp": 858584,
+            "costos": 666251
+          },
+          "Vestuario Infantil": {
+            "units": 63,
+            "clp": 502873,
+            "costos": 357454
+          },
+          "Ropa Interior": {
+            "units": 4,
+            "clp": 56960,
+            "costos": 27505
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Vespucio",
+        "storeCode": "089 Paris - Vicuña Mackenna 7110, La Florida",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 341,
+        "clp": 3706418,
+        "costos": 2245163,
+        "margin": 39.4,
+        "stockUnits": 1182,
+        "weeksOfStock": 12.4,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 75,
+            "clp": 802121,
+            "costos": 473181
+          },
+          "Accesorios y Otros": {
+            "units": 79,
+            "clp": 437406,
+            "costos": 349400
           },
           "Calzado": {
             "units": 119,
-            "clp": 2063971
-          },
-          "Vestuario Infantil": {
-            "units": 104,
-            "clp": 1132867
-          },
-          "Accesorios y Otros": {
-            "units": 3,
-            "clp": 15489
+            "clp": 1804517,
+            "costos": 946712
           },
           "Ropa Interior": {
-            "units": 5,
-            "clp": 35964
+            "units": 56,
+            "clp": 572298,
+            "costos": 398165
+          },
+          "Vestuario Adulto": {
+            "units": 12,
+            "clp": 90076,
+            "costos": 77705
           }
         }
       },
       {
-        "store": "Mall Paseo Estación",
-        "storeCode": "106 Paris - San Francisco de Borja 122, Estación Central",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 242,
-        "clp": 1677918,
+        "store": "Mall Portal Osorno",
+        "storeCode": "109 Paris - Plazuela Yungay 645, Osorno",
+        "region": "10 - Los Lagos",
+        "units": 332,
+        "clp": 4186591,
+        "costos": 2293873,
+        "margin": 45.2,
+        "stockUnits": 905,
+        "weeksOfStock": 9.7,
         "byDivision": {
-          "Accesorios y Otros": {
-            "units": 53,
-            "clp": 276716
-          },
           "Vestuario Infantil": {
-            "units": 101,
-            "clp": 642063
-          },
-          "Ropa Interior": {
-            "units": 59,
-            "clp": 474342
+            "units": 197,
+            "clp": 2114900,
+            "costos": 1241327
           },
           "Calzado": {
-            "units": 25,
-            "clp": 249811
+            "units": 104,
+            "clp": 1804395,
+            "costos": 877643
           },
           "Vestuario Adulto": {
+            "units": 16,
+            "clp": 136392,
+            "costos": 94177
+          },
+          "Ropa Interior": {
+            "units": 11,
+            "clp": 106930,
+            "costos": 62526
+          },
+          "Accesorios y Otros": {
             "units": 4,
-            "clp": 34986
+            "clp": 23974,
+            "costos": 18200
           }
         }
       },
@@ -15988,28 +18043,37 @@ const REAL_SELLOUT = {
         "store": "Mall Arauco Quilicura",
         "storeCode": "119 Paris - OHiggins 581, Quilicura",
         "region": "13 - Metropolitana de Santiago",
-        "units": 236,
-        "clp": 2199349,
+        "units": 322,
+        "clp": 2881702,
+        "costos": 2585349,
+        "margin": 10.3,
+        "stockUnits": 641,
+        "weeksOfStock": 7.1,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 76,
-            "clp": 396885
+            "units": 115,
+            "clp": 597311,
+            "costos": 885231
           },
           "Calzado": {
-            "units": 92,
-            "clp": 1446991
+            "units": 109,
+            "clp": 1768223,
+            "costos": 917736
           },
           "Vestuario Adulto": {
-            "units": 15,
-            "clp": 80999
+            "units": 19,
+            "clp": 108959,
+            "costos": 115282
           },
           "Ropa Interior": {
-            "units": 52,
-            "clp": 269480
+            "units": 77,
+            "clp": 396225,
+            "costos": 658350
           },
           "Accesorios y Otros": {
-            "units": 1,
-            "clp": 4994
+            "units": 2,
+            "clp": 10984,
+            "costos": 8750
           }
         }
       },
@@ -16017,28 +18081,189 @@ const REAL_SELLOUT = {
         "store": "Mall Florida Center",
         "storeCode": "064 Paris - Av. Vicuña Mackenna 6100, La Florida",
         "region": "13 - Metropolitana de Santiago",
-        "units": 232,
-        "clp": 2607628,
+        "units": 320,
+        "clp": 3503292,
+        "costos": 2058508,
+        "margin": 41.2,
+        "stockUnits": 2539,
+        "weeksOfStock": 28.3,
         "byDivision": {
           "Accesorios y Otros": {
-            "units": 53,
-            "clp": 346621
+            "units": 77,
+            "clp": 517893,
+            "costos": 388665
           },
           "Vestuario Adulto": {
-            "units": 30,
-            "clp": 256245
+            "units": 34,
+            "clp": 290336,
+            "costos": 205034
           },
           "Vestuario Infantil": {
-            "units": 60,
-            "clp": 564893
+            "units": 99,
+            "clp": 913998,
+            "costos": 547821
           },
           "Calzado": {
-            "units": 74,
-            "clp": 1295184
+            "units": 89,
+            "clp": 1568440,
+            "costos": 760471
+          },
+          "Ropa Interior": {
+            "units": 21,
+            "clp": 212625,
+            "costos": 156517
+          }
+        }
+      },
+      {
+        "store": "Mall Paseo Quilín",
+        "storeCode": "118 Paris - Av. Américo Vespucio 3300, Peñalolén",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 319,
+        "clp": 2201640,
+        "costos": 1983695,
+        "margin": 9.9,
+        "stockUnits": 379,
+        "weeksOfStock": 4.2,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 102,
+            "clp": 853864,
+            "costos": 612289
+          },
+          "Accesorios y Otros": {
+            "units": 22,
+            "clp": 84824,
+            "costos": 79800
+          },
+          "Ropa Interior": {
+            "units": 147,
+            "clp": 892094,
+            "costos": 1007805
+          },
+          "Vestuario Adulto": {
+            "units": 33,
+            "clp": 231796,
+            "costos": 196886
+          },
+          "Calzado": {
+            "units": 15,
+            "clp": 139062,
+            "costos": 86915
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Antofagasta",
+        "storeCode": "030 Paris - Av. Balmaceda 2355, Antofagasta",
+        "region": "02 - Antofagasta",
+        "units": 309,
+        "clp": 3394175,
+        "costos": 1933787,
+        "margin": 43.0,
+        "stockUnits": 799,
+        "weeksOfStock": 9.2,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 201,
+            "clp": 2180435,
+            "costos": 1207282
+          },
+          "Accesorios y Otros": {
+            "units": 31,
+            "clp": 203752,
+            "costos": 140850
+          },
+          "Calzado": {
+            "units": 56,
+            "clp": 857819,
+            "costos": 446431
           },
           "Ropa Interior": {
             "units": 15,
-            "clp": 144685
+            "clp": 116213,
+            "costos": 108130
+          },
+          "Vestuario Adulto": {
+            "units": 6,
+            "clp": 35956,
+            "costos": 31094
+          }
+        }
+      },
+      {
+        "store": "Mall Arauco Chillán",
+        "storeCode": "060 Paris - El Roble 770, Chillán",
+        "region": "16 - Ñuble",
+        "units": 308,
+        "clp": 4180501,
+        "costos": 2247332,
+        "margin": 46.2,
+        "stockUnits": 1001,
+        "weeksOfStock": 11.6,
+        "byDivision": {
+          "Vestuario Adulto": {
+            "units": 30,
+            "clp": 232257,
+            "costos": 192651
+          },
+          "Calzado": {
+            "units": 152,
+            "clp": 2593645,
+            "costos": 1250831
+          },
+          "Vestuario Infantil": {
+            "units": 113,
+            "clp": 1246192,
+            "costos": 737635
+          },
+          "Accesorios y Otros": {
+            "units": 4,
+            "clp": 20483,
+            "costos": 15450
+          },
+          "Ropa Interior": {
+            "units": 9,
+            "clp": 87924,
+            "costos": 50765
+          }
+        }
+      },
+      {
+        "store": "Mall Paseo Estación",
+        "storeCode": "106 Paris - San Francisco de Borja 122, Estación Central",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 280,
+        "clp": 1957783,
+        "costos": 1637847,
+        "margin": 16.3,
+        "stockUnits": 642,
+        "weeksOfStock": 8.2,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 59,
+            "clp": 308690,
+            "costos": 221900
+          },
+          "Vestuario Infantil": {
+            "units": 108,
+            "clp": 704023,
+            "costos": 671342
+          },
+          "Ropa Interior": {
+            "units": 73,
+            "clp": 581331,
+            "costos": 507179
+          },
+          "Calzado": {
+            "units": 31,
+            "clp": 298801,
+            "costos": 184541
+          },
+          "Vestuario Adulto": {
+            "units": 9,
+            "clp": 64938,
+            "costos": 52885
           }
         }
       },
@@ -16046,28 +18271,37 @@ const REAL_SELLOUT = {
         "store": "Mall Portal El Belloto",
         "storeCode": "107 Paris - Av. Ramón Freire 2414, Quilpué",
         "region": "05 - Valparaíso",
-        "units": 215,
-        "clp": 2647001,
+        "units": 274,
+        "clp": 3409349,
+        "costos": 1878680,
+        "margin": 44.9,
+        "stockUnits": 609,
+        "weeksOfStock": 7.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 109,
-            "clp": 1312345
+            "units": 141,
+            "clp": 1708231,
+            "costos": 907942
           },
           "Ropa Interior": {
-            "units": 30,
-            "clp": 253822
+            "units": 41,
+            "clp": 366242,
+            "costos": 278690
           },
           "Calzado": {
-            "units": 58,
-            "clp": 962845
+            "units": 71,
+            "clp": 1199917,
+            "costos": 595251
           },
           "Accesorios y Otros": {
-            "units": 13,
-            "clp": 74920
+            "units": 15,
+            "clp": 86900,
+            "costos": 61050
           },
           "Vestuario Adulto": {
-            "units": 5,
-            "clp": 43069
+            "units": 6,
+            "clp": 48059,
+            "costos": 35747
           }
         }
       },
@@ -16075,28 +18309,37 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza La Serena",
         "storeCode": "021 Paris - Alberto Solari 1400, La Serena",
         "region": "04 - Coquimbo",
-        "units": 189,
-        "clp": 1947697,
+        "units": 249,
+        "clp": 2615078,
+        "costos": 1633434,
+        "margin": 37.5,
+        "stockUnits": 838,
+        "weeksOfStock": 12.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 69,
-            "clp": 829031
+            "units": 93,
+            "clp": 1054738,
+            "costos": 627763
           },
           "Accesorios y Otros": {
-            "units": 34,
-            "clp": 235212
+            "units": 41,
+            "clp": 275147,
+            "costos": 225016
           },
           "Ropa Interior": {
-            "units": 8,
-            "clp": 64439
+            "units": 9,
+            "clp": 69836,
+            "costos": 68446
           },
           "Calzado": {
-            "units": 48,
-            "clp": 554153
+            "units": 68,
+            "clp": 870569,
+            "costos": 507000
           },
           "Vestuario Adulto": {
-            "units": 30,
-            "clp": 264862
+            "units": 38,
+            "clp": 344788,
+            "costos": 205209
           }
         }
       },
@@ -16104,57 +18347,37 @@ const REAL_SELLOUT = {
         "store": "Barros Arana",
         "storeCode": "017 Paris - Castellón 539, Concepción",
         "region": "08 - Biobío",
-        "units": 185,
-        "clp": 2194034,
+        "units": 236,
+        "clp": 2842877,
+        "costos": 1575893,
+        "margin": 44.6,
+        "stockUnits": 1080,
+        "weeksOfStock": 16.3,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 103,
-            "clp": 1046767
+            "units": 124,
+            "clp": 1305066,
+            "costos": 743468
           },
           "Vestuario Adulto": {
-            "units": 11,
-            "clp": 73954
+            "units": 17,
+            "clp": 114922,
+            "costos": 95999
           },
           "Calzado": {
-            "units": 55,
-            "clp": 935730
+            "units": 71,
+            "clp": 1195386,
+            "costos": 608607
           },
           "Ropa Interior": {
-            "units": 10,
-            "clp": 102126
+            "units": 16,
+            "clp": 180066,
+            "costos": 94669
           },
           "Accesorios y Otros": {
-            "units": 6,
-            "clp": 35457
-          }
-        }
-      },
-      {
-        "store": "Mall Portal La Dehesa",
-        "storeCode": "123 Paris - La Dehesa 1445, Lo Barnechea",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 169,
-        "clp": 955904,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 29,
-            "clp": 173275
-          },
-          "Vestuario Infantil": {
-            "units": 81,
-            "clp": 420432
-          },
-          "Ropa Interior": {
-            "units": 14,
-            "clp": 141388
-          },
-          "Calzado": {
             "units": 8,
-            "clp": 33000
-          },
-          "Vestuario Adulto": {
-            "units": 37,
-            "clp": 187809
+            "clp": 47437,
+            "costos": 33150
           }
         }
       },
@@ -16162,28 +18385,75 @@ const REAL_SELLOUT = {
         "store": "Mall Vivo Coquimbo",
         "storeCode": "124 Paris - Baquedano 86, Coquimbo",
         "region": "04 - Coquimbo",
-        "units": 167,
-        "clp": 2159426,
+        "units": 208,
+        "clp": 2711522,
+        "costos": 1477399,
+        "margin": 45.5,
+        "stockUnits": 548,
+        "weeksOfStock": 9.4,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 69,
-            "clp": 871627
+            "units": 89,
+            "clp": 1106932,
+            "costos": 568462
           },
           "Vestuario Adulto": {
-            "units": 22,
-            "clp": 202824
+            "units": 25,
+            "clp": 228794,
+            "costos": 146005
           },
           "Ropa Interior": {
-            "units": 25,
-            "clp": 212770
+            "units": 29,
+            "clp": 247731,
+            "costos": 217826
           },
           "Calzado": {
-            "units": 47,
-            "clp": 848732
+            "units": 60,
+            "clp": 1098602,
+            "costos": 524706
           },
           "Accesorios y Otros": {
-            "units": 4,
-            "clp": 23473
+            "units": 5,
+            "clp": 29463,
+            "costos": 20400
+          }
+        }
+      },
+      {
+        "store": "Mall Portal La Dehesa",
+        "storeCode": "123 Paris - La Dehesa 1445, Lo Barnechea",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 204,
+        "clp": 1119812,
+        "costos": 1148879,
+        "margin": -2.6,
+        "stockUnits": 151,
+        "weeksOfStock": 2.6,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 34,
+            "clp": 200233,
+            "costos": 155669
+          },
+          "Vestuario Infantil": {
+            "units": 108,
+            "clp": 520412,
+            "costos": 638202
+          },
+          "Ropa Interior": {
+            "units": 17,
+            "clp": 178358,
+            "costos": 119628
+          },
+          "Calzado": {
+            "units": 8,
+            "clp": 33000,
+            "costos": 40304
+          },
+          "Vestuario Adulto": {
+            "units": 37,
+            "clp": 187809,
+            "costos": 195076
           }
         }
       },
@@ -16191,28 +18461,37 @@ const REAL_SELLOUT = {
         "store": "Mall Curicó",
         "storeCode": "019 Paris - OHiggins 201, Curicó",
         "region": "07 - Maule",
-        "units": 164,
-        "clp": 1713401,
+        "units": 190,
+        "clp": 1960198,
+        "costos": 1345443,
+        "margin": 31.4,
+        "stockUnits": 547,
+        "weeksOfStock": 10.3,
         "byDivision": {
           "Ropa Interior": {
-            "units": 36,
-            "clp": 330277
+            "units": 38,
+            "clp": 360257,
+            "costos": 258545
           },
           "Accesorios y Otros": {
-            "units": 10,
-            "clp": 61437
+            "units": 12,
+            "clp": 74414,
+            "costos": 56500
           },
           "Calzado": {
-            "units": 83,
-            "clp": 1150435
+            "units": 89,
+            "clp": 1250385,
+            "costos": 727373
           },
           "Vestuario Infantil": {
-            "units": 25,
-            "clp": 117332
+            "units": 33,
+            "clp": 173302,
+            "costos": 213047
           },
           "Vestuario Adulto": {
-            "units": 10,
-            "clp": 53920
+            "units": 18,
+            "clp": 101840,
+            "costos": 89978
           }
         }
       },
@@ -16220,28 +18499,37 @@ const REAL_SELLOUT = {
         "store": "Mall Paseo Costanera",
         "storeCode": "025 Paris - Egaña 20, Puerto Montt",
         "region": "10 - Los Lagos",
-        "units": 130,
-        "clp": 1537444,
+        "units": 166,
+        "clp": 2028614,
+        "costos": 1146304,
+        "margin": 43.5,
+        "stockUnits": 646,
+        "weeksOfStock": 13.9,
         "byDivision": {
           "Accesorios y Otros": {
             "units": 8,
-            "clp": 43950
+            "clp": 43950,
+            "costos": 33540
           },
           "Calzado": {
-            "units": 76,
-            "clp": 1166275
+            "units": 93,
+            "clp": 1501910,
+            "costos": 727686
           },
           "Vestuario Infantil": {
-            "units": 41,
-            "clp": 298259
+            "units": 59,
+            "clp": 447804,
+            "costos": 353934
           },
           "Vestuario Adulto": {
-            "units": 4,
-            "clp": 20970
+            "units": 5,
+            "clp": 26960,
+            "costos": 24455
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 7990
+            "clp": 7990,
+            "costos": 6689
           }
         }
       },
@@ -16249,140 +18537,37 @@ const REAL_SELLOUT = {
         "store": "Iquique",
         "storeCode": "103 Paris - Tarapacá 465, Iquique",
         "region": "01 - Tarapacá",
-        "units": 126,
-        "clp": 1176830,
+        "units": 154,
+        "clp": 1507687,
+        "costos": 1036914,
+        "margin": 31.2,
+        "stockUnits": 391,
+        "weeksOfStock": 9.1,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 68,
-            "clp": 628556
+            "units": 86,
+            "clp": 854789,
+            "costos": 583908
           },
           "Calzado": {
-            "units": 34,
-            "clp": 423963
-          },
-          "Accesorios y Otros": {
-            "units": 15,
-            "clp": 44361
-          },
-          "Vestuario Adulto": {
-            "units": 8,
-            "clp": 71956
-          },
-          "Ropa Interior": {
-            "units": 1,
-            "clp": 7994
-          }
-        }
-      },
-      {
-        "store": "Arica",
-        "storeCode": "110 Paris - 21 de Mayo #501, Arica",
-        "region": "15 - Arica y Parinacota",
-        "units": 111,
-        "clp": 1092681,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 8,
-            "clp": 46946
-          },
-          "Vestuario Infantil": {
             "units": 42,
-            "clp": 468787
-          },
-          "Vestuario Adulto": {
-            "units": 25,
-            "clp": 181790
-          },
-          "Calzado": {
-            "units": 26,
-            "clp": 313715
-          },
-          "Ropa Interior": {
-            "units": 10,
-            "clp": 81443
-          }
-        }
-      },
-      {
-        "store": "Copiapó",
-        "storeCode": "105 Paris - Copayapu 2406, Copiapó",
-        "region": "03 - Atacama",
-        "units": 109,
-        "clp": 1185685,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 79,
-            "clp": 905609
+            "clp": 522607,
+            "costos": 328978
           },
           "Accesorios y Otros": {
-            "units": 10,
-            "clp": 32461
+            "units": 17,
+            "clp": 50341,
+            "costos": 74350
           },
           "Vestuario Adulto": {
-            "units": 10,
-            "clp": 90952
-          },
-          "Calzado": {
-            "units": 10,
-            "clp": 156663
-          }
-        }
-      },
-      {
-        "store": "Mall Espacio Urbano Puente Alto",
-        "storeCode": "407 Paris - Av. Concha y Toro 1149, Puente Alto",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 109,
-        "clp": 1052593,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 35,
-            "clp": 227883
-          },
-          "Vestuario Infantil": {
-            "units": 50,
-            "clp": 551882
-          },
-          "Accesorios y Otros": {
-            "units": 4,
-            "clp": 26970
-          },
-          "Calzado": {
-            "units": 18,
-            "clp": 226872
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 18986
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Calama",
-        "storeCode": "039 Paris - Balmaceda 3242, Calama",
-        "region": "02 - Antofagasta",
-        "units": 93,
-        "clp": 762962,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 49,
-            "clp": 501158
-          },
-          "Vestuario Adulto": {
-            "units": 20,
-            "clp": 145881
-          },
-          "Accesorios y Otros": {
-            "units": 10,
-            "clp": 53438
-          },
-          "Calzado": {
-            "units": 13,
-            "clp": 53990
+            "units": 8,
+            "clp": 71956,
+            "costos": 43088
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 8495
+            "clp": 7994,
+            "costos": 6590
           }
         }
       },
@@ -16390,57 +18575,184 @@ const REAL_SELLOUT = {
         "store": "Mall Arauco San Antonio",
         "storeCode": "111 Paris - Av. Barros Luco 105, San Antonio",
         "region": "05 - Valparaíso",
-        "units": 89,
-        "clp": 1083138,
+        "units": 147,
+        "clp": 1610695,
+        "costos": 960947,
+        "margin": 40.3,
+        "stockUnits": 604,
+        "weeksOfStock": 14.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 40,
-            "clp": 398796
+            "units": 57,
+            "clp": 572962,
+            "costos": 361012
           },
           "Calzado": {
-            "units": 37,
-            "clp": 621952
+            "units": 50,
+            "clp": 849622,
+            "costos": 412308
           },
           "Ropa Interior": {
             "units": 10,
-            "clp": 48905
+            "clp": 48905,
+            "costos": 66890
           },
           "Vestuario Adulto": {
             "units": 1,
-            "clp": 6990
+            "clp": 6990,
+            "costos": 5237
           },
           "Accesorios y Otros": {
-            "units": 1,
-            "clp": 6495
+            "units": 29,
+            "clp": 132216,
+            "costos": 115500
           }
         }
       },
       {
-        "store": "Providencia Lyon",
-        "storeCode": "009 Paris - Av. 11 de Septiembre 2221, Providencia",
+        "store": "Mall Espacio Urbano Puente Alto",
+        "storeCode": "407 Paris - Av. Concha y Toro 1149, Puente Alto",
         "region": "13 - Metropolitana de Santiago",
-        "units": 78,
-        "clp": 443748,
+        "units": 143,
+        "clp": 1356512,
+        "costos": 946943,
+        "margin": 30.2,
+        "stockUnits": 653,
+        "weeksOfStock": 16.3,
         "byDivision": {
-          "Vestuario Adulto": {
-            "units": 11,
-            "clp": 61359
+          "Ropa Interior": {
+            "units": 37,
+            "clp": 239883,
+            "costos": 254903
           },
           "Vestuario Infantil": {
-            "units": 41,
-            "clp": 189885
+            "units": 65,
+            "clp": 728144,
+            "costos": 408315
           },
           "Accesorios y Otros": {
-            "units": 5,
-            "clp": 27979
-          },
-          "Ropa Interior": {
-            "units": 21,
-            "clp": 164525
+            "units": 6,
+            "clp": 39455,
+            "costos": 26850
           },
           "Calzado": {
-            "units": 0,
-            "clp": 0
+            "units": 26,
+            "clp": 309044,
+            "costos": 188306
+          },
+          "Vestuario Adulto": {
+            "units": 9,
+            "clp": 39986,
+            "costos": 68569
+          }
+        }
+      },
+      {
+        "store": "Copiapó",
+        "storeCode": "105 Paris - Copayapu 2406, Copiapó",
+        "region": "03 - Atacama",
+        "units": 137,
+        "clp": 1559140,
+        "costos": 872658,
+        "margin": 44.0,
+        "stockUnits": 118,
+        "weeksOfStock": 3.1,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 99,
+            "clp": 1172409,
+            "costos": 631021
+          },
+          "Accesorios y Otros": {
+            "units": 10,
+            "clp": 32461,
+            "costos": 40550
+          },
+          "Vestuario Adulto": {
+            "units": 15,
+            "clp": 130435,
+            "costos": 84333
+          },
+          "Calzado": {
+            "units": 13,
+            "clp": 223835,
+            "costos": 116754
+          }
+        }
+      },
+      {
+        "store": "Arica",
+        "storeCode": "110 Paris - 21 de Mayo #501, Arica",
+        "region": "15 - Arica y Parinacota",
+        "units": 132,
+        "clp": 1335473,
+        "costos": 857441,
+        "margin": 35.8,
+        "stockUnits": 391,
+        "weeksOfStock": 10.6,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 9,
+            "clp": 52936,
+            "costos": 38100
+          },
+          "Vestuario Infantil": {
+            "units": 52,
+            "clp": 598687,
+            "costos": 333729
+          },
+          "Vestuario Adulto": {
+            "units": 32,
+            "clp": 238721,
+            "costos": 192632
+          },
+          "Calzado": {
+            "units": 26,
+            "clp": 313715,
+            "costos": 201820
+          },
+          "Ropa Interior": {
+            "units": 13,
+            "clp": 131414,
+            "costos": 91160
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Calama",
+        "storeCode": "039 Paris - Balmaceda 3242, Calama",
+        "region": "02 - Antofagasta",
+        "units": 123,
+        "clp": 1031362,
+        "costos": 716689,
+        "margin": 30.5,
+        "stockUnits": 612,
+        "weeksOfStock": 17.8,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 71,
+            "clp": 745588,
+            "costos": 448009
+          },
+          "Vestuario Adulto": {
+            "units": 22,
+            "clp": 153881,
+            "costos": 130492
+          },
+          "Accesorios y Otros": {
+            "units": 11,
+            "clp": 59428,
+            "costos": 43200
+          },
+          "Calzado": {
+            "units": 18,
+            "clp": 63970,
+            "costos": 87849
+          },
+          "Ropa Interior": {
+            "units": 1,
+            "clp": 8495,
+            "costos": 7139
           }
         }
       },
@@ -16448,24 +18760,70 @@ const REAL_SELLOUT = {
         "store": "Mall Portal El Llano",
         "storeCode": "424 Paris - Llano Subercaseaux 3519, San Miguel",
         "region": "13 - Metropolitana de Santiago",
-        "units": 77,
-        "clp": 721263,
+        "units": 117,
+        "clp": 1089878,
+        "costos": 751140,
+        "margin": 31.1,
+        "stockUnits": 227,
+        "weeksOfStock": 6.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 49,
-            "clp": 488357
+            "units": 76,
+            "clp": 755087,
+            "costos": 482694
           },
           "Accesorios y Otros": {
-            "units": 1,
-            "clp": 6495
+            "units": 2,
+            "clp": 12485,
+            "costos": 8400
           },
           "Ropa Interior": {
-            "units": 28,
-            "clp": 241802
+            "units": 40,
+            "clp": 337697,
+            "costos": 268445
           },
           "Calzado": {
             "units": -1,
-            "clp": -15391
+            "clp": -15391,
+            "costos": -8399
+          }
+        }
+      },
+      {
+        "store": "Providencia Lyon",
+        "storeCode": "009 Paris - Av. 11 de Septiembre 2221, Providencia",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 88,
+        "clp": 536375,
+        "costos": 524815,
+        "margin": 2.2,
+        "stockUnits": 326,
+        "weeksOfStock": 13.2,
+        "byDivision": {
+          "Vestuario Adulto": {
+            "units": 11,
+            "clp": 61359,
+            "costos": 68379
+          },
+          "Vestuario Infantil": {
+            "units": 47,
+            "clp": 254340,
+            "costos": 269493
+          },
+          "Accesorios y Otros": {
+            "units": 7,
+            "clp": 35167,
+            "costos": 32750
+          },
+          "Ropa Interior": {
+            "units": 23,
+            "clp": 185509,
+            "costos": 154193
+          },
+          "Calzado": {
+            "units": 0,
+            "clp": 0,
+            "costos": 0
           }
         }
       },
@@ -16473,78 +18831,37 @@ const REAL_SELLOUT = {
         "store": "Bandera",
         "storeCode": "104 Paris - Bandera 201, Santiago",
         "region": "13 - Metropolitana de Santiago",
-        "units": 67,
-        "clp": 498792,
+        "units": 87,
+        "clp": 717735,
+        "costos": 529843,
+        "margin": 26.2,
+        "stockUnits": 293,
+        "weeksOfStock": 12.0,
         "byDivision": {
           "Vestuario Adulto": {
-            "units": 35,
-            "clp": 193513
+            "units": 36,
+            "clp": 203509,
+            "costos": 209163
           },
           "Vestuario Infantil": {
-            "units": 10,
-            "clp": 107316
+            "units": 23,
+            "clp": 260309,
+            "costos": 145459
           },
           "Calzado": {
             "units": 1,
-            "clp": -903
+            "clp": -903,
+            "costos": 4105
           },
           "Accesorios y Otros": {
-            "units": 5,
-            "clp": 28467
-          },
-          "Ropa Interior": {
-            "units": 16,
-            "clp": 170399
-          }
-        }
-      },
-      {
-        "store": "Talcahuano",
-        "storeCode": "464 Paris - Colón 196, Talcahuano",
-        "region": "08 - Biobío",
-        "units": 63,
-        "clp": 541954,
-        "byDivision": {
-          "Calzado": {
-            "units": 34,
-            "clp": 254660
-          },
-          "Vestuario Adulto": {
             "units": 6,
-            "clp": 25971
-          },
-          "Vestuario Infantil": {
-            "units": 19,
-            "clp": 243332
+            "clp": 33952,
+            "costos": 24200
           },
           "Ropa Interior": {
-            "units": 3,
-            "clp": 15001
-          }
-        }
-      },
-      {
-        "store": "Mall Portal Nuñoa",
-        "storeCode": "108 Paris - José Pedro Alessandri 1132, Ñuñoa",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 62,
-        "clp": 392590,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 14,
-            "clp": 77860
-          },
-          "Ropa Interior": {
-            "units": 28,
-            "clp": 140722
-          },
-          "Vestuario Adulto": {
-            "units": 9,
-            "clp": 56916
-          },
-          "Calzado": {
-            "units": 11,
-            "clp": 117092
+            "units": 21,
+            "clp": 220868,
+            "costos": 146916
           }
         }
       },
@@ -16552,91 +18869,93 @@ const REAL_SELLOUT = {
         "store": "San Felipe",
         "storeCode": "433 Paris - Combate de las Coimas 1262, San Felipe",
         "region": "05 - Valparaíso",
-        "units": 60,
-        "clp": 622313,
+        "units": 85,
+        "clp": 872061,
+        "costos": 557996,
+        "margin": 36.0,
+        "stockUnits": 234,
+        "weeksOfStock": 9.8,
         "byDivision": {
           "Ropa Interior": {
-            "units": 14,
-            "clp": 74365
-          },
-          "Vestuario Infantil": {
-            "units": 46,
-            "clp": 547948
-          }
-        }
-      },
-      {
-        "store": "No Definido",
-        "storeCode": "131 Paris - Paris Maule",
-        "region": "No Definido",
-        "units": 55,
-        "clp": 424210,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 8,
-            "clp": 45956
-          },
-          "Calzado": {
-            "units": 26,
-            "clp": 245740
-          },
-          "Vestuario Infantil": {
-            "units": 9,
-            "clp": 75627
-          },
-          "Vestuario Adulto": {
-            "units": 11,
-            "clp": 55887
-          },
-          "Ropa Interior": {
-            "units": 1,
-            "clp": 1000
-          }
-        }
-      },
-      {
-        "store": "Mall City Point Ovalle",
-        "storeCode": "121 Paris - Vicuña Mackenna 01, Ovalle",
-        "region": "04 - Coquimbo",
-        "units": 48,
-        "clp": 550075,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 44,
-            "clp": 520097
-          },
-          "Accesorios y Otros": {
-            "units": 1,
-            "clp": 4994
-          },
-          "Ropa Interior": {
-            "units": 3,
-            "clp": 24984
-          }
-        }
-      },
-      {
-        "store": "Mall Espacio Urbano Melipilla",
-        "storeCode": "427 Paris - Serrano 395, Melipilla",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 44,
-        "clp": 314223,
-        "byDivision": {
-          "Accesorios y Otros": {
             "units": 17,
-            "clp": 103389
+            "clp": 90335,
+            "costos": 117399
           },
           "Vestuario Infantil": {
-            "units": 21,
-            "clp": 172776
-          },
+            "units": 68,
+            "clp": 781726,
+            "costos": 440597
+          }
+        }
+      },
+      {
+        "store": "Talcahuano",
+        "storeCode": "464 Paris - Colón 196, Talcahuano",
+        "region": "08 - Biobío",
+        "units": 84,
+        "clp": 725263,
+        "costos": 503364,
+        "margin": 30.6,
+        "stockUnits": 112,
+        "weeksOfStock": 4.8,
+        "byDivision": {
           "Calzado": {
-            "units": 4,
-            "clp": 23064
+            "units": 44,
+            "clp": 321560,
+            "costos": 261797
           },
           "Vestuario Adulto": {
-            "units": 2,
-            "clp": 14994
+            "units": 7,
+            "clp": 29961,
+            "costos": 38617
+          },
+          "Vestuario Infantil": {
+            "units": 26,
+            "clp": 323781,
+            "costos": 164574
+          },
+          "Ropa Interior": {
+            "units": 5,
+            "clp": 40981,
+            "costos": 28013
+          },
+          "Accesorios y Otros": {
+            "units": 1,
+            "clp": 5990,
+            "costos": 3750
+          }
+        }
+      },
+      {
+        "store": "Mall Portal Nuñoa",
+        "storeCode": "108 Paris - José Pedro Alessandri 1132, Ñuñoa",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 72,
+        "clp": 535187,
+        "costos": 496318,
+        "margin": 7.3,
+        "stockUnits": 134,
+        "weeksOfStock": 6.6,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 18,
+            "clp": 119820,
+            "costos": 127233
+          },
+          "Ropa Interior": {
+            "units": 30,
+            "clp": 165197,
+            "costos": 211365
+          },
+          "Vestuario Adulto": {
+            "units": 9,
+            "clp": 56916,
+            "costos": 44420
+          },
+          "Calzado": {
+            "units": 15,
+            "clp": 193254,
+            "costos": 113300
           }
         }
       },
@@ -16644,28 +18963,136 @@ const REAL_SELLOUT = {
         "store": "Mall Barrio Independencia",
         "storeCode": "125 Paris - Av. Independencia 565, Independencia",
         "region": "13 - Metropolitana de Santiago",
-        "units": 40,
-        "clp": 228149,
+        "units": 65,
+        "clp": 340900,
+        "costos": 373024,
+        "margin": -9.4,
+        "stockUnits": 261,
+        "weeksOfStock": 14.3,
         "byDivision": {
           "Vestuario Adulto": {
-            "units": 14,
-            "clp": 70369
+            "units": 20,
+            "clp": 97309,
+            "costos": 116674
           },
           "Accesorios y Otros": {
             "units": 22,
-            "clp": 135313
+            "clp": 135313,
+            "costos": 94300
           },
           "Vestuario Infantil": {
-            "units": 2,
-            "clp": 7980
+            "units": 21,
+            "clp": 93791,
+            "costos": 148345
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 4990
+            "clp": 4990,
+            "costos": 7659
           },
           "Calzado": {
             "units": 1,
-            "clp": 9497
+            "clp": 9497,
+            "costos": 6046
+          }
+        }
+      },
+      {
+        "store": "No Definido",
+        "storeCode": "131 Paris - Paris Maule",
+        "region": "No Definido",
+        "units": 61,
+        "clp": 512352,
+        "costos": 369255,
+        "margin": 27.9,
+        "stockUnits": 256,
+        "weeksOfStock": 15.0,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 9,
+            "clp": 51946,
+            "costos": 37150
+          },
+          "Calzado": {
+            "units": 31,
+            "clp": 327892,
+            "costos": 216791
+          },
+          "Vestuario Infantil": {
+            "units": 9,
+            "clp": 75627,
+            "costos": 54516
+          },
+          "Vestuario Adulto": {
+            "units": 11,
+            "clp": 55887,
+            "costos": 54109
+          },
+          "Ropa Interior": {
+            "units": 1,
+            "clp": 1000,
+            "costos": 6689
+          }
+        }
+      },
+      {
+        "store": "Mall Espacio Urbano Melipilla",
+        "storeCode": "427 Paris - Serrano 395, Melipilla",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 56,
+        "clp": 400539,
+        "costos": 278012,
+        "margin": 30.6,
+        "stockUnits": 146,
+        "weeksOfStock": 9.3,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 20,
+            "clp": 121864,
+            "costos": 88500
+          },
+          "Vestuario Infantil": {
+            "units": 30,
+            "clp": 240617,
+            "costos": 160889
+          },
+          "Calzado": {
+            "units": 4,
+            "clp": 23064,
+            "costos": 17632
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 14994,
+            "costos": 10991
+          }
+        }
+      },
+      {
+        "store": "Mall City Point Ovalle",
+        "storeCode": "121 Paris - Vicuña Mackenna 01, Ovalle",
+        "region": "04 - Coquimbo",
+        "units": 56,
+        "clp": 664997,
+        "costos": 356978,
+        "margin": 46.3,
+        "stockUnits": 533,
+        "weeksOfStock": 34.0,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 52,
+            "clp": 635019,
+            "costos": 332660
+          },
+          "Accesorios y Otros": {
+            "units": 1,
+            "clp": 4994,
+            "costos": 3450
+          },
+          "Ropa Interior": {
+            "units": 3,
+            "clp": 24984,
+            "costos": 20868
           }
         }
       },
@@ -16673,24 +19100,32 @@ const REAL_SELLOUT = {
         "store": "Mall Paseo Montt Coronel",
         "storeCode": "479 Paris - Manuel Montt 1600, Coronel",
         "region": "08 - Biobío",
-        "units": 29,
-        "clp": 156739,
+        "units": 36,
+        "clp": 187669,
+        "costos": 198292,
+        "margin": -5.7,
+        "stockUnits": 105,
+        "weeksOfStock": 10.4,
         "byDivision": {
           "Vestuario Adulto": {
-            "units": 3,
-            "clp": 29988
+            "units": 4,
+            "clp": 33978,
+            "costos": 22591
           },
           "Calzado": {
-            "units": 21,
-            "clp": 93791
+            "units": 24,
+            "clp": 104761,
+            "costos": 131837
           },
           "Vestuario Infantil": {
-            "units": 3,
-            "clp": 19980
+            "units": 5,
+            "clp": 30960,
+            "costos": 24394
           },
           "Ropa Interior": {
-            "units": 2,
-            "clp": 12980
+            "units": 3,
+            "clp": 17970,
+            "costos": 19470
           }
         }
       },
@@ -16700,22 +19135,30 @@ const REAL_SELLOUT = {
         "region": "05 - Valparaíso",
         "units": 9,
         "clp": 54911,
+        "costos": 54076,
+        "margin": 1.5,
+        "stockUnits": 8,
+        "weeksOfStock": 3.2,
         "byDivision": {
           "Vestuario Adulto": {
             "units": 2,
-            "clp": 10980
+            "clp": 10980,
+            "costos": 10991
           },
           "Accesorios y Otros": {
             "units": 3,
-            "clp": 15970
+            "clp": 15970,
+            "costos": 12600
           },
           "Vestuario Infantil": {
             "units": 3,
-            "clp": 14971
+            "clp": 14971,
+            "costos": 22019
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 12990
+            "clp": 12990,
+            "costos": 8466
           }
         }
       },
@@ -16725,18 +19168,25 @@ const REAL_SELLOUT = {
         "region": "13 - Metropolitana de Santiago",
         "units": 5,
         "clp": 7805,
+        "costos": 29812,
+        "margin": -282.0,
+        "stockUnits": 12039,
+        "weeksOfStock": 8599.3,
         "byDivision": {
           "Calzado": {
             "units": 2,
-            "clp": 2638
+            "clp": 2638,
+            "costos": 10076
           },
           "Vestuario Infantil": {
             "units": 2,
-            "clp": 3298
+            "clp": 3298,
+            "costos": 12597
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 1869
+            "clp": 1869,
+            "costos": 7139
           }
         }
       }
@@ -16746,20 +19196,27 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Urbano San Miguel",
         "storeCode": "25 La Polar - Av. José Miguel Carrera 6150, San Miguel",
         "region": "13 - Metropolitana de Santiago",
-        "units": 260,
-        "clp": 2431550,
+        "units": 286,
+        "clp": 2666335,
+        "costos": 1811722,
+        "margin": 32.1,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 122,
-            "clp": 1450232
+            "units": 129,
+            "clp": 1552300,
+            "costos": 994579
           },
           "Vestuario Infantil": {
-            "units": 96,
-            "clp": 644174
+            "units": 111,
+            "clp": 742472,
+            "costos": 486492
           },
           "Ropa Interior": {
-            "units": 42,
-            "clp": 337144
+            "units": 46,
+            "clp": 371563,
+            "costos": 330651
           }
         }
       },
@@ -16767,20 +19224,27 @@ const REAL_SELLOUT = {
         "store": "Los Ángeles",
         "storeCode": "04 La Polar - Colón 471, Los Ángeles",
         "region": "08 - Biobío",
-        "units": 244,
-        "clp": 2972899,
+        "units": 282,
+        "clp": 3518235,
+        "costos": 2229216,
+        "margin": 36.6,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 159,
-            "clp": 2304398
+            "units": 190,
+            "clp": 2767736,
+            "costos": 1661743
           },
           "Vestuario Infantil": {
-            "units": 33,
-            "clp": 279624
+            "units": 36,
+            "clp": 307338,
+            "costos": 191892
           },
           "Ropa Interior": {
-            "units": 52,
-            "clp": 388877
+            "units": 56,
+            "clp": 443161,
+            "costos": 375581
           }
         }
       },
@@ -16788,20 +19252,27 @@ const REAL_SELLOUT = {
         "store": "Colina",
         "storeCode": "15 La Polar - Carretera General San Martín 068, Colina",
         "region": "13 - Metropolitana de Santiago",
-        "units": 209,
-        "clp": 2256690,
+        "units": 243,
+        "clp": 2622857,
+        "costos": 1752040,
+        "margin": 33.2,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 155,
-            "clp": 1900770
+            "units": 178,
+            "clp": 2192209,
+            "costos": 1442364
           },
           "Vestuario Infantil": {
-            "units": 50,
-            "clp": 329064
+            "units": 55,
+            "clp": 363508,
+            "costos": 237676
           },
           "Ropa Interior": {
-            "units": 4,
-            "clp": 26856
+            "units": 10,
+            "clp": 67140,
+            "costos": 72000
           }
         }
       },
@@ -16809,24 +19280,32 @@ const REAL_SELLOUT = {
         "store": "Rancagua",
         "storeCode": "05 La Polar - Independencia 538, Rancagua",
         "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 194,
-        "clp": 2280351,
+        "units": 225,
+        "clp": 2609710,
+        "costos": 1661996,
+        "margin": 36.3,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 135,
-            "clp": 1864658
+            "units": 156,
+            "clp": 2131736,
+            "costos": 1318540
           },
           "Vestuario Infantil": {
-            "units": 51,
-            "clp": 365334
+            "units": 60,
+            "clp": 420901,
+            "costos": 281356
           },
           "Ropa Interior": {
-            "units": 7,
-            "clp": 46998
+            "units": 8,
+            "clp": 53712,
+            "costos": 57600
           },
           "Vestuario Adulto": {
             "units": 1,
-            "clp": 3361
+            "clp": 3361,
+            "costos": 4500
           }
         }
       },
@@ -16834,45 +19313,27 @@ const REAL_SELLOUT = {
         "store": "Ovalle",
         "storeCode": "41 La Polar - Ariztía Poniente 345, Ovalle",
         "region": "04 - Coquimbo",
-        "units": 173,
-        "clp": 2205048,
+        "units": 189,
+        "clp": 2405807,
+        "costos": 1483476,
+        "margin": 38.3,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 151,
-            "clp": 2031773
+            "units": 167,
+            "clp": 2232532,
+            "costos": 1337696
           },
           "Vestuario Infantil": {
             "units": 9,
-            "clp": 85993
+            "clp": 85993,
+            "costos": 52180
           },
           "Ropa Interior": {
             "units": 13,
-            "clp": 87282
-          }
-        }
-      },
-      {
-        "store": "Mall Arauco San Antonio",
-        "storeCode": "43 La Polar - Ramón Barros Luco 105, San Antonio",
-        "region": "05 - Valparaíso",
-        "units": 160,
-        "clp": 2026707,
-        "byDivision": {
-          "Calzado": {
-            "units": 144,
-            "clp": 1880453
-          },
-          "Vestuario Infantil": {
-            "units": 9,
-            "clp": 60255
-          },
-          "Ropa Interior": {
-            "units": 5,
-            "clp": 71385
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 12597
+            "clp": 87282,
+            "costos": 93600
           }
         }
       },
@@ -16880,45 +19341,65 @@ const REAL_SELLOUT = {
         "store": "Mall Arauco Coronel",
         "storeCode": "17 La Polar - Carlos Pratt 913, Coronel",
         "region": "08 - Biobío",
-        "units": 158,
-        "clp": 1719435,
+        "units": 173,
+        "clp": 1911570,
+        "costos": 1364083,
+        "margin": 28.6,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 105,
-            "clp": 1330640
+            "units": 119,
+            "clp": 1519418,
+            "costos": 1024841
           },
           "Vestuario Infantil": {
             "units": 23,
-            "clp": 184778
+            "clp": 184778,
+            "costos": 116788
           },
           "Ropa Interior": {
-            "units": 28,
-            "clp": 196496
+            "units": 29,
+            "clp": 199853,
+            "costos": 199019
           },
           "Accesorios y Otros": {
             "units": 2,
-            "clp": 7521
+            "clp": 7521,
+            "costos": 23435
           }
         }
       },
       {
-        "store": "Mall Espacio Urbano Viña",
-        "storeCode": "27 La Polar - 15 Norte con Subida Alessandri, Viña del Mar",
+        "store": "Mall Arauco San Antonio",
+        "storeCode": "43 La Polar - Ramón Barros Luco 105, San Antonio",
         "region": "05 - Valparaíso",
-        "units": 152,
-        "clp": 1449206,
+        "units": 171,
+        "clp": 2184972,
+        "costos": 1336827,
+        "margin": 38.8,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 127,
-            "clp": 1251842
-          },
-          "Ropa Interior": {
-            "units": 21,
-            "clp": 177364
+            "units": 153,
+            "clp": 2012112,
+            "costos": 1236594
           },
           "Vestuario Infantil": {
-            "units": 4,
-            "clp": 20000
+            "units": 9,
+            "clp": 60255,
+            "costos": 40160
+          },
+          "Ropa Interior": {
+            "units": 7,
+            "clp": 97991,
+            "costos": 49973
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 12597,
+            "costos": 5600
           }
         }
       },
@@ -16926,20 +19407,55 @@ const REAL_SELLOUT = {
         "store": "Mall Open Plaza El Bosque",
         "storeCode": "35 La Polar - Av. José Miguel Carrera 10375, El Bosque",
         "region": "13 - Metropolitana de Santiago",
-        "units": 146,
-        "clp": 1673648,
+        "units": 166,
+        "clp": 1902995,
+        "costos": 1246727,
+        "margin": 34.5,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 119,
-            "clp": 1511409
+            "units": 137,
+            "clp": 1730685,
+            "costos": 1093551
           },
           "Vestuario Infantil": {
             "units": 17,
-            "clp": 97053
+            "clp": 97053,
+            "costos": 66776
           },
           "Ropa Interior": {
-            "units": 10,
-            "clp": 65186
+            "units": 12,
+            "clp": 75257,
+            "costos": 86400
+          }
+        }
+      },
+      {
+        "store": "Mall Espacio Urbano Viña",
+        "storeCode": "27 La Polar - 15 Norte con Subida Alessandri, Viña del Mar",
+        "region": "05 - Valparaíso",
+        "units": 158,
+        "clp": 1488501,
+        "costos": 1032376,
+        "margin": 30.6,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
+        "byDivision": {
+          "Calzado": {
+            "units": 133,
+            "clp": 1291137,
+            "costos": 865830
+          },
+          "Ropa Interior": {
+            "units": 21,
+            "clp": 177364,
+            "costos": 150834
+          },
+          "Vestuario Infantil": {
+            "units": 4,
+            "clp": 20000,
+            "costos": 15712
           }
         }
       },
@@ -16947,20 +19463,27 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Urbano Los Andes",
         "storeCode": "32 La Polar - Av. Santa Teresa 683, Los Andes",
         "region": "05 - Valparaíso",
-        "units": 143,
-        "clp": 1257803,
+        "units": 151,
+        "clp": 1322944,
+        "costos": 927811,
+        "margin": 29.9,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 70,
-            "clp": 495384
+            "units": 73,
+            "clp": 513030,
+            "costos": 330016
           },
           "Calzado": {
-            "units": 65,
-            "clp": 710050
+            "units": 69,
+            "clp": 750831,
+            "costos": 532995
           },
           "Ropa Interior": {
-            "units": 8,
-            "clp": 52369
+            "units": 9,
+            "clp": 59083,
+            "costos": 64800
           }
         }
       },
@@ -16968,87 +19491,27 @@ const REAL_SELLOUT = {
         "store": "Plaza Puente Alto",
         "storeCode": "12 La Polar - Av. Concha y Toro 126, Puente Alto",
         "region": "13 - Metropolitana de Santiago",
-        "units": 130,
-        "clp": 1630211,
+        "units": 142,
+        "clp": 1762927,
+        "costos": 1086571,
+        "margin": 38.4,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 16,
-            "clp": 106685
+            "units": 19,
+            "clp": 121810,
+            "costos": 84248
           },
           "Calzado": {
-            "units": 112,
-            "clp": 1503878
+            "units": 119,
+            "clp": 1601317,
+            "costos": 973706
           },
           "Ropa Interior": {
-            "units": 2,
-            "clp": 19648
-          }
-        }
-      },
-      {
-        "store": "Chillán",
-        "storeCode": "37 La Polar - 5 de Abril #828, Chillán",
-        "region": "16 - Ñuble",
-        "units": 121,
-        "clp": 1515337,
-        "byDivision": {
-          "Calzado": {
-            "units": 107,
-            "clp": 1430873
-          },
-          "Vestuario Infantil": {
-            "units": 5,
-            "clp": 29410
-          },
-          "Ropa Interior": {
-            "units": 8,
-            "clp": 50355
-          }
-        }
-      },
-      {
-        "store": "Osorno",
-        "storeCode": "28 La Polar - Ramírez 1076, Osorno",
-        "region": "10 - Los Lagos",
-        "units": 117,
-        "clp": 1308327,
-        "byDivision": {
-          "Calzado": {
-            "units": 89,
-            "clp": 1117265
-          },
-          "Ropa Interior": {
-            "units": 16,
-            "clp": 128714
-          },
-          "Vestuario Infantil": {
-            "units": 12,
-            "clp": 62348
-          }
-        }
-      },
-      {
-        "store": "Curicó",
-        "storeCode": "73 La Polar - Merced 471, Curicó",
-        "region": "07 - Maule",
-        "units": 115,
-        "clp": 1210146,
-        "byDivision": {
-          "Calzado": {
-            "units": 58,
-            "clp": 720140
-          },
-          "Vestuario Infantil": {
-            "units": 49,
-            "clp": 385042
-          },
-          "Ropa Interior": {
-            "units": 8,
-            "clp": 104964
-          },
-          "Vestuario Adulto": {
-            "units": 0,
-            "clp": 0
+            "units": 4,
+            "clp": 39800,
+            "costos": 28617
           }
         }
       },
@@ -17056,20 +19519,116 @@ const REAL_SELLOUT = {
         "store": "La Serena",
         "storeCode": "38 La Polar - Cordovez 575, La Serena",
         "region": "04 - Coquimbo",
-        "units": 115,
-        "clp": 1561356,
+        "units": 136,
+        "clp": 1822073,
+        "costos": 1124866,
+        "margin": 38.3,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 104,
-            "clp": 1437057
+            "units": 119,
+            "clp": 1649909,
+            "costos": 1016164
           },
           "Vestuario Infantil": {
-            "units": 3,
-            "clp": 17646
+            "units": 4,
+            "clp": 23528,
+            "costos": 15712
+          },
+          "Ropa Interior": {
+            "units": 13,
+            "clp": 148636,
+            "costos": 92990
+          }
+        }
+      },
+      {
+        "store": "Chillán",
+        "storeCode": "37 La Polar - 5 de Abril #828, Chillán",
+        "region": "16 - Ñuble",
+        "units": 135,
+        "clp": 1722719,
+        "costos": 1102401,
+        "margin": 36.0,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
+        "byDivision": {
+          "Calzado": {
+            "units": 121,
+            "clp": 1638255,
+            "costos": 1022224
+          },
+          "Vestuario Infantil": {
+            "units": 5,
+            "clp": 29410,
+            "costos": 19640
           },
           "Ropa Interior": {
             "units": 8,
-            "clp": 106653
+            "clp": 50355,
+            "costos": 57600
+          }
+        }
+      },
+      {
+        "store": "Osorno",
+        "storeCode": "28 La Polar - Ramírez 1076, Osorno",
+        "region": "10 - Los Lagos",
+        "units": 130,
+        "clp": 1465098,
+        "costos": 969335,
+        "margin": 33.8,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
+        "byDivision": {
+          "Calzado": {
+            "units": 101,
+            "clp": 1268154,
+            "costos": 809468
+          },
+          "Ropa Interior": {
+            "units": 16,
+            "clp": 128714,
+            "costos": 106531
+          },
+          "Vestuario Infantil": {
+            "units": 13,
+            "clp": 68230,
+            "costos": 53336
+          }
+        }
+      },
+      {
+        "store": "Curicó",
+        "storeCode": "73 La Polar - Merced 471, Curicó",
+        "region": "07 - Maule",
+        "units": 127,
+        "clp": 1360364,
+        "costos": 840696,
+        "margin": 38.2,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
+        "byDivision": {
+          "Calzado": {
+            "units": 64,
+            "clp": 814930,
+            "costos": 502636
+          },
+          "Vestuario Infantil": {
+            "units": 55,
+            "clp": 440470,
+            "costos": 280948
+          },
+          "Ropa Interior": {
+            "units": 8,
+            "clp": 104964,
+            "costos": 57112
+          },
+          "Vestuario Adulto": {
+            "units": 0,
+            "clp": 0,
+            "costos": 0
           }
         }
       },
@@ -17077,20 +19636,27 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Urbano Linares",
         "storeCode": "30 La Polar - Av. León Bustos 280, Linares",
         "region": "07 - Maule",
-        "units": 115,
-        "clp": 1173505,
+        "units": 127,
+        "clp": 1317923,
+        "costos": 863681,
+        "margin": 34.5,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Ropa Interior": {
-            "units": 15,
-            "clp": 136696
+            "units": 19,
+            "clp": 193804,
+            "costos": 136190
           },
           "Calzado": {
-            "units": 58,
-            "clp": 693313
+            "units": 63,
+            "clp": 768900,
+            "costos": 502651
           },
           "Vestuario Infantil": {
-            "units": 42,
-            "clp": 343496
+            "units": 45,
+            "clp": 355219,
+            "costos": 224840
           }
         }
       },
@@ -17098,24 +19664,32 @@ const REAL_SELLOUT = {
         "store": "Mall Arauco Maipú",
         "storeCode": "10 La Polar - Av. Américo Vespucio 399, Maipú",
         "region": "13 - Metropolitana de Santiago",
-        "units": 110,
-        "clp": 888033,
+        "units": 124,
+        "clp": 988762,
+        "costos": 742395,
+        "margin": 24.9,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 31,
-            "clp": 319358
+            "units": 33,
+            "clp": 343677,
+            "costos": 254284
           },
           "Vestuario Infantil": {
-            "units": 60,
-            "clp": 445878
+            "units": 65,
+            "clp": 485356,
+            "costos": 310612
           },
           "Ropa Interior": {
-            "units": 18,
-            "clp": 119562
+            "units": 23,
+            "clp": 153132,
+            "costos": 160875
           },
           "Accesorios y Otros": {
-            "units": 1,
-            "clp": 3235
+            "units": 3,
+            "clp": 6597,
+            "costos": 16624
           }
         }
       },
@@ -17123,79 +19697,22 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Urbano Punta Arenas",
         "storeCode": "36 La Polar - Bories 812, Punta Arenas",
         "region": "12 - Magallanes y de la Antártica Chilena",
-        "units": 99,
-        "clp": 1097853,
+        "units": 118,
+        "clp": 1341555,
+        "costos": 866514,
+        "margin": 35.4,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 92,
-            "clp": 1058120
+            "units": 111,
+            "clp": 1301822,
+            "costos": 816114
           },
           "Ropa Interior": {
             "units": 7,
-            "clp": 39733
-          }
-        }
-      },
-      {
-        "store": "Arica",
-        "storeCode": "007 La Polar - 21 De Mayo 524, Arica",
-        "region": "15 - Arica y Parinacota",
-        "units": 95,
-        "clp": 806945,
-        "byDivision": {
-          "Calzado": {
-            "units": 88,
-            "clp": 762443
-          },
-          "Ropa Interior": {
-            "units": 4,
-            "clp": 26856
-          },
-          "Vestuario Infantil": {
-            "units": 3,
-            "clp": 17646
-          }
-        }
-      },
-      {
-        "store": "Puente",
-        "storeCode": "16 La Polar - Puente 552, Santiago",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 93,
-        "clp": 914635,
-        "byDivision": {
-          "Calzado": {
-            "units": 77,
-            "clp": 810539
-          },
-          "Ropa Interior": {
-            "units": 12,
-            "clp": 80568
-          },
-          "Vestuario Infantil": {
-            "units": 4,
-            "clp": 23528
-          }
-        }
-      },
-      {
-        "store": "Mall Shoping Center Quillota",
-        "storeCode": "03 La Polar - Ramon Freire 1551, Quillota",
-        "region": "05 - Valparaíso",
-        "units": 92,
-        "clp": 943017,
-        "byDivision": {
-          "Calzado": {
-            "units": 72,
-            "clp": 822494
-          },
-          "Ropa Interior": {
-            "units": 7,
-            "clp": 46998
-          },
-          "Vestuario Infantil": {
-            "units": 13,
-            "clp": 73525
+            "clp": 39733,
+            "costos": 50400
           }
         }
       },
@@ -17203,28 +19720,93 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Calama",
         "storeCode": "47 La Polar - Eleuterio Ramírez 1960, Calama",
         "region": "02 - Antofagasta",
-        "units": 91,
-        "clp": 993873,
+        "units": 111,
+        "clp": 1215712,
+        "costos": 860204,
+        "margin": 29.2,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 80,
-            "clp": 934667
+            "units": 100,
+            "clp": 1156506,
+            "costos": 793349
           },
           "Ropa Interior": {
             "units": 8,
-            "clp": 48282
+            "clp": 48282,
+            "costos": 53390
           },
           "Vestuario Adulto": {
             "units": 1,
-            "clp": 3361
+            "clp": 3361,
+            "costos": 4500
           },
           "Vestuario Infantil": {
             "units": 1,
-            "clp": 5882
+            "clp": 5882,
+            "costos": 3928
           },
           "Accesorios y Otros": {
             "units": 1,
-            "clp": 1681
+            "clp": 1681,
+            "costos": 5037
+          }
+        }
+      },
+      {
+        "store": "Puente",
+        "storeCode": "16 La Polar - Puente 552, Santiago",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 109,
+        "clp": 1077605,
+        "costos": 803001,
+        "margin": 25.5,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
+        "byDivision": {
+          "Calzado": {
+            "units": 92,
+            "clp": 967627,
+            "costos": 696961
+          },
+          "Ropa Interior": {
+            "units": 12,
+            "clp": 80568,
+            "costos": 86400
+          },
+          "Vestuario Infantil": {
+            "units": 5,
+            "clp": 29410,
+            "costos": 19640
+          }
+        }
+      },
+      {
+        "store": "Arica",
+        "storeCode": "007 La Polar - 21 De Mayo 524, Arica",
+        "region": "15 - Arica y Parinacota",
+        "units": 104,
+        "clp": 890484,
+        "costos": 685792,
+        "margin": 23.0,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
+        "byDivision": {
+          "Calzado": {
+            "units": 95,
+            "clp": 833386,
+            "costos": 634080
+          },
+          "Ropa Interior": {
+            "units": 5,
+            "clp": 33570,
+            "costos": 36000
+          },
+          "Vestuario Infantil": {
+            "units": 4,
+            "clp": 23528,
+            "costos": 15712
           }
         }
       },
@@ -17232,37 +19814,55 @@ const REAL_SELLOUT = {
         "store": "Mall Paseo Quilín",
         "storeCode": "045 La Polar - Mar Tirreno 5449, Peñalolén",
         "region": "13 - Metropolitana de Santiago",
-        "units": 84,
-        "clp": 944045,
+        "units": 99,
+        "clp": 1098013,
+        "costos": 722556,
+        "margin": 34.2,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 68,
-            "clp": 799112
+            "units": 79,
+            "clp": 918652,
+            "costos": 606323
           },
           "Vestuario Infantil": {
-            "units": 13,
-            "clp": 126806
+            "units": 16,
+            "clp": 154520,
+            "costos": 91696
           },
           "Ropa Interior": {
-            "units": 2,
-            "clp": 13428
+            "units": 3,
+            "clp": 20142,
+            "costos": 21600
           }
         }
       },
       {
-        "store": "Plaza San Bernardo",
-        "storeCode": "09 La Polar - Eyzaguirre 551, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 80,
-        "clp": 766311,
+        "store": "Mall Shoping Center Quillota",
+        "storeCode": "03 La Polar - Ramon Freire 1551, Quillota",
+        "region": "05 - Valparaíso",
+        "units": 98,
+        "clp": 991836,
+        "costos": 678308,
+        "margin": 31.6,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
-          "Vestuario Infantil": {
-            "units": 38,
-            "clp": 212772
-          },
           "Calzado": {
-            "units": 42,
-            "clp": 553539
+            "units": 76,
+            "clp": 857885,
+            "costos": 562444
+          },
+          "Ropa Interior": {
+            "units": 9,
+            "clp": 60426,
+            "costos": 64800
+          },
+          "Vestuario Infantil": {
+            "units": 13,
+            "clp": 73525,
+            "costos": 51064
           }
         }
       },
@@ -17270,16 +19870,22 @@ const REAL_SELLOUT = {
         "store": "Copiapó",
         "storeCode": "26 La Polar - Av. Bernardo OHiggins 540, Copiapó",
         "region": "03 - Atacama",
-        "units": 78,
-        "clp": 872605,
+        "units": 91,
+        "clp": 1021198,
+        "costos": 692452,
+        "margin": 32.2,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 73,
-            "clp": 839035
+            "units": 86,
+            "clp": 987628,
+            "costos": 656452
           },
           "Ropa Interior": {
             "units": 5,
-            "clp": 33570
+            "clp": 33570,
+            "costos": 36000
           }
         }
       },
@@ -17287,45 +19893,50 @@ const REAL_SELLOUT = {
         "store": "Mall Paseo Costanera",
         "storeCode": "20 La Polar - Illapel 10, Puerto Montt",
         "region": "10 - Los Lagos",
-        "units": 70,
-        "clp": 849326,
+        "units": 88,
+        "clp": 1033669,
+        "costos": 646863,
+        "margin": 37.4,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 52,
-            "clp": 707544
+            "units": 62,
+            "clp": 839007,
+            "costos": 495960
           },
           "Vestuario Infantil": {
-            "units": 10,
-            "clp": 58820
+            "units": 11,
+            "clp": 64702,
+            "costos": 43208
           },
           "Ropa Interior": {
-            "units": 8,
-            "clp": 82962
+            "units": 15,
+            "clp": 129960,
+            "costos": 107695
           }
         }
       },
       {
-        "store": "Bodega",
-        "storeCode": "22 La Polar - CD Puerto Madero 9710, Pudahuel",
+        "store": "Plaza San Bernardo",
+        "storeCode": "09 La Polar - Eyzaguirre 551, San Bernardo",
         "region": "13 - Metropolitana de Santiago",
-        "units": 62,
-        "clp": 695541,
+        "units": 87,
+        "clp": 823018,
+        "costos": 530200,
+        "margin": 35.6,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
-          "Ropa Interior": {
-            "units": 16,
-            "clp": 107430
+          "Vestuario Infantil": {
+            "units": 43,
+            "clp": 239241,
+            "costos": 168904
           },
           "Calzado": {
-            "units": 46,
-            "clp": 592304
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 3361
-          },
-          "Vestuario Infantil": {
-            "units": -1,
-            "clp": -7554
+            "units": 44,
+            "clp": 583777,
+            "costos": 361296
           }
         }
       },
@@ -17333,24 +19944,32 @@ const REAL_SELLOUT = {
         "store": "Concepción Barros Arana",
         "storeCode": "48 La Polar - Barros Arana 486, Concepción",
         "region": "08 - Biobío",
-        "units": 61,
-        "clp": 644344,
+        "units": 72,
+        "clp": 754518,
+        "costos": 501311,
+        "margin": 33.6,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 46,
-            "clp": 512184
+            "units": 55,
+            "clp": 605560,
+            "costos": 403547
           },
           "Vestuario Infantil": {
-            "units": 13,
-            "clp": 123765
+            "units": 15,
+            "clp": 140563,
+            "costos": 85364
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 6714
+            "clp": 6714,
+            "costos": 7200
           },
           "Accesorios y Otros": {
             "units": 1,
-            "clp": 1681
+            "clp": 1681,
+            "costos": 5200
           }
         }
       },
@@ -17358,20 +19977,60 @@ const REAL_SELLOUT = {
         "store": "Antofagasta",
         "storeCode": "23 La Polar - Arturo Prat 446-456, Antofagasta",
         "region": "02 - Antofagasta",
-        "units": 56,
-        "clp": 555792,
+        "units": 64,
+        "clp": 637773,
+        "costos": 433057,
+        "margin": 32.1,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 52,
-            "clp": 534789
+            "units": 60,
+            "clp": 616770,
+            "costos": 414073
           },
           "Vestuario Infantil": {
             "units": 3,
-            "clp": 17646
+            "clp": 17646,
+            "costos": 11784
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 3357
+            "clp": 3357,
+            "costos": 7200
+          }
+        }
+      },
+      {
+        "store": "Bodega",
+        "storeCode": "22 La Polar - CD Puerto Madero 9710, Pudahuel",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 61,
+        "clp": 687147,
+        "costos": 517302,
+        "margin": 24.7,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 15,
+            "clp": 99035,
+            "costos": 108000
+          },
+          "Calzado": {
+            "units": 46,
+            "clp": 592305,
+            "costos": 408730
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 3361,
+            "costos": 4500
+          },
+          "Vestuario Infantil": {
+            "units": -1,
+            "clp": -7554,
+            "costos": -3928
           }
         }
       },
@@ -17379,37 +20038,50 @@ const REAL_SELLOUT = {
         "store": "Talca",
         "storeCode": "13 La Polar - Uno Sur 1450, Talca",
         "region": "07 - Maule",
-        "units": 40,
-        "clp": 452393,
+        "units": 49,
+        "clp": 582993,
+        "costos": 410722,
+        "margin": 29.5,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
-            "units": 32,
-            "clp": 405907
+            "units": 40,
+            "clp": 529793,
+            "costos": 345922
           },
           "Ropa Interior": {
-            "units": 8,
-            "clp": 46486
+            "units": 9,
+            "clp": 53200,
+            "costos": 64800
           }
         }
       },
       {
         "store": "No Definido",
-        "storeCode": "778 La Polar - Sin Direccion (Abc La Ligua)",
+        "storeCode": "717 La Polar - Ad San Bernardo",
         "region": "No Definido",
-        "units": 38,
-        "clp": 300041,
+        "units": 42,
+        "clp": 336166,
+        "costos": 204450,
+        "margin": 39.2,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 28,
-            "clp": 163520
+            "units": 31,
+            "clp": 181166,
+            "costos": 121768
           },
           "Calzado": {
-            "units": 7,
-            "clp": 129353
+            "units": 8,
+            "clp": 147832,
+            "costos": 73912
           },
           "Ropa Interior": {
             "units": 3,
-            "clp": 7168
+            "clp": 7168,
+            "costos": 8770
           }
         }
       },
@@ -17417,20 +20089,27 @@ const REAL_SELLOUT = {
         "store": "Coquimbo",
         "storeCode": "29 La Polar - Bilbao 444, Coquimbo",
         "region": "04 - Coquimbo",
-        "units": 23,
-        "clp": 291776,
+        "units": 24,
+        "clp": 292751,
+        "costos": 175881,
+        "margin": 39.9,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Ropa Interior": {
-            "units": 3,
-            "clp": 20142
+            "units": 4,
+            "clp": 21117,
+            "costos": 24136
           },
           "Calzado": {
             "units": 19,
-            "clp": 265752
+            "clp": 265752,
+            "costos": 147817
           },
           "Vestuario Infantil": {
             "units": 1,
-            "clp": 5882
+            "clp": 5882,
+            "costos": 3928
           }
         }
       }
@@ -17440,20 +20119,27 @@ const REAL_SELLOUT = {
         "store": "Temuco",
         "storeCode": "56 Hites - Manuel Montt 965, Temuco",
         "region": "09 - La Araucanía",
-        "units": 457,
-        "clp": 5907270,
+        "units": 550,
+        "clp": 7371404,
+        "costos": 4022959,
+        "margin": 45.4,
+        "stockUnits": 2869,
+        "weeksOfStock": 18.6,
         "byDivision": {
           "Ropa Interior": {
-            "units": 54,
-            "clp": 585466
+            "units": 66,
+            "clp": 763348,
+            "costos": 500465
           },
           "Vestuario Infantil": {
-            "units": 231,
-            "clp": 2337504
+            "units": 266,
+            "clp": 2741958,
+            "costos": 1683265
           },
           "Calzado": {
-            "units": 172,
-            "clp": 2984300
+            "units": 218,
+            "clp": 3866098,
+            "costos": 1839229
           }
         }
       },
@@ -17461,20 +20147,27 @@ const REAL_SELLOUT = {
         "store": "Rancagua",
         "storeCode": "49 Hites - Independencia 756, Rancagua",
         "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 412,
-        "clp": 4971134,
+        "units": 510,
+        "clp": 6137368,
+        "costos": 3607838,
+        "margin": 41.2,
+        "stockUnits": 2630,
+        "weeksOfStock": 18.4,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 217,
-            "clp": 2249543
+            "units": 273,
+            "clp": 2868556,
+            "costos": 1755994
           },
           "Calzado": {
-            "units": 148,
-            "clp": 2264233
+            "units": 168,
+            "clp": 2564646,
+            "costos": 1334037
           },
           "Ropa Interior": {
-            "units": 47,
-            "clp": 457358
+            "units": 69,
+            "clp": 704166,
+            "costos": 517807
           }
         }
       },
@@ -17482,41 +20175,27 @@ const REAL_SELLOUT = {
         "store": "Estación Central",
         "storeCode": "54 Hites - Salvador Sanfuentes 2968, Estación Central",
         "region": "13 - Metropolitana de Santiago",
-        "units": 395,
-        "clp": 5631592,
+        "units": 499,
+        "clp": 6798079,
+        "costos": 3824458,
+        "margin": 43.7,
+        "stockUnits": 3700,
+        "weeksOfStock": 26.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 104,
-            "clp": 1127916
+            "units": 153,
+            "clp": 1624573,
+            "costos": 992669
           },
           "Calzado": {
-            "units": 243,
-            "clp": 4032031
+            "units": 282,
+            "clp": 4554797,
+            "costos": 2352476
           },
           "Ropa Interior": {
-            "units": 48,
-            "clp": 471645
-          }
-        }
-      },
-      {
-        "store": "Puerto Montt",
-        "storeCode": "68 Hites - Antonio Varas 984, Puerto Montt",
-        "region": "10 - Los Lagos",
-        "units": 388,
-        "clp": 5048491,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 198,
-            "clp": 1948399
-          },
-          "Calzado": {
-            "units": 163,
-            "clp": 2833967
-          },
-          "Ropa Interior": {
-            "units": 27,
-            "clp": 266125
+            "units": 64,
+            "clp": 618709,
+            "costos": 479313
           }
         }
       },
@@ -17524,45 +20203,60 @@ const REAL_SELLOUT = {
         "store": "Linares",
         "storeCode": "65 Hites - Av. Independencia 470, Linares",
         "region": "07 - Maule",
-        "units": 386,
-        "clp": 5004944,
+        "units": 471,
+        "clp": 6197328,
+        "costos": 3307997,
+        "margin": 46.6,
+        "stockUnits": 2482,
+        "weeksOfStock": 18.8,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 212,
-            "clp": 2433395
+            "units": 255,
+            "clp": 2965565,
+            "costos": 1642107
           },
           "Calzado": {
-            "units": 145,
-            "clp": 2273229
+            "units": 183,
+            "clp": 2857483,
+            "costos": 1407993
           },
           "Ropa Interior": {
-            "units": 27,
-            "clp": 292920
+            "units": 31,
+            "clp": 368880,
+            "costos": 247897
           },
           "Vestuario Adulto": {
             "units": 2,
-            "clp": 5400
+            "clp": 5400,
+            "costos": 10000
           }
         }
       },
       {
-        "store": "Puente Alto",
-        "storeCode": "51 Hites - Concha y Toro 171, Puente Alto",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 362,
-        "clp": 4764646,
+        "store": "Puerto Montt",
+        "storeCode": "68 Hites - Antonio Varas 984, Puerto Montt",
+        "region": "10 - Los Lagos",
+        "units": 460,
+        "clp": 5943180,
+        "costos": 3223068,
+        "margin": 45.8,
+        "stockUnits": 1598,
+        "weeksOfStock": 12.4,
         "byDivision": {
-          "Calzado": {
-            "units": 177,
-            "clp": 2800849
-          },
           "Vestuario Infantil": {
-            "units": 154,
-            "clp": 1668571
+            "units": 248,
+            "clp": 2503776,
+            "costos": 1467878
+          },
+          "Calzado": {
+            "units": 178,
+            "clp": 3064817,
+            "costos": 1486043
           },
           "Ropa Interior": {
-            "units": 31,
-            "clp": 295226
+            "units": 34,
+            "clp": 374587,
+            "costos": 269147
           }
         }
       },
@@ -17570,45 +20264,60 @@ const REAL_SELLOUT = {
         "store": "Mall Pumay (Maipú)",
         "storeCode": "50 Hites - 5 de Abril #33, Maipú",
         "region": "13 - Metropolitana de Santiago",
-        "units": 355,
-        "clp": 4573336,
+        "units": 428,
+        "clp": 5529862,
+        "costos": 3098094,
+        "margin": 44.0,
+        "stockUnits": 3582,
+        "weeksOfStock": 29.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 137,
-            "clp": 1261663
+            "units": 175,
+            "clp": 1650139,
+            "costos": 1066856
           },
           "Calzado": {
-            "units": 148,
-            "clp": 2506762
+            "units": 170,
+            "clp": 2855942,
+            "costos": 1417920
           },
           "Ropa Interior": {
-            "units": 66,
-            "clp": 793131
+            "units": 79,
+            "clp": 1012001,
+            "costos": 597738
           },
           "Vestuario Adulto": {
             "units": 4,
-            "clp": 11780
+            "clp": 11780,
+            "costos": 15580
           }
         }
       },
       {
-        "store": "Osorno",
-        "storeCode": "45 Hites - Eleuterio Ramirez 1140, Osorno",
-        "region": "10 - Los Lagos",
-        "units": 318,
-        "clp": 4025140,
+        "store": "Puente Alto",
+        "storeCode": "51 Hites - Concha y Toro 171, Puente Alto",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 424,
+        "clp": 5505328,
+        "costos": 3128751,
+        "margin": 43.2,
+        "stockUnits": 3488,
+        "weeksOfStock": 29.4,
         "byDivision": {
           "Calzado": {
-            "units": 120,
-            "clp": 2184308
-          },
-          "Ropa Interior": {
-            "units": 16,
-            "clp": 146275
+            "units": 198,
+            "clp": 3132941,
+            "costos": 1589822
           },
           "Vestuario Infantil": {
-            "units": 182,
-            "clp": 1694557
+            "units": 188,
+            "clp": 2007231,
+            "costos": 1262480
+          },
+          "Ropa Interior": {
+            "units": 38,
+            "clp": 365156,
+            "costos": 276449
           }
         }
       },
@@ -17616,20 +20325,27 @@ const REAL_SELLOUT = {
         "store": "Ovalle",
         "storeCode": "18 Hites - Vicuña Mackenna 2640, Ovalle",
         "region": "04 - Coquimbo",
-        "units": 312,
-        "clp": 3900866,
+        "units": 376,
+        "clp": 4772470,
+        "costos": 2610198,
+        "margin": 45.3,
+        "stockUnits": 2314,
+        "weeksOfStock": 22.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 157,
-            "clp": 1508000
+            "units": 189,
+            "clp": 1833920,
+            "costos": 1115350
           },
           "Ropa Interior": {
-            "units": 44,
-            "clp": 511341
+            "units": 56,
+            "clp": 690225,
+            "costos": 444404
           },
           "Calzado": {
-            "units": 111,
-            "clp": 1881525
+            "units": 131,
+            "clp": 2248325,
+            "costos": 1050444
           }
         }
       },
@@ -17637,41 +20353,27 @@ const REAL_SELLOUT = {
         "store": "Iquique",
         "storeCode": "78 Hites - Tarapacá 401, Iquique",
         "region": "01 - Tarapacá",
-        "units": 312,
-        "clp": 4000539,
+        "units": 370,
+        "clp": 4606651,
+        "costos": 2461065,
+        "margin": 46.6,
+        "stockUnits": 1411,
+        "weeksOfStock": 13.6,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 194,
-            "clp": 1894494
+            "units": 234,
+            "clp": 2222844,
+            "costos": 1312227
           },
           "Calzado": {
-            "units": 105,
-            "clp": 1976175
+            "units": 118,
+            "clp": 2205985,
+            "costos": 1029629
           },
           "Ropa Interior": {
-            "units": 13,
-            "clp": 129870
-          }
-        }
-      },
-      {
-        "store": "Edificio Puente",
-        "storeCode": "01 Hites - Puente 696, Santiago",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 310,
-        "clp": 4089439,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 8,
-            "clp": 57462
-          },
-          "Vestuario Infantil": {
-            "units": 129,
-            "clp": 1285022
-          },
-          "Calzado": {
-            "units": 173,
-            "clp": 2746955
+            "units": 18,
+            "clp": 177822,
+            "costos": 119209
           }
         }
       },
@@ -17679,41 +20381,27 @@ const REAL_SELLOUT = {
         "store": "Mall Arauco Chillán",
         "storeCode": "26 Hites - Isabel Riquelme 709, Chillán",
         "region": "16 - Ñuble",
-        "units": 310,
-        "clp": 3716999,
+        "units": 370,
+        "clp": 4546549,
+        "costos": 2604373,
+        "margin": 42.7,
+        "stockUnits": 3281,
+        "weeksOfStock": 31.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 182,
-            "clp": 1714305
+            "units": 208,
+            "clp": 1943795,
+            "costos": 1283167
           },
           "Calzado": {
-            "units": 114,
-            "clp": 1831886
+            "units": 143,
+            "clp": 2347996,
+            "costos": 1175439
           },
           "Ropa Interior": {
-            "units": 14,
-            "clp": 170808
-          }
-        }
-      },
-      {
-        "store": "La Serena",
-        "storeCode": "40 Hites - Gregorio Cordovez 435, La Serena",
-        "region": "04 - Coquimbo",
-        "units": 299,
-        "clp": 3794950,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 82,
-            "clp": 759306
-          },
-          "Calzado": {
-            "units": 132,
-            "clp": 2197215
-          },
-          "Ropa Interior": {
-            "units": 85,
-            "clp": 838429
+            "units": 19,
+            "clp": 254758,
+            "costos": 145767
           }
         }
       },
@@ -17721,62 +20409,111 @@ const REAL_SELLOUT = {
         "store": "Mall Del Centro (Talca)",
         "storeCode": "38 Hites - Calle 1 Sur #1371, Talca",
         "region": "07 - Maule",
-        "units": 295,
-        "clp": 3846072,
+        "units": 369,
+        "clp": 4783410,
+        "costos": 2633812,
+        "margin": 44.9,
+        "stockUnits": 3024,
+        "weeksOfStock": 29.3,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 138,
-            "clp": 1381812
+            "units": 186,
+            "clp": 1920947,
+            "costos": 1138957
           },
           "Calzado": {
-            "units": 123,
-            "clp": 2135590
-          },
-          "Ropa Interior": {
-            "units": 34,
-            "clp": 328670
-          }
-        }
-      },
-      {
-        "store": "Mall Paseo San Bernardo",
-        "storeCode": "55 Hites - Eyzaguirre 650, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 283,
-        "clp": 3835260,
-        "byDivision": {
-          "Calzado": {
-            "units": 156,
-            "clp": 2373103
-          },
-          "Vestuario Infantil": {
-            "units": 87,
-            "clp": 1003640
+            "units": 143,
+            "clp": 2474853,
+            "costos": 1220003
           },
           "Ropa Interior": {
             "units": 40,
-            "clp": 458517
+            "clp": 387610,
+            "costos": 274852
           }
         }
       },
       {
-        "store": "Melipilla",
-        "storeCode": "67 Hites - Vargas 578, Melipilla",
+        "store": "Edificio Puente",
+        "storeCode": "01 Hites - Puente 696, Santiago",
         "region": "13 - Metropolitana de Santiago",
-        "units": 277,
-        "clp": 3594972,
+        "units": 365,
+        "clp": 4738579,
+        "costos": 2599534,
+        "margin": 45.1,
+        "stockUnits": 2597,
+        "weeksOfStock": 25.4,
         "byDivision": {
+          "Ropa Interior": {
+            "units": 10,
+            "clp": 77442,
+            "costos": 65030
+          },
           "Vestuario Infantil": {
-            "units": 107,
-            "clp": 1062112
+            "units": 161,
+            "clp": 1595182,
+            "costos": 998203
           },
           "Calzado": {
-            "units": 136,
-            "clp": 2121200
+            "units": 194,
+            "clp": 3065955,
+            "costos": 1536301
+          }
+        }
+      },
+      {
+        "store": "Osorno",
+        "storeCode": "45 Hites - Eleuterio Ramirez 1140, Osorno",
+        "region": "10 - Los Lagos",
+        "units": 361,
+        "clp": 4620602,
+        "costos": 2505921,
+        "margin": 45.8,
+        "stockUnits": 1512,
+        "weeksOfStock": 15.0,
+        "byDivision": {
+          "Calzado": {
+            "units": 139,
+            "clp": 2550118,
+            "costos": 1192284
           },
           "Ropa Interior": {
-            "units": 34,
-            "clp": 411660
+            "units": 16,
+            "clp": 146275,
+            "costos": 113385
+          },
+          "Vestuario Infantil": {
+            "units": 206,
+            "clp": 1924209,
+            "costos": 1200252
+          }
+        }
+      },
+      {
+        "store": "La Serena",
+        "storeCode": "40 Hites - Gregorio Cordovez 435, La Serena",
+        "region": "04 - Coquimbo",
+        "units": 343,
+        "clp": 4383578,
+        "costos": 2551939,
+        "margin": 41.8,
+        "stockUnits": 2190,
+        "weeksOfStock": 22.8,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 93,
+            "clp": 894196,
+            "costos": 573368
+          },
+          "Calzado": {
+            "units": 144,
+            "clp": 2421595,
+            "costos": 1180476
+          },
+          "Ropa Interior": {
+            "units": 106,
+            "clp": 1067787,
+            "costos": 798095
           }
         }
       },
@@ -17784,41 +20521,83 @@ const REAL_SELLOUT = {
         "store": "Quilicura",
         "storeCode": "13 Hites - Manuel Antonio Matta 1000, Quilicura",
         "region": "13 - Metropolitana de Santiago",
-        "units": 274,
-        "clp": 3168689,
+        "units": 336,
+        "clp": 3878184,
+        "costos": 2277311,
+        "margin": 41.3,
+        "stockUnits": 3047,
+        "weeksOfStock": 32.4,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 111,
-            "clp": 935503
+            "units": 145,
+            "clp": 1284363,
+            "costos": 825560
           },
           "Ropa Interior": {
-            "units": 38,
-            "clp": 377546
+            "units": 43,
+            "clp": 434496,
+            "costos": 330261
           },
           "Calzado": {
-            "units": 125,
-            "clp": 1855640
+            "units": 148,
+            "clp": 2159325,
+            "costos": 1121490
           }
         }
       },
       {
-        "store": "Los Ángeles",
-        "storeCode": "53 Hites - Colón 338, Los Ángeles",
-        "region": "08 - Biobío",
-        "units": 231,
-        "clp": 3199387,
+        "store": "Melipilla",
+        "storeCode": "67 Hites - Vargas 578, Melipilla",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 332,
+        "clp": 4316378,
+        "costos": 2324878,
+        "margin": 46.1,
+        "stockUnits": 2065,
+        "weeksOfStock": 22.2,
         "byDivision": {
-          "Calzado": {
-            "units": 121,
-            "clp": 2026088
-          },
           "Vestuario Infantil": {
-            "units": 85,
-            "clp": 930956
+            "units": 139,
+            "clp": 1422241,
+            "costos": 818572
+          },
+          "Calzado": {
+            "units": 154,
+            "clp": 2407527,
+            "costos": 1195202
           },
           "Ropa Interior": {
-            "units": 25,
-            "clp": 242343
+            "units": 39,
+            "clp": 486610,
+            "costos": 311104
+          }
+        }
+      },
+      {
+        "store": "Mall Paseo San Bernardo",
+        "storeCode": "55 Hites - Eyzaguirre 650, San Bernardo",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 331,
+        "clp": 4530680,
+        "costos": 2460277,
+        "margin": 45.7,
+        "stockUnits": 3685,
+        "weeksOfStock": 39.8,
+        "byDivision": {
+          "Calzado": {
+            "units": 181,
+            "clp": 2797253,
+            "costos": 1415687
+          },
+          "Vestuario Infantil": {
+            "units": 104,
+            "clp": 1174970,
+            "costos": 684562
+          },
+          "Ropa Interior": {
+            "units": 46,
+            "clp": 558457,
+            "costos": 360028
           }
         }
       },
@@ -17826,20 +20605,27 @@ const REAL_SELLOUT = {
         "store": "Concepción 2",
         "storeCode": "52 Hites - Barros Arana, Esq. Anibal Pinto, Concepción",
         "region": "08 - Biobío",
-        "units": 223,
-        "clp": 2873805,
+        "units": 265,
+        "clp": 3464372,
+        "costos": 1909566,
+        "margin": 44.9,
+        "stockUnits": 2308,
+        "weeksOfStock": 31.1,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 122,
-            "clp": 1218667
+            "units": 141,
+            "clp": 1431224,
+            "costos": 868824
           },
           "Calzado": {
-            "units": 82,
-            "clp": 1470630
+            "units": 97,
+            "clp": 1744024,
+            "costos": 816514
           },
           "Ropa Interior": {
-            "units": 19,
-            "clp": 184508
+            "units": 27,
+            "clp": 289124,
+            "costos": 224228
           }
         }
       },
@@ -17847,41 +20633,55 @@ const REAL_SELLOUT = {
         "store": "Mall Vivo Coquimbo",
         "storeCode": "64 Hites - Baquedano 86, Coquimbo",
         "region": "04 - Coquimbo",
-        "units": 216,
-        "clp": 2654973,
+        "units": 263,
+        "clp": 3333947,
+        "costos": 1900592,
+        "margin": 43.0,
+        "stockUnits": 2443,
+        "weeksOfStock": 33.2,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 97,
-            "clp": 921977
+            "units": 116,
+            "clp": 1132931,
+            "costos": 711660
           },
           "Ropa Interior": {
-            "units": 38,
-            "clp": 396601
+            "units": 45,
+            "clp": 500531,
+            "costos": 353877
           },
           "Calzado": {
-            "units": 81,
-            "clp": 1336395
+            "units": 102,
+            "clp": 1700485,
+            "costos": 835055
           }
         }
       },
       {
-        "store": "Plaza Armas",
-        "storeCode": "08 Hites - Ahumada 390, Santiago",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 214,
-        "clp": 2742804,
+        "store": "Los Ángeles",
+        "storeCode": "53 Hites - Colón 338, Los Ángeles",
+        "region": "08 - Biobío",
+        "units": 263,
+        "clp": 3660215,
+        "costos": 1975074,
+        "margin": 46.0,
+        "stockUnits": 2088,
+        "weeksOfStock": 28.4,
         "byDivision": {
-          "Vestuario Infantil": {
-            "units": 89,
-            "clp": 915800
-          },
           "Calzado": {
-            "units": 97,
-            "clp": 1551280
+            "units": 131,
+            "clp": 2195198,
+            "costos": 1098854
+          },
+          "Vestuario Infantil": {
+            "units": 103,
+            "clp": 1184286,
+            "costos": 686013
           },
           "Ropa Interior": {
-            "units": 28,
-            "clp": 275724
+            "units": 29,
+            "clp": 280731,
+            "costos": 190207
           }
         }
       },
@@ -17889,20 +20689,55 @@ const REAL_SELLOUT = {
         "store": "Antofagasta",
         "storeCode": "59 Hites - Almirante Latorre 2661, Antofagasta",
         "region": "02 - Antofagasta",
-        "units": 209,
-        "clp": 2811841,
+        "units": 262,
+        "clp": 3621205,
+        "costos": 2023264,
+        "margin": 44.1,
+        "stockUnits": 3734,
+        "weeksOfStock": 50.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 43,
-            "clp": 456762
+            "units": 47,
+            "clp": 502722,
+            "costos": 286632
           },
           "Calzado": {
-            "units": 139,
-            "clp": 2086239
+            "units": 182,
+            "clp": 2782703,
+            "costos": 1480924
           },
           "Ropa Interior": {
-            "units": 27,
-            "clp": 268840
+            "units": 33,
+            "clp": 335780,
+            "costos": 255708
+          }
+        }
+      },
+      {
+        "store": "Plaza Armas",
+        "storeCode": "08 Hites - Ahumada 390, Santiago",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 251,
+        "clp": 3140216,
+        "costos": 1807481,
+        "margin": 42.4,
+        "stockUnits": 3774,
+        "weeksOfStock": 53.7,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 102,
+            "clp": 1037670,
+            "costos": 633042
+          },
+          "Calzado": {
+            "units": 108,
+            "clp": 1699010,
+            "costos": 863408
+          },
+          "Ropa Interior": {
+            "units": 41,
+            "clp": 403536,
+            "costos": 311031
           }
         }
       },
@@ -17910,20 +20745,27 @@ const REAL_SELLOUT = {
         "store": "Quilpué",
         "storeCode": "034 Hites - Diego Portales 867, Quilpué",
         "region": "05 - Valparaíso",
-        "units": 182,
-        "clp": 2409569,
+        "units": 214,
+        "clp": 2821450,
+        "costos": 1543554,
+        "margin": 45.3,
+        "stockUnits": 2713,
+        "weeksOfStock": 45.3,
         "byDivision": {
           "Calzado": {
-            "units": 99,
-            "clp": 1627382
+            "units": 118,
+            "clp": 1930192,
+            "costos": 952064
           },
           "Ropa Interior": {
-            "units": 19,
-            "clp": 182902
+            "units": 21,
+            "clp": 202882,
+            "costos": 158380
           },
           "Vestuario Infantil": {
-            "units": 64,
-            "clp": 599285
+            "units": 75,
+            "clp": 688376,
+            "costos": 433110
           }
         }
       },
@@ -17931,20 +20773,27 @@ const REAL_SELLOUT = {
         "store": "Copiapó",
         "storeCode": "47 Hites - Chacabuco 373, Copiapó",
         "region": "03 - Atacama",
-        "units": 179,
-        "clp": 2171341,
+        "units": 207,
+        "clp": 2543136,
+        "costos": 1471390,
+        "margin": 42.1,
+        "stockUnits": 2522,
+        "weeksOfStock": 43.5,
         "byDivision": {
           "Calzado": {
-            "units": 87,
-            "clp": 1337489
+            "units": 101,
+            "clp": 1546382,
+            "costos": 802590
           },
           "Vestuario Infantil": {
-            "units": 65,
-            "clp": 619120
+            "units": 74,
+            "clp": 733030,
+            "costos": 474833
           },
           "Ropa Interior": {
-            "units": 27,
-            "clp": 214732
+            "units": 32,
+            "clp": 263724,
+            "costos": 193967
           }
         }
       },
@@ -17952,20 +20801,27 @@ const REAL_SELLOUT = {
         "store": "Internet",
         "storeCode": "02 Hites - CD Puerto Madero 9710, Pudahuel",
         "region": "13 - Metropolitana de Santiago",
-        "units": 161,
-        "clp": 1746289,
+        "units": 177,
+        "clp": 1915129,
+        "costos": 1195634,
+        "margin": 37.6,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 64,
-            "clp": 523160
+            "units": 69,
+            "clp": 564110,
+            "costos": 412072
           },
           "Ropa Interior": {
             "units": 16,
-            "clp": 159840
+            "clp": 159840,
+            "costos": 119870
           },
           "Calzado": {
-            "units": 81,
-            "clp": 1063289
+            "units": 92,
+            "clp": 1191179,
+            "costos": 663692
           }
         }
       },
@@ -17973,20 +20829,27 @@ const REAL_SELLOUT = {
         "store": "Curicó",
         "storeCode": "086 Hites - Arturo Prat 527, Curicó",
         "region": "07 - Maule",
-        "units": 144,
-        "clp": 1990949,
+        "units": 170,
+        "clp": 2340634,
+        "costos": 1302528,
+        "margin": 44.4,
+        "stockUnits": 1044,
+        "weeksOfStock": 21.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 47,
-            "clp": 478656
+            "units": 64,
+            "clp": 686610,
+            "costos": 396720
           },
           "Calzado": {
-            "units": 56,
-            "clp": 1034153
+            "units": 63,
+            "clp": 1142067,
+            "costos": 560209
           },
           "Ropa Interior": {
-            "units": 41,
-            "clp": 478140
+            "units": 43,
+            "clp": 511957,
+            "costos": 345599
           }
         }
       },
@@ -17994,41 +20857,55 @@ const REAL_SELLOUT = {
         "store": "Alameda",
         "storeCode": "11 Hites - Alameda 757, Santiago",
         "region": "13 - Metropolitana de Santiago",
-        "units": 106,
-        "clp": 1168598,
+        "units": 131,
+        "clp": 1453350,
+        "costos": 937722,
+        "margin": 35.5,
+        "stockUnits": 3687,
+        "weeksOfStock": 100.5,
         "byDivision": {
           "Calzado": {
-            "units": 50,
-            "clp": 683106
+            "units": 59,
+            "clp": 811016,
+            "costos": 474578
           },
           "Vestuario Infantil": {
-            "units": 31,
-            "clp": 250636
+            "units": 41,
+            "clp": 349536,
+            "costos": 224958
           },
           "Ropa Interior": {
-            "units": 25,
-            "clp": 234856
+            "units": 31,
+            "clp": 292798,
+            "costos": 238186
           }
         }
       },
       {
         "store": "No Aplica",
-        "storeCode": "88 Hites - Sin Dirección (Outlet Maipú)",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 92,
-        "clp": 1049783,
+        "storeCode": "077 Hites - Av. Blanco Encalada 979, Quilpué",
+        "region": "05 - Valparaíso",
+        "units": 112,
+        "clp": 1289120,
+        "costos": 790773,
+        "margin": 38.7,
+        "stockUnits": 6316,
+        "weeksOfStock": 201.4,
         "byDivision": {
           "Calzado": {
-            "units": 32,
-            "clp": 333673
+            "units": 34,
+            "clp": 356163,
+            "costos": 231771
           },
           "Ropa Interior": {
-            "units": 38,
-            "clp": 478626
+            "units": 48,
+            "clp": 602553,
+            "costos": 381269
           },
           "Vestuario Infantil": {
-            "units": 22,
-            "clp": 237484
+            "units": 30,
+            "clp": 330404,
+            "costos": 177733
           }
         }
       },
@@ -18036,12 +20913,17 @@ const REAL_SELLOUT = {
         "store": "No Definido",
         "storeCode": "79 Hites - SAN ANTONIO",
         "region": "No Definido",
-        "units": 42,
-        "clp": 904200,
+        "units": 59,
+        "clp": 1250651,
+        "costos": 543430,
+        "margin": 56.5,
+        "stockUnits": 45,
+        "weeksOfStock": 2.7,
         "byDivision": {
           "Calzado": {
-            "units": 42,
-            "clp": 904200
+            "units": 59,
+            "clp": 1250651,
+            "costos": 543430
           }
         }
       }
@@ -18051,49 +20933,32 @@ const REAL_SELLOUT = {
         "store": "No Aplica",
         "storeCode": "2000 Falabella - CD Lo Espejo 3200, Cerrillos",
         "region": "13 - Metropolitana de Santiago",
-        "units": 180,
-        "clp": 2067846,
+        "units": 215,
+        "clp": 2488132,
+        "costos": 1616980,
+        "margin": 35.0,
+        "stockUnits": 4043,
+        "weeksOfStock": 67.2,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 127,
-            "clp": 1349737
+            "units": 147,
+            "clp": 1586173,
+            "costos": 908111
           },
           "Calzado": {
-            "units": 17,
-            "clp": 253830
+            "units": 23,
+            "clp": 331770,
+            "costos": 244220
           },
           "Accesorios y Otros": {
-            "units": 31,
-            "clp": 391532
+            "units": 38,
+            "clp": 470462,
+            "costos": 418000
           },
           "Ropa Interior": {
-            "units": 5,
-            "clp": 72747
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza La Serena",
-        "storeCode": "1400 Falabella - Alberto Solari 1400, La Serena",
-        "region": "04 - Coquimbo",
-        "units": 161,
-        "clp": 1527260,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 46,
-            "clp": 561790
-          },
-          "Calzado": {
-            "units": 20,
-            "clp": 228800
-          },
-          "Ropa Interior": {
-            "units": 80,
-            "clp": 552820
-          },
-          "Accesorios y Otros": {
-            "units": 15,
-            "clp": 183850
+            "units": 7,
+            "clp": 99727,
+            "costos": 46649
           }
         }
       },
@@ -18101,49 +20966,65 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Iquique",
         "storeCode": "2555 Falabella - Héroes de la Concepción 2555, Iquique",
         "region": "01 - Tarapacá",
-        "units": 154,
-        "clp": 1780140,
+        "units": 180,
+        "clp": 2078901,
+        "costos": 1082834,
+        "margin": 47.9,
+        "stockUnits": 161,
+        "weeksOfStock": 3.2,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 60,
-            "clp": 732725
+            "units": 66,
+            "clp": 803170,
+            "costos": 454196
           },
           "Calzado": {
             "units": 5,
-            "clp": 69489
+            "clp": 69489,
+            "costos": 47119
           },
           "Ropa Interior": {
-            "units": 88,
-            "clp": 965936
+            "units": 105,
+            "clp": 1158282,
+            "costos": 537519
           },
           "Accesorios y Otros": {
-            "units": 1,
-            "clp": 11990
+            "units": 4,
+            "clp": 47960,
+            "costos": 44000
           }
         }
       },
       {
-        "store": "Mall Plaza El Trébol",
-        "storeCode": "3177 Falabella - José Alessandri 3177, Talcahuano",
-        "region": "08 - Biobío",
-        "units": 143,
-        "clp": 1627906,
+        "store": "Mall Plaza La Serena",
+        "storeCode": "1400 Falabella - Alberto Solari 1400, La Serena",
+        "region": "04 - Coquimbo",
+        "units": 179,
+        "clp": 1736080,
+        "costos": 1071070,
+        "margin": 38.3,
+        "stockUnits": 373,
+        "weeksOfStock": 7.4,
         "byDivision": {
+          "Vestuario Infantil": {
+            "units": 54,
+            "clp": 648710,
+            "costos": 363661
+          },
           "Calzado": {
-            "units": 33,
-            "clp": 362721
+            "units": 26,
+            "clp": 286740,
+            "costos": 243451
           },
           "Ropa Interior": {
-            "units": 27,
-            "clp": 364430
-          },
-          "Vestuario Infantil": {
-            "units": 77,
-            "clp": 828815
+            "units": 82,
+            "clp": 592800,
+            "costos": 276958
           },
           "Accesorios y Otros": {
-            "units": 6,
-            "clp": 71940
+            "units": 17,
+            "clp": 207830,
+            "costos": 187000
           }
         }
       },
@@ -18151,24 +21032,65 @@ const REAL_SELLOUT = {
         "store": "No Definido",
         "storeCode": "514 Falabella - Sin Direccion ((Tienda Viña del Mar II) FALABELLA RETAIL S.A.)",
         "region": "No Definido",
-        "units": 143,
-        "clp": 1564678,
+        "units": 159,
+        "clp": 1748916,
+        "costos": 1120922,
+        "margin": 35.9,
+        "stockUnits": 740,
+        "weeksOfStock": 16.6,
         "byDivision": {
           "Calzado": {
-            "units": 44,
-            "clp": 483107
+            "units": 47,
+            "clp": 516077,
+            "costos": 446215
           },
           "Ropa Interior": {
-            "units": 42,
-            "clp": 434263
+            "units": 47,
+            "clp": 508213,
+            "costos": 235969
           },
           "Vestuario Infantil": {
-            "units": 56,
-            "clp": 641718
+            "units": 63,
+            "clp": 710646,
+            "costos": 416738
           },
           "Accesorios y Otros": {
-            "units": 1,
-            "clp": 5590
+            "units": 2,
+            "clp": 13980,
+            "costos": 22000
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza El Trébol",
+        "storeCode": "3177 Falabella - José Alessandri 3177, Talcahuano",
+        "region": "08 - Biobío",
+        "units": 157,
+        "clp": 1779796,
+        "costos": 1267449,
+        "margin": 28.8,
+        "stockUnits": 260,
+        "weeksOfStock": 5.9,
+        "byDivision": {
+          "Calzado": {
+            "units": 35,
+            "clp": 377701,
+            "costos": 324839
+          },
+          "Ropa Interior": {
+            "units": 33,
+            "clp": 424400,
+            "costos": 226783
+          },
+          "Vestuario Infantil": {
+            "units": 81,
+            "clp": 881775,
+            "costos": 627827
+          },
+          "Accesorios y Otros": {
+            "units": 8,
+            "clp": 95920,
+            "costos": 88000
           }
         }
       },
@@ -18176,16 +21098,22 @@ const REAL_SELLOUT = {
         "store": "Osorno",
         "storeCode": "0836 Falabella - Eleuterio Ramírez 840, Osorno",
         "region": "10 - Los Lagos",
-        "units": 132,
-        "clp": 1328641,
+        "units": 156,
+        "clp": 1559757,
+        "costos": 862984,
+        "margin": 44.7,
+        "stockUnits": 175,
+        "weeksOfStock": 4.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 55,
-            "clp": 609487
+            "units": 70,
+            "clp": 763188,
+            "costos": 480277
           },
           "Ropa Interior": {
-            "units": 77,
-            "clp": 719154
+            "units": 86,
+            "clp": 796569,
+            "costos": 382707
           }
         }
       },
@@ -18193,37 +21121,22 @@ const REAL_SELLOUT = {
         "store": "Melipilla",
         "storeCode": "2214 Falabella - Vargas 457, Melipilla",
         "region": "13 - Metropolitana de Santiago",
-        "units": 122,
-        "clp": 1142390,
+        "units": 136,
+        "clp": 1267250,
+        "costos": 646779,
+        "margin": 49.0,
+        "stockUnits": 125,
+        "weeksOfStock": 3.3,
         "byDivision": {
           "Ropa Interior": {
-            "units": 93,
-            "clp": 795175
+            "units": 106,
+            "clp": 912045,
+            "costos": 426598
           },
           "Vestuario Infantil": {
-            "units": 29,
-            "clp": 347215
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Los Ángeles",
-        "storeCode": "0472 Falabella - Valdivia 472, Los Ángeles",
-        "region": "08 - Biobío",
-        "units": 119,
-        "clp": 1305121,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 65,
-            "clp": 717897
-          },
-          "Vestuario Infantil": {
-            "units": 51,
-            "clp": 569254
-          },
-          "Calzado": {
-            "units": 3,
-            "clp": 17970
+            "units": 30,
+            "clp": 355205,
+            "costos": 220181
           }
         }
       },
@@ -18231,66 +21144,50 @@ const REAL_SELLOUT = {
         "store": "Mall Paseo Costanera",
         "storeCode": "0307 Falabella - Av. Juan Soler Manfredini 101, Puerto Montt",
         "region": "10 - Los Lagos",
-        "units": 118,
-        "clp": 1346855,
+        "units": 126,
+        "clp": 1435647,
+        "costos": 815134,
+        "margin": 43.2,
+        "stockUnits": 62,
+        "weeksOfStock": 1.8,
         "byDivision": {
           "Ropa Interior": {
-            "units": 52,
-            "clp": 561515
+            "units": 58,
+            "clp": 631480,
+            "costos": 368141
           },
           "Vestuario Infantil": {
-            "units": 66,
-            "clp": 785340
+            "units": 68,
+            "clp": 804167,
+            "costos": 446993
           }
         }
       },
       {
-        "store": "Mall Plaza Antofagasta",
-        "storeCode": "2640 Falabella - Balmaceda 2355, Antofagasta",
-        "region": "02 - Antofagasta",
-        "units": 105,
-        "clp": 1273091,
+        "store": "Mall Plaza Los Ángeles",
+        "storeCode": "0472 Falabella - Valdivia 472, Los Ángeles",
+        "region": "08 - Biobío",
+        "units": 125,
+        "clp": 1395061,
+        "costos": 761012,
+        "margin": 45.4,
+        "stockUnits": 89,
+        "weeksOfStock": 2.5,
         "byDivision": {
-          "Calzado": {
-            "units": 26,
-            "clp": 313740
-          },
           "Ropa Interior": {
-            "units": 52,
-            "clp": 605621
+            "units": 69,
+            "clp": 784857,
+            "costos": 367131
           },
           "Vestuario Infantil": {
-            "units": 26,
-            "clp": 337740
-          },
-          "Accesorios y Otros": {
-            "units": 1,
-            "clp": 15990
-          }
-        }
-      },
-      {
-        "store": "Mall Arauco Maipú",
-        "storeCode": "3741 Falabella - Av. Américo Vespucio 399, Maipú",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 102,
-        "clp": 874114,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 57,
-            "clp": 527962
-          },
-          "Ropa Interior": {
-            "units": 37,
-            "clp": 265232
+            "units": 53,
+            "clp": 592234,
+            "costos": 378767
           },
           "Calzado": {
             "units": 3,
-            "clp": 31970
-          },
-          "Accesorios y Otros": {
-            "units": 5,
-            "clp": 48950
+            "clp": 17970,
+            "costos": 15114
           }
         }
       },
@@ -18298,24 +21195,65 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Norte",
         "storeCode": "1737 Falabella - Av. Américo Vespucio 1737, Huechuraba",
         "region": "13 - Metropolitana de Santiago",
-        "units": 101,
-        "clp": 976194,
+        "units": 124,
+        "clp": 1195984,
+        "costos": 914964,
+        "margin": 23.5,
+        "stockUnits": 244,
+        "weeksOfStock": 7.0,
         "byDivision": {
           "Calzado": {
-            "units": 16,
-            "clp": 163499
+            "units": 21,
+            "clp": 219449,
+            "costos": 190617
           },
           "Vestuario Infantil": {
-            "units": 50,
-            "clp": 495045
+            "units": 55,
+            "clp": 527015,
+            "costos": 378818
           },
           "Ropa Interior": {
-            "units": 33,
-            "clp": 293670
+            "units": 46,
+            "clp": 425540,
+            "costos": 323529
           },
           "Accesorios y Otros": {
             "units": 2,
-            "clp": 23980
+            "clp": 23980,
+            "costos": 22000
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Antofagasta",
+        "storeCode": "2640 Falabella - Balmaceda 2355, Antofagasta",
+        "region": "02 - Antofagasta",
+        "units": 118,
+        "clp": 1450933,
+        "costos": 798812,
+        "margin": 44.9,
+        "stockUnits": 245,
+        "weeksOfStock": 7.4,
+        "byDivision": {
+          "Calzado": {
+            "units": 28,
+            "clp": 341720,
+            "costos": 270038
+          },
+          "Ropa Interior": {
+            "units": 64,
+            "clp": 767402,
+            "costos": 356984
+          },
+          "Vestuario Infantil": {
+            "units": 27,
+            "clp": 349801,
+            "costos": 182790
+          },
+          "Accesorios y Otros": {
+            "units": -1,
+            "clp": -7990,
+            "costos": -11000
           }
         }
       },
@@ -18323,108 +21261,22 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Urbano Punta Arenas",
         "storeCode": "2990 Falabella - Av. Frei 01110, Punta Arenas",
         "region": "12 - Magallanes y de la Antártica Chilena",
-        "units": 99,
-        "clp": 1087132,
+        "units": 113,
+        "clp": 1271492,
+        "costos": 641662,
+        "margin": 49.5,
+        "stockUnits": 153,
+        "weeksOfStock": 4.8,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 38,
-            "clp": 426967
+            "units": 44,
+            "clp": 496907,
+            "costos": 280539
           },
           "Ropa Interior": {
-            "units": 61,
-            "clp": 660165
-          }
-        }
-      },
-      {
-        "store": "Temuco",
-        "storeCode": "0570 Falabella - Arturo Prat 570, Temuco",
-        "region": "09 - La Araucanía",
-        "units": 94,
-        "clp": 986205,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 38,
-            "clp": 444310
-          },
-          "Vestuario Infantil": {
-            "units": 55,
-            "clp": 535905
-          },
-          "Calzado": {
-            "units": 1,
-            "clp": 5990
-          }
-        }
-      },
-      {
-        "store": "Mall Parque Arauco",
-        "storeCode": "5416 Falabella - Av. Presidente Kennedy 5413, Las Condes",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 93,
-        "clp": 1158588,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 39,
-            "clp": 529974
-          },
-          "Vestuario Infantil": {
-            "units": 37,
-            "clp": 399035
-          },
-          "Calzado": {
-            "units": 11,
-            "clp": 152060
-          },
-          "Accesorios y Otros": {
-            "units": 6,
-            "clp": 77519
-          }
-        }
-      },
-      {
-        "store": "Mall Open Plaza Rancagua",
-        "storeCode": "0438 Falabella - Sargento Cuevas 405, Rancagua",
-        "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 91,
-        "clp": 913838,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 3,
-            "clp": 48970
-          },
-          "Ropa Interior": {
-            "units": 60,
-            "clp": 545400
-          },
-          "Vestuario Infantil": {
-            "units": 30,
-            "clp": 321448
-          },
-          "Calzado": {
-            "units": -2,
-            "clp": -1980
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Arica",
-        "storeCode": "2618 Falabella - Av. Diego Portales 640, Arica",
-        "region": "15 - Arica y Parinacota",
-        "units": 89,
-        "clp": 739975,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 14,
-            "clp": 68786
-          },
-          "Calzado": {
-            "units": 41,
-            "clp": 433529
-          },
-          "Ropa Interior": {
-            "units": 34,
-            "clp": 237660
+            "units": 69,
+            "clp": 774585,
+            "costos": 361123
           }
         }
       },
@@ -18432,164 +21284,116 @@ const REAL_SELLOUT = {
         "store": "Paseo Puente",
         "storeCode": "0530 Falabella - Puente 530, Santiago",
         "region": "13 - Metropolitana de Santiago",
-        "units": 89,
-        "clp": 790460,
+        "units": 108,
+        "clp": 923070,
+        "costos": 848666,
+        "margin": 8.1,
+        "stockUnits": 132,
+        "weeksOfStock": 4.4,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 59,
-            "clp": 637913
+            "units": 66,
+            "clp": 708843,
+            "costos": 541285
           },
           "Calzado": {
-            "units": 30,
-            "clp": 152547
+            "units": 42,
+            "clp": 214227,
+            "costos": 307381
           }
         }
       },
       {
-        "store": "Plaza Viña",
-        "storeCode": "0510 Falabella - Sucre 250, Viña del Mar",
-        "region": "05 - Valparaíso",
-        "units": 84,
-        "clp": 919165,
+        "store": "Mall Open Plaza Rancagua",
+        "storeCode": "0438 Falabella - Sargento Cuevas 405, Rancagua",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 108,
+        "clp": 1095668,
+        "costos": 608688,
+        "margin": 44.4,
+        "stockUnits": 205,
+        "weeksOfStock": 6.8,
         "byDivision": {
-          "Calzado": {
-            "units": 84,
-            "clp": 919165
-          }
-        }
-      },
-      {
-        "store": "Curicó",
-        "storeCode": "0603 Falabella - Peña 615, Curicó",
-        "region": "07 - Maule",
-        "units": 83,
-        "clp": 832144,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 45,
-            "clp": 454097
-          },
-          "Vestuario Infantil": {
-            "units": 38,
-            "clp": 378047
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Quilpué",
-        "storeCode": "0810 Falabella - Diego Portales 822, Quilpué",
-        "region": "05 - Valparaíso",
-        "units": 77,
-        "clp": 885938,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 77,
-            "clp": 885938
-          }
-        }
-      },
-      {
-        "store": "Talca",
-        "storeCode": "1485 Falabella - 1 Norte #1485, Talca",
-        "region": "07 - Maule",
-        "units": 72,
-        "clp": 873197,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 58,
-            "clp": 665827
+          "Accesorios y Otros": {
+            "units": 3,
+            "clp": 48970,
+            "costos": 32500
           },
           "Ropa Interior": {
-            "units": 14,
-            "clp": 207370
-          }
-        }
-      },
-      {
-        "store": "Mall Open Plaza La Calera",
-        "storeCode": "1201 Falabella - Prolongación J.J. Perez 12010, Calera",
-        "region": "05 - Valparaíso",
-        "units": 69,
-        "clp": 672766,
-        "byDivision": {
+            "units": 68,
+            "clp": 621320,
+            "costos": 326277
+          },
           "Vestuario Infantil": {
-            "units": 63,
-            "clp": 631826
+            "units": 36,
+            "clp": 399388,
+            "costos": 233278
           },
           "Calzado": {
-            "units": 4,
-            "clp": 24960
-          },
-          "Ropa Interior": {
-            "units": 2,
-            "clp": 15980
+            "units": 1,
+            "clp": 25990,
+            "costos": 16633
           }
         }
       },
       {
-        "store": "Mall Plaza Egaña",
-        "storeCode": "3790 Falabella - Larraín 5862, La Reina",
+        "store": "Mall Arauco Maipú",
+        "storeCode": "3741 Falabella - Av. Américo Vespucio 399, Maipú",
         "region": "13 - Metropolitana de Santiago",
-        "units": 68,
-        "clp": 754075,
+        "units": 106,
+        "clp": 898074,
+        "costos": 653017,
+        "margin": 27.3,
+        "stockUnits": 139,
+        "weeksOfStock": 4.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 51,
-            "clp": 570245
+            "units": 60,
+            "clp": 555932,
+            "costos": 434393
           },
           "Ropa Interior": {
-            "units": 18,
-            "clp": 197820
-          },
-          "Calzado": {
-            "units": -1,
-            "clp": -13990
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Oeste",
-        "storeCode": "1501 Falabella - Av. Américo Vespucio 1501, Cerrillos",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 68,
-        "clp": 859340,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 8,
-            "clp": 154580
-          },
-          "Vestuario Infantil": {
-            "units": 54,
-            "clp": 644820
+            "units": 39,
+            "clp": 279212,
+            "costos": 152581
           },
           "Calzado": {
             "units": 2,
-            "clp": 6980
+            "clp": 13980,
+            "costos": 11043
           },
           "Accesorios y Otros": {
-            "units": 4,
-            "clp": 52960
+            "units": 5,
+            "clp": 48950,
+            "costos": 55000
           }
         }
       },
       {
-        "store": "Mall Costanera Center",
-        "storeCode": "3660 Falabella - Av. Andrés Bello 2461, Providencia",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 65,
-        "clp": 688550,
+        "store": "Mall Plaza Arica",
+        "storeCode": "2618 Falabella - Av. Diego Portales 640, Arica",
+        "region": "15 - Arica y Parinacota",
+        "units": 104,
+        "clp": 879825,
+        "costos": 647905,
+        "margin": 26.4,
+        "stockUnits": 119,
+        "weeksOfStock": 4.1,
         "byDivision": {
-          "Calzado": {
-            "units": 27,
-            "clp": 316766
-          },
           "Vestuario Infantil": {
-            "units": 24,
-            "clp": 288924
+            "units": 15,
+            "clp": 73776,
+            "costos": 70655
+          },
+          "Calzado": {
+            "units": 49,
+            "clp": 526449,
+            "costos": 448010
           },
           "Ropa Interior": {
-            "units": 14,
-            "clp": 82860
+            "units": 40,
+            "clp": 279600,
+            "costos": 129240
           }
         }
       },
@@ -18597,16 +21401,287 @@ const REAL_SELLOUT = {
         "store": "Mall Arauco Chillán",
         "storeCode": "0878 Falabella - El Roble 770, Chillán",
         "region": "16 - Ñuble",
-        "units": 62,
-        "clp": 782093,
+        "units": 101,
+        "clp": 1124373,
+        "costos": 725421,
+        "margin": 35.5,
+        "stockUnits": 126,
+        "weeksOfStock": 4.5,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 52,
-            "clp": 582193
+            "units": 64,
+            "clp": 714073,
+            "costos": 533778
           },
           "Ropa Interior": {
-            "units": 10,
-            "clp": 199900
+            "units": 37,
+            "clp": 410300,
+            "costos": 191643
+          }
+        }
+      },
+      {
+        "store": "Mall Parque Arauco",
+        "storeCode": "5416 Falabella - Av. Presidente Kennedy 5413, Las Condes",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 101,
+        "clp": 1242508,
+        "costos": 706990,
+        "margin": 43.1,
+        "stockUnits": 297,
+        "weeksOfStock": 10.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 43,
+            "clp": 570934,
+            "costos": 271109
+          },
+          "Vestuario Infantil": {
+            "units": 37,
+            "clp": 395035,
+            "costos": 236291
+          },
+          "Calzado": {
+            "units": 15,
+            "clp": 199020,
+            "costos": 133590
+          },
+          "Accesorios y Otros": {
+            "units": 6,
+            "clp": 77519,
+            "costos": 66000
+          }
+        }
+      },
+      {
+        "store": "Temuco",
+        "storeCode": "0570 Falabella - Arturo Prat 570, Temuco",
+        "region": "09 - La Araucanía",
+        "units": 97,
+        "clp": 1007175,
+        "costos": 608110,
+        "margin": 39.6,
+        "stockUnits": 183,
+        "weeksOfStock": 6.7,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 38,
+            "clp": 444310,
+            "costos": 221931
+          },
+          "Vestuario Infantil": {
+            "units": 57,
+            "clp": 550885,
+            "costos": 376103
+          },
+          "Calzado": {
+            "units": 2,
+            "clp": 11980,
+            "costos": 10076
+          }
+        }
+      },
+      {
+        "store": "Curicó",
+        "storeCode": "0603 Falabella - Peña 615, Curicó",
+        "region": "07 - Maule",
+        "units": 96,
+        "clp": 1004347,
+        "costos": 597144,
+        "margin": 40.5,
+        "stockUnits": 293,
+        "weeksOfStock": 10.9,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 50,
+            "clp": 526380,
+            "costos": 245662
+          },
+          "Vestuario Infantil": {
+            "units": 46,
+            "clp": 477967,
+            "costos": 351482
+          }
+        }
+      },
+      {
+        "store": "Plaza Viña",
+        "storeCode": "0510 Falabella - Sucre 250, Viña del Mar",
+        "region": "05 - Valparaíso",
+        "units": 92,
+        "clp": 1008085,
+        "costos": 902138,
+        "margin": 10.5,
+        "stockUnits": 91,
+        "weeksOfStock": 3.5,
+        "byDivision": {
+          "Calzado": {
+            "units": 92,
+            "clp": 1008085,
+            "costos": 902138
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Oeste",
+        "storeCode": "1501 Falabella - Av. Américo Vespucio 1501, Cerrillos",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 85,
+        "clp": 1072170,
+        "costos": 608035,
+        "margin": 43.3,
+        "stockUnits": 249,
+        "weeksOfStock": 10.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 19,
+            "clp": 289470,
+            "costos": 148206
+          },
+          "Vestuario Infantil": {
+            "units": 60,
+            "clp": 722760,
+            "costos": 409364
+          },
+          "Calzado": {
+            "units": 2,
+            "clp": 6980,
+            "costos": 10915
+          },
+          "Accesorios y Otros": {
+            "units": 4,
+            "clp": 52960,
+            "costos": 39550
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Quilpué",
+        "storeCode": "0810 Falabella - Diego Portales 822, Quilpué",
+        "region": "05 - Valparaíso",
+        "units": 83,
+        "clp": 961878,
+        "costos": 739707,
+        "margin": 23.1,
+        "stockUnits": 82,
+        "weeksOfStock": 3.5,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 83,
+            "clp": 961878,
+            "costos": 739707
+          }
+        }
+      },
+      {
+        "store": "Talca",
+        "storeCode": "1485 Falabella - 1 Norte #1485, Talca",
+        "region": "07 - Maule",
+        "units": 81,
+        "clp": 997107,
+        "costos": 585017,
+        "margin": 41.3,
+        "stockUnits": 315,
+        "weeksOfStock": 13.9,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 62,
+            "clp": 701787,
+            "costos": 416504
+          },
+          "Ropa Interior": {
+            "units": 19,
+            "clp": 295320,
+            "costos": 168513
+          }
+        }
+      },
+      {
+        "store": "Mall Costanera Center",
+        "storeCode": "3660 Falabella - Av. Andrés Bello 2461, Providencia",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 80,
+        "clp": 852781,
+        "costos": 602800,
+        "margin": 29.3,
+        "stockUnits": 398,
+        "weeksOfStock": 17.8,
+        "byDivision": {
+          "Calzado": {
+            "units": 29,
+            "clp": 329127,
+            "costos": 282976
+          },
+          "Vestuario Infantil": {
+            "units": 25,
+            "clp": 293914,
+            "costos": 166985
+          },
+          "Ropa Interior": {
+            "units": 23,
+            "clp": 199770,
+            "costos": 119839
+          },
+          "Accesorios y Otros": {
+            "units": 3,
+            "clp": 29970,
+            "costos": 33000
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Egaña",
+        "storeCode": "3790 Falabella - Larraín 5862, La Reina",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 77,
+        "clp": 857985,
+        "costos": 523706,
+        "margin": 39.0,
+        "stockUnits": 269,
+        "weeksOfStock": 12.5,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 55,
+            "clp": 614205,
+            "costos": 380420
+          },
+          "Ropa Interior": {
+            "units": 22,
+            "clp": 251780,
+            "costos": 147487
+          },
+          "Calzado": {
+            "units": 0,
+            "clp": -8000,
+            "costos": -4201
+          }
+        }
+      },
+      {
+        "store": "Mall Open Plaza La Calera",
+        "storeCode": "1201 Falabella - Prolongación J.J. Perez 12010, Calera",
+        "region": "05 - Valparaíso",
+        "units": 76,
+        "clp": 737696,
+        "costos": 508400,
+        "margin": 31.1,
+        "stockUnits": 102,
+        "weeksOfStock": 4.8,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 70,
+            "clp": 696756,
+            "costos": 472392
+          },
+          "Calzado": {
+            "units": 4,
+            "clp": 24960,
+            "costos": 19732
+          },
+          "Ropa Interior": {
+            "units": 2,
+            "clp": 15980,
+            "costos": 16276
           }
         }
       },
@@ -18614,12 +21689,17 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Copiapó",
         "storeCode": "2077 Falabella - Maipú 0110, Copiapó",
         "region": "03 - Atacama",
-        "units": 52,
-        "clp": 480567,
+        "units": 68,
+        "clp": 602407,
+        "costos": 408996,
+        "margin": 32.1,
+        "stockUnits": 172,
+        "weeksOfStock": 9.0,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 52,
-            "clp": 480567
+            "units": 68,
+            "clp": 602407,
+            "costos": 408996
           }
         }
       },
@@ -18627,58 +21707,32 @@ const REAL_SELLOUT = {
         "store": "Concepción",
         "storeCode": "0802 Falabella - Barros Arana 802, Concepción",
         "region": "08 - Biobío",
-        "units": 43,
-        "clp": 302580,
+        "units": 52,
+        "clp": 356500,
+        "costos": 221421,
+        "margin": 37.9,
+        "stockUnits": 257,
+        "weeksOfStock": 17.7,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 9,
-            "clp": 31920
+            "units": 10,
+            "clp": 29920,
+            "costos": 43260
           },
           "Accesorios y Otros": {
             "units": 5,
-            "clp": 67950
+            "clp": 67950,
+            "costos": 55000
           },
           "Calzado": {
             "units": 2,
-            "clp": 13980
+            "clp": 13980,
+            "costos": 10076
           },
           "Ropa Interior": {
-            "units": 27,
-            "clp": 188730
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Los Dominicos",
-        "storeCode": "2617 Falabella - Padre Hurtado Sur 875, Las Condes",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 41,
-        "clp": 417096,
-        "byDivision": {
-          "Vestuario Infantil": {
             "units": 35,
-            "clp": 389075
-          },
-          "Calzado": {
-            "units": 6,
-            "clp": 28021
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza De Los Ríos",
-        "storeCode": "2775 Falabella - Arauco 561, Valdivia",
-        "region": "14 - Los Ríos",
-        "units": 40,
-        "clp": 490146,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 39,
-            "clp": 482156
-          },
-          "Ropa Interior": {
-            "units": 1,
-            "clp": 7990
+            "clp": 244650,
+            "costos": 113085
           }
         }
       },
@@ -18686,24 +21740,78 @@ const REAL_SELLOUT = {
         "store": "Mall Alto Las Condes",
         "storeCode": "9001 Falabella - Av. Kennedy 9001, Las Condes",
         "region": "13 - Metropolitana de Santiago",
-        "units": 37,
-        "clp": 444892,
+        "units": 48,
+        "clp": 577581,
+        "costos": 317043,
+        "margin": 45.1,
+        "stockUnits": 212,
+        "weeksOfStock": 15.8,
         "byDivision": {
           "Calzado": {
-            "units": 4,
-            "clp": 44960
+            "units": 5,
+            "clp": 55950,
+            "costos": 36401
           },
           "Ropa Interior": {
-            "units": 9,
-            "clp": 96172
+            "units": 14,
+            "clp": 156921,
+            "costos": 75274
           },
           "Vestuario Infantil": {
-            "units": 22,
-            "clp": 277780
+            "units": 26,
+            "clp": 329740,
+            "costos": 173868
           },
           "Accesorios y Otros": {
-            "units": 2,
-            "clp": 25980
+            "units": 3,
+            "clp": 34970,
+            "costos": 31500
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza De Los Ríos",
+        "storeCode": "2775 Falabella - Arauco 561, Valdivia",
+        "region": "14 - Los Ríos",
+        "units": 46,
+        "clp": 568086,
+        "costos": 318329,
+        "margin": 44.0,
+        "stockUnits": 196,
+        "weeksOfStock": 15.2,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 45,
+            "clp": 560096,
+            "costos": 310191
+          },
+          "Ropa Interior": {
+            "units": 1,
+            "clp": 7990,
+            "costos": 8138
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Los Dominicos",
+        "storeCode": "2617 Falabella - Padre Hurtado Sur 875, Las Condes",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 45,
+        "clp": 455056,
+        "costos": 306807,
+        "margin": 32.6,
+        "stockUnits": 65,
+        "weeksOfStock": 5.2,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 39,
+            "clp": 427035,
+            "costos": 281158
+          },
+          "Calzado": {
+            "units": 6,
+            "clp": 28021,
+            "costos": 25649
           }
         }
       },
@@ -18711,24 +21819,32 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Vespucio",
         "storeCode": "7200 Falabella - Av. Vicuña Mackenna 7110, La Florida",
         "region": "13 - Metropolitana de Santiago",
-        "units": 34,
-        "clp": 382290,
+        "units": 43,
+        "clp": 492705,
+        "costos": 411327,
+        "margin": 16.5,
+        "stockUnits": 348,
+        "weeksOfStock": 28.9,
         "byDivision": {
           "Calzado": {
-            "units": 27,
-            "clp": 327360
+            "units": 28,
+            "clp": 340350,
+            "costos": 268988
           },
           "Vestuario Infantil": {
-            "units": 6,
-            "clp": 41940
+            "units": 11,
+            "clp": 103395,
+            "costos": 101201
           },
           "Accesorios y Otros": {
-            "units": 0,
-            "clp": 5000
+            "units": 3,
+            "clp": 40970,
+            "costos": 33000
           },
           "Ropa Interior": {
             "units": 1,
-            "clp": 7990
+            "clp": 7990,
+            "costos": 8138
           }
         }
       },
@@ -18736,16 +21852,22 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Calama",
         "storeCode": "3401 Falabella - Av. Balmaceda 3242, Calama",
         "region": "02 - Antofagasta",
-        "units": 33,
-        "clp": 321855,
+        "units": 42,
+        "clp": 418775,
+        "costos": 247053,
+        "margin": 41.0,
+        "stockUnits": 91,
+        "weeksOfStock": 7.7,
         "byDivision": {
           "Ropa Interior": {
-            "units": 23,
-            "clp": 264430
+            "units": 31,
+            "clp": 352360,
+            "costos": 182542
           },
           "Vestuario Infantil": {
-            "units": 10,
-            "clp": 57425
+            "units": 11,
+            "clp": 66415,
+            "costos": 64511
           }
         }
       },
@@ -18753,20 +21875,27 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Tobalaba",
         "storeCode": "3296 Falabella - Av. Camilo Henríquez 3296, Puente Alto",
         "region": "13 - Metropolitana de Santiago",
-        "units": 17,
-        "clp": 132002,
+        "units": 19,
+        "clp": 141982,
+        "costos": 146519,
+        "margin": -3.2,
+        "stockUnits": 58,
+        "weeksOfStock": 10.9,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 12,
-            "clp": 92052
+            "units": 14,
+            "clp": 102032,
+            "costos": 107828
           },
           "Ropa Interior": {
             "units": 3,
-            "clp": 23970
+            "clp": 23970,
+            "costos": 24414
           },
           "Calzado": {
             "units": 2,
-            "clp": 15980
+            "clp": 15980,
+            "costos": 14277
           }
         }
       },
@@ -18774,16 +21903,22 @@ const REAL_SELLOUT = {
         "store": "Pucón",
         "storeCode": "0580 Falabella - OHiggins 112, Pucón",
         "region": "09 - La Araucanía",
-        "units": 15,
-        "clp": 141915,
+        "units": 17,
+        "clp": 161905,
+        "costos": 150593,
+        "margin": 7.0,
+        "stockUnits": 9,
+        "weeksOfStock": 1.9,
         "byDivision": {
           "Ropa Interior": {
-            "units": 13,
-            "clp": 129935
+            "units": 15,
+            "clp": 149925,
+            "costos": 138585
           },
           "Vestuario Infantil": {
             "units": 2,
-            "clp": 11980
+            "clp": 11980,
+            "costos": 12008
           }
         }
       },
@@ -18791,54 +21926,22 @@ const REAL_SELLOUT = {
         "store": "Mall Barrio Independencia",
         "storeCode": "2619 Falabella - Av. Independencia 565, Independencia",
         "region": "13 - Metropolitana de Santiago",
-        "units": 14,
-        "clp": 152350,
+        "units": 16,
+        "clp": 179330,
+        "costos": 109003,
+        "margin": 39.2,
+        "stockUnits": 111,
+        "weeksOfStock": 24.8,
         "byDivision": {
           "Ropa Interior": {
-            "units": 9,
-            "clp": 113400
+            "units": 11,
+            "clp": 140380,
+            "costos": 65581
           },
           "Vestuario Infantil": {
             "units": 5,
-            "clp": 38950
-          }
-        }
-      },
-      {
-        "store": "Mall Open Plaza San Felipe",
-        "storeCode": "3560 Falabella - Av. Bernardo OHiggins 1150, San Felipe",
-        "region": "05 - Valparaíso",
-        "units": 10,
-        "clp": 92812,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 3,
-            "clp": 18980
-          },
-          "Accesorios y Otros": {
-            "units": 4,
-            "clp": 49862
-          },
-          "Calzado": {
-            "units": 3,
-            "clp": 23970
-          }
-        }
-      },
-      {
-        "store": "Mall Open Plaza Ovalle",
-        "storeCode": "2103 Falabella - Prolongación Benavente 1075, Ovalle",
-        "region": "04 - Coquimbo",
-        "units": 8,
-        "clp": 53940,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 7,
-            "clp": 47950
-          },
-          "Calzado": {
-            "units": 1,
-            "clp": 5990
+            "clp": 38950,
+            "costos": 43422
           }
         }
       },
@@ -18846,16 +21949,73 @@ const REAL_SELLOUT = {
         "store": "Valparaíso",
         "storeCode": "1806 Falabella - Independencia 1806, Valparaíso",
         "region": "05 - Valparaíso",
-        "units": 6,
-        "clp": 43940,
+        "units": 16,
+        "clp": 112340,
+        "costos": 164810,
+        "margin": -46.7,
+        "stockUnits": 21,
+        "weeksOfStock": 4.7,
         "byDivision": {
           "Ropa Interior": {
             "units": 2,
-            "clp": 9980
+            "clp": 9980,
+            "costos": 9380
           },
           "Vestuario Infantil": {
+            "units": 14,
+            "clp": 102360,
+            "costos": 155430
+          }
+        }
+      },
+      {
+        "store": "Mall Open Plaza Ovalle",
+        "storeCode": "2103 Falabella - Prolongación Benavente 1075, Ovalle",
+        "region": "04 - Coquimbo",
+        "units": 11,
+        "clp": 71910,
+        "costos": 68774,
+        "margin": 4.4,
+        "stockUnits": 27,
+        "weeksOfStock": 8.8,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 10,
+            "clp": 65920,
+            "costos": 63736
+          },
+          "Calzado": {
+            "units": 1,
+            "clp": 5990,
+            "costos": 5038
+          }
+        }
+      },
+      {
+        "store": "Mall Open Plaza San Felipe",
+        "storeCode": "3560 Falabella - Av. Bernardo OHiggins 1150, San Felipe",
+        "region": "05 - Valparaíso",
+        "units": 11,
+        "clp": 98307,
+        "costos": 89685,
+        "margin": 8.8,
+        "stockUnits": 45,
+        "weeksOfStock": 14.6,
+        "byDivision": {
+          "Vestuario Infantil": {
             "units": 4,
-            "clp": 33960
+            "clp": 24475,
+            "costos": 23093
+          },
+          "Accesorios y Otros": {
+            "units": 4,
+            "clp": 49862,
+            "costos": 44000
+          },
+          "Calzado": {
+            "units": 3,
+            "clp": 23970,
+            "costos": 22592
           }
         }
       },
@@ -18863,12 +22023,22 @@ const REAL_SELLOUT = {
         "store": "Mall Portal La Dehesa",
         "storeCode": "1445 Falabella - La Dehesa 1445, Lo Barnechea",
         "region": "13 - Metropolitana de Santiago",
-        "units": 5,
-        "clp": 67950,
+        "units": 7,
+        "clp": 80430,
+        "costos": 60514,
+        "margin": 24.8,
+        "stockUnits": 100,
+        "weeksOfStock": 51.0,
         "byDivision": {
           "Calzado": {
-            "units": 5,
-            "clp": 67950
+            "units": 6,
+            "clp": 79940,
+            "costos": 57283
+          },
+          "Ropa Interior": {
+            "units": 1,
+            "clp": 490,
+            "costos": 3231
           }
         }
       },
@@ -18878,14 +22048,20 @@ const REAL_SELLOUT = {
         "region": "06 - Libertador General Bernardo OHiggins",
         "units": 4,
         "clp": 31965,
+        "costos": 27712,
+        "margin": 13.3,
+        "stockUnits": 4,
+        "weeksOfStock": 3.6,
         "byDivision": {
           "Vestuario Infantil": {
             "units": 3,
-            "clp": 16975
+            "clp": 16975,
+            "costos": 17549
           },
           "Calzado": {
             "units": 1,
-            "clp": 14990
+            "clp": 14990,
+            "costos": 10163
           }
         }
       }
@@ -18897,22 +22073,30 @@ const REAL_SELLOUT = {
         "region": "14 - Los Ríos",
         "units": 21,
         "clp": 170807,
+        "costos": 134544,
+        "margin": 21.2,
+        "stockUnits": 189,
+        "weeksOfStock": 32.1,
         "byDivision": {
           "Ropa Interior": {
             "units": 9,
-            "clp": 72920
+            "clp": 72920,
+            "costos": 60408
           },
           "Vestuario Adulto": {
             "units": 5,
-            "clp": 37956
+            "clp": 37956,
+            "costos": 32103
           },
           "Vestuario Infantil": {
             "units": 6,
-            "clp": 51941
+            "clp": 51941,
+            "costos": 33634
           },
           "Calzado": {
             "units": 1,
-            "clp": 7990
+            "clp": 7990,
+            "costos": 8399
           }
         }
       }
@@ -18922,12 +22106,17 @@ const REAL_SELLOUT = {
         "store": "Colina",
         "storeCode": "0110 Tottus - Avda Concepcion 47, Colina",
         "region": "13 - Metropolitana de Santiago",
-        "units": 58,
-        "clp": 504689,
+        "units": 63,
+        "clp": 549639,
+        "costos": 316976,
+        "margin": 42.3,
+        "stockUnits": 82,
+        "weeksOfStock": 4.6,
         "byDivision": {
           "Calzado": {
-            "units": 58,
-            "clp": 504689
+            "units": 63,
+            "clp": 549639,
+            "costos": 316976
           }
         }
       },
@@ -18935,12 +22124,17 @@ const REAL_SELLOUT = {
         "store": "Vallenar",
         "storeCode": "0511 Tottus - Brasil 900-980, Vallenar",
         "region": "03 - Atacama",
-        "units": 43,
-        "clp": 384233,
+        "units": 53,
+        "clp": 474133,
+        "costos": 267014,
+        "margin": 43.7,
+        "stockUnits": 28,
+        "weeksOfStock": 1.9,
         "byDivision": {
           "Calzado": {
-            "units": 43,
-            "clp": 384233
+            "units": 53,
+            "clp": 474133,
+            "costos": 267014
           }
         }
       },
@@ -18948,12 +22142,17 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza Egaña",
         "storeCode": "0121 Tottus - Larrain 5862, La Reina",
         "region": "13 - Metropolitana de Santiago",
-        "units": 42,
-        "clp": 328865,
+        "units": 49,
+        "clp": 391795,
+        "costos": 242682,
+        "margin": 38.1,
+        "stockUnits": 17,
+        "weeksOfStock": 1.2,
         "byDivision": {
           "Calzado": {
-            "units": 42,
-            "clp": 328865
+            "units": 49,
+            "clp": 391795,
+            "costos": 242682
           }
         }
       },
@@ -18961,12 +22160,17 @@ const REAL_SELLOUT = {
         "store": "Santiago (Nataniel Cox)",
         "storeCode": "0104 Tottus - Nataniel Cox 620, Santiago",
         "region": "13 - Metropolitana de Santiago",
-        "units": 42,
-        "clp": 296384,
+        "units": 44,
+        "clp": 314364,
+        "costos": 215402,
+        "margin": 31.5,
+        "stockUnits": 48,
+        "weeksOfStock": 3.9,
         "byDivision": {
           "Calzado": {
-            "units": 42,
-            "clp": 296384
+            "units": 44,
+            "clp": 314364,
+            "costos": 215402
           }
         }
       },
@@ -18974,12 +22178,17 @@ const REAL_SELLOUT = {
         "store": "Peñaflor",
         "storeCode": "0203 Tottus - Alcalde Luis Araya Cereceda 1047, Peñaflor",
         "region": "13 - Metropolitana de Santiago",
-        "units": 40,
-        "clp": 311259,
+        "units": 44,
+        "clp": 347219,
+        "costos": 218328,
+        "margin": 37.1,
+        "stockUnits": 137,
+        "weeksOfStock": 11.1,
         "byDivision": {
           "Calzado": {
-            "units": 40,
-            "clp": 311259
+            "units": 44,
+            "clp": 347219,
+            "costos": 218328
           }
         }
       },
@@ -18987,12 +22196,17 @@ const REAL_SELLOUT = {
         "store": "Talca Colín",
         "storeCode": "0311 Tottus - Colín 665, Talca",
         "region": "07 - Maule",
-        "units": 34,
-        "clp": 281413,
+        "units": 36,
+        "clp": 292393,
+        "costos": 179278,
+        "margin": 38.7,
+        "stockUnits": 52,
+        "weeksOfStock": 5.2,
         "byDivision": {
           "Calzado": {
-            "units": 34,
-            "clp": 281413
+            "units": 36,
+            "clp": 292393,
+            "costos": 179278
           }
         }
       },
@@ -19000,25 +22214,17 @@ const REAL_SELLOUT = {
         "store": "Talagante Cordillera",
         "storeCode": "0206 Tottus - Volcan Hudson 365, Talagante",
         "region": "13 - Metropolitana de Santiago",
-        "units": 31,
-        "clp": 209678,
+        "units": 34,
+        "clp": 229648,
+        "costos": 165440,
+        "margin": 28.0,
+        "stockUnits": 94,
+        "weeksOfStock": 9.9,
         "byDivision": {
           "Calzado": {
-            "units": 31,
-            "clp": 209678
-          }
-        }
-      },
-      {
-        "store": "Concón",
-        "storeCode": "0218 Tottus - Av. Manantiales 955, Concón",
-        "region": "05 - Valparaíso",
-        "units": 27,
-        "clp": 104083,
-        "byDivision": {
-          "Calzado": {
-            "units": 27,
-            "clp": 104083
+            "units": 34,
+            "clp": 229648,
+            "costos": 165440
           }
         }
       },
@@ -19026,25 +22232,35 @@ const REAL_SELLOUT = {
         "store": "La Florida",
         "storeCode": "0108 Tottus - Américo Vespucio 7310, La Florida",
         "region": "13 - Metropolitana de Santiago",
-        "units": 24,
-        "clp": 122025,
+        "units": 30,
+        "clp": 175965,
+        "costos": 146124,
+        "margin": 17.0,
+        "stockUnits": 84,
+        "weeksOfStock": 10.0,
         "byDivision": {
           "Calzado": {
-            "units": 24,
-            "clp": 122025
+            "units": 30,
+            "clp": 175965,
+            "costos": 146124
           }
         }
       },
       {
-        "store": "Talagante Plaza",
-        "storeCode": "0202 Tottus - Eyzaguirre 715, Talagante",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 19,
-        "clp": 77624,
+        "store": "Concón",
+        "storeCode": "0218 Tottus - Av. Manantiales 955, Concón",
+        "region": "05 - Valparaíso",
+        "units": 29,
+        "clp": 108063,
+        "costos": 133980,
+        "margin": -24.0,
+        "stockUnits": 1,
+        "weeksOfStock": 0.1,
         "byDivision": {
           "Calzado": {
-            "units": 19,
-            "clp": 77624
+            "units": 29,
+            "clp": 108063,
+            "costos": 133980
           }
         }
       },
@@ -19052,12 +22268,53 @@ const REAL_SELLOUT = {
         "store": "Viña del Mar - Santa Julia",
         "storeCode": "0213 Tottus - Av. Alessandri 4025, Viña del Mar",
         "region": "05 - Valparaíso",
+        "units": 21,
+        "clp": 147113,
+        "costos": 102872,
+        "margin": 30.1,
+        "stockUnits": 86,
+        "weeksOfStock": 14.6,
+        "byDivision": {
+          "Calzado": {
+            "units": 21,
+            "clp": 147113,
+            "costos": 102872
+          }
+        }
+      },
+      {
+        "store": "Talagante Plaza",
+        "storeCode": "0202 Tottus - Eyzaguirre 715, Talagante",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 20,
+        "clp": 79614,
+        "costos": 92400,
+        "margin": -16.1,
+        "stockUnits": 146,
+        "weeksOfStock": 26.1,
+        "byDivision": {
+          "Calzado": {
+            "units": 20,
+            "clp": 79614,
+            "costos": 92400
+          }
+        }
+      },
+      {
+        "store": "San Bernardo Plaza",
+        "storeCode": "0101 Tottus - Bernardo OHiggins 528, San Bernardo",
+        "region": "13 - Metropolitana de Santiago",
         "units": 17,
-        "clp": 104153,
+        "clp": 114042,
+        "costos": 82720,
+        "margin": 27.5,
+        "stockUnits": 120,
+        "weeksOfStock": 25.2,
         "byDivision": {
           "Calzado": {
             "units": 17,
-            "clp": 104153
+            "clp": 114042,
+            "costos": 82720
           }
         }
       },
@@ -19067,23 +22324,15 @@ const REAL_SELLOUT = {
         "region": "08 - Biobío",
         "units": 16,
         "clp": 47961,
+        "costos": 73920,
+        "margin": -54.1,
+        "stockUnits": 7,
+        "weeksOfStock": 1.6,
         "byDivision": {
           "Calzado": {
             "units": 16,
-            "clp": 47961
-          }
-        }
-      },
-      {
-        "store": "San Bernardo Plaza",
-        "storeCode": "0101 Tottus - Bernardo OHiggins 528, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 14,
-        "clp": 87072,
-        "byDivision": {
-          "Calzado": {
-            "units": 14,
-            "clp": 87072
+            "clp": 47961,
+            "costos": 73920
           }
         }
       },
@@ -19091,12 +22340,17 @@ const REAL_SELLOUT = {
         "store": "Coquimbo Tierras Blancas",
         "storeCode": "0509 Tottus - Av. Alessandri 1117, Coquimbo",
         "region": "04 - Coquimbo",
-        "units": 14,
-        "clp": 51290,
+        "units": 15,
+        "clp": 56684,
+        "costos": 69300,
+        "margin": -22.3,
+        "stockUnits": 2,
+        "weeksOfStock": 0.5,
         "byDivision": {
           "Calzado": {
-            "units": 14,
-            "clp": 51290
+            "units": 15,
+            "clp": 56684,
+            "costos": 69300
           }
         }
       },
@@ -19106,10 +22360,15 @@ const REAL_SELLOUT = {
         "region": "13 - Metropolitana de Santiago",
         "units": 14,
         "clp": 52587,
+        "costos": 64680,
+        "margin": -23.0,
+        "stockUnits": 1,
+        "weeksOfStock": 0.3,
         "byDivision": {
           "Calzado": {
             "units": 14,
-            "clp": 52587
+            "clp": 52587,
+            "costos": 64680
           }
         }
       },
@@ -19117,12 +22376,17 @@ const REAL_SELLOUT = {
         "store": "Buin",
         "storeCode": "0301 Tottus - San Martín 174, Buin",
         "region": "13 - Metropolitana de Santiago",
-        "units": 9,
-        "clp": 77314,
+        "units": 12,
+        "clp": 104284,
+        "costos": 60038,
+        "margin": 42.4,
+        "stockUnits": 57,
+        "weeksOfStock": 17.0,
         "byDivision": {
           "Calzado": {
-            "units": 9,
-            "clp": 77314
+            "units": 12,
+            "clp": 104284,
+            "costos": 60038
           }
         }
       },
@@ -19132,10 +22396,33 @@ const REAL_SELLOUT = {
         "region": "04 - Coquimbo",
         "units": 6,
         "clp": 34162,
+        "costos": 27720,
+        "margin": 18.9,
+        "stockUnits": 2,
+        "weeksOfStock": 1.2,
         "byDivision": {
           "Calzado": {
             "units": 6,
-            "clp": 34162
+            "clp": 34162,
+            "costos": 27720
+          }
+        }
+      },
+      {
+        "store": "San Fernando",
+        "storeCode": "0303 Tottus - Av. Carampangue 681, San Fernando",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 6,
+        "clp": 53940,
+        "costos": 30228,
+        "margin": 44.0,
+        "stockUnits": 73,
+        "weeksOfStock": 43.5,
+        "byDivision": {
+          "Calzado": {
+            "units": 6,
+            "clp": 53940,
+            "costos": 30228
           }
         }
       },
@@ -19145,10 +22432,15 @@ const REAL_SELLOUT = {
         "region": "05 - Valparaíso",
         "units": 3,
         "clp": 9875,
+        "costos": 13860,
+        "margin": -40.4,
+        "stockUnits": 5,
+        "weeksOfStock": 6.0,
         "byDivision": {
           "Calzado": {
             "units": 3,
-            "clp": 9875
+            "clp": 9875,
+            "costos": 13860
           }
         }
       },
@@ -19158,10 +22450,15 @@ const REAL_SELLOUT = {
         "region": "05 - Valparaíso",
         "units": 3,
         "clp": 15283,
+        "costos": 13860,
+        "margin": 9.3,
+        "stockUnits": 7,
+        "weeksOfStock": 8.3,
         "byDivision": {
           "Calzado": {
             "units": 3,
-            "clp": 15283
+            "clp": 15283,
+            "costos": 13860
           }
         }
       },
@@ -19171,10 +22468,33 @@ const REAL_SELLOUT = {
         "region": "06 - Libertador General Bernardo OHiggins",
         "units": 2,
         "clp": 9889,
+        "costos": 9240,
+        "margin": 6.6,
+        "stockUnits": 6,
+        "weeksOfStock": 10.7,
         "byDivision": {
           "Calzado": {
             "units": 2,
-            "clp": 9889
+            "clp": 9889,
+            "costos": 9240
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Copiapó",
+        "storeCode": "0507 Tottus - Maipú 109, Copiapó",
+        "region": "03 - Atacama",
+        "units": 2,
+        "clp": 8283,
+        "costos": 9240,
+        "margin": -11.6,
+        "stockUnits": 101,
+        "weeksOfStock": 180.4,
+        "byDivision": {
+          "Calzado": {
+            "units": 2,
+            "clp": 8283,
+            "costos": 9240
           }
         }
       },
@@ -19184,10 +22504,15 @@ const REAL_SELLOUT = {
         "region": "04 - Coquimbo",
         "units": 2,
         "clp": 3980,
+        "costos": 9240,
+        "margin": -132.2,
+        "stockUnits": 2,
+        "weeksOfStock": 3.6,
         "byDivision": {
           "Calzado": {
             "units": 2,
-            "clp": 3980
+            "clp": 3980,
+            "costos": 9240
           }
         }
       },
@@ -19197,10 +22522,15 @@ const REAL_SELLOUT = {
         "region": "13 - Metropolitana de Santiago",
         "units": 1,
         "clp": 4495,
+        "costos": 4620,
+        "margin": -2.8,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
             "units": 1,
-            "clp": 4495
+            "clp": 4495,
+            "costos": 4620
           }
         }
       },
@@ -19210,23 +22540,15 @@ const REAL_SELLOUT = {
         "region": "13 - Metropolitana de Santiago",
         "units": 1,
         "clp": 5394,
+        "costos": 4620,
+        "margin": 14.3,
+        "stockUnits": 0,
+        "weeksOfStock": 0.0,
         "byDivision": {
           "Calzado": {
             "units": 1,
-            "clp": 5394
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Copiapó",
-        "storeCode": "0507 Tottus - Maipú 109, Copiapó",
-        "region": "03 - Atacama",
-        "units": 1,
-        "clp": 6293,
-        "byDivision": {
-          "Calzado": {
-            "units": 1,
-            "clp": 6293
+            "clp": 5394,
+            "costos": 4620
           }
         }
       },
@@ -19236,10 +22558,33 @@ const REAL_SELLOUT = {
         "region": "05 - Valparaíso",
         "units": 1,
         "clp": 1990,
+        "costos": 4620,
+        "margin": -132.2,
+        "stockUnits": 96,
+        "weeksOfStock": 342.9,
         "byDivision": {
           "Calzado": {
             "units": 1,
-            "clp": 1990
+            "clp": 1990,
+            "costos": 4620
+          }
+        }
+      },
+      {
+        "store": "El Bosque",
+        "storeCode": "0112 Tottus - Gran Avenida 10445, El Bosque",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 1,
+        "clp": 1990,
+        "costos": 4620,
+        "margin": -132.2,
+        "stockUnits": 8,
+        "weeksOfStock": 28.6,
+        "byDivision": {
+          "Calzado": {
+            "units": 1,
+            "clp": 1990,
+            "costos": 4620
           }
         }
       }
@@ -19251,10 +22596,15 @@ const REAL_SELLOUT = {
         "region": "No Definido",
         "units": 1,
         "clp": 14277,
+        "costos": 9280,
+        "margin": 35.0,
+        "stockUnits": 255,
+        "weeksOfStock": 910.7,
         "byDivision": {
           "Accesorios y Otros": {
             "units": 1,
-            "clp": 14277
+            "clp": 14277,
+            "costos": 9280
           }
         }
       }
@@ -19264,33 +22614,22 @@ const REAL_SELLOUT = {
         "store": "Valdivia",
         "storeCode": "0094 Hiper Lider - Coronel Santiago Bueras 1400, Valdivia",
         "region": "14 - Los Ríos",
-        "units": 328,
-        "clp": 1101386,
+        "units": 629,
+        "clp": 3541042,
+        "costos": 2418331,
+        "margin": 31.7,
+        "stockUnits": 368,
+        "weeksOfStock": 2.1,
         "byDivision": {
           "Ropa Interior": {
-            "units": 298,
-            "clp": 980372
+            "units": 588,
+            "clp": 3370446,
+            "costos": 2191480
           },
           "Vestuario Infantil": {
-            "units": 30,
-            "clp": 121014
-          }
-        }
-      },
-      {
-        "store": "Copiapó (Chacabuco)",
-        "storeCode": "0126 Hiper Lider - Av. Chacabuco 120, Copiapó",
-        "region": "03 - Atacama",
-        "units": 281,
-        "clp": 867526,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 231,
-            "clp": 731392
-          },
-          "Vestuario Infantil": {
-            "units": 50,
-            "clp": 136134
+            "units": 41,
+            "clp": 170596,
+            "costos": 226851
           }
         }
       },
@@ -19298,20 +22637,27 @@ const REAL_SELLOUT = {
         "store": "Puerto Montt",
         "storeCode": "0099 Hiper Lider - Av. Parque Industrial 400, Puerto Montt",
         "region": "10 - Los Lagos",
-        "units": 265,
-        "clp": 1152761,
+        "units": 602,
+        "clp": 3201356,
+        "costos": 2228875,
+        "margin": 30.4,
+        "stockUnits": 749,
+        "weeksOfStock": 4.4,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 25,
-            "clp": 80664
+            "units": 29,
+            "clp": 94109,
+            "costos": 147639
           },
           "Accesorios y Otros": {
-            "units": 24,
-            "clp": 388477
+            "units": 36,
+            "clp": 584199,
+            "costos": 428350
           },
           "Ropa Interior": {
-            "units": 216,
-            "clp": 683620
+            "units": 537,
+            "clp": 2523048,
+            "costos": 1652886
           }
         }
       },
@@ -19319,193 +22665,32 @@ const REAL_SELLOUT = {
         "store": "Mall Espacio Urbano Viña",
         "storeCode": "0058 Hiper Lider - 15 Norte #961, Viña del Mar",
         "region": "05 - Valparaíso",
-        "units": 222,
-        "clp": 991702,
+        "units": 501,
+        "clp": 2985813,
+        "costos": 2053610,
+        "margin": 31.2,
+        "stockUnits": 838,
+        "weeksOfStock": 6.0,
         "byDivision": {
           "Accesorios y Otros": {
-            "units": 10,
-            "clp": 159664
+            "units": 16,
+            "clp": 259613,
+            "costos": 183325
           },
           "Ropa Interior": {
-            "units": 192,
-            "clp": 766498
+            "units": 462,
+            "clp": 2651416,
+            "costos": 1752506
           },
           "Vestuario Adulto": {
             "units": 10,
-            "clp": 29413
-          },
-          "Vestuario Infantil": {
-            "units": 10,
-            "clp": 36127
-          }
-        }
-      },
-      {
-        "store": "Maipú (Pajaritos)",
-        "storeCode": "0075 Hiper Lider - Av. Pajaritos 4500, Maipú",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 182,
-        "clp": 669137,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 137,
-            "clp": 466632
-          },
-          "Vestuario Infantil": {
-            "units": 44,
-            "clp": 183186
-          },
-          "Accesorios y Otros": {
-            "units": 1,
-            "clp": 19319
-          }
-        }
-      },
-      {
-        "store": "Mall Espacio Urbano Puente Alto",
-        "storeCode": "0073 Hiper Lider - Av. Concha y Toro 1149, Puente Alto",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 170,
-        "clp": 632031,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 164,
-            "clp": 607669
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 5042
-          },
-          "Vestuario Infantil": {
-            "units": 4,
-            "clp": 19320
-          }
-        }
-      },
-      {
-        "store": "Temuco II",
-        "storeCode": "0120 Hiper Lider - Gabriela Mistral 02621, Temuco",
-        "region": "09 - La Araucanía",
-        "units": 159,
-        "clp": 543718,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 141,
-            "clp": 475657
-          },
-          "Vestuario Infantil": {
-            "units": 18,
-            "clp": 68061
-          }
-        }
-      },
-      {
-        "store": "Puerto Montt (Cardonal)",
-        "storeCode": "0670 Hiper Lider - Av. Presidente Ibáñez 1433, Puerto Montt",
-        "region": "10 - Los Lagos",
-        "units": 146,
-        "clp": 487190,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 133,
-            "clp": 451055
+            "clp": 29413,
+            "costos": 56550
           },
           "Vestuario Infantil": {
             "units": 13,
-            "clp": 36135
-          }
-        }
-      },
-      {
-        "store": "Rancagua (Presidente Eduardo Frei Montalva)",
-        "storeCode": "0035 Hiper Lider - Av. Presidente Eduardo Frei Montalva 190, Rancagua",
-        "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 146,
-        "clp": 846051,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 28,
-            "clp": 427535
-          },
-          "Ropa Interior": {
-            "units": 107,
-            "clp": 362246
-          },
-          "Vestuario Infantil": {
-            "units": 11,
-            "clp": 56270
-          }
-        }
-      },
-      {
-        "store": "Quilín",
-        "storeCode": "0044 Hiper Lider - Av. Américo Vespucio 3100, Peñalolén",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 144,
-        "clp": 563207,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 124,
-            "clp": 502701
-          },
-          "Vestuario Infantil": {
-            "units": 20,
-            "clp": 60506
-          }
-        }
-      },
-      {
-        "store": "Buenaventura",
-        "storeCode": "0057 Hiper Lider - Buenaventura 1770, Vitacura",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 135,
-        "clp": 603458,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 97,
-            "clp": 369893
-          },
-          "Vestuario Adulto": {
-            "units": 0,
-            "clp": 0
-          },
-          "Accesorios y Otros": {
-            "units": 9,
-            "clp": 143629
-          },
-          "Vestuario Infantil": {
-            "units": 29,
-            "clp": 89936
-          }
-        }
-      },
-      {
-        "store": "Alameda",
-        "storeCode": "0072 Hiper Lider - Av. Padre Alberto Hurtado 060, Estación Central",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 135,
-        "clp": 546027,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 135,
-            "clp": 546027
-          }
-        }
-      },
-      {
-        "store": "San Fernando",
-        "storeCode": "0697 Hiper Lider - Av. Bernardo OHiggins 0450, San Fernando",
-        "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 122,
-        "clp": 482762,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 121,
-            "clp": 478560
-          },
-          "Vestuario Infantil": {
-            "units": 1,
-            "clp": 4202
+            "clp": 45371,
+            "costos": 61229
           }
         }
       },
@@ -19513,75 +22698,50 @@ const REAL_SELLOUT = {
         "store": "Centro Urbano Bio Bio (Hualpén)",
         "storeCode": "0089 Hiper Lider - Talcahuano 9000, Hualpén",
         "region": "08 - Biobío",
-        "units": 122,
-        "clp": 768185,
+        "units": 427,
+        "clp": 3269461,
+        "costos": 2297228,
+        "margin": 29.7,
+        "stockUnits": 683,
+        "weeksOfStock": 5.7,
         "byDivision": {
           "Ropa Interior": {
-            "units": 93,
-            "clp": 343171
+            "units": 393,
+            "clp": 2760456,
+            "costos": 1926142
           },
           "Accesorios y Otros": {
-            "units": 23,
-            "clp": 399803
+            "units": 28,
+            "clp": 483794,
+            "costos": 339250
           },
           "Vestuario Infantil": {
             "units": 6,
-            "clp": 25211
+            "clp": 25211,
+            "costos": 31836
           }
         }
       },
       {
-        "store": "Mall Espacio Urbano Gran Avenida",
-        "storeCode": "0032 Hiper Lider - Gran Avenida 6150, San Miguel",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 116,
-        "clp": 402289,
+        "store": "Copiapó (Chacabuco)",
+        "storeCode": "0126 Hiper Lider - Av. Chacabuco 120, Copiapó",
+        "region": "03 - Atacama",
+        "units": 411,
+        "clp": 1390524,
+        "costos": 1096133,
+        "margin": 21.2,
+        "stockUnits": 785,
+        "weeksOfStock": 6.8,
         "byDivision": {
           "Ropa Interior": {
-            "units": 91,
-            "clp": 291367
+            "units": 349,
+            "clp": 1220777,
+            "costos": 772682
           },
           "Vestuario Infantil": {
-            "units": 25,
-            "clp": 110922
-          }
-        }
-      },
-      {
-        "store": "Temuco (Barros Arana)",
-        "storeCode": "0456 Hiper Lider - Barros Arana 308, Temuco",
-        "region": "09 - La Araucanía",
-        "units": 116,
-        "clp": 429813,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 103,
-            "clp": 375607
-          },
-          "Vestuario Infantil": {
-            "units": 12,
-            "clp": 50004
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 4202
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Sur",
-        "storeCode": "0620 Hiper Lider - Av. Presidente Jorge Alessandri 20040, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 114,
-        "clp": 350868,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 109,
-            "clp": 331541
-          },
-          "Vestuario Infantil": {
-            "units": 5,
-            "clp": 19327
+            "units": 62,
+            "clp": 169747,
+            "costos": 323451
           }
         }
       },
@@ -19589,50 +22749,101 @@ const REAL_SELLOUT = {
         "store": "Linares",
         "storeCode": "0127 Hiper Lider - Av. Aníbal León Bustos 280, Linares",
         "region": "07 - Maule",
-        "units": 110,
-        "clp": 363475,
+        "units": 402,
+        "clp": 2477634,
+        "costos": 1843478,
+        "margin": 25.6,
+        "stockUnits": 456,
+        "weeksOfStock": 4.1,
         "byDivision": {
           "Ropa Interior": {
-            "units": 64,
-            "clp": 195398
+            "units": 344,
+            "clp": 2260814,
+            "costos": 1545290
           },
           "Vestuario Infantil": {
-            "units": 46,
-            "clp": 168077
+            "units": 56,
+            "clp": 208416,
+            "costos": 287288
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 8404,
+            "costos": 10900
           }
         }
       },
       {
-        "store": "Chillán",
-        "storeCode": "0608 Hiper Lider - Av. Collín 698, Chillán",
-        "region": "16 - Ñuble",
-        "units": 108,
-        "clp": 329844,
+        "store": "Temuco II",
+        "storeCode": "0120 Hiper Lider - Gabriela Mistral 02621, Temuco",
+        "region": "09 - La Araucanía",
+        "units": 359,
+        "clp": 1924985,
+        "costos": 1443128,
+        "margin": 25.0,
+        "stockUnits": 606,
+        "weeksOfStock": 6.0,
         "byDivision": {
           "Ropa Interior": {
-            "units": 104,
-            "clp": 313886
+            "units": 337,
+            "clp": 1848520,
+            "costos": 1334006
           },
           "Vestuario Infantil": {
-            "units": 4,
-            "clp": 15958
+            "units": 22,
+            "clp": 76465,
+            "costos": 109122
           }
         }
       },
       {
-        "store": "Los Ángeles",
-        "storeCode": "0036 Hiper Lider - Av. Ricardo Vicuña 284, Los Ángeles",
-        "region": "08 - Biobío",
-        "units": 104,
-        "clp": 345619,
+        "store": "Mall Espacio Urbano Puente Alto",
+        "storeCode": "0073 Hiper Lider - Av. Concha y Toro 1149, Puente Alto",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 312,
+        "clp": 1316268,
+        "costos": 993664,
+        "margin": 24.5,
+        "stockUnits": 1153,
+        "weeksOfStock": 13.2,
         "byDivision": {
           "Ropa Interior": {
-            "units": 79,
-            "clp": 238907
+            "units": 304,
+            "clp": 1283502,
+            "costos": 949566
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 5042,
+            "costos": 11900
           },
           "Vestuario Infantil": {
-            "units": 25,
-            "clp": 106712
+            "units": 6,
+            "clp": 27724,
+            "costos": 32198
+          }
+        }
+      },
+      {
+        "store": "Puerto Montt (Cardonal)",
+        "storeCode": "0670 Hiper Lider - Av. Presidente Ibáñez 1433, Puerto Montt",
+        "region": "10 - Los Lagos",
+        "units": 302,
+        "clp": 1502930,
+        "costos": 1231160,
+        "margin": 18.1,
+        "stockUnits": 947,
+        "weeksOfStock": 11.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 288,
+            "clp": 1464274,
+            "costos": 1158346
+          },
+          "Vestuario Infantil": {
+            "units": 14,
+            "clp": 38656,
+            "costos": 72814
           }
         }
       },
@@ -19640,20 +22851,277 @@ const REAL_SELLOUT = {
         "store": "La Serena",
         "storeCode": "0092 Hiper Lider - Av. Francisco de Aguirre 02, La Serena",
         "region": "04 - Coquimbo",
-        "units": 102,
-        "clp": 471025,
+        "units": 291,
+        "clp": 2104339,
+        "costos": 1377623,
+        "margin": 34.5,
+        "stockUnits": 366,
+        "weeksOfStock": 4.5,
         "byDivision": {
           "Accesorios y Otros": {
-            "units": 8,
-            "clp": 140276
+            "units": 10,
+            "clp": 178914,
+            "costos": 127150
           },
           "Ropa Interior": {
-            "units": 93,
-            "clp": 324867
+            "units": 280,
+            "clp": 1919543,
+            "costos": 1245520
           },
           "Vestuario Infantil": {
             "units": 1,
-            "clp": 5882
+            "clp": 5882,
+            "costos": 4953
+          }
+        }
+      },
+      {
+        "store": "Quilín",
+        "storeCode": "0044 Hiper Lider - Av. Américo Vespucio 3100, Peñalolén",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 264,
+        "clp": 1409593,
+        "costos": 1261916,
+        "margin": 10.5,
+        "stockUnits": 729,
+        "weeksOfStock": 9.9,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 224,
+            "clp": 1273452,
+            "costos": 1055860
+          },
+          "Vestuario Infantil": {
+            "units": 40,
+            "clp": 136141,
+            "costos": 206056
+          }
+        }
+      },
+      {
+        "store": "Temuco (Barros Arana)",
+        "storeCode": "0456 Hiper Lider - Barros Arana 308, Temuco",
+        "region": "09 - La Araucanía",
+        "units": 262,
+        "clp": 1553043,
+        "costos": 1171781,
+        "margin": 24.5,
+        "stockUnits": 784,
+        "weeksOfStock": 10.7,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 246,
+            "clp": 1486231,
+            "costos": 1091540
+          },
+          "Vestuario Infantil": {
+            "units": 15,
+            "clp": 62610,
+            "costos": 74791
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 4202,
+            "costos": 5450
+          }
+        }
+      },
+      {
+        "store": "Buenaventura",
+        "storeCode": "0057 Hiper Lider - Buenaventura 1770, Vitacura",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 261,
+        "clp": 1332493,
+        "costos": 1360872,
+        "margin": -2.1,
+        "stockUnits": 1101,
+        "weeksOfStock": 15.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 203,
+            "clp": 951912,
+            "costos": 946270
+          },
+          "Vestuario Adulto": {
+            "units": 0,
+            "clp": 0,
+            "costos": 0
+          },
+          "Accesorios y Otros": {
+            "units": 16,
+            "clp": 242745,
+            "costos": 188050
+          },
+          "Vestuario Infantil": {
+            "units": 42,
+            "clp": 137836,
+            "costos": 226552
+          }
+        }
+      },
+      {
+        "store": "Rancagua (Presidente Eduardo Frei Montalva)",
+        "storeCode": "0035 Hiper Lider - Av. Presidente Eduardo Frei Montalva 190, Rancagua",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 259,
+        "clp": 1377956,
+        "costos": 1011634,
+        "margin": 26.6,
+        "stockUnits": 778,
+        "weeksOfStock": 10.7,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 36,
+            "clp": 545139,
+            "costos": 421425
+          },
+          "Ropa Interior": {
+            "units": 210,
+            "clp": 768143,
+            "costos": 523340
+          },
+          "Vestuario Infantil": {
+            "units": 13,
+            "clp": 64674,
+            "costos": 66869
+          }
+        }
+      },
+      {
+        "store": "Maipú (Pajaritos)",
+        "storeCode": "0075 Hiper Lider - Av. Pajaritos 4500, Maipú",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 259,
+        "clp": 1126925,
+        "costos": 878821,
+        "margin": 22.0,
+        "stockUnits": 904,
+        "weeksOfStock": 12.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 211,
+            "clp": 895017,
+            "costos": 610320
+          },
+          "Vestuario Infantil": {
+            "units": 46,
+            "clp": 193270,
+            "costos": 241451
+          },
+          "Accesorios y Otros": {
+            "units": 2,
+            "clp": 38638,
+            "costos": 27050
+          }
+        }
+      },
+      {
+        "store": "Chillán",
+        "storeCode": "0608 Hiper Lider - Av. Collín 698, Chillán",
+        "region": "16 - Ñuble",
+        "units": 258,
+        "clp": 1043986,
+        "costos": 746194,
+        "margin": 28.5,
+        "stockUnits": 361,
+        "weeksOfStock": 5.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 230,
+            "clp": 927180,
+            "costos": 602190
+          },
+          "Vestuario Infantil": {
+            "units": 28,
+            "clp": 116806,
+            "costos": 144004
+          }
+        }
+      },
+      {
+        "store": "Los Ángeles",
+        "storeCode": "0036 Hiper Lider - Av. Ricardo Vicuña 284, Los Ángeles",
+        "region": "08 - Biobío",
+        "units": 255,
+        "clp": 1290639,
+        "costos": 918673,
+        "margin": 28.8,
+        "stockUnits": 348,
+        "weeksOfStock": 4.9,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 228,
+            "clp": 1175523,
+            "costos": 783950
+          },
+          "Vestuario Infantil": {
+            "units": 27,
+            "clp": 115116,
+            "costos": 134723
+          }
+        }
+      },
+      {
+        "store": "Alameda",
+        "storeCode": "0072 Hiper Lider - Av. Padre Alberto Hurtado 060, Estación Central",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 238,
+        "clp": 1121670,
+        "costos": 804746,
+        "margin": 28.3,
+        "stockUnits": 1060,
+        "weeksOfStock": 15.9,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 238,
+            "clp": 1121670,
+            "costos": 804746
+          }
+        }
+      },
+      {
+        "store": "Mall Espacio Urbano Gran Avenida",
+        "storeCode": "0032 Hiper Lider - Gran Avenida 6150, San Miguel",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 236,
+        "clp": 942543,
+        "costos": 739484,
+        "margin": 21.5,
+        "stockUnits": 599,
+        "weeksOfStock": 9.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 209,
+            "clp": 823217,
+            "costos": 597030
+          },
+          "Vestuario Infantil": {
+            "units": 27,
+            "clp": 119326,
+            "costos": 142454
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Sur",
+        "storeCode": "0620 Hiper Lider - Av. Presidente Jorge Alessandri 20040, San Bernardo",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 219,
+        "clp": 1030381,
+        "costos": 750385,
+        "margin": 27.2,
+        "stockUnits": 576,
+        "weeksOfStock": 9.4,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 212,
+            "clp": 1007693,
+            "costos": 712796
+          },
+          "Vestuario Infantil": {
+            "units": 7,
+            "clp": 22688,
+            "costos": 37589
           }
         }
       },
@@ -19661,181 +23129,32 @@ const REAL_SELLOUT = {
         "store": "La Florida (Santa Amalia)",
         "storeCode": "0083 Hiper Lider - Av. Santa Amalia 1763, La Florida",
         "region": "13 - Metropolitana de Santiago",
-        "units": 97,
-        "clp": 506020,
+        "units": 205,
+        "clp": 1205667,
+        "costos": 880304,
+        "margin": 27.0,
+        "stockUnits": 1109,
+        "weeksOfStock": 19.3,
         "byDivision": {
           "Accesorios y Otros": {
-            "units": 9,
-            "clp": 161267
+            "units": 10,
+            "clp": 177225,
+            "costos": 124225
           },
           "Ropa Interior": {
-            "units": 77,
-            "clp": 295173
+            "units": 174,
+            "clp": 931803,
+            "costos": 627580
           },
           "Vestuario Adulto": {
             "units": 2,
-            "clp": 5042
+            "clp": 5042,
+            "costos": 11900
           },
           "Vestuario Infantil": {
-            "units": 9,
-            "clp": 44538
-          }
-        }
-      },
-      {
-        "store": "Quillota",
-        "storeCode": "0122 Hiper Lider - Av. 21 de Mayo #311, Quillota",
-        "region": "05 - Valparaíso",
-        "units": 97,
-        "clp": 364280,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 97,
-            "clp": 364280
-          }
-        }
-      },
-      {
-        "store": "No Definido",
-        "storeCode": "993 Hiper Lider - Los Mañíos 4455, San Pedro de la Paz",
-        "region": "No Definido",
-        "units": 96,
-        "clp": 463573,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 96,
-            "clp": 463573
-          }
-        }
-      },
-      {
-        "store": "Mall Paseo Los Dominicos",
-        "storeCode": "0088 Hiper Lider - Camino El Alba 11865, Las Condes",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 94,
-        "clp": 338935,
-        "byDivision": {
-          "Calzado": {
             "units": 19,
-            "clp": 7932
-          },
-          "Vestuario Adulto": {
-            "units": 12,
-            "clp": 50424
-          },
-          "Ropa Interior": {
-            "units": 63,
-            "clp": 280579
-          }
-        }
-      },
-      {
-        "store": "Iquique",
-        "storeCode": "0078 Hiper Lider - Av. Héroes de la Concepción 2653, Iquique",
-        "region": "01 - Tarapacá",
-        "units": 93,
-        "clp": 418418,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 71,
-            "clp": 325974
-          },
-          "Vestuario Infantil": {
-            "units": 22,
-            "clp": 92444
-          }
-        }
-      },
-      {
-        "store": "Vespucio Sur",
-        "storeCode": "0071 Hiper Lider - Av. Américo Vespucio Sur 881, Ñuñoa",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 92,
-        "clp": 361682,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 92,
-            "clp": 362514
-          },
-          "Vestuario Infantil": {
-            "units": 0,
-            "clp": -832
-          }
-        }
-      },
-      {
-        "store": "Concepción (Collao)",
-        "storeCode": "0631 Hiper Lider - Av. Juan Bosco 2084, Concepción",
-        "region": "08 - Biobío",
-        "units": 85,
-        "clp": 291772,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 78,
-            "clp": 262358
-          },
-          "Vestuario Infantil": {
-            "units": 7,
-            "clp": 29414
-          }
-        }
-      },
-      {
-        "store": "Antofagasta (El Zenteno)",
-        "storeCode": "0091 Hiper Lider - Zenteno 21, Antofagasta",
-        "region": "02 - Antofagasta",
-        "units": 84,
-        "clp": 305266,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 73,
-            "clp": 236386
-          },
-          "Vestuario Infantil": {
-            "units": 9,
-            "clp": 36964
-          },
-          "Accesorios y Otros": {
-            "units": 2,
-            "clp": 31916
-          }
-        }
-      },
-      {
-        "store": "Quilicura (Lo Marcoleta)",
-        "storeCode": "0671 Hiper Lider - Av. Lo Marcoleta 365, Quilicura",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 84,
-        "clp": 379690,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 79,
-            "clp": 351960
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 4202
-          },
-          "Vestuario Infantil": {
-            "units": 4,
-            "clp": 23528
-          }
-        }
-      },
-      {
-        "store": "Quilpué (El Belloto)",
-        "storeCode": "0084 Hiper Lider - Av. Ramón Freire 1351, Quilpué",
-        "region": "05 - Valparaíso",
-        "units": 81,
-        "clp": 327766,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 68,
-            "clp": 270628
-          },
-          "Vestuario Infantil": {
-            "units": 13,
-            "clp": 57138
+            "clp": 91597,
+            "costos": 116599
           }
         }
       },
@@ -19843,249 +23162,22 @@ const REAL_SELLOUT = {
         "store": "Antofagasta (PA Cerda)",
         "storeCode": "0655 Hiper Lider - Caparrosa 355, Antofagasta",
         "region": "02 - Antofagasta",
-        "units": 75,
-        "clp": 235550,
+        "units": 202,
+        "clp": 1388280,
+        "costos": 914803,
+        "margin": 34.1,
+        "stockUnits": 375,
+        "weeksOfStock": 6.6,
         "byDivision": {
           "Ropa Interior": {
-            "units": 71,
-            "clp": 215383
-          },
-          "Vestuario Infantil": {
-            "units": 4,
-            "clp": 20167
-          }
-        }
-      },
-      {
-        "store": "Melipilla",
-        "storeCode": "0607 Hiper Lider - Av. Vicuña Mackenna 0153, Melipilla",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 74,
-        "clp": 309007,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 67,
-            "clp": 291360
-          },
-          "Vestuario Infantil": {
-            "units": 7,
-            "clp": 17647
-          }
-        }
-      },
-      {
-        "store": "Osorno (Casona Osorno)",
-        "storeCode": "0618 Hiper Lider - Av. Alcalde René Soriano 2855, Osorno",
-        "region": "10 - Los Lagos",
-        "units": 73,
-        "clp": 291710,
-        "byDivision": {
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 2521
-          },
-          "Ropa Interior": {
-            "units": 67,
-            "clp": 269862
+            "units": 197,
+            "clp": 1362231,
+            "costos": 884090
           },
           "Vestuario Infantil": {
             "units": 5,
-            "clp": 19327
-          }
-        }
-      },
-      {
-        "store": "Matucana",
-        "storeCode": "0037 Hiper Lider - Matucana 1202, Quinta Normal",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 72,
-        "clp": 333848,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 72,
-            "clp": 333848
-          }
-        }
-      },
-      {
-        "store": "Puente Alto (Cordillera)",
-        "storeCode": "0048 Hiper Lider - Av. Los Toros 05441, Puente Alto",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 71,
-        "clp": 304541,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 66,
-            "clp": 281853
-          },
-          "Vestuario Infantil": {
-            "units": 5,
-            "clp": 22688
-          }
-        }
-      },
-      {
-        "store": "Huechuraba",
-        "storeCode": "0041 Hiper Lider - Av. Américo Vespucio 1737, Huechuraba",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 71,
-        "clp": 294988,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 9,
-            "clp": 27731
-          },
-          "Ropa Interior": {
-            "units": 60,
-            "clp": 233661
-          },
-          "Accesorios y Otros": {
-            "units": 2,
-            "clp": 33596
-          }
-        }
-      },
-      {
-        "store": "Santa Cruz",
-        "storeCode": "0628 Hiper Lider - Av. Rafael Casanova 344, Santa Cruz",
-        "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 69,
-        "clp": 287596,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 67,
-            "clp": 282554
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 5042
-          }
-        }
-      },
-      {
-        "store": "Limache",
-        "storeCode": "0978 Hiper Lider - Arturo Prat 244, Limache",
-        "region": "05 - Valparaíso",
-        "units": 68,
-        "clp": 285727,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 67,
-            "clp": 281525
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 4202
-          }
-        }
-      },
-      {
-        "store": "Puente Nuevo",
-        "storeCode": "0097 Hiper Lider - Av. Las Condes 12916, Lo Barnechea",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 66,
-        "clp": 218225,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 56,
-            "clp": 193015
-          },
-          "Vestuario Infantil": {
-            "units": 10,
-            "clp": 25210
-          }
-        }
-      },
-      {
-        "store": "Cerrillos (Oeste)",
-        "storeCode": "0085 Hiper Lider - Av. Américo Vespucio 2500, Cerrillos",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 64,
-        "clp": 376100,
-        "byDivision": {
-          "Accesorios y Otros": {
-            "units": 8,
-            "clp": 139427
-          },
-          "Vestuario Infantil": {
-            "units": 14,
-            "clp": 53783
-          },
-          "Ropa Interior": {
-            "units": 41,
-            "clp": 178688
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 4202
-          }
-        }
-      },
-      {
-        "store": "Villa Alemana",
-        "storeCode": "0457 Hiper Lider - Camino Troncal 1561, Villa Alemana",
-        "region": "05 - Valparaíso",
-        "units": 63,
-        "clp": 220239,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 61,
-            "clp": 211835
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 8404
-          }
-        }
-      },
-      {
-        "store": "La Reina (Jorge Alessandri)",
-        "storeCode": "0095 Hiper Lider - Jorge Alessandri 1131, La Reina",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 62,
-        "clp": 151989,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 10,
-            "clp": 25210
-          },
-          "Ropa Interior": {
-            "units": 41,
-            "clp": 97366
-          },
-          "Vestuario Adulto": {
-            "units": 11,
-            "clp": 29413
-          }
-        }
-      },
-      {
-        "store": "Mall Espacio Urbano Los Andes",
-        "storeCode": "0602 Hiper Lider - Av. Santa Teresa 683, Los Andes",
-        "region": "05 - Valparaíso",
-        "units": 60,
-        "clp": 231276,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 56,
-            "clp": 217830
-          },
-          "Vestuario Adulto": {
-            "units": 4,
-            "clp": 13446
-          }
-        }
-      },
-      {
-        "store": "Talagante (Bernardo OHiggins)",
-        "storeCode": "0066 Hiper Lider - Av. Bernardo OHiggins 807, Talagante",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 59,
-        "clp": 282956,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 59,
-            "clp": 282956
+            "clp": 26049,
+            "costos": 30713
           }
         }
       },
@@ -20093,756 +23185,142 @@ const REAL_SELLOUT = {
         "store": "Calama (Grecia)",
         "storeCode": "0988 Hiper Lider - Av. Grecia 1120, Calama",
         "region": "02 - Antofagasta",
-        "units": 58,
-        "clp": 167720,
+        "units": 200,
+        "clp": 1134214,
+        "costos": 796089,
+        "margin": 29.8,
+        "stockUnits": 587,
+        "weeksOfStock": 10.5,
         "byDivision": {
           "Ropa Interior": {
-            "units": 48,
-            "clp": 141661
+            "units": 190,
+            "clp": 1108155,
+            "costos": 743292
           },
           "Vestuario Infantil": {
             "units": 10,
-            "clp": 26059
+            "clp": 26059,
+            "costos": 52797
           }
         }
       },
       {
-        "store": "Concepción",
-        "storeCode": "0098 Hiper Lider - Av. Arturo Prat 651, Concepción",
-        "region": "08 - Biobío",
-        "units": 58,
-        "clp": 242265,
+        "store": "San Fernando",
+        "storeCode": "0697 Hiper Lider - Av. Bernardo OHiggins 0450, San Fernando",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 197,
+        "clp": 705299,
+        "costos": 527683,
+        "margin": 25.2,
+        "stockUnits": 280,
+        "weeksOfStock": 5.1,
         "byDivision": {
           "Ropa Interior": {
-            "units": 47,
-            "clp": 207809
+            "units": 196,
+            "clp": 701097,
+            "costos": 522730
           },
           "Vestuario Infantil": {
-            "units": 11,
-            "clp": 34456
-          }
-        }
-      },
-      {
-        "store": "La Reina (Principe De Gales)",
-        "storeCode": "0626 Hiper Lider - Principe de Gales 9140, La Reina",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 58,
-        "clp": 137281,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 51,
-            "clp": 106204
-          },
-          "Vestuario Adulto": {
-            "units": 5,
-            "clp": 15968
-          }
-        }
-      },
-      {
-        "store": "San Bernardo",
-        "storeCode": "0082 Hiper Lider - San José 69, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 58,
-        "clp": 246048,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 57,
-            "clp": 241846
-          },
-          "Vestuario Adulto": {
             "units": 1,
-            "clp": 4202
+            "clp": 4202,
+            "costos": 4953
           }
         }
       },
       {
-        "store": "San Bernardo (798)",
-        "storeCode": "0798 Hiper Lider - Av. Ochagavia 13115, San Bernardo",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 56,
-        "clp": 243618,
+        "store": "Iquique",
+        "storeCode": "0078 Hiper Lider - Av. Héroes de la Concepción 2653, Iquique",
+        "region": "01 - Tarapacá",
+        "units": 187,
+        "clp": 784904,
+        "costos": 589443,
+        "margin": 24.9,
+        "stockUnits": 379,
+        "weeksOfStock": 7.2,
         "byDivision": {
           "Ropa Interior": {
-            "units": 55,
-            "clp": 241097
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 2521
-          }
-        }
-      },
-      {
-        "store": "Peñaflor",
-        "storeCode": "0736 Hiper Lider - Balmaceda 750, Peñaflor",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 56,
-        "clp": 253735,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 56,
-            "clp": 253735
-          }
-        }
-      },
-      {
-        "store": "Coronel",
-        "storeCode": "0606 Hiper Lider - Av. Manuel Montt 2328, Coronel",
-        "region": "08 - Biobío",
-        "units": 52,
-        "clp": 213840,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 52,
-            "clp": 213840
-          }
-        }
-      },
-      {
-        "store": "Irarrázaval",
-        "storeCode": "0003 Hiper Lider - Av. Irarrázaval 2928, Ñuñoa",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 49,
-        "clp": 148365,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 49,
-            "clp": 148365
-          }
-        }
-      },
-      {
-        "store": "Maipú (Av. Central)",
-        "storeCode": "0046 Hiper Lider - Av. Los Pajaritos 2689, Maipú",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 48,
-        "clp": 177790,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 48,
-            "clp": 177790
-          }
-        }
-      },
-      {
-        "store": "Puerto Montt (Km 3,5, Puerto)",
-        "storeCode": "929 Hiper Lider - La Paloma, Camino a Alerce Km 3,5, Puerto Montt",
-        "region": "10 - Los Lagos",
-        "units": 46,
-        "clp": 205712,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 46,
-            "clp": 205712
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Calama",
-        "storeCode": "0033 Hiper Lider - Balmaceda 3242, Calama",
-        "region": "02 - Antofagasta",
-        "units": 45,
-        "clp": 119433,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 45,
-            "clp": 119433
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Arica",
-        "storeCode": "0635 Hiper Lider - Diego Portales 640, Arica",
-        "region": "15 - Arica y Parinacota",
-        "units": 44,
-        "clp": 142252,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 24,
-            "clp": 90151
+            "units": 162,
+            "clp": 679854,
+            "costos": 464626
           },
           "Vestuario Infantil": {
-            "units": 20,
-            "clp": 52101
+            "units": 25,
+            "clp": 105050,
+            "costos": 124817
           }
         }
       },
       {
-        "store": "Macul",
-        "storeCode": "0055 Hiper Lider - Av. José Pedro Alessandri 2127, Macul",
+        "store": "Huechuraba",
+        "storeCode": "0041 Hiper Lider - Av. Américo Vespucio 1737, Huechuraba",
         "region": "13 - Metropolitana de Santiago",
-        "units": 44,
-        "clp": 123350,
+        "units": 187,
+        "clp": 839909,
+        "costos": 637365,
+        "margin": 24.1,
+        "stockUnits": 557,
+        "weeksOfStock": 10.6,
         "byDivision": {
           "Vestuario Infantil": {
-            "units": 13,
-            "clp": 41176
+            "units": 14,
+            "clp": 45378,
+            "costos": 73978
           },
           "Ropa Interior": {
-            "units": 29,
-            "clp": 75039
+            "units": 170,
+            "clp": 741616,
+            "costos": 526262
           },
           "Accesorios y Otros": {
-            "units": 1,
-            "clp": 2933
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 4202
-          }
-        }
-      },
-      {
-        "store": "Quilicura",
-        "storeCode": "0049 Hiper Lider - Av. OHiggins 314, Quilicura",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 42,
-        "clp": 158092,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 41,
-            "clp": 155571
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 2521
-          }
-        }
-      },
-      {
-        "store": "Curicó",
-        "storeCode": "0042 Hiper Lider - Carmen 1190-1196, Curicó",
-        "region": "07 - Maule",
-        "units": 41,
-        "clp": 191335,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 41,
-            "clp": 191335
-          }
-        }
-      },
-      {
-        "store": "La Serena (El Milagro)",
-        "storeCode": "0684 Hiper Lider - Guillermo Ulriksen 3128, La Serena",
-        "region": "04 - Coquimbo",
-        "units": 41,
-        "clp": 206384,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 41,
-            "clp": 206384
-          }
-        }
-      },
-      {
-        "store": "Santa Rosa",
-        "storeCode": "0087 Hiper Lider - Santa Rosa 9233, San Ramón",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 41,
-        "clp": 176733,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 39,
-            "clp": 168329
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 8404
-          }
-        }
-      },
-      {
-        "store": "Conchalí (Independencia)",
-        "storeCode": "0077 Hiper Lider - Av. Independencia 4142, Conchalí",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 41,
-        "clp": 135637,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 41,
-            "clp": 135637
-          }
-        }
-      },
-      {
-        "store": "Talca",
-        "storeCode": "0079 Hiper Lider - 9 Oriente #1241, Talca",
-        "region": "07 - Maule",
-        "units": 39,
-        "clp": 135966,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 33,
-            "clp": 112351
-          },
-          "Vestuario Infantil": {
-            "units": 1,
-            "clp": 2605
-          },
-          "Vestuario Adulto": {
-            "units": 5,
-            "clp": 21010
-          }
-        }
-      },
-      {
-        "store": "Copiapó (Los Carrera)",
-        "storeCode": "0425 Hiper Lider - Av. Los Carrera 3791, Copiapó",
-        "region": "03 - Atacama",
-        "units": 38,
-        "clp": 182905,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 38,
-            "clp": 182905
-          }
-        }
-      },
-      {
-        "store": "Viña del Mar (Centro)",
-        "storeCode": "0632 Hiper Lider - Av. Valparaíso 1070, Viña del Mar",
-        "region": "05 - Valparaíso",
-        "units": 36,
-        "clp": 149366,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 36,
-            "clp": 149366
-          }
-        }
-      },
-      {
-        "store": "Concón",
-        "storeCode": "0747 Hiper Lider - Av. Magallanes 1050, Concón",
-        "region": "05 - Valparaíso",
-        "units": 36,
-        "clp": 138823,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 35,
-            "clp": 132109
-          }
-        }
-      },
-      {
-        "store": "Calama (Huaytiquina)",
-        "storeCode": "0459 Hiper Lider - Huaytiquina 459, Calama",
-        "region": "02 - Antofagasta",
-        "units": 35,
-        "clp": 145386,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 28,
-            "clp": 117656
-          },
-          "Vestuario Infantil": {
-            "units": 7,
-            "clp": 27730
-          }
-        }
-      },
-      {
-        "store": "Osorno",
-        "storeCode": "0093 Hiper Lider - Errázuriz 1358, Osorno",
-        "region": "10 - Los Lagos",
-        "units": 35,
-        "clp": 149145,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 35,
-            "clp": 149145
-          }
-        }
-      },
-      {
-        "store": "El Bosque (Los Morros)",
-        "storeCode": "0080 Hiper Lider - Riquelme 69, El Bosque",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 34,
-        "clp": 139490,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 34,
-            "clp": 139490
-          }
-        }
-      },
-      {
-        "store": "Maipú (Tres Poniente)",
-        "storeCode": "0616 Hiper Lider - Av. Tres Poniente 0900, Maipú",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 33,
-        "clp": 152694,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 33,
-            "clp": 152694
-          }
-        }
-      },
-      {
-        "store": "Chiguayante",
-        "storeCode": "0945 Hiper Lider - Av. Manuel Rodriguez 1057, Chiguayante",
-        "region": "08 - Biobío",
-        "units": 33,
-        "clp": 155368,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 33,
-            "clp": 155368
-          }
-        }
-      },
-      {
-        "store": "Rancagua (Recreo)",
-        "storeCode": "0039 Hiper Lider - Recreo 620, Rancagua",
-        "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 32,
-        "clp": 133479,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 31,
-            "clp": 126765
-          },
-          "Vestuario Infantil": {
-            "units": 1,
-            "clp": 6714
-          }
-        }
-      },
-      {
-        "store": "Iquique (Bilbao)",
-        "storeCode": "0679 Hiper Lider - Teresa Wilms Montt 2263, Iquique",
-        "region": "01 - Tarapacá",
-        "units": 32,
-        "clp": 133606,
-        "byDivision": {
-          "Vestuario Infantil": {
             "units": 3,
-            "clp": 14286
-          },
-          "Ropa Interior": {
-            "units": 29,
-            "clp": 119320
+            "clp": 52915,
+            "costos": 37125
           }
         }
       },
       {
-        "store": "Maipú (Vespucio)",
-        "storeCode": "0045 Hiper Lider - Av. Américo Vespucio Norte 1955, Maipú",
+        "store": "Puente Alto (Cordillera)",
+        "storeCode": "0048 Hiper Lider - Av. Los Toros 05441, Puente Alto",
         "region": "13 - Metropolitana de Santiago",
-        "units": 31,
-        "clp": 109123,
+        "units": 182,
+        "clp": 1072133,
+        "costos": 729152,
+        "margin": 32.0,
+        "stockUnits": 734,
+        "weeksOfStock": 14.4,
         "byDivision": {
           "Ropa Interior": {
-            "units": 24,
-            "clp": 81393
+            "units": 175,
+            "clp": 1037681,
+            "costos": 686550
           },
           "Vestuario Infantil": {
             "units": 7,
-            "clp": 27730
+            "clp": 34452,
+            "costos": 42602
           }
         }
       },
       {
-        "store": "Mall Espacio Urbano Puenta Arenas",
-        "storeCode": "0121 Hiper Lider - Av. Eduardo Frei Montalva 01110, Punta Arenas",
-        "region": "12 - Magallanes y de la Antártica Chilena",
-        "units": 29,
-        "clp": 125855,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 25,
-            "clp": 115771
-          },
-          "Vestuario Infantil": {
-            "units": 4,
-            "clp": 10084
-          }
-        }
-      },
-      {
-        "store": "San Pablo",
-        "storeCode": "0137 Hiper Lider - Av. Neptuno 720, Lo Prado",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 28,
-        "clp": 154406,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 27,
-            "clp": 150204
-          },
-          "Vestuario Infantil": {
-            "units": 1,
-            "clp": 4202
-          }
-        }
-      },
-      {
-        "store": "San Felipe",
-        "storeCode": "0985 Hiper Lider - Avenida Libertador Bernardo Ohiggins 740, San Felipe",
+        "store": "Quilpué (El Belloto)",
+        "storeCode": "0084 Hiper Lider - Av. Ramón Freire 1351, Quilpué",
         "region": "05 - Valparaíso",
-        "units": 27,
-        "clp": 97780,
+        "units": 171,
+        "clp": 1024495,
+        "costos": 772918,
+        "margin": 24.6,
+        "stockUnits": 563,
+        "weeksOfStock": 11.8,
         "byDivision": {
           "Ropa Interior": {
-            "units": 20,
-            "clp": 65854
-          },
-          "Vestuario Adulto": {
-            "units": 6,
-            "clp": 25212
-          }
-        }
-      },
-      {
-        "store": "Departamental",
-        "storeCode": "0076 Hiper Lider - Av. Américo Vespucio 6325, La Florida",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 24,
-        "clp": 107036,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 24,
-            "clp": 107036
-          }
-        }
-      },
-      {
-        "store": "Talca (El Pilar)",
-        "storeCode": "0143 Hiper Lider - Av. Colín 0240, Talca",
-        "region": "07 - Maule",
-        "units": 24,
-        "clp": 102526,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 4,
-            "clp": 20167
-          },
-          "Ropa Interior": {
-            "units": 18,
-            "clp": 75636
-          },
-          "Vestuario Adulto": {
-            "units": 2,
-            "clp": 6723
-          }
-        }
-      },
-      {
-        "store": "Los Ángeles (Sor Vicenta)",
-        "storeCode": "0426 Hiper Lider - Av. Sor Vicenta 2575, Los Ángeles",
-        "region": "08 - Biobío",
-        "units": 23,
-        "clp": 80149,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 23,
-            "clp": 80149
-          }
-        }
-      },
-      {
-        "store": "Buin",
-        "storeCode": "0182 Hiper Lider - Av. Bernardo OHiggins 555, Buin",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 23,
-        "clp": 90624,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 18,
-            "clp": 72977
+            "units": 155,
+            "clp": 954751,
+            "costos": 692678
           },
           "Vestuario Infantil": {
-            "units": 4,
-            "clp": 13445
-          },
-          "Vestuario Adulto": {
-            "units": 1,
-            "clp": 4202
-          }
-        }
-      },
-      {
-        "store": "San Joaquín",
-        "storeCode": "0682 Hiper Lider - Av. Vicuña Mackenna 3361, San Joaquín",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 22,
-        "clp": 101625,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 19,
-            "clp": 83979
-          },
-          "Vestuario Infantil": {
-            "units": 3,
-            "clp": 17646
-          }
-        }
-      },
-      {
-        "store": "Mall Plaza Vespucio",
-        "storeCode": "0062 Hiper Lider - Froilan Roa 7107, La Florida",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 18,
-        "clp": 72202,
-        "byDivision": {
-          "Vestuario Infantil": {
-            "units": 9,
-            "clp": 26051
-          },
-          "Ropa Interior": {
-            "units": 9,
-            "clp": 46151
-          }
-        }
-      },
-      {
-        "store": "Coquimbo",
-        "storeCode": "0053 Hiper Lider - Av. Domeyko 55, Coquimbo",
-        "region": "04 - Coquimbo",
-        "units": 18,
-        "clp": 99017,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 18,
-            "clp": 99017
-          }
-        }
-      },
-      {
-        "store": "La Serena (Regimiento Arica)",
-        "storeCode": "0686 Hiper Lider - Regimiento Arica 6145, La Serena",
-        "region": "04 - Coquimbo",
-        "units": 18,
-        "clp": 78137,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 10,
-            "clp": 42011
-          },
-          "Vestuario Infantil": {
-            "units": 8,
-            "clp": 36126
-          }
-        }
-      },
-      {
-        "store": "Recoleta",
-        "storeCode": "0086 Hiper Lider - Av. Recoleta 3501, Recoleta",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 17,
-        "clp": 52877,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 15,
-            "clp": 51197
-          },
-          "Vestuario Infantil": {
-            "units": 2,
-            "clp": 1680
-          }
-        }
-      },
-      {
-        "store": "Gabriela (La Pintana)",
-        "storeCode": "0693 Hiper Lider - Gabriela 2541, La Pintana",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 15,
-        "clp": 81422,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 15,
-            "clp": 81422
-          }
-        }
-      },
-      {
-        "store": "Renca (Miraflores)",
-        "storeCode": "0748 Hiper Lider - Av. Miraflores 8412, Renca",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 14,
-        "clp": 41119,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 10,
-            "clp": 24311
-          },
-          "Vestuario Adulto": {
-            "units": 4,
-            "clp": 16808
-          }
-        }
-      },
-      {
-        "store": "Arica",
-        "storeCode": "0081 Hiper Lider - Diego Portales 2291, Arica",
-        "region": "15 - Arica y Parinacota",
-        "units": 14,
-        "clp": 82236,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 14,
-            "clp": 82236
-          }
-        }
-      },
-      {
-        "store": "Ovalle",
-        "storeCode": "0125 Hiper Lider - Calle Recinto Interior Estación 48, Ovalle",
-        "region": "04 - Coquimbo",
-        "units": 11,
-        "clp": 45339,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 11,
-            "clp": 45339
-          }
-        }
-      },
-      {
-        "store": "San Antonio",
-        "storeCode": "0654 Hiper Lider - Av. Barros Lucos 2970, San Antonio",
-        "region": "05 - Valparaíso",
-        "units": 11,
-        "clp": 61261,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 11,
-            "clp": 61261
-          }
-        }
-      },
-      {
-        "store": "Maipú (Camino Melipilla)",
-        "storeCode": "0739 Hiper Lider - Camino Melipilla 15990, Maipú",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 8,
-        "clp": 48696,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 2,
-            "clp": 10059
-          },
-          "Vestuario Infantil": {
-            "units": 4,
-            "clp": 23528
-          }
-        }
-      },
-      {
-        "store": "Vicuña Mackenna",
-        "storeCode": "0054 Hiper Lider - Av. Vicuña Mackenna 7196, La Florida",
-        "region": "13 - Metropolitana de Santiago",
-        "units": 7,
-        "clp": 32750,
-        "byDivision": {
-          "Ropa Interior": {
-            "units": 7,
-            "clp": 32750
+            "units": 16,
+            "clp": 69744,
+            "costos": 80240
           }
         }
       },
@@ -20850,12 +23328,1237 @@ const REAL_SELLOUT = {
         "store": "Valparaíso",
         "storeCode": "0518 Hiper Lider - Av. Argentina 602, Valparaíso",
         "region": "05 - Valparaíso",
-        "units": 5,
-        "clp": 17203,
+        "units": 165,
+        "clp": 965487,
+        "costos": 639220,
+        "margin": 33.8,
+        "stockUnits": 441,
+        "weeksOfStock": 9.5,
         "byDivision": {
           "Ropa Interior": {
+            "units": 165,
+            "clp": 965487,
+            "costos": 639220
+          }
+        }
+      },
+      {
+        "store": "Concepción (Collao)",
+        "storeCode": "0631 Hiper Lider - Av. Juan Bosco 2084, Concepción",
+        "region": "08 - Biobío",
+        "units": 162,
+        "clp": 527416,
+        "costos": 503140,
+        "margin": 4.6,
+        "stockUnits": 289,
+        "weeksOfStock": 6.4,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 152,
+            "clp": 485396,
+            "costos": 453610
+          },
+          "Vestuario Infantil": {
+            "units": 10,
+            "clp": 42020,
+            "costos": 49530
+          }
+        }
+      },
+      {
+        "store": "Mall Paseo Los Dominicos",
+        "storeCode": "0088 Hiper Lider - Camino El Alba 11865, Las Condes",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 160,
+        "clp": 785660,
+        "costos": 816610,
+        "margin": -3.9,
+        "stockUnits": 334,
+        "weeksOfStock": 7.5,
+        "byDivision": {
+          "Calzado": {
+            "units": 19,
+            "clp": 7932,
+            "costos": 62510
+          },
+          "Vestuario Adulto": {
+            "units": 20,
+            "clp": 84040,
+            "costos": 109000
+          },
+          "Ropa Interior": {
+            "units": 121,
+            "clp": 693688,
+            "costos": 645100
+          }
+        }
+      },
+      {
+        "store": "Concepción",
+        "storeCode": "0098 Hiper Lider - Av. Arturo Prat 651, Concepción",
+        "region": "08 - Biobío",
+        "units": 155,
+        "clp": 849171,
+        "costos": 708740,
+        "margin": 16.5,
+        "stockUnits": 394,
+        "weeksOfStock": 9.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 142,
+            "clp": 813035,
+            "costos": 643130
+          },
+          "Vestuario Infantil": {
+            "units": 13,
+            "clp": 36136,
+            "costos": 65610
+          }
+        }
+      },
+      {
+        "store": "Concón",
+        "storeCode": "0747 Hiper Lider - Av. Magallanes 1050, Concón",
+        "region": "05 - Valparaíso",
+        "units": 155,
+        "clp": 993339,
+        "costos": 675906,
+        "margin": 32.0,
+        "stockUnits": 541,
+        "weeksOfStock": 12.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 154,
+            "clp": 986625,
+            "costos": 671516
+          }
+        }
+      },
+      {
+        "store": "Chiguayante",
+        "storeCode": "0945 Hiper Lider - Av. Manuel Rodriguez 1057, Chiguayante",
+        "region": "08 - Biobío",
+        "units": 147,
+        "clp": 1004298,
+        "costos": 839452,
+        "margin": 16.4,
+        "stockUnits": 406,
+        "weeksOfStock": 9.9,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 147,
+            "clp": 1004298,
+            "costos": 839452
+          }
+        }
+      },
+      {
+        "store": "Quillota",
+        "storeCode": "0122 Hiper Lider - Av. 21 de Mayo #311, Quillota",
+        "region": "05 - Valparaíso",
+        "units": 146,
+        "clp": 620341,
+        "costos": 569616,
+        "margin": 8.2,
+        "stockUnits": 400,
+        "weeksOfStock": 9.8,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 146,
+            "clp": 620341,
+            "costos": 569616
+          }
+        }
+      },
+      {
+        "store": "Villa Alemana",
+        "storeCode": "0457 Hiper Lider - Camino Troncal 1561, Villa Alemana",
+        "region": "05 - Valparaíso",
+        "units": 145,
+        "clp": 938942,
+        "costos": 668597,
+        "margin": 28.8,
+        "stockUnits": 790,
+        "weeksOfStock": 19.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 139,
+            "clp": 908690,
+            "costos": 632222
+          },
+          "Vestuario Adulto": {
+            "units": 3,
+            "clp": 12606,
+            "costos": 16350
+          },
+          "Vestuario Infantil": {
+            "units": 3,
+            "clp": 17646,
+            "costos": 20025
+          }
+        }
+      },
+      {
+        "store": "Vespucio Sur",
+        "storeCode": "0071 Hiper Lider - Av. Américo Vespucio Sur 881, Ñuñoa",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 143,
+        "clp": 534913,
+        "costos": 605759,
+        "margin": -13.2,
+        "stockUnits": 469,
+        "weeksOfStock": 11.7,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 143,
+            "clp": 535745,
+            "costos": 604768
+          },
+          "Vestuario Infantil": {
+            "units": 0,
+            "clp": -832,
+            "costos": 991
+          }
+        }
+      },
+      {
+        "store": "Melipilla",
+        "storeCode": "0607 Hiper Lider - Av. Vicuña Mackenna 0153, Melipilla",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 143,
+        "clp": 822446,
+        "costos": 720230,
+        "margin": 12.4,
+        "stockUnits": 411,
+        "weeksOfStock": 10.3,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 133,
+            "clp": 797236,
+            "costos": 668716
+          },
+          "Vestuario Infantil": {
+            "units": 10,
+            "clp": 25210,
+            "costos": 51514
+          }
+        }
+      },
+      {
+        "store": "La Reina (Jorge Alessandri)",
+        "storeCode": "0095 Hiper Lider - Jorge Alessandri 1131, La Reina",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 140,
+        "clp": 748947,
+        "costos": 674186,
+        "margin": 10.0,
+        "stockUnits": 671,
+        "weeksOfStock": 17.1,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 12,
+            "clp": 33613,
+            "costos": 63016
+          },
+          "Ropa Interior": {
+            "units": 115,
+            "clp": 679198,
+            "costos": 535320
+          },
+          "Vestuario Adulto": {
+            "units": 13,
+            "clp": 36136,
+            "costos": 75850
+          }
+        }
+      },
+      {
+        "store": "Puente Nuevo",
+        "storeCode": "0097 Hiper Lider - Av. Las Condes 12916, Lo Barnechea",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 138,
+        "clp": 727397,
+        "costos": 605190,
+        "margin": 16.8,
+        "stockUnits": 473,
+        "weeksOfStock": 12.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 128,
+            "clp": 702187,
+            "costos": 555660
+          },
+          "Vestuario Infantil": {
+            "units": 10,
+            "clp": 25210,
+            "costos": 49530
+          }
+        }
+      },
+      {
+        "store": "Maipú (Av. Central)",
+        "storeCode": "0046 Hiper Lider - Av. Los Pajaritos 2689, Maipú",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 137,
+        "clp": 734632,
+        "costos": 489870,
+        "margin": 33.3,
+        "stockUnits": 577,
+        "weeksOfStock": 15.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 137,
+            "clp": 734632,
+            "costos": 489870
+          }
+        }
+      },
+      {
+        "store": "Coronel",
+        "storeCode": "0606 Hiper Lider - Av. Manuel Montt 2328, Coronel",
+        "region": "08 - Biobío",
+        "units": 137,
+        "clp": 952733,
+        "costos": 784846,
+        "margin": 17.6,
+        "stockUnits": 445,
+        "weeksOfStock": 11.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 137,
+            "clp": 952733,
+            "costos": 784846
+          }
+        }
+      },
+      {
+        "store": "Osorno (Casona Osorno)",
+        "storeCode": "0618 Hiper Lider - Av. Alcalde René Soriano 2855, Osorno",
+        "region": "10 - Los Lagos",
+        "units": 135,
+        "clp": 493162,
+        "costos": 515924,
+        "margin": -4.6,
+        "stockUnits": 360,
+        "weeksOfStock": 9.5,
+        "byDivision": {
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 5042,
+            "costos": 11900
+          },
+          "Ropa Interior": {
+            "units": 112,
+            "clp": 401561,
+            "costos": 392280
+          },
+          "Vestuario Infantil": {
+            "units": 21,
+            "clp": 86559,
+            "costos": 111744
+          }
+        }
+      },
+      {
+        "store": "Santa Cruz",
+        "storeCode": "0628 Hiper Lider - Av. Rafael Casanova 344, Santa Cruz",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 135,
+        "clp": 806081,
+        "costos": 678596,
+        "margin": 15.8,
+        "stockUnits": 319,
+        "weeksOfStock": 8.4,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 132,
+            "clp": 796837,
+            "costos": 665746
+          },
+          "Vestuario Adulto": {
+            "units": 3,
+            "clp": 9244,
+            "costos": 12850
+          }
+        }
+      },
+      {
+        "store": "Antofagasta (El Zenteno)",
+        "storeCode": "0091 Hiper Lider - Zenteno 21, Antofagasta",
+        "region": "02 - Antofagasta",
+        "units": 133,
+        "clp": 501539,
+        "costos": 354615,
+        "margin": 29.3,
+        "stockUnits": 615,
+        "weeksOfStock": 16.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 116,
+            "clp": 363778,
+            "costos": 228710
+          },
+          "Vestuario Infantil": {
+            "units": 12,
+            "clp": 54610,
+            "costos": 67580
+          },
+          "Accesorios y Otros": {
             "units": 5,
-            "clp": 17203
+            "clp": 83151,
+            "costos": 58325
+          }
+        }
+      },
+      {
+        "store": "Calama (Huaytiquina)",
+        "storeCode": "0459 Hiper Lider - Huaytiquina 459, Calama",
+        "region": "02 - Antofagasta",
+        "units": 131,
+        "clp": 1051415,
+        "costos": 825762,
+        "margin": 21.5,
+        "stockUnits": 225,
+        "weeksOfStock": 6.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 119,
+            "clp": 1004357,
+            "costos": 758100
+          },
+          "Vestuario Infantil": {
+            "units": 12,
+            "clp": 47058,
+            "costos": 67662
+          }
+        }
+      },
+      {
+        "store": "Cerrillos (Oeste)",
+        "storeCode": "0085 Hiper Lider - Av. Américo Vespucio 2500, Cerrillos",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 130,
+        "clp": 778549,
+        "costos": 613245,
+        "margin": 21.2,
+        "stockUnits": 991,
+        "weeksOfStock": 27.2,
+        "byDivision": {
+          "Accesorios y Otros": {
+            "units": 11,
+            "clp": 191502,
+            "costos": 134300
+          },
+          "Vestuario Infantil": {
+            "units": 18,
+            "clp": 67228,
+            "costos": 107115
+          },
+          "Ropa Interior": {
+            "units": 100,
+            "clp": 515617,
+            "costos": 366380
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 4202,
+            "costos": 5450
+          }
+        }
+      },
+      {
+        "store": "Quilicura",
+        "storeCode": "0049 Hiper Lider - Av. OHiggins 314, Quilicura",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 128,
+        "clp": 610769,
+        "costos": 422775,
+        "margin": 30.8,
+        "stockUnits": 399,
+        "weeksOfStock": 11.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 126,
+            "clp": 605727,
+            "costos": 411940
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 2521,
+            "costos": 5950
+          },
+          "Vestuario Infantil": {
+            "units": 1,
+            "clp": 2521,
+            "costos": 4885
+          }
+        }
+      },
+      {
+        "store": "No Definido",
+        "storeCode": "279 Hiper Lider - Balmaceda 950, Curicó",
+        "region": "07 - Maule",
+        "units": 126,
+        "clp": 655835,
+        "costos": 607608,
+        "margin": 7.4,
+        "stockUnits": 714,
+        "weeksOfStock": 20.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 126,
+            "clp": 655835,
+            "costos": 607608
+          }
+        }
+      },
+      {
+        "store": "La Reina (Principe De Gales)",
+        "storeCode": "0626 Hiper Lider - Principe de Gales 9140, La Reina",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 123,
+        "clp": 632264,
+        "costos": 573710,
+        "margin": 9.3,
+        "stockUnits": 389,
+        "weeksOfStock": 11.3,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 113,
+            "clp": 584808,
+            "costos": 521930
+          },
+          "Vestuario Adulto": {
+            "units": 7,
+            "clp": 22691,
+            "costos": 36400
+          }
+        }
+      },
+      {
+        "store": "Macul",
+        "storeCode": "0055 Hiper Lider - Av. José Pedro Alessandri 2127, Macul",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 121,
+        "clp": 649639,
+        "costos": 488747,
+        "margin": 24.8,
+        "stockUnits": 905,
+        "weeksOfStock": 26.7,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 16,
+            "clp": 52100,
+            "costos": 87677
+          },
+          "Ropa Interior": {
+            "units": 103,
+            "clp": 590404,
+            "costos": 393620
+          },
+          "Accesorios y Otros": {
+            "units": 1,
+            "clp": 2933,
+            "costos": 2000
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 4202,
+            "costos": 5450
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Vespucio",
+        "storeCode": "0062 Hiper Lider - Froilan Roa 7107, La Florida",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 120,
+        "clp": 778089,
+        "costos": 542643,
+        "margin": 30.3,
+        "stockUnits": 373,
+        "weeksOfStock": 11.1,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 9,
+            "clp": 26051,
+            "costos": 44733
+          },
+          "Ropa Interior": {
+            "units": 111,
+            "clp": 752038,
+            "costos": 497910
+          }
+        }
+      },
+      {
+        "store": "Quilicura (Lo Marcoleta)",
+        "storeCode": "0671 Hiper Lider - Av. Lo Marcoleta 365, Quilicura",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 120,
+        "clp": 482186,
+        "costos": 640550,
+        "margin": -32.8,
+        "stockUnits": 294,
+        "weeksOfStock": 8.8,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 115,
+            "clp": 454456,
+            "costos": 609340
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 4202,
+            "costos": 5450
+          },
+          "Vestuario Infantil": {
+            "units": 4,
+            "clp": 23528,
+            "costos": 25760
+          }
+        }
+      },
+      {
+        "store": "Talagante (Bernardo OHiggins)",
+        "storeCode": "0066 Hiper Lider - Av. Bernardo OHiggins 807, Talagante",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 118,
+        "clp": 761513,
+        "costos": 601200,
+        "margin": 21.1,
+        "stockUnits": 316,
+        "weeksOfStock": 9.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 118,
+            "clp": 761513,
+            "costos": 601200
+          }
+        }
+      },
+      {
+        "store": "Osorno",
+        "storeCode": "0093 Hiper Lider - Errázuriz 1358, Osorno",
+        "region": "10 - Los Lagos",
+        "units": 118,
+        "clp": 787309,
+        "costos": 677740,
+        "margin": 13.9,
+        "stockUnits": 402,
+        "weeksOfStock": 12.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 118,
+            "clp": 787309,
+            "costos": 677740
+          }
+        }
+      },
+      {
+        "store": "Limache",
+        "storeCode": "0978 Hiper Lider - Arturo Prat 244, Limache",
+        "region": "05 - Valparaíso",
+        "units": 108,
+        "clp": 408402,
+        "costos": 685786,
+        "margin": -67.9,
+        "stockUnits": 243,
+        "weeksOfStock": 8.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 107,
+            "clp": 404200,
+            "costos": 680336
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 4202,
+            "costos": 5450
+          }
+        }
+      },
+      {
+        "store": "San Antonio",
+        "storeCode": "0654 Hiper Lider - Av. Barros Lucos 2970, San Antonio",
+        "region": "05 - Valparaíso",
+        "units": 108,
+        "clp": 509219,
+        "costos": 341240,
+        "margin": 33.0,
+        "stockUnits": 345,
+        "weeksOfStock": 11.4,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 108,
+            "clp": 509219,
+            "costos": 341240
+          }
+        }
+      },
+      {
+        "store": "Talca",
+        "storeCode": "0079 Hiper Lider - 9 Oriente #1241, Talca",
+        "region": "07 - Maule",
+        "units": 107,
+        "clp": 769869,
+        "costos": 534218,
+        "margin": 30.6,
+        "stockUnits": 167,
+        "weeksOfStock": 5.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 102,
+            "clp": 750456,
+            "costos": 505510
+          },
+          "Vestuario Infantil": {
+            "units": 1,
+            "clp": 2605,
+            "costos": 6908
+          },
+          "Vestuario Adulto": {
+            "units": 4,
+            "clp": 16808,
+            "costos": 21800
+          }
+        }
+      },
+      {
+        "store": "Maipú (Tres Poniente)",
+        "storeCode": "0616 Hiper Lider - Av. Tres Poniente 0900, Maipú",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 105,
+        "clp": 861343,
+        "costos": 586768,
+        "margin": 31.9,
+        "stockUnits": 574,
+        "weeksOfStock": 19.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 105,
+            "clp": 861343,
+            "costos": 586768
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Calama",
+        "storeCode": "0033 Hiper Lider - Balmaceda 3242, Calama",
+        "region": "02 - Antofagasta",
+        "units": 103,
+        "clp": 621085,
+        "costos": 411950,
+        "margin": 33.7,
+        "stockUnits": 306,
+        "weeksOfStock": 10.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 103,
+            "clp": 621085,
+            "costos": 411950
+          }
+        }
+      },
+      {
+        "store": "Santa Rosa",
+        "storeCode": "0087 Hiper Lider - Santa Rosa 9233, San Ramón",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 102,
+        "clp": 769143,
+        "costos": 579510,
+        "margin": 24.7,
+        "stockUnits": 428,
+        "weeksOfStock": 15.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 100,
+            "clp": 760739,
+            "costos": 568610
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 8404,
+            "costos": 10900
+          }
+        }
+      },
+      {
+        "store": "Peñaflor",
+        "storeCode": "0736 Hiper Lider - Balmaceda 750, Peñaflor",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 99,
+        "clp": 629005,
+        "costos": 418792,
+        "margin": 33.4,
+        "stockUnits": 251,
+        "weeksOfStock": 9.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 99,
+            "clp": 629005,
+            "costos": 418792
+          }
+        }
+      },
+      {
+        "store": "Copiapó (Los Carrera)",
+        "storeCode": "0425 Hiper Lider - Av. Los Carrera 3791, Copiapó",
+        "region": "03 - Atacama",
+        "units": 97,
+        "clp": 681582,
+        "costos": 479860,
+        "margin": 29.6,
+        "stockUnits": 313,
+        "weeksOfStock": 11.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 97,
+            "clp": 681582,
+            "costos": 479860
+          }
+        }
+      },
+      {
+        "store": "Matucana",
+        "storeCode": "0037 Hiper Lider - Matucana 1202, Quinta Normal",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 97,
+        "clp": 527756,
+        "costos": 356652,
+        "margin": 32.4,
+        "stockUnits": 294,
+        "weeksOfStock": 10.8,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 97,
+            "clp": 527756,
+            "costos": 356652
+          }
+        }
+      },
+      {
+        "store": "Iquique (Bilbao)",
+        "storeCode": "0679 Hiper Lider - Teresa Wilms Montt 2263, Iquique",
+        "region": "01 - Tarapacá",
+        "units": 95,
+        "clp": 429830,
+        "costos": 398741,
+        "margin": 7.2,
+        "stockUnits": 330,
+        "weeksOfStock": 12.4,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 3,
+            "clp": 14286,
+            "costos": 17051
+          },
+          "Ropa Interior": {
+            "units": 91,
+            "clp": 411342,
+            "costos": 376240
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 4202,
+            "costos": 5450
+          }
+        }
+      },
+      {
+        "store": "Maipú (Vespucio)",
+        "storeCode": "0045 Hiper Lider - Av. Américo Vespucio Norte 1955, Maipú",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 91,
+        "clp": 613287,
+        "costos": 459156,
+        "margin": 25.1,
+        "stockUnits": 699,
+        "weeksOfStock": 27.4,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 83,
+            "clp": 582624,
+            "costos": 416536
+          },
+          "Vestuario Infantil": {
+            "units": 7,
+            "clp": 27730,
+            "costos": 40620
+          },
+          "Accesorios y Otros": {
+            "units": 1,
+            "clp": 2933,
+            "costos": 2000
+          }
+        }
+      },
+      {
+        "store": "Mall Espacio Urbano Puenta Arenas",
+        "storeCode": "0121 Hiper Lider - Av. Eduardo Frei Montalva 01110, Punta Arenas",
+        "region": "12 - Magallanes y de la Antártica Chilena",
+        "units": 87,
+        "clp": 310293,
+        "costos": 242529,
+        "margin": 21.8,
+        "stockUnits": 420,
+        "weeksOfStock": 17.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 80,
+            "clp": 292646,
+            "costos": 204950
+          },
+          "Vestuario Infantil": {
+            "units": 7,
+            "clp": 17647,
+            "costos": 37579
+          }
+        }
+      },
+      {
+        "store": "La Serena (El Milagro)",
+        "storeCode": "0684 Hiper Lider - Guillermo Ulriksen 3128, La Serena",
+        "region": "04 - Coquimbo",
+        "units": 86,
+        "clp": 616100,
+        "costos": 418412,
+        "margin": 32.1,
+        "stockUnits": 424,
+        "weeksOfStock": 17.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 86,
+            "clp": 616100,
+            "costos": 418412
+          }
+        }
+      },
+      {
+        "store": "Mall Espacio Urbano Los Andes",
+        "storeCode": "0602 Hiper Lider - Av. Santa Teresa 683, Los Andes",
+        "region": "05 - Valparaíso",
+        "units": 83,
+        "clp": 313470,
+        "costos": 303636,
+        "margin": 3.1,
+        "stockUnits": 329,
+        "weeksOfStock": 14.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 79,
+            "clp": 300024,
+            "costos": 285336
+          },
+          "Vestuario Adulto": {
+            "units": 4,
+            "clp": 13446,
+            "costos": 18300
+          }
+        }
+      },
+      {
+        "store": "Coquimbo",
+        "storeCode": "0053 Hiper Lider - Av. Domeyko 55, Coquimbo",
+        "region": "04 - Coquimbo",
+        "units": 81,
+        "clp": 735481,
+        "costos": 498998,
+        "margin": 32.2,
+        "stockUnits": 167,
+        "weeksOfStock": 7.4,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 80,
+            "clp": 732960,
+            "costos": 495298
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 2521,
+            "costos": 3700
+          }
+        }
+      },
+      {
+        "store": "San Bernardo",
+        "storeCode": "0082 Hiper Lider - San José 69, San Bernardo",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 81,
+        "clp": 361118,
+        "costos": 393656,
+        "margin": -9.0,
+        "stockUnits": 225,
+        "weeksOfStock": 9.9,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 78,
+            "clp": 346832,
+            "costos": 376316
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 8404,
+            "costos": 10900
+          },
+          "Vestuario Infantil": {
+            "units": 1,
+            "clp": 5882,
+            "costos": 6440
+          }
+        }
+      },
+      {
+        "store": "Irarrázaval",
+        "storeCode": "0003 Hiper Lider - Av. Irarrázaval 2928, Ñuñoa",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 80,
+        "clp": 309888,
+        "costos": 203106,
+        "margin": 34.5,
+        "stockUnits": 252,
+        "weeksOfStock": 11.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 80,
+            "clp": 309888,
+            "costos": 203106
+          }
+        }
+      },
+      {
+        "store": "San Pablo",
+        "storeCode": "0137 Hiper Lider - Av. Neptuno 720, Lo Prado",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 80,
+        "clp": 584250,
+        "costos": 402626,
+        "margin": 31.1,
+        "stockUnits": 336,
+        "weeksOfStock": 15.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 78,
+            "clp": 575846,
+            "costos": 392720
+          },
+          "Vestuario Infantil": {
+            "units": 2,
+            "clp": 8404,
+            "costos": 9906
+          }
+        }
+      },
+      {
+        "store": "Rancagua (Recreo)",
+        "storeCode": "0039 Hiper Lider - Recreo 620, Rancagua",
+        "region": "06 - Libertador General Bernardo OHiggins",
+        "units": 78,
+        "clp": 498702,
+        "costos": 389460,
+        "margin": 21.9,
+        "stockUnits": 338,
+        "weeksOfStock": 15.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 77,
+            "clp": 491988,
+            "costos": 385070
+          },
+          "Vestuario Infantil": {
+            "units": 1,
+            "clp": 6714,
+            "costos": 4390
+          }
+        }
+      },
+      {
+        "store": "San Bernardo (798)",
+        "storeCode": "0798 Hiper Lider - Av. Ochagavia 13115, San Bernardo",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 76,
+        "clp": 356156,
+        "costos": 387300,
+        "margin": -8.7,
+        "stockUnits": 276,
+        "weeksOfStock": 13.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 75,
+            "clp": 353635,
+            "costos": 383600
+          },
+          "Vestuario Adulto": {
+            "units": 1,
+            "clp": 2521,
+            "costos": 3700
+          }
+        }
+      },
+      {
+        "store": "Mall Plaza Arica",
+        "storeCode": "0635 Hiper Lider - Diego Portales 640, Arica",
+        "region": "15 - Arica y Parinacota",
+        "units": 73,
+        "clp": 414279,
+        "costos": 343228,
+        "margin": 17.2,
+        "stockUnits": 768,
+        "weeksOfStock": 37.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 53,
+            "clp": 362178,
+            "costos": 241192
+          },
+          "Vestuario Infantil": {
+            "units": 20,
+            "clp": 52101,
+            "costos": 102036
+          }
+        }
+      },
+      {
+        "store": "Conchalí (Independencia)",
+        "storeCode": "0077 Hiper Lider - Av. Independencia 4142, Conchalí",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 72,
+        "clp": 322054,
+        "costos": 294650,
+        "margin": 8.5,
+        "stockUnits": 468,
+        "weeksOfStock": 23.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 72,
+            "clp": 322054,
+            "costos": 294650
+          }
+        }
+      },
+      {
+        "store": "Curicó",
+        "storeCode": "0042 Hiper Lider - Carmen 1190-1196, Curicó",
+        "region": "07 - Maule",
+        "units": 67,
+        "clp": 403735,
+        "costos": 305858,
+        "margin": 24.2,
+        "stockUnits": 104,
+        "weeksOfStock": 5.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 67,
+            "clp": 403735,
+            "costos": 305858
+          }
+        }
+      },
+      {
+        "store": "Ovalle",
+        "storeCode": "0125 Hiper Lider - Calle Recinto Interior Estación 48, Ovalle",
+        "region": "04 - Coquimbo",
+        "units": 67,
+        "clp": 517167,
+        "costos": 364890,
+        "margin": 29.4,
+        "stockUnits": 362,
+        "weeksOfStock": 19.3,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 67,
+            "clp": 517167,
+            "costos": 364890
+          }
+        }
+      },
+      {
+        "store": "Puerto Montt (Km 3,5, Puerto)",
+        "storeCode": "929 Hiper Lider - La Paloma, Camino a Alerce Km 3,5, Puerto Montt",
+        "region": "10 - Los Lagos",
+        "units": 61,
+        "clp": 255267,
+        "costos": 304484,
+        "margin": -19.3,
+        "stockUnits": 506,
+        "weeksOfStock": 29.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 61,
+            "clp": 255267,
+            "costos": 304484
+          }
+        }
+      },
+      {
+        "store": "El Bosque (Los Morros)",
+        "storeCode": "0080 Hiper Lider - Riquelme 69, El Bosque",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 56,
+        "clp": 271333,
+        "costos": 294870,
+        "margin": -8.7,
+        "stockUnits": 333,
+        "weeksOfStock": 21.2,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 56,
+            "clp": 271333,
+            "costos": 294870
+          }
+        }
+      },
+      {
+        "store": "Temuco",
+        "storeCode": "0096 Hiper Lider - Av. Prieto Norte 0320, Temuco",
+        "region": "09 - La Araucanía",
+        "units": 56,
+        "clp": 423929,
+        "costos": 284900,
+        "margin": 32.8,
+        "stockUnits": 782,
+        "weeksOfStock": 49.9,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 56,
+            "clp": 423929,
+            "costos": 284900
+          }
+        }
+      },
+      {
+        "store": "Los Ángeles (Sor Vicenta)",
+        "storeCode": "0426 Hiper Lider - Av. Sor Vicenta 2575, Los Ángeles",
+        "region": "08 - Biobío",
+        "units": 53,
+        "clp": 354705,
+        "costos": 256326,
+        "margin": 27.7,
+        "stockUnits": 145,
+        "weeksOfStock": 9.8,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 53,
+            "clp": 354705,
+            "costos": 256326
+          }
+        }
+      },
+      {
+        "store": "Viña del Mar (Centro)",
+        "storeCode": "0632 Hiper Lider - Av. Valparaíso 1070, Viña del Mar",
+        "region": "05 - Valparaíso",
+        "units": 51,
+        "clp": 256802,
+        "costos": 220936,
+        "margin": 14.0,
+        "stockUnits": 324,
+        "weeksOfStock": 22.7,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 51,
+            "clp": 256802,
+            "costos": 220936
           }
         }
       },
@@ -20863,16 +24566,288 @@ const REAL_SELLOUT = {
         "store": "Mall Plaza America (Rancagua)",
         "storeCode": "0038 Hiper Lider - Einstein 263, Rancagua",
         "region": "06 - Libertador General Bernardo OHiggins",
-        "units": 5,
-        "clp": 17614,
+        "units": 51,
+        "clp": 510094,
+        "costos": 337710,
+        "margin": 33.8,
+        "stockUnits": 282,
+        "weeksOfStock": 19.7,
         "byDivision": {
           "Ropa Interior": {
-            "units": 4,
-            "clp": 11732
+            "units": 50,
+            "clp": 504212,
+            "costos": 331270
           },
           "Vestuario Infantil": {
             "units": 1,
-            "clp": 5882
+            "clp": 5882,
+            "costos": 6440
+          }
+        }
+      },
+      {
+        "store": "San Felipe",
+        "storeCode": "0985 Hiper Lider - Avenida Libertador Bernardo Ohiggins 740, San Felipe",
+        "region": "05 - Valparaíso",
+        "units": 50,
+        "clp": 299286,
+        "costos": 238232,
+        "margin": 20.4,
+        "stockUnits": 196,
+        "weeksOfStock": 14.0,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 42,
+            "clp": 263158,
+            "costos": 195692
+          },
+          "Vestuario Adulto": {
+            "units": 7,
+            "clp": 29414,
+            "costos": 38150
+          }
+        }
+      },
+      {
+        "store": "San Joaquín",
+        "storeCode": "0682 Hiper Lider - Av. Vicuña Mackenna 3361, San Joaquín",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 49,
+        "clp": 216633,
+        "costos": 235540,
+        "margin": -8.7,
+        "stockUnits": 280,
+        "weeksOfStock": 20.4,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 46,
+            "clp": 198987,
+            "costos": 216220
+          },
+          "Vestuario Infantil": {
+            "units": 3,
+            "clp": 17646,
+            "costos": 19320
+          }
+        }
+      },
+      {
+        "store": "Renca (Miraflores)",
+        "storeCode": "0748 Hiper Lider - Av. Miraflores 8412, Renca",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 45,
+        "clp": 285827,
+        "costos": 197212,
+        "margin": 31.0,
+        "stockUnits": 186,
+        "weeksOfStock": 14.8,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 41,
+            "clp": 269019,
+            "costos": 175412
+          },
+          "Vestuario Adulto": {
+            "units": 4,
+            "clp": 16808,
+            "costos": 21800
+          }
+        }
+      },
+      {
+        "store": "Departamental",
+        "storeCode": "0076 Hiper Lider - Av. Américo Vespucio 6325, La Florida",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 38,
+        "clp": 169138,
+        "costos": 129008,
+        "margin": 23.7,
+        "stockUnits": 200,
+        "weeksOfStock": 18.8,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 38,
+            "clp": 169138,
+            "costos": 129008
+          }
+        }
+      },
+      {
+        "store": "Talca (El Pilar)",
+        "storeCode": "0143 Hiper Lider - Av. Colín 0240, Talca",
+        "region": "07 - Maule",
+        "units": 38,
+        "clp": 142862,
+        "costos": 202120,
+        "margin": -41.5,
+        "stockUnits": 170,
+        "weeksOfStock": 16.0,
+        "byDivision": {
+          "Vestuario Infantil": {
+            "units": 6,
+            "clp": 28570,
+            "costos": 35170
+          },
+          "Ropa Interior": {
+            "units": 30,
+            "clp": 107569,
+            "costos": 157800
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 6723,
+            "costos": 9150
+          }
+        }
+      },
+      {
+        "store": "La Serena (Regimiento Arica)",
+        "storeCode": "0686 Hiper Lider - Regimiento Arica 6145, La Serena",
+        "region": "04 - Coquimbo",
+        "units": 38,
+        "clp": 260354,
+        "costos": 232306,
+        "margin": 10.8,
+        "stockUnits": 205,
+        "weeksOfStock": 19.3,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 28,
+            "clp": 215824,
+            "costos": 178810
+          },
+          "Vestuario Infantil": {
+            "units": 10,
+            "clp": 44530,
+            "costos": 53496
+          }
+        }
+      },
+      {
+        "store": "Buin",
+        "storeCode": "0182 Hiper Lider - Av. Bernardo OHiggins 555, Buin",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 28,
+        "clp": 109507,
+        "costos": 99464,
+        "margin": 9.2,
+        "stockUnits": 299,
+        "weeksOfStock": 38.1,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 22,
+            "clp": 89339,
+            "costos": 64692
+          },
+          "Vestuario Infantil": {
+            "units": 4,
+            "clp": 13445,
+            "costos": 23372
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 6723,
+            "costos": 11400
+          }
+        }
+      },
+      {
+        "store": "Arica",
+        "storeCode": "0081 Hiper Lider - Diego Portales 2291, Arica",
+        "region": "15 - Arica y Parinacota",
+        "units": 27,
+        "clp": 185487,
+        "costos": 124900,
+        "margin": 32.7,
+        "stockUnits": 261,
+        "weeksOfStock": 34.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 27,
+            "clp": 185487,
+            "costos": 124900
+          }
+        }
+      },
+      {
+        "store": "Recoleta",
+        "storeCode": "0086 Hiper Lider - Av. Recoleta 3501, Recoleta",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 23,
+        "clp": 70063,
+        "costos": 73630,
+        "margin": -5.1,
+        "stockUnits": 235,
+        "weeksOfStock": 36.5,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 21,
+            "clp": 68383,
+            "costos": 62930
+          },
+          "Vestuario Infantil": {
+            "units": 2,
+            "clp": 1680,
+            "costos": 10700
+          }
+        }
+      },
+      {
+        "store": "Gabriela (La Pintana)",
+        "storeCode": "0693 Hiper Lider - Gabriela 2541, La Pintana",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 20,
+        "clp": 99061,
+        "costos": 89600,
+        "margin": 9.6,
+        "stockUnits": 262,
+        "weeksOfStock": 46.8,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 20,
+            "clp": 99061,
+            "costos": 89600
+          }
+        }
+      },
+      {
+        "store": "Maipú (Camino Melipilla)",
+        "storeCode": "0739 Hiper Lider - Camino Melipilla 15990, Maipú",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 15,
+        "clp": 100754,
+        "costos": 79966,
+        "margin": 20.6,
+        "stockUnits": 351,
+        "weeksOfStock": 83.6,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 7,
+            "clp": 50353,
+            "costos": 31946
+          },
+          "Vestuario Infantil": {
+            "units": 6,
+            "clp": 35292,
+            "costos": 38640
+          }
+        }
+      },
+      {
+        "store": "Vicuña Mackenna",
+        "storeCode": "0054 Hiper Lider - Av. Vicuña Mackenna 7196, La Florida",
+        "region": "13 - Metropolitana de Santiago",
+        "units": 9,
+        "clp": 44506,
+        "costos": 41860,
+        "margin": 5.9,
+        "stockUnits": 225,
+        "weeksOfStock": 89.3,
+        "byDivision": {
+          "Ropa Interior": {
+            "units": 9,
+            "clp": 44506,
+            "costos": 41860
           }
         }
       }
@@ -20880,22 +24855,29 @@ const REAL_SELLOUT = {
     "Acuenta": [
       {
         "store": "No Aplica",
-        "storeCode": "0502 Acuenta - Januario Espinoza 759-769, Linares",
-        "region": "07 - Maule",
-        "units": 10,
-        "clp": 13446,
+        "storeCode": "0771 Acuenta - Pascual Baburizza 716, Los Andes",
+        "region": "05 - Valparaíso",
+        "units": 11,
+        "clp": 15967,
+        "costos": 35270,
+        "margin": -120.9,
+        "stockUnits": 530,
+        "weeksOfStock": 172.1,
         "byDivision": {
           "Ropa Interior": {
             "units": 3,
-            "clp": 5043
+            "clp": 5043,
+            "costos": 5370
           },
           "Vestuario Adulto": {
             "units": 3,
-            "clp": 5043
+            "clp": 5043,
+            "costos": 10500
           },
           "Vestuario Infantil": {
-            "units": 4,
-            "clp": 3360
+            "units": 5,
+            "clp": 5881,
+            "costos": 19400
           }
         }
       }
@@ -20905,16 +24887,27 @@ const REAL_SELLOUT = {
         "store": "No Definido",
         "storeCode": "983 Hiper Lider - Lautaro 78, La Calera",
         "region": "No Definido",
-        "units": 71,
-        "clp": 312574,
+        "units": 279,
+        "clp": 1739333,
+        "costos": 1617753,
+        "margin": 7.0,
+        "stockUnits": 1750,
+        "weeksOfStock": 22.4,
         "byDivision": {
           "Ropa Interior": {
-            "units": 57,
-            "clp": 243682
+            "units": 259,
+            "clp": 1648591,
+            "costos": 1512770
           },
           "Vestuario Infantil": {
-            "units": 14,
-            "clp": 68892
+            "units": 18,
+            "clp": 85700,
+            "costos": 97583
+          },
+          "Vestuario Adulto": {
+            "units": 2,
+            "clp": 5042,
+            "costos": 7400
           }
         }
       }
@@ -20924,12 +24917,17 @@ const REAL_SELLOUT = {
         "store": "No Definido",
         "storeCode": "244 Ekono - Gran Avda 7406, La Cisterna",
         "region": "13 - Metropolitana de Santiago",
-        "units": 67,
-        "clp": 352601,
+        "units": 93,
+        "clp": 475608,
+        "costos": 408078,
+        "margin": 14.2,
+        "stockUnits": 449,
+        "weeksOfStock": 17.2,
         "byDivision": {
           "Ropa Interior": {
-            "units": 67,
-            "clp": 352601
+            "units": 93,
+            "clp": 475608,
+            "costos": 408078
           }
         }
       }
@@ -20939,61 +24937,67 @@ const REAL_SELLOUT = {
         "store": "No Definido",
         "storeCode": "910 Lider Express - Lder Camino La Farfana ( / Líder Camino La Farfana ( / L    Der Camino La Farfana (",
         "region": "No Definido",
-        "units": 18,
-        "clp": 78036,
+        "units": 29,
+        "clp": 127542,
+        "costos": 109940,
+        "margin": 13.8,
+        "stockUnits": 290,
+        "weeksOfStock": 35.7,
         "byDivision": {
           "Ropa Interior": {
-            "units": 18,
-            "clp": 78036
+            "units": 29,
+            "clp": 127542,
+            "costos": 109940
           }
         }
       }
     ]
   },
+  "rankingWeeksPeriod": 3.6,
   "divisionMixByChain": [
     {
       "chain": "Jumbo",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 5703,
-          "pct": 21.8
-        },
         "Ropa Interior": {
-          "units": 11065,
-          "pct": 42.2
+          "units": 12597,
+          "pct": 39.5
+        },
+        "Vestuario Infantil": {
+          "units": 6865,
+          "pct": 21.5
         },
         "Calzado": {
-          "units": 7002,
-          "pct": 26.7
+          "units": 7978,
+          "pct": 25.0
         },
         "Accesorios y Otros": {
-          "units": 1316,
-          "pct": 5.0
+          "units": 1633,
+          "pct": 5.1
         },
         "Vestuario Adulto": {
-          "units": 1117,
-          "pct": 4.3
+          "units": 2846,
+          "pct": 8.9
         }
       }
     },
     {
       "chain": "Ripley",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 12386,
-          "pct": 65.5
-        },
         "Ropa Interior": {
-          "units": 4214,
-          "pct": 22.3
+          "units": 5033,
+          "pct": 22.4
+        },
+        "Vestuario Infantil": {
+          "units": 14743,
+          "pct": 65.7
         },
         "Calzado": {
-          "units": 698,
-          "pct": 3.7
+          "units": 798,
+          "pct": 3.6
         },
         "Accesorios y Otros": {
-          "units": 1593,
-          "pct": 8.4
+          "units": 1847,
+          "pct": 8.2
         },
         "Vestuario Adulto": {
           "units": 18,
@@ -21002,44 +25006,69 @@ const REAL_SELLOUT = {
       }
     },
     {
-      "chain": "Paris",
+      "chain": "Hiper Lider",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 4127,
-          "pct": 40.7
-        },
         "Ropa Interior": {
-          "units": 1658,
-          "pct": 16.3
+          "units": 13702,
+          "pct": 92.5
+        },
+        "Vestuario Infantil": {
+          "units": 817,
+          "pct": 5.5
         },
         "Calzado": {
-          "units": 2641,
-          "pct": 26.0
+          "units": 19,
+          "pct": 0.1
         },
         "Accesorios y Otros": {
-          "units": 1027,
-          "pct": 10.1
+          "units": 175,
+          "pct": 1.2
         },
         "Vestuario Adulto": {
-          "units": 688,
-          "pct": 6.8
+          "units": 100,
+          "pct": 0.7
+        }
+      }
+    },
+    {
+      "chain": "Paris",
+      "divisions": {
+        "Ropa Interior": {
+          "units": 2085,
+          "pct": 16.5
+        },
+        "Vestuario Infantil": {
+          "units": 5234,
+          "pct": 41.5
+        },
+        "Calzado": {
+          "units": 3184,
+          "pct": 25.2
+        },
+        "Accesorios y Otros": {
+          "units": 1299,
+          "pct": 10.3
+        },
+        "Vestuario Adulto": {
+          "units": 822,
+          "pct": 6.5
         }
       }
     },
     {
       "chain": "Hites",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 3351,
-          "pct": 43.3
-        },
         "Ropa Interior": {
-          "units": 929,
-          "pct": 12.0
+          "units": 1140,
+          "pct": 12.3
+        },
+        "Vestuario Infantil": {
+          "units": 4085,
+          "pct": 44.1
         },
         "Calzado": {
-          "units": 3458,
-          "pct": 44.7
+          "units": 4038,
+          "pct": 43.6
         },
         "Accesorios y Otros": {
           "units": 0,
@@ -21052,48 +25081,23 @@ const REAL_SELLOUT = {
       }
     },
     {
-      "chain": "Hiper Lider",
-      "divisions": {
-        "Vestuario Infantil": {
-          "units": 620,
-          "pct": 9.1
-        },
-        "Ropa Interior": {
-          "units": 5981,
-          "pct": 87.6
-        },
-        "Calzado": {
-          "units": 19,
-          "pct": 0.3
-        },
-        "Accesorios y Otros": {
-          "units": 125,
-          "pct": 1.8
-        },
-        "Vestuario Adulto": {
-          "units": 79,
-          "pct": 1.2
-        }
-      }
-    },
-    {
       "chain": "La Polar",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 675,
-          "pct": 18.1
-        },
         "Ropa Interior": {
-          "units": 350,
-          "pct": 9.4
+          "units": 399,
+          "pct": 9.5
+        },
+        "Vestuario Infantil": {
+          "units": 745,
+          "pct": 17.8
         },
         "Calzado": {
-          "units": 2687,
-          "pct": 72.2
+          "units": 3024,
+          "pct": 72.4
         },
         "Accesorios y Otros": {
-          "units": 5,
-          "pct": 0.1
+          "units": 7,
+          "pct": 0.2
         },
         "Vestuario Adulto": {
           "units": 4,
@@ -21104,21 +25108,21 @@ const REAL_SELLOUT = {
     {
       "chain": "Falabella",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 1559,
-          "pct": 49.6
-        },
         "Ropa Interior": {
-          "units": 1082,
-          "pct": 34.4
+          "units": 1286,
+          "pct": 35.4
+        },
+        "Vestuario Infantil": {
+          "units": 1756,
+          "pct": 48.4
         },
         "Calzado": {
-          "units": 415,
+          "units": 480,
           "pct": 13.2
         },
         "Accesorios y Otros": {
-          "units": 86,
-          "pct": 2.7
+          "units": 106,
+          "pct": 2.9
         },
         "Vestuario Adulto": {
           "units": 0,
@@ -21129,16 +25133,16 @@ const REAL_SELLOUT = {
     {
       "chain": "Tottus",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 0,
-          "pct": 0.0
-        },
         "Ropa Interior": {
           "units": 0,
           "pct": 0.0
         },
+        "Vestuario Infantil": {
+          "units": 0,
+          "pct": 0.0
+        },
         "Calzado": {
-          "units": 464,
+          "units": 525,
           "pct": 100.0
         },
         "Accesorios y Otros": {
@@ -21154,13 +25158,38 @@ const REAL_SELLOUT = {
     {
       "chain": "Walmart",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 14,
-          "pct": 19.7
-        },
         "Ropa Interior": {
-          "units": 57,
-          "pct": 80.3
+          "units": 259,
+          "pct": 92.8
+        },
+        "Vestuario Infantil": {
+          "units": 18,
+          "pct": 6.5
+        },
+        "Calzado": {
+          "units": 0,
+          "pct": 0.0
+        },
+        "Accesorios y Otros": {
+          "units": 0,
+          "pct": 0.0
+        },
+        "Vestuario Adulto": {
+          "units": 2,
+          "pct": 0.7
+        }
+      }
+    },
+    {
+      "chain": "Ekono",
+      "divisions": {
+        "Ropa Interior": {
+          "units": 93,
+          "pct": 100.0
+        },
+        "Vestuario Infantil": {
+          "units": 0,
+          "pct": 0.0
         },
         "Calzado": {
           "units": 0,
@@ -21177,15 +25206,15 @@ const REAL_SELLOUT = {
       }
     },
     {
-      "chain": "Ekono",
+      "chain": "Lider Express",
       "divisions": {
+        "Ropa Interior": {
+          "units": 29,
+          "pct": 100.0
+        },
         "Vestuario Infantil": {
           "units": 0,
           "pct": 0.0
-        },
-        "Ropa Interior": {
-          "units": 67,
-          "pct": 100.0
         },
         "Calzado": {
           "units": 0,
@@ -21204,13 +25233,13 @@ const REAL_SELLOUT = {
     {
       "chain": "Johnson",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 6,
-          "pct": 28.6
-        },
         "Ropa Interior": {
           "units": 9,
           "pct": 42.9
+        },
+        "Vestuario Infantil": {
+          "units": 6,
+          "pct": 28.6
         },
         "Calzado": {
           "units": 1,
@@ -21227,40 +25256,15 @@ const REAL_SELLOUT = {
       }
     },
     {
-      "chain": "Lider Express",
-      "divisions": {
-        "Vestuario Infantil": {
-          "units": 0,
-          "pct": 0.0
-        },
-        "Ropa Interior": {
-          "units": 18,
-          "pct": 100.0
-        },
-        "Calzado": {
-          "units": 0,
-          "pct": 0.0
-        },
-        "Accesorios y Otros": {
-          "units": 0,
-          "pct": 0.0
-        },
-        "Vestuario Adulto": {
-          "units": 0,
-          "pct": 0.0
-        }
-      }
-    },
-    {
       "chain": "Acuenta",
       "divisions": {
-        "Vestuario Infantil": {
-          "units": 4,
-          "pct": 40.0
-        },
         "Ropa Interior": {
           "units": 3,
-          "pct": 30.0
+          "pct": 27.3
+        },
+        "Vestuario Infantil": {
+          "units": 5,
+          "pct": 45.5
         },
         "Calzado": {
           "units": 0,
@@ -21272,18 +25276,18 @@ const REAL_SELLOUT = {
         },
         "Vestuario Adulto": {
           "units": 3,
-          "pct": 30.0
+          "pct": 27.3
         }
       }
     },
     {
       "chain": "Cencosud",
       "divisions": {
-        "Vestuario Infantil": {
+        "Ropa Interior": {
           "units": 0,
           "pct": 0.0
         },
-        "Ropa Interior": {
+        "Vestuario Infantil": {
           "units": 0,
           "pct": 0.0
         },
@@ -21303,7 +25307,7 @@ const REAL_SELLOUT = {
     }
   ],
   "velocityMetrics": {
-    "dailyAvg": 3867,
+    "dailyAvg": 4160,
     "weeklyTrend": [
       {
         "week": "S1",
@@ -21315,78 +25319,85 @@ const REAL_SELLOUT = {
       {
         "week": "S2",
         "dates": "02-19 a 02-25",
-        "avgUnitsPerDay": 3700,
-        "totalUnits": 25900,
+        "avgUnitsPerDay": 3816,
+        "totalUnits": 26714,
         "days": 7
       },
       {
         "week": "S3",
-        "dates": "02-26 a 03-03",
-        "avgUnitsPerDay": 4593,
-        "totalUnits": 27558,
-        "days": 6
+        "dates": "02-26 a 03-04",
+        "avgUnitsPerDay": 4851,
+        "totalUnits": 33956,
+        "days": 7
+      },
+      {
+        "week": "S4",
+        "dates": "03-05 a 03-07",
+        "avgUnitsPerDay": 4504,
+        "totalUnits": 13512,
+        "days": 3
       }
     ],
     "velocityByChain": [
       {
         "chain": "Jumbo",
-        "unitsPerDay": 1310,
-        "trend": -10.7
+        "unitsPerDay": 1330,
+        "trend": -2.2
       },
       {
         "chain": "Ripley",
-        "unitsPerDay": 945,
-        "trend": 6.9
-      },
-      {
-        "chain": "Paris",
-        "unitsPerDay": 507,
-        "trend": -3.7
-      },
-      {
-        "chain": "Hites",
-        "unitsPerDay": 387,
-        "trend": 52.6
+        "unitsPerDay": 935,
+        "trend": 9.9
       },
       {
         "chain": "Hiper Lider",
-        "unitsPerDay": 488,
-        "trend": 26.5
+        "unitsPerDay": 772,
+        "trend": 78.8
+      },
+      {
+        "chain": "Paris",
+        "unitsPerDay": 506,
+        "trend": 2.3
+      },
+      {
+        "chain": "Hites",
+        "unitsPerDay": 389,
+        "trend": 59.6
       },
       {
         "chain": "La Polar",
-        "unitsPerDay": 186,
-        "trend": 44.5
+        "unitsPerDay": 182,
+        "trend": 42.1
       },
       {
         "chain": "Falabella",
-        "unitsPerDay": 157,
-        "trend": -5.6
+        "unitsPerDay": 151,
+        "trend": -9.6
       },
       {
         "chain": "Tottus",
-        "unitsPerDay": 23,
-        "trend": 56.4
+        "unitsPerDay": 22,
+        "trend": 44.2
       },
       {
         "chain": "Walmart",
-        "unitsPerDay": 5,
-        "trend": 53.6
+        "unitsPerDay": 13,
+        "trend": 138.0
       },
       {
         "chain": "Ekono",
         "unitsPerDay": 5,
-        "trend": 39.3
+        "trend": 90.3
+      },
+      {
+        "chain": "Lider Express",
+        "unitsPerDay": 2,
+        "trend": 45.5
       },
       {
         "chain": "Johnson",
         "unitsPerDay": 2,
         "trend": -24.2
-      },
-      {
-        "chain": "Lider Express",
-        "unitsPerDay": 2,
-        "trend": 0.0
       },
       {
         "chain": "Acuenta",
@@ -21401,84 +25412,84 @@ const REAL_SELLOUT = {
     ],
     "velocityByDivision": [
       {
-        "division": "Vestuario Infantil",
-        "unitsPerDay": 1422,
-        "trend": -2.9
+        "division": "Ropa Interior",
+        "unitsPerDay": 1484,
+        "trend": 58.5
       },
       {
-        "division": "Ropa Interior",
-        "unitsPerDay": 1272,
-        "trend": 26.6
+        "division": "Vestuario Infantil",
+        "unitsPerDay": 1411,
+        "trend": 2.6
       },
       {
         "division": "Calzado",
-        "unitsPerDay": 869,
-        "trend": 25.6
+        "unitsPerDay": 825,
+        "trend": 16.7
       },
       {
         "division": "Accesorios y Otros",
-        "unitsPerDay": 208,
-        "trend": 10.3
+        "unitsPerDay": 207,
+        "trend": 5.5
       },
       {
         "division": "Vestuario Adulto",
-        "unitsPerDay": 96,
-        "trend": -22.4
+        "unitsPerDay": 158,
+        "trend": 105.7
       }
     ],
-    "activeDays": 20
+    "activeDays": 24
   },
   "paretoAnalysis": {
-    "totalStores": 212,
+    "totalStores": 213,
     "storeConcentration": {
-      "top10pctPct": 38.7,
-      "top20pctPct": 59.5,
-      "top50pctPct": 91.8
+      "top10pctPct": 36.5,
+      "top20pctPct": 57.1,
+      "top50pctPct": 89.5
     },
     "chainConcentration": [
       {
         "chain": "Jumbo",
-        "pctOfTotal": 33.9,
-        "cumPct": 33.9
+        "pctOfTotal": 32.0,
+        "cumPct": 32.0
       },
       {
         "chain": "Ripley",
-        "pctOfTotal": 24.4,
-        "cumPct": 58.3
-      },
-      {
-        "chain": "Paris",
-        "pctOfTotal": 13.1,
-        "cumPct": 71.4
-      },
-      {
-        "chain": "Hites",
-        "pctOfTotal": 10.0,
-        "cumPct": 81.4
+        "pctOfTotal": 22.5,
+        "cumPct": 54.5
       },
       {
         "chain": "Hiper Lider",
-        "pctOfTotal": 8.8,
-        "cumPct": 90.2
+        "pctOfTotal": 14.8,
+        "cumPct": 69.3
+      },
+      {
+        "chain": "Paris",
+        "pctOfTotal": 12.6,
+        "cumPct": 81.9
+      },
+      {
+        "chain": "Hites",
+        "pctOfTotal": 9.3,
+        "cumPct": 91.2
       },
       {
         "chain": "La Polar",
-        "pctOfTotal": 4.8,
-        "cumPct": 95.0
+        "pctOfTotal": 4.2,
+        "cumPct": 95.4
       },
       {
         "chain": "Falabella",
-        "pctOfTotal": 4.1,
-        "cumPct": 99.1
+        "pctOfTotal": 3.6,
+        "cumPct": 99.0
       },
       {
         "chain": "Tottus",
-        "pctOfTotal": 0.6,
-        "cumPct": 99.7
+        "pctOfTotal": 0.5,
+        "cumPct": 99.5
       },
       {
         "chain": "Walmart",
-        "pctOfTotal": 0.1,
+        "pctOfTotal": 0.3,
         "cumPct": 99.8
       },
       {
@@ -21487,12 +25498,12 @@ const REAL_SELLOUT = {
         "cumPct": 99.9
       },
       {
-        "chain": "Johnson",
+        "chain": "Lider Express",
         "pctOfTotal": 0.0,
         "cumPct": 99.9
       },
       {
-        "chain": "Lider Express",
+        "chain": "Johnson",
         "pctOfTotal": 0.0,
         "cumPct": 99.9
       },
@@ -21512,33 +25523,33 @@ const REAL_SELLOUT = {
     "byDivision": [
       {
         "division": "Calzado",
-        "avgB2B": 11827,
-        "avgPVP": 11398,
-        "units": 17385
+        "avgB2B": 11920,
+        "avgPVP": 11471,
+        "units": 20047
       },
       {
         "division": "Vestuario Adulto",
-        "avgB2B": 9069,
-        "avgPVP": 8662,
-        "units": 1920
+        "avgB2B": 10355,
+        "avgPVP": 10112,
+        "units": 3806
       },
       {
         "division": "Accesorios y Otros",
-        "avgB2B": 8927,
-        "avgPVP": 8664,
-        "units": 4153
+        "avgB2B": 9071,
+        "avgPVP": 8798,
+        "units": 5068
       },
       {
         "division": "Vestuario Infantil",
-        "avgB2B": 7735,
-        "avgPVP": 7435,
-        "units": 28445
+        "avgB2B": 7788,
+        "avgPVP": 7482,
+        "units": 34274
       },
       {
         "division": "Ropa Interior",
-        "avgB2B": 6747,
-        "avgPVP": 6594,
-        "units": 25433
+        "avgB2B": 6851,
+        "avgPVP": 6720,
+        "units": 36635
       }
     ],
     "byChain": [
@@ -21549,28 +25560,28 @@ const REAL_SELLOUT = {
       },
       {
         "chain": "Hites",
-        "avgB2B": 12861,
-        "avgPVP": 12857
+        "avgB2B": 12892,
+        "avgPVP": 12888
       },
       {
         "chain": "La Polar",
-        "avgB2B": 10926,
-        "avgPVP": 10915
+        "avgB2B": 10966,
+        "avgPVP": 10954
       },
       {
         "chain": "Falabella",
-        "avgB2B": 10603,
-        "avgPVP": 8910
+        "avgB2B": 10590,
+        "avgPVP": 8899
       },
       {
         "chain": "Paris",
-        "avgB2B": 9704,
-        "avgPVP": 8160
+        "avgB2B": 9747,
+        "avgPVP": 8195
       },
       {
         "chain": "Jumbo",
-        "avgB2B": 8763,
-        "avgPVP": 8763
+        "avgB2B": 8957,
+        "avgPVP": 8957
       },
       {
         "chain": "Johnson",
@@ -21579,38 +25590,38 @@ const REAL_SELLOUT = {
       },
       {
         "chain": "Tottus",
-        "avgB2B": 6750,
-        "avgPVP": 5672
+        "avgB2B": 6923,
+        "avgPVP": 5818
       },
       {
         "chain": "Ripley",
-        "avgB2B": 6290,
-        "avgPVP": 6280
-      },
-      {
-        "chain": "Ekono",
-        "avgB2B": 5263,
-        "avgPVP": 5263
+        "avgB2B": 6350,
+        "avgPVP": 6342
       },
       {
         "chain": "Walmart",
-        "avgB2B": 4402,
-        "avgPVP": 4402
-      },
-      {
-        "chain": "Lider Express",
-        "avgB2B": 4335,
-        "avgPVP": 4335
+        "avgB2B": 6234,
+        "avgPVP": 6234
       },
       {
         "chain": "Hiper Lider",
-        "avgB2B": 3973,
-        "avgPVP": 3973
+        "avgB2B": 5460,
+        "avgPVP": 5460
+      },
+      {
+        "chain": "Ekono",
+        "avgB2B": 5114,
+        "avgPVP": 5114
+      },
+      {
+        "chain": "Lider Express",
+        "avgB2B": 4398,
+        "avgPVP": 4398
       },
       {
         "chain": "Acuenta",
-        "avgB2B": 1345,
-        "avgPVP": 1345
+        "avgB2B": 1452,
+        "avgPVP": 1452
       }
     ]
   },
@@ -21714,6 +25725,16 @@ const REAL_SELLOUT = {
       "clp": 6714,
       "codigoInterno": "SIN CLASIF5029509",
       "divisionOriginal": "No Definido"
+    },
+    {
+      "descripcion": "SIN CLASIF JUEG MASC MNN RIS TU",
+      "propiedad": "No Definido",
+      "cadena": "Hiper Lider",
+      "tienda": "La Reina (Principe De Gales)",
+      "unidades": 1,
+      "clp": 9656,
+      "codigoInterno": "SIN CLASIF824524",
+      "divisionOriginal": "No Definido"
     }
   ],
   "noRegionStores": [
@@ -21721,55 +25742,55 @@ const REAL_SELLOUT = {
       "cadena": "Falabella",
       "codigoLocal": "514 Falabella - Sin Direccion ((Tienda Viña del Mar II) FALABELLA RETAIL S.A.)",
       "nombreLocal": "514 Falabella - Sin Direccion ((Tienda Viña del Mar II) FALABELLA RETAIL S.A.)",
-      "unidades": 142,
-      "clp": 1567088,
-      "skus": 68,
-      "dias": 20
-    },
-    {
-      "cadena": "Hiper Lider",
-      "codigoLocal": "993 Hiper Lider - Los Mañíos 4455, San Pedro de la Paz",
-      "nombreLocal": "993 Hiper Lider - Los Mañíos 4455, San Pedro de la Paz",
-      "unidades": 79,
-      "clp": 356153,
-      "skus": 5,
-      "dias": 14
-    },
-    {
-      "cadena": "Paris",
-      "codigoLocal": "131 Paris - Paris Maule",
-      "nombreLocal": "131 Paris - Paris Maule",
-      "unidades": 55,
-      "clp": 424210,
-      "skus": 44,
-      "dias": 17
-    },
-    {
-      "cadena": "Hites",
-      "codigoLocal": "79 Hites - SAN ANTONIO",
-      "nombreLocal": "79 Hites - SAN ANTONIO",
-      "unidades": 42,
-      "clp": 904200,
-      "skus": 34,
-      "dias": 11
+      "unidades": 157,
+      "clp": 1746836,
+      "skus": 75,
+      "dias": 24
     },
     {
       "cadena": "Walmart",
       "codigoLocal": "983 Hiper Lider - Lautaro 78, La Calera",
       "nombreLocal": "983 Hiper Lider - Lautaro 78, La Calera",
-      "unidades": 24,
-      "clp": 103344,
-      "skus": 4,
-      "dias": 11
+      "unidades": 137,
+      "clp": 1199937,
+      "skus": 13,
+      "dias": 18
+    },
+    {
+      "cadena": "Hiper Lider",
+      "codigoLocal": "993 Hiper Lider - Los Mañíos 4455, San Pedro de la Paz",
+      "nombreLocal": "993 Hiper Lider - Los Mañíos 4455, San Pedro de la Paz",
+      "unidades": 93,
+      "clp": 408212,
+      "skus": 7,
+      "dias": 19
+    },
+    {
+      "cadena": "Paris",
+      "codigoLocal": "131 Paris - Paris Maule",
+      "nombreLocal": "131 Paris - Paris Maule",
+      "unidades": 61,
+      "clp": 512352,
+      "skus": 47,
+      "dias": 19
+    },
+    {
+      "cadena": "Hites",
+      "codigoLocal": "79 Hites - SAN ANTONIO",
+      "nombreLocal": "79 Hites - SAN ANTONIO",
+      "unidades": 59,
+      "clp": 1250651,
+      "skus": 44,
+      "dias": 15
     },
     {
       "cadena": "Lider Express",
       "codigoLocal": "910 Lider Express - Lder Camino La Farfana ( / Líder Camino La Farfana ( / L    Der Camino La Farfana (",
       "nombreLocal": "910 Lider Express - Lder Camino La Farfana ( / Líder Camino La Farfana ( / L    Der Camino La Farfana (",
-      "unidades": 18,
-      "clp": 78036,
-      "skus": 6,
-      "dias": 10
+      "unidades": 29,
+      "clp": 127542,
+      "skus": 7,
+      "dias": 15
     },
     {
       "cadena": "La Polar",
@@ -21784,10 +25805,10 @@ const REAL_SELLOUT = {
       "cadena": "La Polar",
       "codigoLocal": "746 La Polar - Ad Temuco",
       "nombreLocal": "746 La Polar - Ad Temuco",
-      "unidades": 7,
-      "clp": 129353,
+      "unidades": 8,
+      "clp": 147832,
       "skus": 6,
-      "dias": 7
+      "dias": 8
     },
     {
       "cadena": "La Polar",
@@ -21800,6 +25821,15 @@ const REAL_SELLOUT = {
     },
     {
       "cadena": "La Polar",
+      "codigoLocal": "764 La Polar - Ad Ccff La Cisterna Intermodal",
+      "nombreLocal": "764 La Polar - Ad Ccff La Cisterna Intermodal",
+      "unidades": 4,
+      "clp": 23528,
+      "skus": 3,
+      "dias": 5
+    },
+    {
+      "cadena": "La Polar",
       "codigoLocal": "765 La Polar - Ad Maipu",
       "nombreLocal": "765 La Polar - Ad Maipu",
       "unidades": 4,
@@ -21809,39 +25839,30 @@ const REAL_SELLOUT = {
     },
     {
       "cadena": "La Polar",
+      "codigoLocal": "717 La Polar - Ad San Bernardo",
+      "nombreLocal": "717 La Polar - Ad San Bernardo",
+      "unidades": 3,
+      "clp": 17646,
+      "skus": 2,
+      "dias": 2
+    },
+    {
+      "cadena": "Falabella",
+      "codigoLocal": "3630 Falabella - Expgre",
+      "nombreLocal": "3630 Falabella - Expgre",
+      "unidades": 3,
+      "clp": 16070,
+      "skus": 3,
+      "dias": 3
+    },
+    {
+      "cadena": "La Polar",
       "codigoLocal": "702 La Polar - Ad Ccff Alto Hospicio",
       "nombreLocal": "702 La Polar - Ad Ccff Alto Hospicio",
       "unidades": 2,
       "clp": 11764,
       "skus": 2,
       "dias": 1
-    },
-    {
-      "cadena": "La Polar",
-      "codigoLocal": "764 La Polar - Ad Ccff La Cisterna Intermodal",
-      "nombreLocal": "764 La Polar - Ad Ccff La Cisterna Intermodal",
-      "unidades": 2,
-      "clp": 11764,
-      "skus": 3,
-      "dias": 4
-    },
-    {
-      "cadena": "La Polar",
-      "codigoLocal": "717 La Polar - Ad San Bernardo",
-      "nombreLocal": "717 La Polar - Ad San Bernardo",
-      "unidades": 2,
-      "clp": 11764,
-      "skus": 1,
-      "dias": 1
-    },
-    {
-      "cadena": "Falabella",
-      "codigoLocal": "3630 Falabella - Expgre",
-      "nombreLocal": "3630 Falabella - Expgre",
-      "unidades": 2,
-      "clp": 11580,
-      "skus": 2,
-      "dias": 2
     },
     {
       "cadena": "La Polar",
@@ -21885,22 +25906,8 @@ const REAL_SELLOUT = {
       "type": "danger",
       "category": "oos",
       "title": "Riesgo Revenue",
-      "text": "Ripley aporta 24.4% de venta pero tiene 9.3% de quiebre. Impacto estimado en revenue.",
-      "value": 9.3
-    },
-    {
-      "type": "danger",
-      "category": "velocidad",
-      "title": "Desaceleración",
-      "text": "Vestuario Adulto bajó 22.4% en velocidad de venta (und/día) vs primera mitad del período.",
-      "value": -22.4
-    },
-    {
-      "type": "warning",
-      "category": "velocidad",
-      "title": "Cadena desacelerando",
-      "text": "Jumbo bajó 10.7% en und/día. Revisar cobertura y stock.",
-      "value": -10.7
+      "text": "Ripley aporta 22.5% de venta pero tiene 10.2% de quiebre. Impacto estimado en revenue.",
+      "value": 10.2
     },
     {
       "type": "warning",
@@ -21920,23 +25927,23 @@ const REAL_SELLOUT = {
       "type": "success",
       "category": "velocidad",
       "title": "Aceleración",
-      "text": "Ropa Interior creció 26.6% en velocidad de venta (und/día).",
-      "value": 26.6
+      "text": "Ropa Interior creció 58.5% en velocidad de venta (und/día).",
+      "value": 58.5
     },
     {
       "type": "success",
       "category": "velocidad",
       "title": "Aceleración",
-      "text": "Calzado creció 25.6% en velocidad de venta (und/día).",
-      "value": 25.6
+      "text": "Calzado creció 16.7% en velocidad de venta (und/día).",
+      "value": 16.7
     },
     {
       "type": "success",
       "category": "velocidad",
       "title": "Aceleración",
-      "text": "Accesorios y Otros creció 10.3% en velocidad de venta (und/día).",
-      "value": 10.3
+      "text": "Vestuario Adulto creció 105.7% en velocidad de venta (und/día).",
+      "value": 105.7
     }
   ],
-  "generatedAt": "2026-03-05T12:18:43.322530"
+  "generatedAt": "2026-03-10T12:32:02.352525"
 };

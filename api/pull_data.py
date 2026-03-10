@@ -31,7 +31,7 @@ def log(msg):
 def download_s3_file(url, filename):
     """Descarga un archivo desde el link S3 que devuelve la API"""
     log(f"Descargando desde S3: {filename}")
-    resp = requests.get(url, timeout=120)
+    resp = requests.get(url, timeout=300)
     if resp.status_code != 200:
         log(f"Error descargando S3: HTTP {resp.status_code}")
         return None
@@ -199,7 +199,7 @@ def pull_sales(days_back=7):
             ENDPOINTS["sales"],
             headers=get_headers(),
             json=payload,
-            timeout=120
+            timeout=300
         )
         log(f"HTTP Status: {resp.status_code}")
 
@@ -280,7 +280,7 @@ def pull_stock():
             ENDPOINTS["stock"],
             headers=get_headers(),
             json=payload,
-            timeout=600
+            timeout=900
         )
         log(f"HTTP Status: {resp.status_code}")
 

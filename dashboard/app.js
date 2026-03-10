@@ -1527,20 +1527,45 @@ function renderScatterChart(data) {
     stores.map(s => ({ ...s, chain }))
   );
 
-  const datasets = (data.allChains || []).map(chain => ({
-    label: chain,
-    data: allStores.filter(s => s.chain === chain).map(s => ({ x: s.units, y: s.clp })),
-    backgroundColor: chainColorMap[chain] + "99",
-    borderColor: chainColorMap[chain],
-    pointRadius: 5, pointHoverRadius: 8
-  }));
+  const datasets = (data.allChains || []).map(chain => {
+    const stores = allStores.filter(s => s.chain === chain);
+    return {
+      label: chain,
+      data: stores.map(s => ({ x: s.units, y: s.clp, store: s.store, storeCode: s.storeCode || '' })),
+      backgroundColor: chainColorMap[chain] + "99",
+      borderColor: chainColorMap[chain],
+      pointRadius: 5, pointHoverRadius: 8
+    };
+  });
 
   chartInstances.scatter = new Chart(ctx, {
     type: "scatter",
     data: { datasets },
     options: {
       responsive: true, maintainAspectRatio: false,
-      plugins: { legend: { position: "bottom", labels: { color: "#94a3b8", font: { size: 10 }, padding: 10 } } },
+      plugins: {
+        legend: { position: "bottom", labels: { color: "#94a3b8", font: { size: 10 }, padding: 10 } },
+        tooltip: {
+          backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
+          borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
+          callbacks: {
+            title: (items) => {
+              if (!items.length) return '';
+              const pt = items[0].raw;
+              return pt.store || '';
+            },
+            beforeBody: (items) => {
+              if (!items.length) return '';
+              const pt = items[0].raw;
+              const code = pt.storeCode ? pt.storeCode.split(' ')[0] : '';
+              return code ? `Local: ${code} | ${items[0].dataset.label}` : items[0].dataset.label;
+            },
+            label: (item) => {
+              return ` ${item.raw.x.toLocaleString('es-CL')} und | ${formatCLP(item.raw.y)}`;
+            }
+          }
+        }
+      },
       scales: {
         x: { title: { display: true, text: "Unidades", color: "#64748b" }, ...chartScaleX() },
         y: { title: { display: true, text: "Venta CLP", color: "#64748b" }, ticks: { color: "#64748b", font: { size: 10 }, callback: v => "$" + Math.round(v / 1e6) + "M" }, grid: { color: "rgba(148,163,184,0.06)" } }

@@ -280,7 +280,7 @@ function getFilteredData() {
     byDivisionDaily = byDivisionDaily.filter(d => d.date <= f.dateTo);
   }
 
-  // 2. Chain filter (exact on dailyByChain, proportional on dailySales)
+  // 2. Chain filter (exact on dailyByChain, proportional on dailySales + byDivisionDaily)
   if (f.chain) {
     dailyByChain = dailyByChain.filter(d => d.chain === f.chain);
     const chainLicData = (src.salesByChainLicense || {})[f.chain] || {};
@@ -299,6 +299,23 @@ function getFilteredData() {
       const ratio = chainD.units / totalD.units;
       return { ...d, units: Math.round(d.units * ratio), clp: Math.round(d.clp * ratio) };
     }).filter(d => d && d.units > 0);
+
+    // Recalculate byDivisionDaily from chain-filtered dailySales using licenseDivisionBreakdown
+    const divDailyAgg = {};
+    dailySales.forEach(d => {
+      const licBreak = licDivBreakdown[d.license];
+      if (licBreak) {
+        const totalPct = Object.values(licBreak).reduce((s, v) => s + (v.pct || 0), 0) || 100;
+        Object.entries(licBreak).forEach(([div, info]) => {
+          const ratio = (info.pct || 0) / totalPct;
+          const key = d.date + '|' + div;
+          if (!divDailyAgg[key]) divDailyAgg[key] = { date: d.date, division: div, units: 0, clp: 0 };
+          divDailyAgg[key].units += Math.round(d.units * ratio);
+          divDailyAgg[key].clp += Math.round(d.clp * ratio);
+        });
+      }
+    });
+    byDivisionDaily = Object.values(divDailyAgg).sort((a, b) => a.date.localeCompare(b.date));
   }
 
   // 3. License filter (exact)
@@ -362,37 +379,7 @@ function getFilteredData() {
     byChain = Object.values(chainFromStores).sort((a, b) => b.clp - a.clp);
   }
 
-  // Re-compute KPIs
-  const totalUnits = byChain.reduce((s, c) => s + c.units, 0);
-  const totalCLP = byChain.reduce((s, c) => s + c.clp, 0);
-  const dates = [...new Set((dailyByChain.length ? dailyByChain : dailyTotals).map(d => d.date))].sort();
-  const kpis = {
-    ...src.kpis,
-    totalUnits, totalCLP,
-    avgUnitsPerDay: dates.length ? Math.round(totalUnits / dates.length) : 0,
-    numDays: dates.length,
-    dateRange: dates.length ? { from: dates[0], to: dates[dates.length - 1] } : src.kpis.dateRange,
-  };
-
-  // Re-aggregate dailyTotals from dailyByChain (respects chain filter)
-  const dtAgg = {};
-  dailyByChain.forEach(d => {
-    if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
-    dtAgg[d.date].units += d.units;
-    dtAgg[d.date].clp += d.clp;
-  });
-  let filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
-  if (f.division) {
-    const divDtAgg = {};
-    byDivisionDaily.forEach(d => {
-      if (!divDtAgg[d.date]) divDtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
-      divDtAgg[d.date].units += d.units;
-      divDtAgg[d.date].clp += d.clp;
-    });
-    filteredDailyTotals = Object.values(divDtAgg).sort((a, b) => a.date.localeCompare(b.date));
-  }
-
-  // Filter rankingByChainStore
+  // Filter rankingByChainStore (must happen before KPI calc)
   let rankingByChainStore = src.rankingByChainStore || {};
   if (f.chain) {
     rankingByChainStore = f.chain in rankingByChainStore ? { [f.chain]: rankingByChainStore[f.chain] } : {};
@@ -416,9 +403,75 @@ function getFilteredData() {
     rankingByChainStore = filteredRanking;
   }
 
-  let byDivision = src.byDivision || [];
+  // Re-compute KPIs from filtered byDivisionDaily (most accurate source)
+  const totalUnits = byDivisionDaily.reduce((s, d) => s + d.units, 0);
+  const totalCLP = byDivisionDaily.reduce((s, d) => s + d.clp, 0);
+  const dates = [...new Set((dailyByChain.length ? dailyByChain : dailyTotals).map(d => d.date))].sort();
+  const filteredStoreCount = Object.values(rankingByChainStore).reduce((s, stores) => s + stores.length, 0);
+  const kpis = {
+    ...src.kpis,
+    totalUnits, totalCLP,
+    avgUnitsPerDay: dates.length ? Math.round(totalUnits / dates.length) : 0,
+    avgUnitsPerStore: filteredStoreCount > 0 ? Math.round(totalUnits / filteredStoreCount) : 0,
+    uniqueStores: filteredStoreCount,
+    uniqueChains: byChain.length,
+    numDays: dates.length,
+    dateRange: dates.length ? { from: dates[0], to: dates[dates.length - 1] } : src.kpis.dateRange,
+  };
+
+  // Re-aggregate dailyTotals from dailyByChain (respects chain filter)
+  const dtAgg = {};
+  dailyByChain.forEach(d => {
+    if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
+    dtAgg[d.date].units += d.units;
+    dtAgg[d.date].clp += d.clp;
+  });
+  let filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
   if (f.division) {
-    byDivision = byDivision.filter(d => d.division === f.division);
+    const divDtAgg = {};
+    byDivisionDaily.forEach(d => {
+      if (!divDtAgg[d.date]) divDtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
+      divDtAgg[d.date].units += d.units;
+      divDtAgg[d.date].clp += d.clp;
+    });
+    filteredDailyTotals = Object.values(divDtAgg).sort((a, b) => a.date.localeCompare(b.date));
+  }
+
+  // Re-aggregate byDivision from filtered data
+  let byDivision = src.byDivision || [];
+  if (f.chain || f.division) {
+    // Recalculate from byDivisionDaily (already chain-filtered if chain active)
+    const divAgg = {};
+    byDivisionDaily.forEach(d => {
+      if (!divAgg[d.division]) divAgg[d.division] = { division: d.division, units: 0, clp: 0 };
+      divAgg[d.division].units += d.units;
+      divAgg[d.division].clp += d.clp;
+    });
+    // Count stores per division from filtered ranking
+    const divStoreCounts = {};
+    Object.values(rankingByChainStore).flat().forEach(s => {
+      Object.keys(s.byDivision || {}).forEach(div => {
+        divStoreCounts[div] = (divStoreCounts[div] || 0) + 1;
+      });
+    });
+    const totalDivUnits = Object.values(divAgg).reduce((s, d) => s + d.units, 0);
+    byDivision = Object.values(divAgg).map(d => {
+      const orig = (src.byDivision || []).find(o => o.division === d.division) || {};
+      return {
+        ...orig, ...d,
+        pctOfTotal: totalDivUnits > 0 ? Math.round(d.units / totalDivUnits * 1000) / 10 : 0,
+        storeCount: divStoreCounts[d.division] || 0,
+      };
+    }).sort((a, b) => b.units - a.units);
+    if (f.division) {
+      byDivision = byDivision.filter(d => d.division === f.division);
+    }
+  }
+
+  // Filter divisionMixByChain
+  let divisionMixByChain = src.divisionMixByChain || [];
+  if (f.chain) {
+    divisionMixByChain = divisionMixByChain.filter(d => d.chain === f.chain);
   }
 
   // ── Filtrar velocityMetrics ──
@@ -476,6 +529,7 @@ function getFilteredData() {
     byDivisionDaily,
     rankingByChainStore,
     byDivision,
+    divisionMixByChain,
     velocityMetrics,
     priceMetrics,
     stock,
@@ -861,6 +915,7 @@ function renderSelloutSection() {
   renderSelloutByChainChart(data);
   renderSelloutTotalDailyChart(data);
   renderStockSection(data);
+  renderOOSDivisionChart(data);
 }
 
 function renderSelloutKPIs(data) {
@@ -1066,11 +1121,11 @@ function renderRankingPage() {
   renderDivisionDailyChart(data);
   renderDivisionMixChart(data);
   initRankingTable(data);
-  renderParetoChart(data);
+  // Pareto chart removed
   renderVelocityChart(data);
-  renderPriceDivisionChart(data);
-  renderOOSDivisionChart(data);
+  // Price Division chart removed; OOS Division moved to Command Center
   renderHeatmap(data);
+  renderLicenseChainHeatmap(data);
   renderScatterChart(data);
   renderUnclassifiedTable(data);
 }
@@ -1131,7 +1186,9 @@ function renderDivisionDailyChart(data) {
     backgroundColor: (DIV_COLORS[div] || "#94a3b8") + "20",
     fill: true, tension: 0.4, borderWidth: 2, pointRadius: 2
   }));
-  chartInstances.divDaily = new Chart(ctx, { type: "line", data: { labels: dates.map(shortDate), datasets }, options: chartOptionsLine("und") });
+  const opts = chartOptionsLine("und");
+  opts.scales.y.beginAtZero = true;
+  chartInstances.divDaily = new Chart(ctx, { type: "line", data: { labels: dates.map(shortDate), datasets }, options: opts });
 }
 
 // ── Division Mix by Chain ───────────────────────────────
@@ -1194,7 +1251,7 @@ function renderStoreRanking(data, chain, sortBy) {
     stores = Object.entries(data.rankingByChainStore).flatMap(([ch, ss]) => ss.map(s => ({ ...s, _chain: ch })));
   }
 
-  const sortKey = ['clp', 'margin', 'stockUnits', 'weeksOfStock'].includes(sortBy) ? sortBy : 'units';
+  const sortKey = ['units', 'margin', 'stockUnits', 'weeksOfStock'].includes(sortBy) ? sortBy : 'clp';
   stores.sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
 
   rankingState.stores = stores;
@@ -1223,18 +1280,43 @@ function renderRankingPage_() {
     return totalUnits > 0 ? (cumUnits / totalUnits * 100) : 0;
   });
 
-  // Update weeks-of-stock header with period info
+  // Update weeks-of-stock header — ahora siempre 4 semanas
   const thWeeks = document.getElementById("th-weeks-stock");
-  const src = typeof REAL_SELLOUT !== 'undefined' ? REAL_SELLOUT : null;
-  const weeksPeriod = src ? src.rankingWeeksPeriod : 0;
-  if (thWeeks && weeksPeriod) thWeeks.textContent = `Sem. Stock (${weeksPeriod}sem)`;
+  if (thWeeks) thWeeks.textContent = `Sem. Stock (4sem)`;
+
+  // ── Fila totalizada (solo en página 1) ──
+  if (page === 1) {
+    const totUnits = stores.reduce((s, d) => s + d.units, 0);
+    const totCLP = stores.reduce((s, d) => s + d.clp, 0);
+    const totCostos = stores.reduce((s, d) => s + (d.costos || 0), 0);
+    const totMargin = totCLP > 0 ? Math.round((totCLP - totCostos) / totCLP * 1000) / 10 : 0;
+    const totStock = stores.reduce((s, d) => s + (d.stockUnits || 0), 0);
+    const storesWithWeeks = stores.filter(d => d.weeksOfStock > 0);
+    const avgWeeks = storesWithWeeks.length > 0 ? Math.round(storesWithWeeks.reduce((s, d) => s + d.weeksOfStock, 0) / storesWithWeeks.length * 10) / 10 : 0;
+    const totMarginColor = totMargin >= 30 ? '#22c55e' : totMargin >= 20 ? '#eab308' : '#ef4444';
+    const totWeeksColor = avgWeeks <= 2 ? '#ef4444' : avgWeeks <= 5 ? '#eab308' : avgWeeks <= 8 ? '#22c55e' : '#3b82f6';
+    const trTot = document.createElement("tr");
+    trTot.className = "ranking-total-row";
+    trTot.innerHTML = `
+      <td class="rank-number" style="font-weight:700">—</td>
+      <td colspan="2" style="font-weight:700;font-size:0.82rem">TOTAL (${stores.length} tiendas)</td>
+      <td></td>
+      <td class="number-cell" style="font-weight:700">${totUnits.toLocaleString("es-CL")}</td>
+      <td class="number-cell" style="font-weight:700">${formatCLP(totCLP)}</td>
+      <td class="number-cell" style="font-weight:700;color:${totMarginColor}">${totMargin}%</td>
+      <td class="number-cell" style="font-weight:700">${totStock > 0 ? totStock.toLocaleString("es-CL") : '-'}</td>
+      <td class="number-cell" style="font-weight:700;color:${totWeeksColor}">${avgWeeks > 0 ? avgWeeks + ' avg' : '-'}</td>
+      <td class="number-cell" style="font-weight:700">100%</td>
+      <td></td><td></td><td></td>`;
+    tbody.appendChild(trTot);
+  }
 
   pageStores.forEach((store, idx) => {
     const globalIdx = start + idx;
     const divEntries = Object.entries(store.byDivision || {}).sort((a, b) => b[1].units - a[1].units);
     const topDiv = divEntries[0] ? divEntries[0][0] : '-';
-    const pct = totalUnits > 0 ? (store.units / totalUnits * 100).toFixed(1) : 0;
-    const paretoPct = paretoPcts[globalIdx].toFixed(1);
+    const pct = totalUnits > 0 ? (store.units / totalUnits * 100).toFixed(2) : '0.00';
+    const paretoPct = paretoPcts[globalIdx].toFixed(2);
     const margin = store.margin != null ? store.margin : (store.clp > 0 ? Math.round((store.clp - (store.costos || 0)) / store.clp * 1000) / 10 : 0);
     const stockUnits = store.stockUnits || 0;
     const weeksOfStock = store.weeksOfStock || 0;
@@ -1242,7 +1324,7 @@ function renderRankingPage_() {
     // Color-code margin
     const marginColor = margin >= 30 ? '#22c55e' : margin >= 20 ? '#eab308' : '#ef4444';
     // Color-code weeks of stock
-    const weeksColor = weeksOfStock === 0 ? '#64748b' : weeksOfStock <= 2 ? '#ef4444' : weeksOfStock <= 6 ? '#eab308' : '#22c55e';
+    const weeksColor = weeksOfStock <= 2 ? '#ef4444' : weeksOfStock <= 5 ? '#eab308' : weeksOfStock <= 8 ? '#22c55e' : '#3b82f6';
 
     // Rich tooltip for distribution
     const tooltipRows = divEntries.map(([div, d]) => {
@@ -1514,6 +1596,95 @@ function renderHeatmap(data) {
   container.innerHTML = html;
 }
 
+// ── License × Chain Heatmap ─────────────────────────────
+function renderLicenseChainHeatmap(data) {
+  const container = document.getElementById("heatmap-license-chain");
+  if (!container) return;
+
+  // Build matrix from salesByChainLicense or from byLicense + byChain
+  const src = typeof REAL_SELLOUT !== 'undefined' ? REAL_SELLOUT : null;
+  const salesByCL = src ? src.salesByChainLicense || {} : {};
+  const chains = data.allChains || Object.keys(salesByCL).sort();
+  const filteredChain = getGlobalFilters().chain;
+
+  // Get all licenses with totals, sorted desc — NO limit
+  const licTotals = {};
+  const chainTotals = {};
+  const baseChains = filteredChain ? [filteredChain] : chains;
+  baseChains.forEach(ch => {
+    const lics = salesByCL[ch] || {};
+    let chainSum = 0;
+    Object.entries(lics).forEach(([lic, d]) => {
+      if (!licTotals[lic]) licTotals[lic] = 0;
+      licTotals[lic] += d.units;
+      chainSum += d.units;
+    });
+    chainTotals[ch] = chainSum;
+  });
+  // Sort chains by total units desc (left to right)
+  const displayChains = [...baseChains].sort((a, b) => (chainTotals[b] || 0) - (chainTotals[a] || 0));
+  const licenses = Object.entries(licTotals).filter(e => e[1] > 0).sort((a, b) => b[1] - a[1]).map(e => e[0]);
+
+  if (!licenses.length || !displayChains.length) { container.innerHTML = '<p style="color:#64748b;padding:1rem">Sin datos</p>'; return; }
+
+  // Build value matrix and find min/max for color scale
+  const matrix = licenses.map(lic =>
+    displayChains.map(ch => ((salesByCL[ch] || {})[lic] || {}).units || 0)
+  );
+  const allVals = matrix.flat().filter(v => v > 0);
+  const minVal = allVals.length ? Math.min(...allVals) : 0;
+  const maxVal = allVals.length ? Math.max(...allVals) : 1;
+  const range = maxVal - minVal || 1;
+
+  function heatColor(value) {
+    if (value === 0) return 'rgba(30,41,59,0.5)';
+    const t = (value - minVal) / range;
+    let r, g, b;
+    if (t < 0.25) { const s = t / 0.25; r = Math.round(20 + 10 * s); g = Math.round(50 + 140 * s); b = Math.round(160 - 20 * s); }
+    else if (t < 0.5) { const s = (t - 0.25) / 0.25; r = Math.round(30 + 30 * s); g = Math.round(190 + 20 * s); b = Math.round(140 - 100 * s); }
+    else if (t < 0.75) { const s = (t - 0.5) / 0.25; r = Math.round(60 + 180 * s); g = Math.round(210 + 20 * s); b = Math.round(40 - 10 * s); }
+    else { const s = (t - 0.75) / 0.25; r = Math.round(240 + 15 * s); g = Math.round(230 - 120 * s); b = Math.round(30); }
+    return `rgba(${r},${g},${b},0.8)`;
+  }
+
+  let html = '<table class="heatmap-table"><thead><tr><th class="store-label">Propiedad</th>';
+  displayChains.forEach(ch => { html += `<th style="font-size:0.65rem;writing-mode:vertical-rl;text-orientation:mixed;height:80px;white-space:nowrap">${ch}</th>`; });
+  html += '<th>Total</th></tr></thead><tbody>';
+
+  licenses.forEach((lic, li) => {
+    html += `<tr><td class="store-label" title="${lic}" style="font-size:0.72rem">${lic.length > 20 ? lic.substring(0, 18) + '…' : lic}</td>`;
+    let rowTotal = 0;
+    displayChains.forEach((ch, ci) => {
+      const val = matrix[li][ci];
+      rowTotal += val;
+      const cellText = val > 0 ? val.toLocaleString("es-CL") : '';
+      html += `<td style="background:${heatColor(val)};color:#fff;text-shadow:0 1px 2px rgba(0,0,0,0.6);font-size:0.68rem;text-align:center;min-width:55px">${cellText}</td>`;
+    });
+    html += `<td style="font-weight:700;color:var(--text-primary);font-size:0.72rem">${rowTotal.toLocaleString("es-CL")}</td></tr>`;
+  });
+
+  // Totals row
+  html += '<tr style="border-top:2px solid var(--accent-primary,#249ffc);background:var(--bg-card-alt,#1a2332)"><td class="store-label" style="font-weight:700;font-size:0.72rem">TOTAL</td>';
+  let grandTotal = 0;
+  displayChains.forEach((ch, ci) => {
+    const colTotal = licenses.reduce((s, _, li) => s + matrix[li][ci], 0);
+    grandTotal += colTotal;
+    html += `<td style="font-weight:700;color:var(--text-primary);font-size:0.68rem;text-align:center">${colTotal.toLocaleString("es-CL")}</td>`;
+  });
+  html += `<td style="font-weight:700;color:var(--text-primary);font-size:0.72rem">${grandTotal.toLocaleString("es-CL")}</td></tr>`;
+
+  html += '</tbody></table>';
+  html += '<div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.75rem;font-size:0.7rem;color:#64748b">';
+  html += '<span>Sin venta</span>';
+  html += '<div style="height:10px;width:12px;border-radius:3px;background:rgba(30,41,59,0.5)"></div>';
+  html += '<span style="margin-left:0.5rem">Menor</span>';
+  html += '<div style="height:10px;width:180px;border-radius:5px;background:linear-gradient(90deg,rgba(20,50,160,0.8),rgba(30,190,140,0.8),rgba(60,210,40,0.8),rgba(240,230,30,0.8),rgba(255,110,30,0.8))"></div>';
+  html += '<span>Mayor</span>';
+  html += `<span style="margin-left:auto;color:#94a3b8">${licenses.length} propiedades × ${displayChains.length} cadenas</span></div>`;
+
+  container.innerHTML = html;
+}
+
 // ── Scatter Chart ───────────────────────────────────────
 function renderScatterChart(data) {
   const ctx = document.getElementById("chart-scatter");
@@ -1639,13 +1810,63 @@ function renderLabDataExplorer(data) {
   });
 }
 
-// ── Chain Freshness (from real data) ────────────────────
+// ── Chain Freshness Table ────────────────────
+function _buildFreshnessTable(freshData) {
+  const statusLabel = s => s === 'fresh' ? 'Actualizada' : s === 'warning' ? 'Parcialmente' : 'Desactualizado';
+  const statusColor = s => s === 'fresh' ? '#22c55e' : s === 'warning' ? '#eab308' : '#ef4444';
+
+  let html = `<table class="freshness-table">
+    <thead><tr>
+      <th>Cadena</th><th>Primera Fecha</th><th>Ultima Fecha</th>
+      <th>Dias c/ Datos</th><th>Rango</th><th>Tiendas</th><th>Estado</th>
+    </tr></thead><tbody>`;
+
+  freshData.forEach(item => {
+    const color = chainColor(item.chain);
+    const sc = statusColor(item.status);
+    const sl = statusLabel(item.status);
+    const coverage = item.rangeDays > 0 ? Math.round(item.daysWithData / item.rangeDays * 100) : 0;
+    html += `<tr>
+      <td><span class="freshness-dot ${item.status}"></span> <span style="color:${color};font-weight:600">${item.chain}</span></td>
+      <td>${formatDate(item.firstDate || item.lastUpdate)}</td>
+      <td>${formatDate(item.lastUpdate)}</td>
+      <td>${item.daysWithData || '-'}/${item.rangeDays || '-'} <span style="color:var(--text-muted);font-size:0.7rem">(${coverage}%)</span></td>
+      <td>${item.rangeDays || '-'}d</td>
+      <td>${item.stores || '-'}</td>
+      <td><span style="color:${sc};font-weight:600">${sl}</span> <span style="color:var(--text-muted);font-size:0.7rem">(${item.daysOld}d)</span></td>
+    </tr>`;
+  });
+
+  // Totals row
+  const totalStores = new Set();
+  const allDates = new Set();
+  freshData.forEach(item => {
+    if (item.stores) for (let i = 0; i < item.stores; i++) totalStores.add(item.chain + i);
+  });
+  const totalDaysData = freshData.length > 0 ? Math.max(...freshData.map(i => i.daysWithData || 0)) : 0;
+  const totalRange = freshData.length > 0 ? Math.max(...freshData.map(i => i.rangeDays || 0)) : 0;
+  const totalStoreCount = freshData.reduce((s, i) => s + (i.stores || 0), 0);
+  const freshCount = freshData.filter(i => i.status === 'fresh').length;
+  const warnCount = freshData.filter(i => i.status === 'warning').length;
+  const staleCount = freshData.filter(i => i.status === 'stale').length;
+
+  html += `<tr class="freshness-total-row">
+    <td><strong>${freshData.length} cadenas</strong></td>
+    <td></td><td></td>
+    <td></td>
+    <td>${totalRange}d</td>
+    <td>${totalStoreCount}</td>
+    <td><span style="color:#22c55e">${freshCount}</span> / <span style="color:#eab308">${warnCount}</span> / <span style="color:#ef4444">${staleCount}</span></td>
+  </tr>`;
+
+  html += '</tbody></table>';
+  return html;
+}
+
 function renderChainFreshness() {
   const container = document.getElementById("freshness-grid");
   if (!container) return;
-  container.innerHTML = "";
 
-  // Use real data from REAL_SELLOUT._meta.chainFreshness, fallback to mock
   const freshData = (typeof REAL_SELLOUT !== "undefined" && REAL_SELLOUT._meta && REAL_SELLOUT._meta.chainFreshness)
     ? REAL_SELLOUT._meta.chainFreshness
     : (typeof CHAIN_FRESHNESS !== "undefined" ? CHAIN_FRESHNESS : []);
@@ -1654,42 +1875,20 @@ function renderChainFreshness() {
     container.innerHTML = '<span style="color:var(--text-muted)">Sin datos de frescura</span>';
     return;
   }
-
-  freshData.forEach(item => {
-    const color = chainColor(item.chain);
-    const chip = document.createElement("div");
-    chip.className = "freshness-chip";
-    chip.style.borderLeft = `3px solid ${color}`;
-    const daysLabel = item.daysOld !== undefined ? ` (${item.daysOld}d)` : "";
-    chip.innerHTML = `<span class="freshness-dot ${item.status}"></span>
-      <span class="freshness-chain" style="color:${color}">${item.chain}</span>
-      <span class="freshness-date">${formatDate(item.lastUpdate)}${daysLabel}</span>`;
-    container.appendChild(chip);
-  });
+  container.innerHTML = _buildFreshnessTable(freshData);
 }
 
 // ── Ranking Freshness (Tab 2 copy) ──────────────────
 function renderRankingFreshness() {
   const container = document.getElementById("ranking-freshness-grid");
   if (!container) return;
-  container.innerHTML = "";
   const freshData = (typeof REAL_SELLOUT !== "undefined" && REAL_SELLOUT._meta && REAL_SELLOUT._meta.chainFreshness)
     ? REAL_SELLOUT._meta.chainFreshness : [];
   if (!freshData.length) {
     container.innerHTML = '<span style="color:var(--text-muted)">Sin datos de frescura</span>';
     return;
   }
-  freshData.forEach(item => {
-    const color = chainColor(item.chain);
-    const chip = document.createElement("div");
-    chip.className = "freshness-chip";
-    chip.style.borderLeft = `3px solid ${color}`;
-    const daysLabel = item.daysOld !== undefined ? ` (${item.daysOld}d)` : "";
-    chip.innerHTML = `<span class="freshness-dot ${item.status}"></span>
-      <span class="freshness-chain" style="color:${color}">${item.chain}</span>
-      <span class="freshness-date">${formatDate(item.lastUpdate)}${daysLabel}</span>`;
-    container.appendChild(chip);
-  });
+  container.innerHTML = _buildFreshnessTable(freshData);
 }
 
 // ── Chain Monitoring (alertas cadenas nuevas/faltantes) ──

@@ -18,9 +18,18 @@ import tempfile
 from datetime import datetime, timedelta
 from config import ISV_TOKEN, ENDPOINTS, get_headers
 
-# Directorio de salida
-DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+# Directorio de salida: CSVs pesados van a C:\TBC-Data (fuera de Google Drive)
+# Maestras livianas van a data/ (dentro del repo)
+_BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+DATA_DIR = os.path.join(_BASE_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
+
+# Directorio local para archivos pesados (ventas, stock)
+LOCAL_DIR = r"C:\TBC-Data"
+if os.path.exists(LOCAL_DIR):
+    os.makedirs(LOCAL_DIR, exist_ok=True)
+else:
+    LOCAL_DIR = DATA_DIR  # Fallback si no existe C:\TBC-Data
 
 
 def log(msg):
@@ -28,7 +37,7 @@ def log(msg):
     print(f"  [{ts}] {msg}")
 
 
-def download_s3_file(url, filename):
+def download_s3_file(url, filename, dest_dir=None):
     """Descarga un archivo desde el link S3 que devuelve la API"""
     log(f"Descargando desde S3: {filename}")
     resp = requests.get(url, timeout=300)
@@ -36,7 +45,8 @@ def download_s3_file(url, filename):
         log(f"Error descargando S3: HTTP {resp.status_code}")
         return None
 
-    filepath = os.path.join(DATA_DIR, filename)
+    target_dir = dest_dir or DATA_DIR
+    filepath = os.path.join(target_dir, filename)
 
     content_type = resp.headers.get("content-type", "")
     if "zip" in content_type or url.endswith(".zip"):
@@ -50,10 +60,11 @@ def download_s3_file(url, filename):
                 csv_files = [f for f in zf.namelist() if f.endswith('.csv')]
                 if csv_files:
                     csv_content = zf.read(csv_files[0]).decode('utf-8-sig')
-                    csv_path = filepath.replace('.zip', '.csv')
+                    csv_name = os.path.basename(filepath).replace('.zip', '.csv')
+                    csv_path = os.path.join(target_dir, csv_name)
                     with open(csv_path, 'w', encoding='utf-8') as f:
                         f.write(csv_content)
-                    log(f"CSV extraído: {csv_path}")
+                    log(f"CSV extraido: {csv_path}")
                     return csv_path
                 else:
                     log(f"No se encontró CSV dentro del ZIP")
@@ -207,17 +218,17 @@ def pull_sales(days_back=7):
             body = resp.text.strip()
             s3_url = _extract_download_url(body)
             if s3_url:
-                csv_path = download_s3_file(s3_url, "sales_latest.csv")
+                csv_path = download_s3_file(s3_url, "sales_latest.csv", dest_dir=LOCAL_DIR)
                 if csv_path:
-                    json_path = os.path.join(DATA_DIR, "sales_latest.json")
+                    json_path = os.path.join(LOCAL_DIR, "sales_latest.json")
                     rows = csv_to_json(csv_path, json_path)
                     log(f"Ventas descargadas: {len(rows)} registros")
                     return rows
             else:
-                csv_path = os.path.join(DATA_DIR, "sales_latest.csv")
+                csv_path = os.path.join(LOCAL_DIR, "sales_latest.csv")
                 with open(csv_path, 'w', encoding='utf-8') as f:
                     f.write(body)
-                json_path = os.path.join(DATA_DIR, "sales_latest.json")
+                json_path = os.path.join(LOCAL_DIR, "sales_latest.json")
                 rows = csv_to_json(csv_path, json_path)
                 return rows
         else:
@@ -288,17 +299,17 @@ def pull_stock():
             body = resp.text.strip()
             s3_url = _extract_download_url(body)
             if s3_url:
-                csv_path = download_s3_file(s3_url, "stock_latest.csv")
+                csv_path = download_s3_file(s3_url, "stock_latest.csv", dest_dir=LOCAL_DIR)
                 if csv_path:
-                    json_path = os.path.join(DATA_DIR, "stock_latest.json")
+                    json_path = os.path.join(LOCAL_DIR, "stock_latest.json")
                     rows = csv_to_json(csv_path, json_path)
                     log(f"Stock descargado: {len(rows)} registros")
                     return rows
             else:
-                csv_path = os.path.join(DATA_DIR, "stock_latest.csv")
+                csv_path = os.path.join(LOCAL_DIR, "stock_latest.csv")
                 with open(csv_path, 'w', encoding='utf-8') as f:
                     f.write(body)
-                json_path = os.path.join(DATA_DIR, "stock_latest.json")
+                json_path = os.path.join(LOCAL_DIR, "stock_latest.json")
                 rows = csv_to_json(csv_path, json_path)
                 return rows
         else:
@@ -327,8 +338,14 @@ def main():
     if "--all" in args or "--masters" in args:
         pull_masters()
 
+    # Soporte --days N para override de ventana de ventas
+    sales_days = 14
+    for i, a in enumerate(args):
+        if a == '--days' and i + 1 < len(args):
+            sales_days = int(args[i + 1])
+
     if "--all" in args or "--sales" in args:
-        pull_sales(days_back=14)
+        pull_sales(days_back=sales_days)
 
     if "--all" in args or "--stock" in args:
         pull_stock()

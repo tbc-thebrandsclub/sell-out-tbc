@@ -120,10 +120,9 @@
     <div class="section-header"><div class="section-title">Sell Out</div><span class="section-badge badge-live">API InstoreView</span></div>
     <div class="sellout-container">
       <div class="sellout-kpi-row">
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-primary)" id="sellout-units">0</div><div class="sellout-kpi-label">Unidades Vendidas</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-emerald)">$<span id="sellout-clp">0</span></div><div class="sellout-kpi-label">Venta Total (CLP)</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-orange)" id="sellout-avg-store">0</div><div class="sellout-kpi-label">Prom. Und. / Tienda</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-cyan)" id="sellout-chains">0</div><div class="sellout-kpi-label">Cadenas Activas</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="sellout-units">0</div><div class="sellout-kpi-label">Unidades Vendidas</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value">$<span id="sellout-clp">0</span></div><div class="sellout-kpi-label">Venta Total (CLP)</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="sellout-avg-store">0</div><div class="sellout-kpi-label">Prom. Und. / Tienda</div></div>
       </div>
       <div id="sellout-date-range" style="text-align:center;color:var(--text-muted);font-size:0.72rem;margin-bottom:1rem;"></div>
       <div class="charts-grid">
@@ -140,13 +139,16 @@
     <div class="section-header"><div class="section-title">Stock & Quiebres (OOS)</div><span class="section-badge badge-live">API InstoreView</span></div>
     <div class="sellout-container">
       <div class="sellout-kpi-row">
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-red)" id="oos-rate">0%</div><div class="sellout-kpi-label">% Quiebre (OOS)</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-amber)" id="oos-skus">0</div><div class="sellout-kpi-label">SKUs en Quiebre</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-primary)" id="stock-total">0</div><div class="sellout-kpi-label">Stock Total (Und.)</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" style="color:var(--accent-emerald)" id="stock-skus">0</div><div class="sellout-kpi-label">SKUs Monitoreados</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="oos-rate">0%</div><div class="sellout-kpi-label">% Quiebre (OOS)</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="oos-skus">0</div><div class="sellout-kpi-label">SKUs en Quiebre</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-total">0</div><div class="sellout-kpi-label">Stock Total (Und.)</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-skus">0</div><div class="sellout-kpi-label">SKUs Monitoreados</div></div>
       </div>
       <div class="charts-grid">
         <div class="chart-card"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container"><canvas id="chart-oos-chain"></canvas></div></div>
+        <div class="chart-card"><div class="chart-title">% Quiebre por Division</div><div class="chart-container" style="height:280px"><canvas id="chart-oos-division"></canvas></div></div>
+      </div>
+      <div class="charts-grid" style="margin-top:1rem">
         <div class="chart-card"><div class="chart-title">% Quiebre por Licencia (Top 20)</div><div class="chart-container" style="height:360px"><canvas id="chart-oos-license"></canvas></div></div>
       </div>
     </div>
@@ -177,12 +179,8 @@
     <!-- Analisis Comercial (antes del ranking para dar contexto) -->
     <div class="section-header" style="margin-top:2rem"><div class="section-title">Analisis Comercial</div><span class="section-badge badge-live">Business Intelligence</span></div>
     <div class="charts-grid">
-      <div class="chart-card"><div class="chart-title">Concentracion de Venta (Pareto)</div><div class="chart-container" style="height:300px"><canvas id="chart-pareto"></canvas></div></div>
       <div class="chart-card"><div class="chart-title">Velocidad de Venta por Cadena (Und/Dia)</div><div class="chart-container" style="height:300px"><canvas id="chart-velocity"></canvas></div></div>
-    </div>
-    <div class="charts-grid" style="margin-top:1rem">
-      <div class="chart-card"><div class="chart-title">Precio Promedio por Division (CLP)</div><div class="chart-container" style="height:280px"><canvas id="chart-price-division"></canvas></div></div>
-      <div class="chart-card"><div class="chart-title">% Quiebre por Division</div><div class="chart-container" style="height:280px"><canvas id="chart-oos-division"></canvas></div></div>
+      <div class="chart-card"><div class="chart-title">Dispersion: Unidades vs Venta por Tienda</div><div class="chart-container" style="height:300px"><canvas id="chart-scatter"></canvas></div></div>
     </div>
 
     <!-- Ranking por Tienda (drill-down granular) -->
@@ -190,7 +188,7 @@
       <div class="section-title">Ranking por Tienda</div>
       <div class="ranking-controls">
         <select id="ranking-chain-select" class="filter-select"><option value="">Todas las cadenas</option></select>
-        <select id="ranking-sort" class="filter-select"><option value="units">Por Unidades</option><option value="clp">Por Venta CLP</option><option value="margin">Por % Margen</option><option value="stockUnits">Por Stock</option><option value="weeksOfStock">Por Sem. Stock</option></select>
+        <select id="ranking-sort" class="filter-select"><option value="clp">Por Venta CLP</option><option value="units">Por Unidades</option><option value="margin">Por % Margen</option><option value="stockUnits">Por Stock</option><option value="weeksOfStock">Por Sem. Stock</option></select>
       </div>
     </div>
     <div class="table-container">
@@ -205,8 +203,9 @@
     <div class="section-header" style="margin-top:2rem"><div class="section-title">Mapa de Calor: Venta por Tienda x Dia (Top 20)</div><span class="section-badge badge-live">Real Data</span></div>
     <div class="chart-card"><div id="heatmap-container" class="heatmap-container"></div></div>
 
-    <div class="section-header" style="margin-top:2rem"><div class="section-title">Dispersion: Unidades vs Venta por Tienda</div><span class="section-badge badge-live">Real Data</span></div>
-    <div class="chart-card"><div class="chart-container" style="height:420px"><canvas id="chart-scatter"></canvas></div></div>
+    <div class="section-header" style="margin-top:2rem"><div class="section-title">Mapa de Calor: Venta por Propiedad x Cadena (Und)</div><span class="section-badge badge-live">Real Data</span></div>
+    <div class="chart-card"><div id="heatmap-license-chain" class="heatmap-container"></div></div>
+
   </div>
 
   <!-- ══════════════════════════════════════════════════ -->

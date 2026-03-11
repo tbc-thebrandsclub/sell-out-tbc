@@ -386,17 +386,26 @@ def ingest_json(filepath, table, column_map, numeric_fields):
     return total_read, new_records, replaced
 
 
+def _find_data_file(name):
+    """Busca archivo primero en C:\\TBC-Data, luego en data/."""
+    for d in [DB_DIR, DATA_DIR]:
+        p = os.path.join(d, name)
+        if os.path.exists(p):
+            return p
+    return None
+
+
 def ingest_sales():
     """Ingesta datos de ventas desde CSV o JSON."""
     print("Ingesta de ventas...")
     numeric_fields = {'unidades', 'costos_b2b', 'ventas_b2b', 'valores_pvp'}
 
-    csv_path = os.path.join(DATA_DIR, "sales_latest.csv")
-    json_path = os.path.join(DATA_DIR, "sales_latest.json")
+    csv_path = _find_data_file("sales_latest.csv")
+    json_path = _find_data_file("sales_latest.json")
 
-    if os.path.exists(csv_path):
+    if csv_path:
         total, new, replaced = ingest_csv(csv_path, 'sales', SALES_COLUMN_MAP, numeric_fields)
-    elif os.path.exists(json_path):
+    elif json_path:
         total, new, replaced = ingest_json(json_path, 'sales', SALES_COLUMN_MAP, numeric_fields)
     else:
         print("  No se encontro sales_latest.csv ni .json")
@@ -415,12 +424,12 @@ def ingest_stock():
     numeric_fields = {'stock_local', 'stock_cd', 'stock_total', 'venta_7d',
                       'promedio_diario', 'dias_stock_total', 'quiebres'}
 
-    csv_path = os.path.join(DATA_DIR, "stock_latest.csv")
-    json_path = os.path.join(DATA_DIR, "stock_latest.json")
+    csv_path = _find_data_file("stock_latest.csv")
+    json_path = _find_data_file("stock_latest.json")
 
-    if os.path.exists(csv_path):
+    if csv_path:
         total, new, replaced = ingest_csv(csv_path, 'stock', STOCK_COLUMN_MAP, numeric_fields)
-    elif os.path.exists(json_path):
+    elif json_path:
         total, new, replaced = ingest_json(json_path, 'stock', STOCK_COLUMN_MAP, numeric_fields)
     else:
         print("  No se encontro stock_latest.csv ni .json")

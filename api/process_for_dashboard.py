@@ -409,7 +409,7 @@ def process(year=2026, days_back=None):
             chain_store_div[chain][store]["byDiv"][div]["clp"] += r['_clp']
             chain_store_div[chain][store]["byDiv"][div]["costos"] += r['_costos']
 
-    # Stock por tienda (para ranking) — usar fecha más reciente
+    # Stock por tienda (para ranking) — usar fecha más reciente, solo stock LOCAL
     store_stock_map = {}
     if stock_data:
         stock_dates_set = set(r.get('fecha', '') for r in stock_data if r.get('fecha'))
@@ -422,11 +422,37 @@ def process(year=2026, days_back=None):
                 sname = r.get('nombre_local', '') or r.get('local', '')
                 key = (chain, sname)
                 if key not in store_stock_map:
-                    store_stock_map[key] = {"stock_total": 0, "promedio_diario": 0}
-                store_stock_map[key]["stock_total"] += (r.get('stock_total', 0) or 0)
-                store_stock_map[key]["promedio_diario"] += (r.get('promedio_diario', 0) or 0)
+                    store_stock_map[key] = {"stock_local": 0}
+                store_stock_map[key]["stock_local"] += (r.get('stock_local', 0) or 0)
 
-    # Semanas en el período para cálculo de velocidad
+    # Venta últimas 4 semanas por tienda (para Sem. Stock)
+    # Calcular última fecha de venta por cadena
+    chain_last_date = {}
+    for r in sales:
+        chain = r.get('sub_cadena', '')
+        fecha = r.get('fecha', '')
+        if fecha and (chain not in chain_last_date or fecha > chain_last_date[chain]):
+            chain_last_date[chain] = fecha
+
+    # Ventas por tienda en últimas 4 semanas desde última fecha de cada cadena
+    store_sales_4w = defaultdict(lambda: {"units": 0})
+    for r in sales:
+        chain = r.get('sub_cadena', '')
+        fecha = r.get('fecha', '')
+        last = chain_last_date.get(chain, '')
+        if not last or not fecha:
+            continue
+        # Calcular diferencia en días
+        try:
+            d_fecha = datetime.strptime(fecha, '%Y-%m-%d')
+            d_last = datetime.strptime(last, '%Y-%m-%d')
+            if (d_last - d_fecha).days <= 28:
+                store = r.get('nombre_local', '') or r.get('local', '')
+                store_sales_4w[(chain, store)]["units"] += r['_units']
+        except (ValueError, TypeError):
+            continue
+
+    # Semanas en el período para cálculo de velocidad (gráficos)
     num_weeks_period = max(len(dates_sorted) / 7, 1)
 
     ranking_by_chain_store = {}
@@ -435,9 +461,11 @@ def process(year=2026, days_back=None):
         for name, d in stores.items():
             margin = round((d["clp"] - d["costos"]) / d["clp"] * 100, 1) if d["clp"] > 0 else 0
             stock_info = store_stock_map.get((chain, name))
-            stock_units = round(stock_info["stock_total"]) if stock_info else 0
-            weekly_sales = d["units"] / num_weeks_period if num_weeks_period > 0 else 0
-            weeks_stock = round(stock_units / weekly_sales, 1) if weekly_sales > 0 else 0
+            stock_units = round(stock_info["stock_local"]) if stock_info else 0
+            # Sem. Stock = stock local / (venta últimas 4 sem / 4)
+            sales_4w = store_sales_4w.get((chain, name), {}).get("units", 0)
+            weekly_avg_4w = sales_4w / 4 if sales_4w > 0 else 0
+            weeks_stock = round(stock_units / weekly_avg_4w, 1) if weekly_avg_4w > 0 else 0
             store_list.append({
                 "store": name,
                 "storeCode": d["local"],
@@ -676,7 +704,9 @@ def process(year=2026, days_back=None):
     # ── 18. Insights Automáticos ─────────────────────────
     insights = generate_insights(
         chain_sales, by_division, velocity_metrics, stock_output,
-        pareto_analysis, price_metrics, total_units
+        pareto_analysis, price_metrics, total_units,
+        ranking_by_chain_store=ranking_by_chain_store,
+        division_mix=division_mix_by_chain
     )
 
     # ══════════════════════════════════════════════════════
@@ -713,32 +743,45 @@ def process(year=2026, days_back=None):
         except Exception:
             pass
 
-    # Calcular frescura REAL por cadena (MAX fecha por sub_cadena)
-    chain_latest = defaultdict(list)
+    # Calcular frescura REAL por cadena (fechas, tiendas, cobertura)
+    chain_dates = defaultdict(set)       # chain -> set of date strings
+    chain_stores = defaultdict(set)      # chain -> set of store names
+    chain_dt_list = defaultdict(list)    # chain -> list of datetime objects
     for r in sales:
         chain = r.get('sub_cadena', '')
         fecha = r.get('fecha', '')
         if chain and fecha:
             dt = parse_date_iso(fecha) or parse_date_ddmmyyyy(fecha)
             if dt:
-                chain_latest[chain].append(dt)
+                chain_dt_list[chain].append(dt)
+                chain_dates[chain].add(fecha)
+            store = r.get('nombre_local', '') or r.get('local', '')
+            if store:
+                chain_stores[chain].add(store)
 
     chain_freshness = []
-    for chain in sorted(chain_latest.keys()):
-        max_dt = max(chain_latest[chain])
+    for chain in sorted(chain_dt_list.keys()):
+        max_dt = max(chain_dt_list[chain])
+        min_dt = min(chain_dt_list[chain])
         days_old = (datetime.now() - max_dt).days
-        if days_old <= 2:
+        range_days = (max_dt - min_dt).days + 1
+        days_with_data = len(chain_dates[chain])
+        if days_old <= 1:
             status = "fresh"
-        elif days_old <= 5:
+        elif days_old <= 2:
             status = "warning"
         else:
             status = "stale"
         chain_freshness.append({
             "chain": chain,
+            "firstDate": min_dt.strftime('%Y-%m-%d'),
             "lastUpdate": max_dt.strftime('%Y-%m-%d'),
             "daysOld": days_old,
+            "rangeDays": range_days,
+            "daysWithData": days_with_data,
+            "stores": len(chain_stores[chain]),
             "status": status,
-            "records": len(chain_latest[chain]),
+            "records": len(chain_dt_list[chain]),
         })
 
     # Ordenar: fresh primero, luego por fecha descendente
@@ -897,8 +940,9 @@ def process(year=2026, days_back=None):
     return output
 
 
-def generate_insights(chain_sales, by_division, velocity, stock, pareto, price, total_units):
-    """Genera insights automáticos de negocio."""
+def generate_insights(chain_sales, by_division, velocity, stock, pareto, price, total_units,
+                      ranking_by_chain_store=None, division_mix=None):
+    """Genera insights automáticos de negocio (mínimo 8)."""
     insights = []
 
     # 1. Concentración por cadena: si top 1 cadena > 35% del total
@@ -920,7 +964,7 @@ def generate_insights(chain_sales, by_division, velocity, stock, pareto, price, 
             chain_data = next((c for c in chain_sales if c["chain"] == oos_chain["chain"]), None)
             if chain_data:
                 chain_pct = round(chain_data["units"] / total_units * 100, 1) if total_units > 0 else 0
-                if chain_pct > 15 and oos_chain["oosRate"] > 8:
+                if chain_pct > 10 and oos_chain["oosRate"] > 8:
                     insights.append({
                         "type": "danger",
                         "category": "oos",
@@ -949,17 +993,18 @@ def generate_insights(chain_sales, by_division, velocity, stock, pareto, price, 
                     "value": vd["trend"]
                 })
 
-    # 4. Velocidad por cadena
+    # 4. Velocidad por cadena (top desaceleraciones)
     if velocity.get("velocityByChain"):
-        for vc in velocity["velocityByChain"]:
-            if vc["trend"] <= -10:
-                insights.append({
-                    "type": "warning",
-                    "category": "velocidad",
-                    "title": "Cadena desacelerando",
-                    "text": f"{vc['chain']} bajó {abs(vc['trend'])}% en und/día. Revisar cobertura y stock.",
-                    "value": vc["trend"]
-                })
+        decel = sorted([vc for vc in velocity["velocityByChain"] if vc["trend"] <= -10],
+                       key=lambda x: x["trend"])
+        for vc in decel[:3]:
+            insights.append({
+                "type": "warning",
+                "category": "velocidad",
+                "title": "Cadena desacelerando",
+                "text": f"{vc['chain']} bajó {abs(vc['trend'])}% en und/día. Revisar cobertura y stock.",
+                "value": vc["trend"]
+            })
 
     # 5. Pareto: alta concentración en pocas tiendas
     if pareto.get("storeConcentration"):
@@ -973,21 +1018,115 @@ def generate_insights(chain_sales, by_division, velocity, stock, pareto, price, 
                 "value": top10
             })
 
-    # 6. División con bajo precio promedio vs resto
-    if price.get("byDivision") and len(price["byDivision"]) > 1:
-        avg_all = sum(d["avgB2B"] for d in price["byDivision"]) / len(price["byDivision"])
-        for pd in price["byDivision"]:
-            if pd["avgB2B"] < avg_all * 0.5 and pd["units"] > 500:
+    # 6. OOS global alto
+    if stock and stock.get("oosRate", 0) > 10:
+        insights.append({
+            "type": "danger",
+            "category": "oos",
+            "title": "Quiebre alto",
+            "text": f"OOS global en {stock['oosRate']}%. {stock.get('totalOOS', 0):,} registros en quiebre de {stock.get('totalSKUs', 0):,} monitoreados.",
+            "value": stock["oosRate"]
+        })
+
+    # 7. División con mayor crecimiento en velocidad
+    if velocity.get("velocityByDivision"):
+        top_accel = max(velocity["velocityByDivision"], key=lambda x: x.get("trend", 0), default=None)
+        if top_accel and top_accel.get("trend", 0) >= 5 and top_accel not in [
+            i for i in insights if i.get("category") == "velocidad"]:
+            insights.append({
+                "type": "success",
+                "category": "velocidad",
+                "title": "Mejor rendimiento",
+                "text": f"{top_accel['division']} lidera crecimiento con +{top_accel['trend']}% en velocidad de venta.",
+                "value": top_accel["trend"]
+            })
+
+    # 8. Top cadena por volumen
+    if chain_sales and len(chain_sales) >= 3:
+        top3 = chain_sales[:3]
+        pct_top3 = round(sum(c["units"] for c in top3) / total_units * 100, 1) if total_units > 0 else 0
+        insights.append({
+            "type": "info",
+            "category": "distribucion",
+            "title": "Top 3 cadenas",
+            "text": f"{top3[0]['chain']}, {top3[1]['chain']} y {top3[2]['chain']} suman {pct_top3}% del sell out total.",
+            "value": pct_top3
+        })
+
+    # 9. Cadena con 0 stock (todo OOS)
+    if stock and stock.get("oosByChain"):
+        critical_oos = [c for c in stock["oosByChain"] if c["oosRate"] > 20]
+        for co in critical_oos[:2]:
+            insights.append({
+                "type": "danger",
+                "category": "oos",
+                "title": "OOS crítico",
+                "text": f"{co['chain']} tiene {co['oosRate']}% de quiebre. {co.get('oosSKUs', 0)} SKUs sin stock.",
+                "value": co["oosRate"]
+            })
+
+    # 10. División dominante: si una división > 50% del total
+    if by_division and len(by_division) > 1:
+        total_div_units = sum(d["units"] for d in by_division)
+        if total_div_units > 0:
+            top_div = by_division[0]
+            top_pct = round(top_div["units"] / total_div_units * 100, 1)
+            if top_pct > 50:
                 insights.append({
                     "type": "info",
-                    "category": "pricing",
-                    "title": "Precio bajo",
-                    "text": f"{pd['division']} tiene precio promedio ${pd['avgB2B']:,} CLP, {round(pd['avgB2B']/avg_all*100)}% del promedio general. Evaluar mix de productos.",
-                    "value": pd["avgB2B"]
+                    "category": "mix",
+                    "title": "División dominante",
+                    "text": f"{top_div['division']} representa {top_pct}% del mix. Oportunidad de diversificación en otras categorías.",
+                    "value": top_pct
                 })
 
-    # 7. División dominante por cadena (>60% del mix)
-    # Skip if not enough data
+    # 11. Tiendas sin stock (ranking con stockUnits=0 pero con venta)
+    if ranking_by_chain_store:
+        stores_no_stock = 0
+        stores_total = 0
+        for stores in ranking_by_chain_store.values():
+            for s in stores:
+                stores_total += 1
+                if s.get("stockUnits", 0) == 0 and s.get("units", 0) > 0:
+                    stores_no_stock += 1
+        if stores_no_stock > 0 and stores_total > 0:
+            pct_no_stock = round(stores_no_stock / stores_total * 100, 1)
+            if pct_no_stock > 5:
+                insights.append({
+                    "type": "warning",
+                    "category": "stock",
+                    "title": "Tiendas sin stock",
+                    "text": f"{stores_no_stock} tiendas ({pct_no_stock}%) con venta activa pero sin stock registrado. Revisar reposición.",
+                    "value": pct_no_stock
+                })
+
+    # Ensure minimum 8 insights — add filler context insights if needed
+    if len(insights) < 8 and chain_sales:
+        # Cadena con menor participación
+        if len(chain_sales) >= 5:
+            bottom = chain_sales[-1]
+            bottom_pct = round(bottom["units"] / total_units * 100, 2) if total_units > 0 else 0
+            insights.append({
+                "type": "info",
+                "category": "distribucion",
+                "title": "Menor participación",
+                "text": f"{bottom['chain']} tiene solo {bottom_pct}% del sell out. Evaluar potencial o redistribuir esfuerzo.",
+                "value": bottom_pct
+            })
+
+    if len(insights) < 8 and by_division and len(by_division) >= 2:
+        # Segunda división
+        second = by_division[1]
+        total_div = sum(d["units"] for d in by_division)
+        if total_div > 0:
+            pct2 = round(second["units"] / total_div * 100, 1)
+            insights.append({
+                "type": "info",
+                "category": "mix",
+                "title": "Segunda división",
+                "text": f"{second['division']} es la segunda categoría con {pct2}% del mix ({second['units']:,} und).",
+                "value": pct2
+            })
 
     return sorted(insights, key=lambda x: {"danger": 0, "warning": 1, "info": 2, "success": 3}.get(x["type"], 4))
 

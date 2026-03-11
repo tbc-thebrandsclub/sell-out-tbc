@@ -543,16 +543,24 @@ function getFilteredData() {
   // ── Filtrar stock OOS ──
   let stock = src.stock ? { ...src.stock } : null;
   if (stock) {
-    if (f.division) {
+    let filteredChains = stock.oosByChain || [];
+    let filteredDivs = stock.oosByDivision || [];
+    let filteredLics = stock.oosByLicense || [];
+    if (f.chain) filteredChains = filteredChains.filter(d => d.chain === f.chain);
+    if (f.division) filteredDivs = filteredDivs.filter(d => d.division === f.division);
+    // Recalculate totals from filtered arrays when any filter is active
+    if (f.chain || f.division) {
+      const base = f.chain ? filteredChains : filteredDivs;
+      const totalSKUs = base.reduce((s, d) => s + d.totalSKUs, 0);
+      const totalOOS = base.reduce((s, d) => s + d.oosSKUs, 0);
       stock = {
         ...stock,
-        oosByDivision: (stock.oosByDivision || []).filter(d => d.division === f.division),
-        oosByChain: f.chain ? (stock.oosByChain || []).filter(d => d.chain === f.chain) : stock.oosByChain,
-      };
-    } else if (f.chain) {
-      stock = {
-        ...stock,
-        oosByChain: (stock.oosByChain || []).filter(d => d.chain === f.chain),
+        oosByChain: filteredChains,
+        oosByDivision: filteredDivs,
+        oosByLicense: filteredLics,
+        totalSKUs,
+        totalOOS,
+        oosRate: totalSKUs > 0 ? Math.round(totalOOS / totalSKUs * 1000) / 10 : 0,
       };
     }
   }
@@ -1138,8 +1146,6 @@ function renderStockSection(data) {
   if (skusEl) skusEl.textContent = s.totalSKUs.toLocaleString('es-CL');
   // Charts
   renderOOSByChainChart(s);
-  renderOOSByLicenseChart(s);
-  renderOOSHeatmap(s);
   renderOOSSeverityDonut(s);
 }
 
@@ -1164,8 +1170,6 @@ function renderOOSGauge(stock) {
     card.style.setProperty('--gauge-glow', `hsla(${hue}, 80%, 50%, 0.08)`);
     if (card.querySelector('::before')) card.style.background = '';
   }
-  // Gauge arc colors
-  const gaugeColors = ['#34d399', '#fbbf24', '#f97316', '#ef4444'];
   const remaining = 100 - rate;
   chartInstances.oosGauge = new Chart(ctx, {
     type: 'doughnut',
@@ -1251,125 +1255,23 @@ function renderOOSByChainChart(stock) {
   });
 }
 
-function renderOOSByLicenseChart(stock) {
-  const ctx = document.getElementById("chart-oos-license");
-  if (!ctx) return;
-  if (chartInstances.oosLicense) chartInstances.oosLicense.destroy();
-  const lics = (stock.oosByLicense || []).slice(0, 10);
-  if (!lics.length) return;
-  // Bubble chart: x=oosRate, y=totalSKUs, r=oosSKUs
-  const maxOOS = Math.max(...lics.map(l => l.oosSKUs));
-  const bubbleLabelPlugin = {
-    id: 'bubbleLabels',
-    afterDatasetsDraw(chart) {
-      const meta = chart.getDatasetMeta(0);
-      const ctx2 = chart.ctx;
-      ctx2.save();
-      ctx2.font = '600 9px Nunito, Inter, sans-serif';
-      ctx2.fillStyle = '#f1f5f9';
-      ctx2.textAlign = 'center';
-      ctx2.textBaseline = 'middle';
-      meta.data.forEach((point, i) => {
-        const label = chart.data.datasets[0].data[i].label || '';
-        if (label.length <= 14 && chart.data.datasets[0].data[i].r >= 8) {
-          ctx2.fillText(label, point.x, point.y);
-        }
-      });
-      ctx2.restore();
-    }
-  };
-  chartInstances.oosLicense = new Chart(ctx, {
-    type: 'bubble',
-    data: {
-      datasets: [{
-        label: 'Licencias',
-        data: lics.map(l => ({
-          x: l.oosRate,
-          y: l.totalSKUs,
-          r: Math.max(6, Math.sqrt(l.oosSKUs / (maxOOS || 1)) * 25),
-          label: l.license
-        })),
-        backgroundColor: lics.map(l => oosColor(l.oosRate)),
-        borderColor: 'rgba(255,255,255,0.15)',
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      scales: {
-        x: {
-          title: { display: true, text: '% Quiebre', color: '#64748b', font: { size: 11 } },
-          min: 0,
-          grid: { color: 'rgba(148,163,184,0.06)' },
-          ticks: { color: '#64748b' }
-        },
-        y: {
-          title: { display: true, text: 'SKUs Totales', color: '#64748b', font: { size: 11 } },
-          grid: { color: 'rgba(148,163,184,0.06)' },
-          ticks: { color: '#64748b' }
-        }
-      },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
-          borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
-          callbacks: {
-            title: () => '',
-            label: (c) => {
-              const l = lics[c.dataIndex];
-              return [` ${l.license}`, ` OOS: ${l.oosRate}% (${l.oosSKUs} de ${l.totalSKUs} SKUs)`];
-            }
-          }
-        }
-      }
-    },
-    plugins: [bubbleLabelPlugin]
-  });
-}
-
-function renderOOSHeatmap(stock) {
-  const container = document.getElementById('oos-heatmap');
-  if (!container) return;
-  const chains = [...stock.oosByChain].sort((a, b) => b.oosRate - a.oosRate);
-  const maxSKUs = Math.max(...chains.map(c => c.totalSKUs));
-  container.innerHTML = chains.map(c => {
-    const pct = c.oosRate;
-    const sev = oosSeverity(pct);
-    const hue = pct >= 30 ? 0 : pct >= 15 ? 25 : pct >= 5 ? 45 : 150;
-    const sat = Math.min(90, 40 + pct);
-    const barWidth = (c.totalSKUs / maxSKUs) * 100;
-    return `<div class="heatmap-row" data-severity="${sev}">
-      <div class="heatmap-chain">${c.chain}</div>
-      <div class="heatmap-rate-cell">
-        <div class="heatmap-rate-bg" style="background:hsla(${hue},${sat}%,50%,0.15);width:${Math.min(pct * 2.5, 100)}%"></div>
-        <span class="heatmap-rate-value">${pct}%</span>
-      </div>
-      <div class="heatmap-bar-cell">
-        <div class="heatmap-bar" style="width:${barWidth}%;background:hsla(${hue},${sat}%,50%,0.4)"></div>
-        <span class="heatmap-bar-label">${c.oosSKUs.toLocaleString('es-CL')} / ${c.totalSKUs.toLocaleString('es-CL')} SKUs</span>
-      </div>
-      <div class="heatmap-severity-dot severity-${sev}"></div>
-    </div>`;
-  }).join('');
-}
-
 function renderOOSSeverityDonut(stock) {
   const ctx = document.getElementById('chart-oos-severity');
   if (!ctx) return;
   if (chartInstances.oosSeverity) chartInstances.oosSeverity.destroy();
   const chains = stock.oosByChain || [];
   const buckets = [
-    { label: 'Critico (>30%)', count: 0, skus: 0, color: 'rgba(239,68,68,0.8)' },
-    { label: 'Riesgo (15-30%)', count: 0, skus: 0, color: 'rgba(249,115,22,0.75)' },
-    { label: 'Alerta (5-15%)', count: 0, skus: 0, color: 'rgba(251,191,36,0.7)' },
-    { label: 'Sano (<5%)', count: 0, skus: 0, color: 'rgba(52,211,153,0.65)' }
+    { label: 'Critico (>30%)', chains: [], skus: 0, color: 'rgba(239,68,68,0.8)', dot: '#ef4444' },
+    { label: 'Riesgo (15-30%)', chains: [], skus: 0, color: 'rgba(249,115,22,0.75)', dot: '#f97316' },
+    { label: 'Alerta (5-15%)', chains: [], skus: 0, color: 'rgba(251,191,36,0.7)', dot: '#fbbf24' },
+    { label: 'Sano (<5%)', chains: [], skus: 0, color: 'rgba(52,211,153,0.65)', dot: '#34d399' }
   ];
   chains.forEach(c => {
     const i = c.oosRate >= 30 ? 0 : c.oosRate >= 15 ? 1 : c.oosRate >= 5 ? 2 : 3;
-    buckets[i].count++;
+    buckets[i].chains.push({ name: c.chain, rate: c.oosRate });
     buckets[i].skus += c.totalSKUs;
   });
+  // Donut chart
   const countEl = document.getElementById('oos-chain-count');
   if (countEl) countEl.textContent = chains.length;
   chartInstances.oosSeverity = new Chart(ctx, {
@@ -1377,7 +1279,7 @@ function renderOOSSeverityDonut(stock) {
     data: {
       labels: buckets.map(b => b.label),
       datasets: [{
-        data: buckets.map(b => b.count),
+        data: buckets.map(b => b.chains.length),
         backgroundColor: buckets.map(b => b.color),
         borderColor: 'rgba(10,15,30,0.8)',
         borderWidth: 2,
@@ -1389,21 +1291,35 @@ function renderOOSSeverityDonut(stock) {
       responsive: true, maintainAspectRatio: false,
       cutout: '65%',
       plugins: {
-        legend: {
-          position: 'bottom',
-          labels: { color: '#94a3b8', font: { size: 10 }, padding: 10, usePointStyle: true, pointStyle: 'circle' }
-        },
+        legend: { display: false },
         tooltip: {
           backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
           borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
           callbacks: {
-            label: (c) => { const b = buckets[c.dataIndex]; return ` ${b.count} cadenas (${b.skus.toLocaleString('es-CL')} SKUs)`; }
+            label: (c) => {
+              const b = buckets[c.dataIndex];
+              return [` ${b.chains.length} cadenas (${b.skus.toLocaleString('es-CL')} SKUs)`, ...b.chains.map(ch => `  ${ch.name}: ${ch.rate}%`)];
+            }
           }
         }
       },
       animation: { animateRotate: true, duration: 1200 }
     }
   });
+  // Detail panel next to donut
+  const detail = document.getElementById('oos-severity-detail');
+  if (detail) {
+    detail.innerHTML = buckets.filter(b => b.chains.length > 0).map(b => `
+      <div class="severity-bucket">
+        <div class="severity-bucket-header">
+          <div class="severity-bucket-dot" style="background:${b.dot}"></div>
+          <span class="severity-bucket-label">${b.label}</span>
+          <span class="severity-bucket-count">${b.chains.length} cadena${b.chains.length !== 1 ? 's' : ''}</span>
+        </div>
+        <div class="severity-bucket-chains">${b.chains.sort((a, c) => c.rate - a.rate).map(ch => `${ch.name} <span style="color:${b.dot};font-weight:700">${ch.rate}%</span>`).join(' · ')}</div>
+      </div>
+    `).join('');
+  }
 }
 
 // ══════════════════════════════════════════════════════════
@@ -1764,50 +1680,40 @@ function renderPriceDivisionChart(data) {
 
 // ── OOS by Division Chart ───────────────────────────────
 function renderOOSDivisionChart(data) {
-  const ctx = document.getElementById("chart-oos-division");
-  if (!ctx || !data.stock?.oosByDivision) return;
-  if (chartInstances.oosDiv) chartInstances.oosDiv.destroy();
+  const container = document.getElementById("oos-division-table");
+  if (!container || !data.stock?.oosByDivision) return;
   const divs = data.stock.oosByDivision.filter(d => d.division !== 'Sin Clasificar').sort((a, b) => b.oosRate - a.oosRate);
-  const divColors = [
-    'rgba(248,113,113,0.7)', 'rgba(249,115,22,0.7)', 'rgba(251,191,36,0.7)',
-    'rgba(52,211,153,0.7)', 'rgba(36,159,252,0.7)', 'rgba(139,92,246,0.7)'
-  ];
-  chartInstances.oosDiv = new Chart(ctx, {
-    type: "polarArea",
-    data: {
-      labels: divs.map(d => d.division),
-      datasets: [{
-        data: divs.map(d => d.oosRate),
-        backgroundColor: divs.map((_, i) => divColors[i % divColors.length]),
-        borderColor: divs.map((_, i) => divColors[i % divColors.length].replace('0.7', '1')),
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true, maintainAspectRatio: false,
-      scales: {
-        r: {
-          beginAtZero: true,
-          ticks: { color: '#64748b', backdropColor: 'transparent', font: { size: 9 } },
-          grid: { color: 'rgba(148,163,184,0.08)' }
-        }
-      },
-      plugins: {
-        legend: {
-          position: 'bottom',
-          labels: { color: '#94a3b8', font: { size: 10 }, padding: 10, usePointStyle: true, pointStyle: 'rectRounded' }
-        },
-        tooltip: {
-          backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
-          borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
-          callbacks: {
-            label: (c) => { const d = divs[c.dataIndex]; return ` ${d.division}: ${d.oosRate}% (${d.oosSKUs.toLocaleString('es-CL')} SKUs)`; }
-          }
-        }
-      },
-      animation: { animateRotate: true, duration: 1000 }
-    }
-  });
+  if (!divs.length) { container.innerHTML = '<p style="color:var(--text-muted);padding:1rem;font-size:0.8rem">Sin datos</p>'; return; }
+  const maxRate = Math.max(...divs.map(d => d.oosRate));
+  const totSKUs = divs.reduce((s, d) => s + d.totalSKUs, 0);
+  const totOOS = divs.reduce((s, d) => s + d.oosSKUs, 0);
+  const totRate = totSKUs > 0 ? Math.round(totOOS / totSKUs * 1000) / 10 : 0;
+  container.innerHTML = `
+    <table class="oos-div-table">
+      <thead><tr><th>Division</th><th>% Quiebre</th><th>SKUs OOS</th><th>SKUs Total</th><th>Severidad</th></tr></thead>
+      <tbody>
+        ${divs.map(d => {
+          const sev = oosSeverity(d.oosRate);
+          const sevLabel = d.oosRate >= 30 ? 'Critico' : d.oosRate >= 15 ? 'Riesgo' : d.oosRate >= 5 ? 'Alerta' : 'Sano';
+          const barW = maxRate > 0 ? (d.oosRate / maxRate * 100) : 0;
+          const color = oosColor(d.oosRate);
+          return `<tr>
+            <td style="font-weight:600">${d.division}</td>
+            <td class="oos-bar-cell"><div class="oos-bar-bg" style="width:${barW}%;background:${color}"></div><span style="position:relative;z-index:1">${d.oosRate}%</span></td>
+            <td>${d.oosSKUs.toLocaleString('es-CL')}</td>
+            <td>${d.totalSKUs.toLocaleString('es-CL')}</td>
+            <td><span style="color:${color};font-weight:700;font-size:0.68rem">${sevLabel}</span></td>
+          </tr>`;
+        }).join('')}
+      </tbody>
+      <tfoot><tr class="oos-div-total-row">
+        <td>TOTAL</td>
+        <td>${totRate}%</td>
+        <td>${totOOS.toLocaleString('es-CL')}</td>
+        <td>${totSKUs.toLocaleString('es-CL')}</td>
+        <td></td>
+      </tr></tfoot>
+    </table>`;
 }
 
 // ── Unclassified SKUs Table ─────────────────────────────

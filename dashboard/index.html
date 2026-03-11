@@ -179,14 +179,11 @@
           <div class="oos-mini-kpi-bar"><div class="oos-mini-kpi-fill" id="stock-skus-fill" style="width:100%"></div></div>
         </div>
       </div>
-      <!-- Row 2: Lollipop + Polar Area -->
+      <!-- Row 2: Lollipop + Division Table -->
       <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container" style="height:380px"><canvas id="chart-oos-chain"></canvas></div></div>
-      <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Division</div><div class="chart-container" style="height:380px"><canvas id="chart-oos-division"></canvas></div></div>
-      <!-- Row 3: Risk Heatmap (full width) -->
-      <div class="chart-card oos-heatmap-card"><div class="chart-title">Mapa de Riesgo por Cadena <span class="oos-chart-subtitle">Severidad + Volumen SKUs</span></div><div class="oos-heatmap" id="oos-heatmap"></div></div>
-      <!-- Row 4: Bubble + Donut -->
-      <div class="chart-card oos-chart-half"><div class="chart-title">Riesgo por Licencia (Top 10)</div><div class="chart-container" style="height:300px"><canvas id="chart-oos-license"></canvas></div></div>
-      <div class="chart-card oos-chart-half" style="position:relative"><div class="chart-title">Distribucion de Severidad</div><div class="chart-container" style="height:300px"><canvas id="chart-oos-severity"></canvas></div><div class="donut-center"><span class="donut-center-value" id="oos-chain-count">0</span><span class="donut-center-label">Cadenas</span></div></div>
+      <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Division</div><div id="oos-division-table"></div></div>
+      <!-- Row 3: Severity Donut -->
+      <div class="chart-card oos-chart-full" style="position:relative"><div class="chart-title">Distribucion de Severidad</div><div style="display:grid;grid-template-columns:300px 1fr;gap:1rem;align-items:center"><div class="chart-container" style="height:280px"><canvas id="chart-oos-severity"></canvas></div><div id="oos-severity-detail"></div></div></div>
     </div>
 
     <div class="section-header"><div class="section-title">Frescura de Datos por Cadena</div><span class="section-badge badge-pending">IV API</span></div>

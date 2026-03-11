@@ -146,11 +146,11 @@
         <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-total">0</div><div class="sellout-kpi-label">Stock Total (Und.)</div></div>
         <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-skus">0</div><div class="sellout-kpi-label">SKUs Monitoreados</div></div>
       </div>
-      <!-- Row 2: Lollipop + Division Table -->
-      <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container" style="height:380px"><canvas id="chart-oos-chain"></canvas></div></div>
-      <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Division</div><div id="oos-division-table"></div></div>
-      <!-- Row 3: Severity Donut -->
-      <div class="chart-card oos-chart-full" style="position:relative"><div class="chart-title">Distribucion de Severidad</div><div style="display:grid;grid-template-columns:300px 1fr;gap:1rem;align-items:center"><div class="chart-container" style="height:280px"><canvas id="chart-oos-severity"></canvas></div><div id="oos-severity-detail"></div></div></div>
+      <!-- Row 2: Quiebre por Cadena (1/3) + Severidad (2/3) -->
+      <div class="chart-card oos-chart-third"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container" style="height:380px"><canvas id="chart-oos-chain"></canvas></div></div>
+      <div class="chart-card oos-chart-twothirds" style="position:relative"><div class="chart-title">Distribucion de Severidad</div><div style="display:grid;grid-template-columns:260px 1fr;gap:1rem;align-items:center"><div class="chart-container" style="height:340px"><canvas id="chart-oos-severity"></canvas></div><div id="oos-severity-detail"></div></div></div>
+      <!-- Row 3: Division Table -->
+      <div class="chart-card oos-chart-full"><div class="chart-title">% Quiebre por Division</div><div id="oos-division-table"></div></div>
     </div>
 
     <div class="section-header"><div class="section-title">Frescura de Datos por Cadena</div><span class="section-badge badge-pending">IV API</span></div>

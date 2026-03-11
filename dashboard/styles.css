@@ -863,7 +863,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .chart-container {
   position: relative;
-  height: 260px;
+  height: 320px;
 }
 
 /* ── Store Table ───────────────────────────────────────── */
@@ -871,8 +871,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  overflow: hidden;
+  overflow-x: auto;
   backdrop-filter: blur(10px);
+}
+.ranking-table {
+  min-width: 1400px;
 }
 
 .data-table {
@@ -1188,12 +1191,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* ── OOS Section Grid ─────────────────────────────────── */
 .oos-section-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
+.oos-gauge-card { grid-column: span 5; }
 .oos-kpi-row {
-  grid-column: span 2;
+  grid-column: span 7;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1203,7 +1207,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 0.6rem 1rem;
   min-height: auto;
 }
-.oos-chart-half { grid-column: span 2; }
+.oos-chart-half { grid-column: span 6; }
+.oos-chart-third { grid-column: span 4; }
+.oos-chart-twothirds { grid-column: span 8; }
 .oos-chart-full { grid-column: 1 / -1; }
 .oos-heatmap-card { grid-column: 1 / -1; }
 
@@ -1558,7 +1564,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (max-width: 768px) {
   .oos-section-grid { grid-template-columns: 1fr; }
-  .oos-gauge-card, .oos-kpi-stack, .oos-chart-half, .oos-heatmap-card { grid-column: 1 / -1; }
+  .oos-gauge-card, .oos-kpi-stack, .oos-kpi-row, .oos-chart-half, .oos-chart-third, .oos-chart-twothirds, .oos-heatmap-card { grid-column: 1 / -1; }
   .heatmap-row { grid-template-columns: 90px 80px 1fr 16px; }
 }
 

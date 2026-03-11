@@ -663,12 +663,41 @@ function getFilteredData() {
     }
     if (relevantLics) {
       filteredLics = filteredLics.filter(d => relevantLics.has(d.license));
+      // Recalculate oosByDivision from filtered licenses using licenseDivisionBreakdown
+      const licDivBk = src.licenseDivisionBreakdown || {};
+      const divAgg = {};
+      filteredLics.forEach(licRow => {
+        const divMap = licDivBk[licRow.license];
+        if (!divMap) {
+          // No breakdown — assign all to 'Sin Clasificar'
+          const dk = 'Sin Clasificar';
+          if (!divAgg[dk]) divAgg[dk] = { division: dk, totalSKUs: 0, oosSKUs: 0 };
+          divAgg[dk].totalSKUs += licRow.totalSKUs;
+          divAgg[dk].oosSKUs += licRow.oosSKUs;
+        } else {
+          const totalPct = Object.values(divMap).reduce((s, v) => s + (v.pct || 0), 0) || 100;
+          Object.entries(divMap).forEach(([div, v]) => {
+            const ratio = (v.pct || 0) / totalPct;
+            if (!divAgg[div]) divAgg[div] = { division: div, totalSKUs: 0, oosSKUs: 0 };
+            divAgg[div].totalSKUs += Math.round(licRow.totalSKUs * ratio);
+            divAgg[div].oosSKUs += Math.round(licRow.oosSKUs * ratio);
+          });
+        }
+      });
+      filteredDivs = Object.values(divAgg).map(d => ({
+        ...d, oosRate: d.totalSKUs > 0 ? Math.round(d.oosSKUs / d.totalSKUs * 1000) / 10 : 0
+      })).sort((a, b) => b.oosRate - a.oosRate);
+      if (f.divisions.length) {
+        const ds = new Set(f.divisions);
+        filteredDivs = filteredDivs.filter(d => ds.has(d.division));
+      }
     }
     const needsRecalc = f.chains.length || f.divisions.length || f.licenses.length || relevantLics;
     if (needsRecalc) {
-      // Priority: chain > division > license for KPI base
+      // Priority for KPI base: chain > license (when temporada/year/Q filtered) > division
       let base;
       if (f.chains.length) base = filteredChains;
+      else if (relevantLics || f.licenses.length) base = filteredLics;
       else if (f.divisions.length) base = filteredDivs;
       else base = filteredLics;
       const totalSKUs = base.reduce((s, d) => s + d.totalSKUs, 0);
@@ -1121,7 +1150,7 @@ function renderSelloutDailyChart(data) {
       ...chartOptionsLine("$CLP"),
       scales: {
         x: chartScaleX(),
-        y: { ...chartScaleY(), title: { display: true, text: "Venta CLP ($)", color: "#94a3b8" },
+        y: { ...chartScaleY(), beginAtZero: true, title: { display: true, text: "Venta CLP ($)", color: "#94a3b8" },
           ticks: { color: "#64748b", callback: v => v >= 1000000 ? (v/1000000).toFixed(1) + "M" : v >= 1000 ? (v/1000).toFixed(0) + "K" : v }
         }
       },
@@ -1145,7 +1174,7 @@ function renderSelloutByLicenseChart(data) {
     data: { labels: data.byLicense.map(l => l.license), datasets: [{ label: "Unidades", data: data.byLicense.map(l => l.units), backgroundColor: data.byLicense.map(l => l.color + "CC"), borderRadius: 4 }] },
     options: {
       ...chartOptionsBar("und"), indexAxis: "y", scales: { x: chartScaleX("Unidades"), y: chartScaleY() },
-      plugins: { ...chartOptionsBar("und").plugins, datalabels: { display: true, color: '#e2e8f0', font: { size: 9, weight: 'bold' }, anchor: 'end', align: 'end', formatter: (v) => fmtNum(v) } }
+      plugins: { ...chartOptionsBar("und").plugins, datalabels: { display: true, color: '#e2e8f0', font: { size: 9, weight: 'bold' }, anchor: 'end', align: 'end', formatter: (v) => v > 0 ? v.toLocaleString('es-CL') : '' } }
     }
   });
 }
@@ -1801,7 +1830,7 @@ function renderVelocityChart(data) {
         borderRadius: 4
       }]
     },
-    options: { ...chartOptionsBar("und/dia"), plugins: { legend: { display: false }, tooltip: { backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8", borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8, callbacks: { label: (ctx) => ` ${vel[ctx.dataIndex].unitsPerDay} und/día`, afterLabel: (ctx) => { const t = vel[ctx.dataIndex].trend; return `Tendencia: ${t > 0 ? '+' : ''}${t}% ${t >= 0 ? '▲' : '▼'}`; } } } } }
+    options: { ...chartOptionsBar("und/dia"), plugins: { legend: { display: false }, tooltip: { backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8", borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8, callbacks: { label: (ctx) => ` ${vel[ctx.dataIndex].unitsPerDay} und/día`, afterLabel: (ctx) => { const t = vel[ctx.dataIndex].trend; return `Tendencia: ${t > 0 ? '+' : ''}${t}% ${t >= 0 ? '▲' : '▼'}`; } } }, datalabels: { display: true, color: '#e2e8f0', font: { size: 9, weight: 'bold' }, anchor: 'end', align: 'end', formatter: (v) => v > 0 ? v.toLocaleString('es-CL') : '' } } }
   });
 }
 

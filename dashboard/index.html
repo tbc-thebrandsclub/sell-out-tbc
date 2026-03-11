@@ -137,20 +137,56 @@
 
     <!-- Stock & OOS -->
     <div class="section-header"><div class="section-title">Stock & Quiebres (OOS)</div><span class="section-badge badge-live">API InstoreView</span></div>
-    <div class="sellout-container">
-      <div class="sellout-kpi-row">
-        <div class="sellout-kpi"><div class="sellout-kpi-value" id="oos-rate">0%</div><div class="sellout-kpi-label">% Quiebre (OOS)</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" id="oos-skus">0</div><div class="sellout-kpi-label">SKUs en Quiebre</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-total">0</div><div class="sellout-kpi-label">Stock Total (Und.)</div></div>
-        <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-skus">0</div><div class="sellout-kpi-label">SKUs Monitoreados</div></div>
+    <div class="oos-section-grid">
+      <!-- Row 1: Gauge + KPI Stack -->
+      <div class="oos-gauge-card">
+        <canvas id="chart-oos-gauge"></canvas>
+        <div class="gauge-center-label">
+          <span class="gauge-value" id="oos-gauge-value">0%</span>
+          <span class="gauge-sublabel">Tasa de Quiebre</span>
+        </div>
+        <div class="severity-scale">
+          <div class="severity-segment" style="background:#34d399" data-label="Sano <5%"></div>
+          <div class="severity-segment" style="background:#fbbf24" data-label="Alerta 5-15%"></div>
+          <div class="severity-segment" style="background:#f97316" data-label="Riesgo 15-30%"></div>
+          <div class="severity-segment" style="background:#ef4444" data-label="Critico >30%"></div>
+          <div class="severity-marker" id="oos-severity-marker"></div>
+        </div>
       </div>
-      <div class="charts-grid">
-        <div class="chart-card"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container"><canvas id="chart-oos-chain"></canvas></div></div>
-        <div class="chart-card"><div class="chart-title">% Quiebre por Division</div><div class="chart-container" style="height:280px"><canvas id="chart-oos-division"></canvas></div></div>
+      <div class="oos-kpi-stack">
+        <div class="oos-mini-kpi" data-severity="danger">
+          <div class="oos-mini-kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+          <div class="oos-mini-kpi-content">
+            <div class="oos-mini-kpi-value" id="oos-skus">0</div>
+            <div class="oos-mini-kpi-label">SKUs en Quiebre</div>
+          </div>
+          <div class="oos-mini-kpi-bar"><div class="oos-mini-kpi-fill" id="oos-skus-fill"></div></div>
+        </div>
+        <div class="oos-mini-kpi" data-severity="success">
+          <div class="oos-mini-kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+          <div class="oos-mini-kpi-content">
+            <div class="oos-mini-kpi-value" id="stock-total">0</div>
+            <div class="oos-mini-kpi-label">Stock Total (Und.)</div>
+          </div>
+          <div class="oos-mini-kpi-bar"><div class="oos-mini-kpi-fill" id="stock-total-fill" style="width:100%"></div></div>
+        </div>
+        <div class="oos-mini-kpi" data-severity="info">
+          <div class="oos-mini-kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
+          <div class="oos-mini-kpi-content">
+            <div class="oos-mini-kpi-value" id="stock-skus">0</div>
+            <div class="oos-mini-kpi-label">SKUs Monitoreados</div>
+          </div>
+          <div class="oos-mini-kpi-bar"><div class="oos-mini-kpi-fill" id="stock-skus-fill" style="width:100%"></div></div>
+        </div>
       </div>
-      <div class="charts-grid" style="margin-top:1rem">
-        <div class="chart-card"><div class="chart-title">% Quiebre por Licencia (Top 20)</div><div class="chart-container" style="height:360px"><canvas id="chart-oos-license"></canvas></div></div>
-      </div>
+      <!-- Row 2: Lollipop + Polar Area -->
+      <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container" style="height:380px"><canvas id="chart-oos-chain"></canvas></div></div>
+      <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Division</div><div class="chart-container" style="height:380px"><canvas id="chart-oos-division"></canvas></div></div>
+      <!-- Row 3: Risk Heatmap (full width) -->
+      <div class="chart-card oos-heatmap-card"><div class="chart-title">Mapa de Riesgo por Cadena <span class="oos-chart-subtitle">Severidad + Volumen SKUs</span></div><div class="oos-heatmap" id="oos-heatmap"></div></div>
+      <!-- Row 4: Bubble + Donut -->
+      <div class="chart-card oos-chart-half"><div class="chart-title">Riesgo por Licencia (Top 10)</div><div class="chart-container" style="height:300px"><canvas id="chart-oos-license"></canvas></div></div>
+      <div class="chart-card oos-chart-half" style="position:relative"><div class="chart-title">Distribucion de Severidad</div><div class="chart-container" style="height:300px"><canvas id="chart-oos-severity"></canvas></div><div class="donut-center"><span class="donut-center-value" id="oos-chain-count">0</span><span class="donut-center-label">Cadenas</span></div></div>
     </div>
 
     <div class="section-header"><div class="section-title">Frescura de Datos por Cadena</div><span class="section-badge badge-pending">IV API</span></div>

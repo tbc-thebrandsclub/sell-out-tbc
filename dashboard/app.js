@@ -1108,16 +1108,84 @@ function renderSelloutTotalDailyChart(data) {
 }
 
 // ── Stock & OOS (Tab 1) ─────────────────────────────────
+// ── OOS Severity helper ──────────────────────────────────
+function oosColor(rate) {
+  if (rate >= 30) return 'rgba(239,68,68,0.85)';
+  if (rate >= 15) return 'rgba(249,115,22,0.8)';
+  if (rate >= 5)  return 'rgba(251,191,36,0.75)';
+  return 'rgba(52,211,153,0.7)';
+}
+function oosSeverity(rate) {
+  if (rate >= 30) return 'critical';
+  if (rate >= 15) return 'risk';
+  if (rate >= 5)  return 'alert';
+  return 'healthy';
+}
+
 function renderStockSection(data) {
   if (!data.stock || !data.stock.totalSKUs) return;
   const s = data.stock;
-  animateCounter("oos-rate", 0, s.oosRate * 10, "");
-  setTimeout(() => { const el = document.getElementById("oos-rate"); if (el) el.textContent = s.oosRate + "%"; }, 1300);
-  animateCounter("oos-skus", 0, s.totalOOS, "");
-  animateCounter("stock-total", 0, Math.round(s.totalStockUnits / 1000), "K");
-  animateCounter("stock-skus", 0, s.totalSKUs, "");
+  // Gauge
+  renderOOSGauge(s);
+  // Mini KPIs
+  const skuEl = document.getElementById("oos-skus");
+  if (skuEl) skuEl.textContent = s.totalOOS.toLocaleString('es-CL');
+  const fillEl = document.getElementById("oos-skus-fill");
+  if (fillEl) fillEl.style.width = Math.min(s.oosRate, 100) + '%';
+  const stockEl = document.getElementById("stock-total");
+  if (stockEl) stockEl.textContent = (s.totalStockUnits >= 1000 ? Math.round(s.totalStockUnits / 1000).toLocaleString('es-CL') + 'K' : s.totalStockUnits.toLocaleString('es-CL'));
+  const skusEl = document.getElementById("stock-skus");
+  if (skusEl) skusEl.textContent = s.totalSKUs.toLocaleString('es-CL');
+  // Charts
   renderOOSByChainChart(s);
   renderOOSByLicenseChart(s);
+  renderOOSHeatmap(s);
+  renderOOSSeverityDonut(s);
+}
+
+function renderOOSGauge(stock) {
+  const ctx = document.getElementById("chart-oos-gauge");
+  if (!ctx) return;
+  if (chartInstances.oosGauge) chartInstances.oosGauge.destroy();
+  const rate = stock.oosRate;
+  // Update center label
+  const valEl = document.getElementById("oos-gauge-value");
+  if (valEl) valEl.textContent = rate + '%';
+  // Update severity marker position (0-100% of bar width, mapped to 0-40%+ range)
+  const marker = document.getElementById("oos-severity-marker");
+  if (marker) {
+    const pct = Math.min(rate / 40, 1) * 100;
+    marker.style.left = `calc(${pct}% - 2px)`;
+  }
+  // Update glow color
+  const card = ctx.closest('.oos-gauge-card');
+  if (card) {
+    const hue = rate >= 30 ? 0 : rate >= 15 ? 25 : rate >= 5 ? 45 : 150;
+    card.style.setProperty('--gauge-glow', `hsla(${hue}, 80%, 50%, 0.08)`);
+    if (card.querySelector('::before')) card.style.background = '';
+  }
+  // Gauge arc colors
+  const gaugeColors = ['#34d399', '#fbbf24', '#f97316', '#ef4444'];
+  const remaining = 100 - rate;
+  chartInstances.oosGauge = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      datasets: [{
+        data: [rate, remaining],
+        backgroundColor: [oosColor(rate), 'rgba(30,41,59,0.3)'],
+        borderWidth: 0,
+        circumference: 180,
+        rotation: -90
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: '78%',
+      plugins: { legend: { display: false }, tooltip: { enabled: false } },
+      animation: { animateRotate: true, duration: 1500 }
+    }
+  });
 }
 
 function renderOOSByChainChart(stock) {
@@ -1125,13 +1193,61 @@ function renderOOSByChainChart(stock) {
   if (!ctx) return;
   if (chartInstances.oosChain) chartInstances.oosChain.destroy();
   const chains = [...stock.oosByChain].sort((a, b) => b.oosRate - a.oosRate);
+  // Lollipop: thin horizontal bars with dot plugin
+  const lollipopPlugin = {
+    id: 'lollipopDots',
+    afterDatasetsDraw(chart) {
+      const meta = chart.getDatasetMeta(0);
+      const ctx2 = chart.ctx;
+      meta.data.forEach((bar, i) => {
+        const color = chart.data.datasets[0].backgroundColor[i];
+        ctx2.save();
+        ctx2.shadowColor = color;
+        ctx2.shadowBlur = 8;
+        ctx2.beginPath();
+        ctx2.arc(bar.x, bar.y, 5, 0, Math.PI * 2);
+        ctx2.fillStyle = color;
+        ctx2.fill();
+        ctx2.restore();
+      });
+    }
+  };
   chartInstances.oosChain = new Chart(ctx, {
     type: "bar",
     data: {
       labels: chains.map(c => c.chain),
-      datasets: [{ label: "% OOS", data: chains.map(c => c.oosRate), backgroundColor: chains.map(c => c.oosRate > 10 ? "rgba(248,113,113,0.7)" : c.oosRate > 5 ? "rgba(251,191,36,0.7)" : "rgba(52,211,153,0.7)"), borderRadius: 4 }]
+      datasets: [{
+        label: "% OOS",
+        data: chains.map(c => c.oosRate),
+        backgroundColor: chains.map(c => oosColor(c.oosRate)),
+        barThickness: 2,
+        borderRadius: 0
+      }]
     },
-    options: { ...chartOptionsBar("%"), plugins: { legend: { display: false }, tooltip: { backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8", borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8, callbacks: { label: (ctx) => ` ${ctx.parsed.y}% quiebre`, afterLabel: (ctx) => { const c = chains[ctx.dataIndex]; return `${c.oosSKUs} de ${c.totalSKUs} SKUs`; } } } } }
+    options: {
+      indexAxis: 'y',
+      responsive: true, maintainAspectRatio: false,
+      scales: {
+        x: { ...chartScaleX('% OOS'), max: Math.max(...chains.map(c => c.oosRate)) * 1.2 },
+        y: { ...chartScaleY(), grid: { display: false } }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
+          borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
+          callbacks: {
+            label: (c) => {
+              const ch = chains[c.dataIndex];
+              const sev = ch.oosRate >= 30 ? 'CRITICO' : ch.oosRate >= 15 ? 'RIESGO' : ch.oosRate >= 5 ? 'ALERTA' : 'SANO';
+              return ` ${ch.oosRate}% quiebre  [${sev}]`;
+            },
+            afterLabel: (c) => { const ch = chains[c.dataIndex]; return ` ${ch.oosSKUs.toLocaleString('es-CL')} de ${ch.totalSKUs.toLocaleString('es-CL')} SKUs`; }
+          }
+        }
+      }
+    },
+    plugins: [lollipopPlugin]
   });
 }
 
@@ -1139,11 +1255,154 @@ function renderOOSByLicenseChart(stock) {
   const ctx = document.getElementById("chart-oos-license");
   if (!ctx) return;
   if (chartInstances.oosLicense) chartInstances.oosLicense.destroy();
-  const lics = stock.oosByLicense.slice(0, 20);
+  const lics = (stock.oosByLicense || []).slice(0, 10);
+  if (!lics.length) return;
+  // Bubble chart: x=oosRate, y=totalSKUs, r=oosSKUs
+  const maxOOS = Math.max(...lics.map(l => l.oosSKUs));
+  const bubbleLabelPlugin = {
+    id: 'bubbleLabels',
+    afterDatasetsDraw(chart) {
+      const meta = chart.getDatasetMeta(0);
+      const ctx2 = chart.ctx;
+      ctx2.save();
+      ctx2.font = '600 9px Nunito, Inter, sans-serif';
+      ctx2.fillStyle = '#f1f5f9';
+      ctx2.textAlign = 'center';
+      ctx2.textBaseline = 'middle';
+      meta.data.forEach((point, i) => {
+        const label = chart.data.datasets[0].data[i].label || '';
+        if (label.length <= 14 && chart.data.datasets[0].data[i].r >= 8) {
+          ctx2.fillText(label, point.x, point.y);
+        }
+      });
+      ctx2.restore();
+    }
+  };
   chartInstances.oosLicense = new Chart(ctx, {
-    type: "bar",
-    data: { labels: lics.map(l => l.license), datasets: [{ label: "% OOS", data: lics.map(l => l.oosRate), backgroundColor: lics.map(l => l.oosRate > 15 ? "rgba(248,113,113,0.7)" : l.oosRate > 8 ? "rgba(251,191,36,0.7)" : "rgba(52,211,153,0.7)"), borderRadius: 4 }] },
-    options: { ...chartOptionsBar("%"), indexAxis: "y", scales: { x: chartScaleX("% Quiebre"), y: chartScaleY() }, plugins: { legend: { display: false }, tooltip: { backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8", borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8, callbacks: { label: (ctx) => ` ${ctx.parsed.x}% quiebre`, afterLabel: (ctx) => `${lics[ctx.dataIndex].oosSKUs} de ${lics[ctx.dataIndex].totalSKUs} SKUs` } } } }
+    type: 'bubble',
+    data: {
+      datasets: [{
+        label: 'Licencias',
+        data: lics.map(l => ({
+          x: l.oosRate,
+          y: l.totalSKUs,
+          r: Math.max(6, Math.sqrt(l.oosSKUs / (maxOOS || 1)) * 25),
+          label: l.license
+        })),
+        backgroundColor: lics.map(l => oosColor(l.oosRate)),
+        borderColor: 'rgba(255,255,255,0.15)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      scales: {
+        x: {
+          title: { display: true, text: '% Quiebre', color: '#64748b', font: { size: 11 } },
+          min: 0,
+          grid: { color: 'rgba(148,163,184,0.06)' },
+          ticks: { color: '#64748b' }
+        },
+        y: {
+          title: { display: true, text: 'SKUs Totales', color: '#64748b', font: { size: 11 } },
+          grid: { color: 'rgba(148,163,184,0.06)' },
+          ticks: { color: '#64748b' }
+        }
+      },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
+          borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
+          callbacks: {
+            title: () => '',
+            label: (c) => {
+              const l = lics[c.dataIndex];
+              return [` ${l.license}`, ` OOS: ${l.oosRate}% (${l.oosSKUs} de ${l.totalSKUs} SKUs)`];
+            }
+          }
+        }
+      }
+    },
+    plugins: [bubbleLabelPlugin]
+  });
+}
+
+function renderOOSHeatmap(stock) {
+  const container = document.getElementById('oos-heatmap');
+  if (!container) return;
+  const chains = [...stock.oosByChain].sort((a, b) => b.oosRate - a.oosRate);
+  const maxSKUs = Math.max(...chains.map(c => c.totalSKUs));
+  container.innerHTML = chains.map(c => {
+    const pct = c.oosRate;
+    const sev = oosSeverity(pct);
+    const hue = pct >= 30 ? 0 : pct >= 15 ? 25 : pct >= 5 ? 45 : 150;
+    const sat = Math.min(90, 40 + pct);
+    const barWidth = (c.totalSKUs / maxSKUs) * 100;
+    return `<div class="heatmap-row" data-severity="${sev}">
+      <div class="heatmap-chain">${c.chain}</div>
+      <div class="heatmap-rate-cell">
+        <div class="heatmap-rate-bg" style="background:hsla(${hue},${sat}%,50%,0.15);width:${Math.min(pct * 2.5, 100)}%"></div>
+        <span class="heatmap-rate-value">${pct}%</span>
+      </div>
+      <div class="heatmap-bar-cell">
+        <div class="heatmap-bar" style="width:${barWidth}%;background:hsla(${hue},${sat}%,50%,0.4)"></div>
+        <span class="heatmap-bar-label">${c.oosSKUs.toLocaleString('es-CL')} / ${c.totalSKUs.toLocaleString('es-CL')} SKUs</span>
+      </div>
+      <div class="heatmap-severity-dot severity-${sev}"></div>
+    </div>`;
+  }).join('');
+}
+
+function renderOOSSeverityDonut(stock) {
+  const ctx = document.getElementById('chart-oos-severity');
+  if (!ctx) return;
+  if (chartInstances.oosSeverity) chartInstances.oosSeverity.destroy();
+  const chains = stock.oosByChain || [];
+  const buckets = [
+    { label: 'Critico (>30%)', count: 0, skus: 0, color: 'rgba(239,68,68,0.8)' },
+    { label: 'Riesgo (15-30%)', count: 0, skus: 0, color: 'rgba(249,115,22,0.75)' },
+    { label: 'Alerta (5-15%)', count: 0, skus: 0, color: 'rgba(251,191,36,0.7)' },
+    { label: 'Sano (<5%)', count: 0, skus: 0, color: 'rgba(52,211,153,0.65)' }
+  ];
+  chains.forEach(c => {
+    const i = c.oosRate >= 30 ? 0 : c.oosRate >= 15 ? 1 : c.oosRate >= 5 ? 2 : 3;
+    buckets[i].count++;
+    buckets[i].skus += c.totalSKUs;
+  });
+  const countEl = document.getElementById('oos-chain-count');
+  if (countEl) countEl.textContent = chains.length;
+  chartInstances.oosSeverity = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: buckets.map(b => b.label),
+      datasets: [{
+        data: buckets.map(b => b.count),
+        backgroundColor: buckets.map(b => b.color),
+        borderColor: 'rgba(10,15,30,0.8)',
+        borderWidth: 2,
+        hoverBorderColor: '#fff',
+        hoverBorderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      cutout: '65%',
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { color: '#94a3b8', font: { size: 10 }, padding: 10, usePointStyle: true, pointStyle: 'circle' }
+        },
+        tooltip: {
+          backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
+          borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
+          callbacks: {
+            label: (c) => { const b = buckets[c.dataIndex]; return ` ${b.count} cadenas (${b.skus.toLocaleString('es-CL')} SKUs)`; }
+          }
+        }
+      },
+      animation: { animateRotate: true, duration: 1200 }
+    }
   });
 }
 
@@ -1509,18 +1768,45 @@ function renderOOSDivisionChart(data) {
   if (!ctx || !data.stock?.oosByDivision) return;
   if (chartInstances.oosDiv) chartInstances.oosDiv.destroy();
   const divs = data.stock.oosByDivision.filter(d => d.division !== 'Sin Clasificar').sort((a, b) => b.oosRate - a.oosRate);
+  const divColors = [
+    'rgba(248,113,113,0.7)', 'rgba(249,115,22,0.7)', 'rgba(251,191,36,0.7)',
+    'rgba(52,211,153,0.7)', 'rgba(36,159,252,0.7)', 'rgba(139,92,246,0.7)'
+  ];
   chartInstances.oosDiv = new Chart(ctx, {
-    type: "bar",
+    type: "polarArea",
     data: {
       labels: divs.map(d => d.division),
       datasets: [{
-        label: "% OOS",
         data: divs.map(d => d.oosRate),
-        backgroundColor: divs.map(d => d.oosRate > 10 ? "rgba(248,113,113,0.7)" : d.oosRate > 5 ? "rgba(251,191,36,0.7)" : "rgba(52,211,153,0.7)"),
-        borderRadius: 4
+        backgroundColor: divs.map((_, i) => divColors[i % divColors.length]),
+        borderColor: divs.map((_, i) => divColors[i % divColors.length].replace('0.7', '1')),
+        borderWidth: 1
       }]
     },
-    options: { ...chartOptionsBar("%"), plugins: { legend: { display: false }, tooltip: { backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8", borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8, callbacks: { label: (ctx) => ` ${ctx.parsed.y}% quiebre`, afterLabel: (ctx) => `${divs[ctx.dataIndex].oosSKUs} de ${divs[ctx.dataIndex].totalSKUs} SKUs` } } } }
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      scales: {
+        r: {
+          beginAtZero: true,
+          ticks: { color: '#64748b', backdropColor: 'transparent', font: { size: 9 } },
+          grid: { color: 'rgba(148,163,184,0.08)' }
+        }
+      },
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: { color: '#94a3b8', font: { size: 10 }, padding: 10, usePointStyle: true, pointStyle: 'rectRounded' }
+        },
+        tooltip: {
+          backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8",
+          borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
+          callbacks: {
+            label: (c) => { const d = divs[c.dataIndex]; return ` ${d.division}: ${d.oosRate}% (${d.oosSKUs.toLocaleString('es-CL')} SKUs)`; }
+          }
+        }
+      },
+      animation: { animateRotate: true, duration: 1000 }
+    }
   });
 }
 

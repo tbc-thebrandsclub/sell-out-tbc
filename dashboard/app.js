@@ -265,8 +265,27 @@ function populateGlobalFilters() {
   const dateFrom = document.getElementById('filter-date-from');
   const dateTo = document.getElementById('filter-date-to');
   if (data.kpis.dateRange) {
-    dateFrom.value = data.kpis.dateRange.from;
-    dateTo.value = data.kpis.dateRange.to;
+    // Default: last complete Mon-Sun week relative to latest data date
+    const latest = new Date(data.kpis.dateRange.to + 'T12:00:00');
+    const dayOfWeek = latest.getDay(); // 0=Sun, 1=Mon, ...
+    // Find last Sunday (end of last complete week)
+    const lastSunday = new Date(latest);
+    lastSunday.setDate(latest.getDate() - (dayOfWeek === 0 ? 0 : dayOfWeek));
+    // Monday of that week
+    const lastMonday = new Date(lastSunday);
+    lastMonday.setDate(lastSunday.getDate() - 6);
+    // Ensure Monday is within data range
+    const earliest = new Date(data.kpis.dateRange.from + 'T12:00:00');
+    if (lastMonday >= earliest) {
+      dateFrom.value = lastMonday.toISOString().slice(0, 10);
+      dateTo.value = lastSunday.toISOString().slice(0, 10);
+    } else {
+      dateFrom.value = data.kpis.dateRange.from;
+      dateTo.value = data.kpis.dateRange.to;
+    }
+    // Store full range for reference
+    dateFrom.min = data.kpis.dateRange.from;
+    dateTo.max = data.kpis.dateRange.to;
   }
 
   const cb = onGlobalFilterChange;
@@ -663,30 +682,28 @@ function getFilteredData() {
     }
     if (relevantLics) {
       filteredLics = filteredLics.filter(d => relevantLics.has(d.license));
-      // Recalculate oosByDivision from filtered licenses using licenseDivisionBreakdown
+      // Recalculate oosByDivision proportionally using licenseDivisionBreakdown (has ALL licenses)
       const licDivBk = src.licenseDivisionBreakdown || {};
-      const divAgg = {};
-      filteredLics.forEach(licRow => {
-        const divMap = licDivBk[licRow.license];
-        if (!divMap) {
-          // No breakdown — assign all to 'Sin Clasificar'
-          const dk = 'Sin Clasificar';
-          if (!divAgg[dk]) divAgg[dk] = { division: dk, totalSKUs: 0, oosSKUs: 0 };
-          divAgg[dk].totalSKUs += licRow.totalSKUs;
-          divAgg[dk].oosSKUs += licRow.oosSKUs;
-        } else {
-          const totalPct = Object.values(divMap).reduce((s, v) => s + (v.pct || 0), 0) || 100;
-          Object.entries(divMap).forEach(([div, v]) => {
-            const ratio = (v.pct || 0) / totalPct;
-            if (!divAgg[div]) divAgg[div] = { division: div, totalSKUs: 0, oosSKUs: 0 };
-            divAgg[div].totalSKUs += Math.round(licRow.totalSKUs * ratio);
-            divAgg[div].oosSKUs += Math.round(licRow.oosSKUs * ratio);
-          });
-        }
+      const divRelevance = {}; // division → { relevant: units, total: units }
+      Object.entries(licDivBk).forEach(([lic, divs]) => {
+        Object.entries(divs).forEach(([div, data]) => {
+          if (!divRelevance[div]) divRelevance[div] = { relevant: 0, total: 0 };
+          divRelevance[div].total += data.units || 0;
+          if (relevantLics.has(lic)) divRelevance[div].relevant += data.units || 0;
+        });
       });
-      filteredDivs = Object.values(divAgg).map(d => ({
-        ...d, oosRate: d.totalSKUs > 0 ? Math.round(d.oosSKUs / d.totalSKUs * 1000) / 10 : 0
-      })).sort((a, b) => b.oosRate - a.oosRate);
+      filteredDivs = filteredDivs.map(d => {
+        const rel = divRelevance[d.division];
+        if (!rel || rel.total === 0) return null;
+        const ratio = rel.relevant / rel.total;
+        if (ratio === 0) return null;
+        return {
+          ...d,
+          totalSKUs: Math.round(d.totalSKUs * ratio),
+          oosSKUs: Math.round(d.oosSKUs * ratio),
+          oosRate: d.totalSKUs > 0 ? Math.round(Math.round(d.oosSKUs * ratio) / Math.max(1, Math.round(d.totalSKUs * ratio)) * 1000) / 10 : 0
+        };
+      }).filter(Boolean).sort((a, b) => b.oosRate - a.oosRate);
       if (f.divisions.length) {
         const ds = new Set(f.divisions);
         filteredDivs = filteredDivs.filter(d => ds.has(d.division));
@@ -1300,13 +1317,22 @@ function oosSeverity(rate) {
 function renderStockSection(data) {
   if (!data.stock || !data.stock.totalSKUs) return;
   const s = data.stock;
-  // Gauge
-  renderOOSGauge(s);
-  // Mini KPIs
+  // OOS Rate KPI + severity tag
+  const gaugeVal = document.getElementById("oos-gauge-value");
+  if (gaugeVal) gaugeVal.textContent = s.oosRate + '%';
+  const sevTag = document.getElementById("oos-severity-tag");
+  if (sevTag) {
+    const label = s.oosRate >= 30 ? 'CRITICO' : s.oosRate >= 15 ? 'RIESGO' : s.oosRate >= 5 ? 'ALERTA' : 'SANO';
+    const color = s.oosRate >= 30 ? '#ef4444' : s.oosRate >= 15 ? '#f97316' : s.oosRate >= 5 ? '#fbbf24' : '#34d399';
+    sevTag.textContent = label;
+    sevTag.style.background = color + '22';
+    sevTag.style.color = color;
+  }
+  // KPIs
   const skuEl = document.getElementById("oos-skus");
   if (skuEl) skuEl.textContent = s.totalOOS.toLocaleString('es-CL');
-const stockEl = document.getElementById("stock-total");
-  if (stockEl) stockEl.textContent = (s.totalStockUnits >= 1000 ? Math.round(s.totalStockUnits / 1000).toLocaleString('es-CL') + 'K' : s.totalStockUnits.toLocaleString('es-CL'));
+  const stockEl = document.getElementById("stock-total");
+  if (stockEl) stockEl.textContent = s.totalStockUnits.toLocaleString('es-CL');
   const skusEl = document.getElementById("stock-skus");
   if (skusEl) skusEl.textContent = s.totalSKUs.toLocaleString('es-CL');
   // Charts
@@ -1519,11 +1545,98 @@ function renderRankingPage() {
 }
 
 // ── Insights ────────────────────────────────────────────
+function generateDynamicInsights(data) {
+  const insights = [];
+  const byChain = data.byChain || [];
+  const byLicense = data.byLicense || [];
+  const byDivision = data.byDivision || [];
+  const stock = data.stock || {};
+  const vel = data.velocityMetrics?.velocityByChain || [];
+  const totalUnits = data.kpis?.totalUnits || 0;
+  const totalCLP = data.kpis?.totalCLP || 0;
+
+  // 1. Revenue risk: high-selling chains with high OOS
+  const oosByChain = stock.oosByChain || [];
+  byChain.forEach(ch => {
+    const oos = oosByChain.find(o => o.chain === ch.chain);
+    if (oos && oos.oosRate >= 10 && totalCLP > 0 && ch.clp / totalCLP >= 0.08) {
+      insights.push({ type: 'danger', title: 'RIESGO REVENUE',
+        text: `${ch.chain} aporta ${(ch.clp / totalCLP * 100).toFixed(1)}% de venta pero tiene ${oos.oosRate}% de quiebre. Impacto estimado en revenue.` });
+    }
+  });
+
+  // 2. OOS critico per chain
+  oosByChain.filter(c => c.oosRate >= 50).forEach(ch => {
+    insights.push({ type: 'danger', title: 'OOS CRITICO',
+      text: `${ch.chain} tiene ${ch.oosRate}% de quiebre. ${ch.oosSKUs.toLocaleString('es-CL')} SKUs sin stock.` });
+  });
+
+  // 3. Global OOS alert
+  if (stock.oosRate >= 10) {
+    insights.push({ type: 'warning', title: 'QUIEBRE ALTO',
+      text: `OOS global en ${stock.oosRate}%. ${(stock.totalOOS || 0).toLocaleString('es-CL')} registros en quiebre de ${(stock.totalSKUs || 0).toLocaleString('es-CL')} monitoreados.` });
+  }
+
+  // 4. Top 3 chains concentration
+  if (byChain.length >= 3 && totalCLP > 0) {
+    const top3 = byChain.slice(0, 3);
+    const top3Pct = (top3.reduce((s, c) => s + c.clp, 0) / totalCLP * 100).toFixed(1);
+    if (top3Pct >= 60) {
+      insights.push({ type: 'info', title: 'TOP 3 CADENAS',
+        text: `${top3.map(c => c.chain).join(', ')} suman ${top3Pct}% del sell out total.` });
+    }
+  }
+
+  // 5. Velocity: slowest chains
+  if (vel.length >= 3) {
+    const sorted = [...vel].sort((a, b) => a.unitsPerDay - b.unitsPerDay);
+    const slowest = sorted[0];
+    const fastest = sorted[sorted.length - 1];
+    if (slowest.unitsPerDay > 0 && fastest.unitsPerDay > 0) {
+      const ratio = fastest.unitsPerDay / slowest.unitsPerDay;
+      if (ratio >= 3) {
+        insights.push({ type: 'warning', title: 'BRECHA VELOCIDAD',
+          text: `${fastest.chain} vende ${fastest.unitsPerDay} und/día vs ${slowest.chain} con ${slowest.unitsPerDay} und/día (${ratio.toFixed(0)}x brecha).` });
+      }
+    }
+  }
+
+  // 6. Division insights
+  if (byDivision.length >= 2 && totalUnits > 0) {
+    const topDiv = byDivision[0];
+    insights.push({ type: 'info', title: 'DIVISION LIDER',
+      text: `${topDiv.division} lidera con ${topDiv.pctOfTotal}% del mix (${topDiv.units.toLocaleString('es-CL')} und, $${Math.round(topDiv.clp / 1e6)}M).` });
+  }
+
+  // 7. License concentration
+  if (byLicense.length >= 5 && totalUnits > 0) {
+    const top5Units = byLicense.slice(0, 5).reduce((s, l) => s + l.units, 0);
+    const top5Pct = (top5Units / totalUnits * 100).toFixed(1);
+    insights.push({ type: 'info', title: 'TOP 5 LICENCIAS',
+      text: `Las 5 licencias principales concentran ${top5Pct}% de las unidades vendidas.` });
+  }
+
+  // 8. Period summary
+  if (data.kpis?.numDays) {
+    const avgDay = Math.round(totalUnits / data.kpis.numDays);
+    const avgCLP = Math.round(totalCLP / data.kpis.numDays / 1e6 * 10) / 10;
+    insights.push({ type: 'success', title: 'RESUMEN PERIODO',
+      text: `${data.kpis.numDays} días | ${avgDay.toLocaleString('es-CL')} und/día promedio | $${avgCLP}M/día | ${data.kpis.uniqueStores} tiendas activas.` });
+  }
+
+  // Sort: danger > warning > info > success
+  return insights.sort((a, b) => {
+    const order = { danger: 0, warning: 1, info: 2, success: 3 };
+    return (order[a.type] ?? 4) - (order[b.type] ?? 4);
+  });
+}
+
 function renderInsights(data) {
   const grid = document.getElementById("insights-grid");
-  if (!grid || !data.insights) return;
+  if (!grid) return;
   grid.innerHTML = "";
-  data.insights.forEach(ins => {
+  const insights = generateDynamicInsights(data);
+  insights.forEach(ins => {
     const card = document.createElement("div");
     card.className = `insight-card ${ins.type}`;
     card.innerHTML = `
@@ -1534,7 +1647,7 @@ function renderInsights(data) {
       </div>`;
     grid.appendChild(card);
   });
-  if (data.insights.length === 0) {
+  if (insights.length === 0) {
     grid.innerHTML = '<div style="color:var(--text-muted);font-size:0.8rem;padding:1rem;">Sin alertas activas.</div>';
   }
 }

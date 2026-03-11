@@ -1195,17 +1195,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
-.oos-gauge-card { grid-column: span 5; }
-.oos-kpi-row {
-  grid-column: span 7;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0;
+.stock-kpi-strip {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }
-.oos-kpi-row .sellout-kpi {
-  padding: 0.6rem 1rem;
-  min-height: auto;
+.stock-kpi-oos {
+  position: relative;
+}
+.stock-kpi-severity {
+  display: inline-block;
+  margin-top: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 .oos-chart-half { grid-column: span 6; }
 .oos-chart-third { grid-column: span 4; }

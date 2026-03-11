@@ -126,22 +126,13 @@
     <!-- Stock & OOS -->
     <div class="section-header"><div class="section-title">Stock & Quiebres (OOS)</div><span class="section-badge badge-live">API InstoreView</span></div>
     <div class="oos-section-grid">
-      <!-- Row 1: Gauge + KPI Stack -->
-      <div class="oos-gauge-card">
-        <canvas id="chart-oos-gauge"></canvas>
-        <div class="gauge-center-label">
-          <span class="gauge-value" id="oos-gauge-value">0%</span>
-          <span class="gauge-sublabel">Tasa de Quiebre</span>
+      <!-- Row 1: KPI Strip (horizontal, executive) -->
+      <div class="stock-kpi-strip">
+        <div class="sellout-kpi stock-kpi-oos">
+          <div class="sellout-kpi-value"><span id="oos-gauge-value">0%</span></div>
+          <div class="sellout-kpi-label">Tasa de Quiebre</div>
+          <div class="stock-kpi-severity" id="oos-severity-tag">SANO</div>
         </div>
-        <div class="severity-scale">
-          <div class="severity-segment" style="background:#34d399" data-label="Sano <5%"></div>
-          <div class="severity-segment" style="background:#fbbf24" data-label="Alerta 5-15%"></div>
-          <div class="severity-segment" style="background:#f97316" data-label="Riesgo 15-30%"></div>
-          <div class="severity-segment" style="background:#ef4444" data-label="Critico >30%"></div>
-          <div class="severity-marker" id="oos-severity-marker"></div>
-        </div>
-      </div>
-      <div class="oos-kpi-row">
         <div class="sellout-kpi"><div class="sellout-kpi-value" id="oos-skus">0</div><div class="sellout-kpi-label">SKUs en Quiebre</div></div>
         <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-total">0</div><div class="sellout-kpi-label">Stock Total (Und.)</div></div>
         <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-skus">0</div><div class="sellout-kpi-label">SKUs Monitoreados</div></div>

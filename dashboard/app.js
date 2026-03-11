@@ -1601,23 +1601,56 @@ function renderLicenseChainHeatmap(data) {
   const container = document.getElementById("heatmap-license-chain");
   if (!container) return;
 
-  // Build matrix from salesByChainLicense or from byLicense + byChain
-  const src = typeof REAL_SELLOUT !== 'undefined' ? REAL_SELLOUT : null;
-  const salesByCL = src ? src.salesByChainLicense || {} : {};
+  // Build matrix from filtered data's salesByChainLicense
+  const salesByCL = data.salesByChainLicense || {};
+  const f = getGlobalFilters();
   const chains = data.allChains || Object.keys(salesByCL).sort();
-  const filteredChain = getGlobalFilters().chain;
+
+  // Determine which licenses pass active filters (division, license, year, quarter, temporada)
+  const licDivBreak = data.licenseDivisionBreakdown || {};
+  const licYearBreak = data.licenseYearBreakdown || {};
+  const licQBreak = data.licenseQuarterBreakdown || {};
+  const licTempBreak = data.licenseTemporadaBreakdown || {};
+  function licPassesFilters(lic) {
+    if (f.license && lic !== f.license) return false;
+    if (f.division && licDivBreak[lic] && !licDivBreak[lic][f.division]) return false;
+    return true;
+  }
+  function licFilterRatio(lic) {
+    let ratio = 1;
+    if (f.division && licDivBreak[lic]) {
+      const total = Object.values(licDivBreak[lic]).reduce((s, v) => s + (v.pct || 0), 0) || 100;
+      ratio *= (licDivBreak[lic][f.division]?.pct || 0) / total;
+    }
+    if (f.yearProduct && licYearBreak[lic]) {
+      const total = Object.values(licYearBreak[lic]).reduce((s, v) => s + (v.units || 0), 0) || 1;
+      ratio *= (licYearBreak[lic][f.yearProduct]?.units || 0) / total;
+    }
+    if (f.quarter && licQBreak[lic]) {
+      const total = Object.values(licQBreak[lic]).reduce((s, v) => s + (v.units || 0), 0) || 1;
+      ratio *= (licQBreak[lic][f.quarter]?.units || 0) / total;
+    }
+    if (f.temporada && licTempBreak[lic]) {
+      const total = Object.values(licTempBreak[lic]).reduce((s, v) => s + (v.units || 0), 0) || 1;
+      ratio *= (licTempBreak[lic][f.temporada]?.units || 0) / total;
+    }
+    return ratio;
+  }
 
   // Get all licenses with totals, sorted desc — NO limit
   const licTotals = {};
   const chainTotals = {};
-  const baseChains = filteredChain ? [filteredChain] : chains;
+  const baseChains = f.chain ? [f.chain] : chains;
   baseChains.forEach(ch => {
     const lics = salesByCL[ch] || {};
     let chainSum = 0;
     Object.entries(lics).forEach(([lic, d]) => {
+      if (!licPassesFilters(lic)) return;
+      const ratio = licFilterRatio(lic);
+      const units = Math.round(d.units * ratio);
       if (!licTotals[lic]) licTotals[lic] = 0;
-      licTotals[lic] += d.units;
-      chainSum += d.units;
+      licTotals[lic] += units;
+      chainSum += units;
     });
     chainTotals[ch] = chainSum;
   });
@@ -1628,9 +1661,10 @@ function renderLicenseChainHeatmap(data) {
   if (!licenses.length || !displayChains.length) { container.innerHTML = '<p style="color:#64748b;padding:1rem">Sin datos</p>'; return; }
 
   // Build value matrix and find min/max for color scale
-  const matrix = licenses.map(lic =>
-    displayChains.map(ch => ((salesByCL[ch] || {})[lic] || {}).units || 0)
-  );
+  const matrix = licenses.map(lic => {
+    const ratio = licFilterRatio(lic);
+    return displayChains.map(ch => Math.round((((salesByCL[ch] || {})[lic] || {}).units || 0) * ratio));
+  });
   const allVals = matrix.flat().filter(v => v > 0);
   const minVal = allVals.length ? Math.min(...allVals) : 0;
   const maxVal = allVals.length ? Math.max(...allVals) : 1;

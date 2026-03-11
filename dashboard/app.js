@@ -553,6 +553,9 @@ function getFilteredData() {
       const base = f.chain ? filteredChains : filteredDivs;
       const totalSKUs = base.reduce((s, d) => s + d.totalSKUs, 0);
       const totalOOS = base.reduce((s, d) => s + d.oosSKUs, 0);
+      // Recalculate stock units from filtered rankingByChainStore
+      const filteredStockUnits = Object.values(rankingByChainStore)
+        .flat().reduce((s, st) => s + (st.stockUnits || 0), 0);
       stock = {
         ...stock,
         oosByChain: filteredChains,
@@ -561,6 +564,7 @@ function getFilteredData() {
         totalSKUs,
         totalOOS,
         oosRate: totalSKUs > 0 ? Math.round(totalOOS / totalSKUs * 1000) / 10 : 0,
+        totalStockUnits: filteredStockUnits,
       };
     }
   }

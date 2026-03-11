@@ -2,6 +2,10 @@
 // TBC C.A.R.S. - Control de Activos y Rutas de Sell-out
 // ============================================================
 
+// Register datalabels plugin (disabled by default, enabled per-chart)
+if (window.ChartDataLabels) Chart.register(ChartDataLabels);
+Chart.defaults.plugins.datalabels = { display: false };
+
 let selectedCampaignId = null;
 let chartInstances = {};
 let currentTab = 'command-center';
@@ -188,6 +192,72 @@ function renderDataStatusBar() {
 }
 
 // ── Global Filters ──────────────────────────────────────
+// ── Multi-select widget ──────────────────────────────────
+function initMultiSelect(containerId, items, onChange) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const placeholder = container.dataset.placeholder || 'Todos';
+  container.innerHTML = '';
+  const trigger = document.createElement('div');
+  trigger.className = 'ms-trigger';
+  trigger.textContent = placeholder;
+  const dropdown = document.createElement('div');
+  dropdown.className = 'ms-dropdown';
+  items.forEach(item => {
+    const val = typeof item === 'string' ? item : item.value;
+    const label = typeof item === 'string' ? item : item.label;
+    const opt = document.createElement('label');
+    opt.className = 'ms-option';
+    opt.innerHTML = `<input type="checkbox" value="${val}"><span>${label}</span>`;
+    opt.querySelector('input').addEventListener('change', () => {
+      updateTrigger();
+      if (onChange) onChange();
+    });
+    dropdown.appendChild(opt);
+  });
+  const clear = document.createElement('div');
+  clear.className = 'ms-clear';
+  clear.textContent = 'Limpiar';
+  clear.addEventListener('click', (e) => {
+    e.stopPropagation();
+    dropdown.querySelectorAll('input').forEach(cb => { cb.checked = false; });
+    updateTrigger();
+    if (onChange) onChange();
+  });
+  dropdown.appendChild(clear);
+  container.appendChild(trigger);
+  container.appendChild(dropdown);
+  trigger.addEventListener('click', (e) => {
+    e.stopPropagation();
+    // Close other dropdowns
+    document.querySelectorAll('.multi-select.open').forEach(ms => { if (ms !== container) ms.classList.remove('open'); });
+    container.classList.toggle('open');
+  });
+  function updateTrigger() {
+    const checked = [...dropdown.querySelectorAll('input:checked')];
+    dropdown.querySelectorAll('.ms-option').forEach(o => {
+      o.classList.toggle('checked', o.querySelector('input').checked);
+    });
+    if (checked.length === 0) {
+      trigger.textContent = placeholder;
+      trigger.classList.remove('has-selection');
+    } else if (checked.length === 1) {
+      trigger.textContent = checked[0].value;
+      trigger.classList.add('has-selection');
+    } else {
+      trigger.textContent = `${checked.length} sel.`;
+      trigger.classList.add('has-selection');
+    }
+  }
+  container._getValues = () => {
+    return [...dropdown.querySelectorAll('input:checked')].map(cb => cb.value);
+  };
+}
+// Close dropdowns on outside click
+document.addEventListener('click', () => {
+  document.querySelectorAll('.multi-select.open').forEach(ms => ms.classList.remove('open'));
+});
+
 function populateGlobalFilters() {
   const data = typeof REAL_SELLOUT !== 'undefined' ? REAL_SELLOUT : null;
   if (!data) return;
@@ -199,54 +269,50 @@ function populateGlobalFilters() {
     dateTo.value = data.kpis.dateRange.to;
   }
 
-  function fillSelect(id, items) {
-    const sel = document.getElementById(id);
-    if (!sel) return;
-    items.forEach(v => {
-      const opt = document.createElement('option');
-      opt.value = typeof v === 'string' ? v : v.value;
-      opt.textContent = typeof v === 'string' ? v : v.label;
-      sel.appendChild(opt);
-    });
-  }
+  const cb = onGlobalFilterChange;
+  initMultiSelect('filter-chain', data.allChains || [], cb);
+  initMultiSelect('filter-division', (data.byDivision || []).map(d => d.division), cb);
+  initMultiSelect('filter-license-global', data.allLicenses || [], cb);
+  initMultiSelect('filter-year-product', (data.allYearsProduct || []).map(y => ({ value: y, label: y })), cb);
+  initMultiSelect('filter-quarter', (data.allQuarters || []).map(q => ({ value: q, label: q })), cb);
+  initMultiSelect('filter-temporada', data.allTemporadas || [], cb);
 
-  fillSelect('filter-chain', data.allChains || []);
-  fillSelect('filter-division', (data.byDivision || []).map(d => d.division));
-  fillSelect('filter-license-global', data.allLicenses || []);
-  fillSelect('filter-year-product', (data.allYearsProduct || []).map(y => ({ value: y, label: y })));
-  fillSelect('filter-quarter', (data.allQuarters || []).map(q => ({ value: q, label: q })));
-  fillSelect('filter-temporada', data.allTemporadas || []);
-
-  ['filter-date-from','filter-date-to','filter-chain','filter-division',
-   'filter-license-global','filter-year-product','filter-quarter','filter-temporada'].forEach(id => {
+  ['filter-date-from','filter-date-to'].forEach(id => {
     const el = document.getElementById(id);
-    if (el) el.addEventListener('change', onGlobalFilterChange);
+    if (el) el.addEventListener('change', cb);
   });
+}
+
+function _msValues(id) {
+  const el = document.getElementById(id);
+  return el && el._getValues ? el._getValues() : [];
 }
 
 function getGlobalFilters() {
   return {
     dateFrom: document.getElementById('filter-date-from')?.value || '',
     dateTo: document.getElementById('filter-date-to')?.value || '',
-    chain: document.getElementById('filter-chain')?.value || '',
-    division: document.getElementById('filter-division')?.value || '',
-    license: document.getElementById('filter-license-global')?.value || '',
-    yearProduct: document.getElementById('filter-year-product')?.value || '',
-    quarter: document.getElementById('filter-quarter')?.value || '',
-    temporada: document.getElementById('filter-temporada')?.value || '',
+    chains: _msValues('filter-chain'),
+    divisions: _msValues('filter-division'),
+    licenses: _msValues('filter-license-global'),
+    years: _msValues('filter-year-product'),
+    quarters: _msValues('filter-quarter'),
+    temporadas: _msValues('filter-temporada'),
   };
 }
 
 // Helper: proportionally scale dailySales using a breakdown map
-function scaleDailySales(dailySales, breakdownMap, selectedKey) {
+// selectedKeys can be a string or array of strings
+function scaleDailySales(dailySales, breakdownMap, selectedKeys) {
+  const keys = Array.isArray(selectedKeys) ? selectedKeys : [selectedKeys];
   return dailySales.map(d => {
     const licBreakdown = breakdownMap[d.license];
     if (!licBreakdown) return null;
-    const selected = licBreakdown[selectedKey];
-    if (!selected) return null;
     const totalU = Object.values(licBreakdown).reduce((s, v) => s + v.units, 0);
     if (totalU === 0) return null;
-    const ratio = selected.units / totalU;
+    const selectedU = keys.reduce((s, k) => s + (licBreakdown[k]?.units || 0), 0);
+    if (selectedU === 0) return null;
+    const ratio = selectedU / totalU;
     return { ...d, units: Math.round(d.units * ratio), clp: Math.round(d.clp * ratio) };
   }).filter(d => d && d.units > 0);
 }
@@ -255,8 +321,8 @@ function getFilteredData() {
   const src = typeof REAL_SELLOUT !== 'undefined' ? REAL_SELLOUT : null;
   if (!src) return null;
   const f = getGlobalFilters();
-  const noFilter = !f.dateFrom && !f.dateTo && !f.chain && !f.division
-                && !f.license && !f.yearProduct && !f.quarter && !f.temporada;
+  const noFilter = !f.dateFrom && !f.dateTo && !f.chains.length && !f.divisions.length
+                && !f.licenses.length && !f.years.length && !f.quarters.length && !f.temporadas.length;
   if (noFilter) return src;
 
   const licDivBreakdown = src.licenseDivisionBreakdown || {};
@@ -281,9 +347,19 @@ function getFilteredData() {
   }
 
   // 2. Chain filter (exact on dailyByChain, proportional on dailySales + byDivisionDaily)
-  if (f.chain) {
-    dailyByChain = dailyByChain.filter(d => d.chain === f.chain);
-    const chainLicData = (src.salesByChainLicense || {})[f.chain] || {};
+  if (f.chains.length) {
+    const chainSet = new Set(f.chains);
+    dailyByChain = dailyByChain.filter(d => chainSet.has(d.chain));
+    // Proportional: sum selected chains' license data
+    const chainLicData = {};
+    f.chains.forEach(ch => {
+      const lics = (src.salesByChainLicense || {})[ch] || {};
+      Object.entries(lics).forEach(([lic, d]) => {
+        if (!chainLicData[lic]) chainLicData[lic] = { units: 0, clp: 0 };
+        chainLicData[lic].units += d.units;
+        chainLicData[lic].clp += d.clp;
+      });
+    });
     const licTotals = {};
     Object.values(src.salesByChainLicense || {}).forEach(lics => {
       Object.entries(lics).forEach(([lic, d]) => {
@@ -300,7 +376,7 @@ function getFilteredData() {
       return { ...d, units: Math.round(d.units * ratio), clp: Math.round(d.clp * ratio) };
     }).filter(d => d && d.units > 0);
 
-    // Recalculate byDivisionDaily from chain-filtered dailySales using licenseDivisionBreakdown
+    // Recalculate byDivisionDaily from chain-filtered dailySales
     const divDailyAgg = {};
     dailySales.forEach(d => {
       const licBreak = licDivBreakdown[d.license];
@@ -318,26 +394,28 @@ function getFilteredData() {
     byDivisionDaily = Object.values(divDailyAgg).sort((a, b) => a.date.localeCompare(b.date));
   }
 
-  // 3. License filter (exact)
-  if (f.license) {
-    dailySales = dailySales.filter(d => d.license === f.license);
+  // 3. License filter (exact, multi)
+  if (f.licenses.length) {
+    const licSet = new Set(f.licenses);
+    dailySales = dailySales.filter(d => licSet.has(d.license));
   }
 
-  // 4. Division filter (proportional via licenseDivisionBreakdown)
-  if (f.division) {
-    dailySales = scaleDailySales(dailySales, licDivBreakdown, f.division);
-    byDivisionDaily = byDivisionDaily.filter(d => d.division === f.division);
+  // 4. Division filter (proportional via licenseDivisionBreakdown, multi)
+  if (f.divisions.length) {
+    dailySales = scaleDailySales(dailySales, licDivBreakdown, f.divisions);
+    const divSet = new Set(f.divisions);
+    byDivisionDaily = byDivisionDaily.filter(d => divSet.has(d.division));
   }
 
-  // 5-7. Temporal filters (proportional)
-  if (f.yearProduct) {
-    dailySales = scaleDailySales(dailySales, src.licenseYearBreakdown || {}, f.yearProduct);
+  // 5-7. Temporal filters (proportional, multi)
+  if (f.years.length) {
+    dailySales = scaleDailySales(dailySales, src.licenseYearBreakdown || {}, f.years);
   }
-  if (f.quarter) {
-    dailySales = scaleDailySales(dailySales, src.licenseQuarterBreakdown || {}, f.quarter);
+  if (f.quarters.length) {
+    dailySales = scaleDailySales(dailySales, src.licenseQuarterBreakdown || {}, f.quarters);
   }
-  if (f.temporada) {
-    dailySales = scaleDailySales(dailySales, src.licenseTemporadaBreakdown || {}, f.temporada);
+  if (f.temporadas.length) {
+    dailySales = scaleDailySales(dailySales, src.licenseTemporadaBreakdown || {}, f.temporadas);
   }
 
   // Re-aggregate byLicense from filtered dailySales
@@ -364,16 +442,22 @@ function getFilteredData() {
   let byChain = Object.values(chainAgg).sort((a, b) => b.clp - a.clp);
 
   // If division filter active, recalculate byChain from rankingByChainStore
-  if (f.division) {
+  if (f.divisions.length) {
+    const divSet = new Set(f.divisions);
     const chainFromStores = {};
     Object.entries(src.rankingByChainStore || {}).forEach(([ch, stores]) => {
-      if (f.chain && ch !== f.chain) return;
+      if (f.chains.length && !f.chains.includes(ch)) return;
       stores.forEach(s => {
-        const divData = (s.byDivision || {})[f.division];
-        if (!divData) return;
-        if (!chainFromStores[ch]) chainFromStores[ch] = { chain: ch, units: 0, clp: 0 };
-        chainFromStores[ch].units += divData.units;
-        chainFromStores[ch].clp += divData.clp;
+        let uSum = 0, cSum = 0;
+        f.divisions.forEach(div => {
+          const dd = (s.byDivision || {})[div];
+          if (dd) { uSum += dd.units; cSum += dd.clp; }
+        });
+        if (uSum > 0) {
+          if (!chainFromStores[ch]) chainFromStores[ch] = { chain: ch, units: 0, clp: 0 };
+          chainFromStores[ch].units += uSum;
+          chainFromStores[ch].clp += cSum;
+        }
       });
     });
     byChain = Object.values(chainFromStores).sort((a, b) => b.clp - a.clp);
@@ -381,21 +465,28 @@ function getFilteredData() {
 
   // Filter rankingByChainStore (must happen before KPI calc)
   let rankingByChainStore = src.rankingByChainStore || {};
-  if (f.chain) {
-    rankingByChainStore = f.chain in rankingByChainStore ? { [f.chain]: rankingByChainStore[f.chain] } : {};
+  if (f.chains.length) {
+    const chainSet = new Set(f.chains);
+    const filtered = {};
+    Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
+      if (chainSet.has(ch)) filtered[ch] = stores;
+    });
+    rankingByChainStore = filtered;
   }
-  if (f.division) {
+  if (f.divisions.length) {
     const filteredRanking = {};
     Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
-      const filtered = stores.filter(s => s.byDivision && s.byDivision[f.division]).map(s => {
-        const divData = s.byDivision[f.division];
+      const filtered = stores.filter(s => s.byDivision && f.divisions.some(div => s.byDivision[div])).map(s => {
+        let uSum = 0, cSum = 0, costSum = 0;
+        const filteredDivs = {};
+        f.divisions.forEach(div => {
+          const dd = s.byDivision[div];
+          if (dd) { uSum += dd.units; cSum += dd.clp; costSum += (dd.costos || 0); filteredDivs[div] = dd; }
+        });
         return {
-          ...s,
-          units: divData.units,
-          clp: divData.clp,
-          costos: divData.costos || 0,
-          margin: divData.clp > 0 ? Math.round((divData.clp - (divData.costos || 0)) / divData.clp * 1000) / 10 : 0,
-          byDivision: { [f.division]: divData }
+          ...s, units: uSum, clp: cSum, costos: costSum,
+          margin: cSum > 0 ? Math.round((cSum - costSum) / cSum * 1000) / 10 : 0,
+          byDivision: filteredDivs
         };
       });
       if (filtered.length) filteredRanking[ch] = filtered;
@@ -405,7 +496,7 @@ function getFilteredData() {
 
   // Re-aggregate dailyTotals FIRST (single source of truth for KPIs + chart)
   let filteredDailyTotals;
-  if (f.division) {
+  if (f.divisions.length) {
     // Division filter active: use byDivisionDaily (already proportionally filtered)
     const divDtAgg = {};
     byDivisionDaily.forEach(d => {
@@ -426,7 +517,7 @@ function getFilteredData() {
   }
 
   // Normalize dailySales + byLicense so license breakdown sums match filteredDailyTotals
-  if (f.chain || f.division || f.yearProduct || f.quarter || f.temporada) {
+  if (f.chains.length || f.divisions.length || f.years.length || f.quarters.length || f.temporadas.length) {
     const authTotals = {};
     filteredDailyTotals.forEach(d => { authTotals[d.date] = { units: d.units, clp: d.clp }; });
     const salesTotals = {};
@@ -478,15 +569,13 @@ function getFilteredData() {
 
   // Re-aggregate byDivision from filtered data
   let byDivision = src.byDivision || [];
-  if (f.chain || f.division) {
-    // Recalculate from byDivisionDaily (already chain-filtered if chain active)
+  if (f.chains.length || f.divisions.length) {
     const divAgg = {};
     byDivisionDaily.forEach(d => {
       if (!divAgg[d.division]) divAgg[d.division] = { division: d.division, units: 0, clp: 0 };
       divAgg[d.division].units += d.units;
       divAgg[d.division].clp += d.clp;
     });
-    // Count stores per division from filtered ranking
     const divStoreCounts = {};
     Object.values(rankingByChainStore).flat().forEach(s => {
       Object.keys(s.byDivision || {}).forEach(div => {
@@ -502,26 +591,28 @@ function getFilteredData() {
         storeCount: divStoreCounts[d.division] || 0,
       };
     }).sort((a, b) => b.units - a.units);
-    if (f.division) {
-      byDivision = byDivision.filter(d => d.division === f.division);
+    if (f.divisions.length) {
+      const divSet = new Set(f.divisions);
+      byDivision = byDivision.filter(d => divSet.has(d.division));
     }
   }
 
   // Filter divisionMixByChain
   let divisionMixByChain = src.divisionMixByChain || [];
-  if (f.chain) {
-    divisionMixByChain = divisionMixByChain.filter(d => d.chain === f.chain);
+  if (f.chains.length) {
+    const chainSet = new Set(f.chains);
+    divisionMixByChain = divisionMixByChain.filter(d => chainSet.has(d.chain));
   }
 
   // ── Filtrar velocityMetrics ──
   let velocityMetrics = src.velocityMetrics ? { ...src.velocityMetrics } : null;
   if (velocityMetrics) {
     let velByChain = velocityMetrics.velocityByChain || [];
-    if (f.chain) {
-      velByChain = velByChain.filter(v => v.chain === f.chain);
+    if (f.chains.length) {
+      const chainSet = new Set(f.chains);
+      velByChain = velByChain.filter(v => chainSet.has(v.chain));
     }
-    if (f.division) {
-      // Recalcular velocidad por cadena usando solo la division filtrada del ranking
+    if (f.divisions.length) {
       const activeDays = velocityMetrics.activeDays || 1;
       velByChain = Object.entries(rankingByChainStore).map(([ch, stores]) => {
         const totalUnits = stores.reduce((s, st) => s + st.units, 0);
@@ -533,10 +624,11 @@ function getFilteredData() {
 
   // ── Filtrar priceMetrics ──
   let priceMetrics = src.priceMetrics ? { ...src.priceMetrics } : null;
-  if (priceMetrics && f.division) {
+  if (priceMetrics && f.divisions.length) {
+    const divSet = new Set(f.divisions);
     priceMetrics = {
       ...priceMetrics,
-      byDivision: (priceMetrics.byDivision || []).filter(d => d.division === f.division),
+      byDivision: (priceMetrics.byDivision || []).filter(d => divSet.has(d.division)),
     };
   }
 
@@ -546,14 +638,41 @@ function getFilteredData() {
     let filteredChains = stock.oosByChain || [];
     let filteredDivs = stock.oosByDivision || [];
     let filteredLics = stock.oosByLicense || [];
-    if (f.chain) filteredChains = filteredChains.filter(d => d.chain === f.chain);
-    if (f.division) filteredDivs = filteredDivs.filter(d => d.division === f.division);
-    // Recalculate totals from filtered arrays when any filter is active
-    if (f.chain || f.division) {
-      const base = f.chain ? filteredChains : filteredDivs;
+    if (f.chains.length) { const s = new Set(f.chains); filteredChains = filteredChains.filter(d => s.has(d.chain)); }
+    if (f.divisions.length) { const s = new Set(f.divisions); filteredDivs = filteredDivs.filter(d => s.has(d.division)); }
+    if (f.licenses.length) { const s = new Set(f.licenses); filteredLics = filteredLics.filter(d => s.has(d.license)); }
+    // Temporada/Year/Quarter: determine relevant licenses from breakdown maps, filter oosByLicense
+    let relevantLics = null;
+    if (f.temporadas.length) {
+      const tBreak = src.licenseTemporadaBreakdown || {};
+      const lics = new Set();
+      Object.entries(tBreak).forEach(([lic, temps]) => { if (f.temporadas.some(t => temps[t])) lics.add(lic); });
+      relevantLics = relevantLics ? new Set([...relevantLics].filter(l => lics.has(l))) : lics;
+    }
+    if (f.years.length) {
+      const yBreak = src.licenseYearBreakdown || {};
+      const lics = new Set();
+      Object.entries(yBreak).forEach(([lic, years]) => { if (f.years.some(y => years[y])) lics.add(lic); });
+      relevantLics = relevantLics ? new Set([...relevantLics].filter(l => lics.has(l))) : lics;
+    }
+    if (f.quarters.length) {
+      const qBreak = src.licenseQuarterBreakdown || {};
+      const lics = new Set();
+      Object.entries(qBreak).forEach(([lic, qs]) => { if (f.quarters.some(q => qs[q])) lics.add(lic); });
+      relevantLics = relevantLics ? new Set([...relevantLics].filter(l => lics.has(l))) : lics;
+    }
+    if (relevantLics) {
+      filteredLics = filteredLics.filter(d => relevantLics.has(d.license));
+    }
+    const needsRecalc = f.chains.length || f.divisions.length || f.licenses.length || relevantLics;
+    if (needsRecalc) {
+      // Priority: chain > division > license for KPI base
+      let base;
+      if (f.chains.length) base = filteredChains;
+      else if (f.divisions.length) base = filteredDivs;
+      else base = filteredLics;
       const totalSKUs = base.reduce((s, d) => s + d.totalSKUs, 0);
       const totalOOS = base.reduce((s, d) => s + d.oosSKUs, 0);
-      // Recalculate stock units from filtered rankingByChainStore
       const filteredStockUnits = Object.values(rankingByChainStore)
         .flat().reduce((s, st) => s + (st.stockUnits || 0), 0);
       stock = {
@@ -1024,7 +1143,10 @@ function renderSelloutByLicenseChart(data) {
   chartInstances.selloutLicense = new Chart(ctx, {
     type: "bar",
     data: { labels: data.byLicense.map(l => l.license), datasets: [{ label: "Unidades", data: data.byLicense.map(l => l.units), backgroundColor: data.byLicense.map(l => l.color + "CC"), borderRadius: 4 }] },
-    options: { ...chartOptionsBar("und"), indexAxis: "y", scales: { x: chartScaleX("Unidades"), y: chartScaleY() } }
+    options: {
+      ...chartOptionsBar("und"), indexAxis: "y", scales: { x: chartScaleX("Unidades"), y: chartScaleY() },
+      plugins: { ...chartOptionsBar("und").plugins, datalabels: { display: true, color: '#e2e8f0', font: { size: 9, weight: 'bold' }, anchor: 'end', align: 'end', formatter: (v) => fmtNum(v) } }
+    }
   });
 }
 
@@ -1043,6 +1165,11 @@ function renderSelloutByChainChart(data) {
         tooltip: {
           backgroundColor: "rgba(17,24,39,0.95)", titleColor: "#f1f5f9", bodyColor: "#94a3b8", borderColor: "rgba(148,163,184,0.2)", borderWidth: 1, padding: 12, cornerRadius: 8,
           callbacks: { label: (tooltipCtx) => { const v = tooltipCtx.parsed; const p = chainTotalCLP > 0 ? ((v / chainTotalCLP) * 100).toFixed(1) : 0; const chain = data.byChain[tooltipCtx.dataIndex]; return [` $${(v/1000000).toFixed(1)}M CLP (${p}%)`, ` ${chain.units.toLocaleString("es-CL")} und`]; } }
+        },
+        datalabels: {
+          display: function(ctx) { const v = ctx.dataset.data[ctx.dataIndex]; return chainTotalCLP > 0 && (v / chainTotalCLP) >= 0.05; },
+          color: '#fff', font: { size: 9, weight: 'bold' },
+          formatter: (v) => chainTotalCLP > 0 ? ((v / chainTotalCLP) * 100).toFixed(0) + '%' : ''
         }
       }
     }
@@ -1113,7 +1240,14 @@ function renderSelloutTotalDailyChart(data) {
     },
     options: {
       responsive: true, maintainAspectRatio: false, interaction: { mode: "index", intersect: false },
-      plugins: { legend: { position: "bottom", labels: { color: "#94a3b8", font: { size: 10 }, padding: 12 } } },
+      plugins: {
+        legend: { position: "bottom", labels: { color: "#94a3b8", font: { size: 10 }, padding: 12 } },
+        datalabels: {
+          display: function(ctx) { return ctx.datasetIndex === 1; },
+          color: '#f97316', font: { size: 9, weight: 'bold' }, anchor: 'end', align: 'top', offset: 2,
+          formatter: (v) => v > 0 ? '$' + v + 'M' : ''
+        }
+      },
       scales: { x: chartScaleX(), y: { position: "left", ...chartScaleY("und"), title: { display: true, text: "Unidades", color: "#64748b", font: { size: 10 } } }, y1: { position: "right", title: { display: true, text: "CLP (Millones)", color: "#f97316", font: { size: 10 } }, ticks: { color: "#f97316", font: { size: 10 }, callback: v => "$" + v + "M" }, grid: { display: false } } }
     }
   });
@@ -1142,9 +1276,7 @@ function renderStockSection(data) {
   // Mini KPIs
   const skuEl = document.getElementById("oos-skus");
   if (skuEl) skuEl.textContent = s.totalOOS.toLocaleString('es-CL');
-  const fillEl = document.getElementById("oos-skus-fill");
-  if (fillEl) fillEl.style.width = Math.min(s.oosRate, 100) + '%';
-  const stockEl = document.getElementById("stock-total");
+const stockEl = document.getElementById("stock-total");
   if (stockEl) stockEl.textContent = (s.totalStockUnits >= 1000 ? Math.round(s.totalStockUnits / 1000).toLocaleString('es-CL') + 'K' : s.totalStockUnits.toLocaleString('es-CL'));
   const skusEl = document.getElementById("stock-skus");
   if (skusEl) skusEl.textContent = s.totalSKUs.toLocaleString('es-CL');
@@ -1252,6 +1384,10 @@ function renderOOSByChainChart(stock) {
             },
             afterLabel: (c) => { const ch = chains[c.dataIndex]; return ` ${ch.oosSKUs.toLocaleString('es-CL')} de ${ch.totalSKUs.toLocaleString('es-CL')} SKUs`; }
           }
+        },
+        datalabels: {
+          display: true, color: '#e2e8f0', font: { size: 9, weight: 'bold' }, anchor: 'end', align: 'end',
+          formatter: (v) => v.toFixed(1) + '%'
         }
       }
     },
@@ -1307,7 +1443,12 @@ function renderOOSSeverityDonut(stock) {
           }
         }
       },
-      animation: { animateRotate: true, duration: 1200 }
+      animation: { animateRotate: true, duration: 1200 },
+      datalabels: {
+        display: function(ctx) { return ctx.dataset.data[ctx.dataIndex] > 0; },
+        color: '#fff', font: { size: 11, weight: 'bold' },
+        formatter: (v, ctx) => v > 0 ? v : ''
+      }
     }
   });
   // Detail panel next to donut
@@ -1847,27 +1988,28 @@ function renderLicenseChainHeatmap(data) {
   const licQBreak = data.licenseQuarterBreakdown || {};
   const licTempBreak = data.licenseTemporadaBreakdown || {};
   function licPassesFilters(lic) {
-    if (f.license && lic !== f.license) return false;
-    if (f.division && licDivBreak[lic] && !licDivBreak[lic][f.division]) return false;
+    if (f.licenses.length && !f.licenses.includes(lic)) return false;
+    if (f.divisions.length && licDivBreak[lic] && !f.divisions.some(d => licDivBreak[lic][d])) return false;
     return true;
   }
+  function _sumKeys(obj, keys) { return keys.reduce((s, k) => s + ((obj[k]?.units || obj[k]?.pct || 0)), 0); }
   function licFilterRatio(lic) {
     let ratio = 1;
-    if (f.division && licDivBreak[lic]) {
+    if (f.divisions.length && licDivBreak[lic]) {
       const total = Object.values(licDivBreak[lic]).reduce((s, v) => s + (v.pct || 0), 0) || 100;
-      ratio *= (licDivBreak[lic][f.division]?.pct || 0) / total;
+      ratio *= f.divisions.reduce((s, d) => s + (licDivBreak[lic][d]?.pct || 0), 0) / total;
     }
-    if (f.yearProduct && licYearBreak[lic]) {
+    if (f.years.length && licYearBreak[lic]) {
       const total = Object.values(licYearBreak[lic]).reduce((s, v) => s + (v.units || 0), 0) || 1;
-      ratio *= (licYearBreak[lic][f.yearProduct]?.units || 0) / total;
+      ratio *= f.years.reduce((s, y) => s + (licYearBreak[lic][y]?.units || 0), 0) / total;
     }
-    if (f.quarter && licQBreak[lic]) {
+    if (f.quarters.length && licQBreak[lic]) {
       const total = Object.values(licQBreak[lic]).reduce((s, v) => s + (v.units || 0), 0) || 1;
-      ratio *= (licQBreak[lic][f.quarter]?.units || 0) / total;
+      ratio *= f.quarters.reduce((s, q) => s + (licQBreak[lic][q]?.units || 0), 0) / total;
     }
-    if (f.temporada && licTempBreak[lic]) {
+    if (f.temporadas.length && licTempBreak[lic]) {
       const total = Object.values(licTempBreak[lic]).reduce((s, v) => s + (v.units || 0), 0) || 1;
-      ratio *= (licTempBreak[lic][f.temporada]?.units || 0) / total;
+      ratio *= f.temporadas.reduce((s, t) => s + (licTempBreak[lic][t]?.units || 0), 0) / total;
     }
     return ratio;
   }
@@ -1875,7 +2017,7 @@ function renderLicenseChainHeatmap(data) {
   // Get all licenses with totals, sorted desc — NO limit
   const licTotals = {};
   const chainTotals = {};
-  const baseChains = f.chain ? [f.chain] : chains;
+  const baseChains = f.chains.length ? f.chains.filter(ch => chains.includes(ch)) : chains;
   baseChains.forEach(ch => {
     const lics = salesByCL[ch] || {};
     let chainSum = 0;
@@ -2241,6 +2383,14 @@ function chartScaleY(unit) {
   else if (unit === "und/dia") { s.title = { display: true, text: "Und/Día", color: "#64748b", font: { size: 10 } }; }
   else if (unit) { s.title = { display: true, text: unit, color: "#64748b", font: { size: 10 } }; }
   return s;
+}
+
+// Short number formatter for chart datalabels
+function fmtNum(v, type) {
+  if (v == null || v === 0) return '';
+  if (type === 'clp' || type === 'M') return v >= 1e6 ? '$' + (v / 1e6).toFixed(1) + 'M' : v >= 1e3 ? '$' + Math.round(v / 1e3) + 'K' : '$' + v;
+  if (type === '%') return v.toFixed(1) + '%';
+  return v >= 1e6 ? (v / 1e6).toFixed(1) + 'M' : v >= 1e3 ? Math.round(v / 1e3).toLocaleString('es-CL') : v.toString();
 }
 
 // ── Utilities ───────────────────────────────────────────

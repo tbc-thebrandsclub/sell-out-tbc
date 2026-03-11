@@ -73,25 +73,13 @@
     <input type="date" id="filter-date-from" class="filter-input" title="Fecha desde">
     <span class="filter-separator">a</span>
     <input type="date" id="filter-date-to" class="filter-input" title="Fecha hasta">
-    <select id="filter-chain" class="filter-select">
-      <option value="">Todas las cadenas</option>
-    </select>
-    <select id="filter-division" class="filter-select">
-      <option value="">Todas las divisiones</option>
-    </select>
-    <select id="filter-license-global" class="filter-select">
-      <option value="">Todas las licencias</option>
-    </select>
+    <div class="multi-select" id="filter-chain" data-placeholder="Cadenas"></div>
+    <div class="multi-select" id="filter-division" data-placeholder="Divisiones"></div>
+    <div class="multi-select" id="filter-license-global" data-placeholder="Licencias"></div>
     <span class="filter-separator">|</span>
-    <select id="filter-year-product" class="filter-select">
-      <option value="">Todos los anos</option>
-    </select>
-    <select id="filter-quarter" class="filter-select">
-      <option value="">Todos los Q</option>
-    </select>
-    <select id="filter-temporada" class="filter-select">
-      <option value="">Todas las temporadas</option>
-    </select>
+    <div class="multi-select" id="filter-year-product" data-placeholder="Años"></div>
+    <div class="multi-select" id="filter-quarter" data-placeholder="Quarter"></div>
+    <div class="multi-select" id="filter-temporada" data-placeholder="Temporadas"></div>
     <span id="campaign-filters" class="campaign-only-filters" style="display:none">
       <select id="filter-client" class="filter-select">
         <option value="">Todos los clientes</option>
@@ -153,31 +141,10 @@
           <div class="severity-marker" id="oos-severity-marker"></div>
         </div>
       </div>
-      <div class="oos-kpi-stack">
-        <div class="oos-mini-kpi" data-severity="danger">
-          <div class="oos-mini-kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
-          <div class="oos-mini-kpi-content">
-            <div class="oos-mini-kpi-value" id="oos-skus">0</div>
-            <div class="oos-mini-kpi-label">SKUs en Quiebre</div>
-          </div>
-          <div class="oos-mini-kpi-bar"><div class="oos-mini-kpi-fill" id="oos-skus-fill"></div></div>
-        </div>
-        <div class="oos-mini-kpi" data-severity="success">
-          <div class="oos-mini-kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
-          <div class="oos-mini-kpi-content">
-            <div class="oos-mini-kpi-value" id="stock-total">0</div>
-            <div class="oos-mini-kpi-label">Stock Total (Und.)</div>
-          </div>
-          <div class="oos-mini-kpi-bar"><div class="oos-mini-kpi-fill" id="stock-total-fill" style="width:100%"></div></div>
-        </div>
-        <div class="oos-mini-kpi" data-severity="info">
-          <div class="oos-mini-kpi-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
-          <div class="oos-mini-kpi-content">
-            <div class="oos-mini-kpi-value" id="stock-skus">0</div>
-            <div class="oos-mini-kpi-label">SKUs Monitoreados</div>
-          </div>
-          <div class="oos-mini-kpi-bar"><div class="oos-mini-kpi-fill" id="stock-skus-fill" style="width:100%"></div></div>
-        </div>
+      <div class="oos-kpi-row">
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="oos-skus">0</div><div class="sellout-kpi-label">SKUs en Quiebre</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-total">0</div><div class="sellout-kpi-label">Stock Total (Und.)</div></div>
+        <div class="sellout-kpi"><div class="sellout-kpi-value" id="stock-skus">0</div><div class="sellout-kpi-label">SKUs Monitoreados</div></div>
       </div>
       <!-- Row 2: Lollipop + Division Table -->
       <div class="chart-card oos-chart-half"><div class="chart-title">% Quiebre por Cadena</div><div class="chart-container" style="height:380px"><canvas id="chart-oos-chain"></canvas></div></div>
@@ -322,6 +289,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
   <script src="data.js"></script>
   <script src="real_data.js"></script>
   <script src="app.js"></script>

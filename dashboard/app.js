@@ -403,10 +403,67 @@ function getFilteredData() {
     rankingByChainStore = filteredRanking;
   }
 
-  // Re-compute KPIs from filtered byDivisionDaily (most accurate source)
-  const totalUnits = byDivisionDaily.reduce((s, d) => s + d.units, 0);
-  const totalCLP = byDivisionDaily.reduce((s, d) => s + d.clp, 0);
-  const dates = [...new Set((dailyByChain.length ? dailyByChain : dailyTotals).map(d => d.date))].sort();
+  // Re-aggregate dailyTotals FIRST (single source of truth for KPIs + chart)
+  let filteredDailyTotals;
+  if (f.division) {
+    // Division filter active: use byDivisionDaily (already proportionally filtered)
+    const divDtAgg = {};
+    byDivisionDaily.forEach(d => {
+      if (!divDtAgg[d.date]) divDtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
+      divDtAgg[d.date].units += d.units;
+      divDtAgg[d.date].clp += d.clp;
+    });
+    filteredDailyTotals = Object.values(divDtAgg).sort((a, b) => a.date.localeCompare(b.date));
+  } else {
+    // No division filter: use dailyByChain (exact data, already chain-filtered if needed)
+    const dtAgg = {};
+    dailyByChain.forEach(d => {
+      if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
+      dtAgg[d.date].units += d.units;
+      dtAgg[d.date].clp += d.clp;
+    });
+    filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
+  }
+
+  // Normalize dailySales + byLicense so license breakdown sums match filteredDailyTotals
+  if (f.chain || f.division || f.yearProduct || f.quarter || f.temporada) {
+    const authTotals = {};
+    filteredDailyTotals.forEach(d => { authTotals[d.date] = { units: d.units, clp: d.clp }; });
+    const salesTotals = {};
+    dailySales.forEach(d => {
+      if (!salesTotals[d.date]) salesTotals[d.date] = { units: 0, clp: 0 };
+      salesTotals[d.date].units += d.units;
+      salesTotals[d.date].clp += d.clp;
+    });
+    dailySales = dailySales.map(d => {
+      const auth = authTotals[d.date];
+      const cur = salesTotals[d.date];
+      if (!auth || !cur || cur.units === 0) return d;
+      const uRatio = auth.units / cur.units;
+      const cRatio = cur.clp > 0 ? auth.clp / cur.clp : 1;
+      return { ...d, units: Math.round(d.units * uRatio), clp: Math.round(d.clp * cRatio) };
+    });
+    // Re-aggregate byLicense after normalization
+    const licAgg2 = {};
+    dailySales.forEach(d => {
+      if (!licAgg2[d.license]) licAgg2[d.license] = { license: d.license, units: 0, clp: 0 };
+      licAgg2[d.license].units += d.units;
+      licAgg2[d.license].clp += d.clp;
+    });
+    const normalizedByLic = Object.values(licAgg2).sort((a, b) => b.units - a.units);
+    // Update byLicense in place
+    byLicense.length = 0;
+    normalizedByLic.forEach(l => {
+      const orig = colors.find(c => c.license === l.license);
+      l.color = orig ? orig.color : (["#6366f1","#f97316","#22c55e","#eab308","#ef4444","#8b5cf6","#ec4899","#14b8a6","#f59e0b","#3b82f6","#84cc16","#06b6d4","#d946ef","#f43f5e","#10b981"])[byLicense.length % 15];
+      byLicense.push(l);
+    });
+  }
+
+  // KPIs derived from filteredDailyTotals (same source as chart — always consistent)
+  const totalUnits = filteredDailyTotals.reduce((s, d) => s + d.units, 0);
+  const totalCLP = filteredDailyTotals.reduce((s, d) => s + d.clp, 0);
+  const dates = filteredDailyTotals.map(d => d.date);
   const filteredStoreCount = Object.values(rankingByChainStore).reduce((s, stores) => s + stores.length, 0);
   const kpis = {
     ...src.kpis,
@@ -418,24 +475,6 @@ function getFilteredData() {
     numDays: dates.length,
     dateRange: dates.length ? { from: dates[0], to: dates[dates.length - 1] } : src.kpis.dateRange,
   };
-
-  // Re-aggregate dailyTotals from dailyByChain (respects chain filter)
-  const dtAgg = {};
-  dailyByChain.forEach(d => {
-    if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
-    dtAgg[d.date].units += d.units;
-    dtAgg[d.date].clp += d.clp;
-  });
-  let filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
-  if (f.division) {
-    const divDtAgg = {};
-    byDivisionDaily.forEach(d => {
-      if (!divDtAgg[d.date]) divDtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
-      divDtAgg[d.date].units += d.units;
-      divDtAgg[d.date].clp += d.clp;
-    });
-    filteredDailyTotals = Object.values(divDtAgg).sort((a, b) => a.date.localeCompare(b.date));
-  }
 
   // Re-aggregate byDivision from filtered data
   let byDivision = src.byDivision || [];

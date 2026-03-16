@@ -1565,6 +1565,7 @@ function renderRankingPage() {
   renderDivisionDailyChart(data);
   renderDivisionMixChart(data);
   initRankingTable(data);
+  initProductRanking(data);
   // Pareto chart removed
   renderVelocityChart(data);
   // Price Division chart removed; OOS Division moved to Command Center
@@ -1919,6 +1920,142 @@ function renderRankingPage_() {
     pagContainer.appendChild(nav);
   } else if (pagContainer) {
     pagContainer.innerHTML = `<span class="pagination-info">${stores.length} tiendas</span>`;
+  }
+}
+
+// ── Product Ranking Table ───────────────────────────────
+let productRankingState = { products: [], page: 1, pageSize: 50 };
+
+function initProductRanking(data) {
+  const sortSel = document.getElementById("product-sort");
+  if (!sortSel) return;
+  const newSortSel = sortSel.cloneNode(true);
+  sortSel.parentNode.replaceChild(newSortSel, sortSel);
+  const render = () => renderProductRanking(data, newSortSel.value);
+  newSortSel.addEventListener("change", render);
+  render();
+}
+
+function renderProductRanking(data, sortBy) {
+  const tbody = document.getElementById("product-ranking-body");
+  if (!tbody) return;
+
+  let products = filterProductRanking(data);
+  const sortKey = ['units', 'clp', 'margin', 'stockUnits'].includes(sortBy) ? sortBy : 'units';
+  products.sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
+
+  productRankingState.products = products;
+  productRankingState.page = 1;
+  renderProductPage_();
+}
+
+function filterProductRanking(data) {
+  let products = (data.rankingByProduct || []).slice();
+  const f = getGlobalFilters();
+
+  // Chain filter: scale by chain proportion
+  if (f.chains.length) {
+    products = products.map(p => {
+      const totalUnits = p.units;
+      const totalClp = p.clp;
+      let chainUnits = 0, chainClp = 0;
+      f.chains.forEach(ch => {
+        const cd = (p.byChain || {})[ch];
+        if (cd) { chainUnits += cd.units; chainClp += cd.clp; }
+      });
+      if (chainUnits === 0) return null;
+      const uRatio = totalUnits > 0 ? chainUnits / totalUnits : 0;
+      return {
+        ...p,
+        units: chainUnits,
+        clp: chainClp,
+        costos: Math.round(p.costos * uRatio),
+        stockUnits: Math.round(p.stockUnits * uRatio),
+        margin: chainClp > 0 ? Math.round((chainClp - p.costos * uRatio) / chainClp * 1000) / 10 : 0
+      };
+    }).filter(Boolean);
+  }
+
+  // Division filter: exact match
+  if (f.divisions.length) {
+    const divSet = new Set(f.divisions);
+    products = products.filter(p => divSet.has(p.division));
+  }
+
+  // License filter: exact match
+  if (f.licenses.length) {
+    const licSet = new Set(f.licenses);
+    products = products.filter(p => licSet.has(p.license));
+  }
+
+  // Temporada filter: exact match on product's temporada
+  if (f.temporadas.length) {
+    const tempSet = new Set(f.temporadas);
+    products = products.filter(p => tempSet.has(p.temporada));
+  }
+
+  return products;
+}
+
+function renderProductPage_() {
+  const tbody = document.getElementById("product-ranking-body");
+  const pagContainer = document.getElementById("product-pagination");
+  if (!tbody) return;
+  tbody.innerHTML = "";
+
+  const { products, page, pageSize } = productRankingState;
+  const totalPages = Math.ceil(products.length / pageSize);
+  const start = (page - 1) * pageSize;
+  const end = Math.min(start + pageSize, products.length);
+  const pageProducts = products.slice(start, end);
+
+  if (!pageProducts.length) {
+    tbody.innerHTML = '<tr><td colspan="10" style="text-align:center;padding:2rem;color:var(--text-muted)">Sin datos para los filtros seleccionados</td></tr>';
+    if (pagContainer) pagContainer.innerHTML = '';
+    return;
+  }
+
+  pageProducts.forEach((p, idx) => {
+    const globalIdx = start + idx;
+    const marginColor = p.margin >= 30 ? '#22c55e' : p.margin >= 20 ? '#eab308' : p.margin < 0 ? '#ef4444' : '#f97316';
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="rank-number">${globalIdx + 1}</td>
+      <td style="font-size:0.72rem;color:var(--text-muted)">${p.codigo}</td>
+      <td class="store-name-cell" title="${p.descripcion}">${p.descripcion}</td>
+      <td>${p.license || '-'}</td>
+      <td>${p.division || '-'}</td>
+      <td class="number-cell">${p.units.toLocaleString("es-CL")}</td>
+      <td class="number-cell">${formatCLP(p.clp)}</td>
+      <td class="number-cell">${formatCLP(p.costos)}</td>
+      <td class="number-cell" style="color:${marginColor};font-weight:600">${p.margin}%</td>
+      <td class="number-cell">${p.stockUnits > 0 ? p.stockUnits.toLocaleString("es-CL") : '-'}</td>`;
+    tbody.appendChild(tr);
+  });
+
+  // Pagination
+  if (pagContainer && totalPages > 1) {
+    pagContainer.innerHTML = '';
+    const info = document.createElement('span');
+    info.className = 'pagination-info';
+    info.textContent = `Mostrando ${start + 1}-${end} de ${products.length} productos`;
+    pagContainer.appendChild(info);
+    const nav = document.createElement('div');
+    nav.className = 'pagination-nav';
+    for (let pg = 1; pg <= totalPages; pg++) {
+      const btn = document.createElement('button');
+      btn.className = 'pagination-btn' + (pg === page ? ' active' : '');
+      btn.textContent = `${(pg - 1) * pageSize + 1}-${Math.min(pg * pageSize, products.length)}`;
+      btn.addEventListener('click', () => {
+        productRankingState.page = pg;
+        renderProductPage_();
+        document.getElementById("product-ranking-body")?.closest('.table-container')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+      nav.appendChild(btn);
+    }
+    pagContainer.appendChild(nav);
+  } else if (pagContainer) {
+    pagContainer.innerHTML = `<span class="pagination-info">${products.length} productos</span>`;
   }
 }
 

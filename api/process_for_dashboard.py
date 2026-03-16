@@ -419,6 +419,7 @@ def process(year=2026, days_back=None):
             sku_division_map[ci] = div
 
     store_stock_map = {}
+    latest_stock_date = None
     if stock_data:
         stock_dates_set = set(r.get('fecha', '') for r in stock_data if r.get('fecha'))
         latest_stock_date = max(stock_dates_set) if stock_dates_set else None
@@ -503,6 +504,59 @@ def process(year=2026, days_back=None):
             })
         store_list.sort(key=lambda x: -x["units"])
         ranking_by_chain_store[chain] = store_list
+
+    # ── 11b. Ranking por Producto (codigo_interno) ───────
+    product_agg = defaultdict(lambda: {
+        "units": 0, "clp": 0, "costos": 0, "desc": "", "license": "",
+        "division": "", "temporada": "", "byChain": defaultdict(lambda: {"units": 0, "clp": 0})
+    })
+    for r in sales:
+        ci = r.get('codigo_interno', '')
+        if not ci:
+            continue
+        p = product_agg[ci]
+        p["units"] += r['_units']
+        p["clp"] += r['_clp']
+        p["costos"] += r['_costos']
+        p["desc"] = r.get('descripcion', '') or p["desc"]
+        p["license"] = r.get('_license', '') or p["license"]
+        p["division"] = r.get('_division', '') or p["division"]
+        p["temporada"] = r.get('temporada', '') or p["temporada"]
+        chain = r.get('sub_cadena', '')
+        if chain:
+            p["byChain"][chain]["units"] += r['_units']
+            p["byChain"][chain]["clp"] += r['_clp']
+
+    # Stock by product (latest date)
+    product_stock = defaultdict(float)
+    if stock_data and latest_stock_date:
+        for r in stock_data:
+            if r.get('fecha', '') != latest_stock_date:
+                continue
+            ci = r.get('codigo_interno', '')
+            if ci:
+                product_stock[ci] += (r.get('stock_local', 0) or 0)
+
+    # Build top 200 products by units
+    sorted_products = sorted(product_agg.items(), key=lambda x: -x[1]["units"])[:200]
+    ranking_by_product = []
+    for ci, p in sorted_products:
+        margin = round((p["clp"] - p["costos"]) / p["clp"] * 100, 1) if p["clp"] > 0 else 0
+        stock = round(product_stock.get(ci, 0))
+        ranking_by_product.append({
+            "codigo": ci,
+            "descripcion": p["desc"],
+            "license": p["license"],
+            "division": p["division"],
+            "temporada": p["temporada"],
+            "units": round(p["units"]),
+            "clp": round(p["clp"]),
+            "costos": round(p["costos"]),
+            "margin": margin,
+            "stockUnits": stock,
+            "byChain": {ch: {"units": round(d["units"]), "clp": round(d["clp"])}
+                        for ch, d in p["byChain"].items()}
+        })
 
     # ── 12. Mix de División por Cadena ───────────────────
     chain_div_agg = defaultdict(lambda: defaultdict(lambda: {"units": 0}))
@@ -928,6 +982,7 @@ def process(year=2026, days_back=None):
         "byDivision": by_division,
         "byDivisionDaily": by_division_daily,
         "rankingByChainStore": ranking_by_chain_store,
+        "rankingByProduct": ranking_by_product,
         "rankingWeeksPeriod": round(num_weeks_period, 1),
         "divisionMixByChain": division_mix_by_chain,
         "velocityMetrics": velocity_metrics,

@@ -1,11 +1,11 @@
 // Auto-generated from IV API data - DO NOT EDIT MANUALLY
-// Generated: 2026-03-16 18:03:12
+// Generated: 2026-03-16 18:30:11
 // Source: 114517 sales records, 34 days
-// Blocks: 33 data sections
+// Blocks: 34 data sections
 
 const REAL_SELLOUT = {
   "_meta": {
-    "generatedAt": "2026-03-16T18:03:11.302256",
+    "generatedAt": "2026-03-16T18:30:10.707337",
     "salesRecords": 114517,
     "salesDateFrom": "2026-02-10",
     "salesDateTo": "2026-03-15",
@@ -28801,6 +28801,3932 @@ const REAL_SELLOUT = {
       }
     ]
   },
+  "rankingByProduct": [
+    {
+      "codigo": "30801727620002",
+      "descripcion": "CAMISOLA MC MUJER DE ESPALDA LILO & STITCH CELESTE S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 3302,
+      "clp": 12122048,
+      "costos": 17170400,
+      "margin": -41.6,
+      "stockUnits": 2643,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 2987,
+          "clp": 11109907
+        },
+        "Walmart": {
+          "units": 237,
+          "clp": 734815
+        },
+        "Ekono": {
+          "units": 78,
+          "clp": 277326
+        }
+      }
+    },
+    {
+      "codigo": "32400913265237",
+      "descripcion": "7891109604014 SANDALIAS HAVAIANAS HOMBRE COLOR 12P GD ME PRETO 37-38",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q423",
+      "units": 1327,
+      "clp": 7676375,
+      "costos": 7967308,
+      "margin": -3.8,
+      "stockUnits": -660,
+      "byChain": {
+        "Jumbo": {
+          "units": 1327,
+          "clp": 7676375
+        }
+      }
+    },
+    {
+      "codigo": "31401890065002",
+      "descripcion": "POLERA MC UNISEX ADULTO LOGO ACDC NEGRO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 755,
+      "clp": 8173619,
+      "costos": 4907500,
+      "margin": 40.0,
+      "stockUnits": 253,
+      "byChain": {
+        "Jumbo": {
+          "units": 755,
+          "clp": 8173619
+        }
+      }
+    },
+    {
+      "codigo": "30501819781222",
+      "descripcion": "PANTUFLA BOTA TODDLERA Y BINGO LISTADO BLUEY ROSADO 22-23",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 750,
+      "clp": 6901289,
+      "costos": 4192500,
+      "margin": 39.3,
+      "stockUnits": 233,
+      "byChain": {
+        "Jumbo": {
+          "units": 750,
+          "clp": 6901289
+        }
+      }
+    },
+    {
+      "codigo": "24701867512102",
+      "descripcion": "BOXER 2P TODDLERO PERSONAJES PAW PATROL BLANCO 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 709,
+      "clp": 4726167,
+      "costos": 3190500,
+      "margin": 32.5,
+      "stockUnits": 280,
+      "byChain": {
+        "Jumbo": {
+          "units": 709,
+          "clp": 4726167
+        }
+      }
+    },
+    {
+      "codigo": "30801863681002",
+      "descripcion": "PIJAMA LL MUJER FLORES SNOOPY ROSADO S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 703,
+      "clp": 7673948,
+      "costos": 5061600,
+      "margin": 34.0,
+      "stockUnits": 310,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 685,
+          "clp": 7477460
+        },
+        "Walmart": {
+          "units": 18,
+          "clp": 196488
+        }
+      }
+    },
+    {
+      "codigo": "24701880420102",
+      "descripcion": "BOXER 2P TODDLERO FULL PRINT BLUEY CELESTE 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 700,
+      "clp": 4673333,
+      "costos": 3150000,
+      "margin": 32.6,
+      "stockUnits": 147,
+      "byChain": {
+        "Jumbo": {
+          "units": 700,
+          "clp": 4673333
+        }
+      }
+    },
+    {
+      "codigo": "30801869333001",
+      "descripcion": "PIJAMA CL MUJER POPPY SNOOPY ECRU XS",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 691,
+      "clp": 9817902,
+      "costos": 6426300,
+      "margin": 34.5,
+      "stockUnits": 118,
+      "byChain": {
+        "Jumbo": {
+          "units": 691,
+          "clp": 9817902
+        }
+      }
+    },
+    {
+      "codigo": "24401878581519",
+      "descripcion": "CALCETIN 2P TODDLERA Y BINGO BLUEY ROSADO 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 683,
+      "clp": 2846940,
+      "costos": 1707500,
+      "margin": 40.0,
+      "stockUnits": 273,
+      "byChain": {
+        "Jumbo": {
+          "units": 683,
+          "clp": 2846940
+        }
+      }
+    },
+    {
+      "codigo": "24701880320102",
+      "descripcion": "BOXER 2P TODDLERO LISTADO BLUEY CELESTE 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 674,
+      "clp": 4492170,
+      "costos": 3033000,
+      "margin": 32.5,
+      "stockUnits": 179,
+      "byChain": {
+        "Jumbo": {
+          "units": 674,
+          "clp": 4492170
+        }
+      }
+    },
+    {
+      "codigo": "30801869249001",
+      "descripcion": "PIJAMA CL MUJER MORE NAPS SNOOPY LAVANDA XS",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 665,
+      "clp": 9436872,
+      "costos": 6184500,
+      "margin": 34.5,
+      "stockUnits": 91,
+      "byChain": {
+        "Jumbo": {
+          "units": 665,
+          "clp": 9436872
+        }
+      }
+    },
+    {
+      "codigo": "24401911512500",
+      "descripcion": "CALCETIN 2P NIÑO CUADRILLE SONIC BLANCO 31-34",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 662,
+      "clp": 1662081,
+      "costos": 1045960,
+      "margin": 37.1,
+      "stockUnits": 482,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 662,
+          "clp": 1662081
+        }
+      }
+    },
+    {
+      "codigo": "30801863520002",
+      "descripcion": "PIJAMA LL MUJER TUTO SNOOPY CELESTE S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 650,
+      "clp": 7095400,
+      "costos": 4680000,
+      "margin": 34.0,
+      "stockUnits": 337,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 630,
+          "clp": 6877080
+        },
+        "Walmart": {
+          "units": 20,
+          "clp": 218320
+        }
+      }
+    },
+    {
+      "codigo": "31501875452102",
+      "descripcion": "POLERON CERRADO TODDLERA VUELOS BLUEY MALVA 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 634,
+      "clp": 7422637,
+      "costos": 4472236,
+      "margin": 39.7,
+      "stockUnits": 188,
+      "byChain": {
+        "Jumbo": {
+          "units": 634,
+          "clp": 7422637
+        }
+      }
+    },
+    {
+      "codigo": "24401878381519",
+      "descripcion": "CALCETIN 2P TODDLERA LINEAL BLUEY ROSADO 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 620,
+      "clp": 2589819,
+      "costos": 1550000,
+      "margin": 40.2,
+      "stockUnits": 401,
+      "byChain": {
+        "Jumbo": {
+          "units": 620,
+          "clp": 2589819
+        }
+      }
+    },
+    {
+      "codigo": "24401911412523",
+      "descripcion": "CALCETIN 2P NIÑO Y BINGO BLUEY BLANCO 23-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 596,
+      "clp": 1497748,
+      "costos": 941680,
+      "margin": 37.1,
+      "stockUnits": 584,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 596,
+          "clp": 1497748
+        }
+      }
+    },
+    {
+      "codigo": "24401647904000",
+      "descripcion": "CALCETIN 2P HOMBRE CASITA SNOOPY AZUL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 595,
+      "clp": 1745135,
+      "costos": 1065050,
+      "margin": 39.0,
+      "stockUnits": 1049,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 595,
+          "clp": 1745135
+        }
+      }
+    },
+    {
+      "codigo": "24401911612500",
+      "descripcion": "CALCETIN 2P NIÑA FLORES SNOOPY BLANCO 31-34",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 591,
+      "clp": 1484493,
+      "costos": 933780,
+      "margin": 37.1,
+      "stockUnits": 924,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 591,
+          "clp": 1484493
+        }
+      }
+    },
+    {
+      "codigo": "30501819804222",
+      "descripcion": "PANTUFLA BOTA TODDLERO Y BINGO BLUEY AZUL 22-23",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 591,
+      "clp": 5435060,
+      "costos": 3303690,
+      "margin": 39.2,
+      "stockUnits": 153,
+      "byChain": {
+        "Jumbo": {
+          "units": 591,
+          "clp": 5435060
+        }
+      }
+    },
+    {
+      "codigo": "33801819981022",
+      "descripcion": "ZAPATILLA URBANA TODDLERA Y BINGO ESTRELLAS BLUEY ROSADO 22",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 586,
+      "clp": 8310971,
+      "costos": 5010300,
+      "margin": 39.7,
+      "stockUnits": 416,
+      "byChain": {
+        "Jumbo": {
+          "units": 586,
+          "clp": 8310971
+        }
+      }
+    },
+    {
+      "codigo": "30801878281102",
+      "descripcion": "PIJAMA LL TODDLERA ABRAZO BLUEY ROSADO 2.",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 578,
+      "clp": 7250111,
+      "costos": 4508400,
+      "margin": 37.8,
+      "stockUnits": 196,
+      "byChain": {
+        "Jumbo": {
+          "units": 578,
+          "clp": 7250111
+        }
+      }
+    },
+    {
+      "codigo": "30801868981106",
+      "descripcion": "PIJAMA CL NIÑA FRIENDS SNOOPY ROSADO 6",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 562,
+      "clp": 6583188,
+      "costos": 4215000,
+      "margin": 36.0,
+      "stockUnits": 351,
+      "byChain": {
+        "Jumbo": {
+          "units": 562,
+          "clp": 6583188
+        }
+      }
+    },
+    {
+      "codigo": "30801868820106",
+      "descripcion": "PIJAMA CL NIÑA HELADO SNOOPY CELESTE 6",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 539,
+      "clp": 6311137,
+      "costos": 4042500,
+      "margin": 35.9,
+      "stockUnits": 346,
+      "byChain": {
+        "Jumbo": {
+          "units": 539,
+          "clp": 6311137
+        }
+      }
+    },
+    {
+      "codigo": "24401867604519",
+      "descripcion": "CALCETIN 2P TODDLERO PERSONAJES MARVEL AZUL 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 535,
+      "clp": 2235515,
+      "costos": 1337500,
+      "margin": 40.2,
+      "stockUnits": 476,
+      "byChain": {
+        "Jumbo": {
+          "units": 535,
+          "clp": 2235515
+        }
+      }
+    },
+    {
+      "codigo": "24601880181102",
+      "descripcion": "CALZON 2P TODDLERA FULL PRINT BLUEY ROSADO 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 530,
+      "clp": 3097270,
+      "costos": 1908000,
+      "margin": 38.4,
+      "stockUnits": 333,
+      "byChain": {
+        "Jumbo": {
+          "units": 530,
+          "clp": 3097270
+        }
+      }
+    },
+    {
+      "codigo": "24401878912519",
+      "descripcion": "CALCETIN 2P TODDLERO PERSONAJE BLUEY BLANCO 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 515,
+      "clp": 2150427,
+      "costos": 1287500,
+      "margin": 40.1,
+      "stockUnits": 507,
+      "byChain": {
+        "Jumbo": {
+          "units": 515,
+          "clp": 2150427
+        }
+      }
+    },
+    {
+      "codigo": "30801878820102",
+      "descripcion": "PIJAMA LL TODDLERO TOP FULL PRINT BLUEY CELESTE 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 511,
+      "clp": 6410671,
+      "costos": 3985800,
+      "margin": 37.8,
+      "stockUnits": 261,
+      "byChain": {
+        "Jumbo": {
+          "units": 511,
+          "clp": 6410671
+        }
+      }
+    },
+    {
+      "codigo": "30801878620102",
+      "descripcion": "PIJAMA LL TODDLERO Y BINGO BLUEY CELESTE 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 506,
+      "clp": 6346665,
+      "costos": 3946800,
+      "margin": 37.8,
+      "stockUnits": 270,
+      "byChain": {
+        "Jumbo": {
+          "units": 506,
+          "clp": 6346665
+        }
+      }
+    },
+    {
+      "codigo": "24601880281102",
+      "descripcion": "CALZON 2P TODDLERA FLORES BLUEY ROSADO 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 504,
+      "clp": 2947419,
+      "costos": 1814400,
+      "margin": 38.4,
+      "stockUnits": 358,
+      "byChain": {
+        "Jumbo": {
+          "units": 504,
+          "clp": 2947419
+        }
+      }
+    },
+    {
+      "codigo": "24401911812535",
+      "descripcion": "CALCETIN 2P TEENO CREEPER MINECRAFT BLANCO 35-39",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 502,
+      "clp": 1261526,
+      "costos": 948780,
+      "margin": 24.8,
+      "stockUnits": 470,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 502,
+          "clp": 1261526
+        }
+      }
+    },
+    {
+      "codigo": "30801864281112",
+      "descripcion": "PIJAMA LL TEENA STAY COOL SNOOPY ROSADO 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 502,
+      "clp": 5056471,
+      "costos": 3313200,
+      "margin": 34.5,
+      "stockUnits": 519,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 465,
+          "clp": 4683659
+        },
+        "Walmart": {
+          "units": 37,
+          "clp": 372812
+        }
+      }
+    },
+    {
+      "codigo": "24401878720519",
+      "descripcion": "CALCETIN 2P TODDLERO LINEAL BLUEY CELESTE 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 500,
+      "clp": 2090213,
+      "costos": 1250000,
+      "margin": 40.2,
+      "stockUnits": 512,
+      "byChain": {
+        "Jumbo": {
+          "units": 500,
+          "clp": 2090213
+        }
+      }
+    },
+    {
+      "codigo": "24401911712523",
+      "descripcion": "CALCETIN 2P NIÑA LISTADO BLUEY BLANCO 23-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 494,
+      "clp": 1240044,
+      "costos": 780520,
+      "margin": 37.1,
+      "stockUnits": 693,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 494,
+          "clp": 1240044
+        }
+      }
+    },
+    {
+      "codigo": "24401867412519",
+      "descripcion": "CALCETIN 2P TODDLERO PERSONAJES PAW PATROL BLANCO 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 489,
+      "clp": 2036699,
+      "costos": 1222500,
+      "margin": 40.0,
+      "stockUnits": 521,
+      "byChain": {
+        "Jumbo": {
+          "units": 489,
+          "clp": 2036699
+        }
+      }
+    },
+    {
+      "codigo": "31501875204102",
+      "descripcion": "POLERON CERRADO TODDLERO CUADROS BLUEY AZUL 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 485,
+      "clp": 5669038,
+      "costos": 3421190,
+      "margin": 39.7,
+      "stockUnits": 345,
+      "byChain": {
+        "Jumbo": {
+          "units": 485,
+          "clp": 5669038
+        }
+      }
+    },
+    {
+      "codigo": "30801863420002",
+      "descripcion": "PIJAMA LL MUJER HELGA NICK 90 CELESTE S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 483,
+      "clp": 5269907,
+      "costos": 3477600,
+      "margin": 34.0,
+      "stockUnits": 526,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 464,
+          "clp": 5062503
+        },
+        "Walmart": {
+          "units": 19,
+          "clp": 207404
+        }
+      }
+    },
+    {
+      "codigo": "33801820104022",
+      "descripcion": "ZAPATILLA URBANA TODDLERO GO MARVEL AZUL 22",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 474,
+      "clp": 6729323,
+      "costos": 4052700,
+      "margin": 39.8,
+      "stockUnits": 426,
+      "byChain": {
+        "Jumbo": {
+          "units": 474,
+          "clp": 6729323
+        }
+      }
+    },
+    {
+      "codigo": "32401730736235",
+      "descripcion": "4000016-HAVAIANA COLOR ROSA FLUX/ROSA FLUX MUJER FUCSIA 35-36",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 471,
+      "clp": 2730941,
+      "costos": 2832950,
+      "margin": -3.7,
+      "stockUnits": 324,
+      "byChain": {
+        "Jumbo": {
+          "units": 466,
+          "clp": 2701467
+        },
+        "Ripley": {
+          "units": 5,
+          "clp": 29474
+        }
+      }
+    },
+    {
+      "codigo": "24401647542000",
+      "descripcion": "CALCETIN 2P HOMBRE LOGOS ACDC GRIS OSC T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 470,
+      "clp": 1377630,
+      "costos": 841300,
+      "margin": 38.9,
+      "stockUnits": 553,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 470,
+          "clp": 1377630
+        }
+      }
+    },
+    {
+      "codigo": "30801864991104",
+      "descripcion": "PIJAMA LL NIÑO CREEPER MINECRAFT VERDE 4",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 467,
+      "clp": 4311835,
+      "costos": 2848700,
+      "margin": 33.9,
+      "stockUnits": 568,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 467,
+          "clp": 4311835
+        }
+      }
+    },
+    {
+      "codigo": "30801863341002",
+      "descripcion": "PIJAMA LL MUJER PARADO GARFIELD GRIS MEL S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 466,
+      "clp": 5086856,
+      "costos": 3355200,
+      "margin": 34.0,
+      "stockUnits": 545,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 451,
+          "clp": 4923116
+        },
+        "Walmart": {
+          "units": 15,
+          "clp": 163740
+        }
+      }
+    },
+    {
+      "codigo": "30801864501112",
+      "descripcion": "PIJAMA LL TEENO CREATE MINECRAFT ACERO 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 453,
+      "clp": 4563587,
+      "costos": 2989800,
+      "margin": 34.5,
+      "stockUnits": 541,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 441,
+          "clp": 4442675
+        },
+        "Walmart": {
+          "units": 12,
+          "clp": 120912
+        }
+      }
+    },
+    {
+      "codigo": "33801820020022",
+      "descripcion": "ZAPATILLA URBANA TODDLERO Y BINGO BLUEY CELESTE 22",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 449,
+      "clp": 6372675,
+      "costos": 3838950,
+      "margin": 39.8,
+      "stockUnits": 446,
+      "byChain": {
+        "Jumbo": {
+          "units": 449,
+          "clp": 6372675
+        }
+      }
+    },
+    {
+      "codigo": "31501818133102",
+      "descripcion": "POLERON CERRADO TODDLERO ROTATIVO MARVEL ECRU 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 445,
+      "clp": 5207452,
+      "costos": 3248500,
+      "margin": 37.6,
+      "stockUnits": 576,
+      "byChain": {
+        "Jumbo": {
+          "units": 445,
+          "clp": 5207452
+        }
+      }
+    },
+    {
+      "codigo": "24701649620103",
+      "descripcion": "BOXER 2P NIÑO FULL PRINT BLUEY CELESTE 3",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 435,
+      "clp": 2552669,
+      "costos": 1740000,
+      "margin": 31.8,
+      "stockUnits": 1243,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 431,
+          "clp": 2529173
+        },
+        "Lider Express": {
+          "units": 3,
+          "clp": 17622
+        },
+        "Walmart": {
+          "units": 1,
+          "clp": 5874
+        }
+      }
+    },
+    {
+      "codigo": "30801864781104",
+      "descripcion": "PIJAMA LL NIÑA FLORES BLUEY ROSADO 4",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 434,
+      "clp": 4006377,
+      "costos": 2647400,
+      "margin": 33.9,
+      "stockUnits": 576,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 406,
+          "clp": 3747797
+        },
+        "Walmart": {
+          "units": 28,
+          "clp": 258580
+        }
+      }
+    },
+    {
+      "codigo": "33801820281022",
+      "descripcion": "ZAPATILLA URBANA TODDLERA SKYE MARIPOSA PAW PATROL ROSADO 22",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 431,
+      "clp": 6106331,
+      "costos": 3685050,
+      "margin": 39.7,
+      "stockUnits": 450,
+      "byChain": {
+        "Jumbo": {
+          "units": 431,
+          "clp": 6106331
+        }
+      }
+    },
+    {
+      "codigo": "24701649541103",
+      "descripcion": "BOXER 2P NIÑO FULL PRINT SONIC GRIS MEL 3",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 431,
+      "clp": 2531694,
+      "costos": 1724000,
+      "margin": 31.9,
+      "stockUnits": 1050,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 428,
+          "clp": 2514072
+        },
+        "Walmart": {
+          "units": 3,
+          "clp": 17622
+        }
+      }
+    },
+    {
+      "codigo": "31501818477102",
+      "descripcion": "POLERON CERRADO TODDLERO FLOCK MARVEL ROJO 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 428,
+      "clp": 4974325,
+      "costos": 3124400,
+      "margin": 37.2,
+      "stockUnits": 339,
+      "byChain": {
+        "Jumbo": {
+          "units": 428,
+          "clp": 4974325
+        }
+      }
+    },
+    {
+      "codigo": "24601867133102",
+      "descripcion": "CALZON 2P TODDLERA SKYE PAW PATROL ECRU 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 427,
+      "clp": 2496068,
+      "costos": 1558550,
+      "margin": 37.6,
+      "stockUnits": 587,
+      "byChain": {
+        "Jumbo": {
+          "units": 427,
+          "clp": 2496068
+        }
+      }
+    },
+    {
+      "codigo": "30801878481102",
+      "descripcion": "PIJAMA LL TODDLERA Y BINGO BLUEY ROSADO 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 424,
+      "clp": 5317035,
+      "costos": 3307200,
+      "margin": 37.8,
+      "stockUnits": 351,
+      "byChain": {
+        "Jumbo": {
+          "units": 424,
+          "clp": 5317035
+        }
+      }
+    },
+    {
+      "codigo": "24401867033519",
+      "descripcion": "CALCETIN 2P TODDLERA SKYE PAW PATROL ECRU 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 414,
+      "clp": 1728717,
+      "costos": 1035000,
+      "margin": 40.1,
+      "stockUnits": 611,
+      "byChain": {
+        "Jumbo": {
+          "units": 414,
+          "clp": 1728717
+        }
+      }
+    },
+    {
+      "codigo": "31401875381102",
+      "descripcion": "POLERA ML TODDLERA VUELOS BLUEY ROSADO 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 407,
+      "clp": 3400037,
+      "costos": 2050059,
+      "margin": 39.7,
+      "stockUnits": 431,
+      "byChain": {
+        "Jumbo": {
+          "units": 407,
+          "clp": 3400037
+        }
+      }
+    },
+    {
+      "codigo": "24701649420103",
+      "descripcion": "BOXER 2P NIÑO FULL PRINT PAW PATROL CELESTE 3",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 404,
+      "clp": 2361826,
+      "costos": 1616000,
+      "margin": 31.6,
+      "stockUnits": 1401,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 403,
+          "clp": 2355952
+        },
+        "Walmart": {
+          "units": 1,
+          "clp": 5874
+        }
+      }
+    },
+    {
+      "codigo": "24401647141000",
+      "descripcion": "CALCETIN 2P MUJER ABRAZO OSO GARFIELD GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 404,
+      "clp": 1184932,
+      "costos": 638320,
+      "margin": 46.1,
+      "stockUnits": 1213,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 401,
+          "clp": 1176133
+        },
+        "Ekono": {
+          "units": 3,
+          "clp": 8799
+        }
+      }
+    },
+    {
+      "codigo": "24401911912535",
+      "descripcion": "CALCETIN 2P TEENA CINTA SNOOPY BLANCO 35-39",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 393,
+      "clp": 986793,
+      "costos": 742770,
+      "margin": 24.7,
+      "stockUnits": 603,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 393,
+          "clp": 986793
+        }
+      }
+    },
+    {
+      "codigo": "33801820412022",
+      "descripcion": "ZAPATILLA URBANA TODDLERA MIRANDO DISNEY BLANCO 22",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 391,
+      "clp": 5541594,
+      "costos": 3343050,
+      "margin": 39.7,
+      "stockUnits": 493,
+      "byChain": {
+        "Jumbo": {
+          "units": 391,
+          "clp": 5541594
+        }
+      }
+    },
+    {
+      "codigo": "31501889941002",
+      "descripcion": "POLERON CERRADO UNISEX ADULTO DEFINITELY MAYBE OASIS GRIS MEL S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 391,
+      "clp": 5542838,
+      "costos": 3440800,
+      "margin": 37.9,
+      "stockUnits": 617,
+      "byChain": {
+        "Jumbo": {
+          "units": 391,
+          "clp": 5542838
+        }
+      }
+    },
+    {
+      "codigo": "31401889640002",
+      "descripcion": "POLERA MC UNISEX ADULTO BANDA THE BEATLES GRIS CLAR S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 390,
+      "clp": 4242597,
+      "costos": 2535000,
+      "margin": 40.2,
+      "stockUnits": 618,
+      "byChain": {
+        "Jumbo": {
+          "units": 390,
+          "clp": 4242597
+        }
+      }
+    },
+    {
+      "codigo": "24401647642000",
+      "descripcion": "CALCETIN 2P HOMBRE LOGOS PINK FLOYD GRIS OSC T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 388,
+      "clp": 1138004,
+      "costos": 694520,
+      "margin": 39.0,
+      "stockUnits": 603,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 388,
+          "clp": 1138004
+        }
+      }
+    },
+    {
+      "codigo": "32401733503235",
+      "descripcion": "4000030-HAVAIANA SLIM AREIA/DOUR CLARO MUJER ARENA 35-36",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 388,
+      "clp": 3706130,
+      "costos": 2717958,
+      "margin": 26.7,
+      "stockUnits": 223,
+      "byChain": {
+        "Jumbo": {
+          "units": 386,
+          "clp": 3679544
+        },
+        "Paris": {
+          "units": 2,
+          "clp": 26586
+        }
+      }
+    },
+    {
+      "codigo": "31501889712002",
+      "descripcion": "POLERON CERRADO UNISEX ADULTO LOGO THE BEATLES BLANCO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 380,
+      "clp": 5396679,
+      "costos": 3344000,
+      "margin": 38.0,
+      "stockUnits": 628,
+      "byChain": {
+        "Jumbo": {
+          "units": 380,
+          "clp": 5396679
+        }
+      }
+    },
+    {
+      "codigo": "31501890114002",
+      "descripcion": "POLERON CERRADO UNISEX ADULTO LOGO ACDC BURDEO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 369,
+      "clp": 5227632,
+      "costos": 3247200,
+      "margin": 37.9,
+      "stockUnits": 639,
+      "byChain": {
+        "Jumbo": {
+          "units": 369,
+          "clp": 5227632
+        }
+      }
+    },
+    {
+      "codigo": "24401648281000",
+      "descripcion": "CALCETIN 2P NIÑA SKYE Y CORAZONE PAW PATROL ROSADO T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 364,
+      "clp": 914732,
+      "costos": 531440,
+      "margin": 41.9,
+      "stockUnits": 647,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 361,
+          "clp": 907193
+        },
+        "Walmart": {
+          "units": 3,
+          "clp": 7539
+        }
+      }
+    },
+    {
+      "codigo": "31501875111102",
+      "descripcion": "POLERON CERRADO TODDLERO PERSONAJES BLUEY BEIGE 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 357,
+      "clp": 4162705,
+      "costos": 2518278,
+      "margin": 39.5,
+      "stockUnits": 473,
+      "byChain": {
+        "Jumbo": {
+          "units": 357,
+          "clp": 4162705
+        }
+      }
+    },
+    {
+      "codigo": "33801820312022",
+      "descripcion": "ZAPATILLA URBANA TODDLERO PATITAS PAW PATROL BLANCO 22",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 356,
+      "clp": 5049166,
+      "costos": 3043800,
+      "margin": 39.7,
+      "stockUnits": 514,
+      "byChain": {
+        "Jumbo": {
+          "units": 356,
+          "clp": 5049166
+        }
+      }
+    },
+    {
+      "codigo": "31501890301002",
+      "descripcion": "POLERON CERRADO UNISEX ADULTO LOGO METALLICA ACERO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 354,
+      "clp": 5017940,
+      "costos": 3115200,
+      "margin": 37.9,
+      "stockUnits": 654,
+      "byChain": {
+        "Jumbo": {
+          "units": 354,
+          "clp": 5017940
+        }
+      }
+    },
+    {
+      "codigo": "31501814065106",
+      "descripcion": "POLERON CERRADO NIÑO CARAS BOB ESPONJA NEGRO 6",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 351,
+      "clp": 2580437,
+      "costos": 2475954,
+      "margin": 4.0,
+      "stockUnits": 217,
+      "byChain": {
+        "Jumbo": {
+          "units": 351,
+          "clp": 2580437
+        }
+      }
+    },
+    {
+      "codigo": "24401647041000",
+      "descripcion": "CALCETIN 2P MUJER CORAZONES SNOOPY GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 350,
+      "clp": 1026550,
+      "costos": 553000,
+      "margin": 46.1,
+      "stockUnits": 320,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 349,
+          "clp": 1023617
+        },
+        "Ekono": {
+          "units": 1,
+          "clp": 2933
+        }
+      }
+    },
+    {
+      "codigo": "24601867320102",
+      "descripcion": "CALZON 2P TODDLERA FULL PRINT DISNEY CELESTE 2",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 343,
+      "clp": 2008772,
+      "costos": 1251950,
+      "margin": 37.7,
+      "stockUnits": 675,
+      "byChain": {
+        "Jumbo": {
+          "units": 343,
+          "clp": 2008772
+        }
+      }
+    },
+    {
+      "codigo": "30801865041104",
+      "descripcion": "PIJAMA LL NIÑO BINGO BLUEY GRIS MEL 4",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 337,
+      "clp": 3112195,
+      "costos": 2055700,
+      "margin": 33.9,
+      "stockUnits": 689,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 337,
+          "clp": 3112195
+        }
+      }
+    },
+    {
+      "codigo": "24401647359000",
+      "descripcion": "CALCETIN 2P MUJER HELGA NICK 90 MORADO T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 333,
+      "clp": 976396,
+      "costos": 526140,
+      "margin": 46.1,
+      "stockUnits": 612,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 323,
+          "clp": 947066
+        },
+        "Ekono": {
+          "units": 10,
+          "clp": 29330
+        }
+      }
+    },
+    {
+      "codigo": "24401647241000",
+      "descripcion": "CALCETIN 2P MUJER GARY Y BOB NICK 90 GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 328,
+      "clp": 962024,
+      "costos": 518240,
+      "margin": 46.1,
+      "stockUnits": 1045,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 324,
+          "clp": 950292
+        },
+        "Ekono": {
+          "units": 4,
+          "clp": 11732
+        }
+      }
+    },
+    {
+      "codigo": "31401875004102",
+      "descripcion": "POLERA ML TODDLERO AMIGOS BLUEY AZUL 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 315,
+      "clp": 2632408,
+      "costos": 1586655,
+      "margin": 39.7,
+      "stockUnits": 509,
+      "byChain": {
+        "Jumbo": {
+          "units": 315,
+          "clp": 2632408
+        }
+      }
+    },
+    {
+      "codigo": "31501818041102",
+      "descripcion": "POLERON CERRADO TODDLERO ROTATIVO PAW PATROL GRIS MEL 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 315,
+      "clp": 3681368,
+      "costos": 2299500,
+      "margin": 37.5,
+      "stockUnits": 467,
+      "byChain": {
+        "Jumbo": {
+          "units": 315,
+          "clp": 3681368
+        }
+      }
+    },
+    {
+      "codigo": "31501817633102",
+      "descripcion": "POLERON CERRADO TODDLERA ROTATIVO MINNIE ECRU 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 313,
+      "clp": 3657501,
+      "costos": 2284900,
+      "margin": 37.5,
+      "stockUnits": 701,
+      "byChain": {
+        "Jumbo": {
+          "units": 313,
+          "clp": 3657501
+        }
+      }
+    },
+    {
+      "codigo": "30801864181112",
+      "descripcion": "PIJAMA LL TEENA FRIEND TOY STORY ROSADO 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 311,
+      "clp": 3131954,
+      "costos": 2052600,
+      "margin": 34.5,
+      "stockUnits": 705,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 293,
+          "clp": 2950586
+        },
+        "Walmart": {
+          "units": 18,
+          "clp": 181368
+        }
+      }
+    },
+    {
+      "codigo": "31402031481210",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 9-10A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 310,
+      "clp": 3852976,
+      "costos": 2051032,
+      "margin": 46.8,
+      "stockUnits": 447,
+      "byChain": {
+        "Falabella": {
+          "units": 129,
+          "clp": 1646378
+        },
+        "La Polar": {
+          "units": 36,
+          "clp": 390811
+        },
+        "Paris": {
+          "units": 145,
+          "clp": 1815787
+        }
+      }
+    },
+    {
+      "codigo": "24401648181000",
+      "descripcion": "CALCETIN 2P NIÑA SKYE Y EVEREST PAW PATROL ROSADO T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 310,
+      "clp": 770665,
+      "costos": 452600,
+      "margin": 41.3,
+      "stockUnits": 508,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 310,
+          "clp": 770665
+        }
+      }
+    },
+    {
+      "codigo": "24401648381000",
+      "descripcion": "CALCETIN 2P NIÑA AMY SONIC ROSADO T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 309,
+      "clp": 776517,
+      "costos": 451140,
+      "margin": 41.9,
+      "stockUnits": 720,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 309,
+          "clp": 776517
+        }
+      }
+    },
+    {
+      "codigo": "24401819539526",
+      "descripcion": "CALCETIN 2P UNISEX CALAMARDO BOB ESPONJA GRIS 24-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 307,
+      "clp": 788096,
+      "costos": 767500,
+      "margin": 2.6,
+      "stockUnits": 297,
+      "byChain": {
+        "Jumbo": {
+          "units": 307,
+          "clp": 788096
+        }
+      }
+    },
+    {
+      "codigo": "24401867220519",
+      "descripcion": "CALCETIN 2P TODDLERA PERSONAJE DISNEY CELESTE 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 302,
+      "clp": 1259364,
+      "costos": 755000,
+      "margin": 40.0,
+      "stockUnits": 722,
+      "byChain": {
+        "Jumbo": {
+          "units": 302,
+          "clp": 1259364
+        }
+      }
+    },
+    {
+      "codigo": "31501817581102",
+      "descripcion": "POLERON CERRADO TODDLERA ROTATIVO MINNIE ROSADO 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 297,
+      "clp": 3475088,
+      "costos": 2168100,
+      "margin": 37.6,
+      "stockUnits": 726,
+      "byChain": {
+        "Jumbo": {
+          "units": 297,
+          "clp": 3475088
+        }
+      }
+    },
+    {
+      "codigo": "24401647491000",
+      "descripcion": "CALCETIN 2P MUJER CENTRAL PERK FRIENDS VERDE T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 296,
+      "clp": 868168,
+      "costos": 467680,
+      "margin": 46.1,
+      "stockUnits": 782,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 296,
+          "clp": 868168
+        }
+      }
+    },
+    {
+      "codigo": "24401869181526",
+      "descripcion": "CALCETIN 2P NIÑA CORAZONES SNOOPY ROSADO 24-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 296,
+      "clp": 1234752,
+      "costos": 740000,
+      "margin": 40.1,
+      "stockUnits": 336,
+      "byChain": {
+        "Jumbo": {
+          "units": 296,
+          "clp": 1234752
+        }
+      }
+    },
+    {
+      "codigo": "31501860164104",
+      "descripcion": "POLERON CERRADO NIÑO PERSONAJES SNOOPY NAVY 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 294,
+      "clp": 3687281,
+      "costos": 2116800,
+      "margin": 42.6,
+      "stockUnits": 260,
+      "byChain": {
+        "Jumbo": {
+          "units": 294,
+          "clp": 3687281
+        }
+      }
+    },
+    {
+      "codigo": "24401869520000",
+      "descripcion": "CALCETIN 2P MUJER FLORES SNOOPY CELESTE T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 293,
+      "clp": 1471640,
+      "costos": 879000,
+      "margin": 40.3,
+      "stockUnits": 214,
+      "byChain": {
+        "Jumbo": {
+          "units": 293,
+          "clp": 1471640
+        }
+      }
+    },
+    {
+      "codigo": "32401733304237",
+      "descripcion": "4148587-HAVAIANA COLOR ESSENTIAL AZUL INDIGO/AZUL INDIGO HOMBRE 37-38",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 290,
+      "clp": 2008703,
+      "costos": 1943000,
+      "margin": 3.3,
+      "stockUnits": 129,
+      "byChain": {
+        "Jumbo": {
+          "units": 290,
+          "clp": 2008703
+        }
+      }
+    },
+    {
+      "codigo": "31401890203002",
+      "descripcion": "POLERA MC UNISEX ADULTO LINEAL METALLICA ARENA S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 290,
+      "clp": 3149036,
+      "costos": 1885000,
+      "margin": 40.1,
+      "stockUnits": 718,
+      "byChain": {
+        "Jumbo": {
+          "units": 290,
+          "clp": 3149036
+        }
+      }
+    },
+    {
+      "codigo": "31402033965278",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 7-8A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 283,
+      "clp": 3567178,
+      "costos": 1873906,
+      "margin": 47.5,
+      "stockUnits": 491,
+      "byChain": {
+        "Falabella": {
+          "units": 100,
+          "clp": 1257678
+        },
+        "Paris": {
+          "units": 175,
+          "clp": 2210776
+        },
+        "Hites": {
+          "units": 8,
+          "clp": 98724
+        }
+      }
+    },
+    {
+      "codigo": "31501817920102",
+      "descripcion": "POLERON CERRADO TODDLERO ROTATIVO BLUEY CELESTE 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 282,
+      "clp": 3285051,
+      "costos": 2058600,
+      "margin": 37.3,
+      "stockUnits": 498,
+      "byChain": {
+        "Jumbo": {
+          "units": 282,
+          "clp": 3285051
+        }
+      }
+    },
+    {
+      "codigo": "24401819639000",
+      "descripcion": "CALCETIN 2P UNISEX CALAMARDO BOB ESPONJA GRIS T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 281,
+      "clp": 880372,
+      "costos": 843000,
+      "margin": 4.2,
+      "stockUnits": 385,
+      "byChain": {
+        "Jumbo": {
+          "units": 281,
+          "clp": 880372
+        }
+      }
+    },
+    {
+      "codigo": "30801631304002",
+      "descripcion": "PIJAMA CC HOMBRE GENUINE FORD AZUL S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 276,
+      "clp": 1060570,
+      "costos": 1791240,
+      "margin": -68.9,
+      "stockUnits": 64,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 276,
+          "clp": 1060570
+        }
+      }
+    },
+    {
+      "codigo": "31401813941106",
+      "descripcion": "POLERA MC NIÑO ASUSTADO BOB ESPONJA GRIS MEL 6",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 274,
+      "clp": 1438894,
+      "costos": 1380138,
+      "margin": 4.1,
+      "stockUnits": 307,
+      "byChain": {
+        "Jumbo": {
+          "units": 274,
+          "clp": 1438894
+        }
+      }
+    },
+    {
+      "codigo": "30501833281224",
+      "descripcion": "PANTUFLA NIÑA CORAZONES SNOOPY ROSADO 24-25",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 273,
+      "clp": 2051606,
+      "costos": 1225770,
+      "margin": 40.3,
+      "stockUnits": 447,
+      "byChain": {
+        "Jumbo": {
+          "units": 273,
+          "clp": 2051606
+        }
+      }
+    },
+    {
+      "codigo": "30801863839002",
+      "descripcion": "PIJAMA LL HOMBRE MEGUMI JUJUTSU KAISEN GRIS S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 273,
+      "clp": 2971076,
+      "costos": 1965600,
+      "margin": 33.8,
+      "stockUnits": 705,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 273,
+          "clp": 2971076
+        }
+      }
+    },
+    {
+      "codigo": "24401869841526",
+      "descripcion": "CALCETIN 2P NIÑO CASITA SNOOPY GRIS MEL 24-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 272,
+      "clp": 1136210,
+      "costos": 680000,
+      "margin": 40.2,
+      "stockUnits": 455,
+      "byChain": {
+        "Jumbo": {
+          "units": 272,
+          "clp": 1136210
+        }
+      }
+    },
+    {
+      "codigo": "24401647804000",
+      "descripcion": "CALCETIN 2P HOMBRE SANCHEZ RICK AND MORTY AZUL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 269,
+      "clp": 788977,
+      "costos": 481510,
+      "margin": 39.0,
+      "stockUnits": 389,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 269,
+          "clp": 788977
+        }
+      }
+    },
+    {
+      "codigo": "31401890465002",
+      "descripcion": "POLERA MC UNISEX ADULTO LOGO KISS NEGRO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 268,
+      "clp": 2914451,
+      "costos": 1742000,
+      "margin": 40.2,
+      "stockUnits": 740,
+      "byChain": {
+        "Jumbo": {
+          "units": 268,
+          "clp": 2914451
+        }
+      }
+    },
+    {
+      "codigo": "24601648820002",
+      "descripcion": "CALZON 3P MUJER FULL PRINT GARFIELD CELESTE S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 266,
+      "clp": 1334850,
+      "costos": 904400,
+      "margin": 32.2,
+      "stockUnits": 396,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 257,
+          "clp": 1289544
+        },
+        "Lider Express": {
+          "units": 9,
+          "clp": 45306
+        }
+      }
+    },
+    {
+      "codigo": "31401813865106",
+      "descripcion": "POLERA MC NIÑO PIÑAS BOB ESPONJA NEGRO 6",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 265,
+      "clp": 1418746,
+      "costos": 1334805,
+      "margin": 5.9,
+      "stockUnits": 193,
+      "byChain": {
+        "Jumbo": {
+          "units": 265,
+          "clp": 1418746
+        }
+      }
+    },
+    {
+      "codigo": "24401870041000",
+      "descripcion": "CALCETIN 2P HOMBRE LOGO SNOOPY GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 264,
+      "clp": 1321221,
+      "costos": 792000,
+      "margin": 40.1,
+      "stockUnits": 417,
+      "byChain": {
+        "Jumbo": {
+          "units": 264,
+          "clp": 1321221
+        }
+      }
+    },
+    {
+      "codigo": "31501860441104",
+      "descripcion": "POLERON CERRADO UNISEX INFANTIL CASA SNOOPY GRIS MEL 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 261,
+      "clp": 3266423,
+      "costos": 1879200,
+      "margin": 42.5,
+      "stockUnits": 237,
+      "byChain": {
+        "Jumbo": {
+          "units": 261,
+          "clp": 3266423
+        }
+      }
+    },
+    {
+      "codigo": "30801864404112",
+      "descripcion": "PIJAMA LL TEENO ICONOS NASA AZUL 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 261,
+      "clp": 2620833,
+      "costos": 1722600,
+      "margin": 34.3,
+      "stockUnits": 669,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 258,
+          "clp": 2590605
+        },
+        "Walmart": {
+          "units": 3,
+          "clp": 30228
+        }
+      }
+    },
+    {
+      "codigo": "24401648504000",
+      "descripcion": "CALCETIN 2P NIÑO CHASE PAW PATROL AZUL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 256,
+      "clp": 634963,
+      "costos": 373760,
+      "margin": 41.1,
+      "stockUnits": 343,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 252,
+          "clp": 624911
+        },
+        "Ekono": {
+          "units": 4,
+          "clp": 10052
+        }
+      }
+    },
+    {
+      "codigo": "31501860312104",
+      "descripcion": "POLERON CERRADO NIÑA ROTATIVO SNOOPY BLANCO 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 255,
+      "clp": 3201935,
+      "costos": 1836000,
+      "margin": 42.7,
+      "stockUnits": 284,
+      "byChain": {
+        "Jumbo": {
+          "units": 255,
+          "clp": 3201935
+        }
+      }
+    },
+    {
+      "codigo": "31402031712278",
+      "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 7-8A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 255,
+      "clp": 3180605,
+      "costos": 1680444,
+      "margin": 47.2,
+      "stockUnits": 629,
+      "byChain": {
+        "Falabella": {
+          "units": 83,
+          "clp": 1041639
+        },
+        "Paris": {
+          "units": 135,
+          "clp": 1721866
+        },
+        "La Polar": {
+          "units": 28,
+          "clp": 300190
+        },
+        "Hites": {
+          "units": 9,
+          "clp": 116910
+        }
+      }
+    },
+    {
+      "codigo": "24401869020526",
+      "descripcion": "CALCETIN 2P NIÑA ABRAZO SNOOPY CELESTE 24-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 254,
+      "clp": 1062198,
+      "costos": 635000,
+      "margin": 40.2,
+      "stockUnits": 498,
+      "byChain": {
+        "Jumbo": {
+          "units": 254,
+          "clp": 1062198
+        }
+      }
+    },
+    {
+      "codigo": "31402033965210",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 9-10A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 253,
+      "clp": 3217286,
+      "costos": 1678074,
+      "margin": 47.8,
+      "stockUnits": 799,
+      "byChain": {
+        "Paris": {
+          "units": 134,
+          "clp": 1696483
+        },
+        "Falabella": {
+          "units": 107,
+          "clp": 1378129
+        },
+        "Hites": {
+          "units": 12,
+          "clp": 142674
+        }
+      }
+    },
+    {
+      "codigo": "31401889412002",
+      "descripcion": "POLERA MC UNISEX ADULTO CIRCULO PINK FLOYD BLANCO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 253,
+      "clp": 2742526,
+      "costos": 1644500,
+      "margin": 40.0,
+      "stockUnits": 753,
+      "byChain": {
+        "Jumbo": {
+          "units": 253,
+          "clp": 2742526
+        }
+      }
+    },
+    {
+      "codigo": "24401869481000",
+      "descripcion": "CALCETIN 2P MUJER CORAZONES SNOOPY ROSADO T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 250,
+      "clp": 1250148,
+      "costos": 750000,
+      "margin": 40.0,
+      "stockUnits": 203,
+      "byChain": {
+        "Jumbo": {
+          "units": 250,
+          "clp": 1250148
+        }
+      }
+    },
+    {
+      "codigo": "31501889541002",
+      "descripcion": "POLERON CERRADO UNISEX ADULTO MUSIC HALL PINK FLOYD GRIS MEL S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 249,
+      "clp": 3532346,
+      "costos": 2191200,
+      "margin": 38.0,
+      "stockUnits": 759,
+      "byChain": {
+        "Jumbo": {
+          "units": 249,
+          "clp": 3532346
+        }
+      }
+    },
+    {
+      "codigo": "31402031712256",
+      "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 5-6A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 248,
+      "clp": 3085840,
+      "costos": 1627780,
+      "margin": 47.3,
+      "stockUnits": 376,
+      "byChain": {
+        "Paris": {
+          "units": 153,
+          "clp": 1929583
+        },
+        "La Polar": {
+          "units": 25,
+          "clp": 270749
+        },
+        "Falabella": {
+          "units": 55,
+          "clp": 698256
+        },
+        "Hites": {
+          "units": 15,
+          "clp": 187252
+        }
+      }
+    },
+    {
+      "codigo": "24401819150526",
+      "descripcion": "CALCETIN 2P UNISEX PATRICIO BOB ESPONJA LILA 24-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 248,
+      "clp": 646889,
+      "costos": 620000,
+      "margin": 4.2,
+      "stockUnits": 124,
+      "byChain": {
+        "Jumbo": {
+          "units": 248,
+          "clp": 646889
+        }
+      }
+    },
+    {
+      "codigo": "32401733706235",
+      "descripcion": "4148801-HAVAIANA ELEGANCE MARINHO MUJER 35-36",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 244,
+      "clp": 1784533,
+      "costos": 1708000,
+      "margin": 4.3,
+      "stockUnits": 262,
+      "byChain": {
+        "Jumbo": {
+          "units": 244,
+          "clp": 1784533
+        }
+      }
+    },
+    {
+      "codigo": "30501833520224",
+      "descripcion": "PANTUFLA NIÑO GOLF SNOOPY CELESTE 24-25",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 241,
+      "clp": 1817864,
+      "costos": 1082090,
+      "margin": 40.5,
+      "stockUnits": 526,
+      "byChain": {
+        "Jumbo": {
+          "units": 241,
+          "clp": 1817864
+        }
+      }
+    },
+    {
+      "codigo": "30801864833104",
+      "descripcion": "PIJAMA LL NIÑA CARITA TOY STORY ECRU 4",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 239,
+      "clp": 2207165,
+      "costos": 1457900,
+      "margin": 33.9,
+      "stockUnits": 779,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 225,
+          "clp": 2077875
+        },
+        "Walmart": {
+          "units": 14,
+          "clp": 129290
+        }
+      }
+    },
+    {
+      "codigo": "24601649104112",
+      "descripcion": "CALZON 3P TEENA FLORES SNOOPY AZUL 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 239,
+      "clp": 1002127,
+      "costos": 717000,
+      "margin": 28.5,
+      "stockUnits": 176,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 231,
+          "clp": 968583
+        },
+        "Lider Express": {
+          "units": 8,
+          "clp": 33544
+        }
+      }
+    },
+    {
+      "codigo": "31402031481278",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 7-8A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 238,
+      "clp": 2942177,
+      "costos": 1572830,
+      "margin": 46.5,
+      "stockUnits": 157,
+      "byChain": {
+        "Falabella": {
+          "units": 98,
+          "clp": 1230194
+        },
+        "La Polar": {
+          "units": 35,
+          "clp": 372023
+        },
+        "Paris": {
+          "units": 105,
+          "clp": 1339960
+        }
+      }
+    },
+    {
+      "codigo": "24401647704000",
+      "descripcion": "CALCETIN 2P HOMBRE PERSONAJES RICK AND MORTY AZUL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 238,
+      "clp": 698054,
+      "costos": 426020,
+      "margin": 39.0,
+      "stockUnits": 561,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 238,
+          "clp": 698054
+        }
+      }
+    },
+    {
+      "codigo": "30801864641112",
+      "descripcion": "PIJAMA LL TEENO PERSONAJE JUJUTSU KAISEN GRIS MEL 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 237,
+      "clp": 2385401,
+      "costos": 1564200,
+      "margin": 34.4,
+      "stockUnits": 718,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 237,
+          "clp": 2385401
+        }
+      }
+    },
+    {
+      "codigo": "24401648065000",
+      "descripcion": "CALCETIN 2P TEENO CUBOS MINECRAFT NEGRO T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 236,
+      "clp": 593068,
+      "costos": 372880,
+      "margin": 37.1,
+      "stockUnits": 152,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 233,
+          "clp": 585529
+        },
+        "Ekono": {
+          "units": 3,
+          "clp": 7539
+        }
+      }
+    },
+    {
+      "codigo": "24401869704526",
+      "descripcion": "CALCETIN 2P NIÑO PERSONAJE SNOOPY AZUL 24-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 234,
+      "clp": 977662,
+      "costos": 585000,
+      "margin": 40.2,
+      "stockUnits": 519,
+      "byChain": {
+        "Jumbo": {
+          "units": 234,
+          "clp": 977662
+        }
+      }
+    },
+    {
+      "codigo": "31401813681106",
+      "descripcion": "POLERA MC NIÑA LINEAL BOB ESPONJA ROSADO 6,",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 233,
+      "clp": 1219618,
+      "costos": 1173621,
+      "margin": 3.8,
+      "stockUnits": 294,
+      "byChain": {
+        "Jumbo": {
+          "units": 233,
+          "clp": 1219618
+        }
+      }
+    },
+    {
+      "codigo": "24601649081112",
+      "descripcion": "CALZON 3P TEENA FULL PRINT SNOOPY ROSADO 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 231,
+      "clp": 968583,
+      "costos": 693000,
+      "margin": 28.5,
+      "stockUnits": 202,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 231,
+          "clp": 968583
+        }
+      }
+    },
+    {
+      "codigo": "31402033965256",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 5-6A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 224,
+      "clp": 2822379,
+      "costos": 1476912,
+      "margin": 47.7,
+      "stockUnits": 322,
+      "byChain": {
+        "Hites": {
+          "units": 16,
+          "clp": 197448
+        },
+        "Paris": {
+          "units": 148,
+          "clp": 1852438
+        },
+        "Falabella": {
+          "units": 60,
+          "clp": 772493
+        }
+      }
+    },
+    {
+      "codigo": "31501817841102",
+      "descripcion": "POLERON CERRADO TODDLERA FLOCK MINNIE GRIS MEL 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 222,
+      "clp": 2596025,
+      "costos": 1620600,
+      "margin": 37.6,
+      "stockUnits": 533,
+      "byChain": {
+        "Jumbo": {
+          "units": 222,
+          "clp": 2596025
+        }
+      }
+    },
+    {
+      "codigo": "32401730512235",
+      "descripcion": "4000016-HAVAIANA COLOR BRANCO MUJER BLANCO 35-36",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 218,
+      "clp": 1280346,
+      "costos": 1326070,
+      "margin": -3.6,
+      "stockUnits": 189,
+      "byChain": {
+        "Jumbo": {
+          "units": 205,
+          "clp": 1202414
+        },
+        "Ripley": {
+          "units": 13,
+          "clp": 77932
+        }
+      }
+    },
+    {
+      "codigo": "32401732365235",
+      "descripcion": "4148801-HAVAIANA ELEGANCE PRETO MUJER NEGRO 35-36-",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 217,
+      "clp": 1620554,
+      "costos": 1502890,
+      "margin": 7.3,
+      "stockUnits": 160,
+      "byChain": {
+        "Ripley": {
+          "units": 19,
+          "clp": 130998
+        },
+        "Jumbo": {
+          "units": 177,
+          "clp": 1302212
+        },
+        "Falabella": {
+          "units": 6,
+          "clp": 38940
+        },
+        "Paris": {
+          "units": 15,
+          "clp": 148404
+        }
+      }
+    },
+    {
+      "codigo": "31401860001104",
+      "descripcion": "POLERA MC NIÑO CAMINANDO SNOOPY ACERO 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 216,
+      "clp": 1802477,
+      "costos": 1087992,
+      "margin": 39.6,
+      "stockUnits": 273,
+      "byChain": {
+        "Jumbo": {
+          "units": 216,
+          "clp": 1802477
+        }
+      }
+    },
+    {
+      "codigo": "24601649320103",
+      "descripcion": "CALZON 3P NIÑA EVEREST PAW PATROL CELESTE 3",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 214,
+      "clp": 897302,
+      "costos": 642000,
+      "margin": 28.5,
+      "stockUnits": 317,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 213,
+          "clp": 893109
+        },
+        "Lider Express": {
+          "units": 1,
+          "clp": 4193
+        }
+      }
+    },
+    {
+      "codigo": "31401889853002",
+      "descripcion": "POLERA MC UNISEX ADULTO LIAM AND NOEL OASIS MARENGO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 214,
+      "clp": 2322807,
+      "costos": 1391000,
+      "margin": 40.1,
+      "stockUnits": 794,
+      "byChain": {
+        "Jumbo": {
+          "units": 214,
+          "clp": 2322807
+        }
+      }
+    },
+    {
+      "codigo": "31402031712234",
+      "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 3-4A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 212,
+      "clp": 2615818,
+      "costos": 1391536,
+      "margin": 46.8,
+      "stockUnits": 450,
+      "byChain": {
+        "La Polar": {
+          "units": 21,
+          "clp": 221595
+        },
+        "Hites": {
+          "units": 17,
+          "clp": 202351
+        },
+        "Falabella": {
+          "units": 51,
+          "clp": 654381
+        },
+        "Paris": {
+          "units": 123,
+          "clp": 1537491
+        }
+      }
+    },
+    {
+      "codigo": "31402031712210",
+      "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 9-10A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 211,
+      "clp": 2644796,
+      "costos": 1400352,
+      "margin": 47.1,
+      "stockUnits": 996,
+      "byChain": {
+        "Paris": {
+          "units": 86,
+          "clp": 1109140
+        },
+        "La Polar": {
+          "units": 13,
+          "clp": 130992
+        },
+        "Hites": {
+          "units": 8,
+          "clp": 102407
+        },
+        "Falabella": {
+          "units": 104,
+          "clp": 1302257
+        }
+      }
+    },
+    {
+      "codigo": "24401648441000",
+      "descripcion": "CALCETIN 2P NIÑO TNT MINECRAFT GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 210,
+      "clp": 527730,
+      "costos": 306600,
+      "margin": 41.9,
+      "stockUnits": 122,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 210,
+          "clp": 527730
+        }
+      }
+    },
+    {
+      "codigo": "31401822041001",
+      "descripcion": "POLERA MC MUJER WOODSTOCK SNOOPY GRIS MEL XS",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 210,
+      "clp": 2284928,
+      "costos": 1365000,
+      "margin": 40.3,
+      "stockUnits": 105,
+      "byChain": {
+        "Jumbo": {
+          "units": 210,
+          "clp": 2284928
+        }
+      }
+    },
+    {
+      "codigo": "31501818277102",
+      "descripcion": "POLERON CERRADO TODDLERO ROTATIVO MICKEY ROJO 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 210,
+      "clp": 2454345,
+      "costos": 1533000,
+      "margin": 37.5,
+      "stockUnits": 791,
+      "byChain": {
+        "Jumbo": {
+          "units": 210,
+          "clp": 2454345
+        }
+      }
+    },
+    {
+      "codigo": "30501833320002",
+      "descripcion": "PANTUFLA MUJER MORE NAPS SNOOPY CELESTE S",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 207,
+      "clp": 1556265,
+      "costos": 1012230,
+      "margin": 35.0,
+      "stockUnits": 119,
+      "byChain": {
+        "Jumbo": {
+          "units": 207,
+          "clp": 1556265
+        }
+      }
+    },
+    {
+      "codigo": "31401822439002",
+      "descripcion": "POLERA MC HOMBRE LINEAL SNOOPY GRIS S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 207,
+      "clp": 2251417,
+      "costos": 1345500,
+      "margin": 40.2,
+      "stockUnits": 103,
+      "byChain": {
+        "Jumbo": {
+          "units": 207,
+          "clp": 2251417
+        }
+      }
+    },
+    {
+      "codigo": "31401860281104",
+      "descripcion": "POLERA MC NIÑA PEANUTS SNOOPY ROSADO 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 206,
+      "clp": 1719622,
+      "costos": 1037622,
+      "margin": 39.7,
+      "stockUnits": 269,
+      "byChain": {
+        "Jumbo": {
+          "units": 206,
+          "clp": 1719622
+        }
+      }
+    },
+    {
+      "codigo": "30801864304112",
+      "descripcion": "PIJAMA LL TEENO MUST HAVE FORD AZUL 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 206,
+      "clp": 2073848,
+      "costos": 1359600,
+      "margin": 34.4,
+      "stockUnits": 795,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 203,
+          "clp": 2045428
+        },
+        "Walmart": {
+          "units": 3,
+          "clp": 28420
+        }
+      }
+    },
+    {
+      "codigo": "31402033965234",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 3-4A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 205,
+      "clp": 2601285,
+      "costos": 1359488,
+      "margin": 47.7,
+      "stockUnits": 401,
+      "byChain": {
+        "Falabella": {
+          "units": 85,
+          "clp": 1070259
+        },
+        "Paris": {
+          "units": 111,
+          "clp": 1414116
+        },
+        "Hites": {
+          "units": 9,
+          "clp": 116910
+        }
+      }
+    },
+    {
+      "codigo": "31501817350102",
+      "descripcion": "POLERON CERRADO TODDLERA ROTATIVO BLUEY LILA 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 204,
+      "clp": 2388052,
+      "costos": 1489200,
+      "margin": 37.6,
+      "stockUnits": 633,
+      "byChain": {
+        "Jumbo": {
+          "units": 204,
+          "clp": 2388052
+        }
+      }
+    },
+    {
+      "codigo": "24401648604000",
+      "descripcion": "CALCETIN 2P NIÑO PERSONAJE SONIC AZUL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 204,
+      "clp": 512652,
+      "costos": 297840,
+      "margin": 41.9,
+      "stockUnits": 185,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 204,
+          "clp": 512652
+        }
+      }
+    },
+    {
+      "codigo": "31402031481256",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 5-6A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 203,
+      "clp": 2511329,
+      "costos": 1335882,
+      "margin": 46.8,
+      "stockUnits": 110,
+      "byChain": {
+        "Paris": {
+          "units": 103,
+          "clp": 1302484
+        },
+        "Falabella": {
+          "units": 64,
+          "clp": 822624
+        },
+        "La Polar": {
+          "units": 36,
+          "clp": 386221
+        }
+      }
+    },
+    {
+      "codigo": "24701648962112",
+      "descripcion": "BOXER 2P TEENO PERSONAJES NARUTO NARANJO 12",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 201,
+      "clp": 1180674,
+      "costos": 804000,
+      "margin": 31.9,
+      "stockUnits": 2056,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 195,
+          "clp": 1145430
+        },
+        "Walmart": {
+          "units": 2,
+          "clp": 11748
+        },
+        "Ekono": {
+          "units": 4,
+          "clp": 23496
+        }
+      }
+    },
+    {
+      "codigo": "32401235515237",
+      "descripcion": "4000016-HAVAIANA COLOR CAFE HOMBRE CAFE 37-38",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q424",
+      "units": 199,
+      "clp": 1163646,
+      "costos": 1194796,
+      "margin": -2.7,
+      "stockUnits": 209,
+      "byChain": {
+        "Jumbo": {
+          "units": 199,
+          "clp": 1163646
+        }
+      }
+    },
+    {
+      "codigo": "24401777720519",
+      "descripcion": "CALCETIN 3P TODDLERO RAYAS BLUEY CELESTE 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 194,
+      "clp": 1330760,
+      "costos": 626814,
+      "margin": 52.9,
+      "stockUnits": 119,
+      "byChain": {
+        "Falabella": {
+          "units": 194,
+          "clp": 1330760
+        }
+      }
+    },
+    {
+      "codigo": "31402031481234",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 3-4A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 192,
+      "clp": 2348354,
+      "costos": 1264250,
+      "margin": 46.2,
+      "stockUnits": 159,
+      "byChain": {
+        "Paris": {
+          "units": 112,
+          "clp": 1386416
+        },
+        "La Polar": {
+          "units": 25,
+          "clp": 263137
+        },
+        "Falabella": {
+          "units": 55,
+          "clp": 698801
+        }
+      }
+    },
+    {
+      "codigo": "31501712777106",
+      "descripcion": "POLERON CERRADO NIÑO MESA SPIDERMAN ROJO 6",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 192,
+      "clp": 2837627,
+      "costos": 1328538,
+      "margin": 53.2,
+      "stockUnits": 335,
+      "byChain": {
+        "Paris": {
+          "units": 177,
+          "clp": 2615775
+        },
+        "Johnson": {
+          "units": 2,
+          "clp": 29980
+        },
+        "Hites": {
+          "units": 13,
+          "clp": 191872
+        }
+      }
+    },
+    {
+      "codigo": "31501817759102",
+      "descripcion": "POLERON CERRADO TODDLERA FLOCK DISNEY MORADO 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 192,
+      "clp": 2243591,
+      "costos": 1401600,
+      "margin": 37.5,
+      "stockUnits": 248,
+      "byChain": {
+        "Jumbo": {
+          "units": 192,
+          "clp": 2243591
+        }
+      }
+    },
+    {
+      "codigo": "31501817481102",
+      "descripcion": "POLERON CERRADO TODDLERA FLOCK PAW PATROL ROSADO 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 191,
+      "clp": 2228520,
+      "costos": 1394300,
+      "margin": 37.4,
+      "stockUnits": 655,
+      "byChain": {
+        "Jumbo": {
+          "units": 191,
+          "clp": 2228520
+        }
+      }
+    },
+    {
+      "codigo": "24401777720523",
+      "descripcion": "CALCETIN 3P TODDLERO RAYAS BLUEY CELESTE 23-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 189,
+      "clp": 1314193,
+      "costos": 610659,
+      "margin": 53.5,
+      "stockUnits": 108,
+      "byChain": {
+        "Falabella": {
+          "units": 189,
+          "clp": 1314193
+        }
+      }
+    },
+    {
+      "codigo": "24101121220092",
+      "descripcion": "40503-40503 BOTELLA 560 ML SONIC",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "Q324",
+      "units": 189,
+      "clp": 785369,
+      "costos": 396333,
+      "margin": 49.5,
+      "stockUnits": 437,
+      "byChain": {
+        "Ripley": {
+          "units": 189,
+          "clp": 785369
+        }
+      }
+    },
+    {
+      "codigo": "24401869941000",
+      "descripcion": "CALCETIN 2P HOMBRE ACOSTADO SNOOPY GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 189,
+      "clp": 944304,
+      "costos": 567000,
+      "margin": 40.0,
+      "stockUnits": 599,
+      "byChain": {
+        "Jumbo": {
+          "units": 189,
+          "clp": 944304
+        }
+      }
+    },
+    {
+      "codigo": "31501890701106",
+      "descripcion": "POLERON CERRADO UNISEX INFANTIL LOGO METALLICA ACERO 6",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 188,
+      "clp": 2362119,
+      "costos": 1420904,
+      "margin": 39.8,
+      "stockUnits": 819,
+      "byChain": {
+        "Jumbo": {
+          "units": 188,
+          "clp": 2362119
+        }
+      }
+    },
+    {
+      "codigo": "324015701",
+      "descripcion": "ZUECO DE EVA NIÑO PINS PERSONAJES MINECRAFT",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 185,
+      "clp": 1637915,
+      "costos": 932030,
+      "margin": 43.1,
+      "stockUnits": 510,
+      "byChain": {
+        "Tottus": {
+          "units": 185,
+          "clp": 1637915
+        }
+      }
+    },
+    {
+      "codigo": "27401890914000",
+      "descripcion": "JOCKEY MUJER CARITA SNOOPY BURDEO T/U",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "Q126",
+      "units": 182,
+      "clp": 1975697,
+      "costos": 1092000,
+      "margin": 44.7,
+      "stockUnits": 116,
+      "byChain": {
+        "Jumbo": {
+          "units": 182,
+          "clp": 1975697
+        }
+      }
+    },
+    {
+      "codigo": "24401646941000",
+      "descripcion": "CALCETIN 2P MUJER COFFEE TIME SNOOPY GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 182,
+      "clp": 533806,
+      "costos": 287560,
+      "margin": 46.1,
+      "stockUnits": 287,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 182,
+          "clp": 533806
+        }
+      }
+    },
+    {
+      "codigo": "24401777720527",
+      "descripcion": "CALCETIN 3P TODDLERO RAYAS BLUEY CELESTE 27-30",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 182,
+      "clp": 1252205,
+      "costos": 588042,
+      "margin": 53.0,
+      "stockUnits": 112,
+      "byChain": {
+        "Falabella": {
+          "units": 182,
+          "clp": 1252205
+        }
+      }
+    },
+    {
+      "codigo": "SIN CLASIF39822802",
+      "descripcion": "SIN CLASIF BOTELLA MARIO BROS/241008780",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "No Definido",
+      "units": 178,
+      "clp": 701852,
+      "costos": 412960,
+      "margin": 41.2,
+      "stockUnits": 342,
+      "byChain": {
+        "Ripley": {
+          "units": 178,
+          "clp": 701852
+        }
+      }
+    },
+    {
+      "codigo": "31402033965212",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 11-12A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 175,
+      "clp": 2210347,
+      "costos": 1158812,
+      "margin": 47.6,
+      "stockUnits": 424,
+      "byChain": {
+        "Hites": {
+          "units": 11,
+          "clp": 141377
+        },
+        "Falabella": {
+          "units": 68,
+          "clp": 848116
+        },
+        "Paris": {
+          "units": 96,
+          "clp": 1220854
+        }
+      }
+    },
+    {
+      "codigo": "30801631765002",
+      "descripcion": "PIJAMA CC HOMBRE ESPACIO RICK AND MORTY NEGRO S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 175,
+      "clp": 706774,
+      "costos": 1135750,
+      "margin": -60.7,
+      "stockUnits": 35,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 175,
+          "clp": 706774
+        }
+      }
+    },
+    {
+      "codigo": "30501833481002",
+      "descripcion": "PANTUFLA MUJER 2 CORAZONES SNOOPY ROSADO S",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 175,
+      "clp": 1314667,
+      "costos": 855750,
+      "margin": 34.9,
+      "stockUnits": 150,
+      "byChain": {
+        "Jumbo": {
+          "units": 175,
+          "clp": 1314667
+        }
+      }
+    },
+    {
+      "codigo": "31501890612106",
+      "descripcion": "POLERON CERRADO UNISEX INFANTIL LOGO THE BEATLES BLANCO 6",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 175,
+      "clp": 2193700,
+      "costos": 1322650,
+      "margin": 39.7,
+      "stockUnits": 833,
+      "byChain": {
+        "Jumbo": {
+          "units": 175,
+          "clp": 2193700
+        }
+      }
+    },
+    {
+      "codigo": "31401874920102",
+      "descripcion": "POLERA ML TODDLERO PELOTA BLUEY CELESTE 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 171,
+      "clp": 1430246,
+      "costos": 861327,
+      "margin": 39.8,
+      "stockUnits": 651,
+      "byChain": {
+        "Jumbo": {
+          "units": 171,
+          "clp": 1430246
+        }
+      }
+    },
+    {
+      "codigo": "30501833120224",
+      "descripcion": "PANTUFLA NIÑA HELADO SNOOPY CELESTE 24-25",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 170,
+      "clp": 1279900,
+      "costos": 763300,
+      "margin": 40.4,
+      "stockUnits": 589,
+      "byChain": {
+        "Jumbo": {
+          "units": 170,
+          "clp": 1279900
+        }
+      }
+    },
+    {
+      "codigo": "31402031481212",
+      "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 11-12A",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 169,
+      "clp": 2073775,
+      "costos": 1112280,
+      "margin": 46.4,
+      "stockUnits": 297,
+      "byChain": {
+        "Falabella": {
+          "units": 49,
+          "clp": 613069
+        },
+        "Paris": {
+          "units": 95,
+          "clp": 1191174
+        },
+        "La Polar": {
+          "units": 25,
+          "clp": 269532
+        }
+      }
+    },
+    {
+      "codigo": "32401733680235",
+      "descripcion": "4000030-HAVAIANA SLIM ROSA CHIFFON MUJER 35-36",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 165,
+      "clp": 1575185,
+      "costos": 1155000,
+      "margin": 26.7,
+      "stockUnits": 115,
+      "byChain": {
+        "Jumbo": {
+          "units": 165,
+          "clp": 1575185
+        }
+      }
+    },
+    {
+      "codigo": "24601649281103",
+      "descripcion": "CALZON 3P NIÑA PATITAS PAW PATROL ROSADO 3",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 165,
+      "clp": 691845,
+      "costos": 495000,
+      "margin": 28.5,
+      "stockUnits": 266,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 163,
+          "clp": 683459
+        },
+        "Lider Express": {
+          "units": 2,
+          "clp": 8386
+        }
+      }
+    },
+    {
+      "codigo": "30501805502224",
+      "descripcion": "PANTUFLA NIÑO FELIZ BOB ESPONJA AMARILLO 24-25",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 162,
+      "clp": 784892,
+      "costos": 727380,
+      "margin": 7.3,
+      "stockUnits": 181,
+      "byChain": {
+        "Jumbo": {
+          "units": 162,
+          "clp": 784892
+        }
+      }
+    },
+    {
+      "codigo": "31401810241001",
+      "descripcion": "POLERA MC MUJER LINEAL BOB ESPONJA GRIS MEL XS",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 162,
+      "clp": 1007517,
+      "costos": 972000,
+      "margin": 3.5,
+      "stockUnits": 208,
+      "byChain": {
+        "Jumbo": {
+          "units": 162,
+          "clp": 1007517
+        }
+      }
+    },
+    {
+      "codigo": "24401636004000",
+      "descripcion": "CALCETIN 3P TEENO FULL PRINT MINECRAFT AZUL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 159,
+      "clp": 1049532,
+      "costos": 608493,
+      "margin": 42.0,
+      "stockUnits": 458,
+      "byChain": {
+        "Ripley": {
+          "units": 159,
+          "clp": 1049532
+        }
+      }
+    },
+    {
+      "codigo": "24401778012523",
+      "descripcion": "CALCETIN 3P TODDLERA PERSONAJE BLUEY BLANCO 23-26",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 157,
+      "clp": 1083155,
+      "costos": 507267,
+      "margin": 53.2,
+      "stockUnits": 158,
+      "byChain": {
+        "Falabella": {
+          "units": 157,
+          "clp": 1083155
+        }
+      }
+    },
+    {
+      "codigo": "31401637120104",
+      "descripcion": "POLERA MC NIÑA PALMERA MINNIE CELESTE 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 155,
+      "clp": 719947,
+      "costos": 767715,
+      "margin": -6.6,
+      "stockUnits": 89,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 153,
+          "clp": 711543
+        },
+        "Walmart": {
+          "units": 2,
+          "clp": 8404
+        }
+      }
+    },
+    {
+      "codigo": "24401635941000",
+      "descripcion": "CALCETIN 3P TEENO BOOM MINECRAFT GRIS MEL T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 154,
+      "clp": 1022551,
+      "costos": 589358,
+      "margin": 42.4,
+      "stockUnits": 426,
+      "byChain": {
+        "Ripley": {
+          "units": 154,
+          "clp": 1022551
+        }
+      }
+    },
+    {
+      "codigo": "30801864001002",
+      "descripcion": "PIJAMA LL HOMBRE FIGHT UFC ACERO S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 154,
+      "clp": 1681064,
+      "costos": 1108800,
+      "margin": 34.0,
+      "stockUnits": 786,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 154,
+          "clp": 1681064
+        }
+      }
+    },
+    {
+      "codigo": "24401778012527",
+      "descripcion": "CALCETIN 3P TODDLERA PERSONAJE BLUEY BLANCO 27-30",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 152,
+      "clp": 1046815,
+      "costos": 491112,
+      "margin": 53.1,
+      "stockUnits": 153,
+      "byChain": {
+        "Falabella": {
+          "units": 152,
+          "clp": 1046815
+        }
+      }
+    },
+    {
+      "codigo": "31501818344102",
+      "descripcion": "POLERON CERRADO TODDLERO FLOCK PAW PATROL INDIGO 2",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 152,
+      "clp": 1777552,
+      "costos": 1109600,
+      "margin": 37.6,
+      "stockUnits": 268,
+      "byChain": {
+        "Jumbo": {
+          "units": 152,
+          "clp": 1777552
+        }
+      }
+    },
+    {
+      "codigo": "30801631241002",
+      "descripcion": "PIJAMA CC HOMBRE MUSTANG FORD GRIS MEL S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q425",
+      "units": 151,
+      "clp": 610966,
+      "costos": 979990,
+      "margin": -60.4,
+      "stockUnits": 58,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 137,
+          "clp": 552138
+        },
+        "Walmart": {
+          "units": 14,
+          "clp": 58828
+        }
+      }
+    },
+    {
+      "codigo": "31501822741002",
+      "descripcion": "POLERON CERRADO UNISEX ADULTO CASA SNOOPY GRIS MEL S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 150,
+      "clp": 2120178,
+      "costos": 1320000,
+      "margin": 37.7,
+      "stockUnits": 109,
+      "byChain": {
+        "Jumbo": {
+          "units": 150,
+          "clp": 2120178
+        }
+      }
+    },
+    {
+      "codigo": "31501712777104",
+      "descripcion": "POLERON CERRADO NIÑO MESA SPIDERMAN ROJO 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 146,
+      "clp": 2166071,
+      "costos": 1008842,
+      "margin": 53.4,
+      "stockUnits": 109,
+      "byChain": {
+        "Hites": {
+          "units": 21,
+          "clp": 311792
+        },
+        "Paris": {
+          "units": 124,
+          "clp": 1839289
+        },
+        "Johnson": {
+          "units": 1,
+          "clp": 14990
+        }
+      }
+    },
+    {
+      "codigo": "SIN CLASIF39822799",
+      "descripcion": "SIN CLASIF BOTELLA BLUEY/241008778",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "No Definido",
+      "units": 146,
+      "clp": 576069,
+      "costos": 338720,
+      "margin": 41.2,
+      "stockUnits": 567,
+      "byChain": {
+        "Ripley": {
+          "units": 146,
+          "clp": 576069
+        }
+      }
+    },
+    {
+      "codigo": "31501890501002",
+      "descripcion": "POLERON CERRADO UNISEX ADULTO BANDA KISS ACERO S",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 143,
+      "clp": 2025520,
+      "costos": 1258400,
+      "margin": 37.9,
+      "stockUnits": 865,
+      "byChain": {
+        "Jumbo": {
+          "units": 143,
+          "clp": 2025520
+        }
+      }
+    },
+    {
+      "codigo": "324015696",
+      "descripcion": "ZUECO DE EVA NIÑO PERSONAKE SONIC",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 141,
+      "clp": 1252309,
+      "costos": 710358,
+      "margin": 43.3,
+      "stockUnits": 561,
+      "byChain": {
+        "Tottus": {
+          "units": 141,
+          "clp": 1252309
+        }
+      }
+    },
+    {
+      "codigo": "24101296261092",
+      "descripcion": "10127-10127 BOTELLA 3D FIGURINE BOTTLE POKEMON",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "Q424",
+      "units": 140,
+      "clp": 1007257,
+      "costos": 528780,
+      "margin": 47.5,
+      "stockUnits": 370,
+      "byChain": {
+        "Ripley": {
+          "units": 140,
+          "clp": 1007257
+        }
+      }
+    },
+    {
+      "codigo": "241014002",
+      "descripcion": "8000-8000 BOTELLA DAILY POKEMON 560 ML",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "Q125",
+      "units": 139,
+      "clp": 552828,
+      "costos": 291483,
+      "margin": 47.3,
+      "stockUnits": 168,
+      "byChain": {
+        "Ripley": {
+          "units": 139,
+          "clp": 552828
+        }
+      }
+    },
+    {
+      "codigo": "30501805281224",
+      "descripcion": "PANTUFLA NIÑA FULL PIÑAS BOB ESPONJA ROSADO 24-25",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 137,
+      "clp": 645136,
+      "costos": 615130,
+      "margin": 4.7,
+      "stockUnits": 308,
+      "byChain": {
+        "Jumbo": {
+          "units": 137,
+          "clp": 645136
+        }
+      }
+    },
+    {
+      "codigo": "33801662265028",
+      "descripcion": "ZAPATILLA ESCOLAR NIÑA FOIL PLATEADO MINNIE NEGRO 28",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 137,
+      "clp": 1676367,
+      "costos": 920366,
+      "margin": 45.1,
+      "stockUnits": 127,
+      "byChain": {
+        "La Polar": {
+          "units": 33,
+          "clp": 348495
+        },
+        "Paris": {
+          "units": 45,
+          "clp": 607560
+        },
+        "Hites": {
+          "units": 59,
+          "clp": 720312
+        }
+      }
+    },
+    {
+      "codigo": "31401637381104",
+      "descripcion": "POLERA MC NIÑA LOGO BARBIE ROSADO 4",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 135,
+      "clp": 645591,
+      "costos": 657380,
+      "margin": -1.8,
+      "stockUnits": 100,
+      "byChain": {
+        "La Polar": {
+          "units": 11,
+          "clp": 64702
+        },
+        "Hiper Lider": {
+          "units": 124,
+          "clp": 580889
+        }
+      }
+    },
+    {
+      "codigo": "33801662265029",
+      "descripcion": "ZAPATILLA ESCOLAR NIÑA FOIL PLATEADO MINNIE NEGRO 29",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q126",
+      "units": 134,
+      "clp": 1619070,
+      "costos": 900212,
+      "margin": 44.4,
+      "stockUnits": 148,
+      "byChain": {
+        "Paris": {
+          "units": 45,
+          "clp": 615161
+        },
+        "La Polar": {
+          "units": 31,
+          "clp": 301185
+        },
+        "Hites": {
+          "units": 58,
+          "clp": 702724
+        }
+      }
+    },
+    {
+      "codigo": "241013998",
+      "descripcion": "49601-49601 BOTELLA PLAYGROUND SIPPER BLUEY 420 ML",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "Q125",
+      "units": 133,
+      "clp": 642594,
+      "costos": 339150,
+      "margin": 47.2,
+      "stockUnits": 214,
+      "byChain": {
+        "Ripley": {
+          "units": 133,
+          "clp": 642594
+        }
+      }
+    },
+    {
+      "codigo": "30801863741002",
+      "descripcion": "PIJAMA LL HOMBRE RAPTOR FORD GRIS MEL S",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 133,
+      "clp": 1451828,
+      "costos": 957600,
+      "margin": 34.0,
+      "stockUnits": 824,
+      "byChain": {
+        "Hiper Lider": {
+          "units": 133,
+          "clp": 1451828
+        }
+      }
+    },
+    {
+      "codigo": "27401773765000",
+      "descripcion": "JOCKEY UNISEX ADULTO PARCHE HARRY POTTER NEGRO T/U",
+      "license": "",
+      "division": "Accesorios y Otros",
+      "temporada": "Q425",
+      "units": 132,
+      "clp": 785023,
+      "costos": 646800,
+      "margin": 17.6,
+      "stockUnits": 377,
+      "byChain": {
+        "Paris": {
+          "units": 132,
+          "clp": 785023
+        }
+      }
+    },
+    {
+      "codigo": "31501712777108",
+      "descripcion": "POLERON CERRADO NIÑO MESA SPIDERMAN ROJO 8",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q126",
+      "units": 131,
+      "clp": 1939209,
+      "costos": 904922,
+      "margin": 53.3,
+      "stockUnits": 396,
+      "byChain": {
+        "Paris": {
+          "units": 110,
+          "clp": 1636914
+        },
+        "Hites": {
+          "units": 21,
+          "clp": 302294
+        },
+        "Johnson": {
+          "units": 0,
+          "clp": 1
+        }
+      }
+    },
+    {
+      "codigo": "32401236539237",
+      "descripcion": "4111355-HAVAIANA ALOHA PTO/PTO/CZ HOMBRE NEGRO 37-38",
+      "license": "",
+      "division": "Calzado",
+      "temporada": "Q425",
+      "units": 130,
+      "clp": 1302170,
+      "costos": 1381380,
+      "margin": -6.1,
+      "stockUnits": 198,
+      "byChain": {
+        "Jumbo": {
+          "units": 130,
+          "clp": 1302170
+        }
+      }
+    },
+    {
+      "codigo": "31401549530108",
+      "descripcion": "POLERA MC NIÑO MESA AVENGERS DENIM 8",
+      "license": "",
+      "division": "Vestuario Infantil",
+      "temporada": "Q425",
+      "units": 130,
+      "clp": 437504,
+      "costos": 622050,
+      "margin": -42.2,
+      "stockUnits": 83,
+      "byChain": {
+        "Ripley": {
+          "units": 130,
+          "clp": 437504
+        }
+      }
+    },
+    {
+      "codigo": "31501822342001",
+      "descripcion": "POLERON CERRADO MUJER PERSONAJES SNOOPY GRIS OSC XS",
+      "license": "",
+      "division": "Vestuario Adulto",
+      "temporada": "Q126",
+      "units": 127,
+      "clp": 1790230,
+      "costos": 1117600,
+      "margin": 37.6,
+      "stockUnits": 70,
+      "byChain": {
+        "Jumbo": {
+          "units": 127,
+          "clp": 1790230
+        }
+      }
+    },
+    {
+      "codigo": "24401778012519",
+      "descripcion": "CALCETIN 3P TODDLERA PERSONAJE BLUEY BLANCO 19-22",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 126,
+      "clp": 875903,
+      "costos": 407106,
+      "margin": 53.5,
+      "stockUnits": 192,
+      "byChain": {
+        "Falabella": {
+          "units": 126,
+          "clp": 875903
+        }
+      }
+    },
+    {
+      "codigo": "24401819250000",
+      "descripcion": "CALCETIN 2P UNISEX PATRICIO BOB ESPONJA LILA T/U",
+      "license": "",
+      "division": "Ropa Interior",
+      "temporada": "Q126",
+      "units": 125,
+      "clp": 390445,
+      "costos": 375000,
+      "margin": 4.0,
+      "stockUnits": 97,
+      "byChain": {
+        "Jumbo": {
+          "units": 125,
+          "clp": 390445
+        }
+      }
+    }
+  ],
   "rankingWeeksPeriod": 4.9,
   "divisionMixByChain": [
     {
@@ -29959,5 +33885,5 @@ const REAL_SELLOUT = {
       "value": 165.1
     }
   ],
-  "generatedAt": "2026-03-16T18:03:12.467782"
+  "generatedAt": "2026-03-16T18:30:11.178421"
 };

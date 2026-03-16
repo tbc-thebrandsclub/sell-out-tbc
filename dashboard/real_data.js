@@ -1,11 +1,11 @@
 // Auto-generated from IV API data - DO NOT EDIT MANUALLY
-// Generated: 2026-03-16 10:25:53
+// Generated: 2026-03-16 18:03:12
 // Source: 114517 sales records, 34 days
 // Blocks: 33 data sections
 
 const REAL_SELLOUT = {
   "_meta": {
-    "generatedAt": "2026-03-16T10:25:52.410409",
+    "generatedAt": "2026-03-16T18:03:11.302256",
     "salesRecords": 114517,
     "salesDateFrom": "2026-02-10",
     "salesDateTo": "2026-03-15",
@@ -16933,27 +16933,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 539,
             "clp": 3708565,
-            "costos": 3790649
+            "costos": 3790649,
+            "stock": 350
           },
           "Vestuario Adulto": {
             "units": 29,
             "clp": 155726,
-            "costos": 160453
+            "costos": 160453,
+            "stock": 21
           },
           "Ropa Interior": {
             "units": 96,
             "clp": 889645,
-            "costos": 728642
+            "costos": 728642,
+            "stock": 490
           },
           "Calzado": {
             "units": 164,
             "clp": 2505780,
-            "costos": 1370507
+            "costos": 1370507,
+            "stock": 181
           },
           "Accesorios y Otros": {
             "units": 115,
             "clp": 397867,
-            "costos": 463410
+            "costos": 463410,
+            "stock": 126
           }
         }
       },
@@ -16971,27 +16976,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 173,
             "clp": 2558613,
-            "costos": 1351188
+            "costos": 1351188,
+            "stock": 280
           },
           "Ropa Interior": {
             "units": 416,
             "clp": 2667706,
-            "costos": 3024701
+            "costos": 3024701,
+            "stock": 371
           },
           "Vestuario Infantil": {
             "units": 177,
             "clp": 1047204,
-            "costos": 1061851
+            "costos": 1061851,
+            "stock": 541
           },
           "Vestuario Adulto": {
             "units": 18,
             "clp": 73892,
-            "costos": 91878
+            "costos": 91878,
+            "stock": -5
           },
           "Accesorios y Otros": {
             "units": 5,
             "clp": 20960,
-            "costos": 54719
+            "costos": 54719,
+            "stock": 113
           }
         }
       },
@@ -17009,27 +17019,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 65,
             "clp": 391509,
-            "costos": 287950
+            "costos": 287950,
+            "stock": 194
           },
           "Vestuario Infantil": {
             "units": 483,
             "clp": 1931367,
-            "costos": 3286878
+            "costos": 3286878,
+            "stock": 286
           },
           "Calzado": {
             "units": 104,
             "clp": 884033,
-            "costos": 770801
+            "costos": 770801,
+            "stock": 225
           },
           "Ropa Interior": {
             "units": 129,
             "clp": 598210,
-            "costos": 1064946
+            "costos": 1064946,
+            "stock": 213
           },
           "Vestuario Adulto": {
             "units": 7,
             "clp": 37931,
-            "costos": 36228
+            "costos": 36228,
+            "stock": 43
           }
         }
       },
@@ -17047,27 +17062,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 439,
             "clp": 4097135,
-            "costos": 2912953
+            "costos": 2912953,
+            "stock": 463
           },
           "Calzado": {
             "units": 160,
             "clp": 2606093,
-            "costos": 1298262
+            "costos": 1298262,
+            "stock": 259
           },
           "Vestuario Adulto": {
             "units": 16,
             "clp": 135714,
-            "costos": 89909
+            "costos": 89909,
+            "stock": 13
           },
           "Ropa Interior": {
             "units": 90,
             "clp": 983811,
-            "costos": 649728
+            "costos": 649728,
+            "stock": 236
           },
           "Accesorios y Otros": {
             "units": 29,
             "clp": 213271,
-            "costos": 171538
+            "costos": 171538,
+            "stock": 148
           }
         }
       },
@@ -17085,27 +17105,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 241,
             "clp": 1203675,
-            "costos": 1022980
+            "costos": 1022980,
+            "stock": 261
           },
           "Calzado": {
             "units": 179,
             "clp": 2843082,
-            "costos": 1435263
+            "costos": 1435263,
+            "stock": 247
           },
           "Vestuario Infantil": {
             "units": 115,
             "clp": 1231552,
-            "costos": 754539
+            "costos": 754539,
+            "stock": 329
           },
           "Ropa Interior": {
             "units": 42,
             "clp": 367419,
-            "costos": 303837
+            "costos": 303837,
+            "stock": 293
           },
           "Vestuario Adulto": {
             "units": 9,
             "clp": 85935,
-            "costos": 69894
+            "costos": 69894,
+            "stock": 54
           }
         }
       },
@@ -17123,27 +17148,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 41,
             "clp": 250757,
-            "costos": 180950
+            "costos": 180950,
+            "stock": 351
           },
           "Calzado": {
             "units": 194,
             "clp": 2755771,
-            "costos": 1463069
+            "costos": 1463069,
+            "stock": 283
           },
           "Vestuario Infantil": {
             "units": 187,
             "clp": 1687689,
-            "costos": 1233804
+            "costos": 1233804,
+            "stock": 347
           },
           "Ropa Interior": {
             "units": 106,
             "clp": 757488,
-            "costos": 819501
+            "costos": 819501,
+            "stock": 321
           },
           "Vestuario Adulto": {
             "units": 28,
             "clp": 191171,
-            "costos": 160585
+            "costos": 160585,
+            "stock": 94
           }
         }
       },
@@ -17161,27 +17191,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 24,
             "clp": 157833,
-            "costos": 122338
+            "costos": 122338,
+            "stock": 391
           },
           "Vestuario Infantil": {
             "units": 194,
             "clp": 1736857,
-            "costos": 1197909
+            "costos": 1197909,
+            "stock": 506
           },
           "Calzado": {
             "units": 151,
             "clp": 2211171,
-            "costos": 1169903
+            "costos": 1169903,
+            "stock": 298
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 17990,
-            "costos": 17163
+            "costos": 17163,
+            "stock": 6
           },
           "Ropa Interior": {
             "units": 184,
             "clp": 1421394,
-            "costos": 1313899
+            "costos": 1313899,
+            "stock": 348
           }
         }
       },
@@ -17199,27 +17234,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 204,
             "clp": 1732581,
-            "costos": 1274036
+            "costos": 1274036,
+            "stock": 751
           },
           "Calzado": {
             "units": 146,
             "clp": 2215232,
-            "costos": 1133301
+            "costos": 1133301,
+            "stock": 369
           },
           "Accesorios y Otros": {
             "units": 111,
             "clp": 882108,
-            "costos": 776784
+            "costos": 776784,
+            "stock": 282
           },
           "Ropa Interior": {
             "units": 68,
             "clp": 735020,
-            "costos": 474363
+            "costos": 474363,
+            "stock": 198
           },
           "Vestuario Adulto": {
             "units": 16,
             "clp": 102842,
-            "costos": 94374
+            "costos": 94374,
+            "stock": 75
           }
         }
       },
@@ -17237,27 +17277,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 313,
             "clp": 3089616,
-            "costos": 1831237
+            "costos": 1831237,
+            "stock": 415
           },
           "Calzado": {
             "units": 141,
             "clp": 2467482,
-            "costos": 1183985
+            "costos": 1183985,
+            "stock": 265
           },
           "Vestuario Adulto": {
             "units": 23,
             "clp": 164813,
-            "costos": 130815
+            "costos": 130815,
+            "stock": 24
           },
           "Ropa Interior": {
             "units": 32,
             "clp": 343259,
-            "costos": 197670
+            "costos": 197670,
+            "stock": 165
           },
           "Accesorios y Otros": {
             "units": 11,
             "clp": 66932,
-            "costos": 50500
+            "costos": 50500,
+            "stock": 157
           }
         }
       },
@@ -17275,22 +17320,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 11,
             "clp": 119892,
-            "costos": 87355
+            "costos": 87355,
+            "stock": 0
           },
           "Vestuario Adulto": {
             "units": 134,
             "clp": 1126510,
-            "costos": 858091
+            "costos": 858091,
+            "stock": 0
           },
           "Calzado": {
             "units": 232,
             "clp": 2429554,
-            "costos": 1606081
+            "costos": 1606081,
+            "stock": 0
           },
           "Vestuario Infantil": {
             "units": 95,
             "clp": 770753,
-            "costos": 556826
+            "costos": 556826,
+            "stock": 0
           }
         }
       },
@@ -17308,27 +17357,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 208,
             "clp": 2124456,
-            "costos": 1319411
+            "costos": 1319411,
+            "stock": 471
           },
           "Calzado": {
             "units": 76,
             "clp": 1444070,
-            "costos": 677974
+            "costos": 677974,
+            "stock": 263
           },
           "Ropa Interior": {
             "units": 123,
             "clp": 782371,
-            "costos": 897150
+            "costos": 897150,
+            "stock": 235
           },
           "Vestuario Adulto": {
             "units": 26,
             "clp": 157787,
-            "costos": 131484
+            "costos": 131484,
+            "stock": 3
           },
           "Accesorios y Otros": {
             "units": 34,
             "clp": 210212,
-            "costos": 156600
+            "costos": 156600,
+            "stock": 63
           }
         }
       },
@@ -17346,27 +17400,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 23,
             "clp": 132352,
-            "costos": 96400
+            "costos": 96400,
+            "stock": 88
           },
           "Calzado": {
             "units": 144,
             "clp": 2018568,
-            "costos": 1087374
+            "costos": 1087374,
+            "stock": 227
           },
           "Vestuario Adulto": {
             "units": 24,
             "clp": 191810,
-            "costos": 138559
+            "costos": 138559,
+            "stock": 31
           },
           "Vestuario Infantil": {
             "units": 109,
             "clp": 987364,
-            "costos": 642346
+            "costos": 642346,
+            "stock": 398
           },
           "Ropa Interior": {
             "units": 154,
             "clp": 1261735,
-            "costos": 1057166
+            "costos": 1057166,
+            "stock": 181
           }
         }
       },
@@ -17384,27 +17443,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 274,
             "clp": 2878646,
-            "costos": 1725101
+            "costos": 1725101,
+            "stock": 268
           },
           "Calzado": {
             "units": 126,
             "clp": 2243783,
-            "costos": 1080080
+            "costos": 1080080,
+            "stock": 187
           },
           "Vestuario Adulto": {
             "units": 21,
             "clp": 170475,
-            "costos": 120243
+            "costos": 120243,
+            "stock": 20
           },
           "Accesorios y Otros": {
             "units": 4,
             "clp": 23974,
-            "costos": 18200
+            "costos": 18200,
+            "stock": 46
           },
           "Ropa Interior": {
             "units": 22,
             "clp": 339825,
-            "costos": 135277
+            "costos": 135277,
+            "stock": 386
           }
         }
       },
@@ -17422,27 +17486,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 203,
             "clp": 1949776,
-            "costos": 1252900
+            "costos": 1252900,
+            "stock": 283
           },
           "Accesorios y Otros": {
             "units": 42,
             "clp": 257702,
-            "costos": 184450
+            "costos": 184450,
+            "stock": 108
           },
           "Calzado": {
             "units": 120,
             "clp": 2296810,
-            "costos": 1106807
+            "costos": 1106807,
+            "stock": 347
           },
           "Ropa Interior": {
             "units": 59,
             "clp": 584066,
-            "costos": 430968
+            "costos": 430968,
+            "stock": 305
           },
           "Vestuario Adulto": {
             "units": 20,
             "clp": 168439,
-            "costos": 120294
+            "costos": 120294,
+            "stock": 24
           }
         }
       },
@@ -17460,27 +17529,32 @@ const REAL_SELLOUT = {
           "Vestuario Adulto": {
             "units": 31,
             "clp": 180843,
-            "costos": 180379
+            "costos": 180379,
+            "stock": 27
           },
           "Vestuario Infantil": {
             "units": 153,
             "clp": 799377,
-            "costos": 1152125
+            "costos": 1152125,
+            "stock": 137
           },
           "Calzado": {
             "units": 148,
             "clp": 2108840,
-            "costos": 1166897
+            "costos": 1166897,
+            "stock": 293
           },
           "Ropa Interior": {
             "units": 101,
             "clp": 601507,
-            "costos": 860372
+            "costos": 860372,
+            "stock": 160
           },
           "Accesorios y Otros": {
             "units": 2,
             "clp": 10984,
-            "costos": 8750
+            "costos": 8750,
+            "stock": 33
           }
         }
       },
@@ -17498,27 +17572,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 124,
             "clp": 713126,
-            "costos": 503087
+            "costos": 503087,
+            "stock": 159
           },
           "Vestuario Infantil": {
             "units": 152,
             "clp": 1317038,
-            "costos": 928884
+            "costos": 928884,
+            "stock": 317
           },
           "Ropa Interior": {
             "units": 120,
             "clp": 1105418,
-            "costos": 824976
+            "costos": 824976,
+            "stock": 221
           },
           "Vestuario Adulto": {
             "units": 34,
             "clp": 183723,
-            "costos": 173825
+            "costos": 173825,
+            "stock": 44
           },
           "Calzado": {
             "units": 2,
             "clp": 14980,
-            "costos": 12597
+            "costos": 12597,
+            "stock": 0
           }
         }
       },
@@ -17536,27 +17615,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 82,
             "clp": 936483,
-            "costos": 565541
+            "costos": 565541,
+            "stock": 463
           },
           "Vestuario Infantil": {
             "units": 95,
             "clp": 1025951,
-            "costos": 594925
+            "costos": 594925,
+            "stock": 356
           },
           "Vestuario Adulto": {
             "units": 14,
             "clp": 106066,
-            "costos": 90177
+            "costos": 90177,
+            "stock": 69
           },
           "Calzado": {
             "units": 147,
             "clp": 2229343,
-            "costos": 1167713
+            "costos": 1167713,
+            "stock": 306
           },
           "Accesorios y Otros": {
             "units": 91,
             "clp": 500811,
-            "costos": 401750
+            "costos": 401750,
+            "stock": 115
           }
         }
       },
@@ -17574,27 +17658,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 182,
             "clp": 1261295,
-            "costos": 1097864
+            "costos": 1097864,
+            "stock": 528
           },
           "Ropa Interior": {
             "units": 68,
             "clp": 569720,
-            "costos": 512731
+            "costos": 512731,
+            "stock": 337
           },
           "Calzado": {
             "units": 122,
             "clp": 2367426,
-            "costos": 1095433
+            "costos": 1095433,
+            "stock": 251
           },
           "Accesorios y Otros": {
             "units": 34,
             "clp": 208228,
-            "costos": 156100
+            "costos": 156100,
+            "stock": 71
           },
           "Vestuario Adulto": {
             "units": 10,
             "clp": 67907,
-            "costos": 62875
+            "costos": 62875,
+            "stock": 13
           }
         }
       },
@@ -17612,27 +17701,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 140,
             "clp": 1271908,
-            "costos": 773068
+            "costos": 773068,
+            "stock": 809
           },
           "Calzado": {
             "units": 96,
             "clp": 1689370,
-            "costos": 817375
+            "costos": 817375,
+            "stock": 344
           },
           "Vestuario Adulto": {
             "units": 41,
             "clp": 341383,
-            "costos": 251815
+            "costos": 251815,
+            "stock": 145
           },
           "Accesorios y Otros": {
             "units": 100,
             "clp": 663214,
-            "costos": 502514
+            "costos": 502514,
+            "stock": 582
           },
           "Ropa Interior": {
             "units": 33,
             "clp": 380532,
-            "costos": 247688
+            "costos": 247688,
+            "stock": 531
           }
         }
       },
@@ -17650,27 +17744,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 135,
             "clp": 1196749,
-            "costos": 822396
+            "costos": 822396,
+            "stock": 192
           },
           "Ropa Interior": {
             "units": 181,
             "clp": 1074757,
-            "costos": 1245291
+            "costos": 1245291,
+            "stock": 126
           },
           "Vestuario Adulto": {
             "units": 45,
             "clp": 304736,
-            "costos": 270062
+            "costos": 270062,
+            "stock": 23
           },
           "Calzado": {
             "units": 22,
             "clp": 177992,
-            "costos": 120081
+            "costos": 120081,
+            "stock": 57
           },
           "Accesorios y Otros": {
             "units": 22,
             "clp": 84824,
-            "costos": 79800
+            "costos": 79800,
+            "stock": 33
           }
         }
       },
@@ -17688,27 +17787,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 153,
             "clp": 1559236,
-            "costos": 975092
+            "costos": 975092,
+            "stock": 160
           },
           "Calzado": {
             "units": 169,
             "clp": 2894381,
-            "costos": 1390236
+            "costos": 1390236,
+            "stock": 407
           },
           "Vestuario Adulto": {
             "units": 33,
             "clp": 252227,
-            "costos": 208275
+            "costos": 208275,
+            "stock": 13
           },
           "Accesorios y Otros": {
             "units": 5,
             "clp": 37473,
-            "costos": 20387
+            "costos": 20387,
+            "stock": 80
           },
           "Ropa Interior": {
             "units": 21,
             "clp": 338804,
-            "costos": 131831
+            "costos": 131831,
+            "stock": 212
           }
         }
       },
@@ -17726,27 +17830,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 71,
             "clp": 1059401,
-            "costos": 554384
+            "costos": 554384,
+            "stock": 118
           },
           "Vestuario Infantil": {
             "units": 240,
             "clp": 2626728,
-            "costos": 1447045
+            "costos": 1447045,
+            "stock": 319
           },
           "Accesorios y Otros": {
             "units": 36,
             "clp": 233722,
-            "costos": 178069
+            "costos": 178069,
+            "stock": 186
           },
           "Ropa Interior": {
             "units": 17,
             "clp": 132197,
-            "costos": 121409
+            "costos": 121409,
+            "stock": 65
           },
           "Vestuario Adulto": {
             "units": 7,
             "clp": 39956,
-            "costos": 36731
+            "costos": 36731,
+            "stock": 17
           }
         }
       },
@@ -17764,27 +17873,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 195,
             "clp": 2335710,
-            "costos": 1252623
+            "costos": 1252623,
+            "stock": 206
           },
           "Calzado": {
             "units": 78,
             "clp": 1262549,
-            "costos": 632770
+            "costos": 632770,
+            "stock": 245
           },
           "Accesorios y Otros": {
             "units": 20,
             "clp": 114872,
-            "costos": 80650
+            "costos": 80650,
+            "stock": 43
           },
           "Ropa Interior": {
             "units": 61,
             "clp": 558067,
-            "costos": 406605
+            "costos": 406605,
+            "stock": 156
           },
           "Vestuario Adulto": {
             "units": 6,
             "clp": 48059,
-            "costos": 35747
+            "costos": 35747,
+            "stock": 21
           }
         }
       },
@@ -17802,27 +17916,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 72,
             "clp": 379691,
-            "costos": 274800
+            "costos": 274800,
+            "stock": 59
           },
           "Calzado": {
             "units": 41,
             "clp": 473711,
-            "costos": 265803
+            "costos": 265803,
+            "stock": 71
           },
           "Vestuario Infantil": {
             "units": 134,
             "clp": 994985,
-            "costos": 841540
+            "costos": 841540,
+            "stock": 246
           },
           "Ropa Interior": {
             "units": 90,
             "clp": 717790,
-            "costos": 621274
+            "costos": 621274,
+            "stock": 284
           },
           "Vestuario Adulto": {
             "units": 12,
             "clp": 85924,
-            "costos": 69078
+            "costos": 69078,
+            "stock": 25
           }
         }
       },
@@ -17840,27 +17959,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 116,
             "clp": 1272951,
-            "costos": 773880
+            "costos": 773880,
+            "stock": 415
           },
           "Vestuario Adulto": {
             "units": 46,
             "clp": 409738,
-            "costos": 250556
+            "costos": 250556,
+            "stock": 42
           },
           "Calzado": {
             "units": 87,
             "clp": 1121304,
-            "costos": 649399
+            "costos": 649399,
+            "stock": 208
           },
           "Accesorios y Otros": {
             "units": 57,
             "clp": 349396,
-            "costos": 348436
+            "costos": 348436,
+            "stock": -33
           },
           "Ropa Interior": {
             "units": 11,
             "clp": 87826,
-            "costos": 85546
+            "costos": 85546,
+            "stock": 178
           }
         }
       },
@@ -17878,27 +18002,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 137,
             "clp": 1473833,
-            "costos": 829518
+            "costos": 829518,
+            "stock": 438
           },
           "Calzado": {
             "units": 94,
             "clp": 1518399,
-            "costos": 802739
+            "costos": 802739,
+            "stock": 282
           },
           "Ropa Interior": {
             "units": 22,
             "clp": 239921,
-            "costos": 125809
+            "costos": 125809,
+            "stock": 210
           },
           "Vestuario Adulto": {
             "units": 24,
             "clp": 159862,
-            "costos": 135563
+            "costos": 135563,
+            "stock": 43
           },
           "Accesorios y Otros": {
             "units": 9,
             "clp": 53427,
-            "costos": 36900
+            "costos": 36900,
+            "stock": 146
           }
         }
       },
@@ -17916,27 +18045,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 123,
             "clp": 656528,
-            "costos": 719863
+            "costos": 719863,
+            "stock": 59
           },
           "Accesorios y Otros": {
             "units": 40,
             "clp": 236177,
-            "costos": 185888
+            "costos": 185888,
+            "stock": 3
           },
           "Calzado": {
             "units": 9,
             "clp": 37000,
-            "costos": 45342
+            "costos": 45342,
+            "stock": 9
           },
           "Vestuario Adulto": {
             "units": 60,
             "clp": 300738,
-            "costos": 312390
+            "costos": 312390,
+            "stock": 14
           },
           "Ropa Interior": {
             "units": 24,
             "clp": 256812,
-            "costos": 170226
+            "costos": 170226,
+            "stock": 144
           }
         }
       },
@@ -17954,27 +18088,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 102,
             "clp": 1264709,
-            "costos": 651035
+            "costos": 651035,
+            "stock": 186
           },
           "Ropa Interior": {
             "units": 34,
             "clp": 290689,
-            "costos": 255845
+            "costos": 255845,
+            "stock": -1
           },
           "Vestuario Adulto": {
             "units": 26,
             "clp": 235784,
-            "costos": 151041
+            "costos": 151041,
+            "stock": 40
           },
           "Calzado": {
             "units": 72,
             "clp": 1333484,
-            "costos": 634321
+            "costos": 634321,
+            "stock": 189
           },
           "Accesorios y Otros": {
             "units": 10,
             "clp": 51413,
-            "costos": 44900
+            "costos": 44900,
+            "stock": 28
           }
         }
       },
@@ -17992,27 +18131,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 51,
             "clp": 340687,
-            "costos": 324855
+            "costos": 324855,
+            "stock": 148
           },
           "Calzado": {
             "units": 102,
             "clp": 1471457,
-            "costos": 845560
+            "costos": 845560,
+            "stock": 212
           },
           "Vestuario Adulto": {
             "units": 22,
             "clp": 122810,
-            "costos": 110089
+            "costos": 110089,
+            "stock": 26
           },
           "Ropa Interior": {
             "units": 49,
             "clp": 497664,
-            "costos": 317734
+            "costos": 317734,
+            "stock": 135
           },
           "Accesorios y Otros": {
             "units": 15,
             "clp": 91893,
-            "costos": 69350
+            "costos": 69350,
+            "stock": 84
           }
         }
       },
@@ -18030,27 +18174,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 119,
             "clp": 1174537,
-            "costos": 793478
+            "costos": 793478,
+            "stock": 144
           },
           "Calzado": {
             "units": 48,
             "clp": 594665,
-            "costos": 374246
+            "costos": 374246,
+            "stock": 68
           },
           "Accesorios y Otros": {
             "units": 27,
             "clp": 82239,
-            "costos": 116350
+            "costos": 116350,
+            "stock": 1
           },
           "Vestuario Adulto": {
             "units": 14,
             "clp": 127926,
-            "costos": 75623
+            "costos": 75623,
+            "stock": 27
           },
           "Ropa Interior": {
             "units": 1,
             "clp": 7994,
-            "costos": 6590
+            "costos": 6590,
+            "stock": 163
           }
         }
       },
@@ -18068,27 +18217,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 106,
             "clp": 1735780,
-            "costos": 828470
+            "costos": 828470,
+            "stock": 193
           },
           "Vestuario Infantil": {
             "units": 72,
             "clp": 520420,
-            "costos": 422431
+            "costos": 422431,
+            "stock": 250
           },
           "Vestuario Adulto": {
             "units": 5,
             "clp": 26960,
-            "costos": 24455
+            "costos": 24455,
+            "stock": 32
           },
           "Accesorios y Otros": {
             "units": 8,
             "clp": 43950,
-            "costos": 33540
+            "costos": 33540,
+            "stock": 169
           },
           "Ropa Interior": {
             "units": 1,
             "clp": 7990,
-            "costos": 6689
+            "costos": 6689,
+            "stock": 155
           }
         }
       },
@@ -18106,27 +18260,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 62,
             "clp": 1077504,
-            "costos": 513516
+            "costos": 513516,
+            "stock": 132
           },
           "Ropa Interior": {
             "units": 11,
             "clp": 53895,
-            "costos": 73579
+            "costos": 73579,
+            "stock": 108
           },
           "Vestuario Infantil": {
             "units": 73,
             "clp": 753229,
-            "costos": 464134
+            "costos": 464134,
+            "stock": 346
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 6990,
-            "costos": 5237
+            "costos": 5237,
+            "stock": 37
           },
           "Accesorios y Otros": {
             "units": 40,
             "clp": 188106,
-            "costos": 162150
+            "costos": 162150,
+            "stock": 49
           }
         }
       },
@@ -18144,22 +18303,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 133,
             "clp": 1592299,
-            "costos": 852298
+            "costos": 852298,
+            "stock": 90
           },
           "Vestuario Adulto": {
             "units": 23,
             "clp": 200908,
-            "costos": 128580
+            "costos": 128580,
+            "stock": -74
           },
           "Accesorios y Otros": {
             "units": 11,
             "clp": 36453,
-            "costos": 44300
+            "costos": 44300,
+            "stock": 40
           },
           "Calzado": {
             "units": 16,
             "clp": 270815,
-            "costos": 145324
+            "costos": 145324,
+            "stock": 7
           }
         }
       },
@@ -18177,27 +18340,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 88,
             "clp": 989846,
-            "costos": 555446
+            "costos": 555446,
+            "stock": 377
           },
           "Ropa Interior": {
             "units": 47,
             "clp": 302874,
-            "costos": 325465
+            "costos": 325465,
+            "stock": 165
           },
           "Vestuario Adulto": {
             "units": 10,
             "clp": 42986,
-            "costos": 76521
+            "costos": 76521,
+            "stock": 7
           },
           "Calzado": {
             "units": 30,
             "clp": 364014,
-            "costos": 218962
+            "costos": 218962,
+            "stock": 46
           },
           "Accesorios y Otros": {
             "units": 6,
             "clp": 39455,
-            "costos": 26850
+            "costos": 26850,
+            "stock": 42
           }
         }
       },
@@ -18215,27 +18383,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 28,
             "clp": 337501,
-            "costos": 216812
+            "costos": 216812,
+            "stock": 81
           },
           "Vestuario Infantil": {
             "units": 69,
             "clp": 816022,
-            "costos": 446508
+            "costos": 446508,
+            "stock": 99
           },
           "Vestuario Adulto": {
             "units": 43,
             "clp": 315634,
-            "costos": 260157
+            "costos": 260157,
+            "stock": 46
           },
           "Accesorios y Otros": {
             "units": 9,
             "clp": 52936,
-            "costos": 38100
+            "costos": 38100,
+            "stock": 43
           },
           "Ropa Interior": {
             "units": 17,
             "clp": 154895,
-            "costos": 117520
+            "costos": 117520,
+            "stock": 97
           }
         }
       },
@@ -18253,27 +18426,32 @@ const REAL_SELLOUT = {
           "Vestuario Adulto": {
             "units": 24,
             "clp": 167871,
-            "costos": 141048
+            "costos": 141048,
+            "stock": 4
           },
           "Vestuario Infantil": {
             "units": 103,
             "clp": 1157680,
-            "costos": 656761
+            "costos": 656761,
+            "stock": 212
           },
           "Accesorios y Otros": {
             "units": 15,
             "clp": 82392,
-            "costos": 60650
+            "costos": 60650,
+            "stock": 75
           },
           "Calzado": {
             "units": 18,
             "clp": 63970,
-            "costos": 87849
+            "costos": 87849,
+            "stock": 5
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 26476,
-            "costos": 22273
+            "costos": 22273,
+            "stock": 267
           }
         }
       },
@@ -18291,22 +18469,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 96,
             "clp": 946897,
-            "costos": 609201
+            "costos": 609201,
+            "stock": 147
           },
           "Accesorios y Otros": {
             "units": 2,
             "clp": 12485,
-            "costos": 8400
+            "costos": 8400,
+            "stock": 3
           },
           "Ropa Interior": {
             "units": 48,
             "clp": 435638,
-            "costos": 320922
+            "costos": 320922,
+            "stock": 138
           },
           "Calzado": {
             "units": -3,
             "clp": -45371,
-            "costos": -25197
+            "costos": -25197,
+            "stock": 4
           }
         }
       },
@@ -18324,27 +18506,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 36,
             "clp": 366042,
-            "costos": 236774
+            "costos": 236774,
+            "stock": 37
           },
           "Vestuario Adulto": {
             "units": 50,
             "clp": 290389,
-            "costos": 291162
+            "costos": 291162,
+            "stock": 5
           },
           "Calzado": {
             "units": 0,
             "clp": -19888,
-            "costos": 1369
+            "costos": 1369,
+            "stock": 4
           },
           "Ropa Interior": {
             "units": 39,
             "clp": 408041,
-            "costos": 262917
+            "costos": 262917,
+            "stock": 236
           },
           "Accesorios y Otros": {
             "units": 7,
             "clp": 38946,
-            "costos": 27650
+            "costos": 27650,
+            "stock": 80
           }
         }
       },
@@ -18362,27 +18549,32 @@ const REAL_SELLOUT = {
           "Vestuario Adulto": {
             "units": 15,
             "clp": 101343,
-            "costos": 90927
+            "costos": 90927,
+            "stock": 8
           },
           "Accesorios y Otros": {
             "units": 16,
             "clp": 77011,
-            "costos": 70800
+            "costos": 70800,
+            "stock": 135
           },
           "Ropa Interior": {
             "units": 43,
             "clp": 444652,
-            "costos": 269400
+            "costos": 269400,
+            "stock": 217
           },
           "Vestuario Infantil": {
             "units": 49,
             "clp": 278617,
-            "costos": 281311
+            "costos": 281311,
+            "stock": 67
           },
           "Calzado": {
             "units": 1,
             "clp": 8796,
-            "costos": 9239
+            "costos": 9239,
+            "stock": 1
           }
         }
       },
@@ -18400,17 +18592,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 21,
             "clp": 113305,
-            "costos": 144308
+            "costos": 144308,
+            "stock": 4
           },
           "Vestuario Infantil": {
             "units": 97,
             "clp": 1061438,
-            "costos": 630937
+            "costos": 630937,
+            "stock": 195
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 9996,
-            "costos": 5637
+            "costos": 5637,
+            "stock": 2
           }
         }
       },
@@ -18428,27 +18623,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 35,
             "clp": 441197,
-            "costos": 219832
+            "costos": 219832,
+            "stock": 25
           },
           "Vestuario Adulto": {
             "units": 10,
             "clp": 48947,
-            "costos": 55107
+            "costos": 55107,
+            "stock": 2
           },
           "Calzado": {
             "units": 49,
             "clp": 335510,
-            "costos": 286987
+            "costos": 286987,
+            "stock": 15
           },
           "Ropa Interior": {
             "units": 12,
             "clp": 131911,
-            "costos": 55824
+            "costos": 55824,
+            "stock": 97
           },
           "Accesorios y Otros": {
             "units": 3,
             "clp": 17970,
-            "costos": 12600
+            "costos": 12600,
+            "stock": 49
           }
         }
       },
@@ -18466,22 +18666,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 26,
             "clp": 213946,
-            "costos": 175094
+            "costos": 175094,
+            "stock": 50
           },
           "Ropa Interior": {
             "units": 49,
             "clp": 353006,
-            "costos": 328162
+            "costos": 328162,
+            "stock": 91
           },
           "Vestuario Adulto": {
             "units": 12,
             "clp": 72886,
-            "costos": 61523
+            "costos": 61523,
+            "stock": 8
           },
           "Calzado": {
             "units": 18,
             "clp": 228224,
-            "costos": 133666
+            "costos": 133666,
+            "stock": 42
           }
         }
       },
@@ -18499,27 +18703,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 26,
             "clp": 155273,
-            "costos": 112900
+            "costos": 112900,
+            "stock": 101
           },
           "Vestuario Adulto": {
             "units": 26,
             "clp": 130250,
-            "costos": 156283
+            "costos": 156283,
+            "stock": 9
           },
           "Vestuario Infantil": {
             "units": 23,
             "clp": 105771,
-            "costos": 162201
+            "costos": 162201,
+            "stock": 11
           },
           "Ropa Interior": {
             "units": 2,
             "clp": 13485,
-            "costos": 14798
+            "costos": 14798,
+            "stock": 112
           },
           "Calzado": {
             "units": 1,
             "clp": 9497,
-            "costos": 6046
+            "costos": 6046,
+            "stock": 9
           }
         }
       },
@@ -18537,27 +18746,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 36,
             "clp": 409044,
-            "costos": 257717
+            "costos": 257717,
+            "stock": 74
           },
           "Accesorios y Otros": {
             "units": 10,
             "clp": 56940,
-            "costos": 40900
+            "costos": 40900,
+            "stock": 104
           },
           "Vestuario Adulto": {
             "units": 11,
             "clp": 55887,
-            "costos": 54109
+            "costos": 54109,
+            "stock": 39
           },
           "Vestuario Infantil": {
             "units": 13,
             "clp": 125587,
-            "costos": 83279
+            "costos": 83279,
+            "stock": 50
           },
           "Ropa Interior": {
             "units": 2,
             "clp": 9990,
-            "costos": 14256
+            "costos": 14256,
+            "stock": 100
           }
         }
       },
@@ -18575,27 +18789,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 10,
             "clp": 85004,
-            "costos": 56053
+            "costos": 56053,
+            "stock": 25
           },
           "Vestuario Infantil": {
             "units": 33,
             "clp": 275793,
-            "costos": 179110
+            "costos": 179110,
+            "stock": 67
           },
           "Accesorios y Otros": {
             "units": 22,
             "clp": 131852,
-            "costos": 96000
+            "costos": 96000,
+            "stock": 65
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 24990,
-            "costos": 16345
+            "costos": 16345,
+            "stock": -2
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 38970,
-            "costos": 11919
+            "costos": 11919,
+            "stock": 100
           }
         }
       },
@@ -18613,22 +18832,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 62,
             "clp": 763424,
-            "costos": 399149
+            "costos": 399149,
+            "stock": 277
           },
           "Ropa Interior": {
             "units": 5,
             "clp": 54571,
-            "costos": 35453
+            "costos": 35453,
+            "stock": 219
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 5990,
-            "costos": 4633
+            "costos": 4633,
+            "stock": 9
           },
           "Accesorios y Otros": {
             "units": 3,
             "clp": 38974,
-            "costos": 13324
+            "costos": 13324,
+            "stock": 42
           }
         }
       },
@@ -18646,22 +18869,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 30,
             "clp": 172701,
-            "costos": 179291
+            "costos": 179291,
+            "stock": 60
           },
           "Vestuario Infantil": {
             "units": 5,
             "clp": 30960,
-            "costos": 24394
+            "costos": 24394,
+            "stock": 8
           },
           "Vestuario Adulto": {
             "units": 5,
             "clp": 43974,
-            "costos": 27945
+            "costos": 27945,
+            "stock": 5
           },
           "Ropa Interior": {
             "units": 4,
             "clp": 25960,
-            "costos": 26159
+            "costos": 26159,
+            "stock": 6
           }
         }
       },
@@ -18679,22 +18906,26 @@ const REAL_SELLOUT = {
           "Vestuario Adulto": {
             "units": 3,
             "clp": 12970,
-            "costos": 16345
+            "costos": 16345,
+            "stock": 1
           },
           "Vestuario Infantil": {
             "units": 3,
             "clp": 14971,
-            "costos": 22019
+            "costos": 22019,
+            "stock": 1
           },
           "Accesorios y Otros": {
             "units": 4,
             "clp": 20960,
-            "costos": 16800
+            "costos": 16800,
+            "stock": 29
           },
           "Ropa Interior": {
             "units": 1,
             "clp": 12990,
-            "costos": 8466
+            "costos": 8466,
+            "stock": 44
           }
         }
       },
@@ -18712,17 +18943,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 2,
             "clp": 3298,
-            "costos": 12597
+            "costos": 12597,
+            "stock": 0
           },
           "Ropa Interior": {
             "units": 1,
             "clp": 1869,
-            "costos": 7139
+            "costos": 7139,
+            "stock": 0
           },
           "Calzado": {
             "units": 2,
             "clp": 2638,
-            "costos": 10076
+            "costos": 10076,
+            "stock": 0
           }
         }
       }
@@ -18742,27 +18976,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 330,
             "clp": 3042917,
-            "costos": 2174200
+            "costos": 2174200,
+            "stock": 294
           },
           "Accesorios y Otros": {
             "units": 72,
             "clp": 1091854,
-            "costos": 739086
+            "costos": 739086,
+            "stock": 175
           },
           "Ropa Interior": {
             "units": 747,
             "clp": 5315199,
-            "costos": 3397200
+            "costos": 3397200,
+            "stock": 692
           },
           "Vestuario Infantil": {
             "units": 358,
             "clp": 3633435,
-            "costos": 2373002
+            "costos": 2373002,
+            "stock": 876
           },
           "Vestuario Adulto": {
             "units": 174,
             "clp": 2111468,
-            "costos": 1302500
+            "costos": 1302500,
+            "stock": 333
           }
         }
       },
@@ -18780,27 +19019,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 357,
             "clp": 3601261,
-            "costos": 2381384
+            "costos": 2381384,
+            "stock": 327
           },
           "Ropa Interior": {
             "units": 676,
             "clp": 4855258,
-            "costos": 3113750
+            "costos": 3113750,
+            "stock": 318
           },
           "Calzado": {
             "units": 360,
             "clp": 3343714,
-            "costos": 2379884
+            "costos": 2379884,
+            "stock": 290
           },
           "Accesorios y Otros": {
             "units": 91,
             "clp": 1459989,
-            "costos": 1042193
+            "costos": 1042193,
+            "stock": 286
           },
           "Vestuario Adulto": {
             "units": 185,
             "clp": 2274170,
-            "costos": 1411900
+            "costos": 1411900,
+            "stock": 319
           }
         }
       },
@@ -18818,27 +19062,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 327,
             "clp": 2928740,
-            "costos": 2136105
+            "costos": 2136105,
+            "stock": 377
           },
           "Vestuario Infantil": {
             "units": 345,
             "clp": 3530690,
-            "costos": 2319269
+            "costos": 2319269,
+            "stock": 476
           },
           "Accesorios y Otros": {
             "units": 77,
             "clp": 1019455,
-            "costos": 847434
+            "costos": 847434,
+            "stock": 229
           },
           "Ropa Interior": {
             "units": 630,
             "clp": 4607496,
-            "costos": 2998700
+            "costos": 2998700,
+            "stock": 643
           },
           "Vestuario Adulto": {
             "units": 263,
             "clp": 3163955,
-            "costos": 1965700
+            "costos": 1965700,
+            "stock": 209
           }
         }
       },
@@ -18856,27 +19105,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 593,
             "clp": 4071649,
-            "costos": 2558650
+            "costos": 2558650,
+            "stock": 208
           },
           "Calzado": {
             "units": 442,
             "clp": 4037405,
-            "costos": 2956842
+            "costos": 2956842,
+            "stock": 287
           },
           "Vestuario Infantil": {
             "units": 299,
             "clp": 3040756,
-            "costos": 1968866
+            "costos": 1968866,
+            "stock": 485
           },
           "Vestuario Adulto": {
             "units": 210,
             "clp": 2509508,
-            "costos": 1525500
+            "costos": 1525500,
+            "stock": 309
           },
           "Accesorios y Otros": {
             "units": 45,
             "clp": 437900,
-            "costos": 357047
+            "costos": 357047,
+            "stock": 324
           }
         }
       },
@@ -18894,27 +19148,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 259,
             "clp": 2651225,
-            "costos": 1755528
+            "costos": 1755528,
+            "stock": 296
           },
           "Ropa Interior": {
             "units": 736,
             "clp": 5486273,
-            "costos": 3481800
+            "costos": 3481800,
+            "stock": 360
           },
           "Vestuario Infantil": {
             "units": 358,
             "clp": 3865451,
-            "costos": 2402517
+            "costos": 2402517,
+            "stock": 321
           },
           "Accesorios y Otros": {
             "units": 52,
             "clp": 655077,
-            "costos": 609983
+            "costos": 609983,
+            "stock": 400
           },
           "Vestuario Adulto": {
             "units": 133,
             "clp": 1588457,
-            "costos": 1000100
+            "costos": 1000100,
+            "stock": 357
           }
         }
       },
@@ -18932,27 +19191,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 324,
             "clp": 3056585,
-            "costos": 2156888
+            "costos": 2156888,
+            "stock": 177
           },
           "Ropa Interior": {
             "units": 557,
             "clp": 3875661,
-            "costos": 2447650
+            "costos": 2447650,
+            "stock": 391
           },
           "Accesorios y Otros": {
             "units": 47,
             "clp": 556930,
-            "costos": 451986
+            "costos": 451986,
+            "stock": 149
           },
           "Vestuario Infantil": {
             "units": 372,
             "clp": 3914847,
-            "costos": 2481359
+            "costos": 2481359,
+            "stock": 412
           },
           "Vestuario Adulto": {
             "units": 190,
             "clp": 2277143,
-            "costos": 1421600
+            "costos": 1421600,
+            "stock": 271
           }
         }
       },
@@ -18970,27 +19234,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 202,
             "clp": 1964773,
-            "costos": 1290660
+            "costos": 1290660,
+            "stock": 309
           },
           "Accesorios y Otros": {
             "units": 39,
             "clp": 428514,
-            "costos": 387131
+            "costos": 387131,
+            "stock": 217
           },
           "Ropa Interior": {
             "units": 559,
             "clp": 4053503,
-            "costos": 2585650
+            "costos": 2585650,
+            "stock": 485
           },
           "Vestuario Infantil": {
             "units": 416,
             "clp": 4385992,
-            "costos": 2833396
+            "costos": 2833396,
+            "stock": 554
           },
           "Vestuario Adulto": {
             "units": 190,
             "clp": 2354302,
-            "costos": 1434645
+            "costos": 1434645,
+            "stock": 273
           }
         }
       },
@@ -19008,27 +19277,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 573,
             "clp": 3923409,
-            "costos": 2587500
+            "costos": 2587500,
+            "stock": 488
           },
           "Calzado": {
             "units": 286,
             "clp": 2888174,
-            "costos": 2021790
+            "costos": 2021790,
+            "stock": 307
           },
           "Accesorios y Otros": {
             "units": 45,
             "clp": 547688,
-            "costos": 373296
+            "costos": 373296,
+            "stock": 320
           },
           "Vestuario Infantil": {
             "units": 294,
             "clp": 2931403,
-            "costos": 1937016
+            "costos": 1937016,
+            "stock": 609
           },
           "Vestuario Adulto": {
             "units": 193,
             "clp": 2312046,
-            "costos": 1428800
+            "costos": 1428800,
+            "stock": 264
           }
         }
       },
@@ -19046,27 +19320,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 285,
             "clp": 2986636,
-            "costos": 2045084
+            "costos": 2045084,
+            "stock": 218
           },
           "Vestuario Infantil": {
             "units": 305,
             "clp": 3115003,
-            "costos": 2040562
+            "costos": 2040562,
+            "stock": 691
           },
           "Ropa Interior": {
             "units": 542,
             "clp": 3930530,
-            "costos": 2525670
+            "costos": 2525670,
+            "stock": 466
           },
           "Accesorios y Otros": {
             "units": 45,
             "clp": 430002,
-            "costos": 401177
+            "costos": 401177,
+            "stock": 302
           },
           "Vestuario Adulto": {
             "units": 180,
             "clp": 2033933,
-            "costos": 1303900
+            "costos": 1303900,
+            "stock": 288
           }
         }
       },
@@ -19084,27 +19363,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 297,
             "clp": 2902297,
-            "costos": 2070382
+            "costos": 2070382,
+            "stock": 215
           },
           "Ropa Interior": {
             "units": 464,
             "clp": 3224731,
-            "costos": 2047850
+            "costos": 2047850,
+            "stock": 456
           },
           "Accesorios y Otros": {
             "units": 65,
             "clp": 879155,
-            "costos": 717604
+            "costos": 717604,
+            "stock": 507
           },
           "Vestuario Infantil": {
             "units": 275,
             "clp": 2919966,
-            "costos": 1863947
+            "costos": 1863947,
+            "stock": 375
           },
           "Vestuario Adulto": {
             "units": 254,
             "clp": 3174109,
-            "costos": 1954100
+            "costos": 1954100,
+            "stock": 276
           }
         }
       },
@@ -19122,27 +19406,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 569,
             "clp": 4033849,
-            "costos": 2555720
+            "costos": 2555720,
+            "stock": 366
           },
           "Calzado": {
             "units": 384,
             "clp": 3626386,
-            "costos": 2711366
+            "costos": 2711366,
+            "stock": 189
           },
           "Accesorios y Otros": {
             "units": 55,
             "clp": 646725,
-            "costos": 559287
+            "costos": 559287,
+            "stock": 367
           },
           "Vestuario Infantil": {
             "units": 247,
             "clp": 2631088,
-            "costos": 1643753
+            "costos": 1643753,
+            "stock": 577
           },
           "Vestuario Adulto": {
             "units": 92,
             "clp": 1091438,
-            "costos": 666000
+            "costos": 666000,
+            "stock": 150
           }
         }
       },
@@ -19160,27 +19449,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 333,
             "clp": 3535514,
-            "costos": 2247779
+            "costos": 2247779,
+            "stock": 205
           },
           "Calzado": {
             "units": 306,
             "clp": 3034039,
-            "costos": 2131261
+            "costos": 2131261,
+            "stock": 259
           },
           "Ropa Interior": {
             "units": 477,
             "clp": 3084193,
-            "costos": 1998100
+            "costos": 1998100,
+            "stock": 355
           },
           "Accesorios y Otros": {
             "units": 56,
             "clp": 763452,
-            "costos": 492685
+            "costos": 492685,
+            "stock": 414
           },
           "Vestuario Adulto": {
             "units": 172,
             "clp": 2111078,
-            "costos": 1314100
+            "costos": 1314100,
+            "stock": 301
           }
         }
       },
@@ -19198,27 +19492,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 276,
             "clp": 2916036,
-            "costos": 1842271
+            "costos": 1842271,
+            "stock": 316
           },
           "Ropa Interior": {
             "units": 550,
             "clp": 3886672,
-            "costos": 2474000
+            "costos": 2474000,
+            "stock": 263
           },
           "Calzado": {
             "units": 293,
             "clp": 2996260,
-            "costos": 2026616
+            "costos": 2026616,
+            "stock": 339
           },
           "Accesorios y Otros": {
             "units": 84,
             "clp": 980153,
-            "costos": 870443
+            "costos": 870443,
+            "stock": 172
           },
           "Vestuario Adulto": {
             "units": 128,
             "clp": 1545348,
-            "costos": 954700
+            "costos": 954700,
+            "stock": 146
           }
         }
       },
@@ -19236,27 +19535,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 616,
             "clp": 4681812,
-            "costos": 2966550
+            "costos": 2966550,
+            "stock": 412
           },
           "Vestuario Infantil": {
             "units": 197,
             "clp": 1946807,
-            "costos": 1304181
+            "costos": 1304181,
+            "stock": 568
           },
           "Accesorios y Otros": {
             "units": 46,
             "clp": 710407,
-            "costos": 508682
+            "costos": 508682,
+            "stock": 178
           },
           "Vestuario Adulto": {
             "units": 217,
             "clp": 2654511,
-            "costos": 1622100
+            "costos": 1622100,
+            "stock": 259
           },
           "Calzado": {
             "units": 145,
             "clp": 1636508,
-            "costos": 1009022
+            "costos": 1009022,
+            "stock": 334
           }
         }
       },
@@ -19274,27 +19578,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 313,
             "clp": 2762486,
-            "costos": 2030096
+            "costos": 2030096,
+            "stock": 255
           },
           "Ropa Interior": {
             "units": 384,
             "clp": 2925695,
-            "costos": 1839850
+            "costos": 1839850,
+            "stock": 550
           },
           "Accesorios y Otros": {
             "units": 74,
             "clp": 1004971,
-            "costos": 673523
+            "costos": 673523,
+            "stock": 248
           },
           "Vestuario Infantil": {
             "units": 250,
             "clp": 2758674,
-            "costos": 1704371
+            "costos": 1704371,
+            "stock": 377
           },
           "Vestuario Adulto": {
             "units": 178,
             "clp": 2176089,
-            "costos": 1322600
+            "costos": 1322600,
+            "stock": 115
           }
         }
       },
@@ -19312,27 +19621,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 361,
             "clp": 2712956,
-            "costos": 1821900
+            "costos": 1821900,
+            "stock": 564
           },
           "Calzado": {
             "units": 336,
             "clp": 2531867,
-            "costos": 2066105
+            "costos": 2066105,
+            "stock": 356
           },
           "Accesorios y Otros": {
             "units": 80,
             "clp": 1089220,
-            "costos": 769027
+            "costos": 769027,
+            "stock": 391
           },
           "Vestuario Infantil": {
             "units": 221,
             "clp": 2073096,
-            "costos": 1421918
+            "costos": 1421918,
+            "stock": 450
           },
           "Vestuario Adulto": {
             "units": 187,
             "clp": 2026256,
-            "costos": 1312400
+            "costos": 1312400,
+            "stock": 362
           }
         }
       },
@@ -19350,27 +19664,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 235,
             "clp": 2182423,
-            "costos": 1643877
+            "costos": 1643877,
+            "stock": 227
           },
           "Ropa Interior": {
             "units": 414,
             "clp": 2712050,
-            "costos": 1719350
+            "costos": 1719350,
+            "stock": 303
           },
           "Vestuario Infantil": {
             "units": 258,
             "clp": 2672067,
-            "costos": 1704060
+            "costos": 1704060,
+            "stock": 274
           },
           "Accesorios y Otros": {
             "units": 49,
             "clp": 560782,
-            "costos": 465286
+            "costos": 465286,
+            "stock": 259
           },
           "Vestuario Adulto": {
             "units": 135,
             "clp": 1593341,
-            "costos": 987200
+            "costos": 987200,
+            "stock": 148
           }
         }
       },
@@ -19388,27 +19707,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 247,
             "clp": 2537556,
-            "costos": 1627287
+            "costos": 1627287,
+            "stock": 291
           },
           "Calzado": {
             "units": 210,
             "clp": 2054800,
-            "costos": 1419375
+            "costos": 1419375,
+            "stock": 149
           },
           "Ropa Interior": {
             "units": 470,
             "clp": 3294536,
-            "costos": 2100550
+            "costos": 2100550,
+            "stock": 270
           },
           "Accesorios y Otros": {
             "units": 54,
             "clp": 793911,
-            "costos": 610007
+            "costos": 610007,
+            "stock": 245
           },
           "Vestuario Adulto": {
             "units": 99,
             "clp": 1203289,
-            "costos": 752400
+            "costos": 752400,
+            "stock": 142
           }
         }
       },
@@ -19426,27 +19750,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 350,
             "clp": 3137835,
-            "costos": 2313952
+            "costos": 2313952,
+            "stock": 198
           },
           "Ropa Interior": {
             "units": 392,
             "clp": 3099952,
-            "costos": 1962500
+            "costos": 1962500,
+            "stock": -35
           },
           "Vestuario Infantil": {
             "units": 226,
             "clp": 2323850,
-            "costos": 1480321
+            "costos": 1480321,
+            "stock": 120
           },
           "Vestuario Adulto": {
             "units": 47,
             "clp": 513415,
-            "costos": 316500
+            "costos": 316500,
+            "stock": 196
           },
           "Accesorios y Otros": {
             "units": 52,
             "clp": 761418,
-            "costos": 617740
+            "costos": 617740,
+            "stock": 137
           }
         }
       },
@@ -19464,27 +19793,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 383,
             "clp": 2604281,
-            "costos": 1784170
+            "costos": 1784170,
+            "stock": 362
           },
           "Vestuario Infantil": {
             "units": 197,
             "clp": 1661181,
-            "costos": 1259161
+            "costos": 1259161,
+            "stock": 399
           },
           "Accesorios y Otros": {
             "units": 70,
             "clp": 665919,
-            "costos": 606260
+            "costos": 606260,
+            "stock": 239
           },
           "Calzado": {
             "units": 237,
             "clp": 1985488,
-            "costos": 1586286
+            "costos": 1586286,
+            "stock": 226
           },
           "Vestuario Adulto": {
             "units": 158,
             "clp": 1912975,
-            "costos": 1172445
+            "costos": 1172445,
+            "stock": 319
           }
         }
       },
@@ -19502,27 +19836,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 360,
             "clp": 2291954,
-            "costos": 1531400
+            "costos": 1531400,
+            "stock": 152
           },
           "Calzado": {
             "units": 308,
             "clp": 2499308,
-            "costos": 1969629
+            "costos": 1969629,
+            "stock": 244
           },
           "Vestuario Infantil": {
             "units": 198,
             "clp": 1948263,
-            "costos": 1308642
+            "costos": 1308642,
+            "stock": 118
           },
           "Vestuario Adulto": {
             "units": 123,
             "clp": 1417494,
-            "costos": 912600
+            "costos": 912600,
+            "stock": 127
           },
           "Accesorios y Otros": {
             "units": 45,
             "clp": 546776,
-            "costos": 433264
+            "costos": 433264,
+            "stock": 379
           }
         }
       },
@@ -19540,27 +19879,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 228,
             "clp": 2018381,
-            "costos": 1582520
+            "costos": 1582520,
+            "stock": 298
           },
           "Ropa Interior": {
             "units": 348,
             "clp": 2646099,
-            "costos": 1738800
+            "costos": 1738800,
+            "stock": 389
           },
           "Vestuario Infantil": {
             "units": 198,
             "clp": 1797126,
-            "costos": 1268530
+            "costos": 1268530,
+            "stock": 316
           },
           "Accesorios y Otros": {
             "units": 119,
             "clp": 1496008,
-            "costos": 1182248
+            "costos": 1182248,
+            "stock": 373
           },
           "Vestuario Adulto": {
             "units": 141,
             "clp": 1541208,
-            "costos": 1004100
+            "costos": 1004100,
+            "stock": 225
           }
         }
       },
@@ -19578,27 +19922,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 237,
             "clp": 2210451,
-            "costos": 1676451
+            "costos": 1676451,
+            "stock": 230
           },
           "Vestuario Infantil": {
             "units": 194,
             "clp": 1846320,
-            "costos": 1249003
+            "costos": 1249003,
+            "stock": 213
           },
           "Accesorios y Otros": {
             "units": 101,
             "clp": 1547935,
-            "costos": 1080593
+            "costos": 1080593,
+            "stock": 197
           },
           "Ropa Interior": {
             "units": 338,
             "clp": 2427567,
-            "costos": 1620350
+            "costos": 1620350,
+            "stock": 206
           },
           "Vestuario Adulto": {
             "units": 156,
             "clp": 1789619,
-            "costos": 1157400
+            "costos": 1157400,
+            "stock": 322
           }
         }
       },
@@ -19616,27 +19965,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 213,
             "clp": 2102810,
-            "costos": 1407880
+            "costos": 1407880,
+            "stock": 236
           },
           "Ropa Interior": {
             "units": 370,
             "clp": 2736412,
-            "costos": 1790550
+            "costos": 1790550,
+            "stock": 156
           },
           "Calzado": {
             "units": 233,
             "clp": 2307835,
-            "costos": 1720003
+            "costos": 1720003,
+            "stock": 164
           },
           "Accesorios y Otros": {
             "units": 50,
             "clp": 795032,
-            "costos": 629529
+            "costos": 629529,
+            "stock": 194
           },
           "Vestuario Adulto": {
             "units": 122,
             "clp": 1545202,
-            "costos": 949400
+            "costos": 949400,
+            "stock": 313
           }
         }
       },
@@ -19654,27 +20008,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 99,
             "clp": 963455,
-            "costos": 1034291
+            "costos": 1034291,
+            "stock": 238
           },
           "Calzado": {
             "units": 200,
             "clp": 1896172,
-            "costos": 1335060
+            "costos": 1335060,
+            "stock": 297
           },
           "Vestuario Infantil": {
             "units": 203,
             "clp": 2057705,
-            "costos": 1355217
+            "costos": 1355217,
+            "stock": 147
           },
           "Ropa Interior": {
             "units": 314,
             "clp": 2113378,
-            "costos": 1380850
+            "costos": 1380850,
+            "stock": 160
           },
           "Vestuario Adulto": {
             "units": 149,
             "clp": 1874899,
-            "costos": 1156900
+            "costos": 1156900,
+            "stock": 178
           }
         }
       },
@@ -19692,27 +20051,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 79,
             "clp": 1140187,
-            "costos": 951547
+            "costos": 951547,
+            "stock": 310
           },
           "Ropa Interior": {
             "units": 424,
             "clp": 3045731,
-            "costos": 1947650
+            "costos": 1947650,
+            "stock": 170
           },
           "Calzado": {
             "units": 172,
             "clp": 1813704,
-            "costos": 1214842
+            "costos": 1214842,
+            "stock": 234
           },
           "Vestuario Infantil": {
             "units": 188,
             "clp": 2039269,
-            "costos": 1271534
+            "costos": 1271534,
+            "stock": 242
           },
           "Vestuario Adulto": {
             "units": 77,
             "clp": 890618,
-            "costos": 555000
+            "costos": 555000,
+            "stock": 189
           }
         }
       },
@@ -19730,27 +20094,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 195,
             "clp": 1476516,
-            "costos": 1191746
+            "costos": 1191746,
+            "stock": 390
           },
           "Accesorios y Otros": {
             "units": 49,
             "clp": 590220,
-            "costos": 535357
+            "costos": 535357,
+            "stock": 311
           },
           "Vestuario Infantil": {
             "units": 147,
             "clp": 1522888,
-            "costos": 983871
+            "costos": 983871,
+            "stock": 414
           },
           "Vestuario Adulto": {
             "units": 152,
             "clp": 1873989,
-            "costos": 1154400
+            "costos": 1154400,
+            "stock": 281
           },
           "Ropa Interior": {
             "units": 280,
             "clp": 1791080,
-            "costos": 1128700
+            "costos": 1128700,
+            "stock": 492
           }
         }
       },
@@ -19768,27 +20137,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 216,
             "clp": 2020553,
-            "costos": 1475560
+            "costos": 1475560,
+            "stock": 212
           },
           "Vestuario Infantil": {
             "units": 187,
             "clp": 1866202,
-            "costos": 1217013
+            "costos": 1217013,
+            "stock": 176
           },
           "Ropa Interior": {
             "units": 259,
             "clp": 1926532,
-            "costos": 1223820
+            "costos": 1223820,
+            "stock": 88
           },
           "Accesorios y Otros": {
             "units": 57,
             "clp": 766533,
-            "costos": 580834
+            "costos": 580834,
+            "stock": 258
           },
           "Vestuario Adulto": {
             "units": 78,
             "clp": 919764,
-            "costos": 580400
+            "costos": 580400,
+            "stock": 166
           }
         }
       },
@@ -19806,27 +20180,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 295,
             "clp": 2071785,
-            "costos": 1378250
+            "costos": 1378250,
+            "stock": 236
           },
           "Calzado": {
             "units": 167,
             "clp": 1533205,
-            "costos": 1130925
+            "costos": 1130925,
+            "stock": 282
           },
           "Vestuario Infantil": {
             "units": 169,
             "clp": 1669275,
-            "costos": 1116760
+            "costos": 1116760,
+            "stock": 246
           },
           "Accesorios y Otros": {
             "units": 60,
             "clp": 731168,
-            "costos": 674431
+            "costos": 674431,
+            "stock": 375
           },
           "Vestuario Adulto": {
             "units": 82,
             "clp": 1001976,
-            "costos": 617100
+            "costos": 617100,
+            "stock": 167
           }
         }
       },
@@ -19844,27 +20223,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 144,
             "clp": 1443708,
-            "costos": 943142
+            "costos": 943142,
+            "stock": 327
           },
           "Accesorios y Otros": {
             "units": 22,
             "clp": 214474,
-            "costos": 159699
+            "costos": 159699,
+            "stock": 373
           },
           "Ropa Interior": {
             "units": 217,
             "clp": 1385455,
-            "costos": 929100
+            "costos": 929100,
+            "stock": 285
           },
           "Calzado": {
             "units": 228,
             "clp": 2168419,
-            "costos": 1680059
+            "costos": 1680059,
+            "stock": 221
           },
           "Vestuario Adulto": {
             "units": 158,
             "clp": 1871751,
-            "costos": 1200100
+            "costos": 1200100,
+            "stock": 260
           }
         }
       },
@@ -19882,27 +20266,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 177,
             "clp": 1556500,
-            "costos": 1144556
+            "costos": 1144556,
+            "stock": 341
           },
           "Accesorios y Otros": {
             "units": 76,
             "clp": 901272,
-            "costos": 755350
+            "costos": 755350,
+            "stock": 400
           },
           "Vestuario Infantil": {
             "units": 162,
             "clp": 1407015,
-            "costos": 997840
+            "costos": 997840,
+            "stock": 311
           },
           "Ropa Interior": {
             "units": 229,
             "clp": 1512893,
-            "costos": 985150
+            "costos": 985150,
+            "stock": 324
           },
           "Vestuario Adulto": {
             "units": 108,
             "clp": 1208979,
-            "costos": 789800
+            "costos": 789800,
+            "stock": 190
           }
         }
       },
@@ -19920,27 +20309,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 194,
             "clp": 1661805,
-            "costos": 1244475
+            "costos": 1244475,
+            "stock": 195
           },
           "Vestuario Infantil": {
             "units": 189,
             "clp": 1856986,
-            "costos": 1240643
+            "costos": 1240643,
+            "stock": 342
           },
           "Ropa Interior": {
             "units": 224,
             "clp": 1711184,
-            "costos": 1126550
+            "costos": 1126550,
+            "stock": 174
           },
           "Accesorios y Otros": {
             "units": 55,
             "clp": 696342,
-            "costos": 585160
+            "costos": 585160,
+            "stock": 369
           },
           "Vestuario Adulto": {
             "units": 89,
             "clp": 993619,
-            "costos": 643200
+            "costos": 643200,
+            "stock": 197
           }
         }
       },
@@ -19958,27 +20352,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 182,
             "clp": 1800325,
-            "costos": 1192054
+            "costos": 1192054,
+            "stock": 437
           },
           "Ropa Interior": {
             "units": 262,
             "clp": 1721610,
-            "costos": 1100700
+            "costos": 1100700,
+            "stock": 460
           },
           "Calzado": {
             "units": 138,
             "clp": 1160425,
-            "costos": 876394
+            "costos": 876394,
+            "stock": 301
           },
           "Accesorios y Otros": {
             "units": 24,
             "clp": 361813,
-            "costos": 293622
+            "costos": 293622,
+            "stock": 229
           },
           "Vestuario Adulto": {
             "units": 76,
             "clp": 926924,
-            "costos": 568900
+            "costos": 568900,
+            "stock": 196
           }
         }
       },
@@ -19996,27 +20395,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 141,
             "clp": 1560253,
-            "costos": 964802
+            "costos": 964802,
+            "stock": 318
           },
           "Calzado": {
             "units": 209,
             "clp": 1910984,
-            "costos": 1488172
+            "costos": 1488172,
+            "stock": 127
           },
           "Accesorios y Otros": {
             "units": 46,
             "clp": 528064,
-            "costos": 512209
+            "costos": 512209,
+            "stock": 265
           },
           "Ropa Interior": {
             "units": 157,
             "clp": 1060147,
-            "costos": 665650
+            "costos": 665650,
+            "stock": 338
           },
           "Vestuario Adulto": {
             "units": 104,
             "clp": 1277954,
-            "costos": 779500
+            "costos": 779500,
+            "stock": 121
           }
         }
       },
@@ -20034,27 +20438,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 165,
             "clp": 1456306,
-            "costos": 1100038
+            "costos": 1100038,
+            "stock": 226
           },
           "Vestuario Infantil": {
             "units": 122,
             "clp": 1326767,
-            "costos": 826080
+            "costos": 826080,
+            "stock": 485
           },
           "Accesorios y Otros": {
             "units": 10,
             "clp": 88183,
-            "costos": 87720
+            "costos": 87720,
+            "stock": 481
           },
           "Ropa Interior": {
             "units": 283,
             "clp": 2137316,
-            "costos": 1361250
+            "costos": 1361250,
+            "stock": 466
           },
           "Vestuario Adulto": {
             "units": 67,
             "clp": 809499,
-            "costos": 500700
+            "costos": 500700,
+            "stock": 198
           }
         }
       },
@@ -20072,27 +20481,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 209,
             "clp": 1942626,
-            "costos": 1395216
+            "costos": 1395216,
+            "stock": 249
           },
           "Ropa Interior": {
             "units": 202,
             "clp": 1474289,
-            "costos": 958700
+            "costos": 958700,
+            "stock": 214
           },
           "Vestuario Infantil": {
             "units": 131,
             "clp": 1227705,
-            "costos": 834825
+            "costos": 834825,
+            "stock": 337
           },
           "Vestuario Adulto": {
             "units": 86,
             "clp": 1056405,
-            "costos": 651000
+            "costos": 651000,
+            "stock": 139
           },
           "Accesorios y Otros": {
             "units": 4,
             "clp": 71399,
-            "costos": 50630
+            "costos": 50630,
+            "stock": 254
           }
         }
       },
@@ -20110,27 +20524,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 174,
             "clp": 1535531,
-            "costos": 1156277
+            "costos": 1156277,
+            "stock": 193
           },
           "Ropa Interior": {
             "units": 154,
             "clp": 1235251,
-            "costos": 807300
+            "costos": 807300,
+            "stock": 239
           },
           "Vestuario Infantil": {
             "units": 150,
             "clp": 1624093,
-            "costos": 1010499
+            "costos": 1010499,
+            "stock": 278
           },
           "Vestuario Adulto": {
             "units": 88,
             "clp": 1047928,
-            "costos": 644100
+            "costos": 644100,
+            "stock": 216
           },
           "Accesorios y Otros": {
             "units": 19,
             "clp": 153291,
-            "costos": 119825
+            "costos": 119825,
+            "stock": 493
           }
         }
       },
@@ -20148,27 +20567,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 175,
             "clp": 1410222,
-            "costos": 1150209
+            "costos": 1150209,
+            "stock": 299
           },
           "Ropa Interior": {
             "units": 137,
             "clp": 897189,
-            "costos": 636800
+            "costos": 636800,
+            "stock": 380
           },
           "Accesorios y Otros": {
             "units": 55,
             "clp": 585753,
-            "costos": 526917
+            "costos": 526917,
+            "stock": 393
           },
           "Vestuario Adulto": {
             "units": 114,
             "clp": 1349167,
-            "costos": 881200
+            "costos": 881200,
+            "stock": 311
           },
           "Vestuario Infantil": {
             "units": 81,
             "clp": 644991,
-            "costos": 511120
+            "costos": 511120,
+            "stock": 290
           }
         }
       },
@@ -20186,27 +20610,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 88,
             "clp": 892837,
-            "costos": 566279
+            "costos": 566279,
+            "stock": 322
           },
           "Calzado": {
             "units": 161,
             "clp": 1381788,
-            "costos": 1080709
+            "costos": 1080709,
+            "stock": 239
           },
           "Ropa Interior": {
             "units": 171,
             "clp": 1199880,
-            "costos": 792500
+            "costos": 792500,
+            "stock": 228
           },
           "Accesorios y Otros": {
             "units": 35,
             "clp": 406112,
-            "costos": 403441
+            "costos": 403441,
+            "stock": 300
           },
           "Vestuario Adulto": {
             "units": 75,
             "clp": 894617,
-            "costos": 559100
+            "costos": 559100,
+            "stock": 193
           }
         }
       },
@@ -20224,27 +20653,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 86,
             "clp": 763467,
-            "costos": 545015
+            "costos": 545015,
+            "stock": 405
           },
           "Accesorios y Otros": {
             "units": 89,
             "clp": 950861,
-            "costos": 925391
+            "costos": 925391,
+            "stock": 263
           },
           "Ropa Interior": {
             "units": 95,
             "clp": 525826,
-            "costos": 340600
+            "costos": 340600,
+            "stock": 472
           },
           "Calzado": {
             "units": 116,
             "clp": 878744,
-            "costos": 773666
+            "costos": 773666,
+            "stock": 257
           },
           "Vestuario Adulto": {
             "units": 34,
             "clp": 420083,
-            "costos": 261900
+            "costos": 261900,
+            "stock": 222
           }
         }
       },
@@ -20262,12 +20696,14 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 129,
             "clp": 780831,
-            "costos": 803017
+            "costos": 803017,
+            "stock": 25
           },
           "Accesorios y Otros": {
             "units": 1,
             "clp": 21000,
-            "costos": 13650
+            "costos": 13650,
+            "stock": 70
           }
         }
       },
@@ -20285,7 +20721,8 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 8,
             "clp": 56427,
-            "costos": 56432
+            "costos": 56432,
+            "stock": -9
           }
         }
       }
@@ -20305,17 +20742,20 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 59,
             "clp": 956718,
-            "costos": 698875
+            "costos": 698875,
+            "stock": 172
           },
           "Ropa Interior": {
             "units": 863,
             "clp": 4000955,
-            "costos": 2650366
+            "costos": 2650366,
+            "stock": 472
           },
           "Vestuario Infantil": {
             "units": 56,
             "clp": 232699,
-            "costos": 289166
+            "costos": 289166,
+            "stock": 20
           }
         }
       },
@@ -20333,12 +20773,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 838,
             "clp": 4615556,
-            "costos": 3030050
+            "costos": 3030050,
+            "stock": 307
           },
           "Vestuario Infantil": {
             "units": 48,
             "clp": 201690,
-            "costos": 266638
+            "costos": 266638,
+            "stock": 29
           }
         }
       },
@@ -20356,22 +20798,26 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 29,
             "clp": 463284,
-            "costos": 326175
+            "costos": 326175,
+            "stock": 136
           },
           "Ropa Interior": {
             "units": 744,
             "clp": 4336934,
-            "costos": 2870406
+            "costos": 2870406,
+            "stock": 639
           },
           "Vestuario Adulto": {
             "units": 16,
             "clp": 52104,
-            "costos": 90300
+            "costos": 90300,
+            "stock": 4
           },
           "Vestuario Infantil": {
             "units": 28,
             "clp": 121808,
-            "costos": 143862
+            "costos": 143862,
+            "stock": 29
           }
         }
       },
@@ -20389,17 +20835,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 668,
             "clp": 4487664,
-            "costos": 3085912
+            "costos": 3085912,
+            "stock": 523
           },
           "Accesorios y Otros": {
             "units": 46,
             "clp": 794564,
-            "costos": 557200
+            "costos": 557200,
+            "stock": 113
           },
           "Vestuario Infantil": {
             "units": 14,
             "clp": 58808,
-            "costos": 70116
+            "costos": 70116,
+            "stock": 23
           }
         }
       },
@@ -20417,12 +20866,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 528,
             "clp": 2692377,
-            "costos": 2030746
+            "costos": 2030746,
+            "stock": 561
           },
           "Vestuario Infantil": {
             "units": 36,
             "clp": 145339,
-            "costos": 183850
+            "costos": 183850,
+            "stock": 10
           }
         }
       },
@@ -20440,12 +20891,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 544,
             "clp": 2589019,
-            "costos": 2284246
+            "costos": 2284246,
+            "stock": 805
           },
           "Vestuario Infantil": {
             "units": 15,
             "clp": 42858,
-            "costos": 78263
+            "costos": 78263,
+            "stock": 24
           }
         }
       },
@@ -20463,12 +20916,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 487,
             "clp": 1868011,
-            "costos": 1192538
+            "costos": 1192538,
+            "stock": 751
           },
           "Vestuario Infantil": {
             "units": 62,
             "clp": 169747,
-            "costos": 323451
+            "costos": 323451,
+            "stock": 5
           }
         }
       },
@@ -20486,17 +20941,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 482,
             "clp": 3127473,
-            "costos": 2151550
+            "costos": 2151550,
+            "stock": 368
           },
           "Vestuario Infantil": {
             "units": 63,
             "clp": 247878,
-            "costos": 323943
+            "costos": 323943,
+            "stock": 3
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 12606,
-            "costos": 16350
+            "costos": 16350,
+            "stock": 4
           }
         }
       },
@@ -20514,17 +20972,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 490,
             "clp": 3088412,
-            "costos": 2006580
+            "costos": 2006580,
+            "stock": 253
           },
           "Vestuario Infantil": {
             "units": 6,
             "clp": 39452,
-            "costos": 29718
+            "costos": 29718,
+            "stock": 0
           },
           "Accesorios y Otros": {
             "units": 22,
             "clp": 377971,
-            "costos": 266875
+            "costos": 266875,
+            "stock": 181
           }
         }
       },
@@ -20542,17 +21003,20 @@ const REAL_SELLOUT = {
           "Vestuario Adulto": {
             "units": 4,
             "clp": 13446,
-            "costos": 23800
+            "costos": 23800,
+            "stock": 8
           },
           "Ropa Interior": {
             "units": 472,
             "clp": 2134840,
-            "costos": 1602670
+            "costos": 1602670,
+            "stock": 1013
           },
           "Vestuario Infantil": {
             "units": 6,
             "clp": 27724,
-            "costos": 32198
+            "costos": 32198,
+            "stock": 69
           }
         }
       },
@@ -20570,17 +21034,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 449,
             "clp": 2424156,
-            "costos": 1803840
+            "costos": 1803840,
+            "stock": 492
           },
           "Vestuario Infantil": {
             "units": 25,
             "clp": 129750,
-            "costos": 126305
+            "costos": 126305,
+            "stock": 5
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 2
           }
         }
       },
@@ -20598,22 +21065,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 381,
             "clp": 1734464,
-            "costos": 1815370
+            "costos": 1815370,
+            "stock": 639
           },
           "Accesorios y Otros": {
             "units": 24,
             "clp": 329280,
-            "costos": 284175
+            "costos": 284175,
+            "stock": 372
           },
           "Vestuario Infantil": {
             "units": 68,
             "clp": 265500,
-            "costos": 368160
+            "costos": 368160,
+            "stock": 53
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 30
           }
         }
       },
@@ -20631,12 +21102,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 403,
             "clp": 1543031,
-            "costos": 998322
+            "costos": 998322,
+            "stock": 380
           },
           "Vestuario Infantil": {
             "units": 38,
             "clp": 158826,
-            "costos": 195450
+            "costos": 195450,
+            "stock": 10
           }
         }
       },
@@ -20654,12 +21127,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 395,
             "clp": 1631973,
-            "costos": 1397470
+            "costos": 1397470,
+            "stock": 609
           },
           "Vestuario Infantil": {
             "units": 43,
             "clp": 216702,
-            "costos": 222694
+            "costos": 222694,
+            "stock": 3
           }
         }
       },
@@ -20677,17 +21152,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 344,
             "clp": 1227583,
-            "costos": 826820
+            "costos": 826820,
+            "stock": 401
           },
           "Accesorios y Otros": {
             "units": 51,
             "clp": 788743,
-            "costos": 603450
+            "costos": 603450,
+            "stock": 233
           },
           "Vestuario Infantil": {
             "units": 24,
             "clp": 126799,
-            "costos": 121712
+            "costos": 121712,
+            "stock": 75
           }
         }
       },
@@ -20705,17 +21183,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 352,
             "clp": 1948041,
-            "costos": 1694276
+            "costos": 1694276,
+            "stock": 677
           },
           "Vestuario Infantil": {
             "units": 56,
             "clp": 210076,
-            "costos": 291254
+            "costos": 291254,
+            "stock": 38
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 0
           }
         }
       },
@@ -20733,12 +21214,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 366,
             "clp": 1790758,
-            "costos": 1339810
+            "costos": 1339810,
+            "stock": 333
           },
           "Vestuario Infantil": {
             "units": 38,
             "clp": 182282,
-            "costos": 192970
+            "costos": 192970,
+            "stock": 24
           }
         }
       },
@@ -20756,17 +21239,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 320,
             "clp": 1394698,
-            "costos": 987740
+            "costos": 987740,
+            "stock": 766
           },
           "Vestuario Infantil": {
             "units": 59,
             "clp": 255429,
-            "costos": 312871
+            "costos": 312871,
+            "stock": 61
           },
           "Accesorios y Otros": {
             "units": 2,
             "clp": 38638,
-            "costos": 27050
+            "costos": 27050,
+            "stock": 2
           }
         }
       },
@@ -20784,12 +21270,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 374,
             "clp": 1343079,
-            "costos": 1014320
+            "costos": 1014320,
+            "stock": 256
           },
           "Vestuario Infantil": {
             "units": 3,
             "clp": 17630,
-            "costos": 14859
+            "costos": 14859,
+            "stock": 10
           }
         }
       },
@@ -20807,7 +21295,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 372,
             "clp": 1637932,
-            "costos": 1195642
+            "costos": 1195642,
+            "stock": 1050
           }
         }
       },
@@ -20825,22 +21314,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 315,
             "clp": 1656302,
-            "costos": 1109450
+            "costos": 1109450,
+            "stock": 954
           },
           "Vestuario Infantil": {
             "units": 37,
             "clp": 197409,
-            "costos": 220809
+            "costos": 220809,
+            "stock": 43
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 9244,
-            "costos": 17350
+            "costos": 17350,
+            "stock": 25
           },
           "Accesorios y Otros": {
             "units": 11,
             "clp": 196544,
-            "costos": 137750
+            "costos": 137750,
+            "stock": 63
           }
         }
       },
@@ -20858,12 +21351,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 311,
             "clp": 1560275,
-            "costos": 1237760
+            "costos": 1237760,
+            "stock": 342
           },
           "Vestuario Infantil": {
             "units": 19,
             "clp": 73908,
-            "costos": 95328
+            "costos": 95328,
+            "stock": 1
           }
         }
       },
@@ -20881,12 +21376,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 316,
             "clp": 1409530,
-            "costos": 1030356
+            "costos": 1030356,
+            "stock": 543
           },
           "Vestuario Infantil": {
             "units": 7,
             "clp": 22688,
-            "costos": 37589
+            "costos": 37589,
+            "stock": 37
           }
         }
       },
@@ -20904,17 +21401,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 299,
             "clp": 1247825,
-            "costos": 900372
+            "costos": 900372,
+            "stock": 407
           },
           "Accesorios y Otros": {
             "units": 5,
             "clp": 85671,
-            "costos": 60125
+            "costos": 60125,
+            "stock": 31
           },
           "Vestuario Infantil": {
             "units": 19,
             "clp": 66386,
-            "costos": 106044
+            "costos": 106044,
+            "stock": 39
           }
         }
       },
@@ -20932,12 +21432,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 290,
             "clp": 1577522,
-            "costos": 1054216
+            "costos": 1054216,
+            "stock": 557
           },
           "Vestuario Infantil": {
             "units": 15,
             "clp": 47068,
-            "costos": 80041
+            "costos": 80041,
+            "stock": 38
           }
         }
       },
@@ -20955,17 +21457,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 295,
             "clp": 1995449,
-            "costos": 1292920
+            "costos": 1292920,
+            "stock": 282
           },
           "Vestuario Infantil": {
             "units": 9,
             "clp": 47897,
-            "costos": 54986
+            "costos": 54986,
+            "stock": 0
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 0
           }
         }
       },
@@ -20983,12 +21488,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 278,
             "clp": 1641113,
-            "costos": 1111530
+            "costos": 1111530,
+            "stock": 750
           },
           "Vestuario Infantil": {
             "units": 9,
             "clp": 42856,
-            "costos": 53004
+            "costos": 53004,
+            "stock": 7
           }
         }
       },
@@ -21006,12 +21513,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 252,
             "clp": 1104947,
-            "costos": 826716
+            "costos": 826716,
+            "stock": 385
           },
           "Vestuario Infantil": {
             "units": 28,
             "clp": 125192,
-            "costos": 141164
+            "costos": 141164,
+            "stock": 4
           }
         }
       },
@@ -21029,12 +21538,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 267,
             "clp": 848664,
-            "costos": 799390
+            "costos": 799390,
+            "stock": 244
           },
           "Vestuario Infantil": {
             "units": 10,
             "clp": 42020,
-            "costos": 49530
+            "costos": 49530,
+            "stock": 2
           }
         }
       },
@@ -21052,12 +21563,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 256,
             "clp": 1526771,
-            "costos": 1111754
+            "costos": 1111754,
+            "stock": 527
           },
           "Vestuario Infantil": {
             "units": 20,
             "clp": 89064,
-            "costos": 100052
+            "costos": 100052,
+            "stock": 4
           }
         }
       },
@@ -21075,17 +21588,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 252,
             "clp": 1384464,
-            "costos": 1189266
+            "costos": 1189266,
+            "stock": 300
           },
           "Vestuario Infantil": {
             "units": 17,
             "clp": 51261,
-            "costos": 89656
+            "costos": 89656,
+            "stock": 6
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 24
           }
         }
       },
@@ -21103,12 +21619,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 12,
             "clp": 33614,
-            "costos": 59436
+            "costos": 59436,
+            "stock": 9
           },
           "Ropa Interior": {
             "units": 251,
             "clp": 1262506,
-            "costos": 1059100
+            "costos": 1059100,
+            "stock": 389
           }
         }
       },
@@ -21126,17 +21644,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 249,
             "clp": 1633935,
-            "costos": 1125528
+            "costos": 1125528,
+            "stock": 715
           },
           "Vestuario Infantil": {
             "units": 7,
             "clp": 41174,
-            "costos": 45785
+            "costos": 45785,
+            "stock": 18
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 16808,
-            "costos": 21800
+            "costos": 21800,
+            "stock": 2
           }
         }
       },
@@ -21154,7 +21675,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 261,
             "clp": 1503127,
-            "costos": 1383360
+            "costos": 1383360,
+            "stock": 314
           }
         }
       },
@@ -21172,17 +21694,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 222,
             "clp": 884861,
-            "costos": 753610
+            "costos": 753610,
+            "stock": 339
           },
           "Vestuario Infantil": {
             "units": 33,
             "clp": 133621,
-            "costos": 172960
+            "costos": 172960,
+            "stock": 40
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 13446,
-            "costos": 23800
+            "costos": 23800,
+            "stock": 1
           }
         }
       },
@@ -21200,17 +21725,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 255,
             "clp": 959749,
-            "costos": 1058046
+            "costos": 1058046,
+            "stock": 440
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2521,
-            "costos": 3700
+            "costos": 3700,
+            "stock": 29
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 5050,
-            "costos": 7431
+            "costos": 7431,
+            "stock": 10
           }
         }
       },
@@ -21228,7 +21756,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 246,
             "clp": 1516238,
-            "costos": 1054576
+            "costos": 1054576,
+            "stock": 432
           }
         }
       },
@@ -21246,7 +21775,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 245,
             "clp": 1536812,
-            "costos": 1407042
+            "costos": 1407042,
+            "stock": 340
           }
         }
       },
@@ -21264,17 +21794,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 240,
             "clp": 1161963,
-            "costos": 787870
+            "costos": 787870,
+            "stock": 350
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2521,
-            "costos": 5950
+            "costos": 5950,
+            "stock": 4
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 2521,
-            "costos": 4885
+            "costos": 4885,
+            "stock": 2
           }
         }
       },
@@ -21292,22 +21825,26 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 24,
             "clp": 416601,
-            "costos": 292125
+            "costos": 292125,
+            "stock": 250
           },
           "Ropa Interior": {
             "units": 188,
             "clp": 937235,
-            "costos": 663940
+            "costos": 663940,
+            "stock": 681
           },
           "Vestuario Infantil": {
             "units": 24,
             "clp": 92439,
-            "costos": 139672
+            "costos": 139672,
+            "stock": 78
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 7
           }
         }
       },
@@ -21325,17 +21862,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 203,
             "clp": 1126200,
-            "costos": 915130
+            "costos": 915130,
+            "stock": 573
           },
           "Vestuario Adulto": {
             "units": 13,
             "clp": 36136,
-            "costos": 75850
+            "costos": 75850,
+            "stock": 38
           },
           "Vestuario Infantil": {
             "units": 21,
             "clp": 73108,
-            "costos": 124569
+            "costos": 124569,
+            "stock": 16
           }
         }
       },
@@ -21353,7 +21893,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 236,
             "clp": 1460850,
-            "costos": 1010920
+            "costos": 1010920,
+            "stock": 404
           }
         }
       },
@@ -21371,17 +21912,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 26,
             "clp": 1890,
-            "costos": 85540
+            "costos": 85540,
+            "stock": 0
           },
           "Vestuario Adulto": {
             "units": 30,
             "clp": 126060,
-            "costos": 163500
+            "costos": 163500,
+            "stock": 47
           },
           "Ropa Interior": {
             "units": 164,
             "clp": 986768,
-            "costos": 893300
+            "costos": 893300,
+            "stock": 244
           }
         }
       },
@@ -21399,12 +21943,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 209,
             "clp": 1359223,
-            "costos": 1165236
+            "costos": 1165236,
+            "stock": 344
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 15127,
-            "costos": 20050
+            "costos": 20050,
+            "stock": 5
           }
         }
       },
@@ -21422,22 +21968,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 21,
             "clp": 66386,
-            "costos": 114426
+            "costos": 114426,
+            "stock": 22
           },
           "Ropa Interior": {
             "units": 186,
             "clp": 988568,
-            "costos": 675800
+            "costos": 675800,
+            "stock": 900
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 3
           },
           "Accesorios y Otros": {
             "units": 1,
             "clp": 2933,
-            "costos": 2000
+            "costos": 2000,
+            "stock": 0
           }
         }
       },
@@ -21455,7 +22005,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 206,
             "clp": 1143622,
-            "costos": 1008816
+            "costos": 1008816,
+            "stock": 655
           }
         }
       },
@@ -21473,7 +22024,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 206,
             "clp": 883909,
-            "costos": 802826
+            "costos": 802826,
+            "stock": 376
           }
         }
       },
@@ -21491,12 +22043,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 191,
             "clp": 1285006,
-            "costos": 850486
+            "costos": 850486,
+            "stock": 356
           },
           "Vestuario Infantil": {
             "units": 14,
             "clp": 51252,
-            "costos": 72900
+            "costos": 72900,
+            "stock": 47
           }
         }
       },
@@ -21514,12 +22068,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 203,
             "clp": 1043419,
-            "costos": 723090
+            "costos": 723090,
+            "stock": 553
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 5882,
-            "costos": 6440
+            "costos": 6440,
+            "stock": 33
           }
         }
       },
@@ -21537,12 +22093,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 198,
             "clp": 1081941,
-            "costos": 978126
+            "costos": 978126,
+            "stock": 332
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 9244,
-            "costos": 12850
+            "costos": 12850,
+            "stock": 0
           }
         }
       },
@@ -21560,17 +22118,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 168,
             "clp": 519751,
-            "costos": 369980
+            "costos": 369980,
+            "stock": 454
           },
           "Vestuario Infantil": {
             "units": 19,
             "clp": 80661,
-            "costos": 103289
+            "costos": 103289,
+            "stock": 93
           },
           "Accesorios y Otros": {
             "units": 11,
             "clp": 176797,
-            "costos": 123900
+            "costos": 123900,
+            "stock": 31
           }
         }
       },
@@ -21588,12 +22149,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 196,
             "clp": 1152889,
-            "costos": 1004360
+            "costos": 1004360,
+            "stock": 272
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 8404,
-            "costos": 10900
+            "costos": 10900,
+            "stock": 2
           }
         }
       },
@@ -21611,17 +22174,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 185,
             "clp": 797624,
-            "costos": 1009790
+            "costos": 1009790,
+            "stock": 285
           },
           "Vestuario Infantil": {
             "units": 8,
             "clp": 47056,
-            "costos": 51520
+            "costos": 51520,
+            "stock": 1
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 1
           }
         }
       },
@@ -21639,12 +22205,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 177,
             "clp": 874961,
-            "costos": 803200
+            "costos": 803200,
+            "stock": 175
           },
           "Vestuario Adulto": {
             "units": 10,
             "clp": 33616,
-            "costos": 51000
+            "costos": 51000,
+            "stock": 0
           }
         }
       },
@@ -21662,12 +22230,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 187,
             "clp": 1405960,
-            "costos": 1042642
+            "costos": 1042642,
+            "stock": 381
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 12606,
-            "costos": 16350
+            "costos": 16350,
+            "stock": 6
           }
         }
       },
@@ -21685,7 +22255,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 190,
             "clp": 1135616,
-            "costos": 764260
+            "costos": 764260,
+            "stock": 668
           }
         }
       },
@@ -21703,7 +22274,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 189,
             "clp": 1586767,
-            "costos": 1094970
+            "costos": 1094970,
+            "stock": 589
           }
         }
       },
@@ -21721,12 +22293,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 167,
             "clp": 1407400,
-            "costos": 1051872
+            "costos": 1051872,
+            "stock": 122
           },
           "Vestuario Infantil": {
             "units": 17,
             "clp": 63025,
-            "costos": 92574
+            "costos": 92574,
+            "stock": 19
           }
         }
       },
@@ -21744,22 +22318,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 165,
             "clp": 1075291,
-            "costos": 765180
+            "costos": 765180,
+            "stock": 110
           },
           "Accesorios y Otros": {
             "units": 1,
             "clp": 2933,
-            "costos": 2000
+            "costos": 2000,
+            "stock": 7
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 2605,
-            "costos": 6908
+            "costos": 6908,
+            "stock": 0
           },
           "Vestuario Adulto": {
             "units": 13,
             "clp": 54626,
-            "costos": 70850
+            "costos": 70850,
+            "stock": 1
           }
         }
       },
@@ -21777,17 +22355,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 157,
             "clp": 995160,
-            "costos": 721716
+            "costos": 721716,
+            "stock": 637
           },
           "Vestuario Infantil": {
             "units": 11,
             "clp": 44537,
-            "costos": 62911
+            "costos": 62911,
+            "stock": 13
           },
           "Accesorios y Otros": {
             "units": 2,
             "clp": 5866,
-            "costos": 4000
+            "costos": 4000,
+            "stock": 14
           }
         }
       },
@@ -21805,7 +22386,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 168,
             "clp": 1055793,
-            "costos": 705980
+            "costos": 705980,
+            "stock": 328
           }
         }
       },
@@ -21823,17 +22405,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 5,
             "clp": 26050,
-            "costos": 29931
+            "costos": 29931,
+            "stock": 20
           },
           "Ropa Interior": {
             "units": 160,
             "clp": 736334,
-            "costos": 699050
+            "costos": 699050,
+            "stock": 267
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 8404,
-            "costos": 10900
+            "costos": 10900,
+            "stock": 15
           }
         }
       },
@@ -21851,17 +22436,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 148,
             "clp": 921003,
-            "costos": 723410
+            "costos": 723410,
+            "stock": 276
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 13446,
-            "costos": 21800
+            "costos": 21800,
+            "stock": 12
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 6714,
-            "costos": 4390
+            "costos": 4390,
+            "stock": 0
           }
         }
       },
@@ -21879,12 +22467,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 151,
             "clp": 1019050,
-            "costos": 755686
+            "costos": 755686,
+            "stock": 218
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2521,
-            "costos": 3700
+            "costos": 3700,
+            "stock": 55
           }
         }
       },
@@ -21902,12 +22492,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 140,
             "clp": 540899,
-            "costos": 372200
+            "costos": 372200,
+            "stock": 367
           },
           "Vestuario Infantil": {
             "units": 12,
             "clp": 40336,
-            "costos": 66242
+            "costos": 66242,
+            "stock": 2
           }
         }
       },
@@ -21925,12 +22517,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 149,
             "clp": 597428,
-            "costos": 936502
+            "costos": 936502,
+            "stock": 270
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 4202,
-            "costos": 5450
+            "costos": 5450,
+            "stock": 1
           }
         }
       },
@@ -21948,7 +22542,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 145,
             "clp": 837215,
-            "costos": 780960
+            "costos": 780960,
+            "stock": 459
           }
         }
       },
@@ -21966,7 +22561,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 145,
             "clp": 862010,
-            "costos": 587670
+            "costos": 587670,
+            "stock": 288
           }
         }
       },
@@ -21984,12 +22580,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 141,
             "clp": 646156,
-            "costos": 602090
+            "costos": 602090,
+            "stock": 438
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 17639,
-            "costos": 14600
+            "costos": 14600,
+            "stock": 3
           }
         }
       },
@@ -22007,17 +22605,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 138,
             "clp": 616040,
-            "costos": 671586
+            "costos": 671586,
+            "stock": 214
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 12606,
-            "costos": 16350
+            "costos": 16350,
+            "stock": 0
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 5882,
-            "costos": 6440
+            "costos": 6440,
+            "stock": 0
           }
         }
       },
@@ -22035,7 +22636,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 138,
             "clp": 907687,
-            "costos": 609688
+            "costos": 609688,
+            "stock": 129
           }
         }
       },
@@ -22053,7 +22655,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 138,
             "clp": 542199,
-            "costos": 357286
+            "costos": 357286,
+            "stock": 194
           }
         }
       },
@@ -22071,7 +22674,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 133,
             "clp": 877973,
-            "costos": 635422
+            "costos": 635422,
+            "stock": 518
           }
         }
       },
@@ -22089,12 +22693,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 121,
             "clp": 438599,
-            "costos": 483584
+            "costos": 483584,
+            "stock": 286
           },
           "Vestuario Adulto": {
             "units": 5,
             "clp": 15967,
-            "costos": 22000
+            "costos": 22000,
+            "stock": 47
           }
         }
       },
@@ -22112,7 +22718,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 123,
             "clp": 779493,
-            "costos": 623154
+            "costos": 623154,
+            "stock": 207
           }
         }
       },
@@ -22130,7 +22737,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 121,
             "clp": 668732,
-            "costos": 449416
+            "costos": 449416,
+            "stock": 277
           }
         }
       },
@@ -22148,12 +22756,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 116,
             "clp": 537582,
-            "costos": 592200
+            "costos": 592200,
+            "stock": 254
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2521,
-            "costos": 3700
+            "costos": 3700,
+            "stock": 1
           }
         }
       },
@@ -22171,12 +22781,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 111,
             "clp": 802513,
-            "costos": 563870
+            "costos": 563870,
+            "stock": 380
           },
           "Vestuario Infantil": {
             "units": 4,
             "clp": 21000,
-            "costos": 21795
+            "costos": 21795,
+            "stock": 4
           }
         }
       },
@@ -22194,7 +22806,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 111,
             "clp": 861445,
-            "costos": 629590
+            "costos": 629590,
+            "stock": 335
           }
         }
       },
@@ -22212,12 +22825,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 100,
             "clp": 609205,
-            "costos": 530752
+            "costos": 530752,
+            "stock": 170
           },
           "Vestuario Adulto": {
             "units": 9,
             "clp": 37818,
-            "costos": 49050
+            "costos": 49050,
+            "stock": 0
           }
         }
       },
@@ -22235,12 +22850,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 78,
             "clp": 519117,
-            "costos": 347804
+            "costos": 347804,
+            "stock": 739
           },
           "Vestuario Infantil": {
             "units": 32,
             "clp": 102525,
-            "costos": 165936
+            "costos": 165936,
+            "stock": 12
           }
         }
       },
@@ -22258,7 +22875,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 103,
             "clp": 598184,
-            "costos": 469306
+            "costos": 469306,
+            "stock": 126
           }
         }
       },
@@ -22276,7 +22894,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 99,
             "clp": 469990,
-            "costos": 513600
+            "costos": 513600,
+            "stock": 310
           }
         }
       },
@@ -22294,12 +22913,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 93,
             "clp": 832011,
-            "costos": 561234
+            "costos": 561234,
+            "stock": 158
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 5042,
-            "costos": 7400
+            "costos": 7400,
+            "stock": 1
           }
         }
       },
@@ -22317,7 +22938,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 95,
             "clp": 578308,
-            "costos": 444262
+            "costos": 444262,
+            "stock": 299
           }
         }
       },
@@ -22335,12 +22957,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 78,
             "clp": 322008,
-            "costos": 356130
+            "costos": 356130,
+            "stock": 292
           },
           "Vestuario Infantil": {
             "units": 4,
             "clp": 23528,
-            "costos": 25760
+            "costos": 25760,
+            "stock": 3
           }
         }
       },
@@ -22358,12 +22982,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 78,
             "clp": 705712,
-            "costos": 482170
+            "costos": 482170,
+            "stock": 230
           },
           "Vestuario Infantil": {
             "units": 2,
             "clp": 6722,
-            "costos": 9640
+            "costos": 9640,
+            "stock": 13
           }
         }
       },
@@ -22381,12 +23007,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 73,
             "clp": 432302,
-            "costos": 308300
+            "costos": 308300,
+            "stock": 140
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 16808,
-            "costos": 21800
+            "costos": 21800,
+            "stock": 0
           }
         }
       },
@@ -22404,7 +23032,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 77,
             "clp": 638909,
-            "costos": 450930
+            "costos": 450930,
+            "stock": 195
           }
         }
       },
@@ -22422,7 +23051,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 75,
             "clp": 560088,
-            "costos": 433600
+            "costos": 433600,
+            "stock": 231
           }
         }
       },
@@ -22440,17 +23070,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 57,
             "clp": 210937,
-            "costos": 299100
+            "costos": 299100,
+            "stock": 114
           },
           "Vestuario Infantil": {
             "units": 8,
             "clp": 40334,
-            "costos": 48410
+            "costos": 48410,
+            "stock": 72
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 6723,
-            "costos": 9150
+            "costos": 9150,
+            "stock": 12
           }
         }
       },
@@ -22468,7 +23101,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 61,
             "clp": 263550,
-            "costos": 193734
+            "costos": 193734,
+            "stock": 178
           }
         }
       },
@@ -22486,12 +23120,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 13,
             "clp": 62160,
-            "costos": 68355
+            "costos": 68355,
+            "stock": 7
           },
           "Ropa Interior": {
             "units": 46,
             "clp": 374513,
-            "costos": 292890
+            "costos": 292890,
+            "stock": 161
           }
         }
       },
@@ -22509,17 +23145,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 41,
             "clp": 170719,
-            "costos": 125172
+            "costos": 125172,
+            "stock": 295
           },
           "Vestuario Infantil": {
             "units": 4,
             "clp": 13445,
-            "costos": 23372
+            "costos": 23372,
+            "stock": 3
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 6723,
-            "costos": 11400
+            "costos": 11400,
+            "stock": 0
           }
         }
       },
@@ -22537,12 +23176,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 2,
             "clp": 1680,
-            "costos": 10700
+            "costos": 10700,
+            "stock": 1
           },
           "Ropa Interior": {
             "units": 44,
             "clp": 164558,
-            "costos": 165830
+            "costos": 165830,
+            "stock": 252
           }
         }
       },
@@ -22560,12 +23201,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 7,
             "clp": 41174,
-            "costos": 45080
+            "costos": 45080,
+            "stock": 4
           },
           "Ropa Interior": {
             "units": 25,
             "clp": 210734,
-            "costos": 146046
+            "costos": 146046,
+            "stock": 338
           }
         }
       },
@@ -22583,7 +23226,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 23,
             "clp": 125515,
-            "costos": 102850
+            "costos": 102850,
+            "stock": 192
           }
         }
       }
@@ -22603,17 +23247,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 1217,
             "clp": 6063835,
-            "costos": 6532320
+            "costos": 6532320,
+            "stock": 0
           },
           "Calzado": {
             "units": 145,
             "clp": 1116593,
-            "costos": 1191784
+            "costos": 1191784,
+            "stock": 0
           },
           "Ropa Interior": {
             "units": 153,
             "clp": 1278207,
-            "costos": 821022
+            "costos": 821022,
+            "stock": 0
           }
         }
       },
@@ -22631,22 +23278,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 332,
             "clp": 2270068,
-            "costos": 1533182
+            "costos": 1533182,
+            "stock": 731
           },
           "Vestuario Infantil": {
             "units": 581,
             "clp": 3311649,
-            "costos": 3496410
+            "costos": 3496410,
+            "stock": 1730
           },
           "Accesorios y Otros": {
             "units": 153,
             "clp": 463253,
-            "costos": 640588
+            "costos": 640588,
+            "stock": 473
           },
           "Calzado": {
             "units": 70,
             "clp": 574942,
-            "costos": 595382
+            "costos": 595382,
+            "stock": 271
           }
         }
       },
@@ -22664,22 +23315,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 509,
             "clp": 2786285,
-            "costos": 2895773
+            "costos": 2895773,
+            "stock": 722
           },
           "Accesorios y Otros": {
             "units": 156,
             "clp": 2274308,
-            "costos": 1405054
+            "costos": 1405054,
+            "stock": 536
           },
           "Calzado": {
             "units": 95,
             "clp": 659485,
-            "costos": 714955
+            "costos": 714955,
+            "stock": 279
           },
           "Ropa Interior": {
             "units": 351,
             "clp": 2998170,
-            "costos": 1769411
+            "costos": 1769411,
+            "stock": 813
           }
         }
       },
@@ -22697,22 +23352,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 133,
             "clp": 997203,
-            "costos": 1114693
+            "costos": 1114693,
+            "stock": 64
           },
           "Vestuario Infantil": {
             "units": 608,
             "clp": 3517163,
-            "costos": 3590400
+            "costos": 3590400,
+            "stock": 1501
           },
           "Ropa Interior": {
             "units": 218,
             "clp": 1805940,
-            "costos": 1119864
+            "costos": 1119864,
+            "stock": 1183
           },
           "Accesorios y Otros": {
             "units": 92,
             "clp": 835361,
-            "costos": 540338
+            "costos": 540338,
+            "stock": 370
           }
         }
       },
@@ -22730,27 +23389,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 57,
             "clp": 460866,
-            "costos": 287108
+            "costos": 287108,
+            "stock": 120
           },
           "Vestuario Infantil": {
             "units": 573,
             "clp": 3397857,
-            "costos": 3414220
+            "costos": 3414220,
+            "stock": 1107
           },
           "Ropa Interior": {
             "units": 389,
             "clp": 2897450,
-            "costos": 1720252
+            "costos": 1720252,
+            "stock": 658
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2513,
-            "costos": 5100
+            "costos": 5100,
+            "stock": 0
           },
           "Calzado": {
             "units": 14,
             "clp": 97679,
-            "costos": 122507
+            "costos": 122507,
+            "stock": 74
           }
         }
       },
@@ -22768,22 +23432,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 534,
             "clp": 3187360,
-            "costos": 3372733
+            "costos": 3372733,
+            "stock": 1254
           },
           "Ropa Interior": {
             "units": 445,
             "clp": 3654911,
-            "costos": 2301233
+            "costos": 2301233,
+            "stock": 1069
           },
           "Accesorios y Otros": {
             "units": 51,
             "clp": 319741,
-            "costos": 186876
+            "costos": 186876,
+            "stock": 360
           },
           "Calzado": {
             "units": 2,
             "clp": 5025,
-            "costos": 8484
+            "costos": 8484,
+            "stock": 10
           }
         }
       },
@@ -22801,22 +23469,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 303,
             "clp": 2443881,
-            "costos": 1473150
+            "costos": 1473150,
+            "stock": 999
           },
           "Vestuario Infantil": {
             "units": 485,
             "clp": 3109455,
-            "costos": 3185677
+            "costos": 3185677,
+            "stock": 1559
           },
           "Calzado": {
             "units": 80,
             "clp": 618329,
-            "costos": 641854
+            "costos": 641854,
+            "stock": 479
           },
           "Accesorios y Otros": {
             "units": 86,
             "clp": 587510,
-            "costos": 362216
+            "costos": 362216,
+            "stock": 207
           }
         }
       },
@@ -22834,22 +23506,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 754,
             "clp": 4462395,
-            "costos": 4346497
+            "costos": 4346497,
+            "stock": 1479
           },
           "Calzado": {
             "units": 9,
             "clp": 28163,
-            "costos": 44783
+            "costos": 44783,
+            "stock": 22
           },
           "Ropa Interior": {
             "units": 175,
             "clp": 1200416,
-            "costos": 770955
+            "costos": 770955,
+            "stock": 643
           },
           "Accesorios y Otros": {
             "units": 7,
             "clp": 35235,
-            "costos": 19350
+            "costos": 19350,
+            "stock": 42
           }
         }
       },
@@ -22867,22 +23543,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 637,
             "clp": 3465397,
-            "costos": 3692606
+            "costos": 3692606,
+            "stock": 841
           },
           "Accesorios y Otros": {
             "units": 92,
             "clp": 585792,
-            "costos": 342534
+            "costos": 342534,
+            "stock": 309
           },
           "Ropa Interior": {
             "units": 207,
             "clp": 1667865,
-            "costos": 997580
+            "costos": 997580,
+            "stock": 1234
           },
           "Calzado": {
             "units": 1,
             "clp": 4368,
-            "costos": 12391
+            "costos": 12391,
+            "stock": 26
           }
         }
       },
@@ -22900,27 +23580,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 765,
             "clp": 4174592,
-            "costos": 4427649
+            "costos": 4427649,
+            "stock": 428
           },
           "Accesorios y Otros": {
             "units": 94,
             "clp": 510479,
-            "costos": 311380
+            "costos": 311380,
+            "stock": 226
           },
           "Ropa Interior": {
             "units": 73,
             "clp": 619567,
-            "costos": 394542
+            "costos": 394542,
+            "stock": 889
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2513,
-            "costos": 5100
+            "costos": 5100,
+            "stock": 0
           },
           "Calzado": {
             "units": 2,
             "clp": 9489,
-            "costos": 13840
+            "costos": 13840,
+            "stock": 2
           }
         }
       },
@@ -22938,22 +23623,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 397,
             "clp": 2120055,
-            "costos": 2231142
+            "costos": 2231142,
+            "stock": 635
           },
           "Ropa Interior": {
             "units": 328,
             "clp": 2780352,
-            "costos": 1780484
+            "costos": 1780484,
+            "stock": 937
           },
           "Accesorios y Otros": {
             "units": 116,
             "clp": 831960,
-            "costos": 589878
+            "costos": 589878,
+            "stock": 433
           },
           "Calzado": {
             "units": 46,
             "clp": 347908,
-            "costos": 381736
+            "costos": 381736,
+            "stock": 29
           }
         }
       },
@@ -22971,22 +23660,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 216,
             "clp": 1864550,
-            "costos": 1128918
+            "costos": 1128918,
+            "stock": 869
           },
           "Accesorios y Otros": {
             "units": 58,
             "clp": 568417,
-            "costos": 431427
+            "costos": 431427,
+            "stock": 544
           },
           "Vestuario Infantil": {
             "units": 527,
             "clp": 3132959,
-            "costos": 3109053
+            "costos": 3109053,
+            "stock": 1506
           },
           "Calzado": {
             "units": 57,
             "clp": 457384,
-            "costos": 481431
+            "costos": 481431,
+            "stock": 119
           }
         }
       },
@@ -23004,22 +23697,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 572,
             "clp": 3494143,
-            "costos": 3388212
+            "costos": 3388212,
+            "stock": 908
           },
           "Accesorios y Otros": {
             "units": 18,
             "clp": 88975,
-            "costos": 94493
+            "costos": 94493,
+            "stock": 263
           },
           "Ropa Interior": {
             "units": 252,
             "clp": 1796055,
-            "costos": 1100723
+            "costos": 1100723,
+            "stock": 982
           },
           "Calzado": {
             "units": 8,
             "clp": 24303,
-            "costos": 67849
+            "costos": 67849,
+            "stock": 1
           }
         }
       },
@@ -23037,22 +23734,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 434,
             "clp": 2275980,
-            "costos": 2540816
+            "costos": 2540816,
+            "stock": 399
           },
           "Accesorios y Otros": {
             "units": 92,
             "clp": 1332838,
-            "costos": 837071
+            "costos": 837071,
+            "stock": 535
           },
           "Calzado": {
             "units": 114,
             "clp": 885304,
-            "costos": 934815
+            "costos": 934815,
+            "stock": 263
           },
           "Ropa Interior": {
             "units": 203,
             "clp": 1679667,
-            "costos": 1060390
+            "costos": 1060390,
+            "stock": 995
           }
         }
       },
@@ -23070,22 +23771,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 586,
             "clp": 3405406,
-            "costos": 3458012
+            "costos": 3458012,
+            "stock": 920
           },
           "Accesorios y Otros": {
             "units": 6,
             "clp": 29363,
-            "costos": 15300
+            "costos": 15300,
+            "stock": 83
           },
           "Ropa Interior": {
             "units": 180,
             "clp": 1464050,
-            "costos": 842802
+            "costos": 842802,
+            "stock": 455
           },
           "Calzado": {
             "units": 1,
             "clp": 1672,
-            "costos": 3190
+            "costos": 3190,
+            "stock": 1
           }
         }
       },
@@ -23103,27 +23808,32 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 39,
             "clp": 391703,
-            "costos": 291658
+            "costos": 291658,
+            "stock": 197
           },
           "Vestuario Infantil": {
             "units": 549,
             "clp": 2939421,
-            "costos": 3014373
+            "costos": 3014373,
+            "stock": 1358
           },
           "Calzado": {
             "units": 117,
             "clp": 993636,
-            "costos": 978863
+            "costos": 978863,
+            "stock": 106
           },
           "Accesorios y Otros": {
             "units": 59,
             "clp": 360847,
-            "costos": 211772
+            "costos": 211772,
+            "stock": 280
           },
           "Vestuario Adulto": {
             "units": 3,
             "clp": 9219,
-            "costos": 15300
+            "costos": 15300,
+            "stock": 0
           }
         }
       },
@@ -23141,22 +23851,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 297,
             "clp": 2198269,
-            "costos": 1306355
+            "costos": 1306355,
+            "stock": 881
           },
           "Vestuario Infantil": {
             "units": 353,
             "clp": 2186022,
-            "costos": 2121473
+            "costos": 2121473,
+            "stock": 1657
           },
           "Accesorios y Otros": {
             "units": 52,
             "clp": 548330,
-            "costos": 349868
+            "costos": 349868,
+            "stock": 355
           },
           "Calzado": {
             "units": 22,
             "clp": 198131,
-            "costos": 195576
+            "costos": 195576,
+            "stock": 258
           }
         }
       },
@@ -23174,27 +23888,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 371,
             "clp": 2277728,
-            "costos": 2177201
+            "costos": 2177201,
+            "stock": 927
           },
           "Ropa Interior": {
             "units": 289,
             "clp": 2417644,
-            "costos": 1411350
+            "costos": 1411350,
+            "stock": 410
           },
           "Accesorios y Otros": {
             "units": 49,
             "clp": 390344,
-            "costos": 256927
+            "costos": 256927,
+            "stock": 246
           },
           "Calzado": {
             "units": -1,
             "clp": -6546,
-            "costos": -7390
+            "costos": -7390,
+            "stock": 3
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 3353,
-            "costos": 5100
+            "costos": 5100,
+            "stock": 1
           }
         }
       },
@@ -23212,17 +23931,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 585,
             "clp": 3310871,
-            "costos": 3521044
+            "costos": 3521044,
+            "stock": 643
           },
           "Ropa Interior": {
             "units": 100,
             "clp": 976076,
-            "costos": 578522
+            "costos": 578522,
+            "stock": 846
           },
           "Accesorios y Otros": {
             "units": 24,
             "clp": 110721,
-            "costos": 62824
+            "costos": 62824,
+            "stock": 270
           }
         }
       },
@@ -23240,22 +23962,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 453,
             "clp": 2574072,
-            "costos": 2758372
+            "costos": 2758372,
+            "stock": 1025
           },
           "Calzado": {
             "units": 34,
             "clp": 237456,
-            "costos": 284066
+            "costos": 284066,
+            "stock": 50
           },
           "Ropa Interior": {
             "units": 172,
             "clp": 1519031,
-            "costos": 887669
+            "costos": 887669,
+            "stock": 1150
           },
           "Accesorios y Otros": {
             "units": 48,
             "clp": 432369,
-            "costos": 296485
+            "costos": 296485,
+            "stock": 245
           }
         }
       },
@@ -23273,22 +23999,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 487,
             "clp": 3008917,
-            "costos": 2954029
+            "costos": 2954029,
+            "stock": 1708
           },
           "Ropa Interior": {
             "units": 209,
             "clp": 1915260,
-            "costos": 1203653
+            "costos": 1203653,
+            "stock": 1379
           },
           "Accesorios y Otros": {
             "units": 8,
             "clp": 33546,
-            "costos": 22174
+            "costos": 22174,
+            "stock": 129
           },
           "Calzado": {
             "units": 2,
             "clp": 6720,
-            "costos": 16798
+            "costos": 16798,
+            "stock": 6
           }
         }
       },
@@ -23306,17 +24036,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 191,
             "clp": 1430786,
-            "costos": 850084
+            "costos": 850084,
+            "stock": 916
           },
           "Vestuario Infantil": {
             "units": 494,
             "clp": 3045170,
-            "costos": 2931243
+            "costos": 2931243,
+            "stock": 779
           },
           "Accesorios y Otros": {
             "units": 14,
             "clp": 99882,
-            "costos": 59744
+            "costos": 59744,
+            "stock": 409
           }
         }
       },
@@ -23334,22 +24067,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 493,
             "clp": 2965671,
-            "costos": 3030798
+            "costos": 3030798,
+            "stock": 923
           },
           "Ropa Interior": {
             "units": 141,
             "clp": 1030614,
-            "costos": 671517
+            "costos": 671517,
+            "stock": 933
           },
           "Calzado": {
             "units": 8,
             "clp": 23327,
-            "costos": 52740
+            "costos": 52740,
+            "stock": 3
           },
           "Accesorios y Otros": {
             "units": 12,
             "clp": 84772,
-            "costos": 55919
+            "costos": 55919,
+            "stock": 282
           }
         }
       },
@@ -23367,27 +24104,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 273,
             "clp": 1486759,
-            "costos": 1551552
+            "costos": 1551552,
+            "stock": 668
           },
           "Accesorios y Otros": {
             "units": 45,
             "clp": 345500,
-            "costos": 224200
+            "costos": 224200,
+            "stock": 226
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 6706,
-            "costos": 10200
+            "costos": 10200,
+            "stock": 0
           },
           "Ropa Interior": {
             "units": 287,
             "clp": 2371706,
-            "costos": 1469945
+            "costos": 1469945,
+            "stock": 419
           },
           "Calzado": {
             "units": 1,
             "clp": 11087,
-            "costos": 10163
+            "costos": 10163,
+            "stock": 0
           }
         }
       },
@@ -23405,22 +24147,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 466,
             "clp": 2738965,
-            "costos": 2781409
+            "costos": 2781409,
+            "stock": 939
           },
           "Accesorios y Otros": {
             "units": 30,
             "clp": 162773,
-            "costos": 107106
+            "costos": 107106,
+            "stock": 373
           },
           "Ropa Interior": {
             "units": 99,
             "clp": 953272,
-            "costos": 601988
+            "costos": 601988,
+            "stock": 237
           },
           "Calzado": {
             "units": 4,
             "clp": 21167,
-            "costos": 34563
+            "costos": 34563,
+            "stock": 5
           }
         }
       },
@@ -23438,22 +24184,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 480,
             "clp": 2788538,
-            "costos": 2853652
+            "costos": 2853652,
+            "stock": 1059
           },
           "Accesorios y Otros": {
             "units": 41,
             "clp": 176126,
-            "costos": 106003
+            "costos": 106003,
+            "stock": 182
           },
           "Ropa Interior": {
             "units": 70,
             "clp": 602157,
-            "costos": 377959
+            "costos": 377959,
+            "stock": 291
           },
           "Calzado": {
             "units": 0,
             "clp": -1430,
-            "costos": -2495
+            "costos": -2495,
+            "stock": 9
           }
         }
       },
@@ -23471,22 +24221,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 447,
             "clp": 2578125,
-            "costos": 2674871
+            "costos": 2674871,
+            "stock": 795
           },
           "Accesorios y Otros": {
             "units": 55,
             "clp": 404591,
-            "costos": 245370
+            "costos": 245370,
+            "stock": 219
           },
           "Ropa Interior": {
             "units": 82,
             "clp": 610930,
-            "costos": 366965
+            "costos": 366965,
+            "stock": 326
           },
           "Calzado": {
             "units": 1,
             "clp": 4200,
-            "costos": 10500
+            "costos": 10500,
+            "stock": 1
           }
         }
       },
@@ -23504,22 +24258,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 435,
             "clp": 2431492,
-            "costos": 2607661
+            "costos": 2607661,
+            "stock": 604
           },
           "Calzado": {
             "units": 48,
             "clp": 189499,
-            "costos": 256700
+            "costos": 256700,
+            "stock": 31
           },
           "Ropa Interior": {
             "units": 46,
             "clp": 506763,
-            "costos": 329657
+            "costos": 329657,
+            "stock": 152
           },
           "Accesorios y Otros": {
             "units": 25,
             "clp": 108416,
-            "costos": 61481
+            "costos": 61481,
+            "stock": 113
           }
         }
       },
@@ -23537,27 +24295,32 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 436,
             "clp": 2391814,
-            "costos": 2494531
+            "costos": 2494531,
+            "stock": 1422
           },
           "Accesorios y Otros": {
             "units": 45,
             "clp": 475252,
-            "costos": 314182
+            "costos": 314182,
+            "stock": 550
           },
           "Ropa Interior": {
             "units": 54,
             "clp": 638710,
-            "costos": 381307
+            "costos": 381307,
+            "stock": 248
           },
           "Calzado": {
             "units": 5,
             "clp": 22398,
-            "costos": 32125
+            "costos": 32125,
+            "stock": 18
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2513,
-            "costos": 5100
+            "costos": 5100,
+            "stock": 0
           }
         }
       },
@@ -23575,22 +24338,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 360,
             "clp": 1896528,
-            "costos": 2009128
+            "costos": 2009128,
+            "stock": 668
           },
           "Ropa Interior": {
             "units": 131,
             "clp": 974234,
-            "costos": 607373
+            "costos": 607373,
+            "stock": 943
           },
           "Accesorios y Otros": {
             "units": 30,
             "clp": 125797,
-            "costos": 68723
+            "costos": 68723,
+            "stock": 55
           },
           "Calzado": {
             "units": 5,
             "clp": 41575,
-            "costos": 45269
+            "costos": 45269,
+            "stock": 8
           }
         }
       },
@@ -23608,22 +24375,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 349,
             "clp": 2123806,
-            "costos": 2080717
+            "costos": 2080717,
+            "stock": 1204
           },
           "Ropa Interior": {
             "units": 135,
             "clp": 317955,
-            "costos": 388333
+            "costos": 388333,
+            "stock": 556
           },
           "Calzado": {
             "units": 9,
             "clp": 30858,
-            "costos": 49142
+            "costos": 49142,
+            "stock": 30
           },
           "Accesorios y Otros": {
             "units": 26,
             "clp": 115328,
-            "costos": 92668
+            "costos": 92668,
+            "stock": 335
           }
         }
       },
@@ -23641,17 +24412,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 354,
             "clp": 2144949,
-            "costos": 2126784
+            "costos": 2126784,
+            "stock": 825
           },
           "Accesorios y Otros": {
             "units": 47,
             "clp": 372213,
-            "costos": 231814
+            "costos": 231814,
+            "stock": 317
           },
           "Ropa Interior": {
             "units": 100,
             "clp": 813237,
-            "costos": 501960
+            "costos": 501960,
+            "stock": 263
           }
         }
       },
@@ -23669,22 +24443,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 347,
             "clp": 1777082,
-            "costos": 1981701
+            "costos": 1981701,
+            "stock": 1037
           },
           "Ropa Interior": {
             "units": 53,
             "clp": 468890,
-            "costos": 298831
+            "costos": 298831,
+            "stock": 331
           },
           "Accesorios y Otros": {
             "units": 52,
             "clp": 360063,
-            "costos": 236074
+            "costos": 236074,
+            "stock": 214
           },
           "Calzado": {
             "units": 1,
             "clp": 12761,
-            "costos": 7419
+            "costos": 7419,
+            "stock": 1
           }
         }
       },
@@ -23702,17 +24480,20 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 107,
             "clp": 704147,
-            "costos": 422080
+            "costos": 422080,
+            "stock": 209
           },
           "Vestuario Infantil": {
             "units": 248,
             "clp": 1713476,
-            "costos": 1620496
+            "costos": 1620496,
+            "stock": 675
           },
           "Ropa Interior": {
             "units": 57,
             "clp": 472638,
-            "costos": 281446
+            "costos": 281446,
+            "stock": 187
           }
         }
       },
@@ -23730,17 +24511,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 327,
             "clp": 1764433,
-            "costos": 1839963
+            "costos": 1839963,
+            "stock": 973
           },
           "Ropa Interior": {
             "units": 53,
             "clp": 403090,
-            "costos": 276928
+            "costos": 276928,
+            "stock": 290
           },
           "Accesorios y Otros": {
             "units": 29,
             "clp": 115772,
-            "costos": 76803
+            "costos": 76803,
+            "stock": 90
           }
         }
       },
@@ -23758,22 +24542,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 243,
             "clp": 1457935,
-            "costos": 1418436
+            "costos": 1418436,
+            "stock": 866
           },
           "Accesorios y Otros": {
             "units": 64,
             "clp": 654924,
-            "costos": 434094
+            "costos": 434094,
+            "stock": 228
           },
           "Ropa Interior": {
             "units": 81,
             "clp": 645929,
-            "costos": 385143
+            "costos": 385143,
+            "stock": 227
           },
           "Calzado": {
             "units": 0,
             "clp": -7052,
-            "costos": 0
+            "costos": 0,
+            "stock": 2
           }
         }
       },
@@ -23791,17 +24579,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 294,
             "clp": 1775603,
-            "costos": 1822782
+            "costos": 1822782,
+            "stock": 843
           },
           "Ropa Interior": {
             "units": 34,
             "clp": 237206,
-            "costos": 163892
+            "costos": 163892,
+            "stock": 234
           },
           "Accesorios y Otros": {
             "units": 10,
             "clp": 47815,
-            "costos": 25898
+            "costos": 25898,
+            "stock": 84
           }
         }
       },
@@ -23819,17 +24610,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 229,
             "clp": 1231467,
-            "costos": 1334774
+            "costos": 1334774,
+            "stock": 1410
           },
           "Accesorios y Otros": {
             "units": 88,
             "clp": 659018,
-            "costos": 412089
+            "costos": 412089,
+            "stock": 431
           },
           "Ropa Interior": {
             "units": 15,
             "clp": 88950,
-            "costos": 50841
+            "costos": 50841,
+            "stock": 415
           }
         }
       },
@@ -23847,22 +24641,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 253,
             "clp": 1387495,
-            "costos": 1496338
+            "costos": 1496338,
+            "stock": 433
           },
           "Accesorios y Otros": {
             "units": 67,
             "clp": 612886,
-            "costos": 406659
+            "costos": 406659,
+            "stock": 226
           },
           "Calzado": {
             "units": 7,
             "clp": 27549,
-            "costos": 59885
+            "costos": 59885,
+            "stock": 4
           },
           "Ropa Interior": {
             "units": 4,
             "clp": 10892,
-            "costos": 19490
+            "costos": 19490,
+            "stock": 18
           }
         }
       },
@@ -23880,22 +24678,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 226,
             "clp": 740579,
-            "costos": 1353469
+            "costos": 1353469,
+            "stock": 186
           },
           "Calzado": {
             "units": 11,
             "clp": 27494,
-            "costos": 57014
+            "costos": 57014,
+            "stock": 7
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 7068,
-            "costos": 21600
+            "costos": 21600,
+            "stock": 4
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 4176,
-            "costos": 10164
+            "costos": 10164,
+            "stock": 16
           }
         }
       },
@@ -23913,22 +24715,26 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 95,
             "clp": 483744,
-            "costos": 267884
+            "costos": 267884,
+            "stock": 275
           },
           "Calzado": {
             "units": 7,
             "clp": 31740,
-            "costos": 45158
+            "costos": 45158,
+            "stock": 10
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 10051,
-            "costos": 20400
+            "costos": 20400,
+            "stock": 0
           },
           "Vestuario Infantil": {
             "units": -1,
             "clp": -12515,
-            "costos": -7095
+            "costos": -7095,
+            "stock": 32
           }
         }
       },
@@ -23946,22 +24752,26 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 29,
             "clp": 182110,
-            "costos": 107129
+            "costos": 107129,
+            "stock": 289
           },
           "Ropa Interior": {
             "units": 5,
             "clp": 27604,
-            "costos": 21915
+            "costos": 21915,
+            "stock": 18
           },
           "Vestuario Infantil": {
             "units": 6,
             "clp": 24808,
-            "costos": 32493
+            "costos": 32493,
+            "stock": 14
           },
           "Calzado": {
             "units": 2,
             "clp": 9991,
-            "costos": 17380
+            "costos": 17380,
+            "stock": 5
           }
         }
       },
@@ -23979,27 +24789,32 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 24,
             "clp": 103579,
-            "costos": 57033
+            "costos": 57033,
+            "stock": 24
           },
           "Calzado": {
             "units": 1,
             "clp": 12597,
-            "costos": 8819
+            "costos": 8819,
+            "stock": -1
           },
           "Vestuario Infantil": {
             "units": -1,
             "clp": -5037,
-            "costos": -4785
+            "costos": -4785,
+            "stock": 2
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 2513,
-            "costos": 5100
+            "costos": 5100,
+            "stock": 0
           },
           "Ropa Interior": {
             "units": 1,
             "clp": 9071,
-            "costos": 7980
+            "costos": 7980,
+            "stock": 2
           }
         }
       },
@@ -24017,12 +24832,14 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 3,
             "clp": 5016,
-            "costos": 9750
+            "costos": 9750,
+            "stock": -43
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 2176,
-            "costos": 5743
+            "costos": 5743,
+            "stock": -11
           }
         }
       }
@@ -24042,17 +24859,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 168,
             "clp": 1989884,
-            "costos": 1291600
+            "costos": 1291600,
+            "stock": 406
           },
           "Ropa Interior": {
             "units": 53,
             "clp": 435368,
-            "costos": 380929
+            "costos": 380929,
+            "stock": 54
           },
           "Vestuario Infantil": {
             "units": 149,
             "clp": 1026396,
-            "costos": 664604
+            "costos": 664604,
+            "stock": 117
           }
         }
       },
@@ -24070,17 +24890,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 242,
             "clp": 3548636,
-            "costos": 2114458
+            "costos": 2114458,
+            "stock": 306
           },
           "Ropa Interior": {
             "units": 70,
             "clp": 560687,
-            "costos": 467717
+            "costos": 467717,
+            "stock": 74
           },
           "Vestuario Infantil": {
             "units": 45,
             "clp": 374954,
-            "costos": 236860
+            "costos": 236860,
+            "stock": 66
           }
         }
       },
@@ -24098,17 +24921,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 27,
             "clp": 181278,
-            "costos": 194400
+            "costos": 194400,
+            "stock": 39
           },
           "Vestuario Infantil": {
             "units": 75,
             "clp": 489851,
-            "costos": 321044
+            "costos": 321044,
+            "stock": 232
           },
           "Calzado": {
             "units": 221,
             "clp": 2730449,
-            "costos": 1803897
+            "costos": 1803897,
+            "stock": 571
           }
         }
       },
@@ -24126,22 +24952,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 191,
             "clp": 2622133,
-            "costos": 1619876
+            "costos": 1619876,
+            "stock": 576
           },
           "Vestuario Infantil": {
             "units": 74,
             "clp": 528419,
-            "costos": 348368
+            "costos": 348368,
+            "stock": 87
           },
           "Ropa Interior": {
             "units": 11,
             "clp": 74192,
-            "costos": 79200
+            "costos": 79200,
+            "stock": 40
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 3361,
-            "costos": 4500
+            "costos": 4500,
+            "stock": 0
           }
         }
       },
@@ -24159,17 +24989,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 218,
             "clp": 2924579,
-            "costos": 1748563
+            "costos": 1748563,
+            "stock": 256
           },
           "Ropa Interior": {
             "units": 17,
             "clp": 111473,
-            "costos": 122400
+            "costos": 122400,
+            "stock": 31
           },
           "Vestuario Infantil": {
             "units": 13,
             "clp": 119589,
-            "costos": 72700
+            "costos": 72700,
+            "stock": 69
           }
         }
       },
@@ -24187,22 +25020,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 36,
             "clp": 264932,
-            "costos": 245320
+            "costos": 245320,
+            "stock": 91
           },
           "Calzado": {
             "units": 148,
             "clp": 1937465,
-            "costos": 1277722
+            "costos": 1277722,
+            "stock": 342
           },
           "Vestuario Infantil": {
             "units": 34,
             "clp": 268413,
-            "costos": 172016
+            "costos": 172016,
+            "stock": 55
           },
           "Accesorios y Otros": {
             "units": 2,
             "clp": 7521,
-            "costos": 23435
+            "costos": 23435,
+            "stock": 0
           }
         }
       },
@@ -24220,22 +25057,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 16,
             "clp": 106463,
-            "costos": 70060
+            "costos": 70060,
+            "stock": 95
           },
           "Calzado": {
             "units": 182,
             "clp": 2388743,
-            "costos": 1469622
+            "costos": 1469622,
+            "stock": 361
           },
           "Ropa Interior": {
             "units": 8,
             "clp": 112268,
-            "costos": 57112
+            "costos": 57112,
+            "stock": 21
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 12597,
-            "costos": 5600
+            "costos": 5600,
+            "stock": 1
           }
         }
       },
@@ -24253,17 +25094,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 78,
             "clp": 864002,
-            "costos": 601351
+            "costos": 601351,
+            "stock": 289
           },
           "Ropa Interior": {
             "units": 11,
             "clp": 69154,
-            "costos": 79200
+            "costos": 79200,
+            "stock": 45
           },
           "Vestuario Infantil": {
             "units": 116,
             "clp": 806283,
-            "costos": 520556
+            "costos": 520556,
+            "stock": 104
           }
         }
       },
@@ -24281,17 +25125,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 173,
             "clp": 1703318,
-            "costos": 1134711
+            "costos": 1134711,
+            "stock": 438
           },
           "Ropa Interior": {
             "units": 25,
             "clp": 211783,
-            "costos": 179573
+            "costos": 179573,
+            "stock": 111
           },
           "Vestuario Infantil": {
             "units": 4,
             "clp": 20000,
-            "costos": 15712
+            "costos": 15712,
+            "stock": 3
           }
         }
       },
@@ -24309,17 +25156,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 168,
             "clp": 2080804,
-            "costos": 1327514
+            "costos": 1327514,
+            "stock": 467
           },
           "Ropa Interior": {
             "units": 15,
             "clp": 95399,
-            "costos": 108000
+            "costos": 108000,
+            "stock": 8
           },
           "Vestuario Infantil": {
             "units": 19,
             "clp": 108817,
-            "costos": 74632
+            "costos": 74632,
+            "stock": 23
           }
         }
       },
@@ -24337,17 +25187,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 90,
             "clp": 1082319,
-            "costos": 716683
+            "costos": 716683,
+            "stock": 182
           },
           "Vestuario Infantil": {
             "units": 56,
             "clp": 432437,
-            "costos": 277664
+            "costos": 277664,
+            "stock": 46
           },
           "Ropa Interior": {
             "units": 30,
             "clp": 290685,
-            "costos": 215207
+            "costos": 215207,
+            "stock": 111
           }
         }
       },
@@ -24365,22 +25218,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 95,
             "clp": 1208674,
-            "costos": 769080
+            "costos": 769080,
+            "stock": 226
           },
           "Vestuario Infantil": {
             "units": 72,
             "clp": 577795,
-            "costos": 366956
+            "costos": 366956,
+            "stock": 69
           },
           "Ropa Interior": {
             "units": 8,
             "clp": 104964,
-            "costos": 57112
+            "costos": 57112,
+            "stock": 4
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 3361,
-            "costos": 4500
+            "costos": 4500,
+            "stock": 7
           }
         }
       },
@@ -24398,17 +25255,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 142,
             "clp": 1857148,
-            "costos": 1136634
+            "costos": 1136634,
+            "stock": 339
           },
           "Vestuario Infantil": {
             "units": 23,
             "clp": 155406,
-            "costos": 104768
+            "costos": 104768,
+            "stock": 102
           },
           "Ropa Interior": {
             "units": 8,
             "clp": 96908,
-            "costos": 57173
+            "costos": 57173,
+            "stock": 26
           }
         }
       },
@@ -24426,17 +25286,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 125,
             "clp": 1571169,
-            "costos": 1014069
+            "costos": 1014069,
+            "stock": 524
           },
           "Ropa Interior": {
             "units": 19,
             "clp": 150537,
-            "costos": 128131
+            "costos": 128131,
+            "stock": 121
           },
           "Vestuario Infantil": {
             "units": 15,
             "clp": 77053,
-            "costos": 61192
+            "costos": 61192,
+            "stock": 25
           }
         }
       },
@@ -24454,17 +25317,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 9,
             "clp": 57069,
-            "costos": 64800
+            "costos": 64800,
+            "stock": 11
           },
           "Calzado": {
             "units": 143,
             "clp": 1891967,
-            "costos": 1176484
+            "costos": 1176484,
+            "stock": 241
           },
           "Vestuario Infantil": {
             "units": 6,
             "clp": 35292,
-            "costos": 23568
+            "costos": 23568,
+            "stock": 18
           }
         }
       },
@@ -24482,17 +25348,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 133,
             "clp": 1861325,
-            "costos": 1133093
+            "costos": 1133093,
+            "stock": 377
           },
           "Vestuario Infantil": {
             "units": 8,
             "clp": 44704,
-            "costos": 31424
+            "costos": 31424,
+            "stock": 11
           },
           "Ropa Interior": {
             "units": 15,
             "clp": 162068,
-            "costos": 107390
+            "costos": 107390,
+            "stock": 35
           }
         }
       },
@@ -24510,22 +25379,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 38,
             "clp": 394289,
-            "costos": 293307
+            "costos": 293307,
+            "stock": 234
           },
           "Vestuario Infantil": {
             "units": 86,
             "clp": 647007,
-            "costos": 412332
+            "costos": 412332,
+            "stock": 67
           },
           "Ropa Interior": {
             "units": 27,
             "clp": 187551,
-            "costos": 189614
+            "costos": 189614,
+            "stock": 29
           },
           "Accesorios y Otros": {
             "units": 3,
             "clp": 6597,
-            "costos": 16624
+            "costos": 16624,
+            "stock": -1
           }
         }
       },
@@ -24543,17 +25416,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 16,
             "clp": 107424,
-            "costos": 115200
+            "costos": 115200,
+            "stock": 10
           },
           "Calzado": {
             "units": 121,
             "clp": 1242701,
-            "costos": 893897
+            "costos": 893897,
+            "stock": 467
           },
           "Vestuario Infantil": {
             "units": 14,
             "clp": 82348,
-            "costos": 54992
+            "costos": 54992,
+            "stock": 23
           }
         }
       },
@@ -24571,12 +25447,14 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 136,
             "clp": 1568603,
-            "costos": 987860
+            "costos": 987860,
+            "stock": 166
           },
           "Ropa Interior": {
             "units": 7,
             "clp": 39733,
-            "costos": 50400
+            "costos": 50400,
+            "stock": 0
           }
         }
       },
@@ -24594,17 +25472,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 112,
             "clp": 1268309,
-            "costos": 841571
+            "costos": 841571,
+            "stock": 289
           },
           "Vestuario Infantil": {
             "units": 19,
             "clp": 182234,
-            "costos": 108288
+            "costos": 108288,
+            "stock": 107
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 20142,
-            "costos": 21600
+            "costos": 21600,
+            "stock": -1
           }
         }
       },
@@ -24622,17 +25503,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 119,
             "clp": 1043477,
-            "costos": 797106
+            "costos": 797106,
+            "stock": 157
           },
           "Ropa Interior": {
             "units": 6,
             "clp": 40284,
-            "costos": 43200
+            "costos": 43200,
+            "stock": 7
           },
           "Vestuario Infantil": {
             "units": 9,
             "clp": 52938,
-            "costos": 35352
+            "costos": 35352,
+            "stock": 1
           }
         }
       },
@@ -24650,27 +25534,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 114,
             "clp": 1296471,
-            "costos": 894550
+            "costos": 894550,
+            "stock": 172
           },
           "Accesorios y Otros": {
             "units": 1,
             "clp": 1681,
-            "costos": 5037
+            "costos": 5037,
+            "stock": 0
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 3361,
-            "costos": 4500
+            "costos": 4500,
+            "stock": 2
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 5882,
-            "costos": 3928
+            "costos": 3928,
+            "stock": 2
           },
           "Ropa Interior": {
             "units": 9,
             "clp": 54996,
-            "costos": 60590
+            "costos": 60590,
+            "stock": 9
           }
         }
       },
@@ -24688,17 +25577,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 84,
             "clp": 1123535,
-            "costos": 660571
+            "costos": 660571,
+            "stock": 289
           },
           "Vestuario Infantil": {
             "units": 12,
             "clp": 70584,
-            "costos": 47136
+            "costos": 47136,
+            "stock": 32
           },
           "Ropa Interior": {
             "units": 28,
             "clp": 212542,
-            "costos": 201295
+            "costos": 201295,
+            "stock": 49
           }
         }
       },
@@ -24716,17 +25608,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 90,
             "clp": 979131,
-            "costos": 654822
+            "costos": 654822,
+            "stock": 160
           },
           "Vestuario Infantil": {
             "units": 17,
             "clp": 94112,
-            "costos": 66776
+            "costos": 66776,
+            "stock": 113
           },
           "Ropa Interior": {
             "units": 15,
             "clp": 100710,
-            "costos": 108000
+            "costos": 108000,
+            "stock": 25
           }
         }
       },
@@ -24744,17 +25639,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 54,
             "clp": 296885,
-            "costos": 212112
+            "costos": 212112,
+            "stock": 63
           },
           "Calzado": {
             "units": 53,
             "clp": 684826,
-            "costos": 431426
+            "costos": 431426,
+            "stock": 78
           },
           "Ropa Interior": {
             "units": 10,
             "clp": 68419,
-            "costos": 72000
+            "costos": 72000,
+            "stock": 4
           }
         }
       },
@@ -24772,17 +25670,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 102,
             "clp": 1185788,
-            "costos": 778005
+            "costos": 778005,
+            "stock": 397
           },
           "Ropa Interior": {
             "units": 9,
             "clp": 60426,
-            "costos": 64800
+            "costos": 64800,
+            "stock": 35
           },
           "Vestuario Infantil": {
             "units": 5,
             "clp": 29410,
-            "costos": 19640
+            "costos": 19640,
+            "stock": 7
           }
         }
       },
@@ -24800,22 +25701,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 74,
             "clp": 849323,
-            "costos": 558088
+            "costos": 558088,
+            "stock": 232
           },
           "Vestuario Infantil": {
             "units": 23,
             "clp": 215640,
-            "costos": 131212
+            "costos": 131212,
+            "stock": 76
           },
           "Accesorios y Otros": {
             "units": 1,
             "clp": 1681,
-            "costos": 5200
+            "costos": 5200,
+            "stock": 0
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 35268,
-            "costos": 21478
+            "costos": 21478,
+            "stock": 24
           }
         }
       },
@@ -24833,17 +25738,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 51,
             "clp": 680393,
-            "costos": 439083
+            "costos": 439083,
+            "stock": 281
           },
           "Ropa Interior": {
             "units": 38,
             "clp": 96176,
-            "costos": 152336
+            "costos": 152336,
+            "stock": 26
           },
           "Vestuario Infantil": {
             "units": 1,
             "clp": 5882,
-            "costos": 3928
+            "costos": 3928,
+            "stock": 10
           }
         }
       },
@@ -24861,22 +25769,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 19,
             "clp": 129254,
-            "costos": 136800
+            "costos": 136800,
+            "stock": 0
           },
           "Calzado": {
             "units": 65,
             "clp": 852511,
-            "costos": 572765
+            "costos": 572765,
+            "stock": 0
           },
           "Vestuario Infantil": {
             "units": -1,
             "clp": -7554,
-            "costos": -3928
+            "costos": -3928,
+            "stock": 0
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 3361,
-            "costos": 4500
+            "costos": 4500,
+            "stock": 0
           }
         }
       },
@@ -24894,17 +25806,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 75,
             "clp": 793692,
-            "costos": 528891
+            "costos": 528891,
+            "stock": 185
           },
           "Vestuario Infantil": {
             "units": 3,
             "clp": 17646,
-            "costos": 11784
+            "costos": 11784,
+            "stock": 7
           },
           "Ropa Interior": {
             "units": 2,
             "clp": 10071,
-            "costos": 14400
+            "costos": 14400,
+            "stock": 1
           }
         }
       },
@@ -24922,17 +25837,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 35,
             "clp": 201753,
-            "costos": 137480
+            "costos": 137480,
+            "stock": 284
           },
           "Calzado": {
             "units": 8,
             "clp": 147832,
-            "costos": 73912
+            "costos": 73912,
+            "stock": 11
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 7168,
-            "costos": 8770
+            "costos": 8770,
+            "stock": 1
           }
         }
       },
@@ -24950,17 +25868,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 4,
             "clp": 23528,
-            "costos": 15712
+            "costos": 15712,
+            "stock": 3
           },
           "Calzado": {
             "units": 24,
             "clp": 322244,
-            "costos": 180570
+            "costos": 180570,
+            "stock": 51
           },
           "Ropa Interior": {
             "units": 5,
             "clp": 27831,
-            "costos": 31336
+            "costos": 31336,
+            "stock": 26
           }
         }
       }
@@ -24980,7 +25901,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 78,
             "clp": 682691,
-            "costos": 392546
+            "costos": 392546,
+            "stock": 67
           }
         }
       },
@@ -24998,7 +25920,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 63,
             "clp": 562235,
-            "costos": 317394
+            "costos": 317394,
+            "stock": 18
           }
         }
       },
@@ -25016,7 +25939,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 58,
             "clp": 457281,
-            "costos": 288024
+            "costos": 288024,
+            "stock": 127
           }
         }
       },
@@ -25034,7 +25958,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 56,
             "clp": 454725,
-            "costos": 277948
+            "costos": 277948,
+            "stock": 15
           }
         }
       },
@@ -25052,7 +25977,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 50,
             "clp": 368304,
-            "costos": 245630
+            "costos": 245630,
+            "stock": 45
           }
         }
       },
@@ -25070,7 +25996,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 43,
             "clp": 341323,
-            "costos": 213708
+            "costos": 213708,
+            "stock": 49
           }
         }
       },
@@ -25088,7 +26015,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 42,
             "clp": 273609,
-            "costos": 205744
+            "costos": 205744,
+            "stock": 73
           }
         }
       },
@@ -25106,7 +26034,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 36,
             "clp": 240628,
-            "costos": 175098
+            "costos": 175098,
+            "stock": 92
           }
         }
       },
@@ -25124,7 +26053,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 33,
             "clp": 128932,
-            "costos": 152460
+            "costos": 152460,
+            "stock": 0
           }
         }
       },
@@ -25142,7 +26072,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 25,
             "clp": 181275,
-            "costos": 122606
+            "costos": 122606,
+            "stock": 83
           }
         }
       },
@@ -25160,7 +26091,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 22,
             "clp": 87897,
-            "costos": 101640
+            "costos": 101640,
+            "stock": 145
           }
         }
       },
@@ -25178,7 +26110,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 22,
             "clp": 157194,
-            "costos": 107910
+            "costos": 107910,
+            "stock": 99
           }
         }
       },
@@ -25196,7 +26129,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 19,
             "clp": 69537,
-            "costos": 87780
+            "costos": 87780,
+            "stock": 5
           }
         }
       },
@@ -25214,7 +26148,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 18,
             "clp": 60149,
-            "costos": 83160
+            "costos": 83160,
+            "stock": 0
           }
         }
       },
@@ -25232,7 +26167,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 17,
             "clp": 69270,
-            "costos": 78540
+            "costos": 78540,
+            "stock": 2
           }
         }
       },
@@ -25250,7 +26186,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 15,
             "clp": 131254,
-            "costos": 75152
+            "costos": 75152,
+            "stock": 54
           }
         }
       },
@@ -25268,7 +26205,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 9,
             "clp": 80910,
-            "costos": 45342
+            "costos": 45342,
+            "stock": 70
           }
         }
       },
@@ -25286,7 +26224,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 8,
             "clp": 46748,
-            "costos": 36960
+            "costos": 36960,
+            "stock": 2
           }
         }
       },
@@ -25304,7 +26243,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 7,
             "clp": 62930,
-            "costos": 35266
+            "costos": 35266,
+            "stock": 89
           }
         }
       },
@@ -25322,7 +26262,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 5,
             "clp": 33263,
-            "costos": 23100
+            "costos": 23100,
+            "stock": 3
           }
         }
       },
@@ -25340,7 +26281,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 3,
             "clp": 11879,
-            "costos": 13860
+            "costos": 13860,
+            "stock": 5
           }
         }
       },
@@ -25358,7 +26300,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 3,
             "clp": 9875,
-            "costos": 13860
+            "costos": 13860,
+            "stock": 1
           }
         }
       },
@@ -25376,7 +26319,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 2,
             "clp": 8283,
-            "costos": 9240
+            "costos": 9240,
+            "stock": 101
           }
         }
       },
@@ -25394,7 +26338,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 2,
             "clp": 3980,
-            "costos": 9240
+            "costos": 9240,
+            "stock": 2
           }
         }
       },
@@ -25412,7 +26357,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 1,
             "clp": 1990,
-            "costos": 4620
+            "costos": 4620,
+            "stock": 96
           }
         }
       },
@@ -25430,7 +26376,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 1,
             "clp": 4495,
-            "costos": 4620
+            "costos": 4620,
+            "stock": 0
           }
         }
       },
@@ -25448,7 +26395,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 1,
             "clp": 5394,
-            "costos": 4620
+            "costos": 4620,
+            "stock": 0
           }
         }
       },
@@ -25466,7 +26414,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 1,
             "clp": 1990,
-            "costos": 4620
+            "costos": 4620,
+            "stock": 8
           }
         }
       }
@@ -25486,22 +26435,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 17,
             "clp": 209333,
-            "costos": 108999
+            "costos": 108999,
+            "stock": 0
           },
           "Vestuario Infantil": {
             "units": 202,
             "clp": 2230623,
-            "costos": 1256854
+            "costos": 1256854,
+            "stock": 48
           },
           "Calzado": {
             "units": 34,
             "clp": 464354,
-            "costos": 345305
+            "costos": 345305,
+            "stock": 2
           },
           "Accesorios y Otros": {
             "units": 49,
             "clp": 595852,
-            "costos": 538500
+            "costos": 538500,
+            "stock": 18
           }
         }
       },
@@ -25519,22 +26472,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 90,
             "clp": 661720,
-            "costos": 308814
+            "costos": 308814,
+            "stock": 101
           },
           "Calzado": {
             "units": 38,
             "clp": 431620,
-            "costos": 357093
+            "costos": 357093,
+            "stock": 35
           },
           "Vestuario Infantil": {
             "units": 77,
             "clp": 924839,
-            "costos": 519257
+            "costos": 519257,
+            "stock": 54
           },
           "Accesorios y Otros": {
             "units": 26,
             "clp": 315740,
-            "costos": 286000
+            "costos": 286000,
+            "stock": 133
           }
         }
       },
@@ -25552,22 +26509,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 67,
             "clp": 747819,
-            "costos": 348653
+            "costos": 348653,
+            "stock": 110
           },
           "Vestuario Infantil": {
             "units": 84,
             "clp": 965931,
-            "costos": 567553
+            "costos": 567553,
+            "stock": 188
           },
           "Calzado": {
             "units": 66,
             "clp": 709591,
-            "costos": 634236
+            "costos": 634236,
+            "stock": 72
           },
           "Accesorios y Otros": {
             "units": 2,
             "clp": 13980,
-            "costos": 22000
+            "costos": 22000,
+            "stock": 133
           }
         }
       },
@@ -25585,22 +26546,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 113,
             "clp": 1259212,
-            "costos": 593407
+            "costos": 593407,
+            "stock": 48
           },
           "Vestuario Infantil": {
             "units": 86,
             "clp": 1051413,
-            "costos": 596482
+            "costos": 596482,
+            "stock": 59
           },
           "Calzado": {
             "units": 5,
             "clp": 69489,
-            "costos": 47119
+            "costos": 47119,
+            "stock": 1
           },
           "Accesorios y Otros": {
             "units": 6,
             "clp": 71940,
-            "costos": 66000
+            "costos": 66000,
+            "stock": 24
           }
         }
       },
@@ -25618,22 +26583,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 48,
             "clp": 604285,
-            "costos": 351150
+            "costos": 351150,
+            "stock": 21
           },
           "Vestuario Infantil": {
             "units": 95,
             "clp": 1042327,
-            "costos": 738025
+            "costos": 738025,
+            "stock": 66
           },
           "Calzado": {
             "units": 40,
             "clp": 421651,
-            "costos": 374143
+            "costos": 374143,
+            "stock": 104
           },
           "Accesorios y Otros": {
             "units": 8,
             "clp": 95920,
-            "costos": 88000
+            "costos": 88000,
+            "stock": 42
           }
         }
       },
@@ -25651,12 +26620,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 98,
             "clp": 958449,
-            "costos": 457527
+            "costos": 457527,
+            "stock": 70
           },
           "Vestuario Infantil": {
             "units": 89,
             "clp": 956711,
-            "costos": 606078
+            "costos": 606078,
+            "stock": 71
           }
         }
       },
@@ -25674,12 +26645,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 94,
             "clp": 991665,
-            "costos": 798836
+            "costos": 798836,
+            "stock": 86
           },
           "Calzado": {
             "units": 63,
             "clp": 310043,
-            "costos": 468634
+            "costos": 468634,
+            "stock": 18
           }
         }
       },
@@ -25697,17 +26670,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 38,
             "clp": 438630,
-            "costos": 272967
+            "costos": 272967,
+            "stock": 54
           },
           "Ropa Interior": {
             "units": 114,
             "clp": 1032965,
-            "costos": 482486
+            "costos": 482486,
+            "stock": 38
           },
           "Calzado": {
             "units": 1,
             "clp": 13093,
-            "costos": 12474
+            "costos": 12474,
+            "stock": 1
           }
         }
       },
@@ -25725,17 +26701,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 74,
             "clp": 771340,
-            "costos": 460370
+            "costos": 460370,
+            "stock": 11
           },
           "Vestuario Infantil": {
             "units": 75,
             "clp": 850602,
-            "costos": 486854
+            "costos": 486854,
+            "stock": 29
           },
           "Calzado": {
             "units": 1,
             "clp": 9990,
-            "costos": 9239
+            "costos": 9239,
+            "stock": 0
           }
         }
       },
@@ -25753,22 +26732,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 79,
             "clp": 1003252,
-            "costos": 470436
+            "costos": 470436,
+            "stock": 90
           },
           "Calzado": {
             "units": 37,
             "clp": 429510,
-            "costos": 359029
+            "costos": 359029,
+            "stock": 43
           },
           "Vestuario Infantil": {
             "units": 34,
             "clp": 425731,
-            "costos": 234066
+            "costos": 234066,
+            "stock": 17
           },
           "Accesorios y Otros": {
             "units": 0,
             "clp": 4000,
-            "costos": 0
+            "costos": 0,
+            "stock": 66
           }
         }
       },
@@ -25786,12 +26769,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 86,
             "clp": 941358,
-            "costos": 684223
+            "costos": 684223,
+            "stock": 35
           },
           "Ropa Interior": {
             "units": 61,
             "clp": 642282,
-            "costos": 299227
+            "costos": 299227,
+            "stock": 53
           }
         }
       },
@@ -25809,22 +26794,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 48,
             "clp": 440520,
-            "costos": 334898
+            "costos": 334898,
+            "stock": 106
           },
           "Vestuario Infantil": {
             "units": 68,
             "clp": 642400,
-            "costos": 469214
+            "costos": 469214,
+            "stock": 28
           },
           "Calzado": {
             "units": 28,
             "clp": 288045,
-            "costos": 251425
+            "costos": 251425,
+            "stock": 47
           },
           "Accesorios y Otros": {
             "units": 2,
             "clp": 23980,
-            "costos": 22000
+            "costos": 22000,
+            "stock": 35
           }
         }
       },
@@ -25842,17 +26831,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 76,
             "clp": 851817,
-            "costos": 425796
+            "costos": 425796,
+            "stock": 40
           },
           "Vestuario Infantil": {
             "units": 62,
             "clp": 685399,
-            "costos": 435392
+            "costos": 435392,
+            "stock": 31
           },
           "Calzado": {
             "units": 4,
             "clp": 23960,
-            "costos": 20152
+            "costos": 20152,
+            "stock": 2
           }
         }
       },
@@ -25870,22 +26862,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 48,
             "clp": 536268,
-            "costos": 315455
+            "costos": 315455,
+            "stock": 43
           },
           "Ropa Interior": {
             "units": 86,
             "clp": 803140,
-            "costos": 428415
+            "costos": 428415,
+            "stock": 58
           },
           "Calzado": {
             "units": 1,
             "clp": 25990,
-            "costos": 16633
+            "costos": 16633,
+            "stock": 3
           },
           "Accesorios y Otros": {
             "units": 4,
             "clp": 55465,
-            "costos": 39050
+            "costos": 39050,
+            "stock": 65
           }
         }
       },
@@ -25903,12 +26899,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 82,
             "clp": 943455,
-            "costos": 439174
+            "costos": 439174,
+            "stock": 99
           },
           "Vestuario Infantil": {
             "units": 53,
             "clp": 600322,
-            "costos": 348575
+            "costos": 348575,
+            "stock": 25
           }
         }
       },
@@ -25926,22 +26924,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 44,
             "clp": 485965,
-            "costos": 283681
+            "costos": 283681,
+            "stock": 33
           },
           "Calzado": {
             "units": 19,
             "clp": 244980,
-            "costos": 174245
+            "costos": 174245,
+            "stock": 65
           },
           "Ropa Interior": {
             "units": 61,
             "clp": 808392,
-            "costos": 395355
+            "costos": 395355,
+            "stock": 110
           },
           "Accesorios y Otros": {
             "units": 6,
             "clp": 77519,
-            "costos": 66000
+            "costos": 66000,
+            "stock": 38
           }
         }
       },
@@ -25959,22 +26961,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 74,
             "clp": 685292,
-            "costos": 530348
+            "costos": 530348,
+            "stock": 22
           },
           "Ropa Interior": {
             "units": 44,
             "clp": 316162,
-            "costos": 178550
+            "costos": 178550,
+            "stock": 92
           },
           "Accesorios y Otros": {
             "units": 5,
             "clp": 48950,
-            "costos": 55000
+            "costos": 55000,
+            "stock": 16
           },
           "Calzado": {
             "units": 1,
             "clp": 4990,
-            "costos": 2266
+            "costos": 2266,
+            "stock": 1
           }
         }
       },
@@ -25992,17 +26998,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 60,
             "clp": 644282,
-            "costos": 302004
+            "costos": 302004,
+            "stock": 59
           },
           "Vestuario Infantil": {
             "units": 62,
             "clp": 620312,
-            "costos": 461271
+            "costos": 461271,
+            "stock": 179
           },
           "Calzado": {
             "units": 1,
             "clp": 6990,
-            "costos": 4618
+            "costos": 4618,
+            "stock": 0
           }
         }
       },
@@ -26020,12 +27029,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 77,
             "clp": 857137,
-            "costos": 525684
+            "costos": 525684,
+            "stock": 133
           },
           "Ropa Interior": {
             "units": 44,
             "clp": 531971,
-            "costos": 279328
+            "costos": 279328,
+            "stock": 138
           }
         }
       },
@@ -26043,22 +27054,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 78,
             "clp": 954580,
-            "costos": 532132
+            "costos": 532132,
+            "stock": 36
           },
           "Accesorios y Otros": {
             "units": 7,
             "clp": 77940,
-            "costos": 63650
+            "costos": 63650,
+            "stock": 27
           },
           "Ropa Interior": {
             "units": 32,
             "clp": 430473,
-            "costos": 226257
+            "costos": 226257,
+            "stock": 153
           },
           "Calzado": {
             "units": 2,
             "clp": 6980,
-            "costos": 10915
+            "costos": 10915,
+            "stock": 1
           }
         }
       },
@@ -26076,17 +27091,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 41,
             "clp": 286590,
-            "costos": 132471
+            "costos": 132471,
+            "stock": 32
           },
           "Calzado": {
             "units": 59,
             "clp": 615986,
-            "costos": 539140
+            "costos": 539140,
+            "stock": 40
           },
           "Vestuario Infantil": {
             "units": 16,
             "clp": 78766,
-            "costos": 75273
+            "costos": 75273,
+            "stock": 14
           }
         }
       },
@@ -26104,17 +27122,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 69,
             "clp": 674270,
-            "costos": 455539
+            "costos": 455539,
+            "stock": 62
           },
           "Calzado": {
             "units": 3,
             "clp": 17970,
-            "costos": 15114
+            "costos": 15114,
+            "stock": 4
           },
           "Ropa Interior": {
             "units": 43,
             "clp": 489595,
-            "costos": 256110
+            "costos": 256110,
+            "stock": 96
           }
         }
       },
@@ -26132,7 +27153,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 114,
             "clp": 1248865,
-            "costos": 1126656
+            "costos": 1126656,
+            "stock": 81
           }
         }
       },
@@ -26150,17 +27172,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 73,
             "clp": 808025,
-            "costos": 517544
+            "costos": 517544,
+            "stock": 42
           },
           "Ropa Interior": {
             "units": 32,
             "clp": 352680,
-            "costos": 216348
+            "costos": 216348,
+            "stock": 160
           },
           "Calzado": {
             "units": 3,
             "clp": 23970,
-            "costos": 20996
+            "costos": 20996,
+            "stock": 4
           }
         }
       },
@@ -26178,22 +27203,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 30,
             "clp": 274950,
-            "costos": 164286
+            "costos": 164286,
+            "stock": 171
           },
           "Calzado": {
             "units": 44,
             "clp": 523977,
-            "costos": 427108
+            "costos": 427108,
+            "stock": 30
           },
           "Vestuario Infantil": {
             "units": 30,
             "clp": 358864,
-            "costos": 200835
+            "costos": 200835,
+            "stock": 119
           },
           "Accesorios y Otros": {
             "units": 3,
             "clp": 29970,
-            "costos": 33000
+            "costos": 33000,
+            "stock": 15
           }
         }
       },
@@ -26211,7 +27240,8 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 103,
             "clp": 1176678,
-            "costos": 905341
+            "costos": 905341,
+            "stock": 71
           }
         }
       },
@@ -26229,17 +27259,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 79,
             "clp": 782666,
-            "costos": 526097
+            "costos": 526097,
+            "stock": 65
           },
           "Calzado": {
             "units": 5,
             "clp": 30950,
-            "costos": 24770
+            "costos": 24770,
+            "stock": 5
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 23970,
-            "costos": 24414
+            "costos": 24414,
+            "stock": 12
           }
         }
       },
@@ -26257,7 +27290,8 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 85,
             "clp": 762742,
-            "costos": 520802
+            "costos": 520802,
+            "stock": 88
           }
         }
       },
@@ -26275,27 +27309,32 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 8,
             "clp": 92920,
-            "costos": 61808
+            "costos": 61808,
+            "stock": 77
           },
           "Ropa Interior": {
             "units": 22,
             "clp": 225841,
-            "costos": 107130
+            "costos": 107130,
+            "stock": 40
           },
           "Vestuario Infantil": {
             "units": 38,
             "clp": 470490,
-            "costos": 254342
+            "costos": 254342,
+            "stock": 16
           },
           "Accesorios y Otros": {
             "units": 9,
             "clp": 91910,
-            "costos": 95000
+            "costos": 95000,
+            "stock": 34
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 3990,
-            "costos": 4990
+            "costos": 4990,
+            "stock": -1
           }
         }
       },
@@ -26313,22 +27352,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 4,
             "clp": 29960,
-            "costos": 20152
+            "costos": 20152,
+            "stock": 11
           },
           "Ropa Interior": {
             "units": 40,
             "clp": 279600,
-            "costos": 129240
+            "costos": 129240,
+            "stock": 47
           },
           "Vestuario Infantil": {
             "units": 16,
             "clp": 99860,
-            "costos": 81728
+            "costos": 81728,
+            "stock": 137
           },
           "Accesorios y Otros": {
             "units": 5,
             "clp": 67950,
-            "costos": 55000
+            "costos": 55000,
+            "stock": 39
           }
         }
       },
@@ -26346,12 +27389,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 55,
             "clp": 677996,
-            "costos": 378526
+            "costos": 378526,
+            "stock": 105
           },
           "Ropa Interior": {
             "units": 10,
             "clp": 82900,
-            "costos": 83417
+            "costos": 83417,
+            "stock": 68
           }
         }
       },
@@ -26369,22 +27414,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 32,
             "clp": 391310,
-            "costos": 301618
+            "costos": 301618,
+            "stock": 52
           },
           "Vestuario Infantil": {
             "units": 20,
             "clp": 172657,
-            "costos": 173410
+            "costos": 173410,
+            "stock": 24
           },
           "Accesorios y Otros": {
             "units": 5,
             "clp": 64950,
-            "costos": 55000
+            "costos": 55000,
+            "stock": 60
           },
           "Ropa Interior": {
             "units": 3,
             "clp": 23970,
-            "costos": 24414
+            "costos": 24414,
+            "stock": 181
           }
         }
       },
@@ -26402,12 +27451,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 53,
             "clp": 600587,
-            "costos": 378743
+            "costos": 378743,
+            "stock": 38
           },
           "Calzado": {
             "units": 7,
             "clp": 32511,
-            "costos": 30687
+            "costos": 30687,
+            "stock": 6
           }
         }
       },
@@ -26425,12 +27476,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 34,
             "clp": 379340,
-            "costos": 204251
+            "costos": 204251,
+            "stock": 66
           },
           "Vestuario Infantil": {
             "units": 12,
             "clp": 72910,
-            "costos": 70515
+            "costos": 70515,
+            "stock": 11
           }
         }
       },
@@ -26448,12 +27501,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 2,
             "clp": 9980,
-            "costos": 9380
+            "costos": 9380,
+            "stock": 3
           },
           "Vestuario Infantil": {
             "units": 25,
             "clp": 151721,
-            "costos": 242682
+            "costos": 242682,
+            "stock": -5
           }
         }
       },
@@ -26471,17 +27526,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 4,
             "clp": 27465,
-            "costos": 27645
+            "costos": 27645,
+            "stock": 0
           },
           "Vestuario Infantil": {
             "units": 18,
             "clp": 121992,
-            "costos": 126300
+            "costos": 126300,
+            "stock": 21
           },
           "Calzado": {
             "units": 2,
             "clp": 15980,
-            "costos": 14277
+            "costos": 14277,
+            "stock": 2
           }
         }
       },
@@ -26499,12 +27557,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 17,
             "clp": 188330,
-            "costos": 96983
+            "costos": 96983,
+            "stock": 84
           },
           "Vestuario Infantil": {
             "units": 4,
             "clp": 27253,
-            "costos": 36652
+            "costos": 36652,
+            "stock": 4
           }
         }
       },
@@ -26522,12 +27582,14 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 16,
             "clp": 159920,
-            "costos": 147824
+            "costos": 147824,
+            "stock": 8
           },
           "Vestuario Infantil": {
             "units": 2,
             "clp": 11980,
-            "costos": 12008
+            "costos": 12008,
+            "stock": 0
           }
         }
       },
@@ -26545,12 +27607,14 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 1,
             "clp": 5990,
-            "costos": 5038
+            "costos": 5038,
+            "stock": 3
           },
           "Vestuario Infantil": {
             "units": 13,
             "clp": 83890,
-            "costos": 81748
+            "costos": 81748,
+            "stock": 18
           }
         }
       },
@@ -26568,17 +27632,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 4,
             "clp": 29960,
-            "costos": 27630
+            "costos": 27630,
+            "stock": 3
           },
           "Vestuario Infantil": {
             "units": 4,
             "clp": 24475,
-            "costos": 23093
+            "costos": 23093,
+            "stock": 19
           },
           "Accesorios y Otros": {
             "units": 4,
             "clp": 49862,
-            "costos": 44000
+            "costos": 44000,
+            "stock": 24
           }
         }
       },
@@ -26596,12 +27663,14 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 6,
             "clp": 79940,
-            "costos": 57283
+            "costos": 57283,
+            "stock": 17
           },
           "Ropa Interior": {
             "units": 6,
             "clp": 48440,
-            "costos": 25394
+            "costos": 25394,
+            "stock": 64
           }
         }
       },
@@ -26619,12 +27688,14 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 3,
             "clp": 16975,
-            "costos": 17549
+            "costos": 17549,
+            "stock": 3
           },
           "Calzado": {
             "units": 1,
             "clp": 14990,
-            "costos": 10163
+            "costos": 10163,
+            "stock": 0
           }
         }
       },
@@ -26642,12 +27713,14 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 1,
             "clp": 13990,
-            "costos": 9239
+            "costos": 9239,
+            "stock": 0
           },
           "Vestuario Infantil": {
             "units": -1,
             "clp": -9990,
-            "costos": -6770
+            "costos": -6770,
+            "stock": 1
           }
         }
       }
@@ -26667,22 +27740,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 369,
             "clp": 3940234,
-            "costos": 2324104
+            "costos": 2324104,
+            "stock": 1549
           },
           "Ropa Interior": {
             "units": 86,
             "clp": 1055148,
-            "costos": 652899
+            "costos": 652899,
+            "stock": 610
           },
           "Calzado": {
             "units": 275,
             "clp": 4857728,
-            "costos": 2271916
+            "costos": 2271916,
+            "stock": 464
           },
           "Vestuario Adulto": {
             "units": 1,
             "clp": 1000,
-            "costos": 5000
+            "costos": 5000,
+            "stock": 0
           }
         }
       },
@@ -26700,17 +27777,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 117,
             "clp": 1356480,
-            "costos": 883980
+            "costos": 883980,
+            "stock": 636
           },
           "Calzado": {
             "units": 216,
             "clp": 3317324,
-            "costos": 1736160
+            "costos": 1736160,
+            "stock": 531
           },
           "Vestuario Infantil": {
             "units": 359,
             "clp": 3806444,
-            "costos": 2296505
+            "costos": 2296505,
+            "stock": 1297
           }
         }
       },
@@ -26728,17 +27808,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 250,
             "clp": 2613081,
-            "costos": 1614918
+            "costos": 1614918,
+            "stock": 2254
           },
           "Ropa Interior": {
             "units": 100,
             "clp": 996385,
-            "costos": 749281
+            "costos": 749281,
+            "stock": 562
           },
           "Calzado": {
             "units": 326,
             "clp": 5263013,
-            "costos": 2719061
+            "costos": 2719061,
+            "stock": 608
           }
         }
       },
@@ -26756,22 +27839,26 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 365,
             "clp": 4070192,
-            "costos": 2270322
+            "costos": 2270322,
+            "stock": 1444
           },
           "Ropa Interior": {
             "units": 62,
             "clp": 883570,
-            "costos": 503840
+            "costos": 503840,
+            "stock": 255
           },
           "Calzado": {
             "units": 227,
             "clp": 3561736,
-            "costos": 1719718
+            "costos": 1719718,
+            "stock": 543
           },
           "Vestuario Adulto": {
             "units": 4,
             "clp": 9200,
-            "costos": 20000
+            "costos": 20000,
+            "stock": 2
           }
         }
       },
@@ -26789,22 +27876,26 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 221,
             "clp": 3552714,
-            "costos": 1742405
+            "costos": 1742405,
+            "stock": 656
           },
           "Vestuario Infantil": {
             "units": 278,
             "clp": 2685363,
-            "costos": 1692449
+            "costos": 1692449,
+            "stock": 2350
           },
           "Ropa Interior": {
             "units": 113,
             "clp": 1534279,
-            "costos": 859175
+            "costos": 859175,
+            "stock": 210
           },
           "Vestuario Adulto": {
             "units": 5,
             "clp": 26770,
-            "costos": 22380
+            "costos": 22380,
+            "stock": 7
           }
         }
       },
@@ -26822,17 +27913,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 211,
             "clp": 3629219,
-            "costos": 1755430
+            "costos": 1755430,
+            "stock": 231
           },
           "Vestuario Infantil": {
             "units": 300,
             "clp": 3132375,
-            "costos": 1794549
+            "costos": 1794549,
+            "stock": 1082
           },
           "Ropa Interior": {
             "units": 51,
             "clp": 675419,
-            "costos": 411668
+            "costos": 411668,
+            "stock": 171
           }
         }
       },
@@ -26850,17 +27944,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 282,
             "clp": 2740523,
-            "costos": 1687811
+            "costos": 1687811,
+            "stock": 1306
           },
           "Calzado": {
             "units": 242,
             "clp": 3735189,
-            "costos": 1880453
+            "costos": 1880453,
+            "stock": 609
           },
           "Ropa Interior": {
             "units": 25,
             "clp": 288294,
-            "costos": 184267
+            "costos": 184267,
+            "stock": 485
           }
         }
       },
@@ -26878,17 +27975,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 45,
             "clp": 435086,
-            "costos": 321232
+            "costos": 321232,
+            "stock": 589
           },
           "Vestuario Infantil": {
             "units": 247,
             "clp": 2586833,
-            "costos": 1613053
+            "costos": 1613053,
+            "stock": 2200
           },
           "Calzado": {
             "units": 237,
             "clp": 3817151,
-            "costos": 1917687
+            "costos": 1917687,
+            "stock": 563
           }
         }
       },
@@ -26906,17 +28006,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 257,
             "clp": 2570653,
-            "costos": 1558504
+            "costos": 1558504,
+            "stock": 1351
           },
           "Calzado": {
             "units": 165,
             "clp": 2756441,
-            "costos": 1278862
+            "costos": 1278862,
+            "stock": 583
           },
           "Ropa Interior": {
             "units": 76,
             "clp": 966625,
-            "costos": 599024
+            "costos": 599024,
+            "stock": 266
           }
         }
       },
@@ -26934,17 +28037,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 167,
             "clp": 2823767,
-            "costos": 1372781
+            "costos": 1372781,
+            "stock": 595
           },
           "Vestuario Infantil": {
             "units": 188,
             "clp": 1670033,
-            "costos": 1084085
+            "costos": 1084085,
+            "stock": 1075
           },
           "Ropa Interior": {
             "units": 138,
             "clp": 1508449,
-            "costos": 1049477
+            "costos": 1049477,
+            "stock": 406
           }
         }
       },
@@ -26962,17 +28068,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 247,
             "clp": 2578293,
-            "costos": 1500449
+            "costos": 1500449,
+            "stock": 1702
           },
           "Calzado": {
             "units": 174,
             "clp": 3048543,
-            "costos": 1487790
+            "costos": 1487790,
+            "stock": 618
           },
           "Ropa Interior": {
             "units": 56,
             "clp": 567450,
-            "costos": 388594
+            "costos": 388594,
+            "stock": 567
           }
         }
       },
@@ -26990,17 +28099,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 201,
             "clp": 3105026,
-            "costos": 1521924
+            "costos": 1521924,
+            "stock": 507
           },
           "Vestuario Infantil": {
             "units": 210,
             "clp": 2126055,
-            "costos": 1235629
+            "costos": 1235629,
+            "stock": 1235
           },
           "Ropa Interior": {
             "units": 64,
             "clp": 875677,
-            "costos": 513925
+            "costos": 513925,
+            "stock": 474
           }
         }
       },
@@ -27018,17 +28130,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 269,
             "clp": 2587528,
-            "costos": 1660919
+            "costos": 1660919,
+            "stock": 2400
           },
           "Calzado": {
             "units": 171,
             "clp": 2862468,
-            "costos": 1423604
+            "costos": 1423604,
+            "stock": 626
           },
           "Ropa Interior": {
             "units": 30,
             "clp": 432662,
-            "costos": 236458
+            "costos": 236458,
+            "stock": 350
           }
         }
       },
@@ -27046,17 +28161,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 188,
             "clp": 3258895,
-            "costos": 1516547
+            "costos": 1516547,
+            "stock": 495
           },
           "Ropa Interior": {
             "units": 24,
             "clp": 220195,
-            "costos": 173388
+            "costos": 173388,
+            "stock": 131
           },
           "Vestuario Infantil": {
             "units": 252,
             "clp": 2434749,
-            "costos": 1478789
+            "costos": 1478789,
+            "stock": 720
           }
         }
       },
@@ -27074,17 +28192,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 309,
             "clp": 2968700,
-            "costos": 1729987
+            "costos": 1729987,
+            "stock": 858
           },
           "Calzado": {
             "units": 133,
             "clp": 2521979,
-            "costos": 1172800
+            "costos": 1172800,
+            "stock": 249
           },
           "Ropa Interior": {
             "units": 20,
             "clp": 197802,
-            "costos": 132267
+            "costos": 132267,
+            "stock": 225
           }
         }
       },
@@ -27102,17 +28223,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 208,
             "clp": 1939934,
-            "costos": 1200616
+            "costos": 1200616,
+            "stock": 1888
           },
           "Calzado": {
             "units": 180,
             "clp": 2528407,
-            "costos": 1294559
+            "costos": 1294559,
+            "stock": 674
           },
           "Ropa Interior": {
             "units": 57,
             "clp": 615358,
-            "costos": 436980
+            "costos": 436980,
+            "stock": 337
           }
         }
       },
@@ -27130,17 +28254,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 136,
             "clp": 1480450,
-            "costos": 861371
+            "costos": 861371,
+            "stock": 2113
           },
           "Calzado": {
             "units": 232,
             "clp": 3551908,
-            "costos": 1758695
+            "costos": 1758695,
+            "stock": 753
           },
           "Ropa Interior": {
             "units": 63,
             "clp": 828238,
-            "costos": 495242
+            "costos": 495242,
+            "stock": 642
           }
         }
       },
@@ -27158,17 +28285,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 143,
             "clp": 2209276,
-            "costos": 1122501
+            "costos": 1122501,
+            "stock": 495
           },
           "Vestuario Infantil": {
             "units": 162,
             "clp": 1594825,
-            "costos": 960682
+            "costos": 960682,
+            "stock": 2231
           },
           "Ropa Interior": {
             "units": 59,
             "clp": 621344,
-            "costos": 445407
+            "costos": 445407,
+            "stock": 874
           }
         }
       },
@@ -27186,17 +28316,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 146,
             "clp": 2373311,
-            "costos": 1125162
+            "costos": 1125162,
+            "stock": 586
           },
           "Vestuario Infantil": {
             "units": 151,
             "clp": 1457218,
-            "costos": 917271
+            "costos": 917271,
+            "stock": 1407
           },
           "Ropa Interior": {
             "units": 59,
             "clp": 685391,
-            "costos": 467427
+            "costos": 467427,
+            "stock": 238
           }
         }
       },
@@ -27214,17 +28347,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 78,
             "clp": 794836,
-            "costos": 462000
+            "costos": 462000,
+            "stock": 2276
           },
           "Calzado": {
             "units": 223,
             "clp": 3507655,
-            "costos": 1812594
+            "costos": 1812594,
+            "stock": 614
           },
           "Ropa Interior": {
             "units": 48,
             "clp": 552226,
-            "costos": 374546
+            "costos": 374546,
+            "stock": 710
           }
         }
       },
@@ -27242,17 +28378,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 189,
             "clp": 1937500,
-            "costos": 1169162
+            "costos": 1169162,
+            "stock": 1378
           },
           "Calzado": {
             "units": 118,
             "clp": 2103044,
-            "costos": 987123
+            "costos": 987123,
+            "stock": 559
           },
           "Ropa Interior": {
             "units": 36,
             "clp": 407831,
-            "costos": 297019
+            "costos": 297019,
+            "stock": 277
           }
         }
       },
@@ -27270,17 +28409,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 158,
             "clp": 2671921,
-            "costos": 1337764
+            "costos": 1337764,
+            "stock": 367
           },
           "Vestuario Infantil": {
             "units": 145,
             "clp": 1578776,
-            "costos": 936893
+            "costos": 936893,
+            "stock": 1302
           },
           "Ropa Interior": {
             "units": 40,
             "clp": 400623,
-            "costos": 261395
+            "costos": 261395,
+            "stock": 263
           }
         }
       },
@@ -27298,17 +28440,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 121,
             "clp": 1107837,
-            "costos": 700470
+            "costos": 700470,
+            "stock": 1659
           },
           "Calzado": {
             "units": 148,
             "clp": 2376189,
-            "costos": 1168303
+            "costos": 1168303,
+            "stock": 599
           },
           "Ropa Interior": {
             "units": 33,
             "clp": 319522,
-            "costos": 250143
+            "costos": 250143,
+            "stock": 351
           }
         }
       },
@@ -27326,17 +28471,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 41,
             "clp": 346634,
-            "costos": 255100
+            "costos": 255100,
+            "stock": 101
           },
           "Vestuario Infantil": {
             "units": 99,
             "clp": 956384,
-            "costos": 631697
+            "costos": 631697,
+            "stock": 1700
           },
           "Calzado": {
             "units": 150,
             "clp": 2264032,
-            "costos": 1123216
+            "costos": 1123216,
+            "stock": 547
           }
         }
       },
@@ -27354,17 +28502,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 98,
             "clp": 1044745,
-            "costos": 595836
+            "costos": 595836,
+            "stock": 216
           },
           "Calzado": {
             "units": 96,
             "clp": 1677337,
-            "costos": 812627
+            "costos": 812627,
+            "stock": 586
           },
           "Ropa Interior": {
             "units": 61,
             "clp": 736525,
-            "costos": 492427
+            "costos": 492427,
+            "stock": 148
           }
         }
       },
@@ -27382,17 +28533,20 @@ const REAL_SELLOUT = {
           "Vestuario Infantil": {
             "units": 84,
             "clp": 715760,
-            "costos": 513607
+            "costos": 513607,
+            "stock": 0
           },
           "Calzado": {
             "units": 116,
             "clp": 1506175,
-            "costos": 827954
+            "costos": 827954,
+            "stock": 0
           },
           "Ropa Interior": {
             "units": 22,
             "clp": 231780,
-            "costos": 164549
+            "costos": 164549,
+            "stock": 0
           }
         }
       },
@@ -27410,17 +28564,20 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 81,
             "clp": 1143293,
-            "costos": 656513
+            "costos": 656513,
+            "stock": 875
           },
           "Vestuario Infantil": {
             "units": 76,
             "clp": 662890,
-            "costos": 420091
+            "costos": 420091,
+            "stock": 2018
           },
           "Ropa Interior": {
             "units": 44,
             "clp": 453666,
-            "costos": 334340
+            "costos": 334340,
+            "stock": 492
           }
         }
       },
@@ -27438,17 +28595,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 68,
             "clp": 905258,
-            "costos": 542927
+            "costos": 542927,
+            "stock": 140
           },
           "Calzado": {
             "units": 35,
             "clp": 362153,
-            "costos": 239261
+            "costos": 239261,
+            "stock": 73
           },
           "Vestuario Infantil": {
             "units": 55,
             "clp": 586323,
-            "costos": 317725
+            "costos": 317725,
+            "stock": 79
           }
         }
       },
@@ -27466,7 +28626,8 @@ const REAL_SELLOUT = {
           "Calzado": {
             "units": 114,
             "clp": 2020872,
-            "costos": 879760
+            "costos": 879760,
+            "stock": 280
           }
         }
       }
@@ -27486,7 +28647,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 160,
             "clp": 748136,
-            "costos": 723636
+            "costos": 723636,
+            "stock": 429
           }
         }
       }
@@ -27506,17 +28668,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 4,
             "clp": 6724,
-            "costos": 7160
+            "costos": 7160,
+            "stock": 32
           },
           "Vestuario Adulto": {
             "units": 5,
             "clp": 8405,
-            "costos": 17500
+            "costos": 17500,
+            "stock": 104
           },
           "Vestuario Infantil": {
             "units": 6,
             "clp": 6721,
-            "costos": 22600
+            "costos": 22600,
+            "stock": 215
           }
         }
       }
@@ -27536,17 +28701,20 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 455,
             "clp": 2791855,
-            "costos": 2653228
+            "costos": 2653228,
+            "stock": 509
           },
           "Vestuario Infantil": {
             "units": 25,
             "clp": 129354,
-            "costos": 134733
+            "costos": 134733,
+            "stock": 24
           },
           "Vestuario Adulto": {
             "units": 2,
             "clp": 5042,
-            "costos": 7400
+            "costos": 7400,
+            "stock": 1
           }
         }
       }
@@ -27566,7 +28734,8 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 58,
             "clp": 240007,
-            "costos": 233720
+            "costos": 233720,
+            "stock": 281
           }
         }
       }
@@ -27586,22 +28755,26 @@ const REAL_SELLOUT = {
           "Ropa Interior": {
             "units": 13,
             "clp": 106399,
-            "costos": 88415
+            "costos": 88415,
+            "stock": 131
           },
           "Vestuario Infantil": {
             "units": 7,
             "clp": 66931,
-            "costos": 40562
+            "costos": 40562,
+            "stock": 152
           },
           "Calzado": {
             "units": 1,
             "clp": 7990,
-            "costos": 8399
+            "costos": 8399,
+            "stock": 1
           },
           "Vestuario Adulto": {
             "units": 9,
             "clp": 55916,
-            "costos": 54368
+            "costos": 54368,
+            "stock": 1
           }
         }
       }
@@ -27621,7 +28794,8 @@ const REAL_SELLOUT = {
           "Accesorios y Otros": {
             "units": 1,
             "clp": 14277,
-            "costos": 9280
+            "costos": 9280,
+            "stock": 140
           }
         }
       }
@@ -28785,5 +29959,5 @@ const REAL_SELLOUT = {
       "value": 165.1
     }
   ],
-  "generatedAt": "2026-03-16T10:25:53.619038"
+  "generatedAt": "2026-03-16T18:03:12.467782"
 };

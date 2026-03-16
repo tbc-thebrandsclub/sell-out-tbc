@@ -410,6 +410,14 @@ def process(year=2026, days_back=None):
             chain_store_div[chain][store]["byDiv"][div]["costos"] += r['_costos']
 
     # Stock por tienda (para ranking) — usar fecha más reciente, solo stock LOCAL
+    # Build SKU→division map from sales for stock division breakdown
+    sku_division_map = {}
+    for r in sales:
+        ci = r.get('codigo_interno', '')
+        div = r.get('_division', 'Sin Clasificar')
+        if ci and div != 'Sin Clasificar':
+            sku_division_map[ci] = div
+
     store_stock_map = {}
     if stock_data:
         stock_dates_set = set(r.get('fecha', '') for r in stock_data if r.get('fecha'))
@@ -422,8 +430,14 @@ def process(year=2026, days_back=None):
                 sname = r.get('nombre_local', '') or r.get('local', '')
                 key = (chain, sname)
                 if key not in store_stock_map:
-                    store_stock_map[key] = {"stock_local": 0}
-                store_stock_map[key]["stock_local"] += (r.get('stock_local', 0) or 0)
+                    store_stock_map[key] = {"stock_local": 0, "byDiv": defaultdict(float)}
+                sl = r.get('stock_local', 0) or 0
+                store_stock_map[key]["stock_local"] += sl
+                # Map stock to division via SKU
+                ci = r.get('codigo_interno', '')
+                div = sku_division_map.get(ci)
+                if div:
+                    store_stock_map[key]["byDiv"][div] += sl
 
     # Venta últimas 4 semanas por tienda (para Sem. Stock)
     # Calcular última fecha de venta por cadena
@@ -466,6 +480,11 @@ def process(year=2026, days_back=None):
             sales_4w = store_sales_4w.get((chain, name), {}).get("units", 0)
             weekly_avg_4w = sales_4w / 4 if sales_4w > 0 else 0
             weeks_stock = round(stock_units / weekly_avg_4w, 1) if weekly_avg_4w > 0 else 0
+            # Stock by division for this store
+            stock_by_div = {}
+            if stock_info:
+                for div, sv in stock_info.get("byDiv", {}).items():
+                    stock_by_div[div] = round(sv)
             store_list.append({
                 "store": name,
                 "storeCode": d["local"],
@@ -477,7 +496,8 @@ def process(year=2026, days_back=None):
                 "stockUnits": stock_units,
                 "weeksOfStock": weeks_stock,
                 "byDivision": {
-                    div: {"units": round(dd["units"]), "clp": round(dd["clp"]), "costos": round(dd["costos"])}
+                    div: {"units": round(dd["units"]), "clp": round(dd["clp"]), "costos": round(dd["costos"]),
+                           "stock": stock_by_div.get(div, 0)}
                     for div, dd in d["byDiv"].items()
                 }
             })

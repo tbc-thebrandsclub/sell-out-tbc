@@ -496,21 +496,51 @@ function getFilteredData() {
     const filteredRanking = {};
     Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
       const filtered = stores.filter(s => s.byDivision && f.divisions.some(div => s.byDivision[div])).map(s => {
-        let uSum = 0, cSum = 0, costSum = 0;
+        let uSum = 0, cSum = 0, costSum = 0, stockSum = 0;
         const filteredDivs = {};
         f.divisions.forEach(div => {
           const dd = s.byDivision[div];
-          if (dd) { uSum += dd.units; cSum += dd.clp; costSum += (dd.costos || 0); filteredDivs[div] = dd; }
+          if (dd) { uSum += dd.units; cSum += dd.clp; costSum += (dd.costos || 0); stockSum += (dd.stock || 0); filteredDivs[div] = dd; }
         });
+        const sales4w = s.weeksOfStock > 0 && s.stockUnits > 0 ? s.stockUnits / s.weeksOfStock * 4 : 0;
+        const divStockRatio = s.stockUnits > 0 ? stockSum / s.stockUnits : 0;
+        const filteredSales4w = sales4w * divStockRatio;
+        const weeklyAvg = filteredSales4w / 4;
         return {
           ...s, units: uSum, clp: cSum, costos: costSum,
           margin: cSum > 0 ? Math.round((cSum - costSum) / cSum * 1000) / 10 : 0,
+          stockUnits: stockSum,
+          weeksOfStock: weeklyAvg > 0 ? Math.round(stockSum / weeklyAvg * 10) / 10 : 0,
           byDivision: filteredDivs
         };
       });
       if (filtered.length) filteredRanking[ch] = filtered;
     });
     rankingByChainStore = filteredRanking;
+  }
+
+  // Proportional stock scaling for license/temporal filters
+  if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length) {
+    // Calculate overall sales ratio: filtered vs original
+    const origTotalUnits = (src.kpis || {}).totalUnits || 1;
+    const filteredSalesUnits = dailySales.reduce((s, d) => s + d.units, 0);
+    const stockRatio = filteredSalesUnits / origTotalUnits;
+    if (stockRatio < 1) {
+      const scaledRanking = {};
+      Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
+        scaledRanking[ch] = stores.map(s => {
+          const scaledStock = Math.round(s.stockUnits * stockRatio);
+          const weeklyAvg = s.weeksOfStock > 0 && s.stockUnits > 0 ? s.stockUnits / s.weeksOfStock / 4 : 0;
+          const scaledWeeklyAvg = weeklyAvg * stockRatio;
+          return {
+            ...s,
+            stockUnits: scaledStock,
+            weeksOfStock: scaledWeeklyAvg > 0 ? Math.round(scaledStock / scaledWeeklyAvg * 10) / 10 : 0
+          };
+        });
+      });
+      rankingByChainStore = scaledRanking;
+    }
   }
 
   // Re-aggregate dailyTotals FIRST (single source of truth for KPIs + chart)

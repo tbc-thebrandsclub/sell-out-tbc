@@ -31,5 +31,8 @@ __pycache__/
 venv/
 .venv/
 
+# ── Vercel ──
+.vercel/
+
 # ── Claude internal ──
 .claude/

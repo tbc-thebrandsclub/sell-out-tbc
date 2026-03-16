@@ -1764,9 +1764,15 @@ function initRankingTable(data) {
     chainSel.appendChild(opt);
   });
   const render = () => renderStoreRanking(data, chainSel.value, sortSel.value);
-  chainSel.addEventListener("change", render);
-  sortSel.addEventListener("change", render);
-  render();
+  // Remove old listeners by cloning elements
+  const newChainSel = chainSel.cloneNode(true);
+  chainSel.parentNode.replaceChild(newChainSel, chainSel);
+  const newSortSel = sortSel.cloneNode(true);
+  sortSel.parentNode.replaceChild(newSortSel, sortSel);
+  const render2 = () => renderStoreRanking(data, newChainSel.value, newSortSel.value);
+  newChainSel.addEventListener("change", render2);
+  newSortSel.addEventListener("change", render2);
+  render2();
 }
 
 let rankingState = { stores: [], page: 1, pageSize: 100 };

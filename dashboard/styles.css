@@ -189,6 +189,14 @@ body {
 }
 
 /* ── Header ────────────────────────────────────────────── */
+.sticky-top-panel {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .header {
   padding: 1.25rem 2rem;
   display: flex;
@@ -474,7 +482,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-  z-index: 100;
+  z-index: 200;
   padding: 0.25rem 0;
 }
 .multi-select.open .ms-dropdown { display: block; }

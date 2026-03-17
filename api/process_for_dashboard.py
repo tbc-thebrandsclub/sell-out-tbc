@@ -558,6 +558,102 @@ def process(year=2026, days_back=None):
                         for ch, d in p["byChain"].items()}
         })
 
+    # ── 11c. Venta semanal por tienda (últimas 4 semanas) ──
+    # Determine ISO week numbers from dates_sorted
+    from datetime import date as _date_type
+    store_week_agg = defaultdict(lambda: defaultdict(lambda: {"clp": 0, "units": 0}))
+    week_labels = set()
+    for r in sales:
+        d = r['_date']
+        if not d:
+            continue
+        try:
+            dt = datetime.strptime(d, '%Y-%m-%d')
+            iso_year, iso_week, _ = dt.isocalendar()
+            wk = f"{iso_week}{iso_year}"  # e.g. "72026"
+            wk_label = f"SEM {iso_week:02d}"
+        except (ValueError, TypeError):
+            continue
+        chain = r.get('sub_cadena', '')
+        store = r.get('nombre_local', '') or r.get('local', '')
+        store_week_agg[(chain, store)][wk]["clp"] += r['_clp']
+        store_week_agg[(chain, store)][wk]["units"] += r['_units']
+        week_labels.add((iso_week, iso_year, wk))
+
+    # Get last 4 weeks
+    sorted_weeks = sorted(week_labels, key=lambda x: (x[1], x[0]))
+    last_4_weeks = sorted_weeks[-4:] if len(sorted_weeks) >= 4 else sorted_weeks
+    last_4_wk_keys = [w[2] for w in last_4_weeks]
+    last_4_wk_labels = [f"SEM {w[0]:02d}" for w in last_4_weeks]
+
+    weekly_by_store = []
+    for (chain, store), weeks_data in store_week_agg.items():
+        total_clp = sum(weeks_data[wk]["clp"] for wk in last_4_wk_keys)
+        if total_clp <= 0:
+            continue
+        weeks_out = {}
+        for wk in last_4_wk_keys:
+            d = weeks_data.get(wk, {"clp": 0, "units": 0})
+            weeks_out[wk] = {"clp": round(d["clp"]), "units": round(d["units"])}
+        weekly_by_store.append({
+            "store": store, "chain": chain,
+            "weeks": weeks_out, "totalClp": round(total_clp),
+            "totalUnits": round(sum(weeks_data[wk]["units"] for wk in last_4_wk_keys))
+        })
+    weekly_by_store.sort(key=lambda x: -x["totalClp"])
+    weekly_by_store = weekly_by_store[:100]  # Top 100 stores
+
+    # Week totals for bar chart
+    week_totals = []
+    for i, wk in enumerate(last_4_wk_keys):
+        total = sum(store_week_agg[k][wk]["clp"] for k in store_week_agg)
+        week_totals.append({"week": wk, "label": last_4_wk_labels[i], "clp": round(total)})
+
+    weekly_store_data = {
+        "stores": weekly_by_store,
+        "weekKeys": last_4_wk_keys,
+        "weekLabels": last_4_wk_labels,
+        "weekTotals": week_totals,
+    }
+
+    print(f"  Weekly by store: {len(weekly_by_store)} tiendas, {len(last_4_wk_keys)} semanas")
+
+    # ── 11d. Resumen por Licencia (todas) ────────────────
+    license_summary = []
+    # Aggregate all licenses (not just top 15)
+    lic_full_agg = defaultdict(lambda: {"units": 0, "clp": 0, "costos": 0})
+    for r in sales:
+        lic = r.get('propiedad', 'Sin Licencia')
+        lic_full_agg[lic]["units"] += r['_units']
+        lic_full_agg[lic]["clp"] += r['_clp']
+        lic_full_agg[lic]["costos"] += r['_costos']
+
+    # Stock by license (latest date)
+    lic_stock = defaultdict(float)
+    if stock_data and latest_stock_date:
+        for r in stock_data:
+            if r.get('fecha', '') != latest_stock_date:
+                continue
+            lic = r.get('propiedad', '')
+            sl = r.get('stock_local', 0) or 0
+            if lic:
+                lic_stock[lic] += sl
+
+    for lic, d in sorted(lic_full_agg.items(), key=lambda x: -x[1]["units"]):
+        margin = round((d["clp"] - d["costos"]) / d["clp"] * 100, 1) if d["clp"] > 0 else 0
+        pct = round(d["units"] / total_units * 100, 2) if total_units > 0 else 0
+        license_summary.append({
+            "license": lic,
+            "units": round(d["units"]),
+            "clp": round(d["clp"]),
+            "costos": round(d["costos"]),
+            "margin": margin,
+            "pctUnits": pct,
+            "stockUnits": round(lic_stock.get(lic, 0)),
+        })
+
+    print(f"  License summary: {len(license_summary)} licencias")
+
     # ── 12. Mix de División por Cadena ───────────────────
     chain_div_agg = defaultdict(lambda: defaultdict(lambda: {"units": 0}))
     chain_totals = defaultdict(float)
@@ -983,6 +1079,8 @@ def process(year=2026, days_back=None):
         "byDivisionDaily": by_division_daily,
         "rankingByChainStore": ranking_by_chain_store,
         "rankingByProduct": ranking_by_product,
+        "weeklyStoreData": weekly_store_data,
+        "licenseSummary": license_summary,
         "rankingWeeksPeriod": round(num_weeks_period, 1),
         "divisionMixByChain": division_mix_by_chain,
         "velocityMetrics": velocity_metrics,

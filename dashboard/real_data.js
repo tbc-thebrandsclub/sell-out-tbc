@@ -1,17 +1,17 @@
 // Auto-generated from IV API data - DO NOT EDIT MANUALLY
-// Generated: 2026-03-16 18:30:11
+// Generated: 2026-03-17 18:12:12
 // Source: 114517 sales records, 34 days
-// Blocks: 34 data sections
+// Blocks: 36 data sections
 
 const REAL_SELLOUT = {
   "_meta": {
-    "generatedAt": "2026-03-16T18:30:10.707337",
+    "generatedAt": "2026-03-17T18:12:11.729616",
     "salesRecords": 114517,
     "salesDateFrom": "2026-02-10",
     "salesDateTo": "2026-03-15",
     "salesDays": 34,
     "stockRecords": 1682329,
-    "daysSinceLatest": 1,
+    "daysSinceLatest": 2,
     "freshness": "ok",
     "pipelineStatus": "ok",
     "chains": [
@@ -35,139 +35,139 @@ const REAL_SELLOUT = {
         "chain": "Ekono",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 1,
+        "daysOld": 2,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 1,
-        "status": "fresh",
+        "status": "warning",
         "records": 99
       },
       {
         "chain": "Hiper Lider",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 1,
+        "daysOld": 2,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 97,
-        "status": "fresh",
+        "status": "warning",
         "records": 16424
       },
       {
         "chain": "Hites",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 1,
+        "daysOld": 2,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 29,
-        "status": "fresh",
+        "status": "warning",
         "records": 12928
       },
       {
         "chain": "Lider Express",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 1,
+        "daysOld": 2,
         "rangeDays": 34,
         "daysWithData": 26,
         "stores": 1,
-        "status": "fresh",
+        "status": "warning",
         "records": 49
       },
       {
         "chain": "Paris",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 1,
+        "daysOld": 2,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 49,
-        "status": "fresh",
+        "status": "warning",
         "records": 15062
       },
       {
         "chain": "Walmart",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 1,
+        "daysOld": 2,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 1,
-        "status": "fresh",
+        "status": "warning",
         "records": 224
       },
       {
         "chain": "Falabella",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 43,
-        "status": "warning",
+        "status": "stale",
         "records": 4388
       },
       {
         "chain": "Johnson",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 33,
         "daysWithData": 18,
         "stores": 1,
-        "status": "warning",
+        "status": "stale",
         "records": 34
       },
       {
         "chain": "Jumbo",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 42,
-        "status": "warning",
+        "status": "stale",
         "records": 31708
       },
       {
         "chain": "La Polar",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 32,
-        "status": "warning",
+        "status": "stale",
         "records": 5544
       },
       {
         "chain": "Ripley",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 44,
-        "status": "warning",
+        "status": "stale",
         "records": 27570
       },
       {
         "chain": "Tottus",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 28,
-        "status": "warning",
+        "status": "stale",
         "records": 471
       },
       {
         "chain": "Acuenta",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-12",
-        "daysOld": 4,
+        "daysOld": 5,
         "rangeDays": 31,
         "daysWithData": 13,
         "stores": 1,
@@ -178,7 +178,7 @@ const REAL_SELLOUT = {
         "chain": "Cencosud",
         "firstDate": "2026-02-28",
         "lastUpdate": "2026-02-28",
-        "daysOld": 16,
+        "daysOld": 17,
         "rangeDays": 1,
         "daysWithData": 1,
         "stores": 1,
@@ -32727,6 +32727,3598 @@ const REAL_SELLOUT = {
       }
     }
   ],
+  "weeklyStoreData": {
+    "stores": [
+      {
+        "store": "Mall Portal Rancagua",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2566790,
+            "units": 306
+          },
+          "92026": {
+            "clp": 3164538,
+            "units": 370
+          },
+          "102026": {
+            "clp": 3441464,
+            "units": 353
+          },
+          "112026": {
+            "clp": 2968393,
+            "units": 275
+          }
+        },
+        "totalClp": 12141186,
+        "totalUnits": 1304
+      },
+      {
+        "store": "Bilbao",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2320881,
+            "units": 280
+          },
+          "92026": {
+            "clp": 2659720,
+            "units": 316
+          },
+          "102026": {
+            "clp": 4240261,
+            "units": 413
+          },
+          "112026": {
+            "clp": 2795660,
+            "units": 294
+          }
+        },
+        "totalClp": 12016521,
+        "totalUnits": 1303
+      },
+      {
+        "store": "Mall Alto Las Condes",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2481328,
+            "units": 313
+          },
+          "92026": {
+            "clp": 3163118,
+            "units": 365
+          },
+          "102026": {
+            "clp": 3320039,
+            "units": 338
+          },
+          "112026": {
+            "clp": 2804139,
+            "units": 292
+          }
+        },
+        "totalClp": 11768625,
+        "totalUnits": 1308
+      },
+      {
+        "store": "Hualpén",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2877867,
+            "units": 318
+          },
+          "92026": {
+            "clp": 2519723,
+            "units": 295
+          },
+          "102026": {
+            "clp": 3737410,
+            "units": 384
+          },
+          "112026": {
+            "clp": 2339217,
+            "units": 227
+          }
+        },
+        "totalClp": 11474217,
+        "totalUnits": 1224
+      },
+      {
+        "store": "La Serena Ruta 5",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 3243226,
+            "units": 382
+          },
+          "92026": {
+            "clp": 3067268,
+            "units": 326
+          },
+          "102026": {
+            "clp": 2860990,
+            "units": 276
+          },
+          "112026": {
+            "clp": 2025659,
+            "units": 201
+          }
+        },
+        "totalClp": 11197143,
+        "totalUnits": 1185
+      },
+      {
+        "store": "Mall Costanera Center",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2105240,
+            "units": 258
+          },
+          "92026": {
+            "clp": 2195560,
+            "units": 247
+          },
+          "102026": {
+            "clp": 3556127,
+            "units": 354
+          },
+          "112026": {
+            "clp": 2674755,
+            "units": 248
+          }
+        },
+        "totalClp": 10531681,
+        "totalUnits": 1107
+      },
+      {
+        "store": "Pedro Aguirre Cerda Antofagasta",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2962016,
+            "units": 356
+          },
+          "92026": {
+            "clp": 2925022,
+            "units": 352
+          },
+          "102026": {
+            "clp": 2963756,
+            "units": 321
+          },
+          "112026": {
+            "clp": 1649596,
+            "units": 167
+          }
+        },
+        "totalClp": 10500389,
+        "totalUnits": 1196
+      },
+      {
+        "store": "Mall Portal El Llano",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1803900,
+            "units": 219
+          },
+          "92026": {
+            "clp": 2356725,
+            "units": 284
+          },
+          "102026": {
+            "clp": 3721080,
+            "units": 394
+          },
+          "112026": {
+            "clp": 2267148,
+            "units": 220
+          }
+        },
+        "totalClp": 10148853,
+        "totalUnits": 1117
+      },
+      {
+        "store": "Chillán",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2272102,
+            "units": 261
+          },
+          "92026": {
+            "clp": 2487579,
+            "units": 304
+          },
+          "102026": {
+            "clp": 3177105,
+            "units": 320
+          },
+          "112026": {
+            "clp": 2008837,
+            "units": 193
+          }
+        },
+        "totalClp": 9945623,
+        "totalUnits": 1078
+      },
+      {
+        "store": "Viña del Mar 1 Norte",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2192891,
+            "units": 237
+          },
+          "92026": {
+            "clp": 1915535,
+            "units": 223
+          },
+          "102026": {
+            "clp": 3542982,
+            "units": 345
+          },
+          "112026": {
+            "clp": 2272804,
+            "units": 212
+          }
+        },
+        "totalClp": 9924212,
+        "totalUnits": 1017
+      },
+      {
+        "store": "Concón",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2930687,
+            "units": 320
+          },
+          "92026": {
+            "clp": 2250076,
+            "units": 235
+          },
+          "102026": {
+            "clp": 2733873,
+            "units": 260
+          },
+          "112026": {
+            "clp": 2004987,
+            "units": 195
+          }
+        },
+        "totalClp": 9919624,
+        "totalUnits": 1010
+      },
+      {
+        "store": "Mall Portal Osorno",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2837149,
+            "units": 317
+          },
+          "92026": {
+            "clp": 2343591,
+            "units": 261
+          },
+          "102026": {
+            "clp": 3159168,
+            "units": 332
+          },
+          "112026": {
+            "clp": 1559015,
+            "units": 158
+          }
+        },
+        "totalClp": 9898923,
+        "totalUnits": 1068
+      },
+      {
+        "store": "Mall Florida Center",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2501784,
+            "units": 300
+          },
+          "92026": {
+            "clp": 2628785,
+            "units": 311
+          },
+          "102026": {
+            "clp": 2815754,
+            "units": 304
+          },
+          "112026": {
+            "clp": 1874208,
+            "units": 182
+          }
+        },
+        "totalClp": 9820530,
+        "totalUnits": 1097
+      },
+      {
+        "store": "Angamos",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1549118,
+            "units": 179
+          },
+          "92026": {
+            "clp": 2089843,
+            "units": 237
+          },
+          "102026": {
+            "clp": 3113186,
+            "units": 321
+          },
+          "112026": {
+            "clp": 2983221,
+            "units": 296
+          }
+        },
+        "totalClp": 9735369,
+        "totalUnits": 1033
+      },
+      {
+        "store": "Mall Arauco Maipú",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2544171,
+            "units": 301
+          },
+          "92026": {
+            "clp": 2078202,
+            "units": 240
+          },
+          "102026": {
+            "clp": 3012647,
+            "units": 308
+          },
+          "112026": {
+            "clp": 1761962,
+            "units": 174
+          }
+        },
+        "totalClp": 9396982,
+        "totalUnits": 1023
+      },
+      {
+        "store": "Temuco",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1569892,
+            "units": 121
+          },
+          "92026": {
+            "clp": 2402282,
+            "units": 187
+          },
+          "102026": {
+            "clp": 3298098,
+            "units": 212
+          },
+          "112026": {
+            "clp": 1528406,
+            "units": 121
+          }
+        },
+        "totalClp": 8798678,
+        "totalUnits": 641
+      },
+      {
+        "store": "Calama",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1968447,
+            "units": 208
+          },
+          "92026": {
+            "clp": 2195725,
+            "units": 250
+          },
+          "102026": {
+            "clp": 2623403,
+            "units": 281
+          },
+          "112026": {
+            "clp": 1762519,
+            "units": 172
+          }
+        },
+        "totalClp": 8550095,
+        "totalUnits": 911
+      },
+      {
+        "store": "Peñalolén",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2149392,
+            "units": 233
+          },
+          "92026": {
+            "clp": 1937940,
+            "units": 218
+          },
+          "102026": {
+            "clp": 2633586,
+            "units": 300
+          },
+          "112026": {
+            "clp": 1718879,
+            "units": 211
+          }
+        },
+        "totalClp": 8439797,
+        "totalUnits": 962
+      },
+      {
+        "store": "Estación Central",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1603371,
+            "units": 106
+          },
+          "92026": {
+            "clp": 2453449,
+            "units": 169
+          },
+          "102026": {
+            "clp": 2634926,
+            "units": 226
+          },
+          "112026": {
+            "clp": 1304583,
+            "units": 110
+          }
+        },
+        "totalClp": 7996329,
+        "totalUnits": 611
+      },
+      {
+        "store": "Mall Portal lLa Dehesa",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1895578,
+            "units": 208
+          },
+          "92026": {
+            "clp": 1758997,
+            "units": 214
+          },
+          "102026": {
+            "clp": 2403352,
+            "units": 253
+          },
+          "112026": {
+            "clp": 1657405,
+            "units": 175
+          }
+        },
+        "totalClp": 7715332,
+        "totalUnits": 850
+      },
+      {
+        "store": "Linares",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1566433,
+            "units": 121
+          },
+          "92026": {
+            "clp": 1921546,
+            "units": 141
+          },
+          "102026": {
+            "clp": 2584328,
+            "units": 185
+          },
+          "112026": {
+            "clp": 1541205,
+            "units": 128
+          }
+        },
+        "totalClp": 7613512,
+        "totalUnits": 575
+      },
+      {
+        "store": "Mall Curicó",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1601650,
+            "units": 196
+          },
+          "92026": {
+            "clp": 2251215,
+            "units": 268
+          },
+          "102026": {
+            "clp": 2273876,
+            "units": 243
+          },
+          "112026": {
+            "clp": 1386578,
+            "units": 145
+          }
+        },
+        "totalClp": 7513319,
+        "totalUnits": 852
+      },
+      {
+        "store": "Mall Marina Arauco",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1459681,
+            "units": 208
+          },
+          "92026": {
+            "clp": 2543906,
+            "units": 321
+          },
+          "102026": {
+            "clp": 2121786,
+            "units": 243
+          },
+          "112026": {
+            "clp": 1315954,
+            "units": 153
+          }
+        },
+        "totalClp": 7441327,
+        "totalUnits": 925
+      },
+      {
+        "store": "Mall Portal Temuco",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2267643,
+            "units": 247
+          },
+          "92026": {
+            "clp": 1793435,
+            "units": 218
+          },
+          "102026": {
+            "clp": 2265944,
+            "units": 250
+          },
+          "112026": {
+            "clp": 1094195,
+            "units": 109
+          }
+        },
+        "totalClp": 7421217,
+        "totalUnits": 824
+      },
+      {
+        "store": "Rancagua",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1409074,
+            "units": 110
+          },
+          "92026": {
+            "clp": 2018630,
+            "units": 170
+          },
+          "102026": {
+            "clp": 2713844,
+            "units": 228
+          },
+          "112026": {
+            "clp": 1234202,
+            "units": 94
+          }
+        },
+        "totalClp": 7375750,
+        "totalUnits": 602
+      },
+      {
+        "store": "Mall Portal El Belloto",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2342335,
+            "units": 261
+          },
+          "92026": {
+            "clp": 1581511,
+            "units": 170
+          },
+          "102026": {
+            "clp": 2153165,
+            "units": 208
+          },
+          "112026": {
+            "clp": 1127211,
+            "units": 99
+          }
+        },
+        "totalClp": 7204223,
+        "totalUnits": 738
+      },
+      {
+        "store": "Mall Portal Ñuñoa.",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2094109,
+            "units": 266
+          },
+          "92026": {
+            "clp": 1490237,
+            "units": 197
+          },
+          "102026": {
+            "clp": 2121225,
+            "units": 232
+          },
+          "112026": {
+            "clp": 1373697,
+            "units": 136
+          }
+        },
+        "totalClp": 7079268,
+        "totalUnits": 831
+      },
+      {
+        "store": "Internet",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1957395,
+            "units": 370
+          },
+          "92026": {
+            "clp": 2082625,
+            "units": 378
+          },
+          "102026": {
+            "clp": 1410609,
+            "units": 241
+          },
+          "112026": {
+            "clp": 1573978,
+            "units": 268
+          }
+        },
+        "totalClp": 7024607,
+        "totalUnits": 1257
+      },
+      {
+        "store": "Mall Pumay (Maipú)",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1253469,
+            "units": 103
+          },
+          "92026": {
+            "clp": 1987575,
+            "units": 143
+          },
+          "102026": {
+            "clp": 2078844,
+            "units": 159
+          },
+          "112026": {
+            "clp": 1608228,
+            "units": 132
+          }
+        },
+        "totalClp": 6928116,
+        "totalUnits": 537
+      },
+      {
+        "store": "Mall Portal La Reina",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1785796,
+            "units": 200
+          },
+          "92026": {
+            "clp": 1878027,
+            "units": 253
+          },
+          "102026": {
+            "clp": 1956704,
+            "units": 230
+          },
+          "112026": {
+            "clp": 1232633,
+            "units": 144
+          }
+        },
+        "totalClp": 6853160,
+        "totalUnits": 827
+      },
+      {
+        "store": "Los Ángeles",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1849745,
+            "units": 223
+          },
+          "92026": {
+            "clp": 1835752,
+            "units": 209
+          },
+          "102026": {
+            "clp": 1840240,
+            "units": 196
+          },
+          "112026": {
+            "clp": 1228795,
+            "units": 116
+          }
+        },
+        "totalClp": 6754532,
+        "totalUnits": 744
+      },
+      {
+        "store": "Puerto Montt",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1189524,
+            "units": 84
+          },
+          "92026": {
+            "clp": 2526678,
+            "units": 183
+          },
+          "102026": {
+            "clp": 2116476,
+            "units": 166
+          },
+          "112026": {
+            "clp": 838162,
+            "units": 57
+          }
+        },
+        "totalClp": 6670840,
+        "totalUnits": 490
+      },
+      {
+        "store": "Puerto Montt",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2210484,
+            "units": 239
+          },
+          "92026": {
+            "clp": 1822735,
+            "units": 197
+          },
+          "102026": {
+            "clp": 1624345,
+            "units": 168
+          },
+          "112026": {
+            "clp": 901184,
+            "units": 89
+          }
+        },
+        "totalClp": 6558748,
+        "totalUnits": 693
+      },
+      {
+        "store": "Iquique",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 2196089,
+            "units": 251
+          },
+          "92026": {
+            "clp": 1874516,
+            "units": 207
+          },
+          "102026": {
+            "clp": 1564327,
+            "units": 150
+          },
+          "112026": {
+            "clp": 859845,
+            "units": 83
+          }
+        },
+        "totalClp": 6494776,
+        "totalUnits": 691
+      },
+      {
+        "store": "Mall Marina Arauco",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1908838,
+            "units": 183
+          },
+          "92026": {
+            "clp": 1654217,
+            "units": 141
+          },
+          "102026": {
+            "clp": 1467101,
+            "units": 131
+          },
+          "112026": {
+            "clp": 1136987,
+            "units": 96
+          }
+        },
+        "totalClp": 6167143,
+        "totalUnits": 551
+      },
+      {
+        "store": "Edificio Puente",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1268772,
+            "units": 83
+          },
+          "92026": {
+            "clp": 1746120,
+            "units": 139
+          },
+          "102026": {
+            "clp": 1717288,
+            "units": 141
+          },
+          "112026": {
+            "clp": 1402490,
+            "units": 125
+          }
+        },
+        "totalClp": 6134670,
+        "totalUnits": 488
+      },
+      {
+        "store": "Mall Paseo Los Dominicos",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1531705,
+            "units": 193
+          },
+          "92026": {
+            "clp": 1856080,
+            "units": 200
+          },
+          "102026": {
+            "clp": 1600483,
+            "units": 185
+          },
+          "112026": {
+            "clp": 1079491,
+            "units": 118
+          }
+        },
+        "totalClp": 6067758,
+        "totalUnits": 696
+      },
+      {
+        "store": "Puente Alto",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1232680,
+            "units": 93
+          },
+          "92026": {
+            "clp": 2085570,
+            "units": 160
+          },
+          "102026": {
+            "clp": 1971060,
+            "units": 152
+          },
+          "112026": {
+            "clp": 777080,
+            "units": 61
+          }
+        },
+        "totalClp": 6066390,
+        "totalUnits": 466
+      },
+      {
+        "store": "Chillán",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1279693,
+            "units": 171
+          },
+          "92026": {
+            "clp": 1918495,
+            "units": 280
+          },
+          "102026": {
+            "clp": 1647218,
+            "units": 248
+          },
+          "112026": {
+            "clp": 1110883,
+            "units": 150
+          }
+        },
+        "totalClp": 5956289,
+        "totalUnits": 849
+      },
+      {
+        "store": "Los Andes",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1325795,
+            "units": 151
+          },
+          "92026": {
+            "clp": 1506230,
+            "units": 174
+          },
+          "102026": {
+            "clp": 1702936,
+            "units": 177
+          },
+          "112026": {
+            "clp": 1326702,
+            "units": 126
+          }
+        },
+        "totalClp": 5861663,
+        "totalUnits": 628
+      },
+      {
+        "store": "Temuco",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1386807,
+            "units": 208
+          },
+          "92026": {
+            "clp": 1838421,
+            "units": 275
+          },
+          "102026": {
+            "clp": 1708160,
+            "units": 266
+          },
+          "112026": {
+            "clp": 886441,
+            "units": 141
+          }
+        },
+        "totalClp": 5819829,
+        "totalUnits": 890
+      },
+      {
+        "store": "Puente Alto",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 867972,
+            "units": 105
+          },
+          "92026": {
+            "clp": 1887542,
+            "units": 210
+          },
+          "102026": {
+            "clp": 1906175,
+            "units": 206
+          },
+          "112026": {
+            "clp": 1140909,
+            "units": 115
+          }
+        },
+        "totalClp": 5802598,
+        "totalUnits": 636
+      },
+      {
+        "store": "Mall Plaza Sur",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1241901,
+            "units": 154
+          },
+          "92026": {
+            "clp": 1566660,
+            "units": 188
+          },
+          "102026": {
+            "clp": 1780806,
+            "units": 194
+          },
+          "112026": {
+            "clp": 1166094,
+            "units": 117
+          }
+        },
+        "totalClp": 5755461,
+        "totalUnits": 653
+      },
+      {
+        "store": "Antofagasta",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1546067,
+            "units": 247
+          },
+          "92026": {
+            "clp": 1509986,
+            "units": 218
+          },
+          "102026": {
+            "clp": 1774038,
+            "units": 250
+          },
+          "112026": {
+            "clp": 914450,
+            "units": 124
+          }
+        },
+        "totalClp": 5744541,
+        "totalUnits": 839
+      },
+      {
+        "store": "Melipilla",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 790122,
+            "units": 77
+          },
+          "92026": {
+            "clp": 2015824,
+            "units": 137
+          },
+          "102026": {
+            "clp": 1734555,
+            "units": 132
+          },
+          "112026": {
+            "clp": 1186170,
+            "units": 94
+          }
+        },
+        "totalClp": 5726671,
+        "totalUnits": 440
+      },
+      {
+        "store": "Mall Portal Rancagua",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1941378,
+            "units": 276
+          },
+          "92026": {
+            "clp": 1802143,
+            "units": 182
+          },
+          "102026": {
+            "clp": 1171163,
+            "units": 96
+          },
+          "112026": {
+            "clp": 796818,
+            "units": 63
+          }
+        },
+        "totalClp": 5711502,
+        "totalUnits": 617
+      },
+      {
+        "store": "Mall Del Centro (Talca)",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 840804,
+            "units": 69
+          },
+          "92026": {
+            "clp": 2184090,
+            "units": 163
+          },
+          "102026": {
+            "clp": 1584076,
+            "units": 121
+          },
+          "112026": {
+            "clp": 1092836,
+            "units": 82
+          }
+        },
+        "totalClp": 5701806,
+        "totalUnits": 435
+      },
+      {
+        "store": "Rancagua",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1860413,
+            "units": 270
+          },
+          "92026": {
+            "clp": 1481204,
+            "units": 210
+          },
+          "102026": {
+            "clp": 1302832,
+            "units": 173
+          },
+          "112026": {
+            "clp": 928177,
+            "units": 120
+          }
+        },
+        "totalClp": 5572626,
+        "totalUnits": 773
+      },
+      {
+        "store": "Talca",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1220382,
+            "units": 268
+          },
+          "92026": {
+            "clp": 1662327,
+            "units": 273
+          },
+          "102026": {
+            "clp": 1600536,
+            "units": 266
+          },
+          "112026": {
+            "clp": 931170,
+            "units": 139
+          }
+        },
+        "totalClp": 5414415,
+        "totalUnits": 946
+      },
+      {
+        "store": "Osorno",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1079126,
+            "units": 80
+          },
+          "92026": {
+            "clp": 1919550,
+            "units": 149
+          },
+          "102026": {
+            "clp": 1562302,
+            "units": 120
+          },
+          "112026": {
+            "clp": 824310,
+            "units": 69
+          }
+        },
+        "totalClp": 5385288,
+        "totalUnits": 418
+      },
+      {
+        "store": "Talca El Arenal",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1634157,
+            "units": 193
+          },
+          "92026": {
+            "clp": 1298389,
+            "units": 156
+          },
+          "102026": {
+            "clp": 1649481,
+            "units": 173
+          },
+          "112026": {
+            "clp": 796583,
+            "units": 76
+          }
+        },
+        "totalClp": 5378610,
+        "totalUnits": 598
+      },
+      {
+        "store": "La Serena",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1251504,
+            "units": 90
+          },
+          "92026": {
+            "clp": 1826533,
+            "units": 146
+          },
+          "102026": {
+            "clp": 1374850,
+            "units": 106
+          },
+          "112026": {
+            "clp": 921433,
+            "units": 87
+          }
+        },
+        "totalClp": 5374320,
+        "totalUnits": 429
+      },
+      {
+        "store": "Mall Plaza Norte",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1282583,
+            "units": 176
+          },
+          "92026": {
+            "clp": 1766033,
+            "units": 211
+          },
+          "102026": {
+            "clp": 1459281,
+            "units": 167
+          },
+          "112026": {
+            "clp": 860655,
+            "units": 120
+          }
+        },
+        "totalClp": 5368552,
+        "totalUnits": 674
+      },
+      {
+        "store": "Ovalle",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1241585,
+            "units": 100
+          },
+          "92026": {
+            "clp": 1522986,
+            "units": 117
+          },
+          "102026": {
+            "clp": 1612629,
+            "units": 120
+          },
+          "112026": {
+            "clp": 965591,
+            "units": 78
+          }
+        },
+        "totalClp": 5342791,
+        "totalUnits": 415
+      },
+      {
+        "store": "Mall Paseo San Bernardo",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1037222,
+            "units": 78
+          },
+          "92026": {
+            "clp": 1655388,
+            "units": 120
+          },
+          "102026": {
+            "clp": 1629070,
+            "units": 113
+          },
+          "112026": {
+            "clp": 958853,
+            "units": 70
+          }
+        },
+        "totalClp": 5280533,
+        "totalUnits": 381
+      },
+      {
+        "store": "Temuco",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1556267,
+            "units": 155
+          },
+          "92026": {
+            "clp": 1329973,
+            "units": 108
+          },
+          "102026": {
+            "clp": 1396687,
+            "units": 97
+          },
+          "112026": {
+            "clp": 800297,
+            "units": 60
+          }
+        },
+        "totalClp": 5083224,
+        "totalUnits": 420
+      },
+      {
+        "store": "Valparaíso",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 940300,
+            "units": 114
+          },
+          "92026": {
+            "clp": 1074819,
+            "units": 120
+          },
+          "102026": {
+            "clp": 1838895,
+            "units": 188
+          },
+          "112026": {
+            "clp": 1206077,
+            "units": 121
+          }
+        },
+        "totalClp": 5060090,
+        "totalUnits": 543
+      },
+      {
+        "store": "Mall Plaza Vespucio",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1204454,
+            "units": 184
+          },
+          "92026": {
+            "clp": 1760445,
+            "units": 253
+          },
+          "102026": {
+            "clp": 1438822,
+            "units": 190
+          },
+          "112026": {
+            "clp": 652353,
+            "units": 83
+          }
+        },
+        "totalClp": 5056074,
+        "totalUnits": 710
+      },
+      {
+        "store": "Mall Arauco Chillán",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1458963,
+            "units": 128
+          },
+          "92026": {
+            "clp": 1150998,
+            "units": 95
+          },
+          "102026": {
+            "clp": 1594802,
+            "units": 115
+          },
+          "112026": {
+            "clp": 822023,
+            "units": 56
+          }
+        },
+        "totalClp": 5026786,
+        "totalUnits": 394
+      },
+      {
+        "store": "Mall Parque Arauco",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1593790,
+            "units": 228
+          },
+          "92026": {
+            "clp": 1321978,
+            "units": 177
+          },
+          "102026": {
+            "clp": 1180552,
+            "units": 146
+          },
+          "112026": {
+            "clp": 908803,
+            "units": 123
+          }
+        },
+        "totalClp": 5005123,
+        "totalUnits": 674
+      },
+      {
+        "store": "Mall Costanera Center",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1041898,
+            "units": 153
+          },
+          "92026": {
+            "clp": 1231437,
+            "units": 170
+          },
+          "102026": {
+            "clp": 1456130,
+            "units": 225
+          },
+          "112026": {
+            "clp": 1271905,
+            "units": 184
+          }
+        },
+        "totalClp": 5001370,
+        "totalUnits": 732
+      },
+      {
+        "store": "Centro Urbano Bio Bio (Hualpén)",
+        "chain": "Hiper Lider",
+        "weeks": {
+          "82026": {
+            "clp": 1275818,
+            "units": 201
+          },
+          "92026": {
+            "clp": 1769304,
+            "units": 221
+          },
+          "102026": {
+            "clp": 1207149,
+            "units": 155
+          },
+          "112026": {
+            "clp": 713498,
+            "units": 95
+          }
+        },
+        "totalClp": 4965769,
+        "totalUnits": 672
+      },
+      {
+        "store": "Mall Arauco Maipú",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1025941,
+            "units": 100
+          },
+          "92026": {
+            "clp": 1759316,
+            "units": 163
+          },
+          "102026": {
+            "clp": 1354128,
+            "units": 156
+          },
+          "112026": {
+            "clp": 826232,
+            "units": 96
+          }
+        },
+        "totalClp": 4965617,
+        "totalUnits": 515
+      },
+      {
+        "store": "Mall Portal Vadivia",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1531765,
+            "units": 182
+          },
+          "92026": {
+            "clp": 1520580,
+            "units": 161
+          },
+          "102026": {
+            "clp": 1178974,
+            "units": 112
+          },
+          "112026": {
+            "clp": 713382,
+            "units": 66
+          }
+        },
+        "totalClp": 4944701,
+        "totalUnits": 521
+      },
+      {
+        "store": "Iquique",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1364650,
+            "units": 105
+          },
+          "92026": {
+            "clp": 1580782,
+            "units": 105
+          },
+          "102026": {
+            "clp": 1334745,
+            "units": 121
+          },
+          "112026": {
+            "clp": 637057,
+            "units": 50
+          }
+        },
+        "totalClp": 4917234,
+        "totalUnits": 381
+      },
+      {
+        "store": "Mall Parque Arauco",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 920974,
+            "units": 97
+          },
+          "92026": {
+            "clp": 1205982,
+            "units": 113
+          },
+          "102026": {
+            "clp": 1341075,
+            "units": 115
+          },
+          "112026": {
+            "clp": 1398847,
+            "units": 106
+          }
+        },
+        "totalClp": 4866878,
+        "totalUnits": 431
+      },
+      {
+        "store": "Copayapu Copiapó",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1343379,
+            "units": 157
+          },
+          "92026": {
+            "clp": 1022692,
+            "units": 123
+          },
+          "102026": {
+            "clp": 1401009,
+            "units": 168
+          },
+          "112026": {
+            "clp": 1091340,
+            "units": 121
+          }
+        },
+        "totalClp": 4858420,
+        "totalUnits": 569
+      },
+      {
+        "store": "Mall Costanera Center",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1625557,
+            "units": 184
+          },
+          "92026": {
+            "clp": 1352476,
+            "units": 125
+          },
+          "102026": {
+            "clp": 1124735,
+            "units": 99
+          },
+          "112026": {
+            "clp": 706227,
+            "units": 57
+          }
+        },
+        "totalClp": 4808995,
+        "totalUnits": 465
+      },
+      {
+        "store": "Pajaritos",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1321594,
+            "units": 146
+          },
+          "92026": {
+            "clp": 1314195,
+            "units": 155
+          },
+          "102026": {
+            "clp": 1410542,
+            "units": 145
+          },
+          "112026": {
+            "clp": 754871,
+            "units": 78
+          }
+        },
+        "totalClp": 4801201,
+        "totalUnits": 524
+      },
+      {
+        "store": "Concha Y Toro",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1039524,
+            "units": 121
+          },
+          "92026": {
+            "clp": 1097293,
+            "units": 128
+          },
+          "102026": {
+            "clp": 1363613,
+            "units": 145
+          },
+          "112026": {
+            "clp": 1256141,
+            "units": 123
+          }
+        },
+        "totalClp": 4756572,
+        "totalUnits": 517
+      },
+      {
+        "store": "Mall Plaza El Trébol",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1255567,
+            "units": 215
+          },
+          "92026": {
+            "clp": 1836067,
+            "units": 286
+          },
+          "102026": {
+            "clp": 1076094,
+            "units": 164
+          },
+          "112026": {
+            "clp": 534592,
+            "units": 74
+          }
+        },
+        "totalClp": 4702320,
+        "totalUnits": 739
+      },
+      {
+        "store": "Mall Plaza Oeste",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1070385,
+            "units": 98
+          },
+          "92026": {
+            "clp": 1418918,
+            "units": 129
+          },
+          "102026": {
+            "clp": 1350164,
+            "units": 163
+          },
+          "112026": {
+            "clp": 818740,
+            "units": 77
+          }
+        },
+        "totalClp": 4658207,
+        "totalUnits": 467
+      },
+      {
+        "store": "Mall Florida Center",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1214244,
+            "units": 204
+          },
+          "92026": {
+            "clp": 1546492,
+            "units": 263
+          },
+          "102026": {
+            "clp": 1242037,
+            "units": 204
+          },
+          "112026": {
+            "clp": 642794,
+            "units": 95
+          }
+        },
+        "totalClp": 4645567,
+        "totalUnits": 766
+      },
+      {
+        "store": "Mall Del Centro",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1188545,
+            "units": 128
+          },
+          "92026": {
+            "clp": 1478861,
+            "units": 150
+          },
+          "102026": {
+            "clp": 1145657,
+            "units": 119
+          },
+          "112026": {
+            "clp": 769873,
+            "units": 83
+          }
+        },
+        "totalClp": 4582936,
+        "totalUnits": 480
+      },
+      {
+        "store": "Mall Arauco Chillán",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1189232,
+            "units": 95
+          },
+          "92026": {
+            "clp": 1396104,
+            "units": 98
+          },
+          "102026": {
+            "clp": 1271488,
+            "units": 87
+          },
+          "112026": {
+            "clp": 697269,
+            "units": 53
+          }
+        },
+        "totalClp": 4554093,
+        "totalUnits": 333
+      },
+      {
+        "store": "Mall Plaza San Bernardo",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1215524,
+            "units": 215
+          },
+          "92026": {
+            "clp": 1579881,
+            "units": 270
+          },
+          "102026": {
+            "clp": 1020065,
+            "units": 160
+          },
+          "112026": {
+            "clp": 730695,
+            "units": 98
+          }
+        },
+        "totalClp": 4546165,
+        "totalUnits": 743
+      },
+      {
+        "store": "Mall Espacio Urbano Viña",
+        "chain": "Hiper Lider",
+        "weeks": {
+          "82026": {
+            "clp": 1416644,
+            "units": 231
+          },
+          "92026": {
+            "clp": 1514083,
+            "units": 255
+          },
+          "102026": {
+            "clp": 1106342,
+            "units": 171
+          },
+          "112026": {
+            "clp": 493137,
+            "units": 70
+          }
+        },
+        "totalClp": 4530206,
+        "totalUnits": 727
+      },
+      {
+        "store": "Puerto Montt",
+        "chain": "Hiper Lider",
+        "weeks": {
+          "82026": {
+            "clp": 604511,
+            "units": 145
+          },
+          "92026": {
+            "clp": 1481980,
+            "units": 267
+          },
+          "102026": {
+            "clp": 1387448,
+            "units": 265
+          },
+          "112026": {
+            "clp": 1038403,
+            "units": 145
+          }
+        },
+        "totalClp": 4512342,
+        "totalUnits": 822
+      },
+      {
+        "store": "Mall Portal Temuco",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 902307,
+            "units": 128
+          },
+          "92026": {
+            "clp": 1252282,
+            "units": 175
+          },
+          "102026": {
+            "clp": 1167516,
+            "units": 170
+          },
+          "112026": {
+            "clp": 1184026,
+            "units": 160
+          }
+        },
+        "totalClp": 4506131,
+        "totalUnits": 633
+      },
+      {
+        "store": "Mall Portal Osorno",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 1000190,
+            "units": 83
+          },
+          "92026": {
+            "clp": 1382775,
+            "units": 98
+          },
+          "102026": {
+            "clp": 1165020,
+            "units": 87
+          },
+          "112026": {
+            "clp": 951960,
+            "units": 66
+          }
+        },
+        "totalClp": 4499945,
+        "totalUnits": 334
+      },
+      {
+        "store": "Mall Plaza Los Ángeles",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 728331,
+            "units": 69
+          },
+          "92026": {
+            "clp": 1192654,
+            "units": 87
+          },
+          "102026": {
+            "clp": 1781436,
+            "units": 152
+          },
+          "112026": {
+            "clp": 773931,
+            "units": 69
+          }
+        },
+        "totalClp": 4476352,
+        "totalUnits": 377
+      },
+      {
+        "store": "Mall Plaza Copiapó",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 908056,
+            "units": 154
+          },
+          "92026": {
+            "clp": 1438629,
+            "units": 236
+          },
+          "102026": {
+            "clp": 1382689,
+            "units": 216
+          },
+          "112026": {
+            "clp": 664079,
+            "units": 91
+          }
+        },
+        "totalClp": 4393453,
+        "totalUnits": 697
+      },
+      {
+        "store": "Mall Barrio Independencia",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 1108640,
+            "units": 120
+          },
+          "92026": {
+            "clp": 1054338,
+            "units": 126
+          },
+          "102026": {
+            "clp": 1304420,
+            "units": 136
+          },
+          "112026": {
+            "clp": 911318,
+            "units": 96
+          }
+        },
+        "totalClp": 4378716,
+        "totalUnits": 478
+      },
+      {
+        "store": "Antofagasta",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 657540,
+            "units": 46
+          },
+          "92026": {
+            "clp": 1446519,
+            "units": 110
+          },
+          "102026": {
+            "clp": 1412676,
+            "units": 96
+          },
+          "112026": {
+            "clp": 841450,
+            "units": 60
+          }
+        },
+        "totalClp": 4358185,
+        "totalUnits": 312
+      },
+      {
+        "store": "Quilicura",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 766961,
+            "units": 65
+          },
+          "92026": {
+            "clp": 1441799,
+            "units": 127
+          },
+          "102026": {
+            "clp": 1358747,
+            "units": 111
+          },
+          "112026": {
+            "clp": 770484,
+            "units": 72
+          }
+        },
+        "totalClp": 4337991,
+        "totalUnits": 375
+      },
+      {
+        "store": "Valdivia",
+        "chain": "Hiper Lider",
+        "weeks": {
+          "82026": {
+            "clp": 654321,
+            "units": 141
+          },
+          "92026": {
+            "clp": 1957310,
+            "units": 309
+          },
+          "102026": {
+            "clp": 1284020,
+            "units": 233
+          },
+          "112026": {
+            "clp": 435219,
+            "units": 65
+          }
+        },
+        "totalClp": 4330870,
+        "totalUnits": 748
+      },
+      {
+        "store": "Mall Plaza Egaña",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 943287,
+            "units": 135
+          },
+          "92026": {
+            "clp": 1141472,
+            "units": 174
+          },
+          "102026": {
+            "clp": 1116548,
+            "units": 167
+          },
+          "112026": {
+            "clp": 1122705,
+            "units": 168
+          }
+        },
+        "totalClp": 4324012,
+        "totalUnits": 644
+      },
+      {
+        "store": "Mall Del Centro",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1185475,
+            "units": 170
+          },
+          "92026": {
+            "clp": 929429,
+            "units": 131
+          },
+          "102026": {
+            "clp": 1233980,
+            "units": 176
+          },
+          "112026": {
+            "clp": 958232,
+            "units": 135
+          }
+        },
+        "totalClp": 4307116,
+        "totalUnits": 612
+      },
+      {
+        "store": "Mall Plaza De Los Ríos",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1078363,
+            "units": 171
+          },
+          "92026": {
+            "clp": 1268049,
+            "units": 171
+          },
+          "102026": {
+            "clp": 1201052,
+            "units": 163
+          },
+          "112026": {
+            "clp": 601043,
+            "units": 66
+          }
+        },
+        "totalClp": 4148507,
+        "totalUnits": 571
+      },
+      {
+        "store": "Mall Vivo Coquimbo",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 745635,
+            "units": 57
+          },
+          "92026": {
+            "clp": 1308056,
+            "units": 106
+          },
+          "102026": {
+            "clp": 1222171,
+            "units": 87
+          },
+          "112026": {
+            "clp": 834713,
+            "units": 69
+          }
+        },
+        "totalClp": 4110575,
+        "totalUnits": 319
+      },
+      {
+        "store": "Mall Paseo Los Trapenses",
+        "chain": "Jumbo",
+        "weeks": {
+          "82026": {
+            "clp": 871304,
+            "units": 110
+          },
+          "92026": {
+            "clp": 1137883,
+            "units": 142
+          },
+          "102026": {
+            "clp": 1148516,
+            "units": 124
+          },
+          "112026": {
+            "clp": 939631,
+            "units": 99
+          }
+        },
+        "totalClp": 4097334,
+        "totalUnits": 475
+      },
+      {
+        "store": "Los Ángeles",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 1092851,
+            "units": 78
+          },
+          "92026": {
+            "clp": 1135449,
+            "units": 79
+          },
+          "102026": {
+            "clp": 1243751,
+            "units": 86
+          },
+          "112026": {
+            "clp": 561604,
+            "units": 50
+          }
+        },
+        "totalClp": 4033655,
+        "totalUnits": 293
+      },
+      {
+        "store": "Mall Plaza Vespucio",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 992713,
+            "units": 100
+          },
+          "92026": {
+            "clp": 1137959,
+            "units": 97
+          },
+          "102026": {
+            "clp": 993703,
+            "units": 85
+          },
+          "112026": {
+            "clp": 906395,
+            "units": 67
+          }
+        },
+        "totalClp": 4030770,
+        "totalUnits": 349
+      },
+      {
+        "store": "Concepción 2",
+        "chain": "Hites",
+        "weeks": {
+          "82026": {
+            "clp": 926668,
+            "units": 70
+          },
+          "92026": {
+            "clp": 1248517,
+            "units": 99
+          },
+          "102026": {
+            "clp": 1378115,
+            "units": 97
+          },
+          "112026": {
+            "clp": 474371,
+            "units": 36
+          }
+        },
+        "totalClp": 4027671,
+        "totalUnits": 302
+      },
+      {
+        "store": "Mall Vivo El Centro",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1498890,
+            "units": 286
+          },
+          "92026": {
+            "clp": 1373446,
+            "units": 249
+          },
+          "102026": {
+            "clp": 676691,
+            "units": 103
+          },
+          "112026": {
+            "clp": 351582,
+            "units": 54
+          }
+        },
+        "totalClp": 3900609,
+        "totalUnits": 692
+      },
+      {
+        "store": "Mall Paseo San Bernardo",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 654357,
+            "units": 71
+          },
+          "92026": {
+            "clp": 1498679,
+            "units": 148
+          },
+          "102026": {
+            "clp": 1126443,
+            "units": 96
+          },
+          "112026": {
+            "clp": 589612,
+            "units": 62
+          }
+        },
+        "totalClp": 3869091,
+        "totalUnits": 377
+      },
+      {
+        "store": "Los Ángeles",
+        "chain": "La Polar",
+        "weeks": {
+          "82026": {
+            "clp": 842128,
+            "units": 70
+          },
+          "92026": {
+            "clp": 1165763,
+            "units": 98
+          },
+          "102026": {
+            "clp": 1409811,
+            "units": 105
+          },
+          "112026": {
+            "clp": 445162,
+            "units": 37
+          }
+        },
+        "totalClp": 3862864,
+        "totalUnits": 310
+      },
+      {
+        "store": "Mall Espacio Pionero - Punta Arenas",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 1076702,
+            "units": 178
+          },
+          "92026": {
+            "clp": 1110298,
+            "units": 166
+          },
+          "102026": {
+            "clp": 1035724,
+            "units": 149
+          },
+          "112026": {
+            "clp": 580464,
+            "units": 90
+          }
+        },
+        "totalClp": 3803188,
+        "totalUnits": 583
+      },
+      {
+        "store": "Mall Florida Center",
+        "chain": "Paris",
+        "weeks": {
+          "82026": {
+            "clp": 783424,
+            "units": 70
+          },
+          "92026": {
+            "clp": 914896,
+            "units": 90
+          },
+          "102026": {
+            "clp": 1336734,
+            "units": 115
+          },
+          "112026": {
+            "clp": 668075,
+            "units": 68
+          }
+        },
+        "totalClp": 3703129,
+        "totalUnits": 343
+      },
+      {
+        "store": "Mall Arauco Maipú",
+        "chain": "Ripley",
+        "weeks": {
+          "82026": {
+            "clp": 871905,
+            "units": 148
+          },
+          "92026": {
+            "clp": 1176912,
+            "units": 201
+          },
+          "102026": {
+            "clp": 961360,
+            "units": 129
+          },
+          "112026": {
+            "clp": 657710,
+            "units": 106
+          }
+        },
+        "totalClp": 3667887,
+        "totalUnits": 584
+      }
+    ],
+    "weekKeys": [
+      "82026",
+      "92026",
+      "102026",
+      "112026"
+    ],
+    "weekLabels": [
+      "SEM 08",
+      "SEM 09",
+      "SEM 10",
+      "SEM 11"
+    ],
+    "weekTotals": [
+      {
+        "week": "82026",
+        "label": "SEM 08",
+        "clp": 220200402
+      },
+      {
+        "week": "92026",
+        "label": "SEM 09",
+        "clp": 271201340
+      },
+      {
+        "week": "102026",
+        "label": "SEM 10",
+        "clp": 275437019
+      },
+      {
+        "week": "112026",
+        "label": "SEM 11",
+        "clp": 178621575
+      }
+    ]
+  },
+  "licenseSummary": [
+    {
+      "license": "BLUEY",
+      "units": 25990,
+      "clp": 217039198,
+      "costos": 144642675,
+      "margin": 33.4,
+      "pctUnits": 19.18,
+      "stockUnits": 49139
+    },
+    {
+      "license": "Snoopy",
+      "units": 13985,
+      "clp": 117245649,
+      "costos": 73583369,
+      "margin": 37.2,
+      "pctUnits": 10.32,
+      "stockUnits": 21009
+    },
+    {
+      "license": "Paw Patrol",
+      "units": 13009,
+      "clp": 100625585,
+      "costos": 70011284,
+      "margin": 30.4,
+      "pctUnits": 9.6,
+      "stockUnits": 38337
+    },
+    {
+      "license": "LILO & STITCH",
+      "units": 8710,
+      "clp": 61596488,
+      "costos": 49782007,
+      "margin": 19.2,
+      "pctUnits": 6.43,
+      "stockUnits": 21333
+    },
+    {
+      "license": "Spiderman",
+      "units": 7597,
+      "clp": 90722445,
+      "costos": 54412570,
+      "margin": 40.0,
+      "pctUnits": 5.61,
+      "stockUnits": 17726
+    },
+    {
+      "license": "Minnie",
+      "units": 7460,
+      "clp": 76135381,
+      "costos": 49860539,
+      "margin": 34.5,
+      "pctUnits": 5.51,
+      "stockUnits": 19259
+    },
+    {
+      "license": "Minecraft",
+      "units": 6077,
+      "clp": 48780511,
+      "costos": 34506785,
+      "margin": 29.3,
+      "pctUnits": 4.48,
+      "stockUnits": 15475
+    },
+    {
+      "license": "HAVAIANA",
+      "units": 5486,
+      "clp": 43188273,
+      "costos": 40086502,
+      "margin": 7.2,
+      "pctUnits": 4.05,
+      "stockUnits": 6490
+    },
+    {
+      "license": "SONIC",
+      "units": 4769,
+      "clp": 30036424,
+      "costos": 20814099,
+      "margin": 30.7,
+      "pctUnits": 3.52,
+      "stockUnits": 10793
+    },
+    {
+      "license": "KPOP DEMON HUNTERS",
+      "units": 4522,
+      "clp": 54775169,
+      "costos": 29816354,
+      "margin": 45.6,
+      "pctUnits": 3.34,
+      "stockUnits": 10811
+    },
+    {
+      "license": "BOB ESPONJA",
+      "units": 3626,
+      "clp": 17645662,
+      "costos": 17022701,
+      "margin": 3.5,
+      "pctUnits": 2.68,
+      "stockUnits": 4300
+    },
+    {
+      "license": "Spidey",
+      "units": 3305,
+      "clp": 30708564,
+      "costos": 20327009,
+      "margin": 33.8,
+      "pctUnits": 2.44,
+      "stockUnits": 5228
+    },
+    {
+      "license": "Barbie",
+      "units": 1846,
+      "clp": 17036140,
+      "costos": 12166601,
+      "margin": 28.6,
+      "pctUnits": 1.36,
+      "stockUnits": 5579
+    },
+    {
+      "license": "Mickey",
+      "units": 1716,
+      "clp": 10866001,
+      "costos": 9388890,
+      "margin": 13.6,
+      "pctUnits": 1.27,
+      "stockUnits": 4989
+    },
+    {
+      "license": "Peppa Pig",
+      "units": 1656,
+      "clp": 9040650,
+      "costos": 13077246,
+      "margin": -44.6,
+      "pctUnits": 1.22,
+      "stockUnits": 1546
+    },
+    {
+      "license": "Acdc",
+      "units": 1639,
+      "clp": 15062209,
+      "costos": 9327557,
+      "margin": 38.1,
+      "pctUnits": 1.21,
+      "stockUnits": 1627
+    },
+    {
+      "license": "GARFIELD",
+      "units": 1326,
+      "clp": 9055607,
+      "costos": 5970534,
+      "margin": 34.1,
+      "pctUnits": 0.98,
+      "stockUnits": 3089
+    },
+    {
+      "license": "FORD",
+      "units": 1307,
+      "clp": 8596391,
+      "costos": 8280454,
+      "margin": 3.7,
+      "pctUnits": 0.96,
+      "stockUnits": 2251
+    },
+    {
+      "license": "NICK 90",
+      "units": 1144,
+      "clp": 7208327,
+      "costos": 4521980,
+      "margin": 37.3,
+      "pctUnits": 0.84,
+      "stockUnits": 2183
+    },
+    {
+      "license": "ZOOTOPIA",
+      "units": 1048,
+      "clp": 7283683,
+      "costos": 6110110,
+      "margin": 16.1,
+      "pctUnits": 0.77,
+      "stockUnits": 2795
+    },
+    {
+      "license": "JUJUTSU KAISEN",
+      "units": 993,
+      "clp": 9278895,
+      "costos": 7297569,
+      "margin": 21.4,
+      "pctUnits": 0.73,
+      "stockUnits": 2190
+    },
+    {
+      "license": "The Beatles",
+      "units": 945,
+      "clp": 11832975,
+      "costos": 7201650,
+      "margin": 39.1,
+      "pctUnits": 0.7,
+      "stockUnits": 2079
+    },
+    {
+      "license": "Pink Floyd",
+      "units": 893,
+      "clp": 7438227,
+      "costos": 4555044,
+      "margin": 38.8,
+      "pctUnits": 0.66,
+      "stockUnits": 2155
+    },
+    {
+      "license": "NO APLICA",
+      "units": 862,
+      "clp": 9190507,
+      "costos": 7254458,
+      "margin": 21.1,
+      "pctUnits": 0.64,
+      "stockUnits": 4751
+    },
+    {
+      "license": "Metallica",
+      "units": 838,
+      "clp": 10553441,
+      "costos": 6452296,
+      "margin": 38.9,
+      "pctUnits": 0.62,
+      "stockUnits": 2206
+    },
+    {
+      "license": "Frozen",
+      "units": 809,
+      "clp": 4719244,
+      "costos": 5169727,
+      "margin": -9.5,
+      "pctUnits": 0.6,
+      "stockUnits": 1616
+    },
+    {
+      "license": "Avengers",
+      "units": 795,
+      "clp": 4282020,
+      "costos": 4377573,
+      "margin": -2.2,
+      "pctUnits": 0.59,
+      "stockUnits": 1808
+    },
+    {
+      "license": "Cars",
+      "units": 787,
+      "clp": 10287830,
+      "costos": 5735134,
+      "margin": 44.3,
+      "pctUnits": 0.58,
+      "stockUnits": 1553
+    },
+    {
+      "license": "Naruto",
+      "units": 739,
+      "clp": 4616349,
+      "costos": 4215318,
+      "margin": 8.7,
+      "pctUnits": 0.55,
+      "stockUnits": 4474
+    },
+    {
+      "license": "Hot Wheels",
+      "units": 697,
+      "clp": 3253612,
+      "costos": 4012294,
+      "margin": -23.3,
+      "pctUnits": 0.51,
+      "stockUnits": 1342
+    },
+    {
+      "license": "Star Wars",
+      "units": 659,
+      "clp": 5587859,
+      "costos": 5456728,
+      "margin": 2.3,
+      "pctUnits": 0.49,
+      "stockUnits": 4414
+    },
+    {
+      "license": "LOTSO",
+      "units": 644,
+      "clp": 5788074,
+      "costos": 3863000,
+      "margin": 33.3,
+      "pctUnits": 0.48,
+      "stockUnits": 1727
+    },
+    {
+      "license": "OASIS",
+      "units": 605,
+      "clp": 7865645,
+      "costos": 4831800,
+      "margin": 38.6,
+      "pctUnits": 0.45,
+      "stockUnits": 1411
+    },
+    {
+      "license": "RICK AND MORTY",
+      "units": 587,
+      "clp": 1612646,
+      "costos": 1307995,
+      "margin": 18.9,
+      "pctUnits": 0.43,
+      "stockUnits": 1279
+    },
+    {
+      "license": "POKEMON",
+      "units": 581,
+      "clp": 5133526,
+      "costos": 4119764,
+      "margin": 19.7,
+      "pctUnits": 0.43,
+      "stockUnits": 1878
+    },
+    {
+      "license": "Kiss",
+      "units": 426,
+      "clp": 5025716,
+      "costos": 3110508,
+      "margin": 38.1,
+      "pctUnits": 0.31,
+      "stockUnits": 1743
+    },
+    {
+      "license": "No Definido",
+      "units": 424,
+      "clp": 2356369,
+      "costos": 1646908,
+      "margin": 30.1,
+      "pctUnits": 0.31,
+      "stockUnits": 1825
+    },
+    {
+      "license": "NASA",
+      "units": 420,
+      "clp": 4221952,
+      "costos": 2893659,
+      "margin": 31.5,
+      "pctUnits": 0.31,
+      "stockUnits": 1681
+    },
+    {
+      "license": "RED BULL",
+      "units": 358,
+      "clp": 3572666,
+      "costos": 3684594,
+      "margin": -3.1,
+      "pctUnits": 0.26,
+      "stockUnits": 316
+    },
+    {
+      "license": "Gabby Doll House",
+      "units": 340,
+      "clp": 1609274,
+      "costos": 1971363,
+      "margin": -22.5,
+      "pctUnits": 0.25,
+      "stockUnits": 400
+    },
+    {
+      "license": "Harry Potter",
+      "units": 340,
+      "clp": 2791023,
+      "costos": 2154192,
+      "margin": 22.8,
+      "pctUnits": 0.25,
+      "stockUnits": 1160
+    },
+    {
+      "license": "Stranger Things",
+      "units": 326,
+      "clp": 3602978,
+      "costos": 3041354,
+      "margin": 15.6,
+      "pctUnits": 0.24,
+      "stockUnits": 1098
+    },
+    {
+      "license": "Friends",
+      "units": 325,
+      "clp": 984982,
+      "costos": 655890,
+      "margin": 33.4,
+      "pctUnits": 0.24,
+      "stockUnits": 836
+    },
+    {
+      "license": "INDEX",
+      "units": 311,
+      "clp": 4304412,
+      "costos": 3177494,
+      "margin": 26.2,
+      "pctUnits": 0.23,
+      "stockUnits": 2410
+    },
+    {
+      "license": "HUNTER X HUNTER",
+      "units": 306,
+      "clp": 1893364,
+      "costos": 2174090,
+      "margin": -14.8,
+      "pctUnits": 0.23,
+      "stockUnits": 503
+    },
+    {
+      "license": "REVUP",
+      "units": 297,
+      "clp": 400888,
+      "costos": 575060,
+      "margin": -43.4,
+      "pctUnits": 0.22,
+      "stockUnits": 791
+    },
+    {
+      "license": "Rick and morty",
+      "units": 284,
+      "clp": 1070536,
+      "costos": 1612729,
+      "margin": -50.6,
+      "pctUnits": 0.21,
+      "stockUnits": 264
+    },
+    {
+      "license": "Playstation",
+      "units": 252,
+      "clp": 1559907,
+      "costos": 1577507,
+      "margin": -1.1,
+      "pctUnits": 0.19,
+      "stockUnits": 1172
+    },
+    {
+      "license": "El Rey Leon",
+      "units": 227,
+      "clp": 972783,
+      "costos": 842595,
+      "margin": 13.4,
+      "pctUnits": 0.17,
+      "stockUnits": 932
+    },
+    {
+      "license": "Toy Story",
+      "units": 205,
+      "clp": 926596,
+      "costos": 1003440,
+      "margin": -8.3,
+      "pctUnits": 0.15,
+      "stockUnits": 427
+    },
+    {
+      "license": "The Mandalorian",
+      "units": 189,
+      "clp": 1944282,
+      "costos": 1623564,
+      "margin": 16.5,
+      "pctUnits": 0.14,
+      "stockUnits": 688
+    },
+    {
+      "license": "One Piece",
+      "units": 176,
+      "clp": 2314776,
+      "costos": 1877496,
+      "margin": 18.9,
+      "pctUnits": 0.13,
+      "stockUnits": 856
+    },
+    {
+      "license": "Celebrity Icons",
+      "units": 174,
+      "clp": 681130,
+      "costos": 981550,
+      "margin": -44.1,
+      "pctUnits": 0.13,
+      "stockUnits": 586
+    },
+    {
+      "license": "MARQUIS",
+      "units": 172,
+      "clp": 2138894,
+      "costos": 1326127,
+      "margin": 38.0,
+      "pctUnits": 0.13,
+      "stockUnits": 1924
+    },
+    {
+      "license": "UFC",
+      "units": 154,
+      "clp": 1681064,
+      "costos": 1108800,
+      "margin": 34.0,
+      "pctUnits": 0.11,
+      "stockUnits": 786
+    },
+    {
+      "license": "Disney",
+      "units": 152,
+      "clp": 947222,
+      "costos": 1245097,
+      "margin": -31.4,
+      "pctUnits": 0.11,
+      "stockUnits": 663
+    },
+    {
+      "license": "MARVEL COMICS",
+      "units": 140,
+      "clp": 2109806,
+      "costos": 1679503,
+      "margin": 20.4,
+      "pctUnits": 0.1,
+      "stockUnits": 868
+    },
+    {
+      "license": "Batman",
+      "units": 137,
+      "clp": 943806,
+      "costos": 776440,
+      "margin": 17.7,
+      "pctUnits": 0.1,
+      "stockUnits": 498
+    },
+    {
+      "license": "SMILEY",
+      "units": 133,
+      "clp": 1205547,
+      "costos": 999378,
+      "margin": 17.1,
+      "pctUnits": 0.1,
+      "stockUnits": 408
+    },
+    {
+      "license": "Princesas",
+      "units": 129,
+      "clp": 814387,
+      "costos": 819302,
+      "margin": -0.6,
+      "pctUnits": 0.1,
+      "stockUnits": 682
+    },
+    {
+      "license": "ARISTOGATOS MARIE",
+      "units": 123,
+      "clp": 683713,
+      "costos": 500400,
+      "margin": 26.8,
+      "pctUnits": 0.09,
+      "stockUnits": 263
+    },
+    {
+      "license": "MARIO BROS",
+      "units": 94,
+      "clp": 455522,
+      "costos": 239700,
+      "margin": 47.4,
+      "pctUnits": 0.07,
+      "stockUnits": 237
+    },
+    {
+      "license": "WINNIE THE POOH",
+      "units": 82,
+      "clp": 401648,
+      "costos": 454268,
+      "margin": -13.1,
+      "pctUnits": 0.06,
+      "stockUnits": 226
+    },
+    {
+      "license": "DEMON SLAYER",
+      "units": 76,
+      "clp": 1271075,
+      "costos": 888434,
+      "margin": 30.1,
+      "pctUnits": 0.06,
+      "stockUnits": 371
+    },
+    {
+      "license": "Sin Licencia",
+      "units": 71,
+      "clp": 123870,
+      "costos": 229667,
+      "margin": -85.4,
+      "pctUnits": 0.05,
+      "stockUnits": 1081
+    },
+    {
+      "license": "Emoji",
+      "units": 70,
+      "clp": 230219,
+      "costos": 189700,
+      "margin": 17.6,
+      "pctUnits": 0.05,
+      "stockUnits": 132
+    },
+    {
+      "license": "INSIDE OUT",
+      "units": 69,
+      "clp": 306630,
+      "costos": 385008,
+      "margin": -25.6,
+      "pctUnits": 0.05,
+      "stockUnits": 312
+    },
+    {
+      "license": "Dragon Ball",
+      "units": 68,
+      "clp": 948031,
+      "costos": 763955,
+      "margin": 19.4,
+      "pctUnits": 0.05,
+      "stockUnits": 531
+    },
+    {
+      "license": "Mickey y sus Amigos",
+      "units": 63,
+      "clp": 950847,
+      "costos": 674841,
+      "margin": 29.0,
+      "pctUnits": 0.05,
+      "stockUnits": 852
+    },
+    {
+      "license": "MAFALDA",
+      "units": 60,
+      "clp": 999744,
+      "costos": 369932,
+      "margin": 63.0,
+      "pctUnits": 0.04,
+      "stockUnits": 2587
+    },
+    {
+      "license": "Hello Kitty",
+      "units": 52,
+      "clp": 847911,
+      "costos": 688502,
+      "margin": 18.8,
+      "pctUnits": 0.04,
+      "stockUnits": 725
+    },
+    {
+      "license": "Chicas Superpoderosas",
+      "units": 51,
+      "clp": 355222,
+      "costos": 278997,
+      "margin": 21.5,
+      "pctUnits": 0.04,
+      "stockUnits": 95
+    },
+    {
+      "license": "DC Comics",
+      "units": 47,
+      "clp": 423434,
+      "costos": 476787,
+      "margin": -12.6,
+      "pctUnits": 0.03,
+      "stockUnits": 554
+    },
+    {
+      "license": "FUNKO MUSIC",
+      "units": 43,
+      "clp": 688897,
+      "costos": 457774,
+      "margin": 33.5,
+      "pctUnits": 0.03,
+      "stockUnits": 70
+    },
+    {
+      "license": "SPY X FAMILY",
+      "units": 36,
+      "clp": 98939,
+      "costos": 215330,
+      "margin": -117.6,
+      "pctUnits": 0.03,
+      "stockUnits": 91
+    },
+    {
+      "license": "Attack on titan",
+      "units": 35,
+      "clp": 41140,
+      "costos": 85750,
+      "margin": -108.4,
+      "pctUnits": 0.03,
+      "stockUnits": 70
+    },
+    {
+      "license": "Looney Tunes",
+      "units": 33,
+      "clp": 113500,
+      "costos": 123879,
+      "margin": -9.1,
+      "pctUnits": 0.02,
+      "stockUnits": 152
+    },
+    {
+      "license": "South Park",
+      "units": 27,
+      "clp": 29561,
+      "costos": 56126,
+      "margin": -89.9,
+      "pctUnits": 0.02,
+      "stockUnits": 0
+    },
+    {
+      "license": "1KO",
+      "units": 26,
+      "clp": 1890,
+      "costos": 85540,
+      "margin": -4425.9,
+      "pctUnits": 0.02,
+      "stockUnits": 0
+    },
+    {
+      "license": "Marvel",
+      "units": 23,
+      "clp": 269418,
+      "costos": 247639,
+      "margin": 8.1,
+      "pctUnits": 0.02,
+      "stockUnits": 340
+    },
+    {
+      "license": "PRESCHOOL MINNIE",
+      "units": 21,
+      "clp": 196621,
+      "costos": 146423,
+      "margin": 25.5,
+      "pctUnits": 0.02,
+      "stockUnits": 65
+    },
+    {
+      "license": "DISNEY 100",
+      "units": 20,
+      "clp": 164931,
+      "costos": 183049,
+      "margin": -11.0,
+      "pctUnits": 0.01,
+      "stockUnits": 102
+    },
+    {
+      "license": "FORMULA 1",
+      "units": 17,
+      "clp": 354480,
+      "costos": 229950,
+      "margin": 35.1,
+      "pctUnits": 0.01,
+      "stockUnits": 92
+    },
+    {
+      "license": "Tom y Jerry",
+      "units": 16,
+      "clp": 131936,
+      "costos": 98320,
+      "margin": 25.5,
+      "pctUnits": 0.01,
+      "stockUnits": 38
+    },
+    {
+      "license": "Jurassic World",
+      "units": 16,
+      "clp": 336000,
+      "costos": 218400,
+      "margin": 35.0,
+      "pctUnits": 0.01,
+      "stockUnits": 194
+    },
+    {
+      "license": "Minions",
+      "units": 14,
+      "clp": 31485,
+      "costos": 39510,
+      "margin": -25.5,
+      "pctUnits": 0.01,
+      "stockUnits": 76
+    },
+    {
+      "license": "Dragon Ball Z",
+      "units": 13,
+      "clp": 139802,
+      "costos": 113970,
+      "margin": 18.5,
+      "pctUnits": 0.01,
+      "stockUnits": 179
+    },
+    {
+      "license": "Bambi",
+      "units": 13,
+      "clp": 46978,
+      "costos": 110790,
+      "margin": -135.8,
+      "pctUnits": 0.01,
+      "stockUnits": 90
+    },
+    {
+      "license": "Superman",
+      "units": 12,
+      "clp": 94163,
+      "costos": 68246,
+      "margin": 27.5,
+      "pctUnits": 0.01,
+      "stockUnits": 39
+    },
+    {
+      "license": "HAVAIAN+Q596A",
+      "units": 12,
+      "clp": 149607,
+      "costos": 105324,
+      "margin": 29.6,
+      "pctUnits": 0.01,
+      "stockUnits": 13
+    },
+    {
+      "license": "SIN MARCA",
+      "units": 11,
+      "clp": 9240,
+      "costos": 35200,
+      "margin": -281.0,
+      "pctUnits": 0.01,
+      "stockUnits": 561
+    },
+    {
+      "license": "Lightyear",
+      "units": 11,
+      "clp": 71689,
+      "costos": 79933,
+      "margin": -11.5,
+      "pctUnits": 0.01,
+      "stockUnits": 11
+    },
+    {
+      "license": "Mortal Kombat",
+      "units": 11,
+      "clp": 220080,
+      "costos": 150150,
+      "margin": 31.8,
+      "pctUnits": 0.01,
+      "stockUnits": 331
+    },
+    {
+      "license": "Los Picapiedras",
+      "units": 10,
+      "clp": 23530,
+      "costos": 15800,
+      "margin": 32.9,
+      "pctUnits": 0.01,
+      "stockUnits": 45
+    },
+    {
+      "license": "ED EDD & EDDY",
+      "units": 10,
+      "clp": 12600,
+      "costos": 9500,
+      "margin": 24.6,
+      "pctUnits": 0.01,
+      "stockUnits": 7
+    },
+    {
+      "license": "BT21",
+      "units": 9,
+      "clp": 83115,
+      "costos": 55800,
+      "margin": 32.9,
+      "pctUnits": 0.01,
+      "stockUnits": 53
+    },
+    {
+      "license": "101 Dalmatas",
+      "units": 9,
+      "clp": 50862,
+      "costos": 62688,
+      "margin": -23.3,
+      "pctUnits": 0.01,
+      "stockUnits": 26
+    },
+    {
+      "license": "Disney Clásicos",
+      "units": 9,
+      "clp": 37256,
+      "costos": 39990,
+      "margin": -7.3,
+      "pctUnits": 0.01,
+      "stockUnits": 137
+    },
+    {
+      "license": "DISNEY PIXAR COLLECTION",
+      "units": 8,
+      "clp": 23464,
+      "costos": 16000,
+      "margin": 31.8,
+      "pctUnits": 0.01,
+      "stockUnits": 36
+    },
+    {
+      "license": "WISH",
+      "units": 8,
+      "clp": 36544,
+      "costos": 43121,
+      "margin": -18.0,
+      "pctUnits": 0.01,
+      "stockUnits": 85
+    },
+    {
+      "license": "El Laboratorio De Dexter",
+      "units": 7,
+      "clp": 8820,
+      "costos": 6650,
+      "margin": 24.6,
+      "pctUnits": 0.01,
+      "stockUnits": -2
+    },
+    {
+      "license": "Tinker Bell",
+      "units": 6,
+      "clp": 38970,
+      "costos": 47874,
+      "margin": -22.8,
+      "pctUnits": 0.0,
+      "stockUnits": 8
+    },
+    {
+      "license": "Frida Kahlo",
+      "units": 6,
+      "clp": 12049,
+      "costos": 15240,
+      "margin": -26.5,
+      "pctUnits": 0.0,
+      "stockUnits": 5
+    },
+    {
+      "license": "FUNKO DEPORTE",
+      "units": 5,
+      "clp": 83990,
+      "costos": 50400,
+      "margin": 40.0,
+      "pctUnits": 0.0,
+      "stockUnits": 12
+    },
+    {
+      "license": "RUGRATS",
+      "units": 4,
+      "clp": 17532,
+      "costos": 21416,
+      "margin": -22.2,
+      "pctUnits": 0.0,
+      "stockUnits": 33
+    },
+    {
+      "license": "CHUCKY",
+      "units": 4,
+      "clp": 67192,
+      "costos": 40320,
+      "margin": 40.0,
+      "pctUnits": 0.0,
+      "stockUnits": 5
+    },
+    {
+      "license": "Villanas",
+      "units": 3,
+      "clp": 12980,
+      "costos": 24383,
+      "margin": -87.9,
+      "pctUnits": 0.0,
+      "stockUnits": 61
+    },
+    {
+      "license": "AC/DC",
+      "units": 3,
+      "clp": 6362,
+      "costos": 13112,
+      "margin": -106.1,
+      "pctUnits": 0.0,
+      "stockUnits": 5
+    },
+    {
+      "license": "JANIS JOPLIN",
+      "units": 2,
+      "clp": 7980,
+      "costos": 10432,
+      "margin": -30.7,
+      "pctUnits": 0.0,
+      "stockUnits": 1
+    },
+    {
+      "license": "Minnie (Infantil + Teen)",
+      "units": 2,
+      "clp": 10480,
+      "costos": 10224,
+      "margin": 2.4,
+      "pctUnits": 0.0,
+      "stockUnits": 10
+    },
+    {
+      "license": "Pacman",
+      "units": 2,
+      "clp": 8007,
+      "costos": 9740,
+      "margin": -21.6,
+      "pctUnits": 0.0,
+      "stockUnits": 16
+    },
+    {
+      "license": "WONDER WOMAN",
+      "units": 2,
+      "clp": 24985,
+      "costos": 27300,
+      "margin": -9.3,
+      "pctUnits": 0.0,
+      "stockUnits": 23
+    },
+    {
+      "license": "Rey León",
+      "units": 2,
+      "clp": 9980,
+      "costos": 5654,
+      "margin": 43.3,
+      "pctUnits": 0.0,
+      "stockUnits": 75
+    },
+    {
+      "license": "Buzz Light Year",
+      "units": 2,
+      "clp": 5990,
+      "costos": 11780,
+      "margin": -96.7,
+      "pctUnits": 0.0,
+      "stockUnits": 11
+    },
+    {
+      "license": "Paw Patrol Movie",
+      "units": 2,
+      "clp": 7990,
+      "costos": 9294,
+      "margin": -16.3,
+      "pctUnits": 0.0,
+      "stockUnits": 18
+    },
+    {
+      "license": "Boruto",
+      "units": 1,
+      "clp": 3353,
+      "costos": 6042,
+      "margin": -80.2,
+      "pctUnits": 0.0,
+      "stockUnits": 5
+    },
+    {
+      "license": "SHREK",
+      "units": 1,
+      "clp": 10500,
+      "costos": 13650,
+      "margin": -30.0,
+      "pctUnits": 0.0,
+      "stockUnits": 24
+    },
+    {
+      "license": "LA VACA Y EL POLLITO",
+      "units": 1,
+      "clp": 1681,
+      "costos": 3345,
+      "margin": -99.0,
+      "pctUnits": 0.0,
+      "stockUnits": 7
+    },
+    {
+      "license": "Iron Maiden",
+      "units": 1,
+      "clp": 5994,
+      "costos": 4911,
+      "margin": 18.1,
+      "pctUnits": 0.0,
+      "stockUnits": 8
+    },
+    {
+      "license": "OZZY OSBOURNE",
+      "units": 1,
+      "clp": 3990,
+      "costos": 5216,
+      "margin": -30.7,
+      "pctUnits": 0.0,
+      "stockUnits": 2
+    },
+    {
+      "license": "Sesamo",
+      "units": 1,
+      "clp": 1672,
+      "costos": 5990,
+      "margin": -258.3,
+      "pctUnits": 0.0,
+      "stockUnits": 6
+    },
+    {
+      "license": "FRUITS BASKET",
+      "units": 1,
+      "clp": 2000,
+      "costos": 5773,
+      "margin": -188.7,
+      "pctUnits": 0.0,
+      "stockUnits": 2
+    },
+    {
+      "license": "DRAGON BALL SUPER",
+      "units": 1,
+      "clp": 4000,
+      "costos": 4647,
+      "margin": -16.2,
+      "pctUnits": 0.0,
+      "stockUnits": 24
+    },
+    {
+      "license": "Ladybug",
+      "units": 1,
+      "clp": 4529,
+      "costos": 9990,
+      "margin": -120.6,
+      "pctUnits": 0.0,
+      "stockUnits": 5
+    },
+    {
+      "license": "ALICIA PAIS MARAVILLA",
+      "units": 1,
+      "clp": 16798,
+      "costos": 10919,
+      "margin": 35.0,
+      "pctUnits": 0.0,
+      "stockUnits": 13
+    },
+    {
+      "license": "DARIA",
+      "units": 1,
+      "clp": 4990,
+      "costos": 3000,
+      "margin": 39.9,
+      "pctUnits": 0.0,
+      "stockUnits": 6
+    },
+    {
+      "license": "My Hero Academia",
+      "units": 1,
+      "clp": 5458,
+      "costos": 7045,
+      "margin": -29.1,
+      "pctUnits": 0.0,
+      "stockUnits": 2
+    },
+    {
+      "license": "Woodstock",
+      "units": 1,
+      "clp": 1990,
+      "costos": 4390,
+      "margin": -120.6,
+      "pctUnits": 0.0,
+      "stockUnits": -1
+    }
+  ],
   "rankingWeeksPeriod": 4.9,
   "divisionMixByChain": [
     {
@@ -33885,5 +37477,5 @@ const REAL_SELLOUT = {
       "value": 165.1
     }
   ],
-  "generatedAt": "2026-03-16T18:30:11.178421"
+  "generatedAt": "2026-03-17T18:12:12.119235"
 };

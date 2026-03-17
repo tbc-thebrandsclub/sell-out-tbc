@@ -65,6 +65,9 @@
     <button class="tab-btn" data-tab="ranking">
       <span class="tab-icon">&#9776;</span> Ranking Sell Out
     </button>
+    <button class="tab-btn" data-tab="top-ventas">
+      <span class="tab-icon">&#9733;</span> Top de Ventas
+    </button>
     <button class="tab-btn" data-tab="laboratorio">
       <span class="tab-icon">&#9881;</span> Laboratorio
     </button>
@@ -195,8 +198,22 @@
     </div>
     <div id="ranking-pagination" class="pagination-container"></div>
 
+    <!-- Exploratorio -->
+    <div class="section-header" style="margin-top:2rem"><div class="section-title">Mapa de Calor: Venta por Tienda x Dia (Top 20)</div><span class="section-badge badge-live">Real Data</span></div>
+    <div class="chart-card"><div id="heatmap-container" class="heatmap-container"></div></div>
+
+    <div class="section-header" style="margin-top:2rem"><div class="section-title">Mapa de Calor: Venta por Propiedad x Cadena (Und)</div><span class="section-badge badge-live">Real Data</span></div>
+    <div class="chart-card"><div id="heatmap-license-chain" class="heatmap-container"></div></div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- TAB 3: TOP DE VENTAS                              -->
+  <!-- ══════════════════════════════════════════════════ -->
+  <div id="tab-top-ventas" class="tab-panel">
+
     <!-- Ranking por Producto -->
-    <div class="section-header" style="margin-top:2rem">
+    <div class="section-header">
       <div class="section-title">Ranking por Producto (Top 200)</div>
       <div class="ranking-controls">
         <select id="product-sort" class="filter-select">
@@ -215,17 +232,37 @@
     </div>
     <div id="product-pagination" class="pagination-container"></div>
 
-    <!-- Exploratorio -->
-    <div class="section-header" style="margin-top:2rem"><div class="section-title">Mapa de Calor: Venta por Tienda x Dia (Top 20)</div><span class="section-badge badge-live">Real Data</span></div>
-    <div class="chart-card"><div id="heatmap-container" class="heatmap-container"></div></div>
+    <!-- Resumen por Licencia (Propiedad) -->
+    <div class="section-header" style="margin-top:2rem">
+      <div class="section-title">Venta por Propiedad</div>
+      <span class="section-badge badge-live">Real Data</span>
+    </div>
+    <div class="table-container">
+      <table class="data-table ranking-table">
+        <thead><tr><th>#</th><th>Propiedad</th><th>Venta Un</th><th>$ Venta Neta</th><th>% Part Vta</th><th>Mrg %</th><th>Stk OH</th></tr></thead>
+        <tbody id="license-summary-body"></tbody>
+      </table>
+    </div>
 
-    <div class="section-header" style="margin-top:2rem"><div class="section-title">Mapa de Calor: Venta por Propiedad x Cadena (Und)</div><span class="section-badge badge-live">Real Data</span></div>
-    <div class="chart-card"><div id="heatmap-license-chain" class="heatmap-container"></div></div>
+    <!-- Comportamiento Ventas últimas 4 semanas -->
+    <div class="section-header" style="margin-top:2rem">
+      <div class="section-title">Comportamiento Ventas Ultimas 4 Semanas</div>
+      <span class="section-badge badge-live">Real Data</span>
+    </div>
+    <div class="charts-grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="table-container" style="max-height:500px;overflow-y:auto">
+        <table class="data-table ranking-table">
+          <thead id="weekly-store-thead"><tr><th>#</th><th>Local</th><th>Cadena</th></tr></thead>
+          <tbody id="weekly-store-body"></tbody>
+        </table>
+      </div>
+      <div class="chart-card"><div class="chart-title">Comportamiento de Ventas</div><div class="chart-container" style="height:360px"><canvas id="chart-weekly-totals"></canvas></div></div>
+    </div>
 
   </div>
 
   <!-- ══════════════════════════════════════════════════ -->
-  <!-- TAB 3: LABORATORIO                               -->
+  <!-- TAB 4: LABORATORIO                               -->
   <!-- ══════════════════════════════════════════════════ -->
   <div id="tab-laboratorio" class="tab-panel">
 

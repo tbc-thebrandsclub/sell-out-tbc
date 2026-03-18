@@ -2700,7 +2700,8 @@ function renderHeatmap(data) {
       const val = estMatrix[si][di];
       html += `<td style="background:${heatColor(val)};color:#fff;text-shadow:0 1px 2px rgba(0,0,0,0.6);font-size:0.7rem">${val}</td>`;
     });
-    html += `<td style="font-weight:700;color:var(--text-primary)">${store.units.toLocaleString("es-CL")}</td></tr>`;
+    const rowSum = estMatrix[si].reduce((s, v) => s + v, 0);
+    html += `<td style="font-weight:700;color:var(--text-primary)">${rowSum.toLocaleString("es-CL")}</td></tr>`;
   });
 
   html += '</tbody></table>';

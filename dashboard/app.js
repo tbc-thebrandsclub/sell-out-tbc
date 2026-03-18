@@ -359,19 +359,47 @@ function getFilteredData() {
   let dailyByChain = src.dailyByChain || [];
   let byDivisionDaily = src.byDivisionDaily || [];
   let _productFilterRatioU = 1, _productFilterRatioC = 1;
+  let _dateRatioByChain = null; // chain → {units ratio, clp ratio} for date filtering
 
   // 1. Date filters (exact)
-  if (f.dateFrom) {
-    dailySales = dailySales.filter(d => d.date >= f.dateFrom);
-    dailyTotals = dailyTotals.filter(d => d.date >= f.dateFrom);
-    dailyByChain = dailyByChain.filter(d => d.date >= f.dateFrom);
-    byDivisionDaily = byDivisionDaily.filter(d => d.date >= f.dateFrom);
-  }
-  if (f.dateTo) {
-    dailySales = dailySales.filter(d => d.date <= f.dateTo);
-    dailyTotals = dailyTotals.filter(d => d.date <= f.dateTo);
-    dailyByChain = dailyByChain.filter(d => d.date <= f.dateTo);
-    byDivisionDaily = byDivisionDaily.filter(d => d.date <= f.dateTo);
+  if (f.dateFrom || f.dateTo) {
+    // Compute per-chain date ratio BEFORE filtering (for rankingByChainStore scaling)
+    const origByChainAgg = {};
+    (src.dailyByChain || []).forEach(d => {
+      if (!origByChainAgg[d.chain]) origByChainAgg[d.chain] = { units: 0, clp: 0 };
+      origByChainAgg[d.chain].units += d.units;
+      origByChainAgg[d.chain].clp += d.clp;
+    });
+
+    if (f.dateFrom) {
+      dailySales = dailySales.filter(d => d.date >= f.dateFrom);
+      dailyTotals = dailyTotals.filter(d => d.date >= f.dateFrom);
+      dailyByChain = dailyByChain.filter(d => d.date >= f.dateFrom);
+      byDivisionDaily = byDivisionDaily.filter(d => d.date >= f.dateFrom);
+    }
+    if (f.dateTo) {
+      dailySales = dailySales.filter(d => d.date <= f.dateTo);
+      dailyTotals = dailyTotals.filter(d => d.date <= f.dateTo);
+      dailyByChain = dailyByChain.filter(d => d.date <= f.dateTo);
+      byDivisionDaily = byDivisionDaily.filter(d => d.date <= f.dateTo);
+    }
+
+    // Now compute filtered per-chain totals
+    const filtByChainAgg = {};
+    dailyByChain.forEach(d => {
+      if (!filtByChainAgg[d.chain]) filtByChainAgg[d.chain] = { units: 0, clp: 0 };
+      filtByChainAgg[d.chain].units += d.units;
+      filtByChainAgg[d.chain].clp += d.clp;
+    });
+
+    _dateRatioByChain = {};
+    Object.entries(origByChainAgg).forEach(([ch, orig]) => {
+      const filt = filtByChainAgg[ch] || { units: 0, clp: 0 };
+      _dateRatioByChain[ch] = {
+        uRatio: orig.units > 0 ? filt.units / orig.units : 0,
+        cRatio: orig.clp > 0 ? filt.clp / orig.clp : 0,
+      };
+    });
   }
 
   // 2. Chain filter (exact on dailyByChain, proportional on dailySales + byDivisionDaily)
@@ -621,6 +649,27 @@ function getFilteredData() {
     rankingByChainStore = filteredRanking;
   }
 
+  // Date scaling for rankingByChainStore (per-chain proportional)
+  if (_dateRatioByChain) {
+    const dateScaled = {};
+    Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
+      const dr = _dateRatioByChain[ch] || { uRatio: 0, cRatio: 0 };
+      if (dr.uRatio === 0) return; // chain has no data in date range
+      dateScaled[ch] = stores.map(s => {
+        const u = Math.round(s.units * dr.uRatio);
+        const c = Math.round(s.clp * dr.cRatio);
+        const cost = Math.round((s.costos || 0) * dr.uRatio);
+        return {
+          ...s,
+          units: u, clp: c, costos: cost,
+          margin: c > 0 ? Math.round((c - cost) / c * 1000) / 10 : 0,
+          // Stock stays the same (it's a snapshot, not time-dependent)
+        };
+      });
+    });
+    rankingByChainStore = dateScaled;
+  }
+
   // Proportional scaling for license/temporal filters (units, clp, stock)
   // Uses _productFilterRatioU computed from ALL licenses (not just top 15 in dailySales)
   if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
@@ -763,19 +812,18 @@ function getFilteredData() {
   // ── Filtrar velocityMetrics ──
   let velocityMetrics = src.velocityMetrics ? { ...src.velocityMetrics } : null;
   if (velocityMetrics) {
+    // Use filtered date range for activeDays
+    const filteredDates = new Set(filteredDailyTotals.map(d => d.date));
+    const filtActiveDays = filteredDates.size || velocityMetrics.activeDays || 1;
     let velByChain = velocityMetrics.velocityByChain || [];
-    if (f.chains.length) {
-      const chainSet = new Set(f.chains);
-      velByChain = velByChain.filter(v => chainSet.has(v.chain));
-    }
-    if (f.divisions.length) {
-      const activeDays = velocityMetrics.activeDays || 1;
+    if (f.chains.length || f.divisions.length || _dateRatioByChain) {
+      // Recalculate from rankingByChainStore (already date/chain/division scaled)
       velByChain = Object.entries(rankingByChainStore).map(([ch, stores]) => {
         const totalUnits = stores.reduce((s, st) => s + st.units, 0);
-        return { chain: ch, unitsPerDay: Math.round(totalUnits / activeDays), trend: 0 };
+        return { chain: ch, unitsPerDay: Math.round(totalUnits / filtActiveDays), trend: 0 };
       }).filter(v => v.unitsPerDay > 0).sort((a, b) => b.unitsPerDay - a.unitsPerDay);
     }
-    velocityMetrics = { ...velocityMetrics, velocityByChain: velByChain };
+    velocityMetrics = { ...velocityMetrics, velocityByChain: velByChain, activeDays: filtActiveDays };
   }
 
   // ── Filtrar priceMetrics ──

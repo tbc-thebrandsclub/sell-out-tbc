@@ -1,11 +1,11 @@
 // Auto-generated from IV API data - DO NOT EDIT MANUALLY
-// Generated: 2026-03-18 12:54:43
+// Generated: 2026-03-18 15:14:39
 // Source: 114517 sales records, 34 days
 // Blocks: 42 data sections
 
 const REAL_SELLOUT = {
   "_meta": {
-    "generatedAt": "2026-03-18T12:54:43.292640",
+    "generatedAt": "2026-03-18T15:14:39.203465",
     "salesRecords": 114517,
     "salesDateFrom": "2026-02-10",
     "salesDateTo": "2026-03-15",
@@ -44731,5 +44731,5 @@ const REAL_SELLOUT = {
       "value": 165.1
     }
   ],
-  "generatedAt": "2026-03-18T12:54:43.906669"
+  "generatedAt": "2026-03-18T15:14:39.841807"
 };

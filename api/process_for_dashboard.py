@@ -288,6 +288,26 @@ def process(year=2026, days_back=None):
                 "units": round(vals["units"]), "clp": round(vals["clp"])
             })
 
+    # ── 7c. Venta diaria por cadena × división (exacta) ──
+    daily_chain_div_agg = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: {"units": 0.0, "clp": 0.0})))
+    for r in sales:
+        chain = r.get('sub_cadena', 'Otro')
+        div = r.get('_division', 'Sin Clasificar')
+        daily_chain_div_agg[r['_date']][chain][div]["units"] += r['_units']
+        daily_chain_div_agg[r['_date']][chain][div]["clp"] += r['_clp']
+
+    daily_by_chain_division = []
+    for date in dates_sorted:
+        for chain, divs in daily_chain_div_agg[date].items():
+            for div, vals in divs.items():
+                u = round(vals["units"])
+                c = round(vals["clp"])
+                if u > 0 or c > 0:
+                    daily_by_chain_division.append({
+                        "date": date, "chain": chain, "division": div,
+                        "units": u, "clp": c
+                    })
+
     # ── 8. Stock y OOS ───────────────────────────────────
     stock_data = load_stock()
     stock_output = {}
@@ -1097,6 +1117,7 @@ def process(year=2026, days_back=None):
         "byRegion": region_sales,
         "dailyTotals": daily_totals,
         "dailyByChain": daily_by_chain,
+        "dailyByChainDivision": daily_by_chain_division,
         "stock": stock_output,
         "allLicenses": all_licenses_full,
         "allChains": sorted(set(r.get('sub_cadena', '') for r in sales)),

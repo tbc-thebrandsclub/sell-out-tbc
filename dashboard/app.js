@@ -359,16 +359,25 @@ function getFilteredData() {
   let dailyByChain = src.dailyByChain || [];
   let byDivisionDaily = src.byDivisionDaily || [];
   let _productFilterRatioU = 1, _productFilterRatioC = 1;
-  let _dateRatioByChain = null; // chain → {units ratio, clp ratio} for date filtering
+  let _dateRatioByChain = null; // chain → {uRatio, cRatio}
+  let _dateRatioByChainDiv = null; // chain → div → {uRatio, cRatio} (exact per chain×division)
+
+  // Exact daily data: date × chain × division
+  let _bcd = src.dailyByChainDivision || [];
 
   // 1. Date filters (exact)
   if (f.dateFrom || f.dateTo) {
-    // Compute per-chain date ratio BEFORE filtering (for rankingByChainStore scaling)
+    // Compute per-chain AND per-chain×division date ratios BEFORE filtering
     const origByChainAgg = {};
-    (src.dailyByChain || []).forEach(d => {
+    const origByChainDivAgg = {};
+    _bcd.forEach(d => {
       if (!origByChainAgg[d.chain]) origByChainAgg[d.chain] = { units: 0, clp: 0 };
       origByChainAgg[d.chain].units += d.units;
       origByChainAgg[d.chain].clp += d.clp;
+      const cdKey = d.chain + '|' + d.division;
+      if (!origByChainDivAgg[cdKey]) origByChainDivAgg[cdKey] = { chain: d.chain, div: d.division, units: 0, clp: 0 };
+      origByChainDivAgg[cdKey].units += d.units;
+      origByChainDivAgg[cdKey].clp += d.clp;
     });
 
     if (f.dateFrom) {
@@ -376,20 +385,27 @@ function getFilteredData() {
       dailyTotals = dailyTotals.filter(d => d.date >= f.dateFrom);
       dailyByChain = dailyByChain.filter(d => d.date >= f.dateFrom);
       byDivisionDaily = byDivisionDaily.filter(d => d.date >= f.dateFrom);
+      _bcd = _bcd.filter(d => d.date >= f.dateFrom);
     }
     if (f.dateTo) {
       dailySales = dailySales.filter(d => d.date <= f.dateTo);
       dailyTotals = dailyTotals.filter(d => d.date <= f.dateTo);
       dailyByChain = dailyByChain.filter(d => d.date <= f.dateTo);
       byDivisionDaily = byDivisionDaily.filter(d => d.date <= f.dateTo);
+      _bcd = _bcd.filter(d => d.date <= f.dateTo);
     }
 
-    // Now compute filtered per-chain totals
+    // Compute filtered per-chain totals
     const filtByChainAgg = {};
-    dailyByChain.forEach(d => {
+    const filtByChainDivAgg = {};
+    _bcd.forEach(d => {
       if (!filtByChainAgg[d.chain]) filtByChainAgg[d.chain] = { units: 0, clp: 0 };
       filtByChainAgg[d.chain].units += d.units;
       filtByChainAgg[d.chain].clp += d.clp;
+      const cdKey = d.chain + '|' + d.division;
+      if (!filtByChainDivAgg[cdKey]) filtByChainDivAgg[cdKey] = { chain: d.chain, div: d.division, units: 0, clp: 0 };
+      filtByChainDivAgg[cdKey].units += d.units;
+      filtByChainDivAgg[cdKey].clp += d.clp;
     });
 
     _dateRatioByChain = {};
@@ -400,13 +416,25 @@ function getFilteredData() {
         cRatio: orig.clp > 0 ? filt.clp / orig.clp : 0,
       };
     });
+
+    // Per-chain×division date ratios (for exact ranking scaling)
+    _dateRatioByChainDiv = {};
+    Object.entries(origByChainDivAgg).forEach(([cdKey, orig]) => {
+      const filt = filtByChainDivAgg[cdKey] || { units: 0, clp: 0 };
+      if (!_dateRatioByChainDiv[orig.chain]) _dateRatioByChainDiv[orig.chain] = {};
+      _dateRatioByChainDiv[orig.chain][orig.div] = {
+        uRatio: orig.units > 0 ? filt.units / orig.units : 0,
+        cRatio: orig.clp > 0 ? filt.clp / orig.clp : 0,
+      };
+    });
   }
 
-  // 2. Chain filter (exact on dailyByChain, proportional on dailySales + byDivisionDaily)
+  // 2. Chain filter
   if (f.chains.length) {
     const chainSet = new Set(f.chains);
     dailyByChain = dailyByChain.filter(d => chainSet.has(d.chain));
-    // Proportional: sum selected chains' license data
+    _bcd = _bcd.filter(d => chainSet.has(d.chain));
+    // Proportional scaling of dailySales (license-level daily) for chain
     const chainLicData = {};
     f.chains.forEach(ch => {
       const lics = (src.salesByChainLicense || {})[ch] || {};
@@ -432,20 +460,13 @@ function getFilteredData() {
       return { ...d, units: Math.round(d.units * ratio), clp: Math.round(d.clp * ratio) };
     }).filter(d => d && d.units > 0);
 
-    // Recalculate byDivisionDaily from chain-filtered dailySales
+    // EXACT byDivisionDaily from dailyByChainDivision (not proportional)
     const divDailyAgg = {};
-    dailySales.forEach(d => {
-      const licBreak = licDivBreakdown[d.license];
-      if (licBreak) {
-        const totalPct = Object.values(licBreak).reduce((s, v) => s + (v.pct || 0), 0) || 100;
-        Object.entries(licBreak).forEach(([div, info]) => {
-          const ratio = (info.pct || 0) / totalPct;
-          const key = d.date + '|' + div;
-          if (!divDailyAgg[key]) divDailyAgg[key] = { date: d.date, division: div, units: 0, clp: 0 };
-          divDailyAgg[key].units += Math.round(d.units * ratio);
-          divDailyAgg[key].clp += Math.round(d.clp * ratio);
-        });
-      }
+    _bcd.forEach(d => {
+      const key = d.date + '|' + d.division;
+      if (!divDailyAgg[key]) divDailyAgg[key] = { date: d.date, division: d.division, units: 0, clp: 0 };
+      divDailyAgg[key].units += d.units;
+      divDailyAgg[key].clp += d.clp;
     });
     byDivisionDaily = Object.values(divDailyAgg).sort((a, b) => a.date.localeCompare(b.date));
   }
@@ -456,11 +477,21 @@ function getFilteredData() {
     dailySales = dailySales.filter(d => licSet.has(d.license));
   }
 
-  // 4. Division filter (proportional via licenseDivisionBreakdown, multi)
+  // 4. Division filter (exact from dailyByChainDivision)
   if (f.divisions.length) {
-    dailySales = scaleDailySales(dailySales, licDivBreakdown, f.divisions);
     const divSet = new Set(f.divisions);
+    dailySales = scaleDailySales(dailySales, licDivBreakdown, f.divisions);
     byDivisionDaily = byDivisionDaily.filter(d => divSet.has(d.division));
+    _bcd = _bcd.filter(d => divSet.has(d.division));
+    // EXACT dailyByChain from filtered _bcd (replaces proportional)
+    const chainDailyAgg = {};
+    _bcd.forEach(d => {
+      const key = d.date + '|' + d.chain;
+      if (!chainDailyAgg[key]) chainDailyAgg[key] = { date: d.date, chain: d.chain, units: 0, clp: 0 };
+      chainDailyAgg[key].units += d.units;
+      chainDailyAgg[key].clp += d.clp;
+    });
+    dailyByChain = Object.values(chainDailyAgg).sort((a, b) => a.date.localeCompare(b.date));
   }
 
   // 5-7. Temporal filters (proportional, multi)
@@ -581,7 +612,7 @@ function getFilteredData() {
     l.color = orig ? orig.color : (["#6366f1","#f97316","#22c55e","#eab308","#ef4444","#8b5cf6","#ec4899","#14b8a6","#f59e0b","#3b82f6","#84cc16","#06b6d4","#d946ef","#f43f5e","#10b981"])[i % 15];
   });
 
-  // Re-aggregate byChain from dailyByChain
+  // Re-aggregate byChain from dailyByChain (now exact when division filter active via _bcd)
   const chainAgg = {};
   dailyByChain.forEach(d => {
     if (!chainAgg[d.chain]) chainAgg[d.chain] = { chain: d.chain, units: 0, clp: 0 };
@@ -589,28 +620,6 @@ function getFilteredData() {
     chainAgg[d.chain].clp += d.clp;
   });
   let byChain = Object.values(chainAgg).sort((a, b) => b.clp - a.clp);
-
-  // If division filter active, recalculate byChain from rankingByChainStore
-  if (f.divisions.length) {
-    const divSet = new Set(f.divisions);
-    const chainFromStores = {};
-    Object.entries(src.rankingByChainStore || {}).forEach(([ch, stores]) => {
-      if (f.chains.length && !f.chains.includes(ch)) return;
-      stores.forEach(s => {
-        let uSum = 0, cSum = 0;
-        f.divisions.forEach(div => {
-          const dd = (s.byDivision || {})[div];
-          if (dd) { uSum += dd.units; cSum += dd.clp; }
-        });
-        if (uSum > 0) {
-          if (!chainFromStores[ch]) chainFromStores[ch] = { chain: ch, units: 0, clp: 0 };
-          chainFromStores[ch].units += uSum;
-          chainFromStores[ch].clp += cSum;
-        }
-      });
-    });
-    byChain = Object.values(chainFromStores).sort((a, b) => b.clp - a.clp);
-  }
 
   // Filter rankingByChainStore (must happen before KPI calc)
   let rankingByChainStore = src.rankingByChainStore || {};
@@ -649,21 +658,37 @@ function getFilteredData() {
     rankingByChainStore = filteredRanking;
   }
 
-  // Date scaling for rankingByChainStore (per-chain proportional)
+  // Date scaling for rankingByChainStore
+  // When division filter active: use per-chain×division ratios (exact)
+  // Otherwise: use per-chain ratios (proportional)
   if (_dateRatioByChain) {
+    const useDivRatios = f.divisions.length && _dateRatioByChainDiv;
     const dateScaled = {};
     Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
-      const dr = _dateRatioByChain[ch] || { uRatio: 0, cRatio: 0 };
-      if (dr.uRatio === 0) return; // chain has no data in date range
+      const drChain = _dateRatioByChain[ch] || { uRatio: 0, cRatio: 0 };
+      if (drChain.uRatio === 0) return;
       dateScaled[ch] = stores.map(s => {
-        const u = Math.round(s.units * dr.uRatio);
-        const c = Math.round(s.clp * dr.cRatio);
-        const cost = Math.round((s.costos || 0) * dr.uRatio);
+        let u, c, cost;
+        if (useDivRatios && s.byDivision) {
+          // Exact: scale each division independently using its own date ratio
+          const chainDivRatios = _dateRatioByChainDiv[ch] || {};
+          u = 0; c = 0; cost = 0;
+          Object.entries(s.byDivision).forEach(([div, dd]) => {
+            const dr = chainDivRatios[div] || { uRatio: drChain.uRatio, cRatio: drChain.cRatio };
+            u += Math.round(dd.units * dr.uRatio);
+            c += Math.round(dd.clp * dr.cRatio);
+            cost += Math.round((dd.costos || 0) * dr.uRatio);
+          });
+        } else {
+          // Proportional: uniform chain ratio
+          u = Math.round(s.units * drChain.uRatio);
+          c = Math.round(s.clp * drChain.cRatio);
+          cost = Math.round((s.costos || 0) * drChain.uRatio);
+        }
         return {
           ...s,
           units: u, clp: c, costos: cost,
           margin: c > 0 ? Math.round((c - cost) / c * 1000) / 10 : 0,
-          // Stock stays the same (it's a snapshot, not time-dependent)
         };
       });
     });
@@ -699,27 +724,14 @@ function getFilteredData() {
     }
   }
 
-  // Re-aggregate dailyTotals FIRST (single source of truth for KPIs + chart)
-  let filteredDailyTotals;
-  if (f.divisions.length) {
-    // Division filter active: use byDivisionDaily (already proportionally filtered)
-    const divDtAgg = {};
-    byDivisionDaily.forEach(d => {
-      if (!divDtAgg[d.date]) divDtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
-      divDtAgg[d.date].units += d.units;
-      divDtAgg[d.date].clp += d.clp;
-    });
-    filteredDailyTotals = Object.values(divDtAgg).sort((a, b) => a.date.localeCompare(b.date));
-  } else {
-    // No division filter: use dailyByChain (exact data, already chain-filtered if needed)
-    const dtAgg = {};
-    dailyByChain.forEach(d => {
-      if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
-      dtAgg[d.date].units += d.units;
-      dtAgg[d.date].clp += d.clp;
-    });
-    filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
-  }
+  // Re-aggregate dailyTotals from dailyByChain (now exact for both chain and division via _bcd)
+  const dtAgg = {};
+  dailyByChain.forEach(d => {
+    if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
+    dtAgg[d.date].units += d.units;
+    dtAgg[d.date].clp += d.clp;
+  });
+  let filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
 
   // Normalize dailySales + byLicense so license breakdown sums match filteredDailyTotals
   if (f.chains.length || f.divisions.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {

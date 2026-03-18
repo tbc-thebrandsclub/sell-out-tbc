@@ -1,11 +1,11 @@
 // Auto-generated from IV API data - DO NOT EDIT MANUALLY
-// Generated: 2026-03-18 15:14:39
+// Generated: 2026-03-18 15:30:33
 // Source: 114517 sales records, 34 days
-// Blocks: 42 data sections
+// Blocks: 43 data sections
 
 const REAL_SELLOUT = {
   "_meta": {
-    "generatedAt": "2026-03-18T15:14:39.203465",
+    "generatedAt": "2026-03-18T15:30:33.257423",
     "salesRecords": 114517,
     "salesDateFrom": "2026-02-10",
     "salesDateTo": "2026-03-15",
@@ -7549,6 +7549,8205 @@ const REAL_SELLOUT = {
     {
       "date": "2026-03-15",
       "chain": "Lider Express",
+      "units": 2,
+      "clp": 5042
+    }
+  ],
+  "dailyByChainDivision": [
+    {
+      "date": "2026-02-10",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 324,
+      "clp": 2917812
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 598,
+      "clp": 4523933
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 76,
+      "clp": 948082
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 236,
+      "clp": 2379653
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 107,
+      "clp": 1292846
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 516,
+      "clp": 1924558
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 7,
+      "clp": 116747
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 8,
+      "clp": 31935
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 33,
+      "clp": 173866
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 360,
+      "clp": 2204896
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 52,
+      "clp": 416404
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 127,
+      "clp": 926646
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 37,
+      "clp": 292820
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 78,
+      "clp": 921817
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 23,
+      "clp": 177254
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 14,
+      "clp": 109143
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 185,
+      "clp": 1596399
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 85,
+      "clp": 1192576
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 60,
+      "clp": 440856
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 40,
+      "clp": 219247
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 77,
+      "clp": 583971
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 25,
+      "clp": 226197
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 42,
+      "clp": 460264
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 86,
+      "clp": 963395
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 35970
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 106,
+      "clp": 1018561
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 52,
+      "clp": 796724
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 27,
+      "clp": 278115
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3000
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Acuenta",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Acuenta",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 5874
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 8,
+      "clp": 71920
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 31497
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Johnson",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 9980
+    },
+    {
+      "date": "2026-02-10",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 29414
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 83,
+      "clp": 1091056
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 265,
+      "clp": 2636315
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 527,
+      "clp": 4120380
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 322,
+      "clp": 2880574
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 84,
+      "clp": 953065
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 159123
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 541,
+      "clp": 2012911
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 6,
+      "clp": 23531
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 25,
+      "clp": 136890
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 5,
+      "clp": 73487
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 76,
+      "clp": 860796
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 28,
+      "clp": 272629
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 26,
+      "clp": 282835
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 477,
+      "clp": 2939730
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 47,
+      "clp": 372033
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 142,
+      "clp": 1152609
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 50,
+      "clp": 393375
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 211,
+      "clp": 1673652
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 36,
+      "clp": 193246
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 101,
+      "clp": 1345386
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 76,
+      "clp": 503976
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 63,
+      "clp": 483158
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 27,
+      "clp": 185653
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 76,
+      "clp": 952367
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 45318
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 144,
+      "clp": 1293204
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 80,
+      "clp": 1242643
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 35,
+      "clp": 339808
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 8,
+      "clp": 45756
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 11748
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 24363
+    },
+    {
+      "date": "2026-02-11",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 16990
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 342,
+      "clp": 3170877
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 252,
+      "clp": 2459552
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 532,
+      "clp": 4091662
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 97,
+      "clp": 1343573
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 80,
+      "clp": 951133
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 32,
+      "clp": 334685
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 86,
+      "clp": 972568
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 16,
+      "clp": 183840
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 47970
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 159,
+      "clp": 1159415
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 559,
+      "clp": 3299128
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 46,
+      "clp": 355993
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 52,
+      "clp": 371551
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3353
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 192,
+      "clp": 1603004
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 46,
+      "clp": 267684
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 76,
+      "clp": 512865
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 93,
+      "clp": 1244356
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 78,
+      "clp": 603529
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 47,
+      "clp": 463795
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 88,
+      "clp": 1207724
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 169,
+      "clp": 1677205
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 71,
+      "clp": 832162
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 31,
+      "clp": 236132
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 30,
+      "clp": 193714
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "La Polar",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3361
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 489,
+      "clp": 1808222
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 29,
+      "clp": 159554
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 6723
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 9,
+      "clp": 131437
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 10,
+      "clp": 60233
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 24337
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 7994
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Johnson",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 4990
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4990
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 5,
+      "clp": 19741
+    },
+    {
+      "date": "2026-02-12",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 15967
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 280,
+      "clp": 2898131
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 108,
+      "clp": 1305824
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 397,
+      "clp": 3679035
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 665,
+      "clp": 5371825
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 85,
+      "clp": 1071117
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 799,
+      "clp": 4332874
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 88,
+      "clp": 687091
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 43,
+      "clp": 350972
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 156,
+      "clp": 1165301
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3353
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 314,
+      "clp": 2310068
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 70,
+      "clp": 456171
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 109,
+      "clp": 1452098
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 66,
+      "clp": 352159
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 116,
+      "clp": 934808
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 42,
+      "clp": 509585
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 25,
+      "clp": 289750
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 105,
+      "clp": 1174603
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 45872
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 85,
+      "clp": 1162484
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 162,
+      "clp": 1506885
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 46,
+      "clp": 449540
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 12,
+      "clp": 189393
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 519,
+      "clp": 1889233
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 45,
+      "clp": 245250
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 2,
+      "clp": 9236
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 10,
+      "clp": 38658
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 29,
+      "clp": 216542
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 35,
+      "clp": 286085
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 118,
+      "clp": 1421161
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "La Polar",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 4699
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "La Polar",
+      "division": "Accesorios y Otros",
+      "units": 2,
+      "clp": 7521
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 5,
+      "clp": 19329
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 17,
+      "clp": 131254
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 6714
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 8404
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 10907
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Johnson",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 13980
+    },
+    {
+      "date": "2026-02-13",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 7994
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 389,
+      "clp": 3868667
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 113,
+      "clp": 1460452
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 447,
+      "clp": 4219275
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 743,
+      "clp": 5930139
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 100,
+      "clp": 1147037
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 584,
+      "clp": 2162065
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 42,
+      "clp": 222546
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 15,
+      "clp": 251149
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 6714
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 7,
+      "clp": 26052
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 59,
+      "clp": 507925
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 698,
+      "clp": 3831601
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 39,
+      "clp": 314421
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 181,
+      "clp": 1378049
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 33,
+      "clp": 247418
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 90,
+      "clp": 1100336
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 36,
+      "clp": 255959
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "La Polar",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 2017
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "La Polar",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 15958
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 301,
+      "clp": 2527658
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 116,
+      "clp": 1637197
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 63,
+      "clp": 356619
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 58,
+      "clp": 360093
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 99,
+      "clp": 733096
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 47,
+      "clp": 498045
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 105,
+      "clp": 1213366
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 29,
+      "clp": 324692
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 96940
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 205,
+      "clp": 2119604
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 73,
+      "clp": 699014
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 87,
+      "clp": 1417306
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3000
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 158224
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Acuenta",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 31497
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 2,
+      "clp": 13428
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 29414
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 15110
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Johnson",
+      "division": "Calzado",
+      "units": 1,
+      "clp": 7990
+    },
+    {
+      "date": "2026-02-14",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 7994
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 696,
+      "clp": 5568550
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 410,
+      "clp": 3809436
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 298,
+      "clp": 2997312
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 78,
+      "clp": 974219
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 70,
+      "clp": 791068
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 40,
+      "clp": 453605
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 65,
+      "clp": 682880
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 23,
+      "clp": 255940
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 1,
+      "clp": 15990
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 42,
+      "clp": 335785
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 504,
+      "clp": 2859455
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 30,
+      "clp": 226452
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 152,
+      "clp": 1140837
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 32,
+      "clp": 219680
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 56,
+      "clp": 608722
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 11,
+      "clp": 106990
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 200,
+      "clp": 1627155
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 101,
+      "clp": 1507347
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 33,
+      "clp": 182795
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 84,
+      "clp": 557617
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 32,
+      "clp": 238761
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 87,
+      "clp": 898795
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 47,
+      "clp": 809030
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 25,
+      "clp": 231286
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3990
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 23,
+      "clp": 166315
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 465,
+      "clp": 1703359
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 34,
+      "clp": 178050
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 8,
+      "clp": 31935
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 12,
+      "clp": 204106
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 2,
+      "clp": 13428
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 15119
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 6714
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 16361
+    },
+    {
+      "date": "2026-02-15",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 14990
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 254,
+      "clp": 2482691
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 64,
+      "clp": 593360
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 523,
+      "clp": 3922317
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 313,
+      "clp": 2887128
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 42,
+      "clp": 448019
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 43,
+      "clp": 348376
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 561,
+      "clp": 3110183
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 41,
+      "clp": 340010
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 173,
+      "clp": 1237153
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3353
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 84,
+      "clp": 1078472
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 19,
+      "clp": 155643
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 27,
+      "clp": 186708
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "La Polar",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 4699
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 91,
+      "clp": 1198860
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 169,
+      "clp": 1403200
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 47,
+      "clp": 284182
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 39,
+      "clp": 315255
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 64,
+      "clp": 485757
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 62,
+      "clp": 631132
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 27,
+      "clp": 262193
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 20,
+      "clp": 235628
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 56970
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 109,
+      "clp": 1087698
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 91,
+      "clp": 1486902
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 24,
+      "clp": 222762
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 484,
+      "clp": 1772911
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 5,
+      "clp": 26043
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 30,
+      "clp": 168780
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 9,
+      "clp": 135250
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 10,
+      "clp": 79832
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 20151
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 25212
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 5882
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Johnson",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 9996
+    },
+    {
+      "date": "2026-02-16",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4990
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 375,
+      "clp": 3237918
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 550,
+      "clp": 4073384
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 52,
+      "clp": 689197
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 218,
+      "clp": 2267789
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 39,
+      "clp": 421325
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 108173
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 45,
+      "clp": 261848
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 184,
+      "clp": 1251662
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 529,
+      "clp": 2820296
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 35,
+      "clp": 277284
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 5026
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 76,
+      "clp": 1110582
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 180,
+      "clp": 1583817
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 36,
+      "clp": 262212
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 72,
+      "clp": 525257
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 41,
+      "clp": 236247
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 103,
+      "clp": 1600441
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 98,
+      "clp": 856670
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 26,
+      "clp": 259740
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 5400
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 88,
+      "clp": 951519
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 28,
+      "clp": 207650
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 11,
+      "clp": 104590
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "La Polar",
+      "division": "Accesorios y Otros",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 438,
+      "clp": 1722808
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 80218
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 18,
+      "clp": 98258
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 4,
+      "clp": 18489
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 32,
+      "clp": 351282
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 78,
+      "clp": 844662
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 23,
+      "clp": 261770
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 4,
+      "clp": 50381
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 7555
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Johnson",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 8990
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 26884
+    },
+    {
+      "date": "2026-02-17",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 34447
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 242,
+      "clp": 2377245
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 331,
+      "clp": 2793552
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 490,
+      "clp": 3694492
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 59,
+      "clp": 811347
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 28,
+      "clp": 270389
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 607,
+      "clp": 3319924
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 173,
+      "clp": 1329717
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 69,
+      "clp": 539763
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 46,
+      "clp": 340818
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 2513
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 42,
+      "clp": 296442
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 101,
+      "clp": 1385557
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 9,
+      "clp": 55954
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 222,
+      "clp": 1690271
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 54,
+      "clp": 284134
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 121,
+      "clp": 1694605
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 83,
+      "clp": 595450
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 24,
+      "clp": 165207
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 84,
+      "clp": 890532
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 28,
+      "clp": 309295
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 56,
+      "clp": 619132
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 2,
+      "clp": 22401
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 475,
+      "clp": 2182584
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 31,
+      "clp": 166294
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 5,
+      "clp": 21010
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 141108
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 141,
+      "clp": 1379368
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 155,
+      "clp": 2592522
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 28,
+      "clp": 273320
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3990
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 8,
+      "clp": 51237
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 2,
+      "clp": 13428
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 19,
+      "clp": 140840
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 6714
+    },
+    {
+      "date": "2026-02-18",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 4193
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 512,
+      "clp": 3796859
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 319,
+      "clp": 2802416
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 278,
+      "clp": 2684641
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 48,
+      "clp": 667146
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 46,
+      "clp": 461804
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 23,
+      "clp": 182497
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 44,
+      "clp": 491382
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 88,
+      "clp": 1006951
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 23,
+      "clp": 257400
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 10,
+      "clp": 121479
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 557,
+      "clp": 3128862
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 173,
+      "clp": 1284450
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 33,
+      "clp": 243080
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 62,
+      "clp": 486880
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 159,
+      "clp": 1439008
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 72,
+      "clp": 588009
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 38,
+      "clp": 233673
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 30,
+      "clp": 242795
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 106,
+      "clp": 1410522
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 12,
+      "clp": 82870
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 129,
+      "clp": 1559224
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 35,
+      "clp": 243692
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 148,
+      "clp": 2659340
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 52,
+      "clp": 505599
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 146,
+      "clp": 1555107
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 614,
+      "clp": 2850556
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 102470
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 6,
+      "clp": 18488
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 72,
+      "clp": 218490
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 10,
+      "clp": 98245
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 7990
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Acuenta",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-19",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 22665
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 343,
+      "clp": 3319859
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 557,
+      "clp": 4027938
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 366,
+      "clp": 3164946
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 52,
+      "clp": 776709
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 44,
+      "clp": 386120
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 590,
+      "clp": 2883561
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 127671
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 62,
+      "clp": 223956
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 11,
+      "clp": 37817
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 72,
+      "clp": 744302
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 91,
+      "clp": 984081
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 30,
+      "clp": 299657
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 5,
+      "clp": 59950
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 703,
+      "clp": 3830415
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 240,
+      "clp": 2022869
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 35,
+      "clp": 301232
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 85,
+      "clp": 607512
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 251,
+      "clp": 2125899
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 100,
+      "clp": 1371531
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 119,
+      "clp": 902980
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 49,
+      "clp": 293631
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 34,
+      "clp": 230935
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 177,
+      "clp": 1750827
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 155,
+      "clp": 2536015
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 56,
+      "clp": 533940
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 23,
+      "clp": 159123
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 120,
+      "clp": 1420128
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 37,
+      "clp": 256347
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 12,
+      "clp": 99900
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 28967
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 10,
+      "clp": 80624
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4990
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Acuenta",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-20",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 5034
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 351,
+      "clp": 3473129
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 388,
+      "clp": 3375783
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 84,
+      "clp": 1042641
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 629,
+      "clp": 4521246
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 66,
+      "clp": 625580
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 160022
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 108,
+      "clp": 1145446
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 57,
+      "clp": 525934
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 34,
+      "clp": 349160
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 7,
+      "clp": 83930
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 795,
+      "clp": 4455973
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 77,
+      "clp": 554815
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 30,
+      "clp": 246388
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 228,
+      "clp": 1809807
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 5866
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 151,
+      "clp": 2164658
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 264,
+      "clp": 2468338
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 86,
+      "clp": 395542
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 115,
+      "clp": 878660
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 33,
+      "clp": 228989
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 191,
+      "clp": 3448697
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 43,
+      "clp": 433580
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 197,
+      "clp": 2042093
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Acuenta",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 124,
+      "clp": 1554899
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 53,
+      "clp": 353726
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 12,
+      "clp": 91492
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 639,
+      "clp": 3309069
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hiper Lider",
+      "division": "Calzado",
+      "units": 16,
+      "clp": 1134
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 79,
+      "clp": 280670
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 104159
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 5,
+      "clp": 11765
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 2,
+      "clp": 15109
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 15980
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 14990
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 18,
+      "clp": 182204
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 2,
+      "clp": 11764
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 7555
+    },
+    {
+      "date": "2026-02-21",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 13430
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 535,
+      "clp": 3638106
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 354,
+      "clp": 3109519
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 282,
+      "clp": 2763491
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 56,
+      "clp": 674789
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 60,
+      "clp": 634536
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 129,
+      "clp": 1020529
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 501,
+      "clp": 2810857
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 114,
+      "clp": 501357
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 29,
+      "clp": 201808
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 63,
+      "clp": 739653
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 36,
+      "clp": 252093
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 18,
+      "clp": 125271
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 167,
+      "clp": 1575170
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 109,
+      "clp": 1622137
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 65,
+      "clp": 494922
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 95,
+      "clp": 489218
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 27,
+      "clp": 216314
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 90,
+      "clp": 826189
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 90,
+      "clp": 1588132
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 17,
+      "clp": 169830
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 95294
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hiper Lider",
+      "division": "Calzado",
+      "units": 3,
+      "clp": 168
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 637,
+      "clp": 3614208
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 7,
+      "clp": 29414
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 38,
+      "clp": 137821
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 14,
+      "clp": 239385
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 37,
+      "clp": 329640
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 174396
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 61,
+      "clp": 700944
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 71940
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 68858
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Acuenta",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Acuenta",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 840
+    },
+    {
+      "date": "2026-02-22",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 15539
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 424,
+      "clp": 2924192
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 235,
+      "clp": 2343363
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 284,
+      "clp": 2603488
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 36,
+      "clp": 436266
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 30,
+      "clp": 310789
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 73,
+      "clp": 659592
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 67,
+      "clp": 704153
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 27,
+      "clp": 288319
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 4,
+      "clp": 42960
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 482,
+      "clp": 2577945
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 83,
+      "clp": 511906
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 169,
+      "clp": 1333342
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 42,
+      "clp": 317069
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 15,
+      "clp": 105757
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 122,
+      "clp": 1610649
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 23,
+      "clp": 168486
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "La Polar",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3361
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 149,
+      "clp": 2673679
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 37,
+      "clp": 384997
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 113,
+      "clp": 1054949
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 133,
+      "clp": 1248708
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 33,
+      "clp": 186724
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 116,
+      "clp": 1663323
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 28,
+      "clp": 218112
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 62,
+      "clp": 505044
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 582,
+      "clp": 3231742
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 49,
+      "clp": 169763
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 7,
+      "clp": 124394
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 6723
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Acuenta",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 20,
+      "clp": 136248
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 2,
+      "clp": 8404
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 55430
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 2521
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 16479
+    },
+    {
+      "date": "2026-02-23",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 2521
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 275,
+      "clp": 2636287
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 193,
+      "clp": 1994069
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 464,
+      "clp": 3244503
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 44,
+      "clp": 490153
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 42,
+      "clp": 462700
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 567,
+      "clp": 3187671
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 34,
+      "clp": 131936
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 7,
+      "clp": 20170
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 5,
+      "clp": 83991
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 68,
+      "clp": 688596
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 61,
+      "clp": 540823
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 19,
+      "clp": 190000
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 2,
+      "clp": 17980
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 566,
+      "clp": 3080592
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 195,
+      "clp": 1550406
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 34,
+      "clp": 239963
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 60,
+      "clp": 381008
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 2513
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 133,
+      "clp": 1769191
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 133,
+      "clp": 1291334
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 31,
+      "clp": 207252
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 41,
+      "clp": 293679
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 23,
+      "clp": 159857
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Paris",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 2990
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 146,
+      "clp": 1499637
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 186,
+      "clp": 3464239
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 40,
+      "clp": 360506
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 27,
+      "clp": 189899
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 91,
+      "clp": 1318072
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 9,
+      "clp": 56281
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 19,
+      "clp": 137547
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 16,
+      "clp": 136884
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 15102
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 34000
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Acuenta",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 840
+    },
+    {
+      "date": "2026-02-24",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 8489
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 237,
+      "clp": 2357802
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 462,
+      "clp": 3174998
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 287,
+      "clp": 2612570
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 33,
+      "clp": 440697
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 49,
+      "clp": 495774
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 66,
+      "clp": 619605
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 148860
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 71,
+      "clp": 718707
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 4,
+      "clp": 41560
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 187,
+      "clp": 1467444
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 543,
+      "clp": 2983712
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 58,
+      "clp": 409620
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 155496
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 149,
+      "clp": 2042764
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 135,
+      "clp": 1155423
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 12,
+      "clp": 93419
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 78,
+      "clp": 557362
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 38,
+      "clp": 235194
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 118,
+      "clp": 1416424
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 25,
+      "clp": 178610
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 16,
+      "clp": 126756
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 147,
+      "clp": 1445766
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 39,
+      "clp": 408686
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 201,
+      "clp": 3147322
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 657,
+      "clp": 3572377
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 131041
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 45,
+      "clp": 161426
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 4,
+      "clp": 16808
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 36,
+      "clp": 202842
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 9,
+      "clp": 83136
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 3,
+      "clp": 14286
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Acuenta",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 840
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 5874
+    },
+    {
+      "date": "2026-02-25",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 9235
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 211,
+      "clp": 2141934
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 327,
+      "clp": 2933449
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 48,
+      "clp": 715878
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 444,
+      "clp": 2901067
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 30,
+      "clp": 309109
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 599,
+      "clp": 3278840
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 196137
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 86,
+      "clp": 669022
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 198,
+      "clp": 1628017
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 693,
+      "clp": 4035946
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 45,
+      "clp": 168913
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 128923
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 5042
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 69,
+      "clp": 640231
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 72,
+      "clp": 723530
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 15,
+      "clp": 118850
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 35970
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 153,
+      "clp": 1857212
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 15,
+      "clp": 114996
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 27,
+      "clp": 210365
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 203,
+      "clp": 1839571
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 126,
+      "clp": 1837726
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 40,
+      "clp": 243711
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 26,
+      "clp": 190189
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 68,
+      "clp": 525932
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 188,
+      "clp": 1837390
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 212,
+      "clp": 3330302
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 39,
+      "clp": 457178
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 35,
+      "clp": 150658
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 15,
+      "clp": 128480
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 11748
+    },
+    {
+      "date": "2026-02-26",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 4193
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 115,
+      "clp": 831133
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 253,
+      "clp": 2276457
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 40,
+      "clp": 275710
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 175,
+      "clp": 2602410
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 42,
+      "clp": 241546
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 571,
+      "clp": 3959921
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 355,
+      "clp": 3553018
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 386,
+      "clp": 3719964
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 94,
+      "clp": 1159776
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 32,
+      "clp": 343187
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 91,
+      "clp": 976672
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 73,
+      "clp": 729608
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 17,
+      "clp": 177830
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 95920
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 757,
+      "clp": 4337911
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 133,
+      "clp": 963605
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 319,
+      "clp": 2559734
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 27,
+      "clp": 194019
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 2513
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 195,
+      "clp": 2326209
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 24,
+      "clp": 130689
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 26,
+      "clp": 191957
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 269,
+      "clp": 4292649
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 232,
+      "clp": 2351424
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 75,
+      "clp": 873089
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 800
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 17,
+      "clp": 130169
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 985,
+      "clp": 5709763
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 6,
+      "clp": 19329
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 42,
+      "clp": 151262
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 12,
+      "clp": 188982
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 32,
+      "clp": 201484
+    },
+    {
+      "date": "2026-02-27",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 12597
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 442,
+      "clp": 4462369
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 768,
+      "clp": 5099943
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 81,
+      "clp": 1079484
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 448,
+      "clp": 4160677
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 43,
+      "clp": 449428
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 1224,
+      "clp": 7061095
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 14,
+      "clp": 217116
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 45,
+      "clp": 185700
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 12,
+      "clp": 43700
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 6714
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 96,
+      "clp": 977100
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 100,
+      "clp": 1110890
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 16,
+      "clp": 154387
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 35970
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 961,
+      "clp": 5749641
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 151,
+      "clp": 1166377
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 377,
+      "clp": 2957796
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 49,
+      "clp": 336824
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 6,
+      "clp": 12087
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 351,
+      "clp": 3512101
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 208,
+      "clp": 3468652
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 141,
+      "clp": 1054709
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 80,
+      "clp": 456566
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 35,
+      "clp": 216539
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 91,
+      "clp": 1012650
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 337,
+      "clp": 3413933
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 379,
+      "clp": 5958181
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 282,
+      "clp": 3598026
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 69,
+      "clp": 503858
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 16,
+      "clp": 130392
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "La Polar",
+      "division": "Accesorios y Otros",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 10,
+      "clp": 61689
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 38,
+      "clp": 264222
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 20,
+      "clp": 172987
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Acuenta",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 4193
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Johnson",
+      "division": "Calzado",
+      "units": 1,
+      "clp": 7990
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4990
+    },
+    {
+      "date": "2026-02-28",
+      "chain": "Cencosud",
+      "division": "Accesorios y Otros",
+      "units": 1,
+      "clp": 14277
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 65,
+      "clp": 950969
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 357,
+      "clp": 3626654
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 610,
+      "clp": 4036581
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 419,
+      "clp": 4068202
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 50,
+      "clp": 518226
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 17,
+      "clp": 269611
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 1133,
+      "clp": 6533180
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 35,
+      "clp": 128574
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 6,
+      "clp": 25212
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 2,
+      "clp": 15109
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 63,
+      "clp": 677276
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 57,
+      "clp": 547434
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 11,
+      "clp": 118890
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 9,
+      "clp": 104910
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 212,
+      "clp": 3488382
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 66,
+      "clp": 378591
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 183,
+      "clp": 1665958
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 25,
+      "clp": 174619
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 78,
+      "clp": 581272
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 174,
+      "clp": 1764446
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 226,
+      "clp": 3570811
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 52,
+      "clp": 600560
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 45,
+      "clp": 288556
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 574,
+      "clp": 3417238
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 281,
+      "clp": 2351276
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 30,
+      "clp": 215407
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 98,
+      "clp": 731204
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 2519
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 204,
+      "clp": 2549353
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 18,
+      "clp": 134865
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 36,
+      "clp": 242123
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 11,
+      "clp": 82305
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 16782
+    },
+    {
+      "date": "2026-03-01",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 13,
+      "clp": 78504
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 245,
+      "clp": 2395401
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 431,
+      "clp": 2663466
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 54,
+      "clp": 559775
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 273,
+      "clp": 2575943
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 41,
+      "clp": 474924
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 971,
+      "clp": 5559243
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 4,
+      "clp": 13446
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 17,
+      "clp": 68070
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 124319
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 62,
+      "clp": 666261
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 17,
+      "clp": 178830
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 57,
+      "clp": 650435
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 2,
+      "clp": 23980
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 499,
+      "clp": 2881629
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 274,
+      "clp": 2287189
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 87,
+      "clp": 554733
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 32,
+      "clp": 199559
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 200,
+      "clp": 3337208
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 151,
+      "clp": 1271565
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 64,
+      "clp": 510636
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 17,
+      "clp": 142368
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 47,
+      "clp": 264546
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 224,
+      "clp": 2774644
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 34,
+      "clp": 246095
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "La Polar",
+      "division": "Accesorios y Otros",
+      "units": 1,
+      "clp": 3235
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 20,
+      "clp": 156351
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 263,
+      "clp": 4253302
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 220,
+      "clp": 2125543
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 55,
+      "clp": 645485
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 23,
+      "clp": 168837
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 5,
+      "clp": 32739
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 10068
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 22,
+      "clp": 162080
+    },
+    {
+      "date": "2026-03-02",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 0,
+      "clp": 2000
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 127,
+      "clp": 1480322
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 241,
+      "clp": 2480913
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 63,
+      "clp": 831695
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 459,
+      "clp": 2916482
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 261,
+      "clp": 2501025
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 972,
+      "clp": 5061087
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 4,
+      "clp": 64672
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 26,
+      "clp": 87398
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 8404
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 6714
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 592,
+      "clp": 3262619
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 101,
+      "clp": 627243
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 266,
+      "clp": 2085411
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 35,
+      "clp": 228618
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Ripley",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3353
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 32,
+      "clp": 333162
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 44,
+      "clp": 436560
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 146860
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 1,
+      "clp": 8990
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 254,
+      "clp": 3083469
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 14,
+      "clp": 131811
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 23,
+      "clp": 160456
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "La Polar",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3361
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 168,
+      "clp": 1677121
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 47,
+      "clp": 341712
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 152,
+      "clp": 2425088
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 26,
+      "clp": 189512
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 32,
+      "clp": 189827
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 334,
+      "clp": 5263804
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 64,
+      "clp": 724004
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 213,
+      "clp": 2224716
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 22,
+      "clp": 145184
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 8,
+      "clp": 66337
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 0,
+      "clp": 1
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 5,
+      "clp": 24774
+    },
+    {
+      "date": "2026-03-03",
+      "chain": "Acuenta",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 840
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 205,
+      "clp": 2090207
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 239,
+      "clp": 2874788
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 315,
+      "clp": 2017326
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 44,
+      "clp": 559565
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 227,
+      "clp": 2140576
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 708,
+      "clp": 4118413
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 10,
+      "clp": 170512
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 38,
+      "clp": 146224
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 6723
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 9656
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 172,
+      "clp": 1346506
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 483,
+      "clp": 2635208
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 41,
+      "clp": 426545
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 18,
+      "clp": 117967
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 118,
+      "clp": 1978186
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 169,
+      "clp": 1686636
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 49,
+      "clp": 584124
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 40,
+      "clp": 398105
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 4,
+      "clp": 38960
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 18,
+      "clp": 168201
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 29,
+      "clp": 295231
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 115,
+      "clp": 1436305
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 14,
+      "clp": 84861
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 12,
+      "clp": 123276
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 44,
+      "clp": 335094
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 129,
+      "clp": 1094090
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 103,
+      "clp": 1679391
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 27,
+      "clp": 160290
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 26,
+      "clp": 170266
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 111860
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 13,
+      "clp": 79793
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 5874
+    },
+    {
+      "date": "2026-03-04",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 23496
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 350,
+      "clp": 4256004
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 320,
+      "clp": 2142005
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 208,
+      "clp": 2089616
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 223,
+      "clp": 2106298
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 34,
+      "clp": 423745
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 751,
+      "clp": 4395331
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 102890
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 21,
+      "clp": 79830
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 6723
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 474,
+      "clp": 2560449
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 178,
+      "clp": 1571259
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 68,
+      "clp": 615737
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 33,
+      "clp": 184468
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 26,
+      "clp": 249809
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 42,
+      "clp": 459275
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 13,
+      "clp": 117870
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 32370
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 78,
+      "clp": 1257641
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 67,
+      "clp": 516291
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 164,
+      "clp": 1551816
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 40,
+      "clp": 250177
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 15,
+      "clp": 116349
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 166,
+      "clp": 2655614
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 48,
+      "clp": 528862
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 181,
+      "clp": 1886531
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 102,
+      "clp": 1333190
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 19,
+      "clp": 139013
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 14,
+      "clp": 90639
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 118860
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 2,
+      "clp": 8404
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 12,
+      "clp": 65504
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 9227
+    },
+    {
+      "date": "2026-03-05",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 10084
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 453,
+      "clp": 5467805
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 86,
+      "clp": 1046353
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 408,
+      "clp": 2693013
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 224,
+      "clp": 2066170
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 275,
+      "clp": 2858583
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 744,
+      "clp": 4218038
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 38,
+      "clp": 154625
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 3,
+      "clp": 10925
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 10,
+      "clp": 175562
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 638,
+      "clp": 3701612
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 28,
+      "clp": 196615
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 195,
+      "clp": 1638888
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 67,
+      "clp": 696160
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 264,
+      "clp": 2535191
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 95,
+      "clp": 1466765
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 120,
+      "clp": 915712
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 48,
+      "clp": 251059
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 66,
+      "clp": 344030
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 76,
+      "clp": 1003586
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 229,
+      "clp": 2608253
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 163,
+      "clp": 2676609
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 120,
+      "clp": 1514754
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 37,
+      "clp": 249586
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 23,
+      "clp": 194495
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "La Polar",
+      "division": "Accesorios y Otros",
+      "units": 2,
+      "clp": 3362
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 56,
+      "clp": 555170
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 53,
+      "clp": 589331
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 17,
+      "clp": 193830
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 7,
+      "clp": 78930
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 11,
+      "clp": 77890
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 18059
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 9,
+      "clp": 52068
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-03-06",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 11748
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 153,
+      "clp": 1875993
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 687,
+      "clp": 8416104
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 302,
+      "clp": 2886123
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 489,
+      "clp": 3244780
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 474,
+      "clp": 5030185
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 960,
+      "clp": 5645866
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 7,
+      "clp": 26052
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 65,
+      "clp": 263036
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 9,
+      "clp": 134393
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 188790
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 762,
+      "clp": 4635236
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 274,
+      "clp": 2425664
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 137870
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 78,
+      "clp": 672452
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 161,
+      "clp": 2548620
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 29,
+      "clp": 243242
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 332,
+      "clp": 3285872
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 64,
+      "clp": 333296
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 127,
+      "clp": 1025676
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 354,
+      "clp": 3826773
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 247,
+      "clp": 4181063
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 100,
+      "clp": 1393133
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 78,
+      "clp": 784233
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 77,
+      "clp": 924083
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 17,
+      "clp": 148630
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 71940
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 150,
+      "clp": 1923570
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 42,
+      "clp": 288842
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 29,
+      "clp": 242964
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 15102
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 51,
+      "clp": 213346
+    },
+    {
+      "date": "2026-03-07",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 8,
+      "clp": 43663
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 547,
+      "clp": 6743961
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 390,
+      "clp": 4173728
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 448,
+      "clp": 2849139
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 303,
+      "clp": 2861473
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 105,
+      "clp": 1276073
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 863,
+      "clp": 5058342
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 13,
+      "clp": 212502
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 7,
+      "clp": 29414
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 35,
+      "clp": 130259
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 471,
+      "clp": 2699253
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 184,
+      "clp": 1507387
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 11,
+      "clp": 73751
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 38,
+      "clp": 329093
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 107,
+      "clp": 1695919
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 218,
+      "clp": 1726789
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 75,
+      "clp": 468402
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 69,
+      "clp": 553937
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 15,
+      "clp": 110676
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 48,
+      "clp": 489280
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 12,
+      "clp": 126966
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 45,
+      "clp": 502555
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 4,
+      "clp": 36970
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 155,
+      "clp": 1619699
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 38,
+      "clp": 505652
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 132,
+      "clp": 2151435
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 103,
+      "clp": 1256577
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 27,
+      "clp": 188170
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 9,
+      "clp": 80183
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 21,
+      "clp": 167790
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 7555
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Walmart",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 5042
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 36,
+      "clp": 161261
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Acuenta",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 2521
+    },
+    {
+      "date": "2026-03-08",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 27705
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 530,
+      "clp": 3075304
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 131033
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 14,
+      "clp": 55463
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hiper Lider",
+      "division": "Calzado",
+      "units": 7,
+      "clp": 588
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 257,
+      "clp": 1734676
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 174,
+      "clp": 1832332
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 164,
+      "clp": 1472794
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 296,
+      "clp": 3535653
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 36,
+      "clp": 465233
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 26,
+      "clp": 262740
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 33,
+      "clp": 391318
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 12,
+      "clp": 92280
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 65440
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 26,
+      "clp": 161194
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 371,
+      "clp": 2149399
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 34,
+      "clp": 320721
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 140,
+      "clp": 1256557
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 58,
+      "clp": 903294
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 54,
+      "clp": 368090
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 7,
+      "clp": 49936
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 133,
+      "clp": 1065782
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 24,
+      "clp": 111822
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 137,
+      "clp": 1330571
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 111,
+      "clp": 1777655
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 47,
+      "clp": 634382
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 15990
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 61,
+      "clp": 689819
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 18,
+      "clp": 116083
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 17,
+      "clp": 130198
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 9,
+      "clp": 43573
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 5042
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 17,
+      "clp": 64176
+    },
+    {
+      "date": "2026-03-09",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 10068
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 253,
+      "clp": 1640155
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 285,
+      "clp": 3497228
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 143,
+      "clp": 1550369
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 159,
+      "clp": 1481227
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 40,
+      "clp": 442933
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 360,
+      "clp": 2067612
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 148,
+      "clp": 1366209
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 32,
+      "clp": 248811
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 18,
+      "clp": 120353
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 24,
+      "clp": 259767
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 18,
+      "clp": 194820
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 7,
+      "clp": 83930
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 32,
+      "clp": 326713
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 59,
+      "clp": 487439
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 120,
+      "clp": 839787
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 42,
+      "clp": 686803
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 10,
+      "clp": 82330
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 14,
+      "clp": 72888
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 74,
+      "clp": 1108156
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 126,
+      "clp": 1310088
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 39,
+      "clp": 566160
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 496,
+      "clp": 3019295
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 8,
+      "clp": 28573
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 1,
+      "clp": 2933
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 9,
+      "clp": 80910
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 38,
+      "clp": 444605
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 11,
+      "clp": 76864
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 34,
+      "clp": 85282
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 40,
+      "clp": 129378
+    },
+    {
+      "date": "2026-03-10",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 2933
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 195,
+      "clp": 1265301
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 149,
+      "clp": 1349718
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 187,
+      "clp": 1937601
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 289,
+      "clp": 3529735
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 35,
+      "clp": 403109
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 437,
+      "clp": 2506292
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 19,
+      "clp": 61347
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 4,
+      "clp": 67193
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 3,
+      "clp": 10925
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 6714
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 368,
+      "clp": 2020333
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 133,
+      "clp": 944894
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 78497
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 32,
+      "clp": 327463
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 52,
+      "clp": 486220
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 79,
+      "clp": 626224
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 48,
+      "clp": 647376
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 13,
+      "clp": 97888
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 21,
+      "clp": 124840
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 42,
+      "clp": 516966
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 14,
+      "clp": 113324
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 17,
+      "clp": 105028
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 114,
+      "clp": 1136882
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 76,
+      "clp": 1185083
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 36,
+      "clp": 455906
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 42,
+      "clp": 465585
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 7,
+      "clp": 72930
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 33,
+      "clp": 386153
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Falabella",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3990
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 6,
+      "clp": 61940
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 15,
+      "clp": 120850
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 14,
+      "clp": 49563
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 5042
+    },
+    {
+      "date": "2026-03-11",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 2521
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 227,
+      "clp": 1605846
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 180,
+      "clp": 1889846
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 143,
+      "clp": 1259767
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 259,
+      "clp": 3201982
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 50,
+      "clp": 629409
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 474,
+      "clp": 2708109
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 9,
+      "clp": 34453
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 3,
+      "clp": 51235
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 8404
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 394,
+      "clp": 2365877
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 177,
+      "clp": 1286702
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 44,
+      "clp": 281802
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 37,
+      "clp": 326586
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 153,
+      "clp": 1368831
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 64,
+      "clp": 691762
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 18,
+      "clp": 126384
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 44,
+      "clp": 626677
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 16,
+      "clp": 101357
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 85,
+      "clp": 1245298
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 131,
+      "clp": 1357433
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 35,
+      "clp": 538517
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Hites",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 800
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 32,
+      "clp": 345747
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 32,
+      "clp": 288508
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 7,
+      "clp": 88138
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 2,
+      "clp": 18980
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 7,
+      "clp": 44936
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 17,
+      "clp": 112799
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 35,
+      "clp": 469456
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 10,
+      "clp": 67140
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 20,
+      "clp": 102464
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 17631
+    },
+    {
+      "date": "2026-03-12",
+      "chain": "Acuenta",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 840
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 241,
+      "clp": 2500984
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 278,
+      "clp": 1863583
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 177,
+      "clp": 1643705
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 332,
+      "clp": 4065715
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 77,
+      "clp": 1024718
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 550,
+      "clp": 3498045
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 2,
+      "clp": 13428
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 18,
+      "clp": 82354
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 7,
+      "clp": 121789
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 81,
+      "clp": 902396
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 32,
+      "clp": 218338
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 6,
+      "clp": 55410
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 99,
+      "clp": 979499
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 57,
+      "clp": 861287
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 253,
+      "clp": 2109020
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 47,
+      "clp": 291158
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 13,
+      "clp": 79890
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 100,
+      "clp": 1441922
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 211,
+      "clp": 2046871
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 78,
+      "clp": 1105832
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 541,
+      "clp": 3183203
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 242,
+      "clp": 1800974
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 34,
+      "clp": 197945
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 59,
+      "clp": 510471
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 47,
+      "clp": 492251
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 66,
+      "clp": 658490
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 2,
+      "clp": 18485
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 12,
+      "clp": 83480
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 11,
+      "clp": 97092
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 4,
+      "clp": 32748
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Johnson",
+      "division": "Ropa Interior",
+      "units": 2,
+      "clp": 16489
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Johnson",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 14990
+    },
+    {
+      "date": "2026-03-13",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 1,
+      "clp": 2521
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 12,
+      "clp": 47058
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 800,
+      "clp": 4967556
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 7,
+      "clp": 111722
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 1681
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 2,
+      "clp": 18051
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 144,
+      "clp": 2271653
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 67,
+      "clp": 920619
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 269,
+      "clp": 2716601
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Jumbo",
+      "division": "Vestuario Infantil",
+      "units": 331,
+      "clp": 3531658
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Jumbo",
+      "division": "Ropa Interior",
+      "units": 432,
+      "clp": 3033475
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Jumbo",
+      "division": "Vestuario Adulto",
+      "units": 419,
+      "clp": 5366201
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Jumbo",
+      "division": "Accesorios y Otros",
+      "units": 158,
+      "clp": 1934034
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Jumbo",
+      "division": "Calzado",
+      "units": 233,
+      "clp": 2243138
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Ripley",
+      "division": "Vestuario Infantil",
+      "units": 651,
+      "clp": 4118378
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Ripley",
+      "division": "Calzado",
+      "units": 32,
+      "clp": 218140
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Ripley",
+      "division": "Ropa Interior",
+      "units": 247,
+      "clp": 2213243
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Ripley",
+      "division": "Accesorios y Otros",
+      "units": 75,
+      "clp": 698540
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 122,
+      "clp": 1392199
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 102,
+      "clp": 1694198
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 14,
+      "clp": 111514
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 284,
+      "clp": 2952840
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 63,
+      "clp": 376912
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Falabella",
+      "division": "Vestuario Infantil",
+      "units": 79,
+      "clp": 868915
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Falabella",
+      "division": "Ropa Interior",
+      "units": 44,
+      "clp": 482891
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Falabella",
+      "division": "Calzado",
+      "units": 19,
+      "clp": 135947
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Falabella",
+      "division": "Accesorios y Otros",
+      "units": 5,
+      "clp": 59950
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "La Polar",
+      "division": "Vestuario Infantil",
+      "units": 49,
+      "clp": 359159
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "La Polar",
+      "division": "Calzado",
+      "units": 95,
+      "clp": 1148027
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "La Polar",
+      "division": "Ropa Interior",
+      "units": 22,
+      "clp": 173260
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "La Polar",
+      "division": "Sin Clasificar",
+      "units": 1,
+      "clp": 5874
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "La Polar",
+      "division": "Vestuario Adulto",
+      "units": 1,
+      "clp": 3361
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Tottus",
+      "division": "Calzado",
+      "units": 14,
+      "clp": 117062
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 12589
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Walmart",
+      "division": "Vestuario Infantil",
+      "units": 1,
+      "clp": 4202
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 7,
+      "clp": 56967
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Johnson",
+      "division": "Vestuario Adulto",
+      "units": 2,
+      "clp": 7980
+    },
+    {
+      "date": "2026-03-14",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 3,
+      "clp": 7563
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hiper Lider",
+      "division": "Ropa Interior",
+      "units": 698,
+      "clp": 4312940
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hiper Lider",
+      "division": "Accesorios y Otros",
+      "units": 8,
+      "clp": 125150
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Infantil",
+      "units": 11,
+      "clp": 44538
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hiper Lider",
+      "division": "Sin Clasificar",
+      "units": 2,
+      "clp": 13428
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hiper Lider",
+      "division": "Vestuario Adulto",
+      "units": 3,
+      "clp": 12606
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Paris",
+      "division": "Vestuario Infantil",
+      "units": 131,
+      "clp": 1285101
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Paris",
+      "division": "Calzado",
+      "units": 97,
+      "clp": 1215513
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Paris",
+      "division": "Ropa Interior",
+      "units": 78,
+      "clp": 917928
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Paris",
+      "division": "Vestuario Adulto",
+      "units": 8,
+      "clp": 58427
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Paris",
+      "division": "Accesorios y Otros",
+      "units": 29,
+      "clp": 161812
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hites",
+      "division": "Vestuario Infantil",
+      "units": 107,
+      "clp": 1112186
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hites",
+      "division": "Calzado",
+      "units": 87,
+      "clp": 1231843
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Hites",
+      "division": "Ropa Interior",
+      "units": 34,
+      "clp": 533660
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Walmart",
+      "division": "Ropa Interior",
+      "units": 13,
+      "clp": 110834
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Ekono",
+      "division": "Ropa Interior",
+      "units": 5,
+      "clp": 13017
+    },
+    {
+      "date": "2026-03-15",
+      "chain": "Lider Express",
+      "division": "Ropa Interior",
       "units": 2,
       "clp": 5042
     }
@@ -44731,5 +52930,5 @@ const REAL_SELLOUT = {
       "value": 165.1
     }
   ],
-  "generatedAt": "2026-03-18T15:14:39.841807"
+  "generatedAt": "2026-03-18T15:30:33.896776"
 };

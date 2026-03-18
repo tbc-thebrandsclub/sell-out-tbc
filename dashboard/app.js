@@ -355,280 +355,147 @@ function getFilteredData() {
   const licDivBreakdown = src.licenseDivisionBreakdown || {};
 
   let dailySales = src.dailySales || [];
-  let dailyTotals = src.dailyTotals || [];
-  let dailyByChain = src.dailyByChain || [];
-  let byDivisionDaily = src.byDivisionDaily || [];
   let _productFilterRatioU = 1, _productFilterRatioC = 1;
-  let _dateRatioByChain = null; // chain → {uRatio, cRatio}
-  let _dateRatioByChainDiv = null; // chain → div → {uRatio, cRatio} (exact per chain×division)
 
-  // Exact daily data: date × chain × division
+  // ═══════════════════════════════════════════════════════════
+  // _bcd (dailyByChainDivision) is the SINGLE SOURCE OF TRUTH
+  // for all chain × division × date aggregations.
+  // All other aggregates are derived from it.
+  // ═══════════════════════════════════════════════════════════
   let _bcd = src.dailyByChainDivision || [];
+  const _bcdOrig = _bcd; // keep original for ratio computations
 
-  // 1. Date filters (exact)
-  if (f.dateFrom || f.dateTo) {
-    // Compute per-chain AND per-chain×division date ratios BEFORE filtering
-    const origByChainAgg = {};
-    const origByChainDivAgg = {};
-    _bcd.forEach(d => {
-      if (!origByChainAgg[d.chain]) origByChainAgg[d.chain] = { units: 0, clp: 0 };
-      origByChainAgg[d.chain].units += d.units;
-      origByChainAgg[d.chain].clp += d.clp;
-      const cdKey = d.chain + '|' + d.division;
-      if (!origByChainDivAgg[cdKey]) origByChainDivAgg[cdKey] = { chain: d.chain, div: d.division, units: 0, clp: 0 };
-      origByChainDivAgg[cdKey].units += d.units;
-      origByChainDivAgg[cdKey].clp += d.clp;
-    });
+  // ── Step 1: Apply all EXACT filters to _bcd ──
+  if (f.dateFrom) { _bcd = _bcd.filter(d => d.date >= f.dateFrom); dailySales = dailySales.filter(d => d.date >= f.dateFrom); }
+  if (f.dateTo)   { _bcd = _bcd.filter(d => d.date <= f.dateTo);   dailySales = dailySales.filter(d => d.date <= f.dateTo); }
+  if (f.chains.length)    { const s = new Set(f.chains);    _bcd = _bcd.filter(d => s.has(d.chain)); }
+  if (f.divisions.length) { const s = new Set(f.divisions); _bcd = _bcd.filter(d => s.has(d.division)); }
 
-    if (f.dateFrom) {
-      dailySales = dailySales.filter(d => d.date >= f.dateFrom);
-      dailyTotals = dailyTotals.filter(d => d.date >= f.dateFrom);
-      dailyByChain = dailyByChain.filter(d => d.date >= f.dateFrom);
-      byDivisionDaily = byDivisionDaily.filter(d => d.date >= f.dateFrom);
-      _bcd = _bcd.filter(d => d.date >= f.dateFrom);
-    }
-    if (f.dateTo) {
-      dailySales = dailySales.filter(d => d.date <= f.dateTo);
-      dailyTotals = dailyTotals.filter(d => d.date <= f.dateTo);
-      dailyByChain = dailyByChain.filter(d => d.date <= f.dateTo);
-      byDivisionDaily = byDivisionDaily.filter(d => d.date <= f.dateTo);
-      _bcd = _bcd.filter(d => d.date <= f.dateTo);
-    }
+  // ── Step 2: Derive dailyByChain and byDivisionDaily from filtered _bcd ──
+  const _aggByKey = (arr, keyFn, initFn) => {
+    const agg = {};
+    arr.forEach(d => { const k = keyFn(d); if (!agg[k]) agg[k] = initFn(d); agg[k].units += d.units; agg[k].clp += d.clp; });
+    return Object.values(agg).sort((a, b) => a.date ? a.date.localeCompare(b.date) : 0);
+  };
+  let dailyByChain = _aggByKey(_bcd,
+    d => d.date + '|' + d.chain,
+    d => ({ date: d.date, chain: d.chain, units: 0, clp: 0 })
+  );
+  let byDivisionDaily = _aggByKey(_bcd,
+    d => d.date + '|' + d.division,
+    d => ({ date: d.date, division: d.division, units: 0, clp: 0 })
+  );
 
-    // Compute filtered per-chain totals
-    const filtByChainAgg = {};
-    const filtByChainDivAgg = {};
-    _bcd.forEach(d => {
-      if (!filtByChainAgg[d.chain]) filtByChainAgg[d.chain] = { units: 0, clp: 0 };
-      filtByChainAgg[d.chain].units += d.units;
-      filtByChainAgg[d.chain].clp += d.clp;
-      const cdKey = d.chain + '|' + d.division;
-      if (!filtByChainDivAgg[cdKey]) filtByChainDivAgg[cdKey] = { chain: d.chain, div: d.division, units: 0, clp: 0 };
-      filtByChainDivAgg[cdKey].units += d.units;
-      filtByChainDivAgg[cdKey].clp += d.clp;
-    });
-
-    _dateRatioByChain = {};
-    Object.entries(origByChainAgg).forEach(([ch, orig]) => {
-      const filt = filtByChainAgg[ch] || { units: 0, clp: 0 };
-      _dateRatioByChain[ch] = {
-        uRatio: orig.units > 0 ? filt.units / orig.units : 0,
-        cRatio: orig.clp > 0 ? filt.clp / orig.clp : 0,
-      };
-    });
-
-    // Per-chain×division date ratios (for exact ranking scaling)
-    _dateRatioByChainDiv = {};
-    Object.entries(origByChainDivAgg).forEach(([cdKey, orig]) => {
-      const filt = filtByChainDivAgg[cdKey] || { units: 0, clp: 0 };
-      if (!_dateRatioByChainDiv[orig.chain]) _dateRatioByChainDiv[orig.chain] = {};
-      _dateRatioByChainDiv[orig.chain][orig.div] = {
-        uRatio: orig.units > 0 ? filt.units / orig.units : 0,
-        cRatio: orig.clp > 0 ? filt.clp / orig.clp : 0,
-      };
-    });
-  }
-
-  // 2. Chain filter
+  // ── Step 3: Chain filter on dailySales (proportional, license-level) ──
   if (f.chains.length) {
-    const chainSet = new Set(f.chains);
-    dailyByChain = dailyByChain.filter(d => chainSet.has(d.chain));
-    _bcd = _bcd.filter(d => chainSet.has(d.chain));
-    // Proportional scaling of dailySales (license-level daily) for chain
     const chainLicData = {};
     f.chains.forEach(ch => {
       const lics = (src.salesByChainLicense || {})[ch] || {};
       Object.entries(lics).forEach(([lic, d]) => {
         if (!chainLicData[lic]) chainLicData[lic] = { units: 0, clp: 0 };
-        chainLicData[lic].units += d.units;
-        chainLicData[lic].clp += d.clp;
+        chainLicData[lic].units += d.units; chainLicData[lic].clp += d.clp;
       });
     });
     const licTotals = {};
     Object.values(src.salesByChainLicense || {}).forEach(lics => {
       Object.entries(lics).forEach(([lic, d]) => {
         if (!licTotals[lic]) licTotals[lic] = { units: 0, clp: 0 };
-        licTotals[lic].units += d.units;
-        licTotals[lic].clp += d.clp;
+        licTotals[lic].units += d.units; licTotals[lic].clp += d.clp;
       });
     });
     dailySales = dailySales.map(d => {
-      const chainD = chainLicData[d.license];
-      const totalD = licTotals[d.license];
+      const chainD = chainLicData[d.license]; const totalD = licTotals[d.license];
       if (!chainD || !totalD || totalD.units === 0) return null;
       const ratio = chainD.units / totalD.units;
       return { ...d, units: Math.round(d.units * ratio), clp: Math.round(d.clp * ratio) };
     }).filter(d => d && d.units > 0);
-
-    // EXACT byDivisionDaily from dailyByChainDivision (not proportional)
-    const divDailyAgg = {};
-    _bcd.forEach(d => {
-      const key = d.date + '|' + d.division;
-      if (!divDailyAgg[key]) divDailyAgg[key] = { date: d.date, division: d.division, units: 0, clp: 0 };
-      divDailyAgg[key].units += d.units;
-      divDailyAgg[key].clp += d.clp;
-    });
-    byDivisionDaily = Object.values(divDailyAgg).sort((a, b) => a.date.localeCompare(b.date));
   }
 
-  // 3. License filter (exact, multi)
+  // ── Step 4: Division filter on dailySales (proportional, license-level) ──
+  if (f.divisions.length) {
+    dailySales = scaleDailySales(dailySales, licDivBreakdown, f.divisions);
+  }
+
+  // ── Step 5: License filter (exact) ──
   if (f.licenses.length) {
     const licSet = new Set(f.licenses);
     dailySales = dailySales.filter(d => licSet.has(d.license));
   }
 
-  // 4. Division filter (exact from dailyByChainDivision)
-  if (f.divisions.length) {
-    const divSet = new Set(f.divisions);
-    dailySales = scaleDailySales(dailySales, licDivBreakdown, f.divisions);
-    byDivisionDaily = byDivisionDaily.filter(d => divSet.has(d.division));
-    _bcd = _bcd.filter(d => divSet.has(d.division));
-    // EXACT dailyByChain from filtered _bcd (replaces proportional)
-    const chainDailyAgg = {};
-    _bcd.forEach(d => {
-      const key = d.date + '|' + d.chain;
-      if (!chainDailyAgg[key]) chainDailyAgg[key] = { date: d.date, chain: d.chain, units: 0, clp: 0 };
-      chainDailyAgg[key].units += d.units;
-      chainDailyAgg[key].clp += d.clp;
-    });
-    dailyByChain = Object.values(chainDailyAgg).sort((a, b) => a.date.localeCompare(b.date));
-  }
+  // ── Step 6: Temporal + product attribute filters (proportional) ──
+  if (f.years.length) dailySales = scaleDailySales(dailySales, src.licenseYearBreakdown || {}, f.years);
+  if (f.quarters.length) dailySales = scaleDailySales(dailySales, src.licenseQuarterBreakdown || {}, f.quarters);
+  if (f.temporadas.length) dailySales = scaleDailySales(dailySales, src.licenseTemporadaBreakdown || {}, f.temporadas);
+  if (f.clases.length) dailySales = scaleDailySales(dailySales, src.licenseClaseBreakdown || {}, f.clases);
+  if (f.subclases.length) dailySales = scaleDailySales(dailySales, src.licenseSubclaseBreakdown || {}, f.subclases);
+  if (f.categorias.length) dailySales = scaleDailySales(dailySales, src.licenseCategoriaBreakdown || {}, f.categorias);
 
-  // 5-7. Temporal filters (proportional, multi)
-  if (f.years.length) {
-    dailySales = scaleDailySales(dailySales, src.licenseYearBreakdown || {}, f.years);
-  }
-  if (f.quarters.length) {
-    dailySales = scaleDailySales(dailySales, src.licenseQuarterBreakdown || {}, f.quarters);
-  }
-  if (f.temporadas.length) {
-    dailySales = scaleDailySales(dailySales, src.licenseTemporadaBreakdown || {}, f.temporadas);
-  }
-  // 8-10. Product attribute filters (proportional, multi)
-  if (f.clases.length) {
-    dailySales = scaleDailySales(dailySales, src.licenseClaseBreakdown || {}, f.clases);
-  }
-  if (f.subclases.length) {
-    dailySales = scaleDailySales(dailySales, src.licenseSubclaseBreakdown || {}, f.subclases);
-  }
-  if (f.categorias.length) {
-    dailySales = scaleDailySales(dailySales, src.licenseCategoriaBreakdown || {}, f.categorias);
-  }
-
-  // Propagate license/temporal/product-attribute filters to dailyByChain and byDivisionDaily
-  // NOTE: dailySales only has top 15 licenses, so we compute the global ratio
-  // from licenseSummary (ALL licenses) using the breakdown maps for accuracy.
+  // ── Step 7: Compute product filter ratio and apply to _bcd-derived arrays ──
   if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
     const allLicSummary = src.licenseSummary || [];
     const origTotalU = allLicSummary.reduce((s, l) => s + l.units, 0) || 1;
     const origTotalC = allLicSummary.reduce((s, l) => s + l.clp, 0) || 1;
-
-    // Start from all licenses, then apply each filter
     let filteredLics = allLicSummary.slice();
-    if (f.licenses.length) {
-      const licSet = new Set(f.licenses);
-      filteredLics = filteredLics.filter(l => licSet.has(l.license));
-    }
-    if (f.temporadas.length) {
-      const tBreak = src.licenseTemporadaBreakdown || {};
-      filteredLics = filteredLics.map(l => {
-        const tb = tBreak[l.license];
-        if (!tb) return null;
-        const totalU = Object.values(tb).reduce((s, v) => s + v.units, 0);
-        const filtU = f.temporadas.reduce((s, t) => s + (tb[t]?.units || 0), 0);
-        if (filtU === 0) return null;
-        const r = totalU > 0 ? filtU / totalU : 0;
-        return { ...l, units: Math.round(l.units * r), clp: Math.round(l.clp * r) };
-      }).filter(Boolean);
-    }
-    if (f.years.length) {
-      const yBreak = src.licenseYearBreakdown || {};
-      filteredLics = filteredLics.map(l => {
-        const yb = yBreak[l.license];
-        if (!yb) return null;
-        const totalU = Object.values(yb).reduce((s, v) => s + v.units, 0);
-        const filtU = f.years.reduce((s, y) => s + (yb[y]?.units || 0), 0);
-        if (filtU === 0) return null;
-        const r = totalU > 0 ? filtU / totalU : 0;
-        return { ...l, units: Math.round(l.units * r), clp: Math.round(l.clp * r) };
-      }).filter(Boolean);
-    }
-    if (f.quarters.length) {
-      const qBreak = src.licenseQuarterBreakdown || {};
-      filteredLics = filteredLics.map(l => {
-        const qb = qBreak[l.license];
-        if (!qb) return null;
-        const totalU = Object.values(qb).reduce((s, v) => s + v.units, 0);
-        const filtU = f.quarters.reduce((s, q) => s + (qb[q]?.units || 0), 0);
-        if (filtU === 0) return null;
-        const r = totalU > 0 ? filtU / totalU : 0;
-        return { ...l, units: Math.round(l.units * r), clp: Math.round(l.clp * r) };
-      }).filter(Boolean);
-    }
-    // Clase / Subclase / Categoria proportional scaling
-    const _applyBreakdownFilter = (lics, breakdownKey, selectedVals) => {
-      const brk = src[breakdownKey] || {};
-      return lics.map(l => {
-        const b = brk[l.license];
-        if (!b) return null;
-        const totalU = Object.values(b).reduce((s, v) => s + v.units, 0);
-        const filtU = selectedVals.reduce((s, v) => s + (b[v]?.units || 0), 0);
-        if (filtU === 0) return null;
-        const r = totalU > 0 ? filtU / totalU : 0;
-        return { ...l, units: Math.round(l.units * r), clp: Math.round(l.clp * r) };
-      }).filter(Boolean);
-    };
-    if (f.clases.length) filteredLics = _applyBreakdownFilter(filteredLics, 'licenseClaseBreakdown', f.clases);
-    if (f.subclases.length) filteredLics = _applyBreakdownFilter(filteredLics, 'licenseSubclaseBreakdown', f.subclases);
-    if (f.categorias.length) filteredLics = _applyBreakdownFilter(filteredLics, 'licenseCategoriaBreakdown', f.categorias);
-
+    if (f.licenses.length) { const ls = new Set(f.licenses); filteredLics = filteredLics.filter(l => ls.has(l.license)); }
+    const _scaleByBreak = (lics, brk, vals) => lics.map(l => {
+      const b = brk[l.license]; if (!b) return null;
+      const tU = Object.values(b).reduce((s, v) => s + v.units, 0);
+      const fU = vals.reduce((s, v) => s + (b[v]?.units || 0), 0);
+      if (fU === 0) return null; const r = tU > 0 ? fU / tU : 0;
+      return { ...l, units: Math.round(l.units * r), clp: Math.round(l.clp * r) };
+    }).filter(Boolean);
+    if (f.temporadas.length) filteredLics = _scaleByBreak(filteredLics, src.licenseTemporadaBreakdown || {}, f.temporadas);
+    if (f.years.length) filteredLics = _scaleByBreak(filteredLics, src.licenseYearBreakdown || {}, f.years);
+    if (f.quarters.length) filteredLics = _scaleByBreak(filteredLics, src.licenseQuarterBreakdown || {}, f.quarters);
+    if (f.clases.length) filteredLics = _scaleByBreak(filteredLics, src.licenseClaseBreakdown || {}, f.clases);
+    if (f.subclases.length) filteredLics = _scaleByBreak(filteredLics, src.licenseSubclaseBreakdown || {}, f.subclases);
+    if (f.categorias.length) filteredLics = _scaleByBreak(filteredLics, src.licenseCategoriaBreakdown || {}, f.categorias);
     const filtTotalU = filteredLics.reduce((s, l) => s + l.units, 0);
     const filtTotalC = filteredLics.reduce((s, l) => s + l.clp, 0);
     _productFilterRatioU = filtTotalU / origTotalU;
     _productFilterRatioC = filtTotalC / origTotalC;
-
     if (_productFilterRatioU < 1) {
-      dailyByChain = dailyByChain.map(d => ({
-        ...d, units: Math.round(d.units * _productFilterRatioU), clp: Math.round(d.clp * _productFilterRatioC)
-      })).filter(d => d.units > 0);
-
-      byDivisionDaily = byDivisionDaily.map(d => ({
-        ...d, units: Math.round(d.units * _productFilterRatioU), clp: Math.round(d.clp * _productFilterRatioC)
-      })).filter(d => d.units > 0);
+      dailyByChain = dailyByChain.map(d => ({ ...d, units: Math.round(d.units * _productFilterRatioU), clp: Math.round(d.clp * _productFilterRatioC) })).filter(d => d.units > 0);
+      byDivisionDaily = byDivisionDaily.map(d => ({ ...d, units: Math.round(d.units * _productFilterRatioU), clp: Math.round(d.clp * _productFilterRatioC) })).filter(d => d.units > 0);
     }
   }
 
-  // Re-aggregate byLicense from filtered dailySales
-  const licAgg = {};
-  dailySales.forEach(d => {
-    if (!licAgg[d.license]) licAgg[d.license] = { license: d.license, units: 0, clp: 0 };
-    licAgg[d.license].units += d.units;
-    licAgg[d.license].clp += d.clp;
-  });
-  const byLicense = Object.values(licAgg).sort((a, b) => b.units - a.units);
-  const colors = src.byLicense || [];
-  byLicense.forEach((l, i) => {
-    const orig = colors.find(c => c.license === l.license);
-    l.color = orig ? orig.color : (["#6366f1","#f97316","#22c55e","#eab308","#ef4444","#8b5cf6","#ec4899","#14b8a6","#f59e0b","#3b82f6","#84cc16","#06b6d4","#d946ef","#f43f5e","#10b981"])[i % 15];
-  });
-
-  // Re-aggregate byChain from dailyByChain (now exact when division filter active via _bcd)
-  const chainAgg = {};
+  // ── Step 8: Aggregate totals from dailyByChain (single source of truth) ──
+  const dtAgg = {};
   dailyByChain.forEach(d => {
-    if (!chainAgg[d.chain]) chainAgg[d.chain] = { chain: d.chain, units: 0, clp: 0 };
-    chainAgg[d.chain].units += d.units;
-    chainAgg[d.chain].clp += d.clp;
+    if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
+    dtAgg[d.date].units += d.units; dtAgg[d.date].clp += d.clp;
   });
+  let filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
+
+  // ── Step 9: Normalize dailySales to match filteredDailyTotals ──
+  const licColors = src.byLicense || [];
+  const _colorForLic = (lic, i) => { const o = licColors.find(c => c.license === lic); return o ? o.color : ["#6366f1","#f97316","#22c55e","#eab308","#ef4444","#8b5cf6","#ec4899","#14b8a6","#f59e0b","#3b82f6","#84cc16","#06b6d4","#d946ef","#f43f5e","#10b981"][i % 15]; };
+  if (f.chains.length || f.divisions.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
+    const authTotals = {}; filteredDailyTotals.forEach(d => { authTotals[d.date] = { units: d.units, clp: d.clp }; });
+    const salesTotals = {}; dailySales.forEach(d => { if (!salesTotals[d.date]) salesTotals[d.date] = { units: 0, clp: 0 }; salesTotals[d.date].units += d.units; salesTotals[d.date].clp += d.clp; });
+    dailySales = dailySales.map(d => {
+      const auth = authTotals[d.date]; const cur = salesTotals[d.date];
+      if (!auth || !cur || cur.units === 0) return d;
+      return { ...d, units: Math.round(d.units * auth.units / cur.units), clp: Math.round(d.clp * (cur.clp > 0 ? auth.clp / cur.clp : 1)) };
+    });
+  }
+  // Aggregate byLicense from dailySales
+  const licAgg = {};
+  dailySales.forEach(d => { if (!licAgg[d.license]) licAgg[d.license] = { license: d.license, units: 0, clp: 0 }; licAgg[d.license].units += d.units; licAgg[d.license].clp += d.clp; });
+  const byLicense = Object.values(licAgg).sort((a, b) => b.units - a.units);
+  byLicense.forEach((l, i) => { l.color = _colorForLic(l.license, i); });
+
+  // Aggregate byChain from dailyByChain
+  const chainAgg = {};
+  dailyByChain.forEach(d => { if (!chainAgg[d.chain]) chainAgg[d.chain] = { chain: d.chain, units: 0, clp: 0 }; chainAgg[d.chain].units += d.units; chainAgg[d.chain].clp += d.clp; });
   let byChain = Object.values(chainAgg).sort((a, b) => b.clp - a.clp);
 
-  // Filter rankingByChainStore (must happen before KPI calc)
+  // ── Step 10: rankingByChainStore — filter then RECONCILE with _bcd totals ──
   let rankingByChainStore = src.rankingByChainStore || {};
   if (f.chains.length) {
-    const chainSet = new Set(f.chains);
-    const filtered = {};
-    Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
-      if (chainSet.has(ch)) filtered[ch] = stores;
-    });
+    const chainSet = new Set(f.chains); const filtered = {};
+    Object.entries(rankingByChainStore).forEach(([ch, stores]) => { if (chainSet.has(ch)) filtered[ch] = stores; });
     rankingByChainStore = filtered;
   }
   if (f.divisions.length) {
@@ -643,130 +510,47 @@ function getFilteredData() {
         });
         const sales4w = s.weeksOfStock > 0 && s.stockUnits > 0 ? s.stockUnits / s.weeksOfStock * 4 : 0;
         const divStockRatio = s.stockUnits > 0 ? stockSum / s.stockUnits : 0;
-        const filteredSales4w = sales4w * divStockRatio;
-        const weeklyAvg = filteredSales4w / 4;
-        return {
-          ...s, units: uSum, clp: cSum, costos: costSum,
+        const weeklyAvg = sales4w * divStockRatio / 4;
+        return { ...s, units: uSum, clp: cSum, costos: costSum,
           margin: cSum > 0 ? Math.round((cSum - costSum) / cSum * 1000) / 10 : 0,
-          stockUnits: stockSum,
-          weeksOfStock: weeklyAvg > 0 ? Math.round(stockSum / weeklyAvg * 10) / 10 : 0,
-          byDivision: filteredDivs
-        };
+          stockUnits: stockSum, weeksOfStock: weeklyAvg > 0 ? Math.round(stockSum / weeklyAvg * 10) / 10 : 0,
+          byDivision: filteredDivs };
       });
       if (filtered.length) filteredRanking[ch] = filtered;
     });
     rankingByChainStore = filteredRanking;
   }
 
-  // Date scaling for rankingByChainStore
-  // When division filter active: use per-chain×division ratios (exact)
-  // Otherwise: use per-chain ratios (proportional)
-  if (_dateRatioByChain) {
-    const useDivRatios = f.divisions.length && _dateRatioByChainDiv;
-    const dateScaled = {};
-    Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
-      const drChain = _dateRatioByChain[ch] || { uRatio: 0, cRatio: 0 };
-      if (drChain.uRatio === 0) return;
-      dateScaled[ch] = stores.map(s => {
-        let u, c, cost;
-        if (useDivRatios && s.byDivision) {
-          // Exact: scale each division independently using its own date ratio
-          const chainDivRatios = _dateRatioByChainDiv[ch] || {};
-          u = 0; c = 0; cost = 0;
-          Object.entries(s.byDivision).forEach(([div, dd]) => {
-            const dr = chainDivRatios[div] || { uRatio: drChain.uRatio, cRatio: drChain.cRatio };
-            u += Math.round(dd.units * dr.uRatio);
-            c += Math.round(dd.clp * dr.cRatio);
-            cost += Math.round((dd.costos || 0) * dr.uRatio);
-          });
-        } else {
-          // Proportional: uniform chain ratio
-          u = Math.round(s.units * drChain.uRatio);
-          c = Math.round(s.clp * drChain.cRatio);
-          cost = Math.round((s.costos || 0) * drChain.uRatio);
-        }
-        return {
-          ...s,
-          units: u, clp: c, costos: cost,
-          margin: c > 0 ? Math.round((c - cost) / c * 1000) / 10 : 0,
-        };
-      });
-    });
-    rankingByChainStore = dateScaled;
-  }
-
-  // Proportional scaling for license/temporal filters (units, clp, stock)
-  // Uses _productFilterRatioU computed from ALL licenses (not just top 15 in dailySales)
-  if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
-    const salesRatio = _productFilterRatioU;
-    if (salesRatio < 1) {
-      const scaledRanking = {};
-      Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
-        scaledRanking[ch] = stores.map(s => {
-          const scaledUnits = Math.round(s.units * salesRatio);
-          const scaledClp = Math.round(s.clp * salesRatio);
-          const scaledCostos = Math.round((s.costos || 0) * salesRatio);
-          const scaledStock = Math.round(s.stockUnits * salesRatio);
-          const weeklyAvg = s.weeksOfStock > 0 && s.stockUnits > 0 ? s.stockUnits / s.weeksOfStock / 4 : 0;
-          const scaledWeeklyAvg = weeklyAvg * salesRatio;
-          return {
-            ...s,
-            units: scaledUnits,
-            clp: scaledClp,
-            costos: scaledCostos,
-            margin: scaledClp > 0 ? Math.round((scaledClp - scaledCostos) / scaledClp * 1000) / 10 : s.margin,
-            stockUnits: scaledStock,
-            weeksOfStock: scaledWeeklyAvg > 0 ? Math.round(scaledStock / scaledWeeklyAvg * 10) / 10 : 0
-          };
-        });
-      });
-      rankingByChainStore = scaledRanking;
-    }
-  }
-
-  // Re-aggregate dailyTotals from dailyByChain (now exact for both chain and division via _bcd)
-  const dtAgg = {};
-  dailyByChain.forEach(d => {
-    if (!dtAgg[d.date]) dtAgg[d.date] = { date: d.date, units: 0, clp: 0 };
-    dtAgg[d.date].units += d.units;
-    dtAgg[d.date].clp += d.clp;
+  // RECONCILE: Scale each chain's ranking stores so the chain total matches _bcd exactly.
+  // This replaces the old date-ratio and product-ratio cascading which caused inconsistencies.
+  const _bcdByChain = {}; // exact totals from _bcd (already date+chain+division filtered)
+  _bcd.forEach(d => {
+    if (!_bcdByChain[d.chain]) _bcdByChain[d.chain] = { units: 0, clp: 0 };
+    _bcdByChain[d.chain].units += d.units;
+    _bcdByChain[d.chain].clp += d.clp;
   });
-  let filteredDailyTotals = Object.values(dtAgg).sort((a, b) => a.date.localeCompare(b.date));
-
-  // Normalize dailySales + byLicense so license breakdown sums match filteredDailyTotals
-  if (f.chains.length || f.divisions.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
-    const authTotals = {};
-    filteredDailyTotals.forEach(d => { authTotals[d.date] = { units: d.units, clp: d.clp }; });
-    const salesTotals = {};
-    dailySales.forEach(d => {
-      if (!salesTotals[d.date]) salesTotals[d.date] = { units: 0, clp: 0 };
-      salesTotals[d.date].units += d.units;
-      salesTotals[d.date].clp += d.clp;
-    });
-    dailySales = dailySales.map(d => {
-      const auth = authTotals[d.date];
-      const cur = salesTotals[d.date];
-      if (!auth || !cur || cur.units === 0) return d;
-      const uRatio = auth.units / cur.units;
-      const cRatio = cur.clp > 0 ? auth.clp / cur.clp : 1;
-      return { ...d, units: Math.round(d.units * uRatio), clp: Math.round(d.clp * cRatio) };
-    });
-    // Re-aggregate byLicense after normalization
-    const licAgg2 = {};
-    dailySales.forEach(d => {
-      if (!licAgg2[d.license]) licAgg2[d.license] = { license: d.license, units: 0, clp: 0 };
-      licAgg2[d.license].units += d.units;
-      licAgg2[d.license].clp += d.clp;
-    });
-    const normalizedByLic = Object.values(licAgg2).sort((a, b) => b.units - a.units);
-    // Update byLicense in place
-    byLicense.length = 0;
-    normalizedByLic.forEach(l => {
-      const orig = colors.find(c => c.license === l.license);
-      l.color = orig ? orig.color : (["#6366f1","#f97316","#22c55e","#eab308","#ef4444","#8b5cf6","#ec4899","#14b8a6","#f59e0b","#3b82f6","#84cc16","#06b6d4","#d946ef","#f43f5e","#10b981"])[byLicense.length % 15];
-      byLicense.push(l);
-    });
+  // Apply product filter ratio to _bcd totals too (license/temporada/etc are proportional)
+  if (_productFilterRatioU < 1) {
+    Object.values(_bcdByChain).forEach(v => { v.units = Math.round(v.units * _productFilterRatioU); v.clp = Math.round(v.clp * _productFilterRatioC); });
   }
+  const reconciledRanking = {};
+  Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
+    const bcdTarget = _bcdByChain[ch];
+    if (!bcdTarget || bcdTarget.units === 0) return;
+    const rankTotal = stores.reduce((s, st) => s + st.units, 0);
+    const rankTotalC = stores.reduce((s, st) => s + st.clp, 0);
+    if (rankTotal === 0) return;
+    const uR = bcdTarget.units / rankTotal;
+    const cR = rankTotalC > 0 ? bcdTarget.clp / rankTotalC : uR;
+    reconciledRanking[ch] = stores.map(s => {
+      const u = Math.round(s.units * uR);
+      const c = Math.round(s.clp * cR);
+      const cost = Math.round((s.costos || 0) * uR);
+      return { ...s, units: u, clp: c, costos: cost,
+        margin: c > 0 ? Math.round((c - cost) / c * 1000) / 10 : 0 };
+    });
+  });
+  rankingByChainStore = reconciledRanking;
 
   // KPIs derived from filteredDailyTotals (same source as chart — always consistent)
   const totalUnits = filteredDailyTotals.reduce((s, d) => s + d.units, 0);
@@ -784,34 +568,26 @@ function getFilteredData() {
     dateRange: dates.length ? { from: dates[0], to: dates[dates.length - 1] } : src.kpis.dateRange,
   };
 
-  // Re-aggregate byDivision from filtered data
+  // Aggregate byDivision from byDivisionDaily (derived from _bcd)
   let byDivision = src.byDivision || [];
-  if (f.chains.length || f.divisions.length) {
+  if (f.chains.length || f.divisions.length || f.dateFrom || f.dateTo) {
     const divAgg = {};
     byDivisionDaily.forEach(d => {
       if (!divAgg[d.division]) divAgg[d.division] = { division: d.division, units: 0, clp: 0 };
-      divAgg[d.division].units += d.units;
-      divAgg[d.division].clp += d.clp;
+      divAgg[d.division].units += d.units; divAgg[d.division].clp += d.clp;
     });
     const divStoreCounts = {};
     Object.values(rankingByChainStore).flat().forEach(s => {
-      Object.keys(s.byDivision || {}).forEach(div => {
-        divStoreCounts[div] = (divStoreCounts[div] || 0) + 1;
-      });
+      Object.keys(s.byDivision || {}).forEach(div => { divStoreCounts[div] = (divStoreCounts[div] || 0) + 1; });
     });
     const totalDivUnits = Object.values(divAgg).reduce((s, d) => s + d.units, 0);
     byDivision = Object.values(divAgg).map(d => {
       const orig = (src.byDivision || []).find(o => o.division === d.division) || {};
-      return {
-        ...orig, ...d,
+      return { ...orig, ...d,
         pctOfTotal: totalDivUnits > 0 ? Math.round(d.units / totalDivUnits * 1000) / 10 : 0,
-        storeCount: divStoreCounts[d.division] || 0,
-      };
+        storeCount: divStoreCounts[d.division] || 0 };
     }).sort((a, b) => b.units - a.units);
-    if (f.divisions.length) {
-      const divSet = new Set(f.divisions);
-      byDivision = byDivision.filter(d => divSet.has(d.division));
-    }
+    if (f.divisions.length) { const ds = new Set(f.divisions); byDivision = byDivision.filter(d => ds.has(d.division)); }
   }
 
   // Filter divisionMixByChain
@@ -828,12 +604,11 @@ function getFilteredData() {
     const filteredDates = new Set(filteredDailyTotals.map(d => d.date));
     const filtActiveDays = filteredDates.size || velocityMetrics.activeDays || 1;
     let velByChain = velocityMetrics.velocityByChain || [];
-    if (f.chains.length || f.divisions.length || _dateRatioByChain) {
-      // Recalculate from rankingByChainStore (already date/chain/division scaled)
-      velByChain = Object.entries(rankingByChainStore).map(([ch, stores]) => {
-        const totalUnits = stores.reduce((s, st) => s + st.units, 0);
-        return { chain: ch, unitsPerDay: Math.round(totalUnits / filtActiveDays), trend: 0 };
-      }).filter(v => v.unitsPerDay > 0).sort((a, b) => b.unitsPerDay - a.unitsPerDay);
+    if (f.chains.length || f.divisions.length || f.dateFrom || f.dateTo) {
+      // Recalculate from byChain (derived from _bcd — exact)
+      velByChain = byChain.map(ch => ({
+        chain: ch.chain, unitsPerDay: Math.round(ch.units / filtActiveDays), trend: 0
+      })).filter(v => v.unitsPerDay > 0).sort((a, b) => b.unitsPerDay - a.unitsPerDay);
     }
     velocityMetrics = { ...velocityMetrics, velocityByChain: velByChain, activeDays: filtActiveDays };
   }

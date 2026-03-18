@@ -296,6 +296,9 @@ function populateGlobalFilters() {
   initMultiSelect('filter-year-product', (data.allYearsProduct || []).map(y => ({ value: y, label: y })), cb);
   initMultiSelect('filter-quarter', (data.allQuarters || []).map(q => ({ value: q, label: q })), cb);
   initMultiSelect('filter-temporada', data.allTemporadas || [], cb);
+  initMultiSelect('filter-clase', data.allClases || [], cb);
+  initMultiSelect('filter-subclase', data.allSubclases || [], cb);
+  initMultiSelect('filter-categoria', data.allCategorias || [], cb);
 
   ['filter-date-from','filter-date-to'].forEach(id => {
     const el = document.getElementById(id);
@@ -318,6 +321,9 @@ function getGlobalFilters() {
     years: _msValues('filter-year-product'),
     quarters: _msValues('filter-quarter'),
     temporadas: _msValues('filter-temporada'),
+    clases: _msValues('filter-clase'),
+    subclases: _msValues('filter-subclase'),
+    categorias: _msValues('filter-categoria'),
   };
 }
 
@@ -342,7 +348,8 @@ function getFilteredData() {
   if (!src) return null;
   const f = getGlobalFilters();
   const noFilter = !f.dateFrom && !f.dateTo && !f.chains.length && !f.divisions.length
-                && !f.licenses.length && !f.years.length && !f.quarters.length && !f.temporadas.length;
+                && !f.licenses.length && !f.years.length && !f.quarters.length && !f.temporadas.length
+                && !f.clases.length && !f.subclases.length && !f.categorias.length;
   if (noFilter) return src;
 
   const licDivBreakdown = src.licenseDivisionBreakdown || {};
@@ -438,11 +445,21 @@ function getFilteredData() {
   if (f.temporadas.length) {
     dailySales = scaleDailySales(dailySales, src.licenseTemporadaBreakdown || {}, f.temporadas);
   }
+  // 8-10. Product attribute filters (proportional, multi)
+  if (f.clases.length) {
+    dailySales = scaleDailySales(dailySales, src.licenseClaseBreakdown || {}, f.clases);
+  }
+  if (f.subclases.length) {
+    dailySales = scaleDailySales(dailySales, src.licenseSubclaseBreakdown || {}, f.subclases);
+  }
+  if (f.categorias.length) {
+    dailySales = scaleDailySales(dailySales, src.licenseCategoriaBreakdown || {}, f.categorias);
+  }
 
-  // Propagate license/temporal filters to dailyByChain and byDivisionDaily
+  // Propagate license/temporal/product-attribute filters to dailyByChain and byDivisionDaily
   // NOTE: dailySales only has top 15 licenses, so we compute the global ratio
   // from licenseSummary (ALL licenses) using the breakdown maps for accuracy.
-  if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length) {
+  if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
     const allLicSummary = src.licenseSummary || [];
     const origTotalU = allLicSummary.reduce((s, l) => s + l.units, 0) || 1;
     const origTotalC = allLicSummary.reduce((s, l) => s + l.clp, 0) || 1;
@@ -489,6 +506,22 @@ function getFilteredData() {
         return { ...l, units: Math.round(l.units * r), clp: Math.round(l.clp * r) };
       }).filter(Boolean);
     }
+    // Clase / Subclase / Categoria proportional scaling
+    const _applyBreakdownFilter = (lics, breakdownKey, selectedVals) => {
+      const brk = src[breakdownKey] || {};
+      return lics.map(l => {
+        const b = brk[l.license];
+        if (!b) return null;
+        const totalU = Object.values(b).reduce((s, v) => s + v.units, 0);
+        const filtU = selectedVals.reduce((s, v) => s + (b[v]?.units || 0), 0);
+        if (filtU === 0) return null;
+        const r = totalU > 0 ? filtU / totalU : 0;
+        return { ...l, units: Math.round(l.units * r), clp: Math.round(l.clp * r) };
+      }).filter(Boolean);
+    };
+    if (f.clases.length) filteredLics = _applyBreakdownFilter(filteredLics, 'licenseClaseBreakdown', f.clases);
+    if (f.subclases.length) filteredLics = _applyBreakdownFilter(filteredLics, 'licenseSubclaseBreakdown', f.subclases);
+    if (f.categorias.length) filteredLics = _applyBreakdownFilter(filteredLics, 'licenseCategoriaBreakdown', f.categorias);
 
     const filtTotalU = filteredLics.reduce((s, l) => s + l.units, 0);
     const filtTotalC = filteredLics.reduce((s, l) => s + l.clp, 0);
@@ -590,7 +623,7 @@ function getFilteredData() {
 
   // Proportional scaling for license/temporal filters (units, clp, stock)
   // Uses _productFilterRatioU computed from ALL licenses (not just top 15 in dailySales)
-  if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length) {
+  if (f.licenses.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
     const salesRatio = _productFilterRatioU;
     if (salesRatio < 1) {
       const scaledRanking = {};
@@ -640,7 +673,7 @@ function getFilteredData() {
   }
 
   // Normalize dailySales + byLicense so license breakdown sums match filteredDailyTotals
-  if (f.chains.length || f.divisions.length || f.years.length || f.quarters.length || f.temporadas.length) {
+  if (f.chains.length || f.divisions.length || f.years.length || f.quarters.length || f.temporadas.length || f.clases.length || f.subclases.length || f.categorias.length) {
     const authTotals = {};
     filteredDailyTotals.forEach(d => { authTotals[d.date] = { units: d.units, clp: d.clp }; });
     const salesTotals = {};
@@ -784,6 +817,15 @@ function getFilteredData() {
       Object.entries(qBreak).forEach(([lic, qs]) => { if (f.quarters.some(q => qs[q])) lics.add(lic); });
       relevantLics = relevantLics ? new Set([...relevantLics].filter(l => lics.has(l))) : lics;
     }
+    const _filterRelevantLics = (breakdownKey, selectedVals) => {
+      const brk = src[breakdownKey] || {};
+      const lics = new Set();
+      Object.entries(brk).forEach(([lic, vals]) => { if (selectedVals.some(v => vals[v])) lics.add(lic); });
+      relevantLics = relevantLics ? new Set([...relevantLics].filter(l => lics.has(l))) : lics;
+    };
+    if (f.clases.length) _filterRelevantLics('licenseClaseBreakdown', f.clases);
+    if (f.subclases.length) _filterRelevantLics('licenseSubclaseBreakdown', f.subclases);
+    if (f.categorias.length) _filterRelevantLics('licenseCategoriaBreakdown', f.categorias);
     if (relevantLics) {
       filteredLics = filteredLics.filter(d => relevantLics.has(d.license));
       // Recalculate oosByDivision proportionally using licenseDivisionBreakdown (has ALL licenses)
@@ -2070,6 +2112,24 @@ function filterProductRanking(data) {
     products = products.filter(p => tempSet.has(p.temporada));
   }
 
+  // Clase filter: exact match
+  if (f.clases.length) {
+    const claseSet = new Set(f.clases);
+    products = products.filter(p => claseSet.has(p.clase));
+  }
+
+  // Subclase filter: exact match
+  if (f.subclases.length) {
+    const subclaseSet = new Set(f.subclases);
+    products = products.filter(p => subclaseSet.has(p.subclase));
+  }
+
+  // Categoria filter: exact match
+  if (f.categorias.length) {
+    const catSet = new Set(f.categorias);
+    products = products.filter(p => catSet.has(p.categoria));
+  }
+
   return products;
 }
 
@@ -2332,6 +2392,22 @@ function renderLicenseSummary(data) {
       return { ...l, units: Math.round(l.units * ratio), clp: Math.round(l.clp * ratio), costos: Math.round(l.costos * ratio), stockUnits: Math.round(l.stockUnits * ratio) };
     });
   }
+  // Clase / Subclase / Categoria proportional filters
+  const _scaleLicSummary = (lics, breakdownKey, selectedVals) => {
+    const brk = data[breakdownKey] || {};
+    lics = lics.filter(l => { const b = brk[l.license]; return b && selectedVals.some(v => b[v]); });
+    return lics.map(l => {
+      const b = brk[l.license]; if (!b) return l;
+      const totalU = Object.values(b).reduce((s, v) => s + v.units, 0);
+      const filtU = selectedVals.reduce((s, v) => s + (b[v]?.units || 0), 0);
+      const ratio = totalU > 0 ? filtU / totalU : 1;
+      return { ...l, units: Math.round(l.units * ratio), clp: Math.round(l.clp * ratio), costos: Math.round(l.costos * ratio), stockUnits: Math.round(l.stockUnits * ratio) };
+    });
+  };
+  if (f.clases.length) licenses = _scaleLicSummary(licenses, 'licenseClaseBreakdown', f.clases);
+  if (f.subclases.length) licenses = _scaleLicSummary(licenses, 'licenseSubclaseBreakdown', f.subclases);
+  if (f.categorias.length) licenses = _scaleLicSummary(licenses, 'licenseCategoriaBreakdown', f.categorias);
+
   if (f.chains.length) {
     const chainLic = data.salesByChainLicense || {};
     const allChainLic = {};
@@ -2417,6 +2493,31 @@ function renderWeeklyStoreView(data) {
     stores = stores.filter(s => chainSet.has(s.chain));
   }
 
+  // Proportional scaling for license/temporada/division/year/quarter filters
+  // Compare filtered KPI totalUnits vs original to get ratio
+  const src = typeof REAL_SELLOUT !== 'undefined' ? REAL_SELLOUT : null;
+  const origTotal = src ? (src.kpis || {}).totalUnits || 1 : 1;
+  const filtTotal = (data.kpis || {}).totalUnits || 0;
+  const scaleRatio = (f.licenses.length || f.divisions.length || f.temporadas.length || f.years.length || f.quarters.length || f.clases.length || f.subclases.length || f.categorias.length) && filtTotal < origTotal
+    ? filtTotal / origTotal : 1;
+
+  if (scaleRatio < 1) {
+    stores = stores.map(s => {
+      const scaled = { ...s, weeks: {} };
+      let newTotal = 0;
+      Object.entries(s.weeks || {}).forEach(([wk, d]) => {
+        scaled.weeks[wk] = { clp: Math.round(d.clp * scaleRatio), units: Math.round(d.units * scaleRatio) };
+        newTotal += scaled.weeks[wk].clp;
+      });
+      scaled.totalClp = newTotal;
+      scaled.totalUnits = Math.round(s.totalUnits * scaleRatio);
+      return scaled;
+    });
+  }
+
+  // Re-sort by totalClp after scaling
+  stores.sort((a, b) => b.totalClp - a.totalClp);
+
   // Build table
   tbody.innerHTML = "";
   const top50 = stores.slice(0, 50);
@@ -2475,9 +2576,9 @@ function renderWeeklyStoreView(data) {
   if (chartCtx) {
     if (chartInstances.weeklyTotals) chartInstances.weeklyTotals.destroy();
     const weekTotals = wsd.weekTotals || [];
-    // Recalculate if chain-filtered
+    // Recalculate from filtered/scaled stores
     let chartData;
-    if (f.chains.length) {
+    if (f.chains.length || scaleRatio < 1) {
       chartData = weekKeys.map((wk, i) => ({
         label: weekLabels[i],
         clp: stores.reduce((s, st) => s + ((st.weeks || {})[wk]?.clp || 0), 0)

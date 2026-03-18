@@ -1,18 +1,18 @@
 // Auto-generated from IV API data - DO NOT EDIT MANUALLY
-// Generated: 2026-03-17 18:12:12
+// Generated: 2026-03-18 12:54:43
 // Source: 114517 sales records, 34 days
-// Blocks: 36 data sections
+// Blocks: 42 data sections
 
 const REAL_SELLOUT = {
   "_meta": {
-    "generatedAt": "2026-03-17T18:12:11.729616",
+    "generatedAt": "2026-03-18T12:54:43.292640",
     "salesRecords": 114517,
     "salesDateFrom": "2026-02-10",
     "salesDateTo": "2026-03-15",
     "salesDays": 34,
     "stockRecords": 1682329,
-    "daysSinceLatest": 2,
-    "freshness": "ok",
+    "daysSinceLatest": 3,
+    "freshness": "warning",
     "pipelineStatus": "ok",
     "chains": [
       "Acuenta",
@@ -35,73 +35,73 @@ const REAL_SELLOUT = {
         "chain": "Ekono",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 1,
-        "status": "warning",
+        "status": "stale",
         "records": 99
       },
       {
         "chain": "Hiper Lider",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 97,
-        "status": "warning",
+        "status": "stale",
         "records": 16424
       },
       {
         "chain": "Hites",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 29,
-        "status": "warning",
+        "status": "stale",
         "records": 12928
       },
       {
         "chain": "Lider Express",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 34,
         "daysWithData": 26,
         "stores": 1,
-        "status": "warning",
+        "status": "stale",
         "records": 49
       },
       {
         "chain": "Paris",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 49,
-        "status": "warning",
+        "status": "stale",
         "records": 15062
       },
       {
         "chain": "Walmart",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-15",
-        "daysOld": 2,
+        "daysOld": 3,
         "rangeDays": 34,
         "daysWithData": 34,
         "stores": 1,
-        "status": "warning",
+        "status": "stale",
         "records": 224
       },
       {
         "chain": "Falabella",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 3,
+        "daysOld": 4,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 43,
@@ -112,7 +112,7 @@ const REAL_SELLOUT = {
         "chain": "Johnson",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 3,
+        "daysOld": 4,
         "rangeDays": 33,
         "daysWithData": 18,
         "stores": 1,
@@ -123,7 +123,7 @@ const REAL_SELLOUT = {
         "chain": "Jumbo",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 3,
+        "daysOld": 4,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 42,
@@ -134,7 +134,7 @@ const REAL_SELLOUT = {
         "chain": "La Polar",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 3,
+        "daysOld": 4,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 32,
@@ -145,7 +145,7 @@ const REAL_SELLOUT = {
         "chain": "Ripley",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 3,
+        "daysOld": 4,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 44,
@@ -156,7 +156,7 @@ const REAL_SELLOUT = {
         "chain": "Tottus",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-14",
-        "daysOld": 3,
+        "daysOld": 4,
         "rangeDays": 33,
         "daysWithData": 33,
         "stores": 28,
@@ -167,7 +167,7 @@ const REAL_SELLOUT = {
         "chain": "Acuenta",
         "firstDate": "2026-02-10",
         "lastUpdate": "2026-03-12",
-        "daysOld": 5,
+        "daysOld": 6,
         "rangeDays": 31,
         "daysWithData": 13,
         "stores": 1,
@@ -178,7 +178,7 @@ const REAL_SELLOUT = {
         "chain": "Cencosud",
         "firstDate": "2026-02-28",
         "lastUpdate": "2026-02-28",
-        "daysOld": 17,
+        "daysOld": 18,
         "rangeDays": 1,
         "daysWithData": 1,
         "stores": 1,
@@ -15843,6 +15843,6660 @@ const REAL_SELLOUT = {
       }
     }
   },
+  "allClases": [
+    "ACCESORIOS TECNOLOGIA",
+    "AUTOS Y VEHICULOS A CONTROL REMOTO",
+    "Accesorios",
+    "Accesorios De Cuello",
+    "Body",
+    "Bolso",
+    "Bota",
+    "Botella",
+    "Botin",
+    "Boxer",
+    "Buzo",
+    "Calcetín",
+    "Calza",
+    "Calzoncillo",
+    "Calzón",
+    "Chaqueta",
+    "Conjunto",
+    "Cosmetiquero",
+    "Enterito",
+    "Falda",
+    "Figuras De Accion Y Coleccionables",
+    "Gorro",
+    "JUEGOS DE EXTERIOR",
+    "Jeans",
+    "MUÑECAS Y PELUCHES",
+    "Mascotas",
+    "Pantalón",
+    "Pantalón de Buzo",
+    "Pantufla",
+    "Pijama",
+    "Polar",
+    "Poler  n",
+    "Polera",
+    "Polerón",
+    "Sandalia",
+    "Set",
+    "Short",
+    "TRAJE DE BA  O",
+    "Traje de Baño",
+    "Vestido",
+    "Zapatilla",
+    "Zueco De Eva"
+  ],
+  "allSubclases": [
+    "AUTO DE JUGUETE",
+    "Accesorio Facial",
+    "BIKINI",
+    "BUFANDA",
+    "Banano",
+    "Bandana",
+    "Bandolera",
+    "Boardshort",
+    "Body",
+    "Body Set",
+    "Bota Chiporro",
+    "Bota de Agua",
+    "Bota de Agua Luces",
+    "Botella",
+    "Botin",
+    "Boxer 1P",
+    "Boxer 2P",
+    "Boxer 3P",
+    "Bucket",
+    "Buzo",
+    "CAMISOLA SM",
+    "Calcetin 7P",
+    "Calcetín 1P",
+    "Calcetín 2P",
+    "Calcetín 3P",
+    "Calcetín 5P",
+    "Calza",
+    "Calzón 2P",
+    "Calzón 3P",
+    "Calzón 7P",
+    "Camisola MC",
+    "Conjunto",
+    "Correa",
+    "Cosmetiquero",
+    "Cuello",
+    "Enterito",
+    "FIGURAS DE ACCION Y COLECCIONABLES",
+    "Falda",
+    "Figura Coleccionable",
+    "Gorro",
+    "Hawaiana",
+    "IMPERMEABLE",
+    "INFLABLE",
+    "Jeans",
+    "Jockey",
+    "Mochila",
+    "Neceser",
+    "PARLANTES",
+    "PELUCHE",
+    "POLERON CERRADO GORRO",
+    "Pantaleta 2P",
+    "Pantalón de Buzo",
+    "Pantufla",
+    "Pantufla 3D",
+    "Pantufla Bota",
+    "Pijama",
+    "Pijama CC",
+    "Pijama CL",
+    "Pijama LL",
+    "Polar",
+    "Poler  n Abierto Fashion",
+    "Polera MC",
+    "Polera MC Básica",
+    "Polera MC Fashion",
+    "Polera MC Semi Básica",
+    "Polera ML",
+    "Polera ML Fashion",
+    "Polera SM",
+    "Polera UV",
+    "Poleron Cerrado",
+    "Polerón",
+    "Polerón Abierto Fashion",
+    "Polerón Cerrado Básico",
+    "Polerón Cerrado Fashion",
+    "Sandalia",
+    "Sandalia Slide",
+    "Set",
+    "Short",
+    "Slippers Parka",
+    "TRAJE DE BA  O ENTERO",
+    "Traje de Baño",
+    "Traje de Baño Entero",
+    "Vestido",
+    "ZUECO DE EVA CHIPORRO",
+    "Zapatilla Escolar",
+    "Zapatilla Urbana",
+    "Zapatilla con Luces",
+    "Zapato de Agua",
+    "Zueco de Eva"
+  ],
+  "allCategorias": [
+    "BOTA CHIPORRO",
+    "Beba",
+    "Bebo",
+    "CONJUNTO",
+    "Hombre",
+    "INFANTIL",
+    "Mascotas",
+    "Mujer",
+    "NI  A",
+    "NI  O",
+    "Niña",
+    "Niño",
+    "PANTUFLA",
+    "POLERA ML",
+    "POLERON CERRADO GORRO",
+    "Teena",
+    "Teeno",
+    "Toddlera",
+    "Toddlero",
+    "UNISEX",
+    "UNISEX ADULTO",
+    "UNISEX INFANTIL",
+    "Unisex"
+  ],
+  "licenseClaseBreakdown": {
+    "SMILEY": {
+      "Pijama": {
+        "units": 107,
+        "clp": 1070220
+      },
+      "Polerón": {
+        "units": 21,
+        "clp": 125790
+      },
+      "Sandalia": {
+        "units": 5,
+        "clp": 9537
+      }
+    },
+    "BLUEY": {
+      "Zapatilla": {
+        "units": 1955,
+        "clp": 30673823
+      },
+      "Calzón": {
+        "units": 1144,
+        "clp": 6954288
+      },
+      "Polera": {
+        "units": 5496,
+        "clp": 30825121
+      },
+      "Sandalia": {
+        "units": 583,
+        "clp": 3557119
+      },
+      "Calcetín": {
+        "units": 4897,
+        "clp": 22046428
+      },
+      "Polerón": {
+        "units": 2657,
+        "clp": 31683140
+      },
+      "Pijama": {
+        "units": 4411,
+        "clp": 50106248
+      },
+      "Traje de Baño": {
+        "units": 203,
+        "clp": 1117121
+      },
+      "Calza": {
+        "units": 33,
+        "clp": 353609
+      },
+      "Vestido": {
+        "units": 120,
+        "clp": 864341
+      },
+      "Buzo": {
+        "units": 268,
+        "clp": 4262107
+      },
+      "Pantufla": {
+        "units": 1429,
+        "clp": 13081454
+      },
+      "Bota": {
+        "units": 54,
+        "clp": 318716
+      },
+      "Calzoncillo": {
+        "units": 1882,
+        "clp": 12483386
+      },
+      "Conjunto": {
+        "units": 334,
+        "clp": 4074215
+      },
+      "Polar": {
+        "units": 7,
+        "clp": 69691
+      },
+      "Chaqueta": {
+        "units": 10,
+        "clp": 107900
+      },
+      "Pantalón de Buzo": {
+        "units": 134,
+        "clp": 1955670
+      },
+      "Botella": {
+        "units": 198,
+        "clp": 1101729
+      },
+      "Gorro": {
+        "units": 74,
+        "clp": 372563
+      },
+      "TRAJE DE BA  O": {
+        "units": 24,
+        "clp": 130976
+      },
+      "Zueco De Eva": {
+        "units": 78,
+        "clp": 905428
+      },
+      "Poler  n": {
+        "units": -1,
+        "clp": -5874
+      }
+    },
+    "Snoopy": {
+      "Calcetín": {
+        "units": 4360,
+        "clp": 15944132
+      },
+      "Polera": {
+        "units": 1353,
+        "clp": 12197240
+      },
+      "Calzón": {
+        "units": 910,
+        "clp": 4838258
+      },
+      "Pijama": {
+        "units": 4573,
+        "clp": 54636991
+      },
+      "Polerón": {
+        "units": 1282,
+        "clp": 16642207
+      },
+      "Pantufla": {
+        "units": 1197,
+        "clp": 9610633
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 3,
+        "clp": 63000
+      },
+      "Gorro": {
+        "units": 302,
+        "clp": 3252237
+      },
+      "Body": {
+        "units": 2,
+        "clp": 9980
+      },
+      "Cosmetiquero": {
+        "units": 3,
+        "clp": 50970
+      }
+    },
+    "Paw Patrol": {
+      "Polerón": {
+        "units": 1326,
+        "clp": 14464804
+      },
+      "Sandalia": {
+        "units": 648,
+        "clp": 3673266
+      },
+      "Traje de Baño": {
+        "units": 256,
+        "clp": 1432893
+      },
+      "Polera": {
+        "units": 2342,
+        "clp": 12215956
+      },
+      "Bota": {
+        "units": 35,
+        "clp": 198948
+      },
+      "Vestido": {
+        "units": 152,
+        "clp": 1143504
+      },
+      "Pijama": {
+        "units": 875,
+        "clp": 7570857
+      },
+      "Gorro": {
+        "units": 98,
+        "clp": 494944
+      },
+      "Body": {
+        "units": 94,
+        "clp": 709945
+      },
+      "Zapatilla": {
+        "units": 1878,
+        "clp": 30366245
+      },
+      "Conjunto": {
+        "units": 302,
+        "clp": 2780074
+      },
+      "Calcetín": {
+        "units": 2433,
+        "clp": 9453582
+      },
+      "Calzón": {
+        "units": 906,
+        "clp": 4827358
+      },
+      "Set": {
+        "units": 106,
+        "clp": 522658
+      },
+      "TRAJE DE BA  O": {
+        "units": 15,
+        "clp": 107080
+      },
+      "Poler  n": {
+        "units": 122,
+        "clp": 897946
+      },
+      "Calzoncillo": {
+        "units": 1236,
+        "clp": 8205942
+      },
+      "Pantufla": {
+        "units": 73,
+        "clp": 528009
+      },
+      "Enterito": {
+        "units": 49,
+        "clp": 258021
+      },
+      "Buzo": {
+        "units": 14,
+        "clp": 129291
+      },
+      "Pantalón de Buzo": {
+        "units": 28,
+        "clp": 409420
+      },
+      "Zueco De Eva": {
+        "units": 19,
+        "clp": 221414
+      },
+      "Mascotas": {
+        "units": 2,
+        "clp": 13428
+      }
+    },
+    "Toy Story": {
+      "Polera": {
+        "units": 185,
+        "clp": 798940
+      },
+      "Pijama": {
+        "units": 20,
+        "clp": 127656
+      }
+    },
+    "Frozen": {
+      "Polera": {
+        "units": 358,
+        "clp": 1634940
+      },
+      "Conjunto": {
+        "units": 26,
+        "clp": 217570
+      },
+      "Polerón": {
+        "units": 80,
+        "clp": 551281
+      },
+      "Pijama": {
+        "units": 132,
+        "clp": 1040180
+      },
+      "Vestido": {
+        "units": 131,
+        "clp": 855742
+      },
+      "Gorro": {
+        "units": 78,
+        "clp": 404369
+      },
+      "Pantalón de Buzo": {
+        "units": 4,
+        "clp": 15162
+      }
+    },
+    "MARVEL COMICS": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 119,
+        "clp": 1988501
+      },
+      "Polera": {
+        "units": 15,
+        "clp": 116264
+      },
+      "JUEGOS DE EXTERIOR": {
+        "units": 6,
+        "clp": 5041
+      }
+    },
+    "Spidey": {
+      "Polerón": {
+        "units": 1012,
+        "clp": 11183299
+      },
+      "Polera": {
+        "units": 927,
+        "clp": 4529233
+      },
+      "Zapatilla": {
+        "units": 706,
+        "clp": 11368656
+      },
+      "Calcetín": {
+        "units": 535,
+        "clp": 2235515
+      },
+      "Pijama": {
+        "units": 46,
+        "clp": 656120
+      },
+      "Conjunto": {
+        "units": 79,
+        "clp": 735741
+      }
+    },
+    "ZOOTOPIA": {
+      "Sandalia": {
+        "units": 205,
+        "clp": 1410561
+      },
+      "Polera": {
+        "units": 356,
+        "clp": 2119957
+      },
+      "Gorro": {
+        "units": 118,
+        "clp": 643514
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 45,
+        "clp": 918539
+      },
+      "Pijama": {
+        "units": 98,
+        "clp": 627668
+      },
+      "Traje de Baño": {
+        "units": 102,
+        "clp": 921359
+      },
+      "Zueco De Eva": {
+        "units": 112,
+        "clp": 549866
+      },
+      "Vestido": {
+        "units": 12,
+        "clp": 92220
+      }
+    },
+    "HUNTER X HUNTER": {
+      "Pijama": {
+        "units": 306,
+        "clp": 1893364
+      }
+    },
+    "KPOP DEMON HUNTERS": {
+      "Polera": {
+        "units": 4522,
+        "clp": 54775169
+      }
+    },
+    "Minnie": {
+      "Polera": {
+        "units": 1857,
+        "clp": 9103232
+      },
+      "Zapatilla": {
+        "units": 2490,
+        "clp": 37484953
+      },
+      "Pijama": {
+        "units": 388,
+        "clp": 4279674
+      },
+      "Polerón": {
+        "units": 1219,
+        "clp": 14632773
+      },
+      "Gorro": {
+        "units": 216,
+        "clp": 1071086
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 3990
+      },
+      "Sandalia": {
+        "units": 333,
+        "clp": 2067088
+      },
+      "Calza": {
+        "units": 39,
+        "clp": 443639
+      },
+      "Vestido": {
+        "units": 69,
+        "clp": 500755
+      },
+      "Bota": {
+        "units": 32,
+        "clp": 247553
+      },
+      "Conjunto": {
+        "units": 73,
+        "clp": 631428
+      },
+      "Calcetín": {
+        "units": 336,
+        "clp": 1827931
+      },
+      "Pantufla": {
+        "units": 63,
+        "clp": 481457
+      },
+      "Polar": {
+        "units": 96,
+        "clp": 1336845
+      },
+      "Buzo": {
+        "units": 18,
+        "clp": 205377
+      },
+      "Calzón": {
+        "units": 166,
+        "clp": 1367965
+      },
+      "Falda": {
+        "units": 59,
+        "clp": 399857
+      },
+      "Jeans": {
+        "units": 4,
+        "clp": 45980
+      },
+      "Botin": {
+        "units": 1,
+        "clp": 3798
+      }
+    },
+    "Minecraft": {
+      "Polera": {
+        "units": 1357,
+        "clp": 7651814
+      },
+      "Zapatilla": {
+        "units": 197,
+        "clp": 3396936
+      },
+      "Polerón": {
+        "units": 186,
+        "clp": 2258303
+      },
+      "Pijama": {
+        "units": 1824,
+        "clp": 21186846
+      },
+      "Calcetín": {
+        "units": 1515,
+        "clp": 5918372
+      },
+      "Calzón": {
+        "units": 7,
+        "clp": 19321
+      },
+      "Sandalia": {
+        "units": 254,
+        "clp": 2087593
+      },
+      "Pantufla": {
+        "units": 43,
+        "clp": 304361
+      },
+      "Conjunto": {
+        "units": 145,
+        "clp": 1423087
+      },
+      "Traje de Baño": {
+        "units": 225,
+        "clp": 1348002
+      },
+      "Calzoncillo": {
+        "units": 317,
+        "clp": 3129405
+      },
+      "TRAJE DE BA  O": {
+        "units": 4,
+        "clp": 28216
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 16990
+      },
+      "Zueco De Eva": {
+        "units": 1,
+        "clp": 7990
+      },
+      "Short": {
+        "units": 1,
+        "clp": 3275
+      }
+    },
+    "MARQUIS": {
+      "Bolso": {
+        "units": 35,
+        "clp": 587930
+      },
+      "Gorro": {
+        "units": 104,
+        "clp": 1135264
+      },
+      "Cosmetiquero": {
+        "units": 33,
+        "clp": 415700
+      }
+    },
+    "NO APLICA": {
+      "Sandalia": {
+        "units": 552,
+        "clp": 4424605
+      },
+      "Gorro": {
+        "units": 94,
+        "clp": 963417
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 201,
+        "clp": 3667299
+      },
+      "Accesorios De Cuello": {
+        "units": 11,
+        "clp": 101589
+      },
+      "AUTOS Y VEHICULOS A CONTROL REMOTO": {
+        "units": 4,
+        "clp": 33597
+      }
+    },
+    "ARISTOGATOS MARIE": {
+      "Gorro": {
+        "units": 123,
+        "clp": 683713
+      }
+    },
+    "HAVAIANA": {
+      "Sandalia": {
+        "units": 5486,
+        "clp": 43188273
+      }
+    },
+    "Spiderman": {
+      "Polera": {
+        "units": 2122,
+        "clp": 13591015
+      },
+      "Sandalia": {
+        "units": 239,
+        "clp": 1550250
+      },
+      "Polerón": {
+        "units": 1091,
+        "clp": 15033788
+      },
+      "Pijama": {
+        "units": 341,
+        "clp": 3617934
+      },
+      "Zapatilla": {
+        "units": 3393,
+        "clp": 53597342
+      },
+      "Pantalón de Buzo": {
+        "units": 106,
+        "clp": 795947
+      },
+      "Bota": {
+        "units": 46,
+        "clp": 367368
+      },
+      "Polar": {
+        "units": 68,
+        "clp": 782088
+      },
+      "Conjunto": {
+        "units": 2,
+        "clp": 12387
+      },
+      "Pantufla": {
+        "units": 101,
+        "clp": 920052
+      },
+      "Short": {
+        "units": 72,
+        "clp": 359875
+      },
+      "Gorro": {
+        "units": 16,
+        "clp": 94399
+      }
+    },
+    "Star Wars": {
+      "MUÑECAS Y PELUCHES": {
+        "units": 375,
+        "clp": 2528708
+      },
+      "Polera": {
+        "units": 9,
+        "clp": 31047
+      },
+      "Calcetín": {
+        "units": 41,
+        "clp": 108827
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 222,
+        "clp": 2868110
+      },
+      "Mascotas": {
+        "units": 2,
+        "clp": 15950
+      },
+      "Pijama": {
+        "units": 1,
+        "clp": 4000
+      },
+      "Calzoncillo": {
+        "units": 6,
+        "clp": 15724
+      },
+      "Polerón": {
+        "units": 1,
+        "clp": 5990
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 6990
+      },
+      "Pantufla": {
+        "units": 1,
+        "clp": 2513
+      }
+    },
+    "INDEX": {
+      "Bolso": {
+        "units": 155,
+        "clp": 2603699
+      },
+      "Gorro": {
+        "units": 156,
+        "clp": 1700713
+      }
+    },
+    "SONIC": {
+      "Polera": {
+        "units": 1212,
+        "clp": 5991874
+      },
+      "Calcetín": {
+        "units": 1567,
+        "clp": 5233002
+      },
+      "Botella": {
+        "units": 258,
+        "clp": 1117659
+      },
+      "Sandalia": {
+        "units": 175,
+        "clp": 1444014
+      },
+      "Zapatilla": {
+        "units": 282,
+        "clp": 4774702
+      },
+      "Traje de Baño": {
+        "units": 65,
+        "clp": 393068
+      },
+      "Pijama": {
+        "units": 358,
+        "clp": 3831313
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 13,
+        "clp": 219112
+      },
+      "Gorro": {
+        "units": 22,
+        "clp": 94785
+      },
+      "Polerón": {
+        "units": 175,
+        "clp": 2488751
+      },
+      "Calzoncillo": {
+        "units": 602,
+        "clp": 4094312
+      },
+      "Zueco De Eva": {
+        "units": 1,
+        "clp": 7990
+      },
+      "Conjunto": {
+        "units": 12,
+        "clp": 86224
+      },
+      "Pantufla": {
+        "units": 27,
+        "clp": 259617
+      }
+    },
+    "DC Comics": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 28,
+        "clp": 383989
+      },
+      "Boxer": {
+        "units": 13,
+        "clp": 12406
+      },
+      "Polera": {
+        "units": 2,
+        "clp": 3362
+      },
+      "Pijama": {
+        "units": 1,
+        "clp": 9990
+      },
+      "Calzón": {
+        "units": 1,
+        "clp": 462
+      },
+      "Pantalón": {
+        "units": 1,
+        "clp": 3235
+      },
+      "Polerón": {
+        "units": 1,
+        "clp": 9990
+      }
+    },
+    "BOB ESPONJA": {
+      "Pantufla": {
+        "units": 532,
+        "clp": 2640108
+      },
+      "Polera": {
+        "units": 1589,
+        "clp": 9159678
+      },
+      "Polerón": {
+        "units": 351,
+        "clp": 2580437
+      },
+      "Calcetín": {
+        "units": 1154,
+        "clp": 3265439
+      }
+    },
+    "LILO & STITCH": {
+      "Zapatilla": {
+        "units": 877,
+        "clp": 15282774
+      },
+      "Vestido": {
+        "units": 29,
+        "clp": 238925
+      },
+      "Pijama": {
+        "units": 3965,
+        "clp": 20700339
+      },
+      "Calza": {
+        "units": 19,
+        "clp": 220962
+      },
+      "Polera": {
+        "units": 1736,
+        "clp": 10003757
+      },
+      "Polerón": {
+        "units": 322,
+        "clp": 4098993
+      },
+      "Calcetín": {
+        "units": 863,
+        "clp": 4506163
+      },
+      "Sandalia": {
+        "units": 144,
+        "clp": 825976
+      },
+      "Gorro": {
+        "units": 168,
+        "clp": 982480
+      },
+      "Poler  n": {
+        "units": 3,
+        "clp": 45485
+      },
+      "Calzón": {
+        "units": 442,
+        "clp": 2913733
+      },
+      "Pantufla": {
+        "units": 43,
+        "clp": 357765
+      },
+      "Short": {
+        "units": 28,
+        "clp": 397315
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 58,
+        "clp": 1010899
+      },
+      "JUEGOS DE EXTERIOR": {
+        "units": 13,
+        "clp": 10922
+      }
+    },
+    "Barbie": {
+      "Polerón": {
+        "units": 149,
+        "clp": 1496979
+      },
+      "Zapatilla": {
+        "units": 356,
+        "clp": 7248131
+      },
+      "Polera": {
+        "units": 994,
+        "clp": 5194130
+      },
+      "Sandalia": {
+        "units": 43,
+        "clp": 337544
+      },
+      "Short": {
+        "units": 13,
+        "clp": 191872
+      },
+      "Traje de Baño": {
+        "units": 141,
+        "clp": 947509
+      },
+      "Vestido": {
+        "units": 85,
+        "clp": 751829
+      },
+      "Pijama": {
+        "units": 55,
+        "clp": 807840
+      },
+      "Bota": {
+        "units": 8,
+        "clp": 51920
+      },
+      "Poler  n": {
+        "units": 2,
+        "clp": 8386
+      }
+    },
+    "Hot Wheels": {
+      "Polera": {
+        "units": 617,
+        "clp": 2726201
+      },
+      "Polerón": {
+        "units": 57,
+        "clp": 375197
+      },
+      "Traje de Baño": {
+        "units": 23,
+        "clp": 152214
+      }
+    },
+    "Naruto": {
+      "Pijama": {
+        "units": 249,
+        "clp": 1580854
+      },
+      "Polera": {
+        "units": 161,
+        "clp": 671737
+      },
+      "Gorro": {
+        "units": 3,
+        "clp": 5043
+      },
+      "Polerón": {
+        "units": 12,
+        "clp": 100506
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 47,
+        "clp": 698041
+      },
+      "Boxer": {
+        "units": 4,
+        "clp": 15960
+      },
+      "Calzoncillo": {
+        "units": 234,
+        "clp": 1510660
+      },
+      "Calcetín": {
+        "units": 29,
+        "clp": 33548
+      }
+    },
+    "Rick and morty": {
+      "Calzoncillo": {
+        "units": 48,
+        "clp": 50469
+      },
+      "Pijama": {
+        "units": 224,
+        "clp": 988158
+      },
+      "Calcetín": {
+        "units": 7,
+        "clp": 16586
+      },
+      "Polera": {
+        "units": 5,
+        "clp": 15323
+      }
+    },
+    "BT21": {
+      "Pijama": {
+        "units": 9,
+        "clp": 83115
+      }
+    },
+    "Mickey": {
+      "Polera": {
+        "units": 700,
+        "clp": 2955739
+      },
+      "Polerón": {
+        "units": 263,
+        "clp": 2837878
+      },
+      "Conjunto": {
+        "units": 100,
+        "clp": 809128
+      },
+      "Pijama": {
+        "units": 197,
+        "clp": 1575742
+      },
+      "Calzoncillo": {
+        "units": 55,
+        "clp": 596014
+      },
+      "Buzo": {
+        "units": 16,
+        "clp": 168163
+      },
+      "Gorro": {
+        "units": 196,
+        "clp": 1039934
+      },
+      "Calcetín": {
+        "units": 180,
+        "clp": 826770
+      },
+      "Pantalón de Buzo": {
+        "units": 4,
+        "clp": 31960
+      },
+      "Poler  n": {
+        "units": 3,
+        "clp": 22665
+      },
+      "JUEGOS DE EXTERIOR": {
+        "units": 1,
+        "clp": 840
+      },
+      "Chaqueta": {
+        "units": 1,
+        "clp": 1168
+      }
+    },
+    "FORD": {
+      "Polerón": {
+        "units": 137,
+        "clp": 1388843
+      },
+      "Polera": {
+        "units": 90,
+        "clp": 541068
+      },
+      "Gorro": {
+        "units": 239,
+        "clp": 1271798
+      },
+      "Pijama": {
+        "units": 841,
+        "clp": 5394682
+      }
+    },
+    "Celebrity Icons": {
+      "Pijama": {
+        "units": 59,
+        "clp": 229422
+      },
+      "Polera": {
+        "units": 21,
+        "clp": 70166
+      },
+      "Polerón": {
+        "units": 94,
+        "clp": 381542
+      }
+    },
+    "The Mandalorian": {
+      "Polera": {
+        "units": 90,
+        "clp": 625525
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 83,
+        "clp": 1305630
+      },
+      "Pantufla": {
+        "units": 14,
+        "clp": 11447
+      },
+      "Calcetín": {
+        "units": 2,
+        "clp": 1680
+      }
+    },
+    "FUNKO MUSIC": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 43,
+        "clp": 688897
+      }
+    },
+    "Avengers": {
+      "Polera": {
+        "units": 545,
+        "clp": 2003554
+      },
+      "Polerón": {
+        "units": 72,
+        "clp": 739520
+      },
+      "Pijama": {
+        "units": 149,
+        "clp": 1353598
+      },
+      "Conjunto": {
+        "units": 24,
+        "clp": 162266
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 3,
+        "clp": 15102
+      },
+      "Calcetín": {
+        "units": 2,
+        "clp": 7980
+      }
+    },
+    "Playstation": {
+      "Calcetín": {
+        "units": 4,
+        "clp": 6724
+      },
+      "Polerón": {
+        "units": 68,
+        "clp": 502915
+      },
+      "Polera": {
+        "units": 173,
+        "clp": 1000338
+      },
+      "Pijama": {
+        "units": 7,
+        "clp": 49930
+      }
+    },
+    "El Rey Leon": {
+      "Calzón": {
+        "units": 25,
+        "clp": 66781
+      },
+      "Gorro": {
+        "units": 136,
+        "clp": 640119
+      },
+      "Polera": {
+        "units": 5,
+        "clp": 25685
+      },
+      "Pijama": {
+        "units": 16,
+        "clp": 139313
+      },
+      "Calcetín": {
+        "units": 43,
+        "clp": 94374
+      },
+      "Pantufla": {
+        "units": 1,
+        "clp": 3990
+      },
+      "Conjunto": {
+        "units": 1,
+        "clp": 2521
+      }
+    },
+    "WINNIE THE POOH": {
+      "Polera": {
+        "units": 78,
+        "clp": 368051
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 4,
+        "clp": 33597
+      }
+    },
+    "Dragon Ball Z": {
+      "Polera": {
+        "units": 7,
+        "clp": 30602
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 6,
+        "clp": 109200
+      }
+    },
+    "Cars": {
+      "Polerón": {
+        "units": 5,
+        "clp": 20463
+      },
+      "Zapatilla": {
+        "units": 302,
+        "clp": 7346858
+      },
+      "Polera": {
+        "units": 378,
+        "clp": 1734426
+      },
+      "Pijama": {
+        "units": 44,
+        "clp": 676261
+      },
+      "Gorro": {
+        "units": 14,
+        "clp": 77893
+      },
+      "Pantufla": {
+        "units": 44,
+        "clp": 431929
+      }
+    },
+    "RED BULL": {
+      "Polera": {
+        "units": 299,
+        "clp": 2735060
+      },
+      "Polerón": {
+        "units": 59,
+        "clp": 837606
+      }
+    },
+    "Gabby Doll House": {
+      "Polera": {
+        "units": 231,
+        "clp": 864744
+      },
+      "Pijama": {
+        "units": 17,
+        "clp": 50537
+      },
+      "Polerón": {
+        "units": 47,
+        "clp": 301515
+      },
+      "Conjunto": {
+        "units": 41,
+        "clp": 380570
+      },
+      "Buzo": {
+        "units": 1,
+        "clp": 3521
+      },
+      "Traje de Baño": {
+        "units": 1,
+        "clp": 3353
+      },
+      "Vestido": {
+        "units": 2,
+        "clp": 5034
+      }
+    },
+    "Sin Licencia": {
+      "Accesorios": {
+        "units": 19,
+        "clp": 29249
+      },
+      "Calzón": {
+        "units": 7,
+        "clp": 14901
+      },
+      "Calcetín": {
+        "units": 31,
+        "clp": 37166
+      },
+      "Boxer": {
+        "units": 6,
+        "clp": 22319
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 2605
+      },
+      "Polerón": {
+        "units": 5,
+        "clp": 14286
+      },
+      "Pantufla": {
+        "units": 2,
+        "clp": 3344
+      }
+    },
+    "GARFIELD": {
+      "Polera": {
+        "units": 161,
+        "clp": 1237303
+      },
+      "Pijama": {
+        "units": 483,
+        "clp": 5215354
+      },
+      "Polerón": {
+        "units": 6,
+        "clp": 30000
+      },
+      "Calzón": {
+        "units": 266,
+        "clp": 1334850
+      },
+      "Pantufla": {
+        "units": 6,
+        "clp": 53168
+      },
+      "Calcetín": {
+        "units": 404,
+        "clp": 1184932
+      }
+    },
+    "South Park": {
+      "Calzoncillo": {
+        "units": 2,
+        "clp": 5033
+      },
+      "Calcetín": {
+        "units": 24,
+        "clp": 20538
+      },
+      "Polera": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "POKEMON": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 247,
+        "clp": 3304991
+      },
+      "Botella": {
+        "units": 334,
+        "clp": 1828535
+      }
+    },
+    "INSIDE OUT": {
+      "Pijama": {
+        "units": 20,
+        "clp": 89926
+      },
+      "Polera": {
+        "units": 47,
+        "clp": 204704
+      },
+      "Polerón": {
+        "units": 2,
+        "clp": 12000
+      }
+    },
+    "Dragon Ball": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 67,
+        "clp": 945518
+      },
+      "Polera": {
+        "units": 1,
+        "clp": 2513
+      }
+    },
+    "Stranger Things": {
+      "Polera": {
+        "units": 141,
+        "clp": 845475
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 58,
+        "clp": 1216950
+      },
+      "ACCESORIOS TECNOLOGIA": {
+        "units": 127,
+        "clp": 1540553
+      }
+    },
+    "Mickey y sus Amigos": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 43,
+        "clp": 857218
+      },
+      "Gorro": {
+        "units": 17,
+        "clp": 91108
+      },
+      "JUEGOS DE EXTERIOR": {
+        "units": 3,
+        "clp": 2521
+      }
+    },
+    "Peppa Pig": {
+      "Polera": {
+        "units": 591,
+        "clp": 2617884
+      },
+      "Pijama": {
+        "units": 526,
+        "clp": 3081119
+      },
+      "Polerón": {
+        "units": 539,
+        "clp": 3341647
+      }
+    },
+    "REVUP": {
+      "Bolso": {
+        "units": 107,
+        "clp": 178929
+      },
+      "Calcetín": {
+        "units": 139,
+        "clp": 136681
+      },
+      "Accesorios De Cuello": {
+        "units": 51,
+        "clp": 85278
+      }
+    },
+    "Tinker Bell": {
+      "Pijama": {
+        "units": 6,
+        "clp": 38970
+      }
+    },
+    "1KO": {
+      "Pantufla": {
+        "units": 26,
+        "clp": 1890
+      }
+    },
+    "DISNEY 100": {
+      "Polera": {
+        "units": 4,
+        "clp": 12362
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 14,
+        "clp": 143587
+      },
+      "Pijama": {
+        "units": 2,
+        "clp": 8982
+      }
+    },
+    "Harry Potter": {
+      "Polerón": {
+        "units": 29,
+        "clp": 214204
+      },
+      "Polera": {
+        "units": 113,
+        "clp": 726770
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 66,
+        "clp": 1065026
+      },
+      "Gorro": {
+        "units": 132,
+        "clp": 785023
+      }
+    },
+    "Chicas Superpoderosas": {
+      "Polera": {
+        "units": 51,
+        "clp": 355222
+      }
+    },
+    "Batman": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 11,
+        "clp": 175960
+      },
+      "Gorro": {
+        "units": 113,
+        "clp": 702444
+      },
+      "Polera": {
+        "units": 7,
+        "clp": 17482
+      },
+      "Pijama": {
+        "units": 4,
+        "clp": 36940
+      },
+      "Polerón": {
+        "units": 2,
+        "clp": 10980
+      }
+    },
+    "JUJUTSU KAISEN": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 186,
+        "clp": 2487852
+      },
+      "Polera": {
+        "units": 143,
+        "clp": 726484
+      },
+      "Pijama": {
+        "units": 664,
+        "clp": 6064559
+      }
+    },
+    "DEMON SLAYER": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 76,
+        "clp": 1271075
+      }
+    },
+    "Disney": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 116,
+        "clp": 849242
+      },
+      "Pantufla": {
+        "units": 26,
+        "clp": 47843
+      },
+      "Body": {
+        "units": 7,
+        "clp": 33086
+      },
+      "Enterito": {
+        "units": 2,
+        "clp": 14061
+      },
+      "Polera": {
+        "units": 1,
+        "clp": 2990
+      }
+    },
+    "MARIO BROS": {
+      "Botella": {
+        "units": 94,
+        "clp": 455522
+      }
+    },
+    "NASA": {
+      "Pijama": {
+        "units": 404,
+        "clp": 4148006
+      },
+      "Polerón": {
+        "units": 16,
+        "clp": 73946
+      }
+    },
+    "Friends": {
+      "Calcetín": {
+        "units": 296,
+        "clp": 868168
+      },
+      "Pijama": {
+        "units": 29,
+        "clp": 116814
+      }
+    },
+    "LOTSO": {
+      "Gorro": {
+        "units": 94,
+        "clp": 448955
+      },
+      "Pijama": {
+        "units": 550,
+        "clp": 5339119
+      }
+    },
+    "FORMULA 1": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 17,
+        "clp": 354480
+      }
+    },
+    "Tom y Jerry": {
+      "Polera": {
+        "units": 11,
+        "clp": 87986
+      },
+      "Polerón": {
+        "units": 5,
+        "clp": 43950
+      }
+    },
+    "Princesas": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 24,
+        "clp": 457787
+      },
+      "JUEGOS DE EXTERIOR": {
+        "units": 14,
+        "clp": 11762
+      },
+      "Pijama": {
+        "units": 10,
+        "clp": 92759
+      },
+      "Polera": {
+        "units": 79,
+        "clp": 244099
+      },
+      "Sandalia": {
+        "units": 2,
+        "clp": 7980
+      }
+    },
+    "Emoji": {
+      "Calzón": {
+        "units": 65,
+        "clp": 221825
+      },
+      "Calcetín": {
+        "units": 4,
+        "clp": 5873
+      },
+      "Calzoncillo": {
+        "units": 1,
+        "clp": 2521
+      }
+    },
+    "Attack on titan": {
+      "Calzoncillo": {
+        "units": 35,
+        "clp": 41140
+      }
+    },
+    "NICK 90": {
+      "Calcetín": {
+        "units": 661,
+        "clp": 1938420
+      },
+      "Pijama": {
+        "units": 483,
+        "clp": 5269907
+      }
+    },
+    "Metallica": {
+      "Polera": {
+        "units": 296,
+        "clp": 3173382
+      },
+      "Polerón": {
+        "units": 542,
+        "clp": 7380060
+      }
+    },
+    "SIN MARCA": {
+      "Polera": {
+        "units": 11,
+        "clp": 9240
+      }
+    },
+    "Boruto": {
+      "Polera": {
+        "units": 1,
+        "clp": 3353
+      }
+    },
+    "One Piece": {
+      "Pijama": {
+        "units": 53,
+        "clp": 443855
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 122,
+        "clp": 1868408
+      },
+      "Polera": {
+        "units": 1,
+        "clp": 2513
+      }
+    },
+    "Pink Floyd": {
+      "Calcetín": {
+        "units": 388,
+        "clp": 1138004
+      },
+      "Polera": {
+        "units": 254,
+        "clp": 2745887
+      },
+      "Pijama": {
+        "units": 2,
+        "clp": 21990
+      },
+      "Polerón": {
+        "units": 249,
+        "clp": 3532346
+      }
+    },
+    "PRESCHOOL MINNIE": {
+      "Pijama": {
+        "units": 21,
+        "clp": 196621
+      }
+    },
+    "RICK AND MORTY": {
+      "Polera": {
+        "units": 7,
+        "clp": 10501
+      },
+      "Calcetín": {
+        "units": 526,
+        "clp": 1502138
+      },
+      "Pijama": {
+        "units": 9,
+        "clp": 28566
+      },
+      "Sandalia": {
+        "units": 45,
+        "clp": 71440
+      }
+    },
+    "No Definido": {
+      "Botella": {
+        "units": 349,
+        "clp": 1374367
+      },
+      "Sandalia": {
+        "units": 2,
+        "clp": 7980
+      },
+      "Pantufla": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "Acdc": {
+      "Calcetín": {
+        "units": 470,
+        "clp": 1377630
+      },
+      "Pijama": {
+        "units": 42,
+        "clp": 263988
+      },
+      "Sandalia": {
+        "units": 2,
+        "clp": 15980
+      },
+      "Polerón": {
+        "units": 369,
+        "clp": 5227632
+      },
+      "Polera": {
+        "units": 756,
+        "clp": 8176980
+      }
+    },
+    "Superman": {
+      "Polerón": {
+        "units": 4,
+        "clp": 23528
+      },
+      "Pijama": {
+        "units": 7,
+        "clp": 64645
+      },
+      "Sandalia": {
+        "units": 1,
+        "clp": 5990
+      }
+    },
+    "Looney Tunes": {
+      "Calcetín": {
+        "units": 11,
+        "clp": 24468
+      },
+      "Polera": {
+        "units": 17,
+        "clp": 42857
+      },
+      "Pijama": {
+        "units": 5,
+        "clp": 46175
+      }
+    },
+    "Bambi": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 7,
+        "clp": 34930
+      },
+      "Calcetín": {
+        "units": 6,
+        "clp": 12048
+      }
+    },
+    "HAVAIAN+Q596A": {
+      "Sandalia": {
+        "units": 12,
+        "clp": 149607
+      }
+    },
+    "Kiss": {
+      "Polerón": {
+        "units": 157,
+        "clp": 2107868
+      },
+      "Pijama": {
+        "units": 1,
+        "clp": 3397
+      },
+      "Polera": {
+        "units": 268,
+        "clp": 2914451
+      }
+    },
+    "101 Dalmatas": {
+      "Set": {
+        "units": 6,
+        "clp": 48342
+      },
+      "Calzón": {
+        "units": 3,
+        "clp": 2520
+      }
+    },
+    "DISNEY PIXAR COLLECTION": {
+      "Calcetín": {
+        "units": 8,
+        "clp": 23464
+      }
+    },
+    "Disney Clásicos": {
+      "Accesorios": {
+        "units": 2,
+        "clp": 992
+      },
+      "Calcetín": {
+        "units": 3,
+        "clp": 10059
+      },
+      "Gorro": {
+        "units": 1,
+        "clp": 3235
+      },
+      "Pijama": {
+        "units": 3,
+        "clp": 22970
+      }
+    },
+    "JANIS JOPLIN": {
+      "Polera": {
+        "units": 2,
+        "clp": 7980
+      }
+    },
+    "RUGRATS": {
+      "Polera": {
+        "units": 4,
+        "clp": 17532
+      }
+    },
+    "Minions": {
+      "Calzón": {
+        "units": 7,
+        "clp": 17640
+      },
+      "Calcetín": {
+        "units": 5,
+        "clp": 10483
+      },
+      "Calzoncillo": {
+        "units": 2,
+        "clp": 3362
+      }
+    },
+    "Hello Kitty": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 52,
+        "clp": 847911
+      }
+    },
+    "Lightyear": {
+      "Pijama": {
+        "units": 11,
+        "clp": 71689
+      }
+    },
+    "Minnie (Infantil + Teen)": {
+      "Enterito": {
+        "units": 2,
+        "clp": 10480
+      }
+    },
+    "SPY X FAMILY": {
+      "Pijama": {
+        "units": 35,
+        "clp": 94949
+      },
+      "Polera": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "SHREK": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 1,
+        "clp": 10500
+      }
+    },
+    "Jurassic World": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 16,
+        "clp": 336000
+      }
+    },
+    "MAFALDA": {
+      "Pijama": {
+        "units": 36,
+        "clp": 670582
+      },
+      "Pantufla": {
+        "units": 19,
+        "clp": 244212
+      },
+      "Cosmetiquero": {
+        "units": 5,
+        "clp": 84950
+      }
+    },
+    "Frida Kahlo": {
+      "Calcetín": {
+        "units": 6,
+        "clp": 12049
+      }
+    },
+    "Los Picapiedras": {
+      "Calcetín": {
+        "units": 10,
+        "clp": 23530
+      }
+    },
+    "CHUCKY": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 4,
+        "clp": 67192
+      }
+    },
+    "Villanas": {
+      "Polerón": {
+        "units": 2,
+        "clp": 11980
+      },
+      "Polera": {
+        "units": 1,
+        "clp": 1000
+      }
+    },
+    "UFC": {
+      "Pijama": {
+        "units": 154,
+        "clp": 1681064
+      }
+    },
+    "Pacman": {
+      "Boxer": {
+        "units": 2,
+        "clp": 8007
+      }
+    },
+    "LA VACA Y EL POLLITO": {
+      "Boxer": {
+        "units": 1,
+        "clp": 1681
+      }
+    },
+    "Iron Maiden": {
+      "Pantufla": {
+        "units": 1,
+        "clp": 5994
+      }
+    },
+    "Marvel": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 22,
+        "clp": 266418
+      },
+      "Pantufla": {
+        "units": 1,
+        "clp": 3000
+      }
+    },
+    "ED EDD & EDDY": {
+      "Calcetín": {
+        "units": 10,
+        "clp": 12600
+      }
+    },
+    "Mortal Kombat": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 11,
+        "clp": 220080
+      }
+    },
+    "OZZY OSBOURNE": {
+      "Polera": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "WISH": {
+      "Polera": {
+        "units": 7,
+        "clp": 26044
+      },
+      "Figuras De Accion Y Coleccionables": {
+        "units": 1,
+        "clp": 10500
+      }
+    },
+    "WONDER WOMAN": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 2,
+        "clp": 24985
+      }
+    },
+    "AC/DC": {
+      "Polera": {
+        "units": 3,
+        "clp": 6362
+      }
+    },
+    "El Laboratorio De Dexter": {
+      "Calcetín": {
+        "units": 7,
+        "clp": 8820
+      }
+    },
+    "FUNKO DEPORTE": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 5,
+        "clp": 83990
+      }
+    },
+    "Rey León": {
+      "Calcetín": {
+        "units": 2,
+        "clp": 9980
+      }
+    },
+    "Buzz Light Year": {
+      "Pantufla": {
+        "units": 2,
+        "clp": 5990
+      }
+    },
+    "OASIS": {
+      "Polerón": {
+        "units": 391,
+        "clp": 5542838
+      },
+      "Polera": {
+        "units": 214,
+        "clp": 2322807
+      }
+    },
+    "The Beatles": {
+      "Polerón": {
+        "units": 555,
+        "clp": 7590379
+      },
+      "Polera": {
+        "units": 390,
+        "clp": 4242597
+      }
+    },
+    "Paw Patrol Movie": {
+      "Polera": {
+        "units": 2,
+        "clp": 7990
+      }
+    },
+    "Sesamo": {
+      "Pantufla": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "FRUITS BASKET": {
+      "Polera": {
+        "units": 1,
+        "clp": 2000
+      }
+    },
+    "DRAGON BALL SUPER": {
+      "Polera": {
+        "units": 1,
+        "clp": 4000
+      }
+    },
+    "Ladybug": {
+      "Zapatilla": {
+        "units": 1,
+        "clp": 4529
+      }
+    },
+    "ALICIA PAIS MARAVILLA": {
+      "Figuras De Accion Y Coleccionables": {
+        "units": 1,
+        "clp": 16798
+      }
+    },
+    "DARIA": {
+      "Calcetín": {
+        "units": 1,
+        "clp": 4990
+      }
+    },
+    "My Hero Academia": {
+      "Polera": {
+        "units": 1,
+        "clp": 5458
+      }
+    },
+    "Woodstock": {
+      "Polera": {
+        "units": 1,
+        "clp": 1990
+      }
+    }
+  },
+  "licenseSubclaseBreakdown": {
+    "SMILEY": {
+      "Pijama CC": {
+        "units": 107,
+        "clp": 1070220
+      },
+      "Poleron Cerrado": {
+        "units": 21,
+        "clp": 125790
+      },
+      "Hawaiana": {
+        "units": 5,
+        "clp": 9537
+      }
+    },
+    "BLUEY": {
+      "Zapatilla Urbana": {
+        "units": 1035,
+        "clp": 14683647
+      },
+      "Calzón 2P": {
+        "units": 1034,
+        "clp": 6044690
+      },
+      "Polera ML": {
+        "units": 2683,
+        "clp": 16803630
+      },
+      "Zueco de Eva": {
+        "units": 583,
+        "clp": 3557119
+      },
+      "Calcetín 3P": {
+        "units": 1453,
+        "clp": 9518933
+      },
+      "Polera UV": {
+        "units": 64,
+        "clp": 316016
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 116,
+        "clp": 1981481
+      },
+      "Polera SM": {
+        "units": 317,
+        "clp": 1571989
+      },
+      "Zapatilla con Luces": {
+        "units": 784,
+        "clp": 15116231
+      },
+      "Polera MC": {
+        "units": 2432,
+        "clp": 12133486
+      },
+      "Pijama CC": {
+        "units": 615,
+        "clp": 4783563
+      },
+      "Pijama LL": {
+        "units": 3796,
+        "clp": 45322685
+      },
+      "Enterito": {
+        "units": 25,
+        "clp": 188975
+      },
+      "Zapato de Agua": {
+        "units": 135,
+        "clp": 872689
+      },
+      "Poleron Cerrado": {
+        "units": 2443,
+        "clp": 28155130
+      },
+      "Calza": {
+        "units": 33,
+        "clp": 353609
+      },
+      "Vestido": {
+        "units": 120,
+        "clp": 864341
+      },
+      "Buzo": {
+        "units": 268,
+        "clp": 4262107
+      },
+      "Pantufla Bota": {
+        "units": 1353,
+        "clp": 12410429
+      },
+      "Pantufla": {
+        "units": 76,
+        "clp": 671025
+      },
+      "Polerón Abierto Fashion": {
+        "units": 97,
+        "clp": 1540655
+      },
+      "Calcetín 2P": {
+        "units": 3439,
+        "clp": 12519134
+      },
+      "Bota Chiporro": {
+        "units": 54,
+        "clp": 318716
+      },
+      "Traje de Baño Entero": {
+        "units": 148,
+        "clp": 783319
+      },
+      "Boxer 2P": {
+        "units": 1882,
+        "clp": 12483386
+      },
+      "Calzón 3P": {
+        "units": 110,
+        "clp": 909598
+      },
+      "Conjunto": {
+        "units": 334,
+        "clp": 4074215
+      },
+      "Polar": {
+        "units": 7,
+        "clp": 69691
+      },
+      "IMPERMEABLE": {
+        "units": 10,
+        "clp": 107900
+      },
+      "Pantalón de Buzo": {
+        "units": 134,
+        "clp": 1955670
+      },
+      "Botella": {
+        "units": 198,
+        "clp": 1101729
+      },
+      "Jockey": {
+        "units": 74,
+        "clp": 372563
+      },
+      "Boardshort": {
+        "units": 54,
+        "clp": 275803
+      },
+      "Calcetín 1P": {
+        "units": 5,
+        "clp": 8361
+      },
+      "ZUECO DE EVA CHIPORRO": {
+        "units": 78,
+        "clp": 905428
+      },
+      "Zapatilla Escolar": {
+        "units": 1,
+        "clp": 1256
+      }
+    },
+    "Snoopy": {
+      "Calcetín 2P": {
+        "units": 4360,
+        "clp": 15944132
+      },
+      "Polera MC": {
+        "units": 1345,
+        "clp": 12172105
+      },
+      "Calzón 2P": {
+        "units": 200,
+        "clp": 1329060
+      },
+      "Polera ML": {
+        "units": 8,
+        "clp": 25135
+      },
+      "Pijama CC": {
+        "units": 128,
+        "clp": 638991
+      },
+      "Pijama CL": {
+        "units": 2457,
+        "clp": 32149098
+      },
+      "Poleron Cerrado": {
+        "units": 1279,
+        "clp": 16633661
+      },
+      "Calzón 3P": {
+        "units": 710,
+        "clp": 3509198
+      },
+      "Pantufla": {
+        "units": 1197,
+        "clp": 9610633
+      },
+      "Figura Coleccionable": {
+        "units": 3,
+        "clp": 63000
+      },
+      "Pijama LL": {
+        "units": 1988,
+        "clp": 21848902
+      },
+      "Jockey": {
+        "units": 300,
+        "clp": 3239247
+      },
+      "Polerón": {
+        "units": 3,
+        "clp": 8546
+      },
+      "Body Set": {
+        "units": 2,
+        "clp": 9980
+      },
+      "Cosmetiquero": {
+        "units": 3,
+        "clp": 50970
+      },
+      "Bucket": {
+        "units": 2,
+        "clp": 12990
+      }
+    },
+    "Paw Patrol": {
+      "POLERON CERRADO GORRO": {
+        "units": 104,
+        "clp": 1356264
+      },
+      "Zueco de Eva": {
+        "units": 503,
+        "clp": 2852405
+      },
+      "Traje de Baño Entero": {
+        "units": 181,
+        "clp": 1087853
+      },
+      "Polera MC": {
+        "units": 1871,
+        "clp": 9693855
+      },
+      "Bota de Agua": {
+        "units": 18,
+        "clp": 110850
+      },
+      "Boardshort": {
+        "units": 75,
+        "clp": 345040
+      },
+      "Vestido": {
+        "units": 152,
+        "clp": 1143504
+      },
+      "Pijama CC": {
+        "units": 544,
+        "clp": 4284190
+      },
+      "Jockey": {
+        "units": 98,
+        "clp": 494944
+      },
+      "Sandalia": {
+        "units": 82,
+        "clp": 478671
+      },
+      "Enterito": {
+        "units": 140,
+        "clp": 965166
+      },
+      "Pijama LL": {
+        "units": 331,
+        "clp": 3286667
+      },
+      "Polera ML": {
+        "units": 368,
+        "clp": 2027583
+      },
+      "Polerón Abierto Fashion": {
+        "units": 91,
+        "clp": 1281561
+      },
+      "Poleron Cerrado": {
+        "units": 1253,
+        "clp": 12724925
+      },
+      "Zapatilla con Luces": {
+        "units": 672,
+        "clp": 12561838
+      },
+      "Zapatilla Urbana": {
+        "units": 1051,
+        "clp": 16273931
+      },
+      "Zapato de Agua": {
+        "units": 48,
+        "clp": 380540
+      },
+      "Zapatilla Escolar": {
+        "units": 107,
+        "clp": 1149936
+      },
+      "Conjunto": {
+        "units": 302,
+        "clp": 2780074
+      },
+      "Calcetín 3P": {
+        "units": 573,
+        "clp": 3321880
+      },
+      "Calzón 3P": {
+        "units": 479,
+        "clp": 2331290
+      },
+      "Body": {
+        "units": 109,
+        "clp": 525458
+      },
+      "TRAJE DE BA  O ENTERO": {
+        "units": 15,
+        "clp": 107080
+      },
+      "Calcetín 2P": {
+        "units": 1834,
+        "clp": 6088709
+      },
+      "Boxer 2P": {
+        "units": 1236,
+        "clp": 8205942
+      },
+      "Pantufla Bota": {
+        "units": 29,
+        "clp": 157242
+      },
+      "Polera UV": {
+        "units": 103,
+        "clp": 494518
+      },
+      "Sandalia Slide": {
+        "units": 63,
+        "clp": 342190
+      },
+      "Pantufla 3D": {
+        "units": 5,
+        "clp": 18446
+      },
+      "Pantufla": {
+        "units": 39,
+        "clp": 352321
+      },
+      "Calcetín 1P": {
+        "units": 26,
+        "clp": 42993
+      },
+      "Buzo": {
+        "units": 14,
+        "clp": 129291
+      },
+      "Pantalón de Buzo": {
+        "units": 28,
+        "clp": 409420
+      },
+      "Calzón 2P": {
+        "units": 427,
+        "clp": 2496068
+      },
+      "ZUECO DE EVA CHIPORRO": {
+        "units": 19,
+        "clp": 221414
+      },
+      "Bota Chiporro": {
+        "units": 16,
+        "clp": 84098
+      },
+      "Bota de Agua Luces": {
+        "units": 1,
+        "clp": 4000
+      },
+      "Correa": {
+        "units": 2,
+        "clp": 13428
+      }
+    },
+    "Toy Story": {
+      "Polera MC": {
+        "units": 185,
+        "clp": 798940
+      },
+      "Pijama CC": {
+        "units": 10,
+        "clp": 40339
+      },
+      "Pijama LL": {
+        "units": 10,
+        "clp": 87317
+      }
+    },
+    "Frozen": {
+      "Polera ML": {
+        "units": 260,
+        "clp": 1181456
+      },
+      "Conjunto": {
+        "units": 26,
+        "clp": 217570
+      },
+      "Poleron Cerrado": {
+        "units": 79,
+        "clp": 547921
+      },
+      "Pijama CC": {
+        "units": 120,
+        "clp": 922953
+      },
+      "Polera MC": {
+        "units": 90,
+        "clp": 399564
+      },
+      "Vestido": {
+        "units": 131,
+        "clp": 855742
+      },
+      "Jockey": {
+        "units": 78,
+        "clp": 404369
+      },
+      "Polera SM": {
+        "units": 8,
+        "clp": 53920
+      },
+      "Pantalón de Buzo": {
+        "units": 4,
+        "clp": 15162
+      },
+      "CAMISOLA SM": {
+        "units": 2,
+        "clp": 18990
+      },
+      "Pijama LL": {
+        "units": 10,
+        "clp": 98237
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 1,
+        "clp": 3360
+      }
+    },
+    "MARVEL COMICS": {
+      "Figura Coleccionable": {
+        "units": 119,
+        "clp": 1988501
+      },
+      "Polera MC": {
+        "units": 1,
+        "clp": 4202
+      },
+      "INFLABLE": {
+        "units": 6,
+        "clp": 5041
+      },
+      "Polera ML": {
+        "units": 14,
+        "clp": 112062
+      }
+    },
+    "Spidey": {
+      "Poleron Cerrado": {
+        "units": 1011,
+        "clp": 11182635
+      },
+      "Polera MC": {
+        "units": 840,
+        "clp": 4135125
+      },
+      "Zapatilla con Luces": {
+        "units": 31,
+        "clp": 701238
+      },
+      "Calcetín 2P": {
+        "units": 535,
+        "clp": 2235515
+      },
+      "Zapatilla Urbana": {
+        "units": 675,
+        "clp": 10667418
+      },
+      "Pijama LL": {
+        "units": 46,
+        "clp": 656120
+      },
+      "Conjunto": {
+        "units": 79,
+        "clp": 735741
+      },
+      "Polera ML": {
+        "units": 87,
+        "clp": 394108
+      },
+      "Polerón": {
+        "units": 1,
+        "clp": 664
+      }
+    },
+    "ZOOTOPIA": {
+      "Zueco de Eva": {
+        "units": 317,
+        "clp": 1960427
+      },
+      "Polera MC": {
+        "units": 356,
+        "clp": 2119957
+      },
+      "Jockey": {
+        "units": 118,
+        "clp": 643514
+      },
+      "Figura Coleccionable": {
+        "units": 45,
+        "clp": 918539
+      },
+      "Pijama CC": {
+        "units": 98,
+        "clp": 627668
+      },
+      "Boardshort": {
+        "units": 76,
+        "clp": 684784
+      },
+      "Traje de Baño": {
+        "units": 26,
+        "clp": 236575
+      },
+      "Vestido": {
+        "units": 12,
+        "clp": 92220
+      }
+    },
+    "HUNTER X HUNTER": {
+      "Pijama CC": {
+        "units": 306,
+        "clp": 1893364
+      }
+    },
+    "KPOP DEMON HUNTERS": {
+      "Polera MC": {
+        "units": 4522,
+        "clp": 54775169
+      }
+    },
+    "Minnie": {
+      "Polera MC": {
+        "units": 1251,
+        "clp": 6091535
+      },
+      "Zapatilla con Luces": {
+        "units": 576,
+        "clp": 10515406
+      },
+      "Polera ML": {
+        "units": 418,
+        "clp": 2067198
+      },
+      "Pijama LL": {
+        "units": 191,
+        "clp": 2521410
+      },
+      "Pijama CC": {
+        "units": 197,
+        "clp": 1758264
+      },
+      "Poleron Cerrado": {
+        "units": 1103,
+        "clp": 13191769
+      },
+      "Zapatilla Escolar": {
+        "units": 1888,
+        "clp": 26607980
+      },
+      "Polerón Abierto Fashion": {
+        "units": 105,
+        "clp": 1384839
+      },
+      "Polera SM": {
+        "units": 187,
+        "clp": 940004
+      },
+      "Jockey": {
+        "units": 216,
+        "clp": 1071086
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 3990
+      },
+      "Zueco de Eva": {
+        "units": 284,
+        "clp": 1693322
+      },
+      "Calza": {
+        "units": 39,
+        "clp": 443639
+      },
+      "Sandalia": {
+        "units": 47,
+        "clp": 368786
+      },
+      "Vestido": {
+        "units": 69,
+        "clp": 500755
+      },
+      "Bota de Agua": {
+        "units": 3,
+        "clp": 17970
+      },
+      "Conjunto": {
+        "units": 73,
+        "clp": 631428
+      },
+      "Calcetín 3P": {
+        "units": 336,
+        "clp": 1827931
+      },
+      "Pantufla Bota": {
+        "units": 27,
+        "clp": 144615
+      },
+      "Polar": {
+        "units": 96,
+        "clp": 1336845
+      },
+      "Buzo": {
+        "units": 18,
+        "clp": 205377
+      },
+      "Pantufla": {
+        "units": 36,
+        "clp": 336842
+      },
+      "Calzón 3P": {
+        "units": 166,
+        "clp": 1367965
+      },
+      "Falda": {
+        "units": 59,
+        "clp": 399857
+      },
+      "Bota Chiporro": {
+        "units": 29,
+        "clp": 229583
+      },
+      "Zapatilla Urbana": {
+        "units": 26,
+        "clp": 361567
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 10,
+        "clp": 51175
+      },
+      "Hawaiana": {
+        "units": 2,
+        "clp": 4980
+      },
+      "Jeans": {
+        "units": 4,
+        "clp": 45980
+      },
+      "Botin": {
+        "units": 1,
+        "clp": 3798
+      },
+      "Polerón": {
+        "units": 1,
+        "clp": 4990
+      },
+      "Polera MC Semi Básica": {
+        "units": 1,
+        "clp": 4495
+      }
+    },
+    "Minecraft": {
+      "Polera MC": {
+        "units": 1105,
+        "clp": 5954856
+      },
+      "Zapatilla con Luces": {
+        "units": 197,
+        "clp": 3396936
+      },
+      "Poleron Cerrado": {
+        "units": 182,
+        "clp": 2188619
+      },
+      "Polera ML": {
+        "units": 226,
+        "clp": 1539514
+      },
+      "Pijama LL": {
+        "units": 1640,
+        "clp": 19453154
+      },
+      "Calcetín 2P": {
+        "units": 949,
+        "clp": 2385677
+      },
+      "Polera UV": {
+        "units": 26,
+        "clp": 157444
+      },
+      "Pijama CC": {
+        "units": 181,
+        "clp": 1705978
+      },
+      "Calzón 3P": {
+        "units": 7,
+        "clp": 19321
+      },
+      "Zueco de Eva": {
+        "units": 254,
+        "clp": 2087593
+      },
+      "Pantufla Bota": {
+        "units": 20,
+        "clp": 86790
+      },
+      "Conjunto": {
+        "units": 145,
+        "clp": 1423087
+      },
+      "Calcetín 3P": {
+        "units": 566,
+        "clp": 3532695
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 4,
+        "clp": 69684
+      },
+      "Boardshort": {
+        "units": 229,
+        "clp": 1376218
+      },
+      "Boxer 2P": {
+        "units": 317,
+        "clp": 3129405
+      },
+      "Pijama": {
+        "units": 3,
+        "clp": 27714
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 16990
+      },
+      "Pantufla": {
+        "units": 23,
+        "clp": 217571
+      },
+      "ZUECO DE EVA CHIPORRO": {
+        "units": 1,
+        "clp": 7990
+      },
+      "Short": {
+        "units": 1,
+        "clp": 3275
+      }
+    },
+    "MARQUIS": {
+      "Banano": {
+        "units": 29,
+        "clp": 487142
+      },
+      "Jockey": {
+        "units": 104,
+        "clp": 1135264
+      },
+      "Neceser": {
+        "units": 33,
+        "clp": 415700
+      },
+      "Bandolera": {
+        "units": 6,
+        "clp": 100788
+      }
+    },
+    "NO APLICA": {
+      "Hawaiana": {
+        "units": 552,
+        "clp": 4424605
+      },
+      "Jockey": {
+        "units": 70,
+        "clp": 761937
+      },
+      "FIGURAS DE ACCION Y COLECCIONABLES": {
+        "units": 36,
+        "clp": 647049
+      },
+      "BUFANDA": {
+        "units": 7,
+        "clp": 73051
+      },
+      "Gorro": {
+        "units": 24,
+        "clp": 201480
+      },
+      "Figura Coleccionable": {
+        "units": 165,
+        "clp": 3020250
+      },
+      "Bandana": {
+        "units": 4,
+        "clp": 28538
+      },
+      "AUTO DE JUGUETE": {
+        "units": 4,
+        "clp": 33597
+      }
+    },
+    "ARISTOGATOS MARIE": {
+      "Jockey": {
+        "units": 123,
+        "clp": 683713
+      }
+    },
+    "Spiderman": {
+      "Polera MC": {
+        "units": 1493,
+        "clp": 7413376
+      },
+      "Sandalia": {
+        "units": 36,
+        "clp": 282450
+      },
+      "Poleron Cerrado": {
+        "units": 1084,
+        "clp": 14941858
+      },
+      "Zueco de Eva": {
+        "units": 195,
+        "clp": 1241880
+      },
+      "Pijama CC": {
+        "units": 224,
+        "clp": 1969690
+      },
+      "Zapatilla Escolar": {
+        "units": 2447,
+        "clp": 38209552
+      },
+      "Polera ML": {
+        "units": 628,
+        "clp": 6173649
+      },
+      "Zapatilla Urbana": {
+        "units": 280,
+        "clp": 4917462
+      },
+      "Zapatilla con Luces": {
+        "units": 614,
+        "clp": 10186673
+      },
+      "Pantalón de Buzo": {
+        "units": 106,
+        "clp": 795947
+      },
+      "Zapato de Agua": {
+        "units": 52,
+        "clp": 283655
+      },
+      "Pijama CL": {
+        "units": 17,
+        "clp": 156995
+      },
+      "Polerón Abierto Fashion": {
+        "units": 7,
+        "clp": 91930
+      },
+      "Bota Chiporro": {
+        "units": 30,
+        "clp": 253507
+      },
+      "Polar": {
+        "units": 68,
+        "clp": 782088
+      },
+      "Pijama LL": {
+        "units": 100,
+        "clp": 1491249
+      },
+      "Hawaiana": {
+        "units": 5,
+        "clp": 13950
+      },
+      "Sandalia Slide": {
+        "units": 3,
+        "clp": 11970
+      },
+      "Conjunto": {
+        "units": 2,
+        "clp": 12387
+      },
+      "Pantufla Bota": {
+        "units": 17,
+        "clp": 111542
+      },
+      "Short": {
+        "units": 72,
+        "clp": 359875
+      },
+      "Bota de Agua Luces": {
+        "units": 16,
+        "clp": 113861
+      },
+      "Jockey": {
+        "units": 16,
+        "clp": 94399
+      },
+      "Pantufla": {
+        "units": 84,
+        "clp": 808510
+      },
+      "Polera MC Semi Básica": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "Star Wars": {
+      "PELUCHE": {
+        "units": 375,
+        "clp": 2528708
+      },
+      "Polera MC Básica": {
+        "units": 2,
+        "clp": 4790
+      },
+      "Calcetín 2P": {
+        "units": 20,
+        "clp": 51187
+      },
+      "Figura Coleccionable": {
+        "units": 210,
+        "clp": 2704769
+      },
+      "Correa": {
+        "units": 2,
+        "clp": 15950
+      },
+      "Calcetín 1P": {
+        "units": 19,
+        "clp": 49660
+      },
+      "Pijama CC": {
+        "units": 1,
+        "clp": 4000
+      },
+      "Boxer 2P": {
+        "units": 6,
+        "clp": 15724
+      },
+      "Polera MC Fashion": {
+        "units": 1,
+        "clp": 1681
+      },
+      "Calcetín 3P": {
+        "units": 2,
+        "clp": 7980
+      },
+      "FIGURAS DE ACCION Y COLECCIONABLES": {
+        "units": 12,
+        "clp": 163341
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 1,
+        "clp": 5990
+      },
+      "Polera MC": {
+        "units": 6,
+        "clp": 24576
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 6990
+      },
+      "Pantufla": {
+        "units": 1,
+        "clp": 2513
+      }
+    },
+    "INDEX": {
+      "Bandolera": {
+        "units": 21,
+        "clp": 352758
+      },
+      "Bucket": {
+        "units": 60,
+        "clp": 654960
+      },
+      "Banano": {
+        "units": 134,
+        "clp": 2250941
+      },
+      "Jockey": {
+        "units": 96,
+        "clp": 1045753
+      }
+    },
+    "HAVAIANA": {
+      "Hawaiana": {
+        "units": 3757,
+        "clp": 32352001
+      },
+      "Sandalia": {
+        "units": 1520,
+        "clp": 8653944
+      }
+    },
+    "SONIC": {
+      "Polera MC": {
+        "units": 1018,
+        "clp": 4812310
+      },
+      "Calcetín 3P": {
+        "units": 392,
+        "clp": 2281752
+      },
+      "Botella": {
+        "units": 258,
+        "clp": 1117659
+      },
+      "Zueco de Eva": {
+        "units": 175,
+        "clp": 1444014
+      },
+      "Zapatilla con Luces": {
+        "units": 261,
+        "clp": 4515977
+      },
+      "Boardshort": {
+        "units": 65,
+        "clp": 393068
+      },
+      "Pijama CC": {
+        "units": 234,
+        "clp": 1858163
+      },
+      "Calcetín 2P": {
+        "units": 1175,
+        "clp": 2951250
+      },
+      "Polera ML": {
+        "units": 181,
+        "clp": 1101469
+      },
+      "Figura Coleccionable": {
+        "units": 13,
+        "clp": 219112
+      },
+      "Pijama LL": {
+        "units": 124,
+        "clp": 1973150
+      },
+      "Jockey": {
+        "units": 22,
+        "clp": 94785
+      },
+      "Poleron Cerrado": {
+        "units": 170,
+        "clp": 2434077
+      },
+      "Boxer 2P": {
+        "units": 602,
+        "clp": 4094312
+      },
+      "Zapatilla Escolar": {
+        "units": 21,
+        "clp": 258725
+      },
+      "ZUECO DE EVA CHIPORRO": {
+        "units": 1,
+        "clp": 7990
+      },
+      "Polera UV": {
+        "units": 13,
+        "clp": 78095
+      },
+      "Conjunto": {
+        "units": 12,
+        "clp": 86224
+      },
+      "Pantufla Bota": {
+        "units": 1,
+        "clp": 9889
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 5,
+        "clp": 54674
+      },
+      "Pijama CL": {
+        "units": 0,
+        "clp": 0
+      },
+      "Pantufla": {
+        "units": 26,
+        "clp": 249728
+      }
+    },
+    "DC Comics": {
+      "Figura Coleccionable": {
+        "units": 28,
+        "clp": 383989
+      },
+      "Boxer 3P": {
+        "units": 2,
+        "clp": 2996
+      },
+      "Polera MC": {
+        "units": 2,
+        "clp": 3362
+      },
+      "Boxer 2P": {
+        "units": 11,
+        "clp": 9410
+      },
+      "Pijama CC": {
+        "units": 1,
+        "clp": 9990
+      },
+      "Calzón 2P": {
+        "units": 1,
+        "clp": 462
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 3235
+      },
+      "Polerón": {
+        "units": 1,
+        "clp": 9990
+      }
+    },
+    "BOB ESPONJA": {
+      "Pantufla": {
+        "units": 532,
+        "clp": 2640108
+      },
+      "Polera MC": {
+        "units": 1589,
+        "clp": 9159678
+      },
+      "Poleron Cerrado": {
+        "units": 351,
+        "clp": 2580437
+      },
+      "Calcetín 2P": {
+        "units": 1154,
+        "clp": 3265439
+      }
+    },
+    "LILO & STITCH": {
+      "Zapatilla con Luces": {
+        "units": 484,
+        "clp": 9731200
+      },
+      "Vestido": {
+        "units": 29,
+        "clp": 238925
+      },
+      "Pijama CC": {
+        "units": 133,
+        "clp": 1297906
+      },
+      "Pijama LL": {
+        "units": 530,
+        "clp": 7280385
+      },
+      "Calza": {
+        "units": 19,
+        "clp": 220962
+      },
+      "Polera ML": {
+        "units": 112,
+        "clp": 811024
+      },
+      "Poleron Cerrado": {
+        "units": 281,
+        "clp": 3248830
+      },
+      "Calcetín 3P": {
+        "units": 560,
+        "clp": 3245809
+      },
+      "Polera MC": {
+        "units": 1540,
+        "clp": 8837473
+      },
+      "Zueco de Eva": {
+        "units": 69,
+        "clp": 433486
+      },
+      "Zapatilla Urbana": {
+        "units": 391,
+        "clp": 5541594
+      },
+      "Jockey": {
+        "units": 168,
+        "clp": 982480
+      },
+      "Polera SM": {
+        "units": 84,
+        "clp": 355260
+      },
+      "Calzón 2P": {
+        "units": 343,
+        "clp": 2008772
+      },
+      "Zapato de Agua": {
+        "units": 2,
+        "clp": 9980
+      },
+      "Sandalia Slide": {
+        "units": 75,
+        "clp": 392490
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 43,
+        "clp": 876658
+      },
+      "Pantufla Bota": {
+        "units": 1,
+        "clp": 2990
+      },
+      "Short": {
+        "units": 28,
+        "clp": 397315
+      },
+      "Pantufla": {
+        "units": 42,
+        "clp": 354775
+      },
+      "Calzón 3P": {
+        "units": 99,
+        "clp": 904961
+      },
+      "Calcetín 2P": {
+        "units": 303,
+        "clp": 1260354
+      },
+      "Camisola MC": {
+        "units": 3302,
+        "clp": 12122048
+      },
+      "Figura Coleccionable": {
+        "units": 54,
+        "clp": 929420
+      },
+      "INFLABLE": {
+        "units": 13,
+        "clp": 10922
+      },
+      "FIGURAS DE ACCION Y COLECCIONABLES": {
+        "units": 4,
+        "clp": 81480
+      },
+      "Polerón Cerrado Fashion": {
+        "units": 1,
+        "clp": 18990
+      }
+    },
+    "Barbie": {
+      "Poleron Cerrado": {
+        "units": 151,
+        "clp": 1505365
+      },
+      "Zapatilla Escolar": {
+        "units": 222,
+        "clp": 4200278
+      },
+      "Polera MC": {
+        "units": 799,
+        "clp": 4136672
+      },
+      "Sandalia": {
+        "units": 43,
+        "clp": 337544
+      },
+      "Polera ML": {
+        "units": 189,
+        "clp": 1015518
+      },
+      "Polera SM": {
+        "units": 6,
+        "clp": 41940
+      },
+      "Zapatilla con Luces": {
+        "units": 134,
+        "clp": 3047853
+      },
+      "Short": {
+        "units": 13,
+        "clp": 191872
+      },
+      "Traje de Baño Entero": {
+        "units": 70,
+        "clp": 531950
+      },
+      "Vestido": {
+        "units": 85,
+        "clp": 751829
+      },
+      "BIKINI": {
+        "units": 71,
+        "clp": 415559
+      },
+      "Pijama LL": {
+        "units": 53,
+        "clp": 800294
+      },
+      "Bota Chiporro": {
+        "units": 8,
+        "clp": 51920
+      },
+      "Pijama CC": {
+        "units": 2,
+        "clp": 7546
+      }
+    },
+    "Hot Wheels": {
+      "Polera MC": {
+        "units": 544,
+        "clp": 2323755
+      },
+      "Polera UV": {
+        "units": 28,
+        "clp": 167507
+      },
+      "Poleron Cerrado": {
+        "units": 57,
+        "clp": 375197
+      },
+      "Polera ML": {
+        "units": 45,
+        "clp": 234939
+      },
+      "Boardshort": {
+        "units": 23,
+        "clp": 152214
+      }
+    },
+    "Naruto": {
+      "Pijama CC": {
+        "units": 246,
+        "clp": 1549786
+      },
+      "Polera MC": {
+        "units": 157,
+        "clp": 639777
+      },
+      "Jockey": {
+        "units": 3,
+        "clp": 5043
+      },
+      "Poleron Cerrado": {
+        "units": 11,
+        "clp": 95472
+      },
+      "Figura Coleccionable": {
+        "units": 47,
+        "clp": 698041
+      },
+      "Boxer 2P": {
+        "units": 238,
+        "clp": 1526620
+      },
+      "Pijama LL": {
+        "units": 3,
+        "clp": 31068
+      },
+      "Polera ML": {
+        "units": 4,
+        "clp": 31960
+      },
+      "Polerón": {
+        "units": 1,
+        "clp": 5034
+      },
+      "Calcetín 1P": {
+        "units": 1,
+        "clp": 1990
+      },
+      "Calcetín 2P": {
+        "units": 28,
+        "clp": 31558
+      }
+    },
+    "Rick and morty": {
+      "Boxer 1P": {
+        "units": 47,
+        "clp": 47452
+      },
+      "Pijama CC": {
+        "units": 208,
+        "clp": 840398
+      },
+      "Boxer 2P": {
+        "units": 1,
+        "clp": 3017
+      },
+      "Calcetín 2P": {
+        "units": 4,
+        "clp": 7616
+      },
+      "Polera MC": {
+        "units": 5,
+        "clp": 15323
+      },
+      "Calcetín 1P": {
+        "units": 3,
+        "clp": 8970
+      },
+      "Pijama CL": {
+        "units": 16,
+        "clp": 147760
+      }
+    },
+    "BT21": {
+      "Pijama CL": {
+        "units": 9,
+        "clp": 83115
+      }
+    },
+    "Mickey": {
+      "Polera MC": {
+        "units": 574,
+        "clp": 2468251
+      },
+      "Polera ML": {
+        "units": 117,
+        "clp": 461435
+      },
+      "Poleron Cerrado": {
+        "units": 263,
+        "clp": 2837878
+      },
+      "Conjunto": {
+        "units": 100,
+        "clp": 809128
+      },
+      "Pijama LL": {
+        "units": 41,
+        "clp": 392607
+      },
+      "Pijama CC": {
+        "units": 154,
+        "clp": 1164665
+      },
+      "Boxer 2P": {
+        "units": 55,
+        "clp": 596014
+      },
+      "Buzo": {
+        "units": 16,
+        "clp": 168163
+      },
+      "Jockey": {
+        "units": 196,
+        "clp": 1039934
+      },
+      "Polerón": {
+        "units": 6,
+        "clp": 21504
+      },
+      "Pijama CL": {
+        "units": 2,
+        "clp": 18470
+      },
+      "Polera MC Básica": {
+        "units": 3,
+        "clp": 4549
+      },
+      "Calcetín 3P": {
+        "units": 159,
+        "clp": 791078
+      },
+      "Calcetín 1P": {
+        "units": 19,
+        "clp": 31171
+      },
+      "Pantalón de Buzo": {
+        "units": 4,
+        "clp": 31960
+      },
+      "Poler  n Abierto Fashion": {
+        "units": 3,
+        "clp": 22665
+      },
+      "INFLABLE": {
+        "units": 1,
+        "clp": 840
+      },
+      "Calcetín 2P": {
+        "units": 2,
+        "clp": 4521
+      },
+      "IMPERMEABLE": {
+        "units": 1,
+        "clp": 1168
+      }
+    },
+    "FORD": {
+      "POLERON CERRADO GORRO": {
+        "units": 50,
+        "clp": 541589
+      },
+      "Polera MC": {
+        "units": 90,
+        "clp": 541068
+      },
+      "Jockey": {
+        "units": 239,
+        "clp": 1271798
+      },
+      "Poleron Cerrado": {
+        "units": 87,
+        "clp": 847254
+      },
+      "Pijama CC": {
+        "units": 502,
+        "clp": 1869006
+      },
+      "Pijama LL": {
+        "units": 339,
+        "clp": 3525676
+      }
+    },
+    "Celebrity Icons": {
+      "Pijama CC": {
+        "units": 59,
+        "clp": 229422
+      },
+      "Polera MC": {
+        "units": 20,
+        "clp": 62176
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 28,
+        "clp": 112614
+      },
+      "Poleron Cerrado": {
+        "units": 66,
+        "clp": 268928
+      },
+      "Polerón Cerrado Fashion": {
+        "units": 1,
+        "clp": 7990
+      }
+    },
+    "The Mandalorian": {
+      "Polera MC": {
+        "units": 90,
+        "clp": 625525
+      },
+      "Figura Coleccionable": {
+        "units": 83,
+        "clp": 1305630
+      },
+      "Pantufla": {
+        "units": 14,
+        "clp": 11447
+      },
+      "Calcetín 1P": {
+        "units": 2,
+        "clp": 1680
+      }
+    },
+    "FUNKO MUSIC": {
+      "Figura Coleccionable": {
+        "units": 43,
+        "clp": 688897
+      }
+    },
+    "Avengers": {
+      "Polera MC": {
+        "units": 523,
+        "clp": 1919165
+      },
+      "Polera ML": {
+        "units": 22,
+        "clp": 84389
+      },
+      "Poleron Cerrado": {
+        "units": 72,
+        "clp": 739520
+      },
+      "Pijama CC": {
+        "units": 94,
+        "clp": 882118
+      },
+      "Pijama LL": {
+        "units": 42,
+        "clp": 351425
+      },
+      "Pijama CL": {
+        "units": 13,
+        "clp": 120055
+      },
+      "Conjunto": {
+        "units": 24,
+        "clp": 162266
+      },
+      "FIGURAS DE ACCION Y COLECCIONABLES": {
+        "units": 3,
+        "clp": 15102
+      },
+      "Calcetín 2P": {
+        "units": 2,
+        "clp": 7980
+      }
+    },
+    "Playstation": {
+      "Calcetín 2P": {
+        "units": 4,
+        "clp": 6724
+      },
+      "Poleron Cerrado": {
+        "units": 52,
+        "clp": 315640
+      },
+      "Polera ML": {
+        "units": 85,
+        "clp": 538415
+      },
+      "Polera MC": {
+        "units": 88,
+        "clp": 461923
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 16,
+        "clp": 187275
+      },
+      "Pijama CL": {
+        "units": 4,
+        "clp": 36940
+      },
+      "Pijama LL": {
+        "units": 2,
+        "clp": 8000
+      },
+      "Pijama CC": {
+        "units": 1,
+        "clp": 4990
+      }
+    },
+    "El Rey Leon": {
+      "Calzón 2P": {
+        "units": 25,
+        "clp": 66781
+      },
+      "Gorro": {
+        "units": 43,
+        "clp": 173702
+      },
+      "Polera MC": {
+        "units": 4,
+        "clp": 23172
+      },
+      "Pijama CL": {
+        "units": 9,
+        "clp": 83115
+      },
+      "Jockey": {
+        "units": 93,
+        "clp": 466417
+      },
+      "Calcetín 2P": {
+        "units": 43,
+        "clp": 94374
+      },
+      "Pijama CC": {
+        "units": 3,
+        "clp": 25980
+      },
+      "Pijama LL": {
+        "units": 4,
+        "clp": 30218
+      },
+      "Polera ML Fashion": {
+        "units": 1,
+        "clp": 2513
+      },
+      "Pantufla": {
+        "units": 1,
+        "clp": 3990
+      },
+      "Conjunto": {
+        "units": 1,
+        "clp": 2521
+      }
+    },
+    "WINNIE THE POOH": {
+      "Polera MC": {
+        "units": 78,
+        "clp": 368051
+      },
+      "FIGURAS DE ACCION Y COLECCIONABLES": {
+        "units": 4,
+        "clp": 33597
+      }
+    },
+    "Dragon Ball Z": {
+      "Polera MC": {
+        "units": 7,
+        "clp": 30602
+      },
+      "Figura Coleccionable": {
+        "units": 6,
+        "clp": 109200
+      }
+    },
+    "Cars": {
+      "Poleron Cerrado": {
+        "units": 5,
+        "clp": 20463
+      },
+      "Zapatilla con Luces": {
+        "units": 302,
+        "clp": 7346858
+      },
+      "Polera MC": {
+        "units": 326,
+        "clp": 1505814
+      },
+      "Polera ML": {
+        "units": 52,
+        "clp": 228612
+      },
+      "Pijama LL": {
+        "units": 44,
+        "clp": 676261
+      },
+      "Jockey": {
+        "units": 14,
+        "clp": 77893
+      },
+      "Pantufla": {
+        "units": 44,
+        "clp": 431929
+      }
+    },
+    "RED BULL": {
+      "Polera ML": {
+        "units": 299,
+        "clp": 2735060
+      },
+      "Poleron Cerrado": {
+        "units": 45,
+        "clp": 645746
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 14,
+        "clp": 191860
+      }
+    },
+    "Gabby Doll House": {
+      "Polera MC": {
+        "units": 118,
+        "clp": 473786
+      },
+      "Polera ML": {
+        "units": 110,
+        "clp": 381730
+      },
+      "Pijama LL": {
+        "units": 7,
+        "clp": 29939
+      },
+      "Poleron Cerrado": {
+        "units": 46,
+        "clp": 298515
+      },
+      "Polera SM": {
+        "units": 3,
+        "clp": 9228
+      },
+      "Conjunto": {
+        "units": 41,
+        "clp": 380570
+      },
+      "Camisola MC": {
+        "units": 6,
+        "clp": 9711
+      },
+      "Pijama CL": {
+        "units": 4,
+        "clp": 10887
+      },
+      "Buzo": {
+        "units": 1,
+        "clp": 3521
+      },
+      "Polerón": {
+        "units": 1,
+        "clp": 3000
+      },
+      "Traje de Baño Entero": {
+        "units": 1,
+        "clp": 3353
+      },
+      "Vestido": {
+        "units": 2,
+        "clp": 5034
+      }
+    },
+    "Sin Licencia": {
+      "Cuello": {
+        "units": 12,
+        "clp": 20065
+      },
+      "Calzón 7P": {
+        "units": 5,
+        "clp": 12565
+      },
+      "Calcetín 3P": {
+        "units": 24,
+        "clp": 25704
+      },
+      "Calcetín 2P": {
+        "units": 4,
+        "clp": 5261
+      },
+      "Banano": {
+        "units": 4,
+        "clp": 6688
+      },
+      "Boxer 3P": {
+        "units": 4,
+        "clp": 19311
+      },
+      "Calzón 2P": {
+        "units": 2,
+        "clp": 2336
+      },
+      "Pantalón de Buzo": {
+        "units": 1,
+        "clp": 2605
+      },
+      "Polerón Cerrado Fashion": {
+        "units": 3,
+        "clp": 12606
+      },
+      "Calcetin 7P": {
+        "units": 1,
+        "clp": 2008
+      },
+      "Mochila": {
+        "units": 3,
+        "clp": 2496
+      },
+      "Polerón Cerrado Básico": {
+        "units": 2,
+        "clp": 1680
+      },
+      "Pantufla": {
+        "units": 2,
+        "clp": 3344
+      },
+      "Boxer 2P": {
+        "units": 2,
+        "clp": 3008
+      },
+      "Calcetín 5P": {
+        "units": 2,
+        "clp": 4193
+      }
+    },
+    "GARFIELD": {
+      "Polera MC": {
+        "units": 161,
+        "clp": 1237303
+      },
+      "Pijama LL": {
+        "units": 475,
+        "clp": 5185100
+      },
+      "Poleron Cerrado": {
+        "units": 6,
+        "clp": 30000
+      },
+      "Calzón 3P": {
+        "units": 266,
+        "clp": 1334850
+      },
+      "Pijama CC": {
+        "units": 8,
+        "clp": 30254
+      },
+      "Pantufla": {
+        "units": 6,
+        "clp": 53168
+      },
+      "Calcetín 2P": {
+        "units": 404,
+        "clp": 1184932
+      }
+    },
+    "South Park": {
+      "Boxer 1P": {
+        "units": 2,
+        "clp": 5033
+      },
+      "Calcetín 2P": {
+        "units": 24,
+        "clp": 20538
+      },
+      "Polera MC": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "POKEMON": {
+      "Figura Coleccionable": {
+        "units": 247,
+        "clp": 3304991
+      },
+      "Botella": {
+        "units": 334,
+        "clp": 1828535
+      }
+    },
+    "INSIDE OUT": {
+      "Pijama CC": {
+        "units": 20,
+        "clp": 89926
+      },
+      "Polera MC": {
+        "units": 47,
+        "clp": 204704
+      },
+      "Poleron Cerrado": {
+        "units": 2,
+        "clp": 12000
+      }
+    },
+    "Dragon Ball": {
+      "Figura Coleccionable": {
+        "units": 67,
+        "clp": 945518
+      },
+      "Polera ML": {
+        "units": 1,
+        "clp": 2513
+      }
+    },
+    "Stranger Things": {
+      "Polera MC": {
+        "units": 141,
+        "clp": 845475
+      },
+      "Figura Coleccionable": {
+        "units": 58,
+        "clp": 1216950
+      },
+      "PARLANTES": {
+        "units": 127,
+        "clp": 1540553
+      }
+    },
+    "Mickey y sus Amigos": {
+      "Figura Coleccionable": {
+        "units": 43,
+        "clp": 857218
+      },
+      "Jockey": {
+        "units": 7,
+        "clp": 40168
+      },
+      "Gorro": {
+        "units": 10,
+        "clp": 50940
+      },
+      "INFLABLE": {
+        "units": 3,
+        "clp": 2521
+      }
+    },
+    "Peppa Pig": {
+      "Polera MC": {
+        "units": 591,
+        "clp": 2617884
+      },
+      "Pijama LL": {
+        "units": 526,
+        "clp": 3081119
+      },
+      "Poleron Cerrado": {
+        "units": 539,
+        "clp": 3341647
+      }
+    },
+    "REVUP": {
+      "Banano": {
+        "units": 107,
+        "clp": 178929
+      },
+      "Calcetín 3P": {
+        "units": 139,
+        "clp": 136681
+      },
+      "Cuello": {
+        "units": 51,
+        "clp": 85278
+      }
+    },
+    "Tinker Bell": {
+      "Pijama LL": {
+        "units": 6,
+        "clp": 38970
+      }
+    },
+    "1KO": {
+      "Pantufla": {
+        "units": 26,
+        "clp": 1890
+      }
+    },
+    "DISNEY 100": {
+      "Polera MC": {
+        "units": 4,
+        "clp": 12362
+      },
+      "Figura Coleccionable": {
+        "units": 4,
+        "clp": 59596
+      },
+      "FIGURAS DE ACCION Y COLECCIONABLES": {
+        "units": 10,
+        "clp": 83991
+      },
+      "Pijama CC": {
+        "units": 2,
+        "clp": 8982
+      }
+    },
+    "Harry Potter": {
+      "Poleron Cerrado": {
+        "units": 29,
+        "clp": 214204
+      },
+      "Polera MC": {
+        "units": 112,
+        "clp": 724249
+      },
+      "Figura Coleccionable": {
+        "units": 66,
+        "clp": 1065026
+      },
+      "Jockey": {
+        "units": 132,
+        "clp": 785023
+      },
+      "Polera ML Fashion": {
+        "units": 1,
+        "clp": 2521
+      }
+    },
+    "Chicas Superpoderosas": {
+      "Polera MC": {
+        "units": 51,
+        "clp": 355222
+      }
+    },
+    "Batman": {
+      "Figura Coleccionable": {
+        "units": 11,
+        "clp": 175960
+      },
+      "Jockey": {
+        "units": 113,
+        "clp": 702444
+      },
+      "Polera MC": {
+        "units": 7,
+        "clp": 17482
+      },
+      "Pijama LL": {
+        "units": 4,
+        "clp": 36940
+      },
+      "Poleron Cerrado": {
+        "units": 1,
+        "clp": 4990
+      },
+      "Polerón Cerrado Fashion": {
+        "units": 1,
+        "clp": 5990
+      }
+    },
+    "JUJUTSU KAISEN": {
+      "Figura Coleccionable": {
+        "units": 181,
+        "clp": 2403862
+      },
+      "Polera MC": {
+        "units": 143,
+        "clp": 726484
+      },
+      "Pijama LL": {
+        "units": 514,
+        "clp": 5373285
+      },
+      "Pijama CC": {
+        "units": 150,
+        "clp": 691274
+      },
+      "FIGURAS DE ACCION Y COLECCIONABLES": {
+        "units": 5,
+        "clp": 83990
+      }
+    },
+    "DEMON SLAYER": {
+      "Figura Coleccionable": {
+        "units": 76,
+        "clp": 1271075
+      }
+    },
+    "Disney": {
+      "Figura Coleccionable": {
+        "units": 116,
+        "clp": 849242
+      },
+      "Pantufla": {
+        "units": 26,
+        "clp": 47843
+      },
+      "Body Set": {
+        "units": 7,
+        "clp": 33086
+      },
+      "Enterito": {
+        "units": 2,
+        "clp": 14061
+      },
+      "Polera MC": {
+        "units": 1,
+        "clp": 2990
+      }
+    },
+    "MARIO BROS": {
+      "Botella": {
+        "units": 94,
+        "clp": 455522
+      }
+    },
+    "NASA": {
+      "Pijama LL": {
+        "units": 404,
+        "clp": 4148006
+      },
+      "Poleron Cerrado": {
+        "units": 16,
+        "clp": 73946
+      }
+    },
+    "Friends": {
+      "Calcetín 2P": {
+        "units": 296,
+        "clp": 868168
+      },
+      "Pijama CC": {
+        "units": 29,
+        "clp": 116814
+      }
+    },
+    "LOTSO": {
+      "Jockey": {
+        "units": 94,
+        "clp": 448955
+      },
+      "Pijama LL": {
+        "units": 550,
+        "clp": 5339119
+      }
+    },
+    "FORMULA 1": {
+      "Figura Coleccionable": {
+        "units": 17,
+        "clp": 354480
+      }
+    },
+    "Tom y Jerry": {
+      "Polera MC": {
+        "units": 11,
+        "clp": 87986
+      },
+      "Poleron Cerrado": {
+        "units": 5,
+        "clp": 43950
+      }
+    },
+    "Princesas": {
+      "Figura Coleccionable": {
+        "units": 24,
+        "clp": 457787
+      },
+      "INFLABLE": {
+        "units": 14,
+        "clp": 11762
+      },
+      "Camisola MC": {
+        "units": 9,
+        "clp": 89910
+      },
+      "Polera ML": {
+        "units": 54,
+        "clp": 185090
+      },
+      "Polera MC": {
+        "units": 25,
+        "clp": 59009
+      },
+      "Zueco de Eva": {
+        "units": 2,
+        "clp": 7980
+      },
+      "Pijama LL": {
+        "units": 1,
+        "clp": 2849
+      }
+    },
+    "Emoji": {
+      "Pantaleta 2P": {
+        "units": 59,
+        "clp": 207539
+      },
+      "Calcetín 2P": {
+        "units": 4,
+        "clp": 5873
+      },
+      "Boxer 2P": {
+        "units": 1,
+        "clp": 2521
+      },
+      "Calzón 3P": {
+        "units": 6,
+        "clp": 14286
+      }
+    },
+    "Attack on titan": {
+      "Boxer 1P": {
+        "units": 35,
+        "clp": 41140
+      }
+    },
+    "NICK 90": {
+      "Calcetín 2P": {
+        "units": 661,
+        "clp": 1938420
+      },
+      "Pijama LL": {
+        "units": 483,
+        "clp": 5269907
+      }
+    },
+    "Metallica": {
+      "Polera SM": {
+        "units": 5,
+        "clp": 19950
+      },
+      "Polera MC": {
+        "units": 291,
+        "clp": 3153432
+      },
+      "Poleron Cerrado": {
+        "units": 542,
+        "clp": 7380060
+      }
+    },
+    "SIN MARCA": {
+      "Polera MC": {
+        "units": 11,
+        "clp": 9240
+      }
+    },
+    "Boruto": {
+      "Polera ML": {
+        "units": 1,
+        "clp": 3353
+      }
+    },
+    "One Piece": {
+      "Pijama CC": {
+        "units": 52,
+        "clp": 433779
+      },
+      "Figura Coleccionable": {
+        "units": 122,
+        "clp": 1868408
+      },
+      "Polera MC": {
+        "units": 1,
+        "clp": 2513
+      },
+      "Pijama LL": {
+        "units": 1,
+        "clp": 10076
+      }
+    },
+    "Pink Floyd": {
+      "Calcetín 2P": {
+        "units": 388,
+        "clp": 1138004
+      },
+      "Polera MC": {
+        "units": 254,
+        "clp": 2745887
+      },
+      "Pijama": {
+        "units": 2,
+        "clp": 21990
+      },
+      "Poleron Cerrado": {
+        "units": 249,
+        "clp": 3532346
+      }
+    },
+    "PRESCHOOL MINNIE": {
+      "Pijama LL": {
+        "units": 21,
+        "clp": 196621
+      }
+    },
+    "RICK AND MORTY": {
+      "Polera MC": {
+        "units": 7,
+        "clp": 10501
+      },
+      "Calcetín 2P": {
+        "units": 526,
+        "clp": 1502138
+      },
+      "Pijama CC": {
+        "units": 9,
+        "clp": 28566
+      },
+      "Sandalia Slide": {
+        "units": 45,
+        "clp": 71440
+      }
+    },
+    "Acdc": {
+      "Calcetín 2P": {
+        "units": 470,
+        "clp": 1377630
+      },
+      "Pijama CC": {
+        "units": 24,
+        "clp": 90761
+      },
+      "Sandalia Slide": {
+        "units": 2,
+        "clp": 15980
+      },
+      "Pijama LL": {
+        "units": 17,
+        "clp": 169830
+      },
+      "Pijama": {
+        "units": 1,
+        "clp": 3397
+      },
+      "Poleron Cerrado": {
+        "units": 369,
+        "clp": 5227632
+      },
+      "Polera MC": {
+        "units": 756,
+        "clp": 8176980
+      }
+    },
+    "Superman": {
+      "Polerón Cerrado Fashion": {
+        "units": 4,
+        "clp": 23528
+      },
+      "Pijama LL": {
+        "units": 7,
+        "clp": 64645
+      },
+      "Zueco de Eva": {
+        "units": 1,
+        "clp": 5990
+      }
+    },
+    "Looney Tunes": {
+      "Calcetín 2P": {
+        "units": 11,
+        "clp": 24468
+      },
+      "Polera ML": {
+        "units": 17,
+        "clp": 42857
+      },
+      "Pijama CL": {
+        "units": 5,
+        "clp": 46175
+      }
+    },
+    "Bambi": {
+      "Figura Coleccionable": {
+        "units": 7,
+        "clp": 34930
+      },
+      "Calcetín 2P": {
+        "units": 6,
+        "clp": 12048
+      }
+    },
+    "HAVAIAN+Q596A": {
+      "Sandalia": {
+        "units": 12,
+        "clp": 149607
+      }
+    },
+    "Kiss": {
+      "Polerón Cerrado Fashion": {
+        "units": 14,
+        "clp": 82348
+      },
+      "Pijama": {
+        "units": 1,
+        "clp": 3397
+      },
+      "Poleron Cerrado": {
+        "units": 143,
+        "clp": 2025520
+      },
+      "Polera MC": {
+        "units": 268,
+        "clp": 2914451
+      }
+    },
+    "101 Dalmatas": {
+      "Set": {
+        "units": 6,
+        "clp": 48342
+      },
+      "Calzón 2P": {
+        "units": 3,
+        "clp": 2520
+      }
+    },
+    "DISNEY PIXAR COLLECTION": {
+      "Calcetín 2P": {
+        "units": 8,
+        "clp": 23464
+      }
+    },
+    "Disney Clásicos": {
+      "Accesorio Facial": {
+        "units": 2,
+        "clp": 992
+      },
+      "Calcetín 2P": {
+        "units": 3,
+        "clp": 10059
+      },
+      "Jockey": {
+        "units": 1,
+        "clp": 3235
+      },
+      "Pijama CC": {
+        "units": 3,
+        "clp": 22970
+      }
+    },
+    "JANIS JOPLIN": {
+      "Polera MC": {
+        "units": 2,
+        "clp": 7980
+      }
+    },
+    "RUGRATS": {
+      "Polera MC": {
+        "units": 4,
+        "clp": 17532
+      }
+    },
+    "Minions": {
+      "Calzón 3P": {
+        "units": 7,
+        "clp": 17640
+      },
+      "Calcetín 2P": {
+        "units": 5,
+        "clp": 10483
+      },
+      "Boxer 2P": {
+        "units": 2,
+        "clp": 3362
+      }
+    },
+    "Hello Kitty": {
+      "Figura Coleccionable": {
+        "units": 52,
+        "clp": 847911
+      }
+    },
+    "Lightyear": {
+      "Pijama CC": {
+        "units": 1,
+        "clp": 4193
+      },
+      "Pijama LL": {
+        "units": 10,
+        "clp": 67496
+      }
+    },
+    "Minnie (Infantil + Teen)": {
+      "Enterito": {
+        "units": 2,
+        "clp": 10480
+      }
+    },
+    "SPY X FAMILY": {
+      "Pijama CC": {
+        "units": 35,
+        "clp": 94949
+      },
+      "Polera MC": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "SHREK": {
+      "Figura Coleccionable": {
+        "units": 1,
+        "clp": 10500
+      }
+    },
+    "Jurassic World": {
+      "Figura Coleccionable": {
+        "units": 16,
+        "clp": 336000
+      }
+    },
+    "MAFALDA": {
+      "Pijama CC": {
+        "units": 12,
+        "clp": 33616
+      },
+      "Pantufla": {
+        "units": 19,
+        "clp": 244212
+      },
+      "Cosmetiquero": {
+        "units": 5,
+        "clp": 84950
+      },
+      "Pijama LL": {
+        "units": 24,
+        "clp": 636966
+      }
+    },
+    "Frida Kahlo": {
+      "Calcetín 2P": {
+        "units": 6,
+        "clp": 12049
+      }
+    },
+    "Los Picapiedras": {
+      "Calcetín 2P": {
+        "units": 10,
+        "clp": 23530
+      }
+    },
+    "CHUCKY": {
+      "Figura Coleccionable": {
+        "units": 4,
+        "clp": 67192
+      }
+    },
+    "Villanas": {
+      "Poleron Cerrado": {
+        "units": 1,
+        "clp": 5990
+      },
+      "Polerón Cerrado Fashion": {
+        "units": 1,
+        "clp": 5990
+      },
+      "Polera MC": {
+        "units": 1,
+        "clp": 1000
+      }
+    },
+    "UFC": {
+      "Pijama LL": {
+        "units": 154,
+        "clp": 1681064
+      }
+    },
+    "Pacman": {
+      "Boxer 2P": {
+        "units": 2,
+        "clp": 8007
+      }
+    },
+    "LA VACA Y EL POLLITO": {
+      "Boxer 2P": {
+        "units": 1,
+        "clp": 1681
+      }
+    },
+    "Iron Maiden": {
+      "Pantufla": {
+        "units": 1,
+        "clp": 5994
+      }
+    },
+    "Marvel": {
+      "Figura Coleccionable": {
+        "units": 22,
+        "clp": 266418
+      },
+      "Pantufla": {
+        "units": 1,
+        "clp": 3000
+      }
+    },
+    "ED EDD & EDDY": {
+      "Calcetín 1P": {
+        "units": 10,
+        "clp": 12600
+      }
+    },
+    "Mortal Kombat": {
+      "Figura Coleccionable": {
+        "units": 11,
+        "clp": 220080
+      }
+    },
+    "OZZY OSBOURNE": {
+      "Polera SM": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "WISH": {
+      "Polera ML": {
+        "units": 6,
+        "clp": 25212
+      },
+      "Figura Coleccionable": {
+        "units": 1,
+        "clp": 10500
+      },
+      "Polera MC": {
+        "units": 1,
+        "clp": 832
+      }
+    },
+    "WONDER WOMAN": {
+      "Figura Coleccionable": {
+        "units": 2,
+        "clp": 24985
+      }
+    },
+    "AC/DC": {
+      "Polera MC": {
+        "units": 3,
+        "clp": 6362
+      }
+    },
+    "El Laboratorio De Dexter": {
+      "Calcetín 1P": {
+        "units": 7,
+        "clp": 8820
+      }
+    },
+    "FUNKO DEPORTE": {
+      "Figura Coleccionable": {
+        "units": 5,
+        "clp": 83990
+      }
+    },
+    "Rey León": {
+      "Calcetín 2P": {
+        "units": 2,
+        "clp": 9980
+      }
+    },
+    "Buzz Light Year": {
+      "Slippers Parka": {
+        "units": 2,
+        "clp": 5990
+      }
+    },
+    "OASIS": {
+      "Poleron Cerrado": {
+        "units": 391,
+        "clp": 5542838
+      },
+      "Polera MC": {
+        "units": 214,
+        "clp": 2322807
+      }
+    },
+    "The Beatles": {
+      "Poleron Cerrado": {
+        "units": 555,
+        "clp": 7590379
+      },
+      "Polera MC": {
+        "units": 390,
+        "clp": 4242597
+      }
+    },
+    "Paw Patrol Movie": {
+      "Polera MC": {
+        "units": 2,
+        "clp": 7990
+      }
+    },
+    "Sesamo": {
+      "Pantufla": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "FRUITS BASKET": {
+      "Polera MC": {
+        "units": 1,
+        "clp": 2000
+      }
+    },
+    "DRAGON BALL SUPER": {
+      "Polera ML": {
+        "units": 1,
+        "clp": 4000
+      }
+    },
+    "Ladybug": {
+      "Zapatilla con Luces": {
+        "units": 1,
+        "clp": 4529
+      }
+    },
+    "ALICIA PAIS MARAVILLA": {
+      "Figura Coleccionable": {
+        "units": 1,
+        "clp": 16798
+      }
+    },
+    "No Definido": {
+      "Pantufla": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "DARIA": {
+      "Calcetín 2P": {
+        "units": 1,
+        "clp": 4990
+      }
+    },
+    "My Hero Academia": {
+      "Polera MC": {
+        "units": 1,
+        "clp": 5458
+      }
+    },
+    "Woodstock": {
+      "Polera SM": {
+        "units": 1,
+        "clp": 1990
+      }
+    }
+  },
+  "licenseCategoriaBreakdown": {
+    "SMILEY": {
+      "Teena": {
+        "units": 128,
+        "clp": 1196010
+      },
+      "Niña": {
+        "units": 5,
+        "clp": 9537
+      }
+    },
+    "BLUEY": {
+      "Toddlera": {
+        "units": 11031,
+        "clp": 98022686
+      },
+      "Toddlero": {
+        "units": 12127,
+        "clp": 103176604
+      },
+      "Niña": {
+        "units": 1043,
+        "clp": 6194215
+      },
+      "Niño": {
+        "units": 1441,
+        "clp": 7927826
+      },
+      "UNISEX INFANTIL": {
+        "units": 272,
+        "clp": 1474292
+      },
+      "NI  O": {
+        "units": 36,
+        "clp": 92370
+      },
+      "NI  A": {
+        "units": 29,
+        "clp": 103119
+      },
+      "CONJUNTO": {
+        "units": 3,
+        "clp": 21164
+      },
+      "PANTUFLA": {
+        "units": 8,
+        "clp": 26922
+      }
+    },
+    "Snoopy": {
+      "Mujer": {
+        "units": 5622,
+        "clp": 55782313
+      },
+      "Teena": {
+        "units": 1884,
+        "clp": 11453943
+      },
+      "Niña": {
+        "units": 3172,
+        "clp": 25181131
+      },
+      "Niño": {
+        "units": 1257,
+        "clp": 9421493
+      },
+      "Hombre": {
+        "units": 1626,
+        "clp": 9866581
+      },
+      "UNISEX": {
+        "units": 3,
+        "clp": 63000
+      },
+      "Teeno": {
+        "units": 8,
+        "clp": 80608
+      },
+      "UNISEX INFANTIL": {
+        "units": 261,
+        "clp": 3266423
+      },
+      "UNISEX ADULTO": {
+        "units": 150,
+        "clp": 2120178
+      },
+      "Beba": {
+        "units": 2,
+        "clp": 9980
+      }
+    },
+    "Paw Patrol": {
+      "Toddlero": {
+        "units": 5028,
+        "clp": 42131962
+      },
+      "Toddlera": {
+        "units": 4911,
+        "clp": 43405784
+      },
+      "UNISEX INFANTIL": {
+        "units": 98,
+        "clp": 494944
+      },
+      "Bebo": {
+        "units": 111,
+        "clp": 668392
+      },
+      "Niño": {
+        "units": 888,
+        "clp": 4699521
+      },
+      "POLERA ML": {
+        "units": 127,
+        "clp": 634760
+      },
+      "Niña": {
+        "units": 1424,
+        "clp": 5585356
+      },
+      "NI  A": {
+        "units": 99,
+        "clp": 741310
+      },
+      "POLERON CERRADO GORRO": {
+        "units": 13,
+        "clp": 123399
+      },
+      "NI  O": {
+        "units": 160,
+        "clp": 1257485
+      },
+      "Beba": {
+        "units": 139,
+        "clp": 831222
+      },
+      "BOTA CHIPORRO": {
+        "units": 9,
+        "clp": 38022
+      },
+      "Mascotas": {
+        "units": 2,
+        "clp": 13428
+      }
+    },
+    "Toy Story": {
+      "Niña": {
+        "units": 185,
+        "clp": 798940
+      },
+      "Mujer": {
+        "units": 10,
+        "clp": 40339
+      },
+      "NI  O": {
+        "units": 9,
+        "clp": 78082
+      },
+      "Niño": {
+        "units": 1,
+        "clp": 9235
+      }
+    },
+    "Frozen": {
+      "Niña": {
+        "units": 697,
+        "clp": 4118514
+      },
+      "NI  A": {
+        "units": 34,
+        "clp": 196361
+      },
+      "UNISEX INFANTIL": {
+        "units": 78,
+        "clp": 404369
+      }
+    },
+    "MARVEL COMICS": {
+      "Unisex": {
+        "units": 76,
+        "clp": 1479047
+      },
+      "Niño": {
+        "units": 15,
+        "clp": 116264
+      },
+      "UNISEX": {
+        "units": 49,
+        "clp": 514495
+      }
+    },
+    "Spidey": {
+      "Toddlero": {
+        "units": 3305,
+        "clp": 30708564
+      }
+    },
+    "ZOOTOPIA": {
+      "Niña": {
+        "units": 268,
+        "clp": 1800382
+      },
+      "NI  O": {
+        "units": 198,
+        "clp": 1274262
+      },
+      "Niño": {
+        "units": 410,
+        "clp": 2475463
+      },
+      "Unisex": {
+        "units": 45,
+        "clp": 918539
+      },
+      "NI  A": {
+        "units": 127,
+        "clp": 815038
+      }
+    },
+    "HUNTER X HUNTER": {
+      "Hombre": {
+        "units": 306,
+        "clp": 1893364
+      }
+    },
+    "KPOP DEMON HUNTERS": {
+      "Niña": {
+        "units": 2845,
+        "clp": 35309604
+      },
+      "Teena": {
+        "units": 1373,
+        "clp": 16375440
+      },
+      "Teeno": {
+        "units": 225,
+        "clp": 2129379
+      },
+      "Niño": {
+        "units": 79,
+        "clp": 960746
+      }
+    },
+    "Minnie": {
+      "Toddlera": {
+        "units": 2216,
+        "clp": 18931146
+      },
+      "Niña": {
+        "units": 4593,
+        "clp": 52051716
+      },
+      "UNISEX INFANTIL": {
+        "units": 93,
+        "clp": 439269
+      },
+      "NI  A": {
+        "units": 324,
+        "clp": 3352259
+      },
+      "Teena": {
+        "units": 102,
+        "clp": 660355
+      },
+      "POLERA ML": {
+        "units": 4,
+        "clp": 18467
+      },
+      "Mujer": {
+        "units": 5,
+        "clp": 50352
+      },
+      "UNISEX ADULTO": {
+        "units": 123,
+        "clp": 631817
+      }
+    },
+    "Minecraft": {
+      "Niño": {
+        "units": 3246,
+        "clp": 29610876
+      },
+      "NI  O": {
+        "units": 632,
+        "clp": 4204616
+      },
+      "Teena": {
+        "units": 34,
+        "clp": 206050
+      },
+      "Teeno": {
+        "units": 2106,
+        "clp": 14513223
+      },
+      "NI  A": {
+        "units": 45,
+        "clp": 185308
+      },
+      "Niña": {
+        "units": 11,
+        "clp": 32724
+      },
+      "INFANTIL": {
+        "units": 3,
+        "clp": 27714
+      }
+    },
+    "MARQUIS": {
+      "Hombre": {
+        "units": 172,
+        "clp": 2138894
+      }
+    },
+    "NO APLICA": {
+      "Mujer": {
+        "units": 323,
+        "clp": 2919122
+      },
+      "Hombre": {
+        "units": 334,
+        "clp": 2570489
+      },
+      "UNISEX": {
+        "units": 83,
+        "clp": 1530726
+      },
+      "Unisex": {
+        "units": 122,
+        "clp": 2170170
+      }
+    },
+    "ARISTOGATOS MARIE": {
+      "UNISEX ADULTO": {
+        "units": 87,
+        "clp": 502948
+      },
+      "UNISEX INFANTIL": {
+        "units": 36,
+        "clp": 180765
+      }
+    },
+    "HAVAIANA": {
+      "Hombre": {
+        "units": 2424,
+        "clp": 18097759
+      },
+      "Mujer": {
+        "units": 3062,
+        "clp": 25090513
+      }
+    },
+    "Spiderman": {
+      "Niño": {
+        "units": 6427,
+        "clp": 79351717
+      },
+      "NI  O": {
+        "units": 848,
+        "clp": 7968672
+      },
+      "Niña": {
+        "units": 13,
+        "clp": 96073
+      },
+      "Teeno": {
+        "units": 198,
+        "clp": 2636767
+      },
+      "Toddlero": {
+        "units": 95,
+        "clp": 574817
+      },
+      "UNISEX INFANTIL": {
+        "units": 16,
+        "clp": 94399
+      }
+    },
+    "Star Wars": {
+      "Unisex": {
+        "units": 387,
+        "clp": 2727675
+      },
+      "Hombre": {
+        "units": 39,
+        "clp": 117944
+      },
+      "Mujer": {
+        "units": 13,
+        "clp": 22581
+      },
+      "UNISEX": {
+        "units": 210,
+        "clp": 2669143
+      },
+      "Mascotas": {
+        "units": 2,
+        "clp": 15950
+      },
+      "Teeno": {
+        "units": 5,
+        "clp": 21960
+      },
+      "Niña": {
+        "units": 3,
+        "clp": 12606
+      }
+    },
+    "INDEX": {
+      "Hombre": {
+        "units": 311,
+        "clp": 4304412
+      }
+    },
+    "SONIC": {
+      "Niño": {
+        "units": 3487,
+        "clp": 21948497
+      },
+      "NI  O": {
+        "units": 655,
+        "clp": 5767451
+      },
+      "UNISEX INFANTIL": {
+        "units": 272,
+        "clp": 1199551
+      },
+      "Niña": {
+        "units": 311,
+        "clp": 794020
+      },
+      "NI  A": {
+        "units": 22,
+        "clp": 57143
+      },
+      "Unisex": {
+        "units": 4,
+        "clp": 75490
+      },
+      "POLERA ML": {
+        "units": 9,
+        "clp": 50650
+      },
+      "UNISEX": {
+        "units": 9,
+        "clp": 143622
+      }
+    },
+    "DC Comics": {
+      "Unisex": {
+        "units": 12,
+        "clp": 124009
+      },
+      "Hombre": {
+        "units": 15,
+        "clp": 15768
+      },
+      "UNISEX": {
+        "units": 16,
+        "clp": 259980
+      },
+      "Niño": {
+        "units": 1,
+        "clp": 9990
+      },
+      "Mujer": {
+        "units": 1,
+        "clp": 462
+      },
+      "Teeno": {
+        "units": 2,
+        "clp": 13225
+      }
+    },
+    "BOB ESPONJA": {
+      "Niña": {
+        "units": 703,
+        "clp": 3894592
+      },
+      "Niño": {
+        "units": 1217,
+        "clp": 7159434
+      },
+      "Hombre": {
+        "units": 211,
+        "clp": 1298803
+      },
+      "Unisex": {
+        "units": 1154,
+        "clp": 3265439
+      },
+      "Mujer": {
+        "units": 341,
+        "clp": 2027393
+      }
+    },
+    "LILO & STITCH": {
+      "Niña": {
+        "units": 2802,
+        "clp": 25903751
+      },
+      "NI  A": {
+        "units": 245,
+        "clp": 2253571
+      },
+      "NI  O": {
+        "units": 58,
+        "clp": 675736
+      },
+      "Teena": {
+        "units": 728,
+        "clp": 6650289
+      },
+      "Teeno": {
+        "units": 29,
+        "clp": 174489
+      },
+      "Toddlera": {
+        "units": 1228,
+        "clp": 11053321
+      },
+      "UNISEX INFANTIL": {
+        "units": 7,
+        "clp": 39443
+      },
+      "Niño": {
+        "units": 74,
+        "clp": 719906
+      },
+      "Mujer": {
+        "units": 3307,
+        "clp": 12161123
+      },
+      "UNISEX ADULTO": {
+        "units": 161,
+        "clp": 943037
+      },
+      "Unisex": {
+        "units": 39,
+        "clp": 669046
+      },
+      "UNISEX": {
+        "units": 32,
+        "clp": 352776
+      }
+    },
+    "Barbie": {
+      "Niña": {
+        "units": 1739,
+        "clp": 16242260
+      },
+      "NI  A": {
+        "units": 107,
+        "clp": 793880
+      }
+    },
+    "Hot Wheels": {
+      "Niño": {
+        "units": 621,
+        "clp": 2924975
+      },
+      "Hombre": {
+        "units": 36,
+        "clp": 112666
+      },
+      "NI  O": {
+        "units": 40,
+        "clp": 215971
+      }
+    },
+    "Naruto": {
+      "Hombre": {
+        "units": 243,
+        "clp": 1156450
+      },
+      "Niño": {
+        "units": 55,
+        "clp": 533137
+      },
+      "Teeno": {
+        "units": 390,
+        "clp": 2214133
+      },
+      "Unisex": {
+        "units": 27,
+        "clp": 434228
+      },
+      "Teena": {
+        "units": 3,
+        "clp": 9598
+      },
+      "UNISEX": {
+        "units": 20,
+        "clp": 263813
+      },
+      "Mujer": {
+        "units": 1,
+        "clp": 4990
+      }
+    },
+    "Rick and morty": {
+      "Hombre": {
+        "units": 264,
+        "clp": 905816
+      },
+      "Mujer": {
+        "units": 4,
+        "clp": 16960
+      },
+      "Teeno": {
+        "units": 16,
+        "clp": 147760
+      }
+    },
+    "BT21": {
+      "Teena": {
+        "units": 9,
+        "clp": 83115
+      }
+    },
+    "Mickey": {
+      "Niño": {
+        "units": 569,
+        "clp": 2989972
+      },
+      "Toddlero": {
+        "units": 867,
+        "clp": 6462755
+      },
+      "Niña": {
+        "units": 2,
+        "clp": 15110
+      },
+      "Hombre": {
+        "units": 18,
+        "clp": 46449
+      },
+      "NI  O": {
+        "units": 44,
+        "clp": 194748
+      },
+      "UNISEX ADULTO": {
+        "units": 81,
+        "clp": 455592
+      },
+      "Mujer": {
+        "units": 5,
+        "clp": 43491
+      },
+      "UNISEX INFANTIL": {
+        "units": 115,
+        "clp": 584342
+      },
+      "POLERA ML": {
+        "units": 14,
+        "clp": 72702
+      },
+      "UNISEX": {
+        "units": 1,
+        "clp": 840
+      }
+    },
+    "FORD": {
+      "Hombre": {
+        "units": 1026,
+        "clp": 6325073
+      },
+      "Teeno": {
+        "units": 281,
+        "clp": 2271318
+      }
+    },
+    "Celebrity Icons": {
+      "Hombre": {
+        "units": 174,
+        "clp": 681130
+      }
+    },
+    "The Mandalorian": {
+      "Mujer": {
+        "units": 90,
+        "clp": 625525
+      },
+      "UNISEX": {
+        "units": 41,
+        "clp": 575965
+      },
+      "Unisex": {
+        "units": 42,
+        "clp": 729665
+      },
+      "Niño": {
+        "units": 14,
+        "clp": 11447
+      },
+      "Hombre": {
+        "units": 2,
+        "clp": 1680
+      }
+    },
+    "FUNKO MUSIC": {
+      "UNISEX": {
+        "units": 2,
+        "clp": 29399
+      },
+      "Unisex": {
+        "units": 41,
+        "clp": 659497
+      }
+    },
+    "Avengers": {
+      "Toddlero": {
+        "units": 117,
+        "clp": 1036888
+      },
+      "Teeno": {
+        "units": 174,
+        "clp": 787680
+      },
+      "Niño": {
+        "units": 477,
+        "clp": 2253033
+      },
+      "Unisex": {
+        "units": 3,
+        "clp": 15102
+      },
+      "Hombre": {
+        "units": 6,
+        "clp": 30641
+      },
+      "NI  O": {
+        "units": 17,
+        "clp": 148600
+      },
+      "Mujer": {
+        "units": 1,
+        "clp": 10076
+      }
+    },
+    "Playstation": {
+      "Teeno": {
+        "units": 70,
+        "clp": 601168
+      },
+      "NI  O": {
+        "units": 42,
+        "clp": 266555
+      },
+      "Niño": {
+        "units": 139,
+        "clp": 688194
+      },
+      "Bebo": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "El Rey Leon": {
+      "Mujer": {
+        "units": 69,
+        "clp": 165145
+      },
+      "UNISEX ADULTO": {
+        "units": 124,
+        "clp": 589198
+      },
+      "Niña": {
+        "units": 7,
+        "clp": 47471
+      },
+      "Teena": {
+        "units": 15,
+        "clp": 120048
+      },
+      "UNISEX INFANTIL": {
+        "units": 12,
+        "clp": 50921
+      }
+    },
+    "WINNIE THE POOH": {
+      "Teena": {
+        "units": 78,
+        "clp": 368051
+      },
+      "Unisex": {
+        "units": 4,
+        "clp": 33597
+      }
+    },
+    "Dragon Ball Z": {
+      "Niño": {
+        "units": 6,
+        "clp": 25505
+      },
+      "Unisex": {
+        "units": 6,
+        "clp": 109200
+      },
+      "Teena": {
+        "units": 1,
+        "clp": 5097
+      }
+    },
+    "Cars": {
+      "Toddlero": {
+        "units": 389,
+        "clp": 1868441
+      },
+      "Niño": {
+        "units": 375,
+        "clp": 8310196
+      },
+      "POLERA ML": {
+        "units": 9,
+        "clp": 31300
+      },
+      "UNISEX INFANTIL": {
+        "units": 14,
+        "clp": 77893
+      }
+    },
+    "RED BULL": {
+      "Teeno": {
+        "units": 358,
+        "clp": 3572666
+      }
+    },
+    "Gabby Doll House": {
+      "Toddlera": {
+        "units": 319,
+        "clp": 1442910
+      },
+      "CONJUNTO": {
+        "units": 17,
+        "clp": 155477
+      },
+      "Niña": {
+        "units": 4,
+        "clp": 10887
+      }
+    },
+    "Sin Licencia": {
+      "Mujer": {
+        "units": 23,
+        "clp": 36642
+      },
+      "Teena": {
+        "units": 3,
+        "clp": 5950
+      },
+      "Hombre": {
+        "units": 28,
+        "clp": 45159
+      },
+      "Niña": {
+        "units": 9,
+        "clp": 16076
+      },
+      "Teeno": {
+        "units": 5,
+        "clp": 7437
+      },
+      "Beba": {
+        "units": 3,
+        "clp": 12606
+      }
+    },
+    "GARFIELD": {
+      "Mujer": {
+        "units": 1326,
+        "clp": 9055607
+      }
+    },
+    "South Park": {
+      "Hombre": {
+        "units": 27,
+        "clp": 29561
+      }
+    },
+    "POKEMON": {
+      "Unisex": {
+        "units": 174,
+        "clp": 2136708
+      },
+      "UNISEX INFANTIL": {
+        "units": 334,
+        "clp": 1828535
+      },
+      "UNISEX": {
+        "units": 73,
+        "clp": 1168283
+      }
+    },
+    "INSIDE OUT": {
+      "UNISEX INFANTIL": {
+        "units": 67,
+        "clp": 294630
+      },
+      "UNISEX": {
+        "units": 2,
+        "clp": 12000
+      }
+    },
+    "Dragon Ball": {
+      "UNISEX": {
+        "units": 11,
+        "clp": 173842
+      },
+      "Unisex": {
+        "units": 56,
+        "clp": 771676
+      },
+      "NI  O": {
+        "units": 1,
+        "clp": 2513
+      }
+    },
+    "Stranger Things": {
+      "Teeno": {
+        "units": 67,
+        "clp": 409896
+      },
+      "Teena": {
+        "units": 74,
+        "clp": 435579
+      },
+      "Unisex": {
+        "units": 58,
+        "clp": 1216950
+      },
+      "UNISEX": {
+        "units": 127,
+        "clp": 1540553
+      }
+    },
+    "Mickey y sus Amigos": {
+      "Unisex": {
+        "units": 42,
+        "clp": 777420
+      },
+      "UNISEX INFANTIL": {
+        "units": 7,
+        "clp": 40168
+      },
+      "UNISEX ADULTO": {
+        "units": 10,
+        "clp": 50940
+      },
+      "UNISEX": {
+        "units": 4,
+        "clp": 82319
+      }
+    },
+    "Peppa Pig": {
+      "Toddlera": {
+        "units": 1656,
+        "clp": 9040650
+      }
+    },
+    "REVUP": {
+      "Hombre": {
+        "units": 210,
+        "clp": 255409
+      },
+      "Mujer": {
+        "units": 87,
+        "clp": 145479
+      }
+    },
+    "Tinker Bell": {
+      "Teena": {
+        "units": 6,
+        "clp": 38970
+      }
+    },
+    "1KO": {
+      "Mujer": {
+        "units": 26,
+        "clp": 1890
+      }
+    },
+    "DISNEY 100": {
+      "Niño": {
+        "units": 3,
+        "clp": 8372
+      },
+      "Unisex": {
+        "units": 11,
+        "clp": 88991
+      },
+      "UNISEX": {
+        "units": 3,
+        "clp": 54596
+      },
+      "Teena": {
+        "units": 1,
+        "clp": 3990
+      },
+      "Hombre": {
+        "units": 2,
+        "clp": 8982
+      }
+    },
+    "Harry Potter": {
+      "Mujer": {
+        "units": 29,
+        "clp": 214204
+      },
+      "Niño": {
+        "units": 64,
+        "clp": 425614
+      },
+      "Unisex": {
+        "units": 62,
+        "clp": 1006233
+      },
+      "UNISEX ADULTO": {
+        "units": 132,
+        "clp": 785023
+      },
+      "UNISEX": {
+        "units": 4,
+        "clp": 58793
+      },
+      "Niña": {
+        "units": 48,
+        "clp": 298635
+      },
+      "Teena": {
+        "units": 1,
+        "clp": 2521
+      }
+    },
+    "Chicas Superpoderosas": {
+      "Mujer": {
+        "units": 51,
+        "clp": 355222
+      }
+    },
+    "Batman": {
+      "Unisex": {
+        "units": 11,
+        "clp": 175960
+      },
+      "UNISEX ADULTO": {
+        "units": 113,
+        "clp": 702444
+      },
+      "Niño": {
+        "units": 6,
+        "clp": 19991
+      },
+      "Teeno": {
+        "units": 5,
+        "clp": 42930
+      },
+      "Hombre": {
+        "units": 2,
+        "clp": 2481
+      }
+    },
+    "JUJUTSU KAISEN": {
+      "UNISEX": {
+        "units": 61,
+        "clp": 770754
+      },
+      "Unisex": {
+        "units": 125,
+        "clp": 1717098
+      },
+      "Teeno": {
+        "units": 381,
+        "clp": 3115704
+      },
+      "Hombre": {
+        "units": 426,
+        "clp": 3675339
+      }
+    },
+    "DEMON SLAYER": {
+      "UNISEX": {
+        "units": 41,
+        "clp": 721411
+      },
+      "Unisex": {
+        "units": 35,
+        "clp": 549664
+      }
+    },
+    "Disney": {
+      "UNISEX": {
+        "units": 101,
+        "clp": 780558
+      },
+      "Unisex": {
+        "units": 15,
+        "clp": 68684
+      },
+      "Mujer": {
+        "units": 26,
+        "clp": 47843
+      },
+      "Bebo": {
+        "units": 9,
+        "clp": 47147
+      },
+      "Niño": {
+        "units": 1,
+        "clp": 2990
+      }
+    },
+    "MARIO BROS": {
+      "UNISEX INFANTIL": {
+        "units": 94,
+        "clp": 455522
+      }
+    },
+    "NASA": {
+      "Hombre": {
+        "units": 159,
+        "clp": 1601119
+      },
+      "Teeno": {
+        "units": 261,
+        "clp": 2620833
+      }
+    },
+    "Friends": {
+      "Mujer": {
+        "units": 325,
+        "clp": 984982
+      }
+    },
+    "LOTSO": {
+      "UNISEX INFANTIL": {
+        "units": 94,
+        "clp": 448955
+      },
+      "Niña": {
+        "units": 239,
+        "clp": 2207165
+      },
+      "Teena": {
+        "units": 311,
+        "clp": 3131954
+      }
+    },
+    "FORMULA 1": {
+      "Unisex": {
+        "units": 17,
+        "clp": 354480
+      }
+    },
+    "Tom y Jerry": {
+      "Mujer": {
+        "units": 16,
+        "clp": 131936
+      }
+    },
+    "Princesas": {
+      "Unisex": {
+        "units": 17,
+        "clp": 236870
+      },
+      "UNISEX": {
+        "units": 21,
+        "clp": 232679
+      },
+      "Toddlera": {
+        "units": 9,
+        "clp": 89910
+      },
+      "Niña": {
+        "units": 82,
+        "clp": 254928
+      }
+    },
+    "Emoji": {
+      "Teena": {
+        "units": 58,
+        "clp": 194932
+      },
+      "Niña": {
+        "units": 11,
+        "clp": 32766
+      },
+      "Teeno": {
+        "units": 1,
+        "clp": 2521
+      }
+    },
+    "Attack on titan": {
+      "Hombre": {
+        "units": 35,
+        "clp": 41140
+      }
+    },
+    "NICK 90": {
+      "Mujer": {
+        "units": 1144,
+        "clp": 7208327
+      }
+    },
+    "Metallica": {
+      "Mujer": {
+        "units": 5,
+        "clp": 19950
+      },
+      "Niño": {
+        "units": 1,
+        "clp": 4396
+      },
+      "UNISEX ADULTO": {
+        "units": 644,
+        "clp": 8166976
+      },
+      "UNISEX INFANTIL": {
+        "units": 188,
+        "clp": 2362119
+      }
+    },
+    "SIN MARCA": {
+      "Niño": {
+        "units": 11,
+        "clp": 9240
+      }
+    },
+    "Boruto": {
+      "Teeno": {
+        "units": 1,
+        "clp": 3353
+      }
+    },
+    "One Piece": {
+      "Teeno": {
+        "units": 54,
+        "clp": 446368
+      },
+      "UNISEX": {
+        "units": 33,
+        "clp": 484588
+      },
+      "Unisex": {
+        "units": 89,
+        "clp": 1383820
+      }
+    },
+    "Pink Floyd": {
+      "Hombre": {
+        "units": 391,
+        "clp": 1163355
+      },
+      "UNISEX ADULTO": {
+        "units": 502,
+        "clp": 6274872
+      }
+    },
+    "PRESCHOOL MINNIE": {
+      "Toddlera": {
+        "units": 21,
+        "clp": 196621
+      }
+    },
+    "RICK AND MORTY": {
+      "Hombre": {
+        "units": 587,
+        "clp": 1612646
+      }
+    },
+    "Acdc": {
+      "Hombre": {
+        "units": 515,
+        "clp": 1660959
+      },
+      "UNISEX ADULTO": {
+        "units": 1124,
+        "clp": 13401250
+      }
+    },
+    "Superman": {
+      "Teeno": {
+        "units": 4,
+        "clp": 23528
+      },
+      "NI  O": {
+        "units": 7,
+        "clp": 64645
+      },
+      "Niño": {
+        "units": 1,
+        "clp": 5990
+      }
+    },
+    "Looney Tunes": {
+      "Mujer": {
+        "units": 11,
+        "clp": 24468
+      },
+      "Teena": {
+        "units": 22,
+        "clp": 89032
+      }
+    },
+    "Bambi": {
+      "Unisex": {
+        "units": 7,
+        "clp": 34930
+      },
+      "Mujer": {
+        "units": 6,
+        "clp": 12048
+      }
+    },
+    "HAVAIAN+Q596A": {
+      "Mujer": {
+        "units": 12,
+        "clp": 149607
+      }
+    },
+    "Kiss": {
+      "Teena": {
+        "units": 14,
+        "clp": 82348
+      },
+      "Hombre": {
+        "units": 1,
+        "clp": 3397
+      },
+      "UNISEX ADULTO": {
+        "units": 411,
+        "clp": 4939971
+      }
+    },
+    "101 Dalmatas": {
+      "Bebo": {
+        "units": 6,
+        "clp": 48342
+      },
+      "Mujer": {
+        "units": 3,
+        "clp": 2520
+      }
+    },
+    "DISNEY PIXAR COLLECTION": {
+      "Niño": {
+        "units": 8,
+        "clp": 23464
+      }
+    },
+    "Disney Clásicos": {
+      "Mujer": {
+        "units": 8,
+        "clp": 34266
+      },
+      "Teena": {
+        "units": 1,
+        "clp": 2990
+      }
+    },
+    "JANIS JOPLIN": {
+      "Mujer": {
+        "units": 2,
+        "clp": 7980
+      }
+    },
+    "RUGRATS": {
+      "Mujer": {
+        "units": 4,
+        "clp": 17532
+      }
+    },
+    "Minions": {
+      "Niña": {
+        "units": 12,
+        "clp": 28123
+      },
+      "Niño": {
+        "units": 2,
+        "clp": 3362
+      }
+    },
+    "No Definido": {
+      "UNISEX": {
+        "units": 53,
+        "clp": 858895
+      }
+    },
+    "Hello Kitty": {
+      "UNISEX": {
+        "units": 21,
+        "clp": 362420
+      },
+      "Unisex": {
+        "units": 31,
+        "clp": 485491
+      }
+    },
+    "Lightyear": {
+      "Niño": {
+        "units": 11,
+        "clp": 71689
+      }
+    },
+    "Minnie (Infantil + Teen)": {
+      "Beba": {
+        "units": 2,
+        "clp": 10480
+      }
+    },
+    "SPY X FAMILY": {
+      "Teena": {
+        "units": 35,
+        "clp": 94949
+      },
+      "Mujer": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "SHREK": {
+      "Unisex": {
+        "units": 1,
+        "clp": 10500
+      }
+    },
+    "Jurassic World": {
+      "Unisex": {
+        "units": 16,
+        "clp": 336000
+      }
+    },
+    "MAFALDA": {
+      "Mujer": {
+        "units": 60,
+        "clp": 999744
+      }
+    },
+    "Frida Kahlo": {
+      "Mujer": {
+        "units": 6,
+        "clp": 12049
+      }
+    },
+    "Los Picapiedras": {
+      "Mujer": {
+        "units": 10,
+        "clp": 23530
+      }
+    },
+    "CHUCKY": {
+      "Unisex": {
+        "units": 4,
+        "clp": 67192
+      }
+    },
+    "Villanas": {
+      "Teena": {
+        "units": 2,
+        "clp": 11980
+      },
+      "Niña": {
+        "units": 1,
+        "clp": 1000
+      }
+    },
+    "UFC": {
+      "Hombre": {
+        "units": 154,
+        "clp": 1681064
+      }
+    },
+    "Pacman": {
+      "Hombre": {
+        "units": 2,
+        "clp": 8007
+      }
+    },
+    "LA VACA Y EL POLLITO": {
+      "Hombre": {
+        "units": 1,
+        "clp": 1681
+      }
+    },
+    "Iron Maiden": {
+      "Hombre": {
+        "units": 1,
+        "clp": 5994
+      }
+    },
+    "Marvel": {
+      "Unisex": {
+        "units": 7,
+        "clp": 77546
+      },
+      "UNISEX": {
+        "units": 15,
+        "clp": 188872
+      },
+      "Hombre": {
+        "units": 1,
+        "clp": 3000
+      }
+    },
+    "ED EDD & EDDY": {
+      "Hombre": {
+        "units": 10,
+        "clp": 12600
+      }
+    },
+    "Mortal Kombat": {
+      "Unisex": {
+        "units": 11,
+        "clp": 220080
+      }
+    },
+    "OZZY OSBOURNE": {
+      "Mujer": {
+        "units": 1,
+        "clp": 3990
+      }
+    },
+    "WISH": {
+      "Niña": {
+        "units": 7,
+        "clp": 26044
+      },
+      "UNISEX": {
+        "units": 1,
+        "clp": 10500
+      }
+    },
+    "WONDER WOMAN": {
+      "Unisex": {
+        "units": 2,
+        "clp": 24985
+      }
+    },
+    "AC/DC": {
+      "Mujer": {
+        "units": 2,
+        "clp": 3362
+      },
+      "Teena": {
+        "units": 1,
+        "clp": 3000
+      }
+    },
+    "El Laboratorio De Dexter": {
+      "Hombre": {
+        "units": 7,
+        "clp": 8820
+      }
+    },
+    "FUNKO DEPORTE": {
+      "Unisex": {
+        "units": 5,
+        "clp": 83990
+      }
+    },
+    "Rey León": {
+      "Mujer": {
+        "units": 2,
+        "clp": 9980
+      }
+    },
+    "Buzz Light Year": {
+      "Niño": {
+        "units": 2,
+        "clp": 5990
+      }
+    },
+    "OASIS": {
+      "UNISEX ADULTO": {
+        "units": 605,
+        "clp": 7865645
+      }
+    },
+    "The Beatles": {
+      "UNISEX ADULTO": {
+        "units": 770,
+        "clp": 9639276
+      },
+      "UNISEX INFANTIL": {
+        "units": 175,
+        "clp": 2193700
+      }
+    },
+    "Paw Patrol Movie": {
+      "Toddlero": {
+        "units": 2,
+        "clp": 7990
+      }
+    },
+    "Sesamo": {
+      "Mujer": {
+        "units": 1,
+        "clp": 1672
+      }
+    },
+    "FRUITS BASKET": {
+      "Teena": {
+        "units": 1,
+        "clp": 2000
+      }
+    },
+    "DRAGON BALL SUPER": {
+      "Niño": {
+        "units": 1,
+        "clp": 4000
+      }
+    },
+    "Ladybug": {
+      "Niña": {
+        "units": 1,
+        "clp": 4529
+      }
+    },
+    "ALICIA PAIS MARAVILLA": {
+      "UNISEX": {
+        "units": 1,
+        "clp": 16798
+      }
+    },
+    "DARIA": {
+      "Mujer": {
+        "units": 1,
+        "clp": 4990
+      }
+    },
+    "My Hero Academia": {
+      "Hombre": {
+        "units": 1,
+        "clp": 5458
+      }
+    },
+    "Woodstock": {
+      "Teena": {
+        "units": 1,
+        "clp": 1990
+      }
+    }
+  },
   "byDivision": [
     {
       "division": "Ropa Interior",
@@ -28805,9 +35459,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801727620002",
       "descripcion": "CAMISOLA MC MUJER DE ESPALDA LILO & STITCH CELESTE S",
-      "license": "",
+      "license": "LILO & STITCH",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Pijama",
+      "subclase": "Camisola MC",
+      "categoria": "Mujer",
       "units": 3302,
       "clp": 12122048,
       "costos": 17170400,
@@ -28831,9 +35488,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32400913265237",
       "descripcion": "7891109604014 SANDALIAS HAVAIANAS HOMBRE COLOR 12P GD ME PRETO 37-38",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q423",
+      "clase": "Sandalia",
+      "subclase": "Sandalia",
+      "categoria": "Hombre",
       "units": 1327,
       "clp": 7676375,
       "costos": 7967308,
@@ -28849,9 +35509,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401890065002",
       "descripcion": "POLERA MC UNISEX ADULTO LOGO ACDC NEGRO S",
-      "license": "",
+      "license": "Acdc",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "UNISEX ADULTO",
       "units": 755,
       "clp": 8173619,
       "costos": 4907500,
@@ -28867,9 +35530,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501819781222",
       "descripcion": "PANTUFLA BOTA TODDLERA Y BINGO LISTADO BLUEY ROSADO 22-23",
-      "license": "",
+      "license": "BLUEY",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla Bota",
+      "categoria": "Toddlera",
       "units": 750,
       "clp": 6901289,
       "costos": 4192500,
@@ -28885,9 +35551,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24701867512102",
       "descripcion": "BOXER 2P TODDLERO PERSONAJES PAW PATROL BLANCO 2",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calzoncillo",
+      "subclase": "Boxer 2P",
+      "categoria": "Toddlero",
       "units": 709,
       "clp": 4726167,
       "costos": 3190500,
@@ -28903,9 +35572,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801863681002",
       "descripcion": "PIJAMA LL MUJER FLORES SNOOPY ROSADO S",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Mujer",
       "units": 703,
       "clp": 7673948,
       "costos": 5061600,
@@ -28925,9 +35597,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24701880420102",
       "descripcion": "BOXER 2P TODDLERO FULL PRINT BLUEY CELESTE 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calzoncillo",
+      "subclase": "Boxer 2P",
+      "categoria": "Toddlero",
       "units": 700,
       "clp": 4673333,
       "costos": 3150000,
@@ -28943,9 +35618,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801869333001",
       "descripcion": "PIJAMA CL MUJER POPPY SNOOPY ECRU XS",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama CL",
+      "categoria": "Mujer",
       "units": 691,
       "clp": 9817902,
       "costos": 6426300,
@@ -28961,9 +35639,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401878581519",
       "descripcion": "CALCETIN 2P TODDLERA Y BINGO BLUEY ROSADO 19-22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlera",
       "units": 683,
       "clp": 2846940,
       "costos": 1707500,
@@ -28979,9 +35660,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24701880320102",
       "descripcion": "BOXER 2P TODDLERO LISTADO BLUEY CELESTE 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calzoncillo",
+      "subclase": "Boxer 2P",
+      "categoria": "Toddlero",
       "units": 674,
       "clp": 4492170,
       "costos": 3033000,
@@ -28997,9 +35681,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801869249001",
       "descripcion": "PIJAMA CL MUJER MORE NAPS SNOOPY LAVANDA XS",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama CL",
+      "categoria": "Mujer",
       "units": 665,
       "clp": 9436872,
       "costos": 6184500,
@@ -29015,9 +35702,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401911512500",
       "descripcion": "CALCETIN 2P NIÑO CUADRILLE SONIC BLANCO 31-34",
-      "license": "",
+      "license": "SONIC",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niño",
       "units": 662,
       "clp": 1662081,
       "costos": 1045960,
@@ -29033,9 +35723,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801863520002",
       "descripcion": "PIJAMA LL MUJER TUTO SNOOPY CELESTE S",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Mujer",
       "units": 650,
       "clp": 7095400,
       "costos": 4680000,
@@ -29055,9 +35748,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501875452102",
       "descripcion": "POLERON CERRADO TODDLERA VUELOS BLUEY MALVA 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlera",
       "units": 634,
       "clp": 7422637,
       "costos": 4472236,
@@ -29073,9 +35769,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401878381519",
       "descripcion": "CALCETIN 2P TODDLERA LINEAL BLUEY ROSADO 19-22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlera",
       "units": 620,
       "clp": 2589819,
       "costos": 1550000,
@@ -29091,9 +35790,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401911412523",
       "descripcion": "CALCETIN 2P NIÑO Y BINGO BLUEY BLANCO 23-26",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niño",
       "units": 596,
       "clp": 1497748,
       "costos": 941680,
@@ -29109,9 +35811,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647904000",
       "descripcion": "CALCETIN 2P HOMBRE CASITA SNOOPY AZUL T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Hombre",
       "units": 595,
       "clp": 1745135,
       "costos": 1065050,
@@ -29127,9 +35832,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401911612500",
       "descripcion": "CALCETIN 2P NIÑA FLORES SNOOPY BLANCO 31-34",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niña",
       "units": 591,
       "clp": 1484493,
       "costos": 933780,
@@ -29145,9 +35853,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501819804222",
       "descripcion": "PANTUFLA BOTA TODDLERO Y BINGO BLUEY AZUL 22-23",
-      "license": "",
+      "license": "BLUEY",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla Bota",
+      "categoria": "Toddlero",
       "units": 591,
       "clp": 5435060,
       "costos": 3303690,
@@ -29163,9 +35874,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801819981022",
       "descripcion": "ZAPATILLA URBANA TODDLERA Y BINGO ESTRELLAS BLUEY ROSADO 22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Urbana",
+      "categoria": "Toddlera",
       "units": 586,
       "clp": 8310971,
       "costos": 5010300,
@@ -29181,9 +35895,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801878281102",
       "descripcion": "PIJAMA LL TODDLERA ABRAZO BLUEY ROSADO 2.",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Toddlera",
       "units": 578,
       "clp": 7250111,
       "costos": 4508400,
@@ -29199,9 +35916,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801868981106",
       "descripcion": "PIJAMA CL NIÑA FRIENDS SNOOPY ROSADO 6",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama CL",
+      "categoria": "Niña",
       "units": 562,
       "clp": 6583188,
       "costos": 4215000,
@@ -29217,9 +35937,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801868820106",
       "descripcion": "PIJAMA CL NIÑA HELADO SNOOPY CELESTE 6",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama CL",
+      "categoria": "Niña",
       "units": 539,
       "clp": 6311137,
       "costos": 4042500,
@@ -29235,9 +35958,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401867604519",
       "descripcion": "CALCETIN 2P TODDLERO PERSONAJES MARVEL AZUL 19-22",
-      "license": "",
+      "license": "Spidey",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlero",
       "units": 535,
       "clp": 2235515,
       "costos": 1337500,
@@ -29253,9 +35979,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601880181102",
       "descripcion": "CALZON 2P TODDLERA FULL PRINT BLUEY ROSADO 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calzón",
+      "subclase": "Calzón 2P",
+      "categoria": "Toddlera",
       "units": 530,
       "clp": 3097270,
       "costos": 1908000,
@@ -29271,9 +36000,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401878912519",
       "descripcion": "CALCETIN 2P TODDLERO PERSONAJE BLUEY BLANCO 19-22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlero",
       "units": 515,
       "clp": 2150427,
       "costos": 1287500,
@@ -29289,9 +36021,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801878820102",
       "descripcion": "PIJAMA LL TODDLERO TOP FULL PRINT BLUEY CELESTE 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Toddlero",
       "units": 511,
       "clp": 6410671,
       "costos": 3985800,
@@ -29307,9 +36042,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801878620102",
       "descripcion": "PIJAMA LL TODDLERO Y BINGO BLUEY CELESTE 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Toddlero",
       "units": 506,
       "clp": 6346665,
       "costos": 3946800,
@@ -29325,9 +36063,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601880281102",
       "descripcion": "CALZON 2P TODDLERA FLORES BLUEY ROSADO 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calzón",
+      "subclase": "Calzón 2P",
+      "categoria": "Toddlera",
       "units": 504,
       "clp": 2947419,
       "costos": 1814400,
@@ -29343,9 +36084,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401911812535",
       "descripcion": "CALCETIN 2P TEENO CREEPER MINECRAFT BLANCO 35-39",
-      "license": "",
+      "license": "Minecraft",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Teeno",
       "units": 502,
       "clp": 1261526,
       "costos": 948780,
@@ -29361,9 +36105,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864281112",
       "descripcion": "PIJAMA LL TEENA STAY COOL SNOOPY ROSADO 12",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Teena",
       "units": 502,
       "clp": 5056471,
       "costos": 3313200,
@@ -29383,9 +36130,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401878720519",
       "descripcion": "CALCETIN 2P TODDLERO LINEAL BLUEY CELESTE 19-22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlero",
       "units": 500,
       "clp": 2090213,
       "costos": 1250000,
@@ -29401,9 +36151,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401911712523",
       "descripcion": "CALCETIN 2P NIÑA LISTADO BLUEY BLANCO 23-26",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niña",
       "units": 494,
       "clp": 1240044,
       "costos": 780520,
@@ -29419,9 +36172,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401867412519",
       "descripcion": "CALCETIN 2P TODDLERO PERSONAJES PAW PATROL BLANCO 19-22",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlero",
       "units": 489,
       "clp": 2036699,
       "costos": 1222500,
@@ -29437,9 +36193,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501875204102",
       "descripcion": "POLERON CERRADO TODDLERO CUADROS BLUEY AZUL 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 485,
       "clp": 5669038,
       "costos": 3421190,
@@ -29455,9 +36214,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801863420002",
       "descripcion": "PIJAMA LL MUJER HELGA NICK 90 CELESTE S",
-      "license": "",
+      "license": "NICK 90",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Mujer",
       "units": 483,
       "clp": 5269907,
       "costos": 3477600,
@@ -29477,9 +36239,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801820104022",
       "descripcion": "ZAPATILLA URBANA TODDLERO GO MARVEL AZUL 22",
-      "license": "",
+      "license": "Spidey",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Urbana",
+      "categoria": "Toddlero",
       "units": 474,
       "clp": 6729323,
       "costos": 4052700,
@@ -29495,9 +36260,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401730736235",
       "descripcion": "4000016-HAVAIANA COLOR ROSA FLUX/ROSA FLUX MUJER FUCSIA 35-36",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Mujer",
       "units": 471,
       "clp": 2730941,
       "costos": 2832950,
@@ -29517,9 +36285,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647542000",
       "descripcion": "CALCETIN 2P HOMBRE LOGOS ACDC GRIS OSC T/U",
-      "license": "",
+      "license": "Acdc",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Hombre",
       "units": 470,
       "clp": 1377630,
       "costos": 841300,
@@ -29535,9 +36306,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864991104",
       "descripcion": "PIJAMA LL NIÑO CREEPER MINECRAFT VERDE 4",
-      "license": "",
+      "license": "Minecraft",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Niño",
       "units": 467,
       "clp": 4311835,
       "costos": 2848700,
@@ -29553,9 +36327,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801863341002",
       "descripcion": "PIJAMA LL MUJER PARADO GARFIELD GRIS MEL S",
-      "license": "",
+      "license": "GARFIELD",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Mujer",
       "units": 466,
       "clp": 5086856,
       "costos": 3355200,
@@ -29575,9 +36352,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864501112",
       "descripcion": "PIJAMA LL TEENO CREATE MINECRAFT ACERO 12",
-      "license": "",
+      "license": "Minecraft",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Teeno",
       "units": 453,
       "clp": 4563587,
       "costos": 2989800,
@@ -29597,9 +36377,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801820020022",
       "descripcion": "ZAPATILLA URBANA TODDLERO Y BINGO BLUEY CELESTE 22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Urbana",
+      "categoria": "Toddlero",
       "units": 449,
       "clp": 6372675,
       "costos": 3838950,
@@ -29615,9 +36398,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501818133102",
       "descripcion": "POLERON CERRADO TODDLERO ROTATIVO MARVEL ECRU 2",
-      "license": "",
+      "license": "Spidey",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 445,
       "clp": 5207452,
       "costos": 3248500,
@@ -29633,9 +36419,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24701649620103",
       "descripcion": "BOXER 2P NIÑO FULL PRINT BLUEY CELESTE 3",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzoncillo",
+      "subclase": "Boxer 2P",
+      "categoria": "Niño",
       "units": 435,
       "clp": 2552669,
       "costos": 1740000,
@@ -29659,9 +36448,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864781104",
       "descripcion": "PIJAMA LL NIÑA FLORES BLUEY ROSADO 4",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Niña",
       "units": 434,
       "clp": 4006377,
       "costos": 2647400,
@@ -29681,9 +36473,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801820281022",
       "descripcion": "ZAPATILLA URBANA TODDLERA SKYE MARIPOSA PAW PATROL ROSADO 22",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Urbana",
+      "categoria": "Toddlera",
       "units": 431,
       "clp": 6106331,
       "costos": 3685050,
@@ -29699,9 +36494,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24701649541103",
       "descripcion": "BOXER 2P NIÑO FULL PRINT SONIC GRIS MEL 3",
-      "license": "",
+      "license": "SONIC",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzoncillo",
+      "subclase": "Boxer 2P",
+      "categoria": "Niño",
       "units": 431,
       "clp": 2531694,
       "costos": 1724000,
@@ -29721,9 +36519,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501818477102",
       "descripcion": "POLERON CERRADO TODDLERO FLOCK MARVEL ROJO 2",
-      "license": "",
+      "license": "Spidey",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 428,
       "clp": 4974325,
       "costos": 3124400,
@@ -29739,9 +36540,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601867133102",
       "descripcion": "CALZON 2P TODDLERA SKYE PAW PATROL ECRU 2",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calzón",
+      "subclase": "Calzón 2P",
+      "categoria": "Toddlera",
       "units": 427,
       "clp": 2496068,
       "costos": 1558550,
@@ -29757,9 +36561,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801878481102",
       "descripcion": "PIJAMA LL TODDLERA Y BINGO BLUEY ROSADO 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Toddlera",
       "units": 424,
       "clp": 5317035,
       "costos": 3307200,
@@ -29775,9 +36582,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401867033519",
       "descripcion": "CALCETIN 2P TODDLERA SKYE PAW PATROL ECRU 19-22",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlera",
       "units": 414,
       "clp": 1728717,
       "costos": 1035000,
@@ -29793,9 +36603,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401875381102",
       "descripcion": "POLERA ML TODDLERA VUELOS BLUEY ROSADO 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera ML",
+      "categoria": "Toddlera",
       "units": 407,
       "clp": 3400037,
       "costos": 2050059,
@@ -29811,9 +36624,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24701649420103",
       "descripcion": "BOXER 2P NIÑO FULL PRINT PAW PATROL CELESTE 3",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzoncillo",
+      "subclase": "Boxer 2P",
+      "categoria": "Niño",
       "units": 404,
       "clp": 2361826,
       "costos": 1616000,
@@ -29833,9 +36649,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647141000",
       "descripcion": "CALCETIN 2P MUJER ABRAZO OSO GARFIELD GRIS MEL T/U",
-      "license": "",
+      "license": "GARFIELD",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 404,
       "clp": 1184932,
       "costos": 638320,
@@ -29855,9 +36674,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401911912535",
       "descripcion": "CALCETIN 2P TEENA CINTA SNOOPY BLANCO 35-39",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Teena",
       "units": 393,
       "clp": 986793,
       "costos": 742770,
@@ -29873,9 +36695,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801820412022",
       "descripcion": "ZAPATILLA URBANA TODDLERA MIRANDO DISNEY BLANCO 22",
-      "license": "",
+      "license": "LILO & STITCH",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Urbana",
+      "categoria": "Toddlera",
       "units": 391,
       "clp": 5541594,
       "costos": 3343050,
@@ -29891,9 +36716,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501889941002",
       "descripcion": "POLERON CERRADO UNISEX ADULTO DEFINITELY MAYBE OASIS GRIS MEL S",
-      "license": "",
+      "license": "OASIS",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX ADULTO",
       "units": 391,
       "clp": 5542838,
       "costos": 3440800,
@@ -29909,9 +36737,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401889640002",
       "descripcion": "POLERA MC UNISEX ADULTO BANDA THE BEATLES GRIS CLAR S",
-      "license": "",
+      "license": "The Beatles",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "UNISEX ADULTO",
       "units": 390,
       "clp": 4242597,
       "costos": 2535000,
@@ -29927,9 +36758,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647642000",
       "descripcion": "CALCETIN 2P HOMBRE LOGOS PINK FLOYD GRIS OSC T/U",
-      "license": "",
+      "license": "Pink Floyd",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Hombre",
       "units": 388,
       "clp": 1138004,
       "costos": 694520,
@@ -29945,9 +36779,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401733503235",
       "descripcion": "4000030-HAVAIANA SLIM AREIA/DOUR CLARO MUJER ARENA 35-36",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Mujer",
       "units": 388,
       "clp": 3706130,
       "costos": 2717958,
@@ -29967,9 +36804,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501889712002",
       "descripcion": "POLERON CERRADO UNISEX ADULTO LOGO THE BEATLES BLANCO S",
-      "license": "",
+      "license": "The Beatles",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX ADULTO",
       "units": 380,
       "clp": 5396679,
       "costos": 3344000,
@@ -29985,9 +36825,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501890114002",
       "descripcion": "POLERON CERRADO UNISEX ADULTO LOGO ACDC BURDEO S",
-      "license": "",
+      "license": "Acdc",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX ADULTO",
       "units": 369,
       "clp": 5227632,
       "costos": 3247200,
@@ -30003,9 +36846,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401648281000",
       "descripcion": "CALCETIN 2P NIÑA SKYE Y CORAZONE PAW PATROL ROSADO T/U",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niña",
       "units": 364,
       "clp": 914732,
       "costos": 531440,
@@ -30025,9 +36871,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501875111102",
       "descripcion": "POLERON CERRADO TODDLERO PERSONAJES BLUEY BEIGE 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 357,
       "clp": 4162705,
       "costos": 2518278,
@@ -30043,9 +36892,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801820312022",
       "descripcion": "ZAPATILLA URBANA TODDLERO PATITAS PAW PATROL BLANCO 22",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Urbana",
+      "categoria": "Toddlero",
       "units": 356,
       "clp": 5049166,
       "costos": 3043800,
@@ -30061,9 +36913,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501890301002",
       "descripcion": "POLERON CERRADO UNISEX ADULTO LOGO METALLICA ACERO S",
-      "license": "",
+      "license": "Metallica",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX ADULTO",
       "units": 354,
       "clp": 5017940,
       "costos": 3115200,
@@ -30079,9 +36934,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501814065106",
       "descripcion": "POLERON CERRADO NIÑO CARAS BOB ESPONJA NEGRO 6",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Niño",
       "units": 351,
       "clp": 2580437,
       "costos": 2475954,
@@ -30097,9 +36955,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647041000",
       "descripcion": "CALCETIN 2P MUJER CORAZONES SNOOPY GRIS MEL T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 350,
       "clp": 1026550,
       "costos": 553000,
@@ -30119,9 +36980,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601867320102",
       "descripcion": "CALZON 2P TODDLERA FULL PRINT DISNEY CELESTE 2",
-      "license": "",
+      "license": "LILO & STITCH",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calzón",
+      "subclase": "Calzón 2P",
+      "categoria": "Toddlera",
       "units": 343,
       "clp": 2008772,
       "costos": 1251950,
@@ -30137,9 +37001,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801865041104",
       "descripcion": "PIJAMA LL NIÑO BINGO BLUEY GRIS MEL 4",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Niño",
       "units": 337,
       "clp": 3112195,
       "costos": 2055700,
@@ -30155,9 +37022,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647359000",
       "descripcion": "CALCETIN 2P MUJER HELGA NICK 90 MORADO T/U",
-      "license": "",
+      "license": "NICK 90",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 333,
       "clp": 976396,
       "costos": 526140,
@@ -30177,9 +37047,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647241000",
       "descripcion": "CALCETIN 2P MUJER GARY Y BOB NICK 90 GRIS MEL T/U",
-      "license": "",
+      "license": "NICK 90",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 328,
       "clp": 962024,
       "costos": 518240,
@@ -30199,9 +37072,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401875004102",
       "descripcion": "POLERA ML TODDLERO AMIGOS BLUEY AZUL 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera ML",
+      "categoria": "Toddlero",
       "units": 315,
       "clp": 2632408,
       "costos": 1586655,
@@ -30217,9 +37093,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501818041102",
       "descripcion": "POLERON CERRADO TODDLERO ROTATIVO PAW PATROL GRIS MEL 2",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 315,
       "clp": 3681368,
       "costos": 2299500,
@@ -30235,9 +37114,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501817633102",
       "descripcion": "POLERON CERRADO TODDLERA ROTATIVO MINNIE ECRU 2",
-      "license": "",
+      "license": "Minnie",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlera",
       "units": 313,
       "clp": 3657501,
       "costos": 2284900,
@@ -30253,9 +37135,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864181112",
       "descripcion": "PIJAMA LL TEENA FRIEND TOY STORY ROSADO 12",
-      "license": "",
+      "license": "LOTSO",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Teena",
       "units": 311,
       "clp": 3131954,
       "costos": 2052600,
@@ -30275,9 +37160,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031481210",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 9-10A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 310,
       "clp": 3852976,
       "costos": 2051032,
@@ -30301,9 +37189,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401648181000",
       "descripcion": "CALCETIN 2P NIÑA SKYE Y EVEREST PAW PATROL ROSADO T/U",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niña",
       "units": 310,
       "clp": 770665,
       "costos": 452600,
@@ -30319,9 +37210,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401648381000",
       "descripcion": "CALCETIN 2P NIÑA AMY SONIC ROSADO T/U",
-      "license": "",
+      "license": "SONIC",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niña",
       "units": 309,
       "clp": 776517,
       "costos": 451140,
@@ -30337,9 +37231,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401819539526",
       "descripcion": "CALCETIN 2P UNISEX CALAMARDO BOB ESPONJA GRIS 24-26",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Unisex",
       "units": 307,
       "clp": 788096,
       "costos": 767500,
@@ -30355,9 +37252,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401867220519",
       "descripcion": "CALCETIN 2P TODDLERA PERSONAJE DISNEY CELESTE 19-22",
-      "license": "",
+      "license": "LILO & STITCH",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Toddlera",
       "units": 302,
       "clp": 1259364,
       "costos": 755000,
@@ -30373,9 +37273,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501817581102",
       "descripcion": "POLERON CERRADO TODDLERA ROTATIVO MINNIE ROSADO 2",
-      "license": "",
+      "license": "Minnie",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlera",
       "units": 297,
       "clp": 3475088,
       "costos": 2168100,
@@ -30391,9 +37294,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647491000",
       "descripcion": "CALCETIN 2P MUJER CENTRAL PERK FRIENDS VERDE T/U",
-      "license": "",
+      "license": "Friends",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 296,
       "clp": 868168,
       "costos": 467680,
@@ -30409,9 +37315,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401869181526",
       "descripcion": "CALCETIN 2P NIÑA CORAZONES SNOOPY ROSADO 24-26",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niña",
       "units": 296,
       "clp": 1234752,
       "costos": 740000,
@@ -30427,9 +37336,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501860164104",
       "descripcion": "POLERON CERRADO NIÑO PERSONAJES SNOOPY NAVY 4",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Niño",
       "units": 294,
       "clp": 3687281,
       "costos": 2116800,
@@ -30445,9 +37357,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401869520000",
       "descripcion": "CALCETIN 2P MUJER FLORES SNOOPY CELESTE T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 293,
       "clp": 1471640,
       "costos": 879000,
@@ -30463,9 +37378,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401733304237",
       "descripcion": "4148587-HAVAIANA COLOR ESSENTIAL AZUL INDIGO/AZUL INDIGO HOMBRE 37-38",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Hombre",
       "units": 290,
       "clp": 2008703,
       "costos": 1943000,
@@ -30481,9 +37399,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401890203002",
       "descripcion": "POLERA MC UNISEX ADULTO LINEAL METALLICA ARENA S",
-      "license": "",
+      "license": "Metallica",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "UNISEX ADULTO",
       "units": 290,
       "clp": 3149036,
       "costos": 1885000,
@@ -30499,9 +37420,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402033965278",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 7-8A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 283,
       "clp": 3567178,
       "costos": 1873906,
@@ -30525,9 +37449,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501817920102",
       "descripcion": "POLERON CERRADO TODDLERO ROTATIVO BLUEY CELESTE 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 282,
       "clp": 3285051,
       "costos": 2058600,
@@ -30543,9 +37470,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401819639000",
       "descripcion": "CALCETIN 2P UNISEX CALAMARDO BOB ESPONJA GRIS T/U",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Unisex",
       "units": 281,
       "clp": 880372,
       "costos": 843000,
@@ -30561,9 +37491,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801631304002",
       "descripcion": "PIJAMA CC HOMBRE GENUINE FORD AZUL S",
-      "license": "",
+      "license": "FORD",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Pijama",
+      "subclase": "Pijama CC",
+      "categoria": "Hombre",
       "units": 276,
       "clp": 1060570,
       "costos": 1791240,
@@ -30579,9 +37512,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401813941106",
       "descripcion": "POLERA MC NIÑO ASUSTADO BOB ESPONJA GRIS MEL 6",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niño",
       "units": 274,
       "clp": 1438894,
       "costos": 1380138,
@@ -30597,9 +37533,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501833281224",
       "descripcion": "PANTUFLA NIÑA CORAZONES SNOOPY ROSADO 24-25",
-      "license": "",
+      "license": "Snoopy",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla",
+      "categoria": "Niña",
       "units": 273,
       "clp": 2051606,
       "costos": 1225770,
@@ -30615,9 +37554,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801863839002",
       "descripcion": "PIJAMA LL HOMBRE MEGUMI JUJUTSU KAISEN GRIS S",
-      "license": "",
+      "license": "JUJUTSU KAISEN",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Hombre",
       "units": 273,
       "clp": 2971076,
       "costos": 1965600,
@@ -30633,9 +37575,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401869841526",
       "descripcion": "CALCETIN 2P NIÑO CASITA SNOOPY GRIS MEL 24-26",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niño",
       "units": 272,
       "clp": 1136210,
       "costos": 680000,
@@ -30651,9 +37596,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647804000",
       "descripcion": "CALCETIN 2P HOMBRE SANCHEZ RICK AND MORTY AZUL T/U",
-      "license": "",
+      "license": "RICK AND MORTY",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Hombre",
       "units": 269,
       "clp": 788977,
       "costos": 481510,
@@ -30669,9 +37617,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401890465002",
       "descripcion": "POLERA MC UNISEX ADULTO LOGO KISS NEGRO S",
-      "license": "",
+      "license": "Kiss",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "UNISEX ADULTO",
       "units": 268,
       "clp": 2914451,
       "costos": 1742000,
@@ -30687,9 +37638,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601648820002",
       "descripcion": "CALZON 3P MUJER FULL PRINT GARFIELD CELESTE S",
-      "license": "",
+      "license": "GARFIELD",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzón",
+      "subclase": "Calzón 3P",
+      "categoria": "Mujer",
       "units": 266,
       "clp": 1334850,
       "costos": 904400,
@@ -30709,9 +37663,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401813865106",
       "descripcion": "POLERA MC NIÑO PIÑAS BOB ESPONJA NEGRO 6",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niño",
       "units": 265,
       "clp": 1418746,
       "costos": 1334805,
@@ -30727,9 +37684,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401870041000",
       "descripcion": "CALCETIN 2P HOMBRE LOGO SNOOPY GRIS MEL T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Hombre",
       "units": 264,
       "clp": 1321221,
       "costos": 792000,
@@ -30745,9 +37705,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501860441104",
       "descripcion": "POLERON CERRADO UNISEX INFANTIL CASA SNOOPY GRIS MEL 4",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX INFANTIL",
       "units": 261,
       "clp": 3266423,
       "costos": 1879200,
@@ -30763,9 +37726,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864404112",
       "descripcion": "PIJAMA LL TEENO ICONOS NASA AZUL 12",
-      "license": "",
+      "license": "NASA",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Teeno",
       "units": 261,
       "clp": 2620833,
       "costos": 1722600,
@@ -30785,9 +37751,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401648504000",
       "descripcion": "CALCETIN 2P NIÑO CHASE PAW PATROL AZUL T/U",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niño",
       "units": 256,
       "clp": 634963,
       "costos": 373760,
@@ -30807,9 +37776,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501860312104",
       "descripcion": "POLERON CERRADO NIÑA ROTATIVO SNOOPY BLANCO 4",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Niña",
       "units": 255,
       "clp": 3201935,
       "costos": 1836000,
@@ -30825,9 +37797,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031712278",
       "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 7-8A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Teena",
       "units": 255,
       "clp": 3180605,
       "costos": 1680444,
@@ -30855,9 +37830,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401869020526",
       "descripcion": "CALCETIN 2P NIÑA ABRAZO SNOOPY CELESTE 24-26",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niña",
       "units": 254,
       "clp": 1062198,
       "costos": 635000,
@@ -30873,9 +37851,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402033965210",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 9-10A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 253,
       "clp": 3217286,
       "costos": 1678074,
@@ -30899,9 +37880,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401889412002",
       "descripcion": "POLERA MC UNISEX ADULTO CIRCULO PINK FLOYD BLANCO S",
-      "license": "",
+      "license": "Pink Floyd",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "UNISEX ADULTO",
       "units": 253,
       "clp": 2742526,
       "costos": 1644500,
@@ -30917,9 +37901,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401869481000",
       "descripcion": "CALCETIN 2P MUJER CORAZONES SNOOPY ROSADO T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 250,
       "clp": 1250148,
       "costos": 750000,
@@ -30935,9 +37922,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501889541002",
       "descripcion": "POLERON CERRADO UNISEX ADULTO MUSIC HALL PINK FLOYD GRIS MEL S",
-      "license": "",
+      "license": "Pink Floyd",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX ADULTO",
       "units": 249,
       "clp": 3532346,
       "costos": 2191200,
@@ -30953,9 +37943,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031712256",
       "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 5-6A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Teena",
       "units": 248,
       "clp": 3085840,
       "costos": 1627780,
@@ -30983,9 +37976,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401819150526",
       "descripcion": "CALCETIN 2P UNISEX PATRICIO BOB ESPONJA LILA 24-26",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Unisex",
       "units": 248,
       "clp": 646889,
       "costos": 620000,
@@ -31001,9 +37997,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401733706235",
       "descripcion": "4148801-HAVAIANA ELEGANCE MARINHO MUJER 35-36",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Mujer",
       "units": 244,
       "clp": 1784533,
       "costos": 1708000,
@@ -31019,9 +38018,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501833520224",
       "descripcion": "PANTUFLA NIÑO GOLF SNOOPY CELESTE 24-25",
-      "license": "",
+      "license": "Snoopy",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla",
+      "categoria": "Niño",
       "units": 241,
       "clp": 1817864,
       "costos": 1082090,
@@ -31037,9 +38039,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864833104",
       "descripcion": "PIJAMA LL NIÑA CARITA TOY STORY ECRU 4",
-      "license": "",
+      "license": "LOTSO",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Niña",
       "units": 239,
       "clp": 2207165,
       "costos": 1457900,
@@ -31059,9 +38064,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601649104112",
       "descripcion": "CALZON 3P TEENA FLORES SNOOPY AZUL 12",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzón",
+      "subclase": "Calzón 3P",
+      "categoria": "Teena",
       "units": 239,
       "clp": 1002127,
       "costos": 717000,
@@ -31081,9 +38089,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031481278",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 7-8A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 238,
       "clp": 2942177,
       "costos": 1572830,
@@ -31107,9 +38118,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401647704000",
       "descripcion": "CALCETIN 2P HOMBRE PERSONAJES RICK AND MORTY AZUL T/U",
-      "license": "",
+      "license": "RICK AND MORTY",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Hombre",
       "units": 238,
       "clp": 698054,
       "costos": 426020,
@@ -31125,9 +38139,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864641112",
       "descripcion": "PIJAMA LL TEENO PERSONAJE JUJUTSU KAISEN GRIS MEL 12",
-      "license": "",
+      "license": "JUJUTSU KAISEN",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Teeno",
       "units": 237,
       "clp": 2385401,
       "costos": 1564200,
@@ -31143,9 +38160,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401648065000",
       "descripcion": "CALCETIN 2P TEENO CUBOS MINECRAFT NEGRO T/U",
-      "license": "",
+      "license": "Minecraft",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Teeno",
       "units": 236,
       "clp": 593068,
       "costos": 372880,
@@ -31165,9 +38185,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401869704526",
       "descripcion": "CALCETIN 2P NIÑO PERSONAJE SNOOPY AZUL 24-26",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niño",
       "units": 234,
       "clp": 977662,
       "costos": 585000,
@@ -31183,9 +38206,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401813681106",
       "descripcion": "POLERA MC NIÑA LINEAL BOB ESPONJA ROSADO 6,",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 233,
       "clp": 1219618,
       "costos": 1173621,
@@ -31201,9 +38227,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601649081112",
       "descripcion": "CALZON 3P TEENA FULL PRINT SNOOPY ROSADO 12",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzón",
+      "subclase": "Calzón 3P",
+      "categoria": "Teena",
       "units": 231,
       "clp": 968583,
       "costos": 693000,
@@ -31219,9 +38248,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402033965256",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 5-6A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 224,
       "clp": 2822379,
       "costos": 1476912,
@@ -31245,9 +38277,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501817841102",
       "descripcion": "POLERON CERRADO TODDLERA FLOCK MINNIE GRIS MEL 2",
-      "license": "",
+      "license": "Minnie",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlera",
       "units": 222,
       "clp": 2596025,
       "costos": 1620600,
@@ -31263,9 +38298,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401730512235",
       "descripcion": "4000016-HAVAIANA COLOR BRANCO MUJER BLANCO 35-36",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Mujer",
       "units": 218,
       "clp": 1280346,
       "costos": 1326070,
@@ -31285,9 +38323,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401732365235",
       "descripcion": "4148801-HAVAIANA ELEGANCE PRETO MUJER NEGRO 35-36-",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Mujer",
       "units": 217,
       "clp": 1620554,
       "costos": 1502890,
@@ -31315,9 +38356,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401860001104",
       "descripcion": "POLERA MC NIÑO CAMINANDO SNOOPY ACERO 4",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niño",
       "units": 216,
       "clp": 1802477,
       "costos": 1087992,
@@ -31333,9 +38377,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601649320103",
       "descripcion": "CALZON 3P NIÑA EVEREST PAW PATROL CELESTE 3",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzón",
+      "subclase": "Calzón 3P",
+      "categoria": "Niña",
       "units": 214,
       "clp": 897302,
       "costos": 642000,
@@ -31355,9 +38402,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401889853002",
       "descripcion": "POLERA MC UNISEX ADULTO LIAM AND NOEL OASIS MARENGO S",
-      "license": "",
+      "license": "OASIS",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "UNISEX ADULTO",
       "units": 214,
       "clp": 2322807,
       "costos": 1391000,
@@ -31373,9 +38423,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031712234",
       "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 3-4A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Teena",
       "units": 212,
       "clp": 2615818,
       "costos": 1391536,
@@ -31403,9 +38456,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031712210",
       "descripcion": "POLERA MC TEENA RUMI KPOP DEMON HUNTERS BLANCO 9-10A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Teena",
       "units": 211,
       "clp": 2644796,
       "costos": 1400352,
@@ -31433,9 +38489,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401648441000",
       "descripcion": "CALCETIN 2P NIÑO TNT MINECRAFT GRIS MEL T/U",
-      "license": "",
+      "license": "Minecraft",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niño",
       "units": 210,
       "clp": 527730,
       "costos": 306600,
@@ -31451,9 +38510,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401822041001",
       "descripcion": "POLERA MC MUJER WOODSTOCK SNOOPY GRIS MEL XS",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Mujer",
       "units": 210,
       "clp": 2284928,
       "costos": 1365000,
@@ -31469,9 +38531,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501818277102",
       "descripcion": "POLERON CERRADO TODDLERO ROTATIVO MICKEY ROJO 2",
-      "license": "",
+      "license": "Mickey",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 210,
       "clp": 2454345,
       "costos": 1533000,
@@ -31487,9 +38552,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501833320002",
       "descripcion": "PANTUFLA MUJER MORE NAPS SNOOPY CELESTE S",
-      "license": "",
+      "license": "Snoopy",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla",
+      "categoria": "Mujer",
       "units": 207,
       "clp": 1556265,
       "costos": 1012230,
@@ -31505,9 +38573,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401822439002",
       "descripcion": "POLERA MC HOMBRE LINEAL SNOOPY GRIS S",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Hombre",
       "units": 207,
       "clp": 2251417,
       "costos": 1345500,
@@ -31523,9 +38594,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401860281104",
       "descripcion": "POLERA MC NIÑA PEANUTS SNOOPY ROSADO 4",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 206,
       "clp": 1719622,
       "costos": 1037622,
@@ -31541,9 +38615,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864304112",
       "descripcion": "PIJAMA LL TEENO MUST HAVE FORD AZUL 12",
-      "license": "",
+      "license": "FORD",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Teeno",
       "units": 206,
       "clp": 2073848,
       "costos": 1359600,
@@ -31563,9 +38640,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402033965234",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 3-4A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 205,
       "clp": 2601285,
       "costos": 1359488,
@@ -31589,9 +38669,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501817350102",
       "descripcion": "POLERON CERRADO TODDLERA ROTATIVO BLUEY LILA 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlera",
       "units": 204,
       "clp": 2388052,
       "costos": 1489200,
@@ -31607,9 +38690,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401648604000",
       "descripcion": "CALCETIN 2P NIÑO PERSONAJE SONIC AZUL T/U",
-      "license": "",
+      "license": "SONIC",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Niño",
       "units": 204,
       "clp": 512652,
       "costos": 297840,
@@ -31625,9 +38711,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031481256",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 5-6A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 203,
       "clp": 2511329,
       "costos": 1335882,
@@ -31651,9 +38740,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24701648962112",
       "descripcion": "BOXER 2P TEENO PERSONAJES NARUTO NARANJO 12",
-      "license": "",
+      "license": "Naruto",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzoncillo",
+      "subclase": "Boxer 2P",
+      "categoria": "Teeno",
       "units": 201,
       "clp": 1180674,
       "costos": 804000,
@@ -31677,9 +38769,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401235515237",
       "descripcion": "4000016-HAVAIANA COLOR CAFE HOMBRE CAFE 37-38",
-      "license": "",
+      "license": "NO APLICA",
       "division": "Calzado",
       "temporada": "Q424",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Hombre",
       "units": 199,
       "clp": 1163646,
       "costos": 1194796,
@@ -31695,9 +38790,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401777720519",
       "descripcion": "CALCETIN 3P TODDLERO RAYAS BLUEY CELESTE 19-22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Toddlero",
       "units": 194,
       "clp": 1330760,
       "costos": 626814,
@@ -31713,9 +38811,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031481234",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 3-4A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 192,
       "clp": 2348354,
       "costos": 1264250,
@@ -31739,9 +38840,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501712777106",
       "descripcion": "POLERON CERRADO NIÑO MESA SPIDERMAN ROJO 6",
-      "license": "",
+      "license": "Spiderman",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Niño",
       "units": 192,
       "clp": 2837627,
       "costos": 1328538,
@@ -31765,9 +38869,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501817759102",
       "descripcion": "POLERON CERRADO TODDLERA FLOCK DISNEY MORADO 2",
-      "license": "",
+      "license": "LILO & STITCH",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlera",
       "units": 192,
       "clp": 2243591,
       "costos": 1401600,
@@ -31783,9 +38890,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501817481102",
       "descripcion": "POLERON CERRADO TODDLERA FLOCK PAW PATROL ROSADO 2",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlera",
       "units": 191,
       "clp": 2228520,
       "costos": 1394300,
@@ -31801,9 +38911,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401777720523",
       "descripcion": "CALCETIN 3P TODDLERO RAYAS BLUEY CELESTE 23-26",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Toddlero",
       "units": 189,
       "clp": 1314193,
       "costos": 610659,
@@ -31819,9 +38932,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24101121220092",
       "descripcion": "40503-40503 BOTELLA 560 ML SONIC",
-      "license": "",
+      "license": "SONIC",
       "division": "Accesorios y Otros",
       "temporada": "Q324",
+      "clase": "Botella",
+      "subclase": "Botella",
+      "categoria": "UNISEX INFANTIL",
       "units": 189,
       "clp": 785369,
       "costos": 396333,
@@ -31837,9 +38953,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401869941000",
       "descripcion": "CALCETIN 2P HOMBRE ACOSTADO SNOOPY GRIS MEL T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Hombre",
       "units": 189,
       "clp": 944304,
       "costos": 567000,
@@ -31855,9 +38974,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501890701106",
       "descripcion": "POLERON CERRADO UNISEX INFANTIL LOGO METALLICA ACERO 6",
-      "license": "",
+      "license": "Metallica",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX INFANTIL",
       "units": 188,
       "clp": 2362119,
       "costos": 1420904,
@@ -31873,9 +38995,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "324015701",
       "descripcion": "ZUECO DE EVA NIÑO PINS PERSONAJES MINECRAFT",
-      "license": "",
+      "license": "Minecraft",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Zueco de Eva",
+      "categoria": "Niño",
       "units": 185,
       "clp": 1637915,
       "costos": 932030,
@@ -31891,9 +39016,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "27401890914000",
       "descripcion": "JOCKEY MUJER CARITA SNOOPY BURDEO T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Accesorios y Otros",
       "temporada": "Q126",
+      "clase": "Gorro",
+      "subclase": "Jockey",
+      "categoria": "Mujer",
       "units": 182,
       "clp": 1975697,
       "costos": 1092000,
@@ -31909,9 +39037,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401646941000",
       "descripcion": "CALCETIN 2P MUJER COFFEE TIME SNOOPY GRIS MEL T/U",
-      "license": "",
+      "license": "Snoopy",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Mujer",
       "units": 182,
       "clp": 533806,
       "costos": 287560,
@@ -31927,9 +39058,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401777720527",
       "descripcion": "CALCETIN 3P TODDLERO RAYAS BLUEY CELESTE 27-30",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Toddlero",
       "units": 182,
       "clp": 1252205,
       "costos": 588042,
@@ -31945,9 +39079,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "SIN CLASIF39822802",
       "descripcion": "SIN CLASIF BOTELLA MARIO BROS/241008780",
-      "license": "",
+      "license": "No Definido",
       "division": "Accesorios y Otros",
       "temporada": "No Definido",
+      "clase": "Botella",
+      "subclase": "No Definido",
+      "categoria": "No Definido",
       "units": 178,
       "clp": 701852,
       "costos": 412960,
@@ -31963,9 +39100,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402033965212",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS NEGRO 11-12A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 175,
       "clp": 2210347,
       "costos": 1158812,
@@ -31989,9 +39129,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801631765002",
       "descripcion": "PIJAMA CC HOMBRE ESPACIO RICK AND MORTY NEGRO S",
-      "license": "",
+      "license": "Rick and morty",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Pijama",
+      "subclase": "Pijama CC",
+      "categoria": "Hombre",
       "units": 175,
       "clp": 706774,
       "costos": 1135750,
@@ -32007,9 +39150,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501833481002",
       "descripcion": "PANTUFLA MUJER 2 CORAZONES SNOOPY ROSADO S",
-      "license": "",
+      "license": "Snoopy",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla",
+      "categoria": "Mujer",
       "units": 175,
       "clp": 1314667,
       "costos": 855750,
@@ -32025,9 +39171,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501890612106",
       "descripcion": "POLERON CERRADO UNISEX INFANTIL LOGO THE BEATLES BLANCO 6",
-      "license": "",
+      "license": "The Beatles",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX INFANTIL",
       "units": 175,
       "clp": 2193700,
       "costos": 1322650,
@@ -32043,9 +39192,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401874920102",
       "descripcion": "POLERA ML TODDLERO PELOTA BLUEY CELESTE 2",
-      "license": "",
+      "license": "BLUEY",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera ML",
+      "categoria": "Toddlero",
       "units": 171,
       "clp": 1430246,
       "costos": 861327,
@@ -32061,9 +39213,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501833120224",
       "descripcion": "PANTUFLA NIÑA HELADO SNOOPY CELESTE 24-25",
-      "license": "",
+      "license": "Snoopy",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla",
+      "categoria": "Niña",
       "units": 170,
       "clp": 1279900,
       "costos": 763300,
@@ -32079,9 +39234,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31402031481212",
       "descripcion": "POLERA MC NIÑA HUNTRIX KPOP DEMON HUNTERS ROSADO 11-12A",
-      "license": "",
+      "license": "KPOP DEMON HUNTERS",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 169,
       "clp": 2073775,
       "costos": 1112280,
@@ -32105,9 +39263,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401733680235",
       "descripcion": "4000030-HAVAIANA SLIM ROSA CHIFFON MUJER 35-36",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Hawaiana",
+      "categoria": "Mujer",
       "units": 165,
       "clp": 1575185,
       "costos": 1155000,
@@ -32123,9 +39284,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24601649281103",
       "descripcion": "CALZON 3P NIÑA PATITAS PAW PATROL ROSADO 3",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calzón",
+      "subclase": "Calzón 3P",
+      "categoria": "Niña",
       "units": 165,
       "clp": 691845,
       "costos": 495000,
@@ -32145,9 +39309,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501805502224",
       "descripcion": "PANTUFLA NIÑO FELIZ BOB ESPONJA AMARILLO 24-25",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla",
+      "categoria": "Niño",
       "units": 162,
       "clp": 784892,
       "costos": 727380,
@@ -32163,9 +39330,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401810241001",
       "descripcion": "POLERA MC MUJER LINEAL BOB ESPONJA GRIS MEL XS",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Mujer",
       "units": 162,
       "clp": 1007517,
       "costos": 972000,
@@ -32181,9 +39351,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401636004000",
       "descripcion": "CALCETIN 3P TEENO FULL PRINT MINECRAFT AZUL T/U",
-      "license": "",
+      "license": "Minecraft",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Teeno",
       "units": 159,
       "clp": 1049532,
       "costos": 608493,
@@ -32199,9 +39372,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401778012523",
       "descripcion": "CALCETIN 3P TODDLERA PERSONAJE BLUEY BLANCO 23-26",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Toddlera",
       "units": 157,
       "clp": 1083155,
       "costos": 507267,
@@ -32217,9 +39393,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401637120104",
       "descripcion": "POLERA MC NIÑA PALMERA MINNIE CELESTE 4",
-      "license": "",
+      "license": "Minnie",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 155,
       "clp": 719947,
       "costos": 767715,
@@ -32239,9 +39418,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401635941000",
       "descripcion": "CALCETIN 3P TEENO BOOM MINECRAFT GRIS MEL T/U",
-      "license": "",
+      "license": "Minecraft",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Teeno",
       "units": 154,
       "clp": 1022551,
       "costos": 589358,
@@ -32257,9 +39439,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801864001002",
       "descripcion": "PIJAMA LL HOMBRE FIGHT UFC ACERO S",
-      "license": "",
+      "license": "UFC",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Hombre",
       "units": 154,
       "clp": 1681064,
       "costos": 1108800,
@@ -32275,9 +39460,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401778012527",
       "descripcion": "CALCETIN 3P TODDLERA PERSONAJE BLUEY BLANCO 27-30",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Toddlera",
       "units": 152,
       "clp": 1046815,
       "costos": 491112,
@@ -32293,9 +39481,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501818344102",
       "descripcion": "POLERON CERRADO TODDLERO FLOCK PAW PATROL INDIGO 2",
-      "license": "",
+      "license": "Paw Patrol",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Toddlero",
       "units": 152,
       "clp": 1777552,
       "costos": 1109600,
@@ -32311,9 +39502,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801631241002",
       "descripcion": "PIJAMA CC HOMBRE MUSTANG FORD GRIS MEL S",
-      "license": "",
+      "license": "FORD",
       "division": "Ropa Interior",
       "temporada": "Q425",
+      "clase": "Pijama",
+      "subclase": "Pijama CC",
+      "categoria": "Hombre",
       "units": 151,
       "clp": 610966,
       "costos": 979990,
@@ -32333,9 +39527,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501822741002",
       "descripcion": "POLERON CERRADO UNISEX ADULTO CASA SNOOPY GRIS MEL S",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX ADULTO",
       "units": 150,
       "clp": 2120178,
       "costos": 1320000,
@@ -32351,9 +39548,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501712777104",
       "descripcion": "POLERON CERRADO NIÑO MESA SPIDERMAN ROJO 4",
-      "license": "",
+      "license": "Spiderman",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Niño",
       "units": 146,
       "clp": 2166071,
       "costos": 1008842,
@@ -32377,9 +39577,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "SIN CLASIF39822799",
       "descripcion": "SIN CLASIF BOTELLA BLUEY/241008778",
-      "license": "",
+      "license": "No Definido",
       "division": "Accesorios y Otros",
       "temporada": "No Definido",
+      "clase": "Botella",
+      "subclase": "No Definido",
+      "categoria": "No Definido",
       "units": 146,
       "clp": 576069,
       "costos": 338720,
@@ -32395,9 +39598,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501890501002",
       "descripcion": "POLERON CERRADO UNISEX ADULTO BANDA KISS ACERO S",
-      "license": "",
+      "license": "Kiss",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "UNISEX ADULTO",
       "units": 143,
       "clp": 2025520,
       "costos": 1258400,
@@ -32413,9 +39619,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "324015696",
       "descripcion": "ZUECO DE EVA NIÑO PERSONAKE SONIC",
-      "license": "",
+      "license": "SONIC",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "Zueco de Eva",
+      "categoria": "Niño",
       "units": 141,
       "clp": 1252309,
       "costos": 710358,
@@ -32431,9 +39640,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24101296261092",
       "descripcion": "10127-10127 BOTELLA 3D FIGURINE BOTTLE POKEMON",
-      "license": "",
+      "license": "POKEMON",
       "division": "Accesorios y Otros",
       "temporada": "Q424",
+      "clase": "Botella",
+      "subclase": "Botella",
+      "categoria": "UNISEX INFANTIL",
       "units": 140,
       "clp": 1007257,
       "costos": 528780,
@@ -32449,9 +39661,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "241014002",
       "descripcion": "8000-8000 BOTELLA DAILY POKEMON 560 ML",
-      "license": "",
+      "license": "POKEMON",
       "division": "Accesorios y Otros",
       "temporada": "Q125",
+      "clase": "Botella",
+      "subclase": "Botella",
+      "categoria": "UNISEX INFANTIL",
       "units": 139,
       "clp": 552828,
       "costos": 291483,
@@ -32467,9 +39682,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30501805281224",
       "descripcion": "PANTUFLA NIÑA FULL PIÑAS BOB ESPONJA ROSADO 24-25",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Pantufla",
+      "subclase": "Pantufla",
+      "categoria": "Niña",
       "units": 137,
       "clp": 645136,
       "costos": 615130,
@@ -32485,9 +39703,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801662265028",
       "descripcion": "ZAPATILLA ESCOLAR NIÑA FOIL PLATEADO MINNIE NEGRO 28",
-      "license": "",
+      "license": "Minnie",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Escolar",
+      "categoria": "Niña",
       "units": 137,
       "clp": 1676367,
       "costos": 920366,
@@ -32511,9 +39732,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401637381104",
       "descripcion": "POLERA MC NIÑA LOGO BARBIE ROSADO 4",
-      "license": "",
+      "license": "Barbie",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niña",
       "units": 135,
       "clp": 645591,
       "costos": 657380,
@@ -32533,9 +39757,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "33801662265029",
       "descripcion": "ZAPATILLA ESCOLAR NIÑA FOIL PLATEADO MINNIE NEGRO 29",
-      "license": "",
+      "license": "Minnie",
       "division": "Calzado",
       "temporada": "Q126",
+      "clase": "Zapatilla",
+      "subclase": "Zapatilla Escolar",
+      "categoria": "Niña",
       "units": 134,
       "clp": 1619070,
       "costos": 900212,
@@ -32559,9 +39786,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "241013998",
       "descripcion": "49601-49601 BOTELLA PLAYGROUND SIPPER BLUEY 420 ML",
-      "license": "",
+      "license": "BLUEY",
       "division": "Accesorios y Otros",
       "temporada": "Q125",
+      "clase": "Botella",
+      "subclase": "Botella",
+      "categoria": "UNISEX INFANTIL",
       "units": 133,
       "clp": 642594,
       "costos": 339150,
@@ -32577,9 +39807,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "30801863741002",
       "descripcion": "PIJAMA LL HOMBRE RAPTOR FORD GRIS MEL S",
-      "license": "",
+      "license": "FORD",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Pijama",
+      "subclase": "Pijama LL",
+      "categoria": "Hombre",
       "units": 133,
       "clp": 1451828,
       "costos": 957600,
@@ -32595,9 +39828,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "27401773765000",
       "descripcion": "JOCKEY UNISEX ADULTO PARCHE HARRY POTTER NEGRO T/U",
-      "license": "",
+      "license": "Harry Potter",
       "division": "Accesorios y Otros",
       "temporada": "Q425",
+      "clase": "Gorro",
+      "subclase": "Jockey",
+      "categoria": "UNISEX ADULTO",
       "units": 132,
       "clp": 785023,
       "costos": 646800,
@@ -32613,9 +39849,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501712777108",
       "descripcion": "POLERON CERRADO NIÑO MESA SPIDERMAN ROJO 8",
-      "license": "",
+      "license": "Spiderman",
       "division": "Vestuario Infantil",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Niño",
       "units": 131,
       "clp": 1939209,
       "costos": 904922,
@@ -32639,9 +39878,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "32401236539237",
       "descripcion": "4111355-HAVAIANA ALOHA PTO/PTO/CZ HOMBRE NEGRO 37-38",
-      "license": "",
+      "license": "HAVAIANA",
       "division": "Calzado",
       "temporada": "Q425",
+      "clase": "Sandalia",
+      "subclase": "0",
+      "categoria": "Hombre",
       "units": 130,
       "clp": 1302170,
       "costos": 1381380,
@@ -32657,9 +39899,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31401549530108",
       "descripcion": "POLERA MC NIÑO MESA AVENGERS DENIM 8",
-      "license": "",
+      "license": "Avengers",
       "division": "Vestuario Infantil",
       "temporada": "Q425",
+      "clase": "Polera",
+      "subclase": "Polera MC",
+      "categoria": "Niño",
       "units": 130,
       "clp": 437504,
       "costos": 622050,
@@ -32675,9 +39920,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "31501822342001",
       "descripcion": "POLERON CERRADO MUJER PERSONAJES SNOOPY GRIS OSC XS",
-      "license": "",
+      "license": "Snoopy",
       "division": "Vestuario Adulto",
       "temporada": "Q126",
+      "clase": "Polerón",
+      "subclase": "Poleron Cerrado",
+      "categoria": "Mujer",
       "units": 127,
       "clp": 1790230,
       "costos": 1117600,
@@ -32693,9 +39941,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401778012519",
       "descripcion": "CALCETIN 3P TODDLERA PERSONAJE BLUEY BLANCO 19-22",
-      "license": "",
+      "license": "BLUEY",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 3P",
+      "categoria": "Toddlera",
       "units": 126,
       "clp": 875903,
       "costos": 407106,
@@ -32711,9 +39962,12 @@ const REAL_SELLOUT = {
     {
       "codigo": "24401819250000",
       "descripcion": "CALCETIN 2P UNISEX PATRICIO BOB ESPONJA LILA T/U",
-      "license": "",
+      "license": "BOB ESPONJA",
       "division": "Ropa Interior",
       "temporada": "Q126",
+      "clase": "Calcetín",
+      "subclase": "Calcetín 2P",
+      "categoria": "Unisex",
       "units": 125,
       "clp": 390445,
       "costos": 375000,
@@ -37477,5 +44731,5 @@ const REAL_SELLOUT = {
       "value": 165.1
     }
   ],
-  "generatedAt": "2026-03-17T18:12:12.119235"
+  "generatedAt": "2026-03-18T12:54:43.906669"
 };

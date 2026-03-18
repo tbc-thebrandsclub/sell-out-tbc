@@ -160,6 +160,9 @@ def process(year=2026, days_back=None):
         r['_quarter'] = q
         r['_year_product'] = y
         r['_temporada'] = r.get('temporada', '') or ''
+        r['_clase'] = r.get('clase', '') or ''
+        r['_subclase'] = r.get('subclase', '') or ''
+        r['_categoria'] = r.get('categoria', '') or ''
         sales.append(r)
 
     dates_sorted = sorted(set(r['_date'] for r in sales if r['_date']))
@@ -508,7 +511,8 @@ def process(year=2026, days_back=None):
     # ── 11b. Ranking por Producto (codigo_interno) ───────
     product_agg = defaultdict(lambda: {
         "units": 0, "clp": 0, "costos": 0, "desc": "", "license": "",
-        "division": "", "temporada": "", "byChain": defaultdict(lambda: {"units": 0, "clp": 0})
+        "division": "", "temporada": "", "clase": "", "subclase": "", "categoria": "",
+        "byChain": defaultdict(lambda: {"units": 0, "clp": 0})
     })
     for r in sales:
         ci = r.get('codigo_interno', '')
@@ -519,9 +523,12 @@ def process(year=2026, days_back=None):
         p["clp"] += r['_clp']
         p["costos"] += r['_costos']
         p["desc"] = r.get('descripcion', '') or p["desc"]
-        p["license"] = r.get('_license', '') or p["license"]
+        p["license"] = r.get('propiedad', '') or p["license"]
         p["division"] = r.get('_division', '') or p["division"]
         p["temporada"] = r.get('temporada', '') or p["temporada"]
+        p["clase"] = r['_clase'] or p["clase"]
+        p["subclase"] = r['_subclase'] or p["subclase"]
+        p["categoria"] = r['_categoria'] or p["categoria"]
         chain = r.get('sub_cadena', '')
         if chain:
             p["byChain"][chain]["units"] += r['_units']
@@ -549,6 +556,9 @@ def process(year=2026, days_back=None):
             "license": p["license"],
             "division": p["division"],
             "temporada": p["temporada"],
+            "clase": p["clase"],
+            "subclase": p["subclase"],
+            "categoria": p["categoria"],
             "units": round(p["units"]),
             "clp": round(p["clp"]),
             "costos": round(p["costos"]),
@@ -1046,10 +1056,35 @@ def process(year=2026, days_back=None):
     license_year_breakdown = round_breakdown(lic_year_agg)
     license_temporada_breakdown = round_breakdown(lic_temp_agg)
 
+    # ── Clase / Subclase / Categoria breakdowns ──
+    all_clases = sorted(set(r['_clase'] for r in sales if r['_clase'] and r['_clase'] != 'No Definido'))
+    all_subclases = sorted(set(r['_subclase'] for r in sales if r['_subclase'] and r['_subclase'] not in ('No Definido', '0', '')))
+    all_categorias = sorted(set(r['_categoria'] for r in sales if r['_categoria'] and r['_categoria'] != 'No Definido'))
+
+    lic_clase_agg = defaultdict(lambda: defaultdict(lambda: {"units": 0.0, "clp": 0.0}))
+    lic_subclase_agg = defaultdict(lambda: defaultdict(lambda: {"units": 0.0, "clp": 0.0}))
+    lic_categoria_agg = defaultdict(lambda: defaultdict(lambda: {"units": 0.0, "clp": 0.0}))
+    for r in sales:
+        lic = r.get('propiedad', 'Sin Licencia')
+        if r['_clase'] and r['_clase'] != 'No Definido':
+            lic_clase_agg[lic][r['_clase']]["units"] += r['_units']
+            lic_clase_agg[lic][r['_clase']]["clp"] += r['_clp']
+        if r['_subclase'] and r['_subclase'] not in ('No Definido', '0', ''):
+            lic_subclase_agg[lic][r['_subclase']]["units"] += r['_units']
+            lic_subclase_agg[lic][r['_subclase']]["clp"] += r['_clp']
+        if r['_categoria'] and r['_categoria'] != 'No Definido':
+            lic_categoria_agg[lic][r['_categoria']]["units"] += r['_units']
+            lic_categoria_agg[lic][r['_categoria']]["clp"] += r['_clp']
+
+    license_clase_breakdown = round_breakdown(lic_clase_agg)
+    license_subclase_breakdown = round_breakdown(lic_subclase_agg)
+    license_categoria_breakdown = round_breakdown(lic_categoria_agg)
+
     # All licenses (complete, sorted by units desc)
     all_licenses_full = sorted(license_totals.keys(), key=lambda l: -license_totals[l])
 
     print(f"  Temporadas: {len(all_temporadas_raw)} valores, Quarters: {all_quarters}, Years: {all_years_product}")
+    print(f"  Clases: {len(all_clases)}, Subclases: {len(all_subclases)}, Categorias: {len(all_categorias)}")
     print(f"  License-Division breakdown: {len(license_division_breakdown)} licencias con multiples divisiones")
 
     output = {
@@ -1074,6 +1109,12 @@ def process(year=2026, days_back=None):
         "licenseQuarterBreakdown": license_quarter_breakdown,
         "licenseYearBreakdown": license_year_breakdown,
         "licenseTemporadaBreakdown": license_temporada_breakdown,
+        "allClases": all_clases,
+        "allSubclases": all_subclases,
+        "allCategorias": all_categorias,
+        "licenseClaseBreakdown": license_clase_breakdown,
+        "licenseSubclaseBreakdown": license_subclase_breakdown,
+        "licenseCategoriaBreakdown": license_categoria_breakdown,
         # Bloques existentes:
         "byDivision": by_division,
         "byDivisionDaily": by_division_daily,

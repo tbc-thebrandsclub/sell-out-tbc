@@ -358,20 +358,30 @@ function getFilteredData() {
   let _productFilterRatioU = 1, _productFilterRatioC = 1;
 
   // ═══════════════════════════════════════════════════════════
-  // _bcd (dailyByChainDivision) is the SINGLE SOURCE OF TRUTH
-  // for all chain × division × date aggregations.
-  // All other aggregates are derived from it.
+  // storeDailySales is the SINGLE SOURCE OF TRUTH.
+  // _bcd (date×chain×division) is derived from it by aggregation.
+  // This guarantees ranking totals = chart totals = KPI totals.
   // ═══════════════════════════════════════════════════════════
-  let _bcd = src.dailyByChainDivision || [];
-  const _bcdOrig = _bcd; // keep original for ratio computations
+  const _sds = src.storeDailySales || [];
 
-  // ── Step 1: Apply all EXACT filters to _bcd ──
-  if (f.dateFrom) { _bcd = _bcd.filter(d => d.date >= f.dateFrom); dailySales = dailySales.filter(d => d.date >= f.dateFrom); }
-  if (f.dateTo)   { _bcd = _bcd.filter(d => d.date <= f.dateTo);   dailySales = dailySales.filter(d => d.date <= f.dateTo); }
-  if (f.chains.length)    { const s = new Set(f.chains);    _bcd = _bcd.filter(d => s.has(d.chain)); }
-  if (f.divisions.length) { const s = new Set(f.divisions); _bcd = _bcd.filter(d => s.has(d.division)); }
+  // ── Step 1: Filter storeDailySales by exact filters, then derive _bcd ──
+  let sdsFiltered = _sds;
+  if (f.dateFrom) { sdsFiltered = sdsFiltered.filter(r => r.d >= f.dateFrom); dailySales = dailySales.filter(d => d.date >= f.dateFrom); }
+  if (f.dateTo)   { sdsFiltered = sdsFiltered.filter(r => r.d <= f.dateTo);   dailySales = dailySales.filter(d => d.date <= f.dateTo); }
+  if (f.chains.length)    { const cs = new Set(f.chains);    sdsFiltered = sdsFiltered.filter(r => cs.has(r.ch)); }
+  if (f.divisions.length) { const ds = new Set(f.divisions); sdsFiltered = sdsFiltered.filter(r => ds.has(r.dv)); }
 
-  // ── Step 2: Derive dailyByChain and byDivisionDaily from filtered _bcd ──
+  // Derive _bcd from filtered storeDailySales (aggregate by date×chain×division, round AFTER sum)
+  const _bcdAgg = {};
+  sdsFiltered.forEach(r => {
+    const key = r.d + '|' + r.ch + '|' + r.dv;
+    if (!_bcdAgg[key]) _bcdAgg[key] = { date: r.d, chain: r.ch, division: r.dv, units: 0, clp: 0 };
+    _bcdAgg[key].units += r.u;
+    _bcdAgg[key].clp += r.c;
+  });
+  let _bcd = Object.values(_bcdAgg).map(d => ({ ...d, units: Math.round(d.units), clp: Math.round(d.clp) }));
+
+  // ── Step 2: Derive dailyByChain and byDivisionDaily from _bcd ──
   const _aggByKey = (arr, keyFn, initFn) => {
     const agg = {};
     arr.forEach(d => { const k = keyFn(d); if (!agg[k]) agg[k] = initFn(d); agg[k].units += d.units; agg[k].clp += d.clp; });
@@ -491,66 +501,91 @@ function getFilteredData() {
   dailyByChain.forEach(d => { if (!chainAgg[d.chain]) chainAgg[d.chain] = { chain: d.chain, units: 0, clp: 0 }; chainAgg[d.chain].units += d.units; chainAgg[d.chain].clp += d.clp; });
   let byChain = Object.values(chainAgg).sort((a, b) => b.clp - a.clp);
 
-  // ── Step 10: rankingByChainStore — filter then RECONCILE with _bcd totals ──
-  let rankingByChainStore = src.rankingByChainStore || {};
-  if (f.chains.length) {
-    const chainSet = new Set(f.chains); const filtered = {};
-    Object.entries(rankingByChainStore).forEach(([ch, stores]) => { if (chainSet.has(ch)) filtered[ch] = stores; });
-    rankingByChainStore = filtered;
-  }
-  if (f.divisions.length) {
-    const filteredRanking = {};
-    Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
-      const filtered = stores.filter(s => s.byDivision && f.divisions.some(div => s.byDivision[div])).map(s => {
-        let uSum = 0, cSum = 0, costSum = 0, stockSum = 0;
-        const filteredDivs = {};
-        f.divisions.forEach(div => {
-          const dd = s.byDivision[div];
-          if (dd) { uSum += dd.units; cSum += dd.clp; costSum += (dd.costos || 0); stockSum += (dd.stock || 0); filteredDivs[div] = dd; }
-        });
-        const sales4w = s.weeksOfStock > 0 && s.stockUnits > 0 ? s.stockUnits / s.weeksOfStock * 4 : 0;
-        const divStockRatio = s.stockUnits > 0 ? stockSum / s.stockUnits : 0;
-        const weeklyAvg = sales4w * divStockRatio / 4;
-        return { ...s, units: uSum, clp: cSum, costos: costSum,
-          margin: cSum > 0 ? Math.round((cSum - costSum) / cSum * 1000) / 10 : 0,
-          stockUnits: stockSum, weeksOfStock: weeklyAvg > 0 ? Math.round(stockSum / weeklyAvg * 10) / 10 : 0,
-          byDivision: filteredDivs };
-      });
-      if (filtered.length) filteredRanking[ch] = filtered;
+  // ── Step 10: rankingByChainStore — built from storeDailySales (EXACT, zero approximation) ──
+  // sdsFiltered was already filtered in Step 1 by date, chain, division
+  let rankingByChainStore = {};
+  const hasAnyFilter = f.dateFrom || f.dateTo || f.chains.length || f.divisions.length;
+  if (sdsFiltered.length && hasAnyFilter) {
+    // Aggregate by chain → store (exact from raw data)
+    const storeAgg = {}; // key: chain|store
+    sdsFiltered.forEach(r => {
+      const key = r.ch + '|' + r.s;
+      if (!storeAgg[key]) {
+        storeAgg[key] = { store: r.s, storeCode: r.sc, chain: r.ch, region: r.r,
+                          units: 0, clp: 0, costos: 0, byDivision: {} };
+      }
+      const sa = storeAgg[key];
+      sa.units += r.u;
+      sa.clp += r.c;
+      sa.costos += r.co;
+      if (r.dv && r.dv !== 'Sin Clasificar') {
+        if (!sa.byDivision[r.dv]) sa.byDivision[r.dv] = { units: 0, clp: 0, costos: 0 };
+        sa.byDivision[r.dv].units += r.u;
+        sa.byDivision[r.dv].clp += r.c;
+        sa.byDivision[r.dv].costos += r.co;
+      }
     });
-    rankingByChainStore = filteredRanking;
+
+    // Group by chain, enrich with stock from original rankingByChainStore
+    const origRanking = src.rankingByChainStore || {};
+    const chainGroups = {};
+    Object.values(storeAgg).forEach(sa => {
+      if (sa.units <= 0) return;
+      if (!chainGroups[sa.chain]) chainGroups[sa.chain] = [];
+      // Look up stock info from original pre-aggregated ranking
+      const origStores = origRanking[sa.chain] || [];
+      const origStore = origStores.find(os => os.store === sa.store) || {};
+      let stockUnits = origStore.stockUnits || 0;
+      let weeksOfStock = origStore.weeksOfStock || 0;
+      // If division filter active, use stock from byDivision in origStore
+      if (f.divisions.length && origStore.byDivision) {
+        let divStock = 0;
+        f.divisions.forEach(dv => { divStock += (origStore.byDivision[dv]?.stock || 0); });
+        stockUnits = divStock;
+        // Recalculate weeksOfStock based on filtered sales velocity
+        const sales4w = origStore.weeksOfStock > 0 && origStore.stockUnits > 0
+          ? origStore.stockUnits / origStore.weeksOfStock * 4 : 0;
+        const divStockRatio = origStore.stockUnits > 0 ? divStock / origStore.stockUnits : 0;
+        const weeklyAvg = sales4w * divStockRatio / 4;
+        weeksOfStock = weeklyAvg > 0 ? Math.round(divStock / weeklyAvg * 10) / 10 : 0;
+      }
+      // Round byDivision values after aggregation
+      const roundedByDiv = {};
+      Object.entries(sa.byDivision).forEach(([dv, dd]) => {
+        roundedByDiv[dv] = { units: Math.round(dd.units), clp: Math.round(dd.clp), costos: Math.round(dd.costos) };
+      });
+      const uR = Math.round(sa.units), cR = Math.round(sa.clp), coR = Math.round(sa.costos);
+      const margin = cR > 0 ? Math.round((cR - coR) / cR * 1000) / 10 : 0;
+      chainGroups[sa.chain].push({
+        store: sa.store, storeCode: sa.storeCode, region: sa.region,
+        units: uR, clp: cR, costos: coR,
+        margin, stockUnits, weeksOfStock, byDivision: roundedByDiv
+      });
+    });
+    // Sort each chain's stores by units descending
+    Object.keys(chainGroups).forEach(ch => {
+      chainGroups[ch].sort((a, b) => b.units - a.units);
+    });
+    rankingByChainStore = chainGroups;
+  } else {
+    // No exact filters active — use original pre-aggregated ranking
+    rankingByChainStore = src.rankingByChainStore || {};
   }
 
-  // RECONCILE: Scale each chain's ranking stores so the chain total matches _bcd exactly.
-  // This replaces the old date-ratio and product-ratio cascading which caused inconsistencies.
-  const _bcdByChain = {}; // exact totals from _bcd (already date+chain+division filtered)
-  _bcd.forEach(d => {
-    if (!_bcdByChain[d.chain]) _bcdByChain[d.chain] = { units: 0, clp: 0 };
-    _bcdByChain[d.chain].units += d.units;
-    _bcdByChain[d.chain].clp += d.clp;
-  });
-  // Apply product filter ratio to _bcd totals too (license/temporada/etc are proportional)
+  // Apply product filter ratio to ranking (license/temporada/etc are still proportional)
   if (_productFilterRatioU < 1) {
-    Object.values(_bcdByChain).forEach(v => { v.units = Math.round(v.units * _productFilterRatioU); v.clp = Math.round(v.clp * _productFilterRatioC); });
-  }
-  const reconciledRanking = {};
-  Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
-    const bcdTarget = _bcdByChain[ch];
-    if (!bcdTarget || bcdTarget.units === 0) return;
-    const rankTotal = stores.reduce((s, st) => s + st.units, 0);
-    const rankTotalC = stores.reduce((s, st) => s + st.clp, 0);
-    if (rankTotal === 0) return;
-    const uR = bcdTarget.units / rankTotal;
-    const cR = rankTotalC > 0 ? bcdTarget.clp / rankTotalC : uR;
-    reconciledRanking[ch] = stores.map(s => {
-      const u = Math.round(s.units * uR);
-      const c = Math.round(s.clp * cR);
-      const cost = Math.round((s.costos || 0) * uR);
-      return { ...s, units: u, clp: c, costos: cost,
-        margin: c > 0 ? Math.round((c - cost) / c * 1000) / 10 : 0 };
+    const scaled = {};
+    Object.entries(rankingByChainStore).forEach(([ch, stores]) => {
+      scaled[ch] = stores.map(s => {
+        const u = Math.round(s.units * _productFilterRatioU);
+        const c = Math.round(s.clp * _productFilterRatioC);
+        const co = Math.round(s.costos * _productFilterRatioU);
+        return { ...s, units: u, clp: c, costos: co,
+          margin: c > 0 ? Math.round((c - co) / c * 1000) / 10 : 0 };
+      }).filter(s => s.units > 0);
     });
-  });
-  rankingByChainStore = reconciledRanking;
+    rankingByChainStore = scaled;
+  }
 
   // KPIs derived from filteredDailyTotals (same source as chart — always consistent)
   const totalUnits = filteredDailyTotals.reduce((s, d) => s + d.units, 0);

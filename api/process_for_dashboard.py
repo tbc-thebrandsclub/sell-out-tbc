@@ -308,6 +308,42 @@ def process(year=2026, days_back=None):
                         "units": u, "clp": c
                     })
 
+    # ── 7d. Venta diaria por tienda × división (exacta, para ranking) ──
+    store_daily_agg = defaultdict(lambda: {"units": 0.0, "clp": 0.0, "costos": 0.0,
+                                            "store": "", "storeCode": "", "chain": "",
+                                            "division": "", "region": ""})
+    for r in sales:
+        chain = r.get('sub_cadena', 'Otro')
+        store = r.get('nombre_local', '') or r.get('local', '')
+        store_code = r.get('local', '')
+        div = r['_division']
+        region = r.get('region', '')
+        key = (r['_date'], chain, store, div)
+        e = store_daily_agg[key]
+        e["units"] += r['_units']
+        e["clp"] += r['_clp']
+        e["costos"] += r['_costos']
+        e["store"] = store
+        e["storeCode"] = store_code
+        e["chain"] = chain
+        e["division"] = div
+        e["region"] = region
+
+    store_daily_sales = []
+    for (date, chain, store, div), v in store_daily_agg.items():
+        u = v["units"]
+        c = v["clp"]
+        co = v["costos"]
+        if u != 0 or c != 0:
+            # Include negatives (returns/corrections) — they affect real totals
+            # Store raw values (no rounding) — frontend rounds AFTER aggregation
+            store_daily_sales.append({
+                "d": date, "s": store, "sc": v["storeCode"],
+                "ch": chain, "dv": div, "r": v["region"],
+                "u": round(u, 2), "c": round(c, 2), "co": round(co, 2)
+            })
+    store_daily_sales.sort(key=lambda x: (x["d"], x["ch"], x["s"]))
+
     # ── 8. Stock y OOS ───────────────────────────────────
     stock_data = load_stock()
     stock_output = {}
@@ -1118,6 +1154,7 @@ def process(year=2026, days_back=None):
         "dailyTotals": daily_totals,
         "dailyByChain": daily_by_chain,
         "dailyByChainDivision": daily_by_chain_division,
+        "storeDailySales": store_daily_sales,
         "stock": stock_output,
         "allLicenses": all_licenses_full,
         "allChains": sorted(set(r.get('sub_cadena', '') for r in sales)),
